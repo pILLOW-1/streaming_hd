@@ -1,0 +1,601 @@
+{
+  "events_logged": [
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N237",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "CombinedboundedCetusfollow: CPU203699F0 sourceprefix12:54UTC frozen5340/model terminalDS3090/Q3602/G3455, nativeaccepted2876/3556/2840, approvedoffline42/0/348, annotable2918/3556/3188, full3levels2917/3545/3183, protectedholds0/1/3. Unknown5/11/4historicalrecords upper200CNY;exhausted0/7/5isolated; paidpending0snapshot; knownpeakrepriced848.84 vsconservative5305.24differentnoninvoiceledgers. FactDS676Truth875total/G735882new800/1000targetsnotmet,Q8171017(1015labels). Freshlegalqueue/node/ACL/reservation/fullarray/CPU-RAM-IOaudit, large4Rquota; originaldispatcher203712F0. SameQowners Gemma203376→08/FactDS203432→16/G203434→10;aftervacating23, pair201682→23earlierjointexclusiveby~58minvs19; resources/IDs/dependencies/sourceclaimsunchanged, healthyRuntouched. ScopeE5R3Q plusFact2Q; annotationQ203715R, DS/GcaughtupFwithHsourcewakes. N203494healthyR, mean_control8epoch/nuisance13epoch fullVALreceipt/checkpoint/predSHA verified, currentdispersionepoch7; no newERROR/TEST. LiveGPUallocation>=.535h notpreflightfree0. Generationactualrequestinflightunobservable, notzero/notrangeclaims. Aggregates/hashonly;no rawexport/statsAPI/newmonitor/agent/chat."
+    },
+    {
+      "turn": 2,
+      "type": "experiment",
+      "id": "N238",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Necessaryexternalnative28ownershipnotice only: currentCetusownnonterminalR/Q/H/W/E PBSscriptidentitiescontainno matchingnative28firstdatasetseed42seven-methodproducer/fit/TEST. Externalcontractbytesnotlocalverified;no native28launchedorhistoricalcacheabsenceclaim. Native16identitycheckercompleteindependentlyaccepted,targetunmet;staleACTIVEselected_TEST_evaluations0correctedto1againstexistingTESTstartmarkerandpredictionSHAd2d349e03644a104aa4283c6e885b8916d8c5921973c3cdc3602103e4d2cfd19. No runningjob/resource/datatransfer/replay/newmonitor/chat/agent actions. Allnative16 scientificoutputsunchanged, completedmethodnotperiodicallyfollowed."
+    },
+    {
+      "turn": 3,
+      "type": "experiment",
+      "id": "N239",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Original5340/Factonlyboundedfollow, native16complete/native28excluded. CPU203800F0sourceprefix2026-10-26T14:16UTC(Sydney27th01:16): terminal3101/3631/3480;usable2929/3584/3211;complete3levels2928/3575/3206. Offline42/0/348;rawdiscard171/39/266,quarantine1/3/3,hold0/1/3;Q5historicalterminalcontrolsseparate. Expansion5R3Q/Fact2Q;annotationowners203802/203804/203786F0caughtup, H203807/203806/203803preserved. FactDS676Truth875Fact,G735882targets800/1000unmet. Unknown5/12/4=21upper210CNY,exhausted0/7/5=12isolated,paidpending0snapshot;knownpeakrepriced884.84vsconservative5612.17noninvoice/overlap. Freshalllegalqueues/nodes/ACL/reservations/fullarrayRAM/IO/ownallocationphysicalproof; large4R4Qcap,noimmediatecompatibleGPU. CPU203801F0uniqueexistingdispatcher,0statsAPI/modelreplay. SameFactQ20343216→05bound20446→4640s;20343410→17jointbound5320s;budget/deps/attempts/scienceunchanged. DS203581Q30riskbutnolegalearlier48host(rootfailed39/34 pluscurrentrisk);96queuefull,keptQ/gatesnotrelaxed. RangeR/Qcountsnotactualgenerationinflight(unobservable);nozero/newproducer/healthyRchange. Aggregates/hashesonly;nextsameuniquehourly/message,no newmonitor/agent/chat/service."
+    },
+    {
+      "turn": 4,
+      "type": "experiment",
+      "id": "N240",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "CPU204166F0 independently aggregated first published dataset plus all saved completed candidate pools (5992 union source IDs), canonical model/qid dedup, complete3levels only/directPrefix. DS1523+1594=3117, Q1975+1703=3678, Gemma1368+2067=3435 (10230 total); incomplete2/9/5 excluded. Domain numerator/denominator CSV and separate original/candidate/combined report saved. Historical direct/effective Prefix differences0 each. No API, native forward, job alteration or scientific model-comparison claim."
+    },
+    {
+      "turn": 5,
+      "type": "experiment",
+      "id": "N241",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded frozen5340/Fact native28 follow only. CPU204299F0 status17:57UTC terminal3107/3637/3512, usable2961/3588/3270, complete3levels2960/3579/3264; later independent domain receipt G3266 separate prefix. Fact DS702Truth901Fact/G766913 target800/1000unmet; DS204230F0 naturalround7 then unique204318Rround8exec08, G203434Rexec17. Unknown23 upper230CNY,exhausted12isolated,pending0savedprefix; known925.61 and conservative5890.40 overlapping noninvoice views. Fresh legal allqueue/nodeACL/reservation/releases/RAM/IO audit; 204302F0 unique dispatcher Qmath admission blocked nojob. SameQ20358130to32 avoids measuredrisk and20411817to22 earlier rawrelease10467to2820sec; ID/resource/dependency/claims/budget unchanged, healthyR preserved. Native28 204009Rexec39L40 all7 realworstbatch finiteactive/fullstateRNGrestorePASS, firstupdatePASS, sixacceptedfullVALarms/reference_residualepoch3. Finalselection/TEST0; registeredlayer28cacheTRAINVALonly, nextnativeBF16TESTsourcegate explicit after own selectionfreeze, no replay/targetclaim. No native16follow/PC/AutoDL/newAPI/monitor/agent/chat/service."
+    },
+    {
+      "turn": 6,
+      "type": "experiment",
+      "id": "N242",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Native28 sevenfullVAL independentPASS and selectionSHAa060218769fdb971d11d1d9aac168bd1921000b9d641668ccdd3682975a82461, covariance_mean_control28 strict>.17451615631580353;204009F75 controlled missingTESTsource, allocated2805GPUsec. No acceptedfit/native16/detectorTRAINVAL/oldCPdiagnostic replay. Added isolated native28selected-only source/currentStep bits+TESTonce+savedpred independentacceptance entry; currentTF5.7modelingSHA pinned oldarchivedfilemissing and strict originalnative28VALbridge1e-4/HFhook0/causal1e-4/fullworst required failclosed. CPU204427F1largegenericadmission noGPU/model;204433F0boundedperqueuefallback admits204435Qmedexec31/204436callback. Historical fullnativeRSS~17.3GiB measured, fourwall164-253s differenthardware; tightened sameQ to4CPU24GiBRAM1GPU1h with wholetrajectory cursor and exactfinitebudget, nogoalonQclaim. Source/targetTESTnative gates notyetPASS, TEST0, fullglobal5domain report pending. Own72CPUh16GPUh32/64GiB unchanged, measuredGPUbound25746s stricter; oneglobalproducer/canonicalpending reservation. CPU204429F0 frozen5340prefix19:03UTC terminal3110/3642/3525 usable2966/3592/3334 complete2965/3583/3328; FactDS705Truth904Fact/G775964targets8001000unmet. DSround9blockedgeneric unique204392wake, Gemmanext204439R viaexistingcallback. Knownusage937.58vsconservative5921.03noninvoice, unknown23upper230/exhausted12isolated/pending0prefix. FreshalllegalresourceACLreservationsreleases/RAM/IO recorded; med33freecard~12GiBRAM insufficientactualsource. Healthy/unrelated preserved, no newpaidstats/generation/labels/PC/AutoDL/monitor/agent/chat/service."
+    },
+    {
+      "turn": 7,
+      "type": "experiment",
+      "id": "N243",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Boundednative28 queued204435Qmed31 unchanged, no sourcegate/feature/TESTstart. Fresh alllegalresources/ACL/reservation/releases/RAM/IO:med33idlecard~12GiBRAM insufficientprior17.3GiBsourceRSS; prior actualnativeGPU21.19GB (~19.74GiB) resource reference not mistakenfor40GiBpeak, preservedverifieddeviceclass>=40/public24QuadroBF16sourceunverified.96nominal7687s vsmed318385 but actualsamejobqmove rejectedgeneric; oldqueue/resource/dependency preserved.204427oldCPUtrace copiedSHA tohistory/currentRESOLVED, notnativefailure. CPU204581F0 frozen5340prefix20:54UTC terminal3153/3651/3557 usable3009/3599/3383 complete3007/3589/3378, holds0/1/3; FactDS705904/G788986targets8001000unmet. Unknown27upper270/exhausted12,paidpending24savedreservations;known970.04vsconservative6060.00noninvoiceoverlap. Actual204392F1 revealedpreparedround9staleoldround8job204318; zeroattempt/noPBSreceipt/output/session proof; fixednewroundclearowner/keeppriorhistory.204591F0 thenrealgenericblock neweventwake204593. Finitecompatible48fallback+allownpending footprint forecast restored204601F0 unique204603Q4CPU32GiB1GPU6h/204604. Correctqueuedwalltimecountstarts onlyafterpossibleallocation, sameQ20460331to39bound10665to8499 preserves native204435future slot; noscientificworker/prompt/revision/BF16/context/max3/source/label/budgetchanges. Futurefreshroundtemplate repaired, allcontrolledSHAfrozen. Healthy/unrelated protected,no native16/fit/TESTreplay,paidstats/modelcalls0, no newmonitor/agent/chat/service/app-serverrestart."
+    },
+    {
+      "turn": 8,
+      "type": "experiment",
+      "id": "N244",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "New isolatedCetus directional_readout_v1 native16seed42CPUpreobservation executedexactintakecodef960a895/contract11ec3033. Verified independent2CPUcoreh/shared20MiB capacity, no native28/Fact/AutoDLbudgetborrow. Unique204680F0exec25 2CPU24GiB0GPU wall68sec (allocated136coresec=.03778coreh), actualLinuxRSS15,319,945,216bytes/shared~9.27MB. Sourceexactnative16TRAIN914q59847Steps4654positive/VAL304q20245Steps1585positive cacheSHA/IDs/labels/offsets/currentStep spansPASS; native/API/TEST0, syntheticplusactualpermutation/source gatesPASS. EqualStep TRAINdiagonalFisher shrink.1 unitdirection; fixedTRAINstandardizer/L2LR C1 maxiter2000, fourpredeclaredarms. CompleteVAL sevenmetrics ownF1maxstrict>savedpred-ID/labels/checkpointsSHA/manualsavedcoef reconstruct/exactthresholdoracle/1000domainstratifiedquestionbootstrapPASS. AUROC/AP/ACC/F1 mean+length .8138396/.3293805/.8689059/.3740566; local .8175200/.3349755/.8893060/.3800830; random .7335215/.1782029/.7793035/.2505871; nuisance .7321933/.1965474/.8369968/.2708794. Localminusmean AUC+.368pp CI[.042,.625], AP+.559pp CI[-.045,1.115], F1+.603pp CI[-.658,1.946]. WeakStep labels no tokenlocalization; fixedVALthresholdCI omits retrainingvariance/thresholdoptimism, no3–5ppgoalproof. GlobalGoalactive/unproven/notcancelled, existingnative28/5340/Factunmodified; AutoDLexclusiveMILlocal_mean/local_lme notcopied/started. CompletedCPUmethodexitsperiodicfollow. PrimaryACL2024Findings260 andRMDabstractverified; supplied2608.28930v2fetch/searchunresolved, noverifiedEMNLPclaim."
+    },
+    {
+      "turn": 9,
+      "type": "experiment",
+      "id": "N245",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "204727F0 exec25 CPU parent_offset_local_v1 fixed4arms within same2coreh/shared20MiB. Parent checkpoint ed6740d preserved; native16 originalTRAIN59847/VAL20245 IDslabels/sourcePASS. Prior scalararrays absent; necessary one TRAIN/VAL mapper reconstruction exact fullprior featureSHA; necessary frozenTRAINparenthead59847, VALparentlogits savedonly; TEST/backbone/API0. Offset_only exact parentAUROC/AP/F1max predictions/confusion and ranktiesPASS, zeroresidual recoversoffset. CompleteVAL savedcoeff/manualreconstruction/7metrics/exactFractionF1thresholdoracle/1000domainquestionCI PASS. VALAUROC/AP/ACC/F1 parent .897763/.487292/.915090/.505324; length .897341/.490404/.914893/.505312; directionlocal .899711/.487541/.915387/.501600; randomlocal .898349/.485743/.910645/.504791. Localminusparent AUROC+.1948pp CI[+.0114,+.4446], AP/F1cross0/F1point-.3724pp; localvsrandom AUCcross0. No3–5ppGoalproof/Goal remains active, no new search or TEST. Actualwall47sec/94allocatedcoresec, cumulative372=.10333coreh; sharedabout14.21MiB total, no otherbudgetborrow. Native28TEST204435Qmed31 preserved as earliest sufficient bound2624s, med33freeGPUonly~12GiBRAM insufficient24; 96runningquota release6844s and previousgenericqueuedGPUlimitunchanged. Alllegalresources/ACL/reservations/queuedstart-awareforecast recorded, no unrelatedphysicalprobe/healthyjobchange/newmonitor/agent/service. CPU204718 freshcompletedlabel+v1 dedup5domainstat independentPASS22:22UTC, DS3014/Q3608/G3438 complete, Fact705/904andG788/986 not800/1000. Historicalmode/directPrefix distinction retained."
+    },
+    {
+      "turn": 10,
+      "type": "experiment",
+      "id": "N246",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "BoundedCetus actual204435F1(64GPUwallsec) beforeweights/forward atTFversionassert, notQ. CPU204765F1 isolated wrong5.7.0version with31bf base4.57.1codepin. PreserveoldPBS/controller/config/freezes; restored originalCPU203934PYTHONPATH intendedTF5.7.0 andactual46d313ec modelingSHA. Originalnumeric/HFhook/causal/fullworst gatesunchanged;204767F0CPUimportsSHA. Failedjob-specificproof authorizeslegalnewadmission, notgeneralF1retry; queueforecastfixed ownqueuedrelease onlyafterallocation.204771F0 unique204773Qmed31/4CPU24GiB1GPU1h/204774 finitecallback; actuallargegeneric38reject preserved, TESTgates/features/start0, original7fits/VALunchanged. Nativeinclusive12008CPUcoresec/2869GPUsec within72CPUh/16GPUh/measured25746sec. Allarrays/node/queueACL/reservation/risk/real19.74GiBsourceVRAM/24RAM/staging audit, no unrelatedphysicalprobe. SameQ201682exclusive2GPU8CPU64RAM6h23→19 whole-noderelease15109→8031s;healthyuntouched. CPU204760 source22:59UTC nominal5340/model terminal3164/3675/3632 usable3019/3622/3457 complete3018/3612/3452, noterminal2176/1665/1708 inclholds0/1/3;unknown27upper270/exhausted12savedpending0atprefix, noclaimliveHTTP0. LaternaturalDS03 203581R32 andGemmaFactround3+3→791Truth989Fact at23:10UTC/round4unique204798R21;DS705904/204603Q39. NewCPU204787F0exec25/2CPU4GiB0GPU7sec, pureVALcomplementarityintake07bdef31 unchanged, no duplicate/fit/Torch/TEST. Exact6metadata/20245/304/1585/sourcepredictioncheckpointreceiptSHA/originalthreshold7metrics andindependentclassrank/errorcellrecountPASS. 16wrong28right411;16right28wrong657;bothwrong1308/bothcorrect17869. SharedFN563,leftonly144,rightonly111;sharedFP745,leftonly267,rightonly546;withinpositiveSpearman.853168/negative.886546. Descriptive only notoracle/fusion/layercausality/SVDmechanism. SameCPUgroupactual386coresec=.10722coreh/shared~14.3MiB<2coreh/20MiB,new55KiB<100KiB. Completedobservationstopsfollow;originalsource/nativeTESTunfinished/noGoalcancelcompletion."
+    },
+    {
+      "turn": 10,
+      "type": "decision",
+      "id": "N247",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Coordinator relays exact directhuman: 确保每次探索都不是小打小闹，而是有明确的动机，看到以往方法的问题，最好能有诊断来予以支持;目标的结果提升是测试集的. Futurefit requires concrete priorfailure/diagnostic/falsifiable structuralhypothesis/matchedcontrol; no unsupportedwidth/temperature/smallresidualvariants. 3–5pp evaluated frozenselectedTEST versusstronglearnableC, VALdiagnostic/selection/globalF1maxstrict> only, historicalTESTseen disclosed, no TEST-based tuning. Currentoverlapdiagnostic no auto-fusion/newTEST. Existingnative28TESTcontinues, successfulfit/VALnotreplayed, budgets/assets/PBSunchanged."
+    },
+    {
+      "turn": 11,
+      "type": "experiment",
+      "id": "N248",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "IndependentnewDSGoal StageA weight-onlydiagnostic executed exactintake63b190/contract43805e. SourcedDSrevision6a6f4aa4197940add57724a7707d069478df56b1 fromcanonicalweights, downloadcommitmetadata/config/index/fullshardSHA7e6b2474+19fb83b7 andactualBF16lm_head128256x4096headerPASS;tiefalse,explicitseparateembeddingstorage/firstrowdifferent, noembeddingreplacement or8BLLM/data load. No existingexactbasis/activeowner found inboundedcanonicalregistry+identity search; exclusiveCetusweightowner registered. Allpublic24/48/96queue/ACL/reservation/fullarrays/ownqueued/risk/RAMIOaudit; choseCPUdefaultFP64algorithm within own2CPU30m/1GPU30m uppercap, noGPUwait/probe/use. Workq204849F0exec25 2CPU4GiB0GPU wall81sec/162allocatedcoresec=.045coreh; peakRSS1221599232bytes/shared~10.31MiB<16/scratchperphaseguard<1GiB(no weightsstage). First8blockmeasuredadmit374.68secupper<30min; exactweightGram43.2759sec/eighbasis8.148sec, fullCPU80.96sec. SyntheticstreamGram/directSVDsubspace/true-nullcontrolPASS; realFP64Gram/eigh/orth<=1.60e-14/eigenresid<=1.62e-15 andserializedFP32basisreopen/SHAchecksPASS. Numericalrank4096/4096 atsigmatol2.8196232e-9, sigmaMin1.56298576/max99.00865563, min/max.01578635. Fixedtail205energy.0168225715/top205.1848246979/random205.0494891326;tailmaxsigma/max.0341099356, boundarygap1.0007219353; Gramcondition4012.6962/condsquarelimitationretained. No clearjump atfixed205boundary, no true reasoningnullspace/semanticdisentanglement orlabel/TESTgainproof. Remoteonlyimmutablebases+singularvalues registered forreuse,basisSHA dff79aaaa34cbebb125300307e9ead2d5568f066c2b786bff8f0481023d306e8; reportSHA723b68cf214edfce488cb945471510a8432c82de192ccef0ee3d54fbf37acc43. No oldbudgetborrow/API/fit/backbone/TRAINVALTEST/StageB. CompletedStageAstopsfollow; native28/5340Facthealthyownersunmodified, globalTEST3–5ppgoalnotachieved/cancelled. OfficialHARPICLR2026 sections4.2/4.3 verified5percentlowrankapprox rather than assumedactualzeroσ; no completepaperreplicationclaim."
+    },
+    {
+      "turn": 12,
+      "type": "experiment",
+      "id": "N249",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Cetusowned ds_step_domain_signal_geometry_v1 pureTRAINVALdiagnostic204951F0exec25/2CPU24GiB0GPU wall39sec/78allocatedcoresec. OldCPUgroup386→464=.12889coreh/shared~14.52MiB<2coreh/20MiB,newshared~258KiB<1MiB/scratchguard<512MiB; no StageA/generation/topkborrow. Noexactpublishedpooled256cache oldparent/checkpoint/canonicalregistry; necessaryoriginalfrozenparented6740 mapper/scorer/weightedmean/norm1e-12 actual256 not136randomprojection/LR. Frozenstateb246/numericfunctional/permutation/BN-eval/weightsunchanged/sourceBYTEownership/IDs-label-position-lens/hashPASS native16 originalTRAIN59847/914/4654positive +VAL20245/304/1585. Necessaryfeatureops80092Steps1382720tokens;0probe/branch/oldVALlogit/8B/API/TEST. TRAINpopulationclassmeans/covs all5domains, .1negativecovshrink/global+perdomainwhite, allpairraw/commonwhitecos, fixedTRAINaxisVALsign/mean/cos/SNR,1kdomainwhole-questionresampling fixedwhitener/axes, effectivequestion/length-preL2norm-positionconfounds reportedall5. Normalbetweenmeantrace .06033866/total .28980135=.20820698 CI[.12013,.35156]; globalwhitebetweenfraction.03047447;totalcovlaw2.16e-17. Domainδglobalrawcos Logic.97716/Math.99715/MultiHop.96753/Science.99546/Truth.88389. VALglobaldirectionSNR1.4337/1.0840/1.5542/1.5224/2.2506 vsdomain1.3945/1.1919/1.4596/1.4595/2.2154; no acrossdomainconsistentpointimprovement orclassifiercomparison. MathVALpositive567Steps/11supportingof12nominalquestions/Kish4.5548,largetquestion35.63%, broadquestionCI. Purealgebraicpostrunratio normalbetweenmeantrace /negativeweighteddomainδ²=.129609 separatelylabellednotpreregistered/noextraCI. Diagnosticdoesnot supportimmediate domainexpertmotivation for this supervisedfrozen256space, not raw4096/causalOODconclusion. Exactpooled256+TRAINstatsscratchcache remoteonlyregisteredreuse, noarrayPCexport. ReportSHA2776e970f57693c133f53aff7cb6416254009fafcf8ebe077692876c0213b599. Completeddiagnosticstopsfollow; originalnative28/5340Facthealthyuntouched;TEST3–5ppgoalunproven/noautomaticnewfit."
+    },
+    {
+      "turn": 12,
+      "type": "decision",
+      "id": "N250",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Coordinatorrelays latestdirecthuman 在autodl上并行展开探索;一直并行探索，我希望今天能产出一版有效的设计. AutoDLsole ds_step_unembedding_subspace_v1/native16/seed42/first5 tail/top/random205sameMLP1024max+tailmean under own frozencontract100CNY/24preferred32/3hwindow; Cetusno duplicateprojection/fit/TEST. StageAbasesstayCetus/noprivatearrayPCtransfer; localnecessarysetup allowed byseparateAutoDLcontract. Cetusonlyindependentdomaingeometrydiagnostic withinremainingoldCPUobservations. TodaySydney23:59aspirationalnotguaranteed, goal measuredfrozenslectedTESTvsstrongC notVAL; budgets/assets/PBS/healthyowners unchanged."
+    },
+    {
+      "turn": 13,
+      "type": "experiment",
+      "id": "N251",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "{\"source_snapshot_UTC\": \"2026-10-27T00:14:50.618185+00:00\", \"models\": {\"deepseek_r1_distill_llama_8b\": {\"terminal\": 3181, \"usable\": 3041, \"complete_three_levels\": 3040}, \"qwen3_8_27b\": {\"terminal\": 3708, \"usable\": 3655, \"complete_three_levels\": 3645}, \"gemma_4_31b_it\": {\"terminal\": 3673, \"usable\": 3505, \"complete_three_levels\": 3500}}, \"Fact\": {\"deepseek_r1_distill_llama_8b\": {\"usable_snapshot_UTC\": \"2026-10-26T23:46:55.566029+00:00\", \"TruthfulQA_usable\": 710, \"Fact_usable\": 909, \"TruthfulQA_gap\": 90, \"Fact_gap\": 91, \"round\": 10, \"current_job\": \"204922.hpc-head01\", \"current_state\": \"Q\", \"current_queue\": \"med_gpuq\", \"Resource_List\": {\"gpu_wt\": 2, \"mem\": \"32gb\", \"ncpus\": 4, \"ngpus\": 1, \"nodect\": 1, \"place\": \"free\", \"select\": \"1:ncpus=4:mem=32gb:ngpus=1:host=hpc-exec32\", \"walltime\": \"06:00:00\"}, \"callback\": \"204923.hpc-head01\"}, \"gemma_4_31b_it\": {\"usable_snapshot_UTC\": \"2026-10-27T00:09:03.881761+00:00\", \"TruthfulQA_usable\": 796, \"Fact_usable\": 994, \"TruthfulQA_gap\": 4, \"Fact_gap\": 6, \"round\": 7, \"current_job\": \"204993.hpc-head01\", \"current_state\": \"Q\", \"current_queue\": \"large_gpuq\", \"Resource_List\": {\"gpu_wt\": 3, \"mem\": \"96gb\", \"ncpus\": 4, \"ngpus\": 1, \"nodect\": 1, \"place\": \"free\", \"select\": \"1:ncpus=4:mem=96gb:ngpus=1:host=hpc-exec22\", \"walltime\": \"06:00:00\"}, \"callback\": \"204994.hpc-head01\"}}, \"native28\": {\"job\": \"204773.hpc-head01\", \"state\": \"Q\", \"queue\": \"med_gpuq\", \"Resource_List\": {\"gpu_wt\": 2, \"mem\": \"24gb\", \"ncpus\": 4, \"ngpus\": 1, \"nodect\": 1, \"place\": \"free\", \"select\": \"1:ncpus=4:mem=24gb:ngpus=1:host=hpc-exec31\", \"walltime\": \"01:00:00\"}, \"comment\": \"Not Running: Insufficient amount of resource: host \", \"selected_freeze_SHA256\": \"a060218769fdb971d11d1d9aac168bd1921000b9d641668ccdd3682975a82461\", \"source_environment_gate_SHA256\": \"fcb580e3203eaa43e615de05c4c6c2076dbc396ada68b39e0df9b456114e0fa5\", \"source_stage_code_freeze_SHA256\": \"1670ec06a0121252ef88b1493d91345acfa4e410b12376faa38b6dc160eb02a8\", \"native_numeric_gate_exists\": false, \"TEST_feature_acceptance_exists\": false, \"TEST_evaluation_started\": false, \"saved_TEST_predictions_exist\": false, \"independent_TEST_acceptance_exists\": false, \"selected_TEST_evaluations\": 0, \"complete\": false, \"callback\": \"204774.hpc-head01\", \"blocker\": \"AllonlineGPUs assigned. Destinationlarge ownQ4 atmax4 prevents adding crossqueueowner; currentmed31 earliest legalbound16402s. RetainnativeBF16/context/numerical/40GiBvalidatedclass gates;24unvalidated. Sourcecursor/selectedTESTonce/acceptancecallback connected.\", \"no_fit_VAL_or_model_replay\": true}, \"same_owner_relocation\": {\"status\": \"PASS_SAME_QUEUED_GEMMA_CONTINUATION_EARLIER_PLACEMENT\", \"job\": \"204924.hpc-head01\", \"old_select\": \"1:ncpus=4:mem=96gb:ngpus=1:host=hpc-exec21\", \"new_select\": \"1:ncpus=4:mem=96gb:ngpus=1:host=hpc-exec14\", \"old_expected_release_bound_seconds\": 19700, \"new_expected_release_bound_seconds\": 3131, \"resources_walltime_dependencies_fullstate_claims_unchanged\": true, \"no_running_job_changed\": true, \"source_IO\": \"SamepinnednativeBF16Gemmaassets; newnodecache not assumedverified, minimumSHAstage happensinsidePBS; releasegain>4.6h coversconservativecoldstageallowance\", \"physical_idle\": \"StrictUUID/noPID/0util/<=64MiB ownPBS beforeandafterstage stillrequired; noallocationbypass\", \"readback\": \"${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_1114/ACTUAL_CONTROL_PBS.json\"}, \"completed_geometry_control_summary\": {\"path\": \"${PROJECT_ROOT}/experiments/control/cetus_completed_diagnostic_summaries/DS_DOMAIN_SIGNAL_GEOMETRY_V1_FINAL.json\", \"SHA256\": \"3cc63281825cb400d4adf493d215080341bfe8c874481c8b84275a516d4997b2\"}, \"old_500_100_accounts_and_ledgers_unchanged\": true, \"healthy_running_jobs_changed\": false}"
+    },
+    {
+      "turn": 13,
+      "type": "experiment",
+      "id": "N252",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "{\"job\": \"205023.hpc-head01\", \"status\": \"F0\", \"source_parent_checkpoint_SHA256\": \"ed6740d2805d3391829ed6ba0d7807b2bba187ea224225ff8f9b1a959f8fdee7\", \"source_parent_prediction_SHA256\": \"628ab48e9c6b10b8186d13a09a83e09fa3a1498445a1e428d7be407d68a3c659\", \"VAL_counts\": {\"Steps\": 20245, \"questions\": 304, \"positive\": 1585}, \"TRAIN_quartile_cutpoints\": [8.0, 15.0, 24.0], \"domains\": {\"ALL\": {\"normal_pooled_Spearman\": 0.5409337196234922, \"positive_pooled_Spearman\": 0.1854838621468375, \"within_question_normal\": {\"total_questions\": 304, \"no_normal_steps\": 25, \"fewer_than5_normal_steps\": 97, \"atleast5_normal_steps\": 207, \"atleast5_constant_length\": 0, \"atleast5_constant_score\": 0, \"atleast5_any_constant\": 0, \"eligible_questions\": 207, \"eligible_fraction_of_all_questions\": 0.680921052631579, \"equal_question_mean_Spearman\": 0.2702229690257253, \"question_rho_quantiles\": [-0.7714285714285715, 0.1153852065290856, 0.3230859212967848, 0.49141640566530753, 0.7637309762160314], \"normal_step_Kish_effective_questions\": 34.76661739503085, \"largest_question_normal_step_share\": 0.12883172561629153, \"CI95\": [0.2322564056863758, 0.3081004456841894], \"bootstrap_draws\": 1000, \"bootstrap_seed\": 42, \"bootstrap_unit\": \"Equaleligiblequestionrho; conditionon>=5normalandbothvariablesvary\"}}, \"Logic\": {\"normal_pooled_Spearman\": 0.3546110312927647, \"positive_pooled_Spearman\": 0.1700297593856234, \"within_question_normal\": {\"total_questions\": 100, \"no_normal_steps\": 0, \"fewer_than5_normal_steps\": 0, \"atleast5_normal_steps\": 100, \"atleast5_constant_length\": 0, \"atleast5_constant_score\": 0, \"atleast5_any_constant\": 0, \"eligible_questions\": 100, \"eligible_fraction_of_all_questions\": 1.0, \"equal_question_mean_Spearman\": 0.17290583422355987, \"question_rho_quantiles\": [-0.5892760320324933, 0.0029467865011240726, 0.21299194242905864, 0.3907449351983824, 0.674634759197322], \"normal_step_Kish_effective_questions\": 64.03987305570419, \"largest_question_normal_step_share\": 0.041510109142959384, \"CI95\": [0.12109748261518204, 0.2304210295015659], \"bootstrap_draws\": 1000, \"bootstrap_seed\": 42, \"bootstrap_unit\": \"Equaleligiblequestionrho; conditionon>=5normalandbothvariablesvary\"}}, \"Math\": {\"normal_pooled_Spearman\": 0.4184507890549771, \"positive_pooled_Spearman\": 0.12168042958467136, \"within_question_normal\": {\"total_questions\": 12, \"no_normal_steps\": 0, \"fewer_than5_normal_steps\": 0, \"atleast5_normal_steps\": 12, \"atleast5_constant_length\": 0, \"atleast5_constant_score\": 0, \"atleast5_any_constant\": 0, \"eligible_questions\": 12, \"eligible_fraction_of_all_questions\": 1.0, \"equal_question_mean_Spearman\": 0.4751790804579005, \"question_rho_quantiles\": [0.3674243478237063, 0.4285756091646477, 0.4690109861855258, 0.5312567685036476, 0.5987820748355733], \"normal_step_Kish_effective_questions\": 5.497888242562413, \"largest_question_normal_step_share\": 0.35197657393850657, \"CI95\": [0.43840548893960346, 0.5168346347765614], \"bootstrap_draws\": 1000, \"bootstrap_seed\": 42, \"bootstrap_unit\": \"Equaleligiblequestionrho; conditionon>=5normalandbothvariablesvary\"}}, \"Multi-hop\": {\"normal_pooled_Spearman\": 0.30132355172243225, \"positive_pooled_Spearman\": -0.03212917798702891, \"within_question_normal\": {\"total_questions\": 80, \"no_normal_steps\": 14, \"fewer_than5_normal_steps\": 32, \"atleast5_normal_steps\": 48, \"atleast5_constant_length\": 0, \"atleast5_constant_score\": 0, \"atleast5_any_constant\": 0, \"eligible_questions\": 48, \"eligible_fraction_of_all_questions\": 0.6, \"equal_question_mean_Spearman\": 0.25687090967668996, \"question_rho_quantiles\": [-0.6150966989381312, 0.15594784313660812, 0.2665698499097091, 0.48905338393611275, 0.7637309762160314], \"normal_step_Kish_effective_questions\": 32.150594047759085, \"largest_question_normal_step_share\": 0.09666381522668947, \"CI95\": [0.1688350513483879, 0.33775731239298895], \"bootstrap_draws\": 1000, \"bootstrap_seed\": 42, \"bootstrap_unit\": \"Equaleligiblequestionrho; conditionon>=5normalandbothvariablesvary\"}}, \"Science\": {\"normal_pooled_Spearman\": 0.5045748839621921, \"positive_pooled_Spearman\": 0.1683351594227399, \"within_question_normal\": {\"total_questions\": 39, \"no_normal_steps\": 0, \"fewer_than5_normal_steps\": 0, \"atleast5_normal_steps\": 39, \"atleast5_constant_length\": 0, \"atleast5_constant_score\": 0, \"atleast5_any_constant\": 0, \"eligible_questions\": 39, \"eligible_fraction_of_all_questions\": 1.0, \"equal_question_mean_Spearman\": 0.4939611973303683, \"question_rho_quantiles\": [0.16876976830905063, 0.42295762506717327, 0.5052508680716389, 0.58489416135734, 0.730768405212338], \"normal_step_Kish_effective_questions\": 27.005956313763328, \"largest_question_normal_step_share\": 0.07621881437399863, \"CI95\": [0.45833385091562945, 0.530023771931659], \"bootstrap_draws\": 1000, \"bootstrap_seed\": 42, \"bootstrap_unit\": \"Equaleligiblequestionrho; conditionon>=5normalandbothvariablesvary\"}}, \"Truthfulness\": {\"normal_pooled_Spearman\": -0.03554360332454325, \"positive_pooled_Spearman\": 0.04385379719212357, \"within_question_normal\": {\"total_questions\": 73, \"no_normal_steps\": 11, \"fewer_than5_normal_steps\": 65, \"atleast5_normal_steps\": 8, \"atleast5_constant_length\": 0, \"atleast5_constant_score\": 0, \"atleast5_any_constant\": 0, \"eligible_questions\": 8, \"eligible_fraction_of_all_questions\": 0.1095890410958904, \"equal_question_mean_Spearman\": 0.16864148001360674, \"question_rho_quantiles\": [-0.7714285714285715, -0.07465620972768149, 0.3439750182371333, 0.5199427589131121, 0.7], \"normal_step_Kish_effective_questions\": 1.685218968768435, \"largest_question_normal_step_share\": 0.7695590327169275, \"CI95\": [-0.1696885502556959, 0.4631481947948478], \"bootstrap_draws\": 1000, \"bootstrap_seed\": 42, \"bootstrap_unit\": \"Equaleligiblequestionrho; conditionon>=5normalandbothvariablesvary\"}}}, \"normal_bin_predicted_positive_rates\": [0.006736914838486785, 0.03780342220453641, 0.07716805487506125, 0.12436885463725751], \"resources\": {\"status\": \"PASS_SAME_CPU_OBSERVATION_GROUP_FINITE_ONE_CORE_MINUTE\", \"job\": \"205023.hpc-head01\", \"PBS_state\": \"F\", \"Exit_status\": 0, \"host\": \"hpc-exec25/9\", \"resources_used\": {\"cpupercent\": 33, \"cput\": \"00:00:01\", \"mem\": \"281952kb\", \"ncpus\": 1, \"ngpus\": 0, \"vmem\": \"0kb\", \"walltime\": \"00:00:03\"}, \"new_allocated_CPU_coreseconds\": 3, \"new_cap_coreseconds\": 60, \"prior_group_allocated_coreseconds\": 464, \"total_group_allocated_coreseconds\": 467, \"total_group_allocated_CPU_corehours\": 0.1297222222222222, \"total_group_cap_coreseconds\": 7200, \"new_shared_bytes\": 82786, \"new_shared_cap_bytes\": 262144, \"total_group_shared_bytes\": 15305936, \"total_group_shared_cap_bytes\": 20971520, \"scratch_cap_bytes\": 33554432, \"scratch_measurement\": \"FinalguardPASS; code/logsonly, no sourcesamplearrayscopied or output\", \"StageA_generation_TopK_budget_borrowed\": false, \"new_model_probe_8B_fit_threshold_TEST\": 0}, \"new_model_probe_8B_fit_threshold_TEST\": 0, \"AutoDL_StageB_duplicate\": false, \"interpretation\": \"Strongparentdescriptiveassociation only; not universalmax mechanism/causality orTESTgain. Existingnuisance/offset_length savedVALonly, notrerun. Truthfulnessonly8eligible andstronglongquestionconcentration. No automaticlengthcorrection/rethreshold/newfit.\"}"
+    },
+    {
+      "turn": 14,
+      "type": "observation",
+      "id": "N253",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "User-requested current first-version plus completed candidate domain/level hallucination snapshot. CPU205051F0 2CPU/0GPU50s; source identity PASS and existing direct labels only, no API/model/relabel. Snapshot 2026-10-27T00:50:59UTC complete DS3049=1523+1526,Q3663=1975+1688,G3500=1368+2132. Five-domain harmonization merges Truthfulness/TruthfulQA into Fact with SimpleQA/FACTS, not a sixth domain. Independent original+new equals combined counts verified all45 cells. Full CSV/Chinese tables separate original,new,combined; complete-trajectory selection and heterogeneous historical/new modes disclosed; unequal model coverage precludes paired comparison. Overall expansion incomplete, no generation/scheduler mutation or new monitor."
+    },
+    {
+      "turn": 15,
+      "type": "experiment",
+      "id": "N254",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Completed soleCetus strong-parent256 matched-ranking3arms. ExactTASK6217309/amendment40b138ff frozen before fit; existing TRAINlogitarray unavailable boundedcanonicalinventory. NecessaryTRAIN-only fixedparent setup59847 plus32rawTRAINgate4.768e-7<=1e-6; oldarrayhash UNAVAILABLE,newrawe33c9e, cachedunit reconstructed with preL2norm+epsilon, no VAL/TEST parent/backbone/API. All source/matching100percent/FP64gradient6.77e-8/firstsecondgrad/RNG/diskrestore-nextupdate0/profile gates PASS. Unique205124F0 62allocatedcoresec and savedprediction-only independent205131F0 2coresec; new64/group531<7200/sharednew~1.7MiB<4/group<20/GPU0/nootheraccountborrow. All3 completeVAL20245Steps304questions,6epochs each; BCEAUROC.895337/domainpair.895555/matched.895990 vsparent.897763; matchedAP.495262 vsparent.487292 but ACC.913312/F1.503817 vsparent.915090/.505324. Matched-domainpairAUROC+.043525ppCI[-.146047,.186780]; no stablematchingbenefit. AUROCprimaryfails soTESTnotadmitted0; no refit/scan or globalGoalclaim, completedmethodstopsfollow. OriginalsourceCPU205133F0 prefix01:14UTC5340full3DS3057/Q3667/G3502 usable3058/3676/3507; Truth/FactDS710/909,G798/996. Native28204773Q/test0, GemmaFact205108R/DS204922Q, healthyoriginaljobs/financialledgersunchanged."
+    },
+    {
+      "turn": 16,
+      "type": "experiment",
+      "id": "N255",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "New soleCetus ds_step_depth_transport_geometry_v1 StageA exactTASK5ae7d9836611bytes complete. Probe205170F0 27coresec, continuousCPU205176F0 2CPU4GiB0GPU83s=166coresec, independent205183F0 3coresec;new196/group727<7200,newshared~240KiB<512/group17.3MB<20MiB/scratch712781477<1GiB/RSS<1GiB,nootherbudgetborrow. Originalnative16local/native28shared4wholefileSHA/orderedadapters/label/spans/token-nativebyteendproofchain exact. SameNumPyseed42QR64FP64parity1.18e-14<=1e-10, castFP32storage; no center/unit pertoken, no8B/parentforward/API/labels/head/TEST. NormalTRAIN868eligibleQ/equalquestion-Step-pair affineridge. Sameall59847TRAIN/20245VAL, n1retained685/242/singletonnormalweight.002566 reported; normalVAL279Q excludes25withoutnegative. Threefixedcontrols uncondVALAUC.461673/AP.066318, aligned.518207/.074033, shuffled.487957/.070044. AlignednormalVALMSE/shuf.810111CI[.807929,.812209]; AUCgainvsuncond.056534CI[.034918,.076781],APgain.007715CI[.004304,.011266]; gainvsshuf.030251CI[.012885,.047293]. BothpreregisteredgatesPASS butabsoluteAUCnearchance/APbelow.07829prevalence; notstrongparent.89776gain/parentconditionalincrement/causalmechanism/TESTgoalproof. Independentstate-scoreerror4.44e-16/fullweightednormalmean4.44e-16/IDs-labels/metrics-CI/gatesPASS; supplementaryownVAL-F1maxalignedACC.229291/F1.160723 descriptiveonly. Allbasis/tokens/scoresremoteonlyregistry, diagnosticcompletedstopsfollow; onlynewseparatelyfrozenreadoutdesign later,no automaticfit. Originalsource205185F0 earlierstatusfull33070/3668/3503, independentlater01:39DS3071/Q3668/G3503 naturalprefixdifference;FactDS710/909,G798/996. Freshalllegalqueues/nodes/ACL/fullarray/reservation/limits/release/IO-risk audit;publiccompatibleGPUsassigned,large4Rquota. Samequeued201682pair19to13 and205038Qwen19to05, exactResourceListotherthanhost/depend unchanged andreadbackQ; distincttargets preventsinglecardblockingpair, no new/cancelled/healthyRmodified. Native204773Q31source/riskkept,DSFact32separate/GFact22kept; no predictedreleasepromised. Final01:47Gemmanew01natural205210R18continuation/all3annotationR;nativeTEST0, AutoDLtemporalBnotduplicated. Global3–5ppstrongC realTESTgoal remains unachieved."
+    },
+    {
+      "turn": 17,
+      "type": "decision",
+      "id": "N256",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Cetus-only parent256 native16 attention-flow identity frozen, distinct AutoDL64 identity. Eleven intake files preserved;8 expected code hashes exact/codefreeze0cc3904b. Reused205496 fullCetus input receipts TRAIN914/59847/max67553 andVAL304/20245/max42919 plus completedcausal parented674/TRAINe33/VAL628 source receipts; no repeat source or parent forward. Suggested4GPUallocationh/16CPUcoreh/256MiB has no verified existing in-scope approved account: known CPUobservation group total2CPUh/20MiB/GPU0 cannot cover even before prior spend; cofluct commitments protected. BudgetHOLD, not scientific failure, nativeparity/CPU64/future/longestprofile pending;0newPBS/nativeforward/fit/TEST. Freshallqueues/nodes/ACL/reservations/allarray/release audit retained, onlinepublicGPUslotsfull/ownlarge4R; no allocation/physicalprobe/placementchange. Sharedfree772934205440 butquotaRPCconnectionrefused anddiskspace notbudgetapproval. No5340/native28/TopKborrow, oldhealthyjobsunchanged, overallrealTEST3–5ppgoal notachieved."
+    },
+    {
+      "turn": 18,
+      "type": "experiment",
+      "id": "N257",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Latest relayed human reprioritization: diagnoselearnable vs originalStreaming/detectionspace before attention/graph/joint. Cetus attentionparent256 exactPBSidentity0/acceptedfeature-fit0; PRIORITY_OVERRIDE preparationonly, originalbudgetHOLD retained, no newattentionworker. Bounded saved-asset CPUinventory205626F0 exec25/1CPU2GiB0GPU <=60coresec, currentfilesystemsummary<=32KiB; PBSwall/cputround0, conservativecharge1 notzeroIO. Streaming16 currentVAL7ded029a andcheckpoint9af39a66 verified; TRAINsavedpred absent. OldA/C Adamroot absent, oldC16checkpoint/VALabsent; originalB exactsurvivingassets unlocated withinboundedcanonicalscope. Archived C16vsStreaming17 CSVcurrenthasha4056246 existsbutTEST-only20033, notVALrecovery or causalablation. Re-trainedstrongparent16ed674 checkpoint/currentVAL628ab exist/TRAINbe728 fileverified; notoldC. Streaming16vsnewparent VAL20245 ordered sampleID/questionID exact andlabelvalues exact1585positives; rawlabelbyteSHA differsonlyuint8 vsint64. NativeH16 currentsharedTRAIN8.534GB/VAL2.819GB existsstat, oldrecordedSHA explicitlynotfullrehash. Actualnode25 learnedpooledZ256 TRAIN59847x256 SHA437484/VAL20245x256 SHA82cb01 andmetadataSHA newlyverified; tokenwiseZ/alpha/originalC Z notverified. ExistingCPUgroup reservation60sec/32KiB fitsconservativeuncommitted2753sec/32768bytes, nootherbudgetborrow. No model/ABC/LLM/API/labels/newTEST, no graph/joint. Existingoriginalchainsuntouched; noncausal falsifiableobservations stagedaspreparationdoc, no mechanism/gain orGoalclaim. Completedinventory stopsfollow."
+    },
+    {
+      "turn": 19,
+      "type": "experiment",
+      "id": "N258",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Completed savedscore same-native16 Streaming vs retrained strongparented674 diagnostic only; notoldC andno mechanism/TESTgoalclaim. StrictTRAIN59847/914/4654 andVAL20245/304/1585 StepPrefix sourcebijective. Streaming16 historical0.5 only; separatelyfreeze newfullVAL-F1max.16873683035373688 vsparentoriginal.20712603628635406. VAL AUC.8777036695→.8977631939/AP.4458228652→.4872921544/ACC.9014571499→.9150901457/F1.4615384615→.5053237410; questionbootstrap1000seed42 AUCdeltaCI[.003958,.030511],AP[.023253,.061181], fixedfit/VALselectionlimits. Rescue734/newerrors458/bothwrong1261/bothcorrect17792; net276=FP253+TP23; S0P1FP983→759 net224. TRAINSP19931/35262/0/4654,VAL6683/11977/0/1585; S1P0zero notlabeloracleproof/S0P1notinheritederrorclaim. OriginalconsecutiveVAL transitionsS0/1:00=5788/0,01=315/256,10=443/0,11=11449/1253;437retainedgaps/304firstseparate. FixedTRAINlength8/15/24/normquartiles andretainedpositionquarters/domain61groups122rows; TruthfulnessAUCdeclines4.77pp, >24tokensFPdown228butFNup42. NormalStep score-lengthrho.5973→.5409, learnedpreL2normrho-.2553→-.0142 associationonly. Numerical source/overall sklearn-vsindependentmetrics/F1oracle/counts gatesPASS. CPU205665F1preimport2s/205669F1missingPYTHONPATH2s/205673F1sharedguard7s afternumerics, notfabricatedF0. Preservedfailurelogs/exactcodearchive anddedupfinalshared<=30720 withoutrecompute; transient41765bytesguardfailureexplicit. FullREPORT85dfee11 node25 vsaggregate006bc402 verifiedexactprojection205711F0/no metricrecompute; localindependentaggregatechecksrelayPASS. No8B/fit/newVALTEST/modelreplay/API/labels. Completeddiagstopsfollow. Originalnative28 actual204773F1 bridge.125>1e-4/204774F1old204435assertion;CFconsumers205349F75/205350F75,0acceptedTESTfeature/preds. CPU205696F0 confirms registered76 vscurrent114 inputtokens/P42/exactcachedprefix/ownedindexmetadata andhSHA; oldproducer sharedcodeabsent, shape/inputSHA differenceproven notnumericrootcause. NoGPUresubmit/tolerancerelax. N28inclusiveCPU12341coresec/GPU2952allocationsec (adds20477383GPU/332CPU+callback1CPU); CFconsumers+8CPUtotal298. NextTRAINreadoutTASK+math8b6bc875 static source1508ba matchesed674 receipt: trueprobe+unit136projectedmean/biasfreebranch/eps1e-12, originalStreaminglocalexp exp3positionmatch. Syntheticreport notactualparentparity. New600CPU/64KiBphaseHOLD: same20MiBgroup protectedCFfullreservation leaves1313bytes before providedintake; no newTRAINsampling/mapper/head/fit/VALTESTworker, nootherbudgetborrow/protecteddeletion. Original5340healthyjobsuntouched/globalrealTEST3–5ppgoal remainsunachieved."
+    },
+    {
+      "turn": 20,
+      "type": "decision",
+      "id": "N259",
+      "routing": "direct",
+      "provenance": "user-revised",
+      "summary": "Bounded safeprogress perrelayedhuman, no hardcap expansion. Diskreport homefilesystem1.0T/305Gused/720Gavailable, remotedu skipped; experimentbudget separate. Exact completedCPUgroup plainlogs43files total30808bytes, evendeletingall belowrequired65536; individualgzip netupper17993 beforeformaldependencyexclusion. No log modified/deleted/deduplicated, no protectedsource/checkpoint/preds/raw/H touched, CF3483059bytesreservationunchanged; nextTRAINreadout notsubmitted. Source76 numericproposal prepared fromprior metadata but defaultqsubstagefailed/no acceptedID, no stagecopy/model. Latest relayed originalKVcontract FULLtrajectory corrects premise: LAYOUT original_token_ids/context_tokens76 andh76rows are storedmetadata/outputextent, notproof old actualforward inputlength76. Couldbe retainedprefix of fullforward; oldcompleteinputSHA unknown. Preservedraw205696receipt, explicitsemanticscorrection/withdrawnEXACToverlayanddriverguard(noadmitted/fullinputproof meansstop). No76forward/GPUgate/shape change/tolerancerelax. CPUprovenance205770F0 node22 bounded10code/source/metadata dirs,0candidatefiles, no registeredproducer88ea recovered; failedLAYOUTallkeys/schema verified,hPREblock27,formal16max0 declared but no fullforward length/hash trace. OriginalTASKlocalCetus2paths missing; FULLtrajectory policy fromrelayedverifiedlocalcontract, notpretendfileopenedhere. Registeredsource/currentHF semanticdeclarations notcurrentproducer/frameworkparityproof. Currentbridge.125>1e-4 staysfailed, actualTESTfeatures/preds0,N28stateSOURCE_UNRESOLVED_TRUE_PRODUCER_FORWARD_SHAPE_UNPROVEN, cumulativeGPU2952sec/CPU12341sec unchanged bysubsecondroundedCPUmetadata; originalhealthy5340untouched. No newTRAINfit/attention/graph/joint/API/labels/monitor. EarlierN258 fullforward-shape difference inference iswithdrawn; recordedstoredlist76/currentvisible114 values remainfacts, numericcauseunresolved."
+    },
+    {
+      "turn": 21,
+      "type": "experiment",
+      "id": "N260",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Frozen TRAIN readout complete: 205849F0 exec25 PID3980317 real240Steps/172Q/4358tokens; savedlogit9.5367431640625e-7, FP32vsFP648.726019871119206e-7, contribution1.7763568394002505e-15; independent algebra2.6645352591003757e-15. 205856F0 independent fullTRAIN/reverseorder exactsame selection, zero mapper/head repeat. CPUallocation20sec of600, peak824776KiB,0GPU/backbone/fit/VAL/TEST/API. Storageoverride applied; oldHOLD retained historical. Actualalpha margin2.178110, uniform1.975872, positional1.970858, permuted1.953002 descriptive stratified TRAIN only; later covariance_mean_control not originalC. No native28 retry/76fixture/tolerance change; original5340/Fact protected."
+    },
+    {
+      "turn": 21,
+      "type": "observation",
+      "id": "O18",
+      "routing": "staged",
+      "provenance": "ai-suggested",
+      "summary": "This finite frozen TRAIN sample is compatible with learned alpha/value matching improving label-directed margin relative to fixed controls, especially S1P1; it does not isolate mapper information, establish token factuality, or causally explain earlier VAL false-positive improvements."
+    },
+    {
+      "turn": 22,
+      "type": "decision",
+      "id": "N261",
+      "routing": "direct",
+      "provenance": "user-revised",
+      "summary": "New native16 state-disentangled frozen readout independently ownedCetus: semantic_state vs domain-length matched shuffled-negative control; real TRAIN diagnostic reused, no mapper replays. Exactparent ed674 and registered pooled256→concat392; source/initprobability/fullstate/profile gates before actualfullfit, ownVAL AUROC/AP armselection and ownVALF1max then selectedTESTonce. Conservative fullgroup ledger727+3600+120+60+900+600+30+1100=7137of7200, no otherbudgetborrow, internalstoragecaps revoked only. 205885 acceptedQ workq exec25/1CPU4GiB1100s; currentCPU64/64, canonicalcache local-only; sharedmirror absent. No realSTARTED/profile/fit yet, noGPU/backbone/API/TEST. Pipeline syntax/identity pass; original5340/Fact healthyRuntouched, native28fullinputgate unresolved protected. No claimgoalcomplete."
+    },
+    {
+      "turn": 22,
+      "type": "decision",
+      "id": "N262",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Same-turn placement correction: workq normal Qlist equals exec25 normal; queueenabled/started/no exposed ACLrestriction and ownworkqR below10. Actualexec25CPU64/64,205885Q generic Qlist comment not treated as illegalhost. exec24has1CPU but acceptedcache local25 only. Authorized readonlySSH defaultconfigpermissionsfailed; auto-review rejected escalated retry citing priorSSH failures/PBSrule, no bypass/retry. KeepuniquePBS205885; necessary~82,014,208-byte matrixpayload plusmetadata staged byteexact toshared onlywhen ownPBS starts, exactfilebytes/SHA thenrecord. No internal80MB cap, no mapperduplication/extrajob/GPU or touchinghealthy5340. New Pythoncachemirrorfallback prepared andcodeSHA updated while noSTARTEDreceipt. Still no realprofile/fit."
+    },
+    {
+      "turn": 23,
+      "type": "experiment",
+      "id": "N263",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "205885F0 exec25 PID3988928 completed both native16 frozen state heads. Real source/init parity<=9.54e-7/2.68e-7/1.19e-7; disk nextupdate parameters+Adam exact0, actualepoch.452s throughputPASS. Both6epochs selectedepoch1. SemanticVAL AUC.89734781/AP.48821324/ACC.92032601/F1.50445469; shuffledcontrol .89881867/.49057375/.91637441/.50627005 winsfrozenVALselection. SelectedcontrolTESTonce20033Step/305Q/1558positive AUC.89650636/AP.46037826/ACC.89906654/F1.47288843; vs historicalC +.51734/+1.13323/-.23960/-.37818pp, four+3ppfalse. Threshold.2506466805934906 strict>. SemanticTESTnotrun. FullsavedID/sklearn/F1oracle/domain/S-PindependentPASS; no TESTreplay/backbone/API/GPU/TRAINVALmapperrepeat. Actual34allocatedcoresec of1100,peak4027460KiB; unused1066closed fromnewphaseonly, conservativegroupremaining1129withotherfullreservesretained. Exact83474102byte smallcache SHA-mirroredsharedforreuse; noPC/AutoDLtransfer. Candidatecomplete stopsfollow, original5340/Fact/native28protected. No duplicateAutoDLcausal-scorerelation TRAINanalysis."
+    },
+    {
+      "turn": 24,
+      "type": "experiment",
+      "id": "N264",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Frozen learnedgeometry TRAIN diagnosticcomplete. 205937F1 syntheticexact-zero history under generalfloatingQR rotation masks differ, no realwholegeometry; keptfailedcode/rawsource evidence. Repaired fixture only: degenerateexactsign-permutation rotation and fixednondegenerategeneralQR, samealgorithm/tolerances. Sameentry205952F0exec24PID433505 full59847Steps; exclude914first(127positive), common58933/884Q/4527pos,zero0. Tinyreal52reference6.66e-16; longest2681steps .1424s; profileworst reused, only1fullgeometry. AUROC/APprev .630531/.195854,historymean .828506/.420034,nearest .477528/.104009,random .698665/.226229,absolute .928713/.587407. Preoutcome addendum fulfilledsamejobprivate scalars only:10logitriskbins pairAUCmean .591645 vsabs .642967;200risk×domain×lengthcells .597910 vs .656320. Both ranking/mask/distributions/conditionalpairs independent savedsklearnPASS. Source basis/IDs/layout/order/edges24,84,286 frozen beforegeometry; no signs/layers/threshold selection, no model/mapper/head/fit/VAL/TEST/API/GPU. Failed8+success16=24allocatedcoresec of120, process7.79128sec,peak755588KiB; close onlynewphaseunused96, groupremaining1105 preservingotherfullreserves. Conditionalpredictivegain/graphmotivation notproven; no graphtrainingidentity. Complete diagnosticstopsfollow; original5340/Fact/native28/AutoDL独立scopeprotected."
+    },
+    {
+      "turn": 24,
+      "type": "observation",
+      "id": "O19",
+      "routing": "staged",
+      "provenance": "ai-suggested",
+      "summary": "Frozen learned-space history-mean novelty shows empirical TRAIN marginal and within-risk ordering, with marked domain dependence, but neither weaker marginal ranking than the parent nor nonrandom conditional ranking settles usable incremental predictive information. Cosine edges remain semantically uncertified; this evidence alone does not warrant graph necessity or a GNN fit."
+    },
+    {
+      "turn": 25,
+      "type": "experiment",
+      "id": "N265",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "206026 F0 actual8/120 CPUcoresec, independently accepted immutableREPORT8f167119. Threepool TRAIN/VAL fullpositive denominators, target4310/4654 and1443/1585, TruthfulnessVAL28/94, positivequestions145/223. Optional1000 frozenmodelVALquestionbootstrap complete; no newfit/inference/API/GPU. CSV/Chinese report derived only from savedREPORT; complete stopfollow."
+    },
+    {
+      "turn": 25,
+      "type": "experiment",
+      "id": "N266",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "206026 actual8 CPUcoresec closed, savedcomponent/pair diagnostic independently accepted and stoppedfollow; no replay. New fourarm preparation206046 F124 finite49sec, all3 native16 H files/IDs/labels/offsets/ownership and parent state dimensions verified; current TRAIN/VAL fullhash PASS, TEST fullhash incomplete at fixeddeadline, notPASS. No modelconstruction/forward/fit/GPU; no pooled392 substitution. OwnCPUgroup final953 uncommitted, otherfullreserves preserved. New independent7200GPUsec/28800CPUcoresec envelope proposed only, no grant or GPU submission. Newreview files retain Truthfulness VAL28/94 andpositivequestion145/223 coverage, frozenBN/Q/no newhead/allTRAIN BCE. Original5340 existing jobs preserved."
+    },
+    {
+      "turn": 26,
+      "type": "decision",
+      "id": "N267",
+      "routing": "direct",
+      "provenance": "user-revised",
+      "summary": "Supersede warmedparent fourarm path; allnewdetectorsrandominit, fixednativeH/backbone allowed, no oldtrainedteacher/offset/frozenmapper/init"
+    },
+    {
+      "turn": 26,
+      "type": "experiment",
+      "id": "N268",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Independentgrant7200GPUsec/28800CPUcoresec received exact96977cc0; source206057F0 actual13 CPU completes onlymissingTESTH hash/parentcheckpointshape, priorTRAINVAL/allmetadata successreused. Newacceptance/pairCPUpreflight206069R then human scientificrevision rejects warmedtraineddetectors; preciseqdel→F143 actual51CPU, no acceptance/fit. No GPUentrysubmitted, candidateupdates/VAL/TEST0. SAMEgrant64CPUused/0GPU,28736CPU/7200GPUremaining, prior20604649oldaccountseparate. Allnewdetector diagnostics/methoddesign randominit fromscratch; fixedDS8B/native16H staysreusable, olded674 no newteacher/offset/init/frozenmapper. Preserveallcode/assets/history; oldwarmstartscope superseded, no automaticweaker randommappercontrol/newABC or pauseoverallgoal. Awaitrewritten scientificcontract; original5340/annotation/TopK/faithful_lrm/unrelateduntouched."
+    },
+    {
+      "turn": 27,
+      "type": "experiment",
+      "id": "N269",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Original5340/Fact boundedfollow only. CPU206106F0 snapshot09:46UTC terminal3729/3901/4012 usable3583/3842/3835 full3 3581/3833/3829; independentpartialdomain/dataset/frozenTESTPASS laterDS3582naturalprefix. ExactQHLE205616/205752 andFactG205780 physicalGPUbusy beforemodel proof restoredrecords andallattemptshards SHA/bytesunchanged,0newattempt; registeroneallocationrelocation each, unique206112Q/206115Q/206118Q withfinitecallbacks. CPUrecovery206109F0. SamequeuedDS20558436→31 nowR actual<=64MiB/0util/noPID leasedUUID/nativeBF1673728proof; FactDS20492232→37stillQearlier/riskavoiding same4CPU32GiB6h/dependencies/fullstate. FirstFactplacementprecheckfailednoqalter, refreshedexactoldstate beforeactualmove recorded. Final4genR5GPUs5genQ1annotR; no claimqueued/nativeproofasacceptedcompletion. FactDS710/909 G799/997,800/1000unmet. Unknown9/16/6upper90/160/60CNY separate/exhausted0/7/6/paidpending0prefix; savedusagepeakrepriced andconservativeledgers notinvoice, no successRIDrepay/unknownpermissionexpansion. Alllegalqueue/node/ACL/reservation/arrays/risk/VRAMCPU-RAMcanonicalIO audited; healthy/unrelatedpreserved. Retiredwarmstart0fit/VAL/TEST and64CPUnewgrantspent unchanged, AutoDLOFF/newmethodfits0. Actualcheck2026-10-27T09:56:59.392197+00:00 nextsoleexistingtrigger2026-10-27T10:56:59.392197+00:00."
+    },
+    {
+      "turn": 28,
+      "type": "experiment",
+      "id": "N270",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Relayed human changes learnable search to32layers1..32 x sixAdam configs192, all randominit originalC. CPU206155F0 actual5 source/initialization review: exactbd186C,1049858params,noDropout,correctpostpoolL2,6initSHA992b9645same. Fullnative16 reused,28registeredTRAINVAL,other30notlocatedboundedregistry; TESTonlyselectedlayer. GPUprofile206166Q small_gpuq4CPU16GiB600sec, finiteclosure206168. No actualGPUprofile/fit/candidateVAL/TEST. Samegrant69CPU0GPUspent,28731CPU7200GPUremain before600GPU2400CPU+60CPUreserves. Whole192cost/additionalgrant pendingrealprofile; no newH/partialwinner/oldweights/budgetreset. Original5340/AutoDLOFF/retiredwarmstart preserved."
+    }
+  ],
+  "claims_touched": [],
+  "ai_actions": [
+    {
+      "turn": 4,
+      "action": "PBS readonly saved-label statistics and independent regroup verification",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/original_plus_all_completed_candidates_20261027"
+      ]
+    },
+    {
+      "turn": 5,
+      "action": "One bounded CPU statistics/unique dispatcher, two Q-only samejob moves, native28 current receipt/nextTESTsource metadata; no running science edits",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_0508"
+      ]
+    },
+    {
+      "turn": 6,
+      "action": "Created frozen necessary source/selected-only TEST stage and finite callback, metadata source ownership, bounded resource audits/current coverage report; accepted scientific modules unchanged",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_0618",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/code/native28_selected_test.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/code/advance_selected_test.py"
+      ]
+    },
+    {
+      "turn": 7,
+      "action": "One bounded CPU savedlabel statistics and fullresourceaudit; one refusedsameTESTqueue move; evidencegated DSFact scheduler-only staleowner/queuefallback/timeforecast fixes and sameQ earlier placement",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_0800",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/fact_truthful800_total1000_ds_gemma_20261026/code/advance.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/fact_truthful800_total1000_ds_gemma_20261026/code/launch_round_template_finite.py"
+      ]
+    },
+    {
+      "turn": 8,
+      "action": "Freeze newCPUonlycontract/source/nuisancenorm/1000questionCI/budget, runonePBS204680, source/numeric/fullfourfit/savedpred independentacceptance, captureactualresources/results and immutabledualplatformidentity",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_directional_readout_native16_seed42_20261027"
+      ]
+    },
+    {
+      "turn": 9,
+      "action": "Verified new offset intake and remaining group budget; implemented isolated source-bound CPU4arms and necessary TRAINhead, submitted204727 and accepted savedVAL/nesting/metrics/CI. Refreshed5domain complete labels204718. One fresh combined resource audit; protected existing owners.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_parent_offset_local_native16_seed42_20261027",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/completed_generation_labels_plus_v1_20261027"
+      ]
+    },
+    {
+      "turn": 10,
+      "action": "One bounded combined audit with adaptive recheck only on natural task/resource changes; repaired native28 provenpremodelTFpath/pin mismatch afterCPUgate, uniquecontinuation within ownbudget; sameQpair earlierplacement; accepted pure savedVAL overlapCPU within sameobservationbudget. Preserved allsuccessfulfits/VAL/TESTonce and healthyunrelated. Recordedlatesthumanstandards.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/code/native28_selected_test.pbs",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/code/advance_selected_test.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/configs/SELECTED_TEST_SOURCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_layer_complementarity_val_20261027",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_1000",
+        "${PROJECT_ROOT}/experiments/control/ds_research_test_goal_standard_20261027/DIRECT_HUMAN_RELAY.json"
+      ]
+    },
+    {
+      "turn": 11,
+      "action": "Verified boundedno-duplicate/sourceheader/revision/fullfilepins and separateStageA cap; primaryHARPliterature read. Builtfrozenweight-onlyCPUstream/guards/validation;204849 actualPASS and remote-only205Dtail/top/random artifactreuse registered. No GPU orLLM/data/training/TEST/StageB; protectedcurrentowners unchanged.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_unembedding_subspace_weight_diagnostic_v1_20261027",
+        "${PROJECT_ROOT}/experiments/control/unembedding_weight_spectrum_ownership"
+      ]
+    },
+    {
+      "turn": 12,
+      "action": "RegisteredAutoDLStageBexclusive notice, readonlyallresourceaudit, no oldjobs altered. FrozeCetusdomain-statistics andsameCPUgroupbudget/sourcepin; necessaryoriginal256featuresonly andall5cov/mean/white/bootstrap/confounddiagnostic run204951F0. Registeredremoteonlysourceboundcache; noclassifier/threshold/TEST orGoalcompletion.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_domain_signal_geometry_v1_20261027",
+        "${PROJECT_ROOT}/experiments/control/ds_step_unembedding_subspace_v1_ownership_notice/AUTODL_EXCLUSIVE_20261027.json",
+        "${PROJECT_ROOT}/experiments/control/domain_signal_geometry_v1_ownership"
+      ]
+    },
+    {
+      "turn": 13,
+      "action": "Wrotecompletedgeometryreadonlycontrolmanifest; boundedsource/resourceaudit andsameQGemmarelocation. Executedonlyhumansteeredonecoreminutelengthobservation using savedscores/cachedmetadata, fixedTRAINbins/oldpolicy, accepted3secondCPUresult withinoldgroupbudget; no model orTEST.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_1114",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_strong_parent_length_confound_val_v1_20261027",
+        "${PROJECT_ROOT}/experiments/control/cetus_completed_diagnostic_summaries"
+      ]
+    },
+    {
+      "turn": 14,
+      "action": "CPU saved-label aggregation and independent five-domain additive verification",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/domain_test_rates/20261027T005059Z/FIVE_DOMAIN_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 15,
+      "action": "Source-gated boundedCPU3head train, independent saved prediction validation, conditional noTEST gate and bounded originalsource statistics",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_length_matched_ranking_residual_v1_20261027/reports/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_length_matched_ranking_residual_v1_20261027/reports/INTERPRETATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_1215/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "action": "ExactStageA source/parity/profile, fixednormal transport controls, independentremote validation and finite originalsource audit/twoQhost changes",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_depth_transport_geometry_v1_20261027/reports/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_depth_transport_geometry_v1_20261027/reports/INTERPRETATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_1240/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 17,
+      "action": "Freeze new Cetus parent256 identity and existing-source bindings; deny resource admission pending verified existing goal account, preserve all healthyowners.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_native16_attention_flow_parent256_v1_seed42_20261027/audits/BUDGET_ADMISSION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_native16_attention_flow_parent256_v1_seed42_20261027/reports/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 18,
+      "action": "Apply latest mechanism-first priority and inventory savedscore/model/H/Z assets only, with current hash/absence checks.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/control/ds_streaming_mechanism_assets_20261027/ASSET_INVENTORY.json",
+        "${PROJECT_ROOT}/experiments/control/ds_streaming_mechanism_assets_20261027/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 19,
+      "action": "Bounded savedscores/metadata diagnostic, exactreportlineage and actualfailedTESTresourceaccounting; holdnextTRAINunderprotectedremainingbudget.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/control/ds_saved_score_mechanism_diagnostic_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/reports/TEST_BRIDGE_FAILURE_CPU_REPORT.json",
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_readout_diagnostic_20261027/SOURCE_AND_BUDGET_CHECK.json"
+      ]
+    },
+    {
+      "turn": 20,
+      "action": "Read-only boundedlogcapacity/sourceprovenance audit; withdrawunproven76fixtureandcorrectlive reports beforeanysourceforward.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_structure_guided_improvements_native28_seed42_20261027/audits/BRIDGE_METADATA_SEMANTICS_CORRECTION.json",
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_readout_diagnostic_20261027/SOURCE_AND_BUDGET_CHECK.json"
+      ]
+    },
+    {
+      "turn": 21,
+      "action": "Implement and execute frozen TRAIN diagnostic; independent cache algebra and separate no-model sampling validation under cumulative original600. No scientific claim promotion.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_readout_diagnostic_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_readout_diagnostic_20261027/reports/REPORT_ZH.md",
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_readout_diagnostic_20261027/audits/FINAL_RESOURCE_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 22,
+      "action": "Freeze and implement2arm wholepipeline, reserve1100from complete ownCPUledger, independent savedmetric/F1/twoarm audit, singleCPUqsubaccepted. ActualexecutionblockedbyCPUcapacity; no R/fitclaim.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/code/run_state.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/code/accept_saved.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/code/check_identity.py",
+        "${PROJECT_ROOT}/experiments/control/ds_research_test_goal_standard_20261027/CPU_RESERVATIONS.json"
+      ]
+    },
+    {
+      "turn": 23,
+      "action": "Verify currentrun identity/actualPBS F0/source/gates/full savedpred acceptance without modelreplay; publish complete negative result and close actual34CPUaccount, register exactsharedsmallcache.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/reports/REPORT_ZH.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/ACTIVE_EXPERIMENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_state_disentangled_readout_native16_seed42_20261027/manifests/SHARED_PARENT_CACHE_REUSE.json"
+      ]
+    },
+    {
+      "turn": 24,
+      "action": "Implement strict-history masked geometry and independentreference; repairfaileddegeneratefixture within120; actualfullTRAIN once +preoutcome scalarconditionalanalysis+independent metrics; close24CPUactual and publishreports.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_causal_geometry_diagnostic_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_causal_geometry_diagnostic_20261027/reports/REPORT_ZH.md",
+        "${PROJECT_ROOT}/experiments/control/ds_frozen_train_causal_geometry_diagnostic_20261027/audits/FINAL_RESOURCE_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 25,
+      "action": "Close actual206026; finite newCPU source/architecture preparation; preserve timeout and sourcegap, close49actual; noGPU grant inferred.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/control/ds_step_within_question_representation_adaptation_native16_seed42_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/control/ds_post_context_component_and_pair_feasibility_20261027/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 26,
+      "action": "Independentbudgetledger/sourcehashcompletion; implementbutneverlaunch fourarmGPUentry; cancelpreciseCPUpreflight perlatesthuman, realallocated64CPUclosed andwholegrantpreserved.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/control/ds_step_within_question_representation_adaptation_native16_seed42_20261027/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/control/ds_step_within_question_representation_adaptation_native16_seed42_20261027/configs/SCIENTIFIC_STOP.json",
+        "${PROJECT_ROOT}/experiments/control/ds_step_within_question_representation_adaptation_native16_seed42_20261027/audits/CUMULATIVE_RESOURCE_LEDGER.json"
+      ]
+    },
+    {
+      "turn": 27,
+      "action": "Onecombinedlegalaudit/sourceprefixreconciliation; finiteexact0attemptfailureproofs/uniquereplacements andtwoQ-onlysamenumericalresourcehostmoves; actualphysicalnativeproof/counts/fees/nexttriggerpersisted.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261027_2047/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/ACTIVE_EXPERIMENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/fact_truthful800_total1000_ds_gemma_20261026/ACTIVE_EXPERIMENT.json"
+      ]
+    },
+    {
+      "turn": 28,
+      "action": "Relayed human changes learnable search to32layers1..32 x sixAdam configs192, all randominit originalC. CPU206155F0 actual5 source/initialization review: exactbd186C,1049858params,noDropout,correctpostpoolL2,6initSHA992b9645same. Fullnative16 reused,28registeredTRAINVAL,other30notlocatedboundedregistry; TESTonlyselectedlayer. GPUprofile206166Q small_gpuq4CPU16GiB600sec, finiteclosure206168. No actualGPUprofile/fit/candidateVAL/TEST. Samegrant69CPU0GPUspent,28731CPU7200GPUremain before600GPU2400CPU+60CPUreserves. Whole192cost/additionalgrant pendingrealprofile; no newH/partialwinner/oldweights/budgetreset. Original5340/AutoDLOFF/retiredwarmstart preserved.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_learnable_hparam_val_layer_seed42_20261027/DELIVERY_RECEIPT.json"
+      ]
+    }
+  ],
+  "researcher_directions": [
+    {
+      "turn": 26,
+      "direction": "Relayed latestdirecthuman: 你不应该这样做实验，诊断包括后面的方法设计都应该从头训练，而不是加载训练好的。",
+      "provenance": "user-revised",
+      "source_thread": "01a0797a-ff01-7922-abed-afcee05f40aa"
+    },
+    {
+      "turn": 28,
+      "direction": "Relayed latest human: learnable hyperparameters; 还是要用val选层. Joint192; numericalcap unchanged.",
+      "provenance": "user-revised"
+    }
+  ],
+  "open_threads": [
+    "Originalnative28unique204773Q still needs necessarynativegates/fullfeatures then frozenTESTonce/savedpredacceptance; no fit/VALreplays.",
+    "Original5340/Fact/disabledannotationsunfinished;sourceRpreserved/finitecallbacksactive. DS710/909,G796/994targetsnotmet.",
+    "TEST3-5ppgoalversusstrongCunproven. AutoDLunembeddingStageBexclusive; completedgeometry/lengthdiagnosticsexitfollow. No automaticbiascorrection/domainexperts/PCarraytransfer.",
+    "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_native16_attention_flow_parent256_v1_seed42_20261027 budgetHOLD: existing approved in-scope resource account evidence required; no new feature worker before budget/source/native gates.",
+    "Current correction: native28 actualfailed bridge .125>1e-4; producer completeforward input unknown, no76token replacement. FrozenTRAINdiagnostic nowcomplete, no follow or model replay; original5340/Fact unfinished.",
+    "Current newstate_readout16 unique205885Q onexec25; follow only human/localmessage, no new monitor. Must verify actualsource/profile/fullfit/ownVALfreeze then selectedTESTonce before completion; negative/control results retained.",
+    "Current clarification: state_readout16 complete205885F0; stop its follow, do not repeat semanticTEST/mapper/AutoDLsavedscoreanalysis. GoalfourTEST+3pp unmet; native28fullproducerinput remainsunresolved, original5340/Fact ongoing. Shared83.47MB exactparentpooledcache registered and portable.",
+    "Latestclosure: frozenTRAINcausalgeometrycomplete205952F0 with fixedrisksecondary; stopfollow/no geometry/modelreplay/noGNNidentity. Incrementalpredictivegain unresolved, fourTEST+3ppgoal unmet. Original5340/Fact/native28unresolved continue separately."
+  ],
+  "ai_suggestions_pending": [],
+  "session": {
+    "id": "2026-10-27_001",
+    "date": "2026-10-27",
+    "started": "2026-10-26T13:11:46.890151+00:00",
+    "turn_count": 28,
+    "last_turn": "2026-10-27T10:49:27.273560+00:00",
+    "summary": "Relayed human changes learnable search to32layers1..32 x sixAdam configs192, all randominit originalC. CPU206155F0 actual5 source/initialization review: exactbd186C,1049858params,noDropout,correctpostpoolL2,6initSHA992b9645same. Fullnative16 reused,28registeredTRAINVAL,other30notlocatedboundedregistry; TESTonlyselectedlayer. GPUprofile206166Q small_gpuq4CPU16GiB600sec, finiteclosure206168. No actualGPUprofile/fit/candidateVAL/TEST. Samegrant69CPU0GPUspent,28731CPU7200GPUremain before600GPU2400CPU+60CPUreserves. Whole192cost/additionalgrant pendingrealprofile; no newH/partialwinner/oldweights/budgetreset. Original5340/AutoDLOFF/retiredwarmstart preserved."
+  },
+  "key_context": [
+    {
+      "turn": 21,
+      "excerpt": "Relayed latest direct human storage override removes internal20MiB/64KiB/18KiB restrictions; original600coresec and frozen science remain. Completed diagnostic exits follow; native28 fullpreparedinput source remains unresolved."
+    },
+    {
+      "turn": 22,
+      "excerpt": "Coordinator relays execute new motivated candidate in existing approved goal budget; runtime not yet started. Proposed readout is separate native16identity, notblocked by native28unknownproducer."
+    },
+    {
+      "turn": 22,
+      "excerpt": "Latest steering specifically requested Qlist/ACL and smallcache staging check, not blindly hold host dueold storage cap. Legalcapacity/sourcevisibility block verified; auto-review denial recorded, safePBS alternative retained."
+    },
+    {
+      "turn": 23,
+      "excerpt": "AutoDL independently owns causal_score_relation TRAIN saved-score diagnostic; do not duplicate. CurrentCetus candidatecomplete with matchedcontrolwinning; neither broad3statefailure nor globalTESTgoal achievement follows."
+    },
+    {
+      "turn": 24,
+      "excerpt": "Human/coordinator currentcontract requires realTRAIN only priorfixedgeometry before anygraphfreeze; secondaryriskbin addendum arrivedbefore realgeometry and used same continuation job/scalars, notnewjob. Failure is in supplemental syntheticdegenerate rotation fixture, not a changedactualcosinedefinition/tolerance or unseenrealresult."
+    },
+    {
+      "turn": 25,
+      "excerpt": "Coordinator explicitly PREP-only<=60, source fullH notpooled, no protectedbudget borrowing; original5340 continues. Resourcecap proposal notadmission."
+    },
+    {
+      "turn": 26,
+      "excerpt": "Not overallgoalpause. Independentresourcecap stayssame; spent64CPUcannotreset. Oldfathercheckpointshaperead is historicalsourceaudit not newcandidatefit. Newscientificcontractpending; notautomatic frozenrandommapper orABC."
+    },
+    {
+      "turn": 27,
+      "excerpt": "Coordinatororiginalscopeonlynotnewmethodadmission; latest800Truth/1000Fact supersedesold80percent. Paidinflightnaturaldrain,unknown/exhaustexistingpreciseauthority retained. Sourcewaitingqueue notcompletion, no newmonitor/agent/service/AutoDL."
+    }
+  ]
+}

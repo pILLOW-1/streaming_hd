@@ -1,0 +1,150 @@
+session:
+  id: "2026-09-20_001"
+  date: "2026-09-20"
+  started: "2026-09-20T18:09+10:00"
+  last_turn: "2026-09-20T22:32+10:00"
+  turn_count: 5
+  summary: "HLE and repaired 16-component CPU dry-run passed; reduced CPU manifest retry 92059 is queued and monitored before independent PBS validation."
+
+events_logged:
+  - turn: 1
+    type: decision
+    id: N80
+    routing: direct
+    provenance: user
+    summary: "Freeze and execute the manual-v0.16 eight-generator, 16-dataset build with a 12,800-trajectory pilot and no hidden-state artifacts."
+  - turn: 1
+    type: experiment
+    id: N81
+    routing: direct
+    provenance: ai-executed
+    summary: "Bounded preflight verified both gated-source accesses but hit a platform requirement for direct user approval before broader external reads or PBS actions."
+  - turn: 2
+    type: decision
+    id: N82
+    routing: direct
+    provenance: user
+    summary: "Fix the Nemotron generator to the official BF16 reference checkpoint and reject NVFP4."
+  - turn: 2
+    type: experiment
+    id: N83
+    routing: direct
+    provenance: ai-executed
+    summary: "Platform again rejected the credential-free public metadata probe because authorization was relayed rather than typed directly here."
+  - turn: 3
+    type: decision
+    id: N84
+    routing: direct
+    provenance: user
+    summary: "Directly authorize required public/authenticated Hugging Face operations and PBS status/submission actions."
+  - turn: 3
+    type: experiment
+    id: N85
+    routing: direct
+    provenance: ai-executed
+    summary: "CPU source preflight passed all model identities and 15 datasets, then stopped because HLE data returned authenticated HTTP 403."
+  - turn: 4
+    type: experiment
+    id: N86
+    routing: direct
+    provenance: ai-executed
+    summary: "Authenticated HLE file metadata now passes; queued and monitored an HLE-only full-file/schema/hash retry."
+  - turn: 5
+    type: experiment
+    id: N87
+    routing: direct
+    provenance: ai-executed
+    summary: "Resolved HLE, audited the failed LCB provenance scope, passed all-component recovery dry-run and independent validation, then queued reduced CPU retry 92059."
+
+ai_actions:
+  - turn: 1
+    action: "Froze contract identity, updated live run state, mapped predecessor schemas, logged gated-access evidence, and stopped before any GPU submission."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/OLD_TO_NEW_SCHEMA_MAPPING.md"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "assets/streaming_hd_new/scripts/probe_hf_metadata.py"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-20_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 2
+    action: "Recorded the BF16 identity and relayed authorization, retried only a credential-free bounded public metadata probe, and stopped on the repeated platform denial."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/manifests/AUTHORIZATION_AND_MODEL_IDENTITY.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-20_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 3
+    action: "Resolved immutable model/dataset identities, implemented and submitted CPU-only source preflight job 92000, independently verified synchronized hashes, froze both official Code evaluator identities, and stopped GPU execution on the required HLE access failure."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/scripts/source_preflight.py"
+      - "assets/streaming_hd_new/pbs/source_preflight.pbs"
+      - "assets/streaming_hd_new/audits/SOURCE_PREFLIGHT.json"
+      - "assets/streaming_hd_new/manifests/SOURCE_FILE_HASHES.json"
+      - "assets/streaming_hd_new/manifests/MODEL_IDENTITY.json"
+      - "assets/streaming_hd_new/manifests/DATASET_IDENTITY.json"
+      - "assets/streaming_hd_new/manifests/CODE_EVALUATOR_IDENTITY.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-20_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 4
+    action: "Confirmed restored authenticated HLE access, implemented the HLE-only retry and job-bound audit, submitted CPU job 92011, and registered its exact-ID five-minute monitor."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/scripts/retry_hle_preflight.py"
+      - "assets/streaming_hd_new/pbs/retry_hle_preflight.pbs"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "assets/streaming_hd_new/ops/streaming_hd_new_20260920/hle_retry_monitor.json"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-20_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 5
+    action: "Repaired deterministic LCB provenance; added missing/empty negative tests; repaired BBH/BBEH source-row-stable IDs; passed the 16-component builder and independent validator locally; submitted and registered exact-ID monitoring for CPU retry 92059."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/scripts/build_split_manifests.py"
+      - "assets/streaming_hd_new/scripts/validate_split_manifests.py"
+      - "assets/streaming_hd_new/scripts/test_lcb_provenance.py"
+      - "assets/streaming_hd_new/pbs/build_split_manifests.pbs"
+      - "assets/streaming_hd_new/pbs/validate_split_manifests.pbs"
+      - "assets/streaming_hd_new/audits/LCB_PROVENANCE_FAILURE_AUDIT.json"
+      - "assets/streaming_hd_new/audits/CANONICAL_ID_COLLISION_AUDIT.json"
+      - "assets/streaming_hd_new/dry_runs/recovery_lcb_provenance_20260920"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "assets/streaming_hd_new/ops/streaming_hd_new_20260920/split_manifest_retry_monitor.json"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-20_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+claims_touched: []
+logic_revisions: []
+
+key_context:
+  - turn: 1
+    excerpt: "No model/dataset substitution is allowed; the platform requires direct approval in this task before remaining external preflight and PBS actions."
+  - turn: 3
+    excerpt: "The required HLE data file returned HTTP 403 for the authenticated account; the contract forbids agreement acceptance by the agent or dataset substitution."
+  - turn: 4
+    excerpt: "The user reported HLE access obtained; exact frozen-file metadata now passes, while complete download and schema/hash verification remain pending in job 92011."
+  - turn: 5
+    excerpt: "HLE is now fully validated; repaired panel construction passed all local CPU gates, while PBS retry 92059 and the Code evaluator gate still block GPU work."
+
+open_threads:
+  - "CPU manifest retry 92059 must produce a job-bound PASS audit, followed by the independent CPU validator job."
+  - "Complete both Code evaluator runtime hard gates before any GPU submission."
+
+ai_suggestions_pending: []

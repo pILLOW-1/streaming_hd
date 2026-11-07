@@ -1,0 +1,44 @@
+session:
+  id: "2026-09-13_001"
+  date: "2026-09-13"
+  started: "2026-09-13T21:11+10:00"
+  last_turn: "2026-09-13T21:55+10:00"
+  turn_count: 2
+  summary: "Frozen VAL score separation validated; separate geometry-gated margin experiment authorized and Phase A GPU job queued."
+
+events_logged:
+  - {turn: 1, type: decision, id: N35, routing: direct, provenance: user, summary: "Authorized VAL-only score, AUROC, calibration and trajectory-bootstrap diagnostic on the prior frozen nine-stage population."}
+  - {turn: 1, type: experiment, id: N36, routing: direct, provenance: ai-executed, summary: "Completed nine model-stage groups, three-panel PDF/PNG, 500 complete-trajectory bootstrap draws, and independent raw-VAL validation."}
+  - {turn: 1, type: observation, id: O10, routing: staged, provenance: ai-suggested, summary: "Staged the bounded score-shift and rank-separation interpretation without causal or TEST-threshold claims."}
+  - {turn: 2, type: decision, id: N37, routing: direct, provenance: user, summary: "Authorized frozen VAL geometry diagnosis and only gate-conditional six-arm local margin training."}
+
+ai_actions:
+  - turn: 1
+    action: "Created isolated frozen-source code, reports, tables, figures, audits, identity manifest and state; ran the analysis and independent validator on 57,801 VAL Steps."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_stage_score_separation_20260913/"
+  - turn: 1
+    action: "Recorded N35/N36 and staged O10 with a hash-bound ARA evidence summary."
+    provenance: ai-executed
+    files_changed:
+      - "ara/evidence/tables/step_val_stage_score_separation_20260913.md"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/staging/observations.yaml"
+  - turn: 2
+    action: "Created isolated Phase A code, frozen config, independent validator, PBS script and scheduler audit; passed CPU structure/identity checks; submitted validation job 85792.hpc-head01 to small_gpuq, confirmed queued with exact resources. No Phase A result exists and no TEST access or Phase B fit occurred."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/"
+
+claims_touched: []
+logic_revisions: []
+key_context:
+  - turn: 1
+    excerpt: "Use exactly the independently validated prior VAL population and stage assignment; distinguish score movement, ranking, threshold behaviour and calibration; bootstrap whole trajectories, never Steps."
+  - turn: 2
+    excerpt: "Proceed to normalized-space margin training only if both Qwen and Llama frozen VAL cosine-neighborhood Late-minus-Early rates have positive trajectory-bootstrap lower bounds; otherwise stop."
+open_threads:
+  - "Await known Phase A PBS job 85792.hpc-head01, then independently validate all 57,801 frozen VAL Steps and decide the predeclared Phase B gate."
+ai_suggestions_pending:
+  - "O10 remains staged until an explicit researcher interpretation or other closure signal."

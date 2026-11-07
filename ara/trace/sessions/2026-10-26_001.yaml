@@ -1,0 +1,146 @@
+{
+  "events_logged": [
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N225",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "RecurringDSbusyGPUbeforemodel;180sec allocation-local identity diagnostic installed notyetnativePASS;9unique7830ranges1R8Q;partiallabels2454/2927/2775"
+    },
+    {
+      "turn": 2,
+      "type": "experiment",
+      "id": "N226",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "DSnew00realnativePASS19accepted;Gemma197732nativeRnewacceptedpending;9owners4R5Q;labels2471/2974/2775,partialdomainTESTPASS"
+    },
+    {
+      "turn": 3,
+      "type": "experiment",
+      "id": "N227",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "DSsecondownerrealnativePASS;new7830ranges6R3Q;oldQ4preforwardfailureconcretelyrecovered201380Q;16020IDsfullownershipPASS;labels2566/3045/2898"
+    },
+    {
+      "turn": 4,
+      "type": "experiment",
+      "id": "N228",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "ConfirmedforeignUIDbothGPU180sectimeouts;DS01/02sourcepreservedpairedexclusive201682Q2GPU;9logical8physical6R2Q;labels2642/3122/2974partialTESTPASS"
+    },
+    {
+      "turn": 5,
+      "type": "experiment",
+      "id": "N229",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "OriginalDSround3F0+24→218/397,round4pending179;new9logical8physical5R3Q/pairQ;labels2694/3199/2991;actualpaidRIDshortcutjoinPASS"
+    },
+    {
+      "turn": 6,
+      "type": "experiment",
+      "id": "N230",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "DS originalTruthfulQA239/397 round5 zeroattempt busygate concretely resumed202080R; expanded5R3Q,2747/3261/3010 complete3,partialdomainTEST andpaidRID PASS"
+    },
+    {
+      "turn": 7,
+      "type": "experiment",
+      "id": "N231",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Human Truth800/Fact1000 DS/Gemma scope;failurecausesaudited;DS205nativeR+2newcomplete-disabledlabels/G133Q;archivedTopkvsC exactacceptedcomparison"
+    },
+    {
+      "turn": 8,
+      "type": "experiment",
+      "id": "N232",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Userstatus:7R3Q inclFact,usable2763/3296/3025 andcomplete32762/3288/3022 at23:34UTC;FactDS653/815G735/882,partialdomainTESTPASS"
+    },
+    {
+      "turn": 9,
+      "type": "experiment",
+      "id": "N233",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Saved-label union original+completed candidates: DS3084=1523+1561,Q3610=1975+1635,G3362=1368+1994; five domains afterTruthfulness→Fact, canonicalqid dedup; Step/Prefix/Answer directmicro rates independentlyreaggregated. Missingthreelevels2/10/5 excluded; historicaldirect/effectivePrefixdifference0allthree. Allcandidateexploratorypoolsincluded beyondselected5340; no pairedcomparison orfinalgenerationcompletion."
+    },
+    {
+      "turn": 10,
+      "type": "experiment",
+      "id": "N234",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Fixed16 raw TRAIN/VAL diagnostic CPU203622F0(49s allocation,54sCPU,11.55GiBRSS) andsaved-scoreverification203628F0(5sallocation,3sCPU). Four fixed seed27042/32D TRAIN probes;59847TRAIN/20245VAL/304VALq/1585positive. Unique CPU/GPUrawlock+code/source/outputSHAreceipt; noTEST/newnativefeatures/API. ExactIDs/labels/scalercoefpredictionreconstruction/independent7metrics/F1oracle/1000whole-questionpairedbootstrap/domain×Step-tokenlengthstrataPASS. Mean+shape versusmeancontrol AUROC−0.067pp/AP+0.702pp/F1+0.142pp;nominalAPCI[.015,1.670]pp,F1CIcross0; exploratoryVAL only. OwnfiniteCPU1800coreseconds upper,108allocated/57cputactual; GPU203494Q/profile/formal/TESTnotstarted;oldexec36waitboundinvalidated."
+    },
+    {
+      "turn": 11,
+      "type": "experiment",
+      "id": "N235",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "FreshlegalGPUqueue/node/ACL/reservation/fullarraywalltimeaudit: unique203494verifiedQ andmovedmedexec36→small_gpuqexec03 sameID/4CPU24GiB1GPU6h/callback203495. Earliestnonrisk sufficientslotreleasebound1519sec versusnextmedexec39 18232sec; startnotpromised. Currentriskhosts excluded; nophysicalidle/actualheadVRAMPASSuntilownallocation, no duplicateproducer/fit/features/TEST. CompletedCPUrawcontrols skipped byatomicSHAreceipt. Aggregatecounts/contrasts/fullSHAreceipt saved; no predictions leaveCetus; GPUprofile/formal/TESTpending. No newpoll/service/agent, nexthuman/localmessage."
+    },
+    {
+      "turn": 12,
+      "type": "experiment",
+      "id": "N236",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "203494R small_gpuqexec03/PBSsession3608284. GPU1leased3MiB/0util/noPID thenpoststageidlePASS; TorchsinglevisibleUUID14356470-8983-a3ac-59d5-e27b80be81e2exact. All7realworstTRAIN12813486tokens/VAL25616973tokens finiteactivegrad/diskoptimizerBNscheduler/shuffle4RNGnextupdateexact0PASS;359MiBallocated/656MiBreserved/2.585GiBRSS. Native11.35GBTRAINVALstageSHA124s,no8B/newfeatures/TEST. Firstformalmean_control epoch1update1loss.6759405136grad.2663142979checkpointSHA3bf59cf0b1e2470dacb2be2993324e45cf0e107399a9993f0762116029380f91 verified. Full7×20initialbatchthroughputpure2.882h, planning3–4hconditionalIO/earlystop; frozenmeasuredfiniteupper11.3908GPUh,current6hentryexistingcallback. CPUrawacceptedskip;healthyjobsuntouched. ChildPIDnotverifiedSSHauthdenied, sessionPIDexplicit;no alternateidentity/restart/newpoll."
+    }
+  ],
+  "ai_actions": [],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 6,
+      "excerpt": "Directhuman: 截断的不考虑，只争取边界解析失败的; same-chat reply: 批准两项离线恢复规则. Offline phase only."
+    },
+    {
+      "turn": 8,
+      "excerpt": "Currenthuman asksFactregeneration andQwen/Gemmacandidates status while exactapprovedMATHone-requestcloseout continued. FullMATH149accepted, oldgrouped900/592scopes remainunfinished."
+    },
+    {
+      "turn": 9,
+      "excerpt": "Human: Fact 重生成这一轮结束后对未合格的再做一轮，争取达到80%可用率; then asksQwen/Gemma remaininggeneration/annotationtime."
+    },
+    {
+      "turn": 10,
+      "excerpt": "Immediatepartialcandidatecomparisonrequested to supporthumanfinalselection; no extra generation/statisticsAPI or automaticmanifestfreeze."
+    },
+    {
+      "turn": 12,
+      "excerpt": "旧 TruthfulQA持续尝试，直到恢复80%. Supersedes prioroneextra-roundstop only; fixedoriginal unresolved DS397/G195 targets318/156, exactoldprompts/nativeprofile/parser/Stepsemantics andmax3calls/question/round preserved; independentpermodelstop, onlycumulativenonaccepted re-enter."
+    },
+    {
+      "turn": 7,
+      "excerpt": "Human: 旧truthful DS/Gemma分别至少800；SimpleQA/FACTS失败分别重试，Fact最终分别至少1000。Then asks archivedtopkvsoriginalC comparison while activeexecutioncontinues."
+    }
+  ],
+  "open_threads": [
+    "Completecurrent900nativegeneration/annotation;foreigncheckpoint/isolationheld;finaldomainthreelevelstatisticsrequired",
+    "TruthfulQA offline390 restored structures: later authorized labels/features pending; remaining DS397/Gemma195 ambiguous;56truncatedexcluded. No unchanged-original-parserPASS or newcomplete3levelclaim.",
+    "TruthfulQA592sameprompt max3regeneration twoGPUQ; nativeallocationgates/generation/independentvalidcoverage pending.",
+    "Factround2oneadditionalisolatedround afterfirstcomplete;nativegates/actualGPU/80percentoutcome pending. No unboundedrounds.",
+    "Finish selected5340/model generation/disabled annotation, reconcile originalcanonical Stepfilterlabelreuse, remaining1760PBSadmission/4incomplete/Qfeaturemappinggate and originalTruthfulQA R2 actualacceptance; finite existingcoordinator only.",
+    "Finish newFact Truth800/total1000 family;DS205actualnativeR+2newcomplete3, G133Q;prioruntil80stop superseded, source5340/labels continue."
+  ],
+  "ai_suggestions_pending": [],
+  "session": {
+    "id": "2026-10-26_001",
+    "date": "2026-10-26",
+    "started": "2026-10-25T13:38:33.726850+00:00",
+    "turn_count": 12,
+    "last_turn": "2026-10-26T12:37:10.760735+00:00",
+    "summary": "203494R small_gpuqexec03/PBSsession3608284. GPU1leased3MiB/0util/noPID thenpoststageidlePASS; TorchsinglevisibleUUID14356470-8983-a3ac-59d5-e27b80be81e2exact. All7realworstTRAIN12813486tokens/VAL25616973tokens finiteactivegrad/diskoptimizerBNscheduler/shuffle4RNGnextupdateexact0PASS;359MiBallocated/656MiBreserved/2.585GiBRSS. Native11.35GBTRAINVALstageSHA124s,no8B/newfeatures/TEST. Firstformalmean_control epoch1update1loss.6759405136grad.2663142979checkpointSHA3bf59cf0b1e2470dacb2be2993324e45cf0e107399a9993f0762116029380f91 verified. Full7×20initialbatchthroughputpure2.882h, planning3–4hconditionalIO/earlystop; frozenmeasuredfiniteupper11.3908GPUh,current6hentryexistingcallback. CPUrawacceptedskip;healthyjobsuntouched. ChildPIDnotverifiedSSHauthdenied, sessionPIDexplicit;no alternateidentity/restart/newpoll."
+  }
+}

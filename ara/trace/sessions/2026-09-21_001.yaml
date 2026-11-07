@@ -1,0 +1,422 @@
+session:
+  id: "2026-09-21_001"
+  date: "2026-09-21"
+  started: "2026-09-21T10:51+10:00"
+  last_turn: "2026-09-21T21:36:30+10:00"
+  turn_count: 10
+  summary: "Fourteen GPU pilot jobs remain live with 4,384 durable trajectories; BigCodeBench is formally blocked at 99/100 by its official process guard, and unattended alerts now use the working desktop-task queue transport."
+
+events_logged:
+  - turn: 1
+    type: experiment
+    id: N88
+    routing: direct
+    provenance: ai-executed
+    summary: "Completed and independently hash-validated the 148637-row split manifest and 1600-question pilot selection."
+  - turn: 1
+    type: decision
+    id: N89
+    routing: direct
+    provenance: user
+    summary: "Removed Domain, Dataset and Task-type lines from the model-visible generator prompt while preserving them as metadata."
+  - turn: 1
+    type: experiment
+    id: N90
+    routing: direct
+    provenance: ai-executed
+    summary: "Started the BigCodeBench official CPU gate and retained the full Code gate stop because 13 selected LiveCodeBench official testcase archives are unavailable."
+  - turn: 1
+    type: experiment
+    id: N91
+    routing: direct
+    provenance: ai-executed
+    summary: "Preserved the pre-execution dependency failure of job 92311 and queued same-protocol CPU retry 92321 with exact monitoring."
+  - turn: 1
+    type: experiment
+    id: N92
+    routing: direct
+    provenance: ai-executed
+    summary: "Froze schema-grounded Task-instruction omission/retention rules for all 16 components and validated the conditional renderer."
+  - turn: 2
+    type: decision
+    id: N93
+    routing: direct
+    provenance: user
+    summary: "Removed the LiveCodeBench Pro reference-solution requirement and adopted its official evaluation flow; retained the 13-package coverage blocker."
+  - turn: 3
+    type: experiment
+    id: N94
+    routing: direct
+    provenance: ai-executed
+    summary: "Froze all generator profiles, independently validated 1600 requests, implemented resumable BF16 generation, and submitted six initial model-domain shards."
+  - turn: 3
+    type: dead_end
+    id: N95
+    routing: direct
+    provenance: ai-executed
+    summary: "Diagnosed an active GPU-vnode Qlist mismatch: at least 24 GPUs are idle and parent nodes advertise large_gpuq, but the scheduler sees an empty vnode Qlist; the only free 24GB pair is on the same affected path."
+  - turn: 4
+    type: decision
+    id: N96
+    routing: direct
+    provenance: user-revised
+    summary: "Recovered PBS placement through workq/Qlist=large_gpuq with a post-allocation per-GPU lock and physical-idle gate."
+  - turn: 4
+    type: experiment
+    id: N97
+    routing: direct
+    provenance: ai-executed
+    summary: "Launched all 64 pilot cells; 56 cells run on 17 GPU jobs, 552 trajectories are durable, and eight Ling cells await their frozen runtime."
+  - turn: 4
+    type: dead_end
+    id: N98
+    routing: direct
+    provenance: ai-executed
+    summary: "Preserved first-batch outputs after the vLLM container lacked rsync, replaced batch sync with Python shutil and resumed twelve shards."
+  - turn: 4
+    type: decision
+    id: N99
+    routing: direct
+    provenance: ai-executed
+    summary: "Separated model runtimes: validated vLLM for seven generators and official frozen SGLang for Ling-3.0-tiny."
+  - turn: 5
+    type: dead_end
+    id: N100
+    routing: direct
+    provenance: ai-executed
+    summary: "Diagnosed Ling's default Blackwell CuTeDSL fused-A path rejecting the model's K=1536 projection before server readiness."
+  - turn: 5
+    type: experiment
+    id: N101
+    routing: direct
+    provenance: ai-executed
+    summary: "Repaired Ling startup and Qwen3.5 CPU burst, restored 19 running GPU jobs across all 64 cells, and observed 1010 durable trajectories."
+  - turn: 5
+    type: decision
+    id: N102
+    routing: direct
+    provenance: user
+    summary: "Added bounded automatic recovery for known infrastructure failures, with two retries per logical shard and fail-closed alerts for unknown errors."
+  - turn: 6
+    type: dead_end
+    id: N103
+    routing: direct
+    provenance: ai-executed
+    summary: "Repaired cron's missing PBS command path after false scheduler-query alerts; the next scheduled tick reported zero query errors."
+  - turn: 6
+    type: dead_end
+    id: N104
+    routing: direct
+    provenance: ai-executed
+    summary: "Diagnosed vLLM Gemma-4 heterogeneous 256/512 attention-head weight loading failure before generation."
+  - turn: 6
+    type: experiment
+    id: N105
+    routing: direct
+    provenance: ai-executed
+    summary: "Recovered Gemma through the frozen official SGLang runtime and confirmed both Gemma and Ling replacements emit durable trajectories."
+  - turn: 6
+    type: experiment
+    id: N106
+    routing: direct
+    provenance: ai-executed
+    summary: "The scheduled monitor validated 92414 and automatically recovered NeoHorse-A CPU-burst failure as running 16-CPU job 92560 with exact monitoring."
+  - turn: 7
+    type: dead_end
+    id: N107
+    routing: direct
+    provenance: ai-executed
+    summary: "BigCodeBench job 92321 stopped before question execution because the frozen image also omitted the officially imported transformers dependency."
+  - turn: 7
+    type: dead_end
+    id: N108
+    routing: direct
+    provenance: ai-executed
+    summary: "Immediate retry 92620 acquired resources but stopped before preparation because hpc-exec07 local scratch was full."
+  - turn: 7
+    type: experiment
+    id: N109
+    routing: direct
+    provenance: ai-executed
+    summary: "Pinned the missing dependency, added an evaluator import preflight and started exact-monitored CPU retry 92621 on hpc-exec03."
+  - turn: 7
+    type: dead_end
+    id: N110
+    routing: direct
+    provenance: ai-executed
+    summary: "Per-job dependency installs on 92621 and 92624 exhausted local scratch before any question evaluation, even after durable image staging passed."
+  - turn: 7
+    type: experiment
+    id: N111
+    routing: direct
+    provenance: ai-executed
+    summary: "Durably verified the official image and started shared dependency stage 92626 ahead of exact-monitored official gate 92627."
+  - turn: 8
+    type: dead_end
+    id: N112
+    routing: direct
+    provenance: user-revised
+    summary: "Recorded that background cron detection and recovery cannot itself deliver a proactive Codex chat message after the active turn ends."
+  - turn: 8
+    type: dead_end
+    id: N113
+    routing: direct
+    provenance: ai-executed
+    summary: "Preserved BigCodeBench shared dependency job 92626 failing its import preflight on missing pqdm before question execution."
+  - turn: 8
+    type: dead_end
+    id: N114
+    routing: direct
+    provenance: ai-executed
+    summary: "Preserved first manual replacements 92691-92694 exiting before generation because the stable model cache path was not mounted into Apptainer."
+  - turn: 8
+    type: experiment
+    id: N115
+    routing: direct
+    provenance: ai-executed
+    summary: "Restored four NeoHorse/Qwen3.5 shards as running 24-CPU jobs 92698-92701 with bounded threads, extended download timeouts and mounted persistent caches."
+  - turn: 8
+    type: experiment
+    id: N116
+    routing: direct
+    provenance: ai-executed
+    summary: "BigCodeBench dependency job 92696 passed and released exact-monitored official gate 92697, now running."
+  - turn: 9
+    type: decision
+    id: N117
+    routing: direct
+    provenance: user
+    summary: "Enabled silent-when-normal, event-deduplicated unattended Codex wake-up with retained retry when the task is busy."
+  - turn: 9
+    type: dead_end
+    id: N118
+    routing: direct
+    provenance: ai-executed
+    summary: "Preserved gate 92697 failing after BigCodeBench/363 canonical Pool() saw host-wide CPUs and the validator referenced an unstaged SIF."
+  - turn: 9
+    type: experiment
+    id: N119
+    routing: direct
+    provenance: ai-executed
+    summary: "Started exact-monitored same-protocol repair 92703 with effective Python CPU count constrained to PBS_NCPUS and actual shared-SIF hashing."
+  - turn: 10
+    type: dead_end
+    id: N120
+    routing: direct
+    provenance: ai-executed
+    summary: "Established that the official safe_environment process guard, not host CPU count, prevents BigCodeBench/363 Pool workers from terminating; preserved a formal 99/100 FAIL audit and stopped same-identity retries."
+  - turn: 10
+    type: dead_end
+    id: N121
+    routing: direct
+    provenance: ai-executed
+    summary: "Replaced active-writer-conflicting codex exec resume notification delivery with the accepted desktop-task queue transport."
+  - turn: 10
+    type: experiment
+    id: N122
+    routing: direct
+    provenance: ai-executed
+    summary: "Verified fourteen generation jobs running with no queued/held shard, 4,384 durable trajectories, 3,572 parsed answers and 812 explicit segmentation quarantines."
+
+ai_actions:
+  - turn: 1
+    action: "Reconciled builder and independent-validator completion; froze and validated the revised generator prompt; audited official Code-test coverage; submitted CPU-only BigCodeBench gate 92311; preserved the LiveCodeBench missing-material stop and all-GPU block."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/configs/GENERATOR_USER_PROMPT_TEMPLATE.txt"
+      - "assets/streaming_hd_new/manifests/GENERATOR_PROMPT_IDENTITY.json"
+      - "assets/streaming_hd_new/audits/GENERATOR_PROMPT_REVISION_VALIDATION.json"
+      - "assets/streaming_hd_new/audits/LIVECODEBENCH_TESTCASE_COVERAGE_PREFLIGHT.json"
+      - "assets/streaming_hd_new/manifests/CODE_EVALUATOR_IDENTITY.json"
+      - "assets/streaming_hd_new/scripts/prepare_bigcodebench_gate.py"
+      - "assets/streaming_hd_new/scripts/validate_bigcodebench_gate.py"
+      - "assets/streaming_hd_new/scripts/inspect_component_schemas.py"
+      - "assets/streaming_hd_new/scripts/render_generator_prompt.py"
+      - "assets/streaming_hd_new/pbs/run_bigcodebench_gate.pbs"
+      - "assets/streaming_hd_new/manifests/GENERATOR_PROMPT_COMPONENT_MAPPING.json"
+      - "assets/streaming_hd_new/audits/COMPONENT_PROMPT_SEMANTICS_AUDIT.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 2
+    action: "Recorded the LiveCodeBench Pro official-evaluation amendment, added a superseding policy audit, and reconciled RUN_STATE without modifying the byte-frozen original contract."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/contracts/USER_AMENDMENT_20260921_LIVECODEBENCH_PRO_OFFICIAL_EVAL.md"
+      - "assets/streaming_hd_new/audits/LIVECODEBENCH_OFFICIAL_EVAL_POLICY.json"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 3
+    action: "Built and independently scanned all pilot requests, froze generator identities and profiles, implemented resumable generation and validation, submitted and monitored six BF16 shards, and recorded the scheduler Qlist failure."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/configs/GENERATOR_SYSTEM_PROMPT.txt"
+      - "assets/streaming_hd_new/configs/GENERATOR_PROFILES.json"
+      - "assets/streaming_hd_new/pilot/requests/pilot_requests.jsonl"
+      - "assets/streaming_hd_new/audits/PILOT_REQUEST_SCAN.json"
+      - "assets/streaming_hd_new/audits/PILOT_REQUEST_INDEPENDENT_VALIDATION.json"
+      - "assets/streaming_hd_new/audits/GENERATOR_IDENTITY_AND_PROFILE_AUDIT.json"
+      - "assets/streaming_hd_new/audits/GPU_SCHEDULER_AUDIT_20260921T143013.json"
+      - "assets/streaming_hd_new/audits/GPU_SCHEDULER_AUDIT_CORRECTED_20260921T143549.json"
+      - "assets/streaming_hd_new/scripts/run_pilot_generation.py"
+      - "assets/streaming_hd_new/scripts/validate_generation_shard.py"
+      - "assets/streaming_hd_new/pbs/run_pilot_generation.pbs"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 4
+    action: "Recovered scheduler placement, froze vLLM and initiated official Ling SGLang runtime staging, implemented multi-domain resumable generation and native batch sync, launched the complete model-domain matrix, and registered exact monitors."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/PILOT_LAUNCH_MATRIX_20260921.json"
+      - "assets/streaming_hd_new/configs/GENERATOR_PROFILES.json"
+      - "assets/streaming_hd_new/scripts/run_pilot_generation.py"
+      - "assets/streaming_hd_new/scripts/combine_generation_job_audits.py"
+      - "assets/streaming_hd_new/pbs/run_pilot_generation_multi_domain_vllm0271.pbs"
+      - "assets/streaming_hd_new/pbs/stage_ling_sglang.pbs"
+      - "assets/streaming_hd_new/pbs/run_pilot_generation_ling_sglang.pbs"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+  - turn: 5
+    action: "Diagnosed and repaired Ling fused-kernel startup and Qwen3.5 CPU-burst failures, submitted replacements 92546-92548, registered exact monitors, and installed a tested bounded five-minute auto-recovery supervisor for all 19 logical shards."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/PILOT_LAUNCH_MATRIX_20260921.json"
+      - "assets/streaming_hd_new/pbs/run_pilot_generation_ling_sglang.pbs"
+      - "assets/streaming_hd_new/scripts/pilot_auto_recovery.py"
+      - "assets/streaming_hd_new/ops/pilot_auto_recovery.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+  - turn: 6
+    action: "Repaired the cron PBS path, diagnosed Gemma vLLM incompatibility, submitted and verified SGLang replacements 92556/92557, and verified the scheduled supervisor recovered NeoHorse-A as running job 92560."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/PILOT_LAUNCH_MATRIX_20260921.json"
+      - "assets/streaming_hd_new/pbs/run_pilot_generation_ling_sglang.pbs"
+      - "assets/streaming_hd_new/scripts/pilot_auto_recovery.py"
+      - "assets/streaming_hd_new/ops/pilot_auto_recovery.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+  - turn: 7
+    action: "Audited current generation health, diagnosed two nonblocking BigCodeBench preflight failures, pinned transformers 4.57.1 with a full import preflight, excluded scratch-full hpc-exec07, and started monitored replacement 92621 on hpc-exec03."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pbs/run_bigcodebench_gate.pbs"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/PILOT_LAUNCH_MATRIX_20260921.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+  - turn: 7
+    action: "Promoted the hash-bound official BigCodeBench image to durable runtime storage, replaced per-job scratch dependency installation with a shared pinned dependency stage, and submitted exact-monitored chain 92626/92627."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pbs/stage_bigcodebench_image_from_92321.pbs"
+      - "assets/streaming_hd_new/pbs/stage_bigcodebench_deps.pbs"
+      - "assets/streaming_hd_new/pbs/run_bigcodebench_gate.pbs"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/BIGCODEBENCH_IMAGE_STAGE.json"
+      - "assets/streaming_hd_new/audits/PILOT_LAUNCH_MATRIX_20260921.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 8
+    action: "Diagnosed bounded-monitor alerts, corrected CPU bursts, download timeouts and the container cache mount, submitted and verified generation jobs 92698-92701, completed BigCodeBench dependency stage 92696, started gate 92697, and reconciled durable state."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pbs/run_pilot_generation_multi_domain_vllm0271.pbs"
+      - "assets/streaming_hd_new/pbs/stage_bigcodebench_deps.pbs"
+      - "assets/streaming_hd_new/ops/pilot_auto_recovery.json"
+      - "assets/streaming_hd_new/ops/PILOT_RECOVERY_REQUIRED.json"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/PILOT_LAUNCH_MATRIX_20260921.json"
+      - "assets/streaming_hd_new/audits/BIGCODEBENCH_DEPS_STAGE.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 9
+    action: "Added persistent unattended Codex event delivery with deduplication and busy-task retry, discovered and diagnosed failed BigCodeBench gate 92697, repaired its PBS CPU boundary and validator image path, submitted running replacement 92703, registered exact monitoring and reconciled durable state."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/scripts/pilot_auto_recovery.py"
+      - "assets/streaming_hd_new/pbs/run_bigcodebench_gate.pbs"
+      - "assets/streaming_hd_new/scripts/validate_bigcodebench_gate.py"
+      - "assets/streaming_hd_new/ops/codex_background_notifications.json"
+      - "assets/streaming_hd_new/ops/streaming_hd_new_20260920/bigcodebench_gate_92703_monitor.json"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 10
+    action: "Rechecked live PBS and durable generation progress, diagnosed repair job 92703 to the official process guard, fixed and emitted the formal FAIL audit, repaired unattended notification delivery to use the desktop task queue, and reconciled durable state without changing evaluator identity."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/scripts/pilot_auto_recovery.py"
+      - "assets/streaming_hd_new/scripts/validate_bigcodebench_gate.py"
+      - "assets/streaming_hd_new/audits/BIGCODEBENCH_OFFICIAL_RUNTIME_GATE.json"
+      - "assets/streaming_hd_new/ops/codex_background_notifications.json"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-21_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+claims_touched: []
+logic_revisions: []
+
+key_context:
+  - turn: 1
+    excerpt: "The split-manifest scientific gate passed independently; the full Code evaluator gate did not pass because official LiveCodeBench materials are incomplete."
+  - turn: 2
+    excerpt: "The user explicitly directed that LiveCodeBench Pro follow its official evaluation flow and use no reference solution when none is provided."
+  - turn: 4
+    excerpt: "The user instructed continued execution and priority use of idle GPUs; CPU evaluator preflights remain nonblocking and all eight domains must proceed."
+  - turn: 5
+    excerpt: "The user explicitly requested that the monitoring task promptly solve detected problems; bounded contract-preserving automatic recovery is now active."
+  - turn: 8
+    excerpt: "The researcher explicitly objected that detected failures were not reported; the durable cron monitor cannot proactively inject a message after the interactive assistant turn has ended."
+  - turn: 9
+    excerpt: "The researcher required unattended problem reporting and resolution; a supported headless task-resume transport is now attached to the five-minute monitor, with durable retry while this interactive turn owns the task writer."
+  - turn: 10
+    excerpt: "The researcher asked whether execution is normal; direct inspection showed generation is healthy, but the nonblocking BigCodeBench gate is formally blocked by the official evaluator's own process guard."
+
+open_threads:
+  - "BigCodeBench official local gate is blocked at 99/100 by the frozen safe_environment/Pool incompatibility; any evaluator or runtime-semantics change requires an explicit protocol decision."
+  - "LiveCodeBench Pro still needs official testcase packages for 13 frozen selected questions, or a separate explicit protocol change; reference solutions are no longer required."
+  - "Fourteen running GPU jobs must complete job-bound shard validation; five generation jobs have already passed their job-bound audits, and 812 current trajectories remain explicit segmentation quarantines."
+  - "The bounded recovery supervisor may automatically retry known infrastructure failures twice; actionable events are persisted and queued to this exact desktop task through codex queue."
+
+ai_suggestions_pending: []

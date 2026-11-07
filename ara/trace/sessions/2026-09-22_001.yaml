@@ -1,0 +1,196 @@
+session:
+  id: "2026-09-22_001"
+  date: "2026-09-22"
+  started: "2026-09-22T10:36+10:00"
+  last_turn: "2026-09-22T20:33:52+10:00"
+  turn_count: 7
+  summary: "The transient sample-size stop was corrected before execution; exact v0.19 generation and complete gated A/B Judge coverage are restored under 32 exact monitors."
+
+events_logged:
+  - turn: 1
+    type: experiment
+    id: N123
+    routing: direct
+    provenance: ai-executed
+    summary: "Verified 10 COMPLETE_VALIDATED jobs, eight running jobs, one suspended job and 8,263 durable trajectories."
+  - turn: 1
+    type: decision
+    id: N124
+    routing: direct
+    provenance: ai-executed
+    summary: "Retained resumable 92699 under exact monitoring because every compatible generally assignable GPU is allocated; added distinct PBS-S transition notification."
+  - turn: 2
+    type: pivot
+    id: N125
+    routing: direct
+    provenance: user
+    summary: "Paused all prompt-consuming pilot work until the researcher approves a corrected prompt audit."
+  - turn: 2
+    type: experiment
+    id: N126
+    routing: direct
+    provenance: ai-executed
+    summary: "Verified nine terminal generation jobs, zero live generator/Judge jobs, no cron restart path, durable partial synchronization and a hash-verified audit snapshot."
+  - turn: 3
+    type: experiment
+    id: N127
+    routing: direct
+    provenance: ai-executed
+    summary: "Resolved eight stale recovery alerts as deliberate pause terminations, performed no retry, and recorded the latest zero-resumable-output cleanup state."
+  - turn: 4
+    type: pivot
+    id: N128
+    routing: direct
+    provenance: user
+    summary: "Adopted the hash-bound Pilot-50 v0.17 contract and manual as the only runtime authority."
+  - turn: 4
+    type: experiment
+    id: N129
+    routing: direct
+    provenance: ai-executed
+    summary: "Passed the eight-model static prompt/parser audit in job 93495 and stopped before manifest generation at exact component-membership mismatches."
+  - turn: 5
+    type: pivot
+    id: N130
+    routing: direct
+    provenance: user
+    summary: "Froze v0.18 and the exact hash-ranked 400-per-field SuperGPQA panel."
+  - turn: 5
+    type: experiment
+    id: N131
+    routing: direct
+    provenance: ai-executed
+    summary: "Independently validated SuperGPQA and passed static audit job 93521, then stopped at three remaining component-membership conflicts."
+  - turn: 6
+    type: pivot
+    id: N132
+    routing: direct
+    provenance: user
+    summary: "Adopted v0.19 with exact Omni-MATH, HLE-Text and LegalBench membership resolutions."
+  - turn: 6
+    type: experiment
+    id: N133
+    routing: direct
+    provenance: ai-executed
+    summary: "Passed exact audit and independent 16,695-row/800-question manifest validation and submitted sixteen generation plus eight dependency-held labeling jobs."
+  - turn: 7
+    type: dead_end
+    id: N134
+    routing: direct
+    provenance: ai-executed
+    summary: "Rejected the transient 400-per-component interpretation after it canceled only queued/held jobs before execution."
+  - turn: 7
+    type: experiment
+    id: N135
+    routing: direct
+    provenance: ai-executed
+    summary: "Restored the unchanged 800-request generation matrix, completed A/B Judge scheduling, added the Code-gate hold, and verified 32 exact monitors."
+
+ai_actions:
+  - turn: 1
+    action: "Inspected live PBS and durable outputs, verified five new job-bound PASS completions, diagnosed 92699 as scheduler-suspended by a two-GPU cyber01 job, audited all GPU-node allocations, preserved the resumable job, and extended unattended monitoring to notify on PBS S transitions."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/scripts/pilot_auto_recovery.py"
+      - "assets/streaming_hd_new/ops/pilot_auto_recovery.json"
+      - "assets/streaming_hd_new/ops/codex_background_notifications.json"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/staging/observations.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 2
+    action: "Verified the owner cancellation in exact PBS history, confirmed no live generator/Judge jobs or cron entries, froze prompt/config/request/driver/PBS inputs into a checksum-bound snapshot, recorded durable output counts and updated the run state to block resume pending corrected prompt approval."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "assets/streaming_hd_new/audits/PILOT_PROMPT_AUDIT_PAUSE_20260922.json"
+      - "assets/streaming_hd_new/audits/PILOT_PROMPT_FREEZE_20260922/"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 3
+    action: "Inspected the exact PBS history and generation logs for all eight alerts, verified no live matching jobs or cron restart path, classified the alerts as intentional prompt-audit terminations, suppressed recovery under the pause state, and recorded the concurrent deletion audit without attempting to restore invalid outputs."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/ops/PILOT_RECOVERY_REQUIRED.json"
+      - "assets/streaming_hd_new/ops/pilot_auto_recovery.json"
+      - "assets/streaming_hd_new/audits/PILOT_RECOVERY_ALERT_RESOLUTION_20260922.json"
+      - "assets/streaming_hd_new/logs/EXECUTION.jsonl"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 4
+    action: "Rebuilt the isolated v0.17 prompt/parser configuration, repaired contextual BPE marker-span validation and Gemma tokenizer compatibility, passed the immutable CPU audit, prepared source hashes and an independent future-manifest validator for 14 unambiguous components, and stopped before manifest or GPU submission at the two authoritative membership mismatches."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pilot50_20260922/"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 5
+    action: "Deleted the exact v0.17 blocker and hash-bound audit/preflight artifacts, updated the runtime contract to v0.18, built and independently validated the SuperGPQA allowlist/split/pilot sample, passed static audit job 93521, and wrote a fail-closed audit for the remaining Omni-MATH, HLE and LegalBench membership inconsistencies."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pilot50_20260922/"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+  - turn: 6
+    action: "Recomputed authoritative v0.19 hashes, performed one exact static prompt/parser/Judge/schema audit, rebuilt and independently validated all full and Pilot-50 manifests, materialized 800 requests, audited assignable GPU capacity, submitted sixteen parallel generation and eight dependency-gated non-Code labeling jobs, and registered exact five-minute monitors."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pilot50_20260922/"
+      - "assets/streaming_hd_new/RUN_STATE.json"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+  - turn: 7
+    action: "Verified the v0.19 50-per-component identity, audited that superseded jobs never executed, accepted the exact restored generation and A/B Judge mappings, added user holds to B Judge jobs until official Code evaluator outputs exist, registered 32 exact five-minute monitors, and synchronized the durable run state and launch audit."
+    provenance: ai-executed
+    files_changed:
+      - "assets/streaming_hd_new/pilot50_20260922/PILOT50_RUN_STATE.json"
+      - "assets/streaming_hd_new/pilot50_20260922/audits/JUDGE_DEPENDENCY_AND_DOMAIN_COVERAGE_AUDIT_V019.json"
+      - "assets/streaming_hd_new/pilot50_20260922/audits/PILOT50_RESTORED_LAUNCH_AND_MONITOR_AUDIT_V019.json"
+      - "assets/streaming_hd_new/pilot50_20260922/monitors/"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-22_001.yaml"
+      - "ara/trace/sessions/session_index.yaml"
+      - "ara/trace/pm_reasoning_log.yaml"
+
+claims_touched: []
+logic_revisions: []
+
+key_context:
+  - turn: 1
+    excerpt: "The researcher requested current execution status; direct inspection found substantial validated progress plus one scheduler-suspended Qwen3.5 shard."
+  - turn: 2
+    excerpt: "The researcher required an immediate pause because the prompts may not match the approved annotation manual; no generator or Judge work may resume before a reviewed corrected contract is explicitly approved."
+  - turn: 3
+    excerpt: "An automated monitor reported eight unknown nonzero failures after the pause; exact evidence showed these were the already-known termination wave, while the latest durable state independently records deletion of all invalid generation outputs."
+  - turn: 4
+    excerpt: "The researcher activated the canonical Pilot-50 v0.17 contract; static prompt/parser validation passed, but exact panel membership cannot yet be frozen without inventing source-row selection."
+  - turn: 5
+    excerpt: "The researcher resolved SuperGPQA through a v0.18 hash-ranked 4x400 rule; execution verified it exactly and exposed three other source-membership contradictions that prevent an authoritative full manifest."
+  - turn: 6
+    excerpt: "The researcher supplied v0.19 exact membership resolutions; all static and manifest gates passed and the parallel Pilot-50 execution is now queued under exact monitoring."
+  - turn: 7
+    excerpt: "The researcher corrected that 400 applies only to the SuperGPQA field panel; the authoritative Pilot remains 50 per component, and restored A/B execution now preserves the official Code gate."
+
+open_threads:
+  - "Complete the sixteen queued Pilot-50 generation groups and their job-bound audits."
+  - "Run official Code evaluators on generated Code answers, retaining unavailable official test packages as quarantine rather than resampling."
+  - "Complete all Judge labels and hard-gate validation, write PILOT50_VALIDATION_PASS only on success, then launch the full build."
+
+ai_suggestions_pending: []

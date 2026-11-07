@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "date": "2026-09-09",
+  "feature_weighted_l2": {
+    "experiment_id": "step_feature_weighted_l2_20260909",
+    "scientific_change": "safe final L2 normalization after learned-feature weighted pooling",
+    "completed_fits": 3,
+    "completed_test_inferences": 3,
+    "test_metrics": {
+      "qwen": {"auroc": 0.8936967982575078, "accuracy": 0.8096944361500945, "f1": 0.7488176563321072},
+      "llama": {"auroc": 0.8997667020440415, "accuracy": 0.8237453123753291, "f1": 0.7567984146207201},
+      "deepseek": {"auroc": 0.9422437394628402, "accuracy": 0.9280918913248715, "f1": 0.7089789853534282}
+    },
+    "delta_vs_direct_non_l2": {
+      "qwen": {"auroc": -0.003383583464754536, "accuracy": 0.0010948541853289528, "f1": 0.042719536203725705},
+      "llama": {"auroc": -0.0013751061665377984, "accuracy": 0.001196840341498473, "f1": -0.0010413066336353305},
+      "deepseek": {"auroc": -0.003715961663584788, "accuracy": -0.0009965383405013961, "f1": -0.004458912060730347}
+    },
+    "test_freeze_sha256": "1ec536cb922bce319cc3697dfea0874e8f0f5a5c66ec1f9b44cc5aff7f8de4e3",
+    "final_audit_sha256": "0bd7ef19afd6cf3fbeb580beda7bfb7dee9e5ae60aadfcd99a6ba69100c35190",
+    "report": "experiments/streaming_hd/runs/step_feature_weighted_l2_20260909/reports/test/RESULTS.md",
+    "gpu_seconds": 605,
+    "separate_audit_cpu_core_seconds": 4168
+  },
+  "content_only_no_l2": {
+    "experiment_id": "step_content_only_no_l2_20260909",
+    "scientific_change": "remove final pooled-vector L2 from canonical content_only",
+    "canonical_code_sha256": "9d1352604894d7173e03223c3d8369b57d9325f1a33e61c3626e5f8f64dcee1a",
+    "completed_fits": 3,
+    "completed_test_inferences": 3,
+    "test_metrics": {
+      "qwen": {"auroc": 0.8926395044211662, "accuracy": 0.8053150194087787, "f1": 0.7489088575096278},
+      "llama": {"auroc": 0.8965803293537228, "accuracy": 0.8231867868826298, "f1": 0.7494912955007913},
+      "deepseek": {"auroc": 0.9455550920697929, "accuracy": 0.9263086121892374, "f1": 0.6972635207929325}
+    },
+    "delta_vs_canonical_content_only": {
+      "qwen": {"auroc": 0.004732831449234309, "accuracy": -0.0013934507813277985, "f1": 0.0331594429897214},
+      "llama": {"auroc": 0.006348063811423388, "accuracy": 0.005345886858692972, "f1": 0.00006752204013937835},
+      "deepseek": {"auroc": 0.007998141632572064, "accuracy": 0.003566558271268283, "f1": 0.007173051615570802}
+    },
+    "full_val_test_zero_vectors": 0,
+    "full_val_test_nonfinite_vectors": 0,
+    "max_test_independent_replay_error": 3.2122519133537253e-7,
+    "test_freeze_sha256": "ebf9d268a764b61c021f9fa917cead8729193c5cfe6a1e75763a52c06dd7d250",
+    "final_audit_sha256": "70c5ebcb23980a2d0334d6c107f0476320f0678ea6fb104bd3e82ad07512a11f",
+    "report": "experiments/streaming_hd/runs/step_content_only_no_l2_20260909/reports/RESULTS.md",
+    "gpu_seconds": 875,
+    "separate_audit_cpu_core_seconds": 3
+  },
+  "user_cancellation": {
+    "timestamp": "2026-09-09T20:57:47.455395+10:00",
+    "cancelled_pbs_job_ids": [],
+    "multiseed_completed_artifacts_preserved": true,
+    "qwen_llama_prompt_completed_artifacts_preserved": true,
+    "deepseek_prompt_tested": false,
+    "new_test_access_after_cancellation": false
+  }
+}

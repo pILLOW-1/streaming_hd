@@ -1,0 +1,71 @@
+session:
+  id: "2026-09-08_001"
+  date: "2026-09-08"
+  started: "2026-09-08T21:25"
+  last_turn: "2026-09-08T22:50"
+  turn_count: 1
+  summary: "Completed contextual validation, froze mean_context by the binding validation rule, ran all 12 frozen tests, and independently verified a valid negative 9/9 result."
+
+events_logged:
+  - turn: 1
+    type: decision
+    id: N01
+    routing: direct
+    provenance: user
+    summary: "Bound four candidates, three models, validation-only selection, and one frozen test pass."
+  - turn: 1
+    type: experiment
+    id: N02
+    routing: direct
+    provenance: ai-executed
+    summary: "Nine contextual fits and independent validation completed; mean_context led contextual candidates."
+  - turn: 1
+    type: experiment
+    id: N03
+    routing: direct
+    provenance: ai-executed
+    summary: "Validation-only common ranking frozen with mean_context primary."
+  - turn: 1
+    type: experiment
+    id: N04
+    routing: direct
+    provenance: ai-executed
+    summary: "Twelve test inferences and independent audit passed; primary method was 6/0/3 versus Streaming, not 9/9."
+  - turn: 1
+    type: observation
+    id: O01
+    routing: staged
+    provenance: ai-suggested
+    summary: "Contextual adaptation showed model- and metric-specific held-out deficits."
+
+ai_actions:
+  - turn: 1
+    action: "Implemented contextual pointwise, mean-context, and vector-attention scorers with joint scorer/probe training, profiling, interventions, analysis, and independent validation."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_contextual_scorer_val_20260908"
+  - turn: 1
+    action: "Recovered a post-fit source-allowlist omission without rerunning fits or changing frozen scientific code; preserved the failure and repair audit."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_contextual_scorer_val_20260908/audits/ROOT_RECOVERY_ANALYSIS_20260908.json"
+  - turn: 1
+    action: "Implemented and executed the immutable test boundary, 12 eval-only inferences, nine-method comparison, paired trajectory bootstrap, and independent CPU replay."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_scorer_overnight_frozen_test_20260908"
+      - "experiments/streaming_hd/runs/step_scorer_overnight_20260908/RESULTS.md"
+      - "experiments/streaming_hd/runs/step_scorer_overnight_20260908/comparison.html"
+
+claims_touched: []
+logic_revisions: []
+
+key_context:
+  - turn: 1
+    excerpt: "Scientific specifications and budgets are binding; validation chooses one common candidate before immutable test freeze; test all predeclared candidates once with primary selection retained."
+
+open_threads:
+  - "Researcher interpretation of the frozen negative 9/9 result remains open."
+
+ai_suggestions_pending:
+  - "O01 awaits researcher comment or another closure signal before crystallization."

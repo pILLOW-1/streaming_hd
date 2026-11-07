@@ -1,0 +1,23 @@
+{
+  "status": "PASS_REAL_ASYNC_ADMISSION_EXCEPTION_DRAINS_ACTIVE_BEFORE_CLIENT_CLOSE",
+  "UTC": "2026-10-31T20:16:51.899940+00:00",
+  "code_SHA256": "0230420575f92ae1a1af856f56ede150ae0fc841210fbf6e84845da04b7add84",
+  "isolated_states": {
+    "ACCEPTED": 32,
+    "QUEUED": 1
+  },
+  "completed_fake_HTTP": 32,
+  "real_HTTP_requests": 0,
+  "API_calls": 0,
+  "model_calls": 0,
+  "drain": {
+    "UTC": "2026-10-31T20:16:51.897250+00:00",
+    "PBS_job_id": "fixture",
+    "admitted_tasks": 32,
+    "settlement_errors": [],
+    "actual_http_inflight": 0,
+    "completed": 32,
+    "no_new_admission": true,
+    "no_retries": true
+  }
+}

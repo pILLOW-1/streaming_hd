@@ -1,0 +1,621 @@
+{
+  "session": {
+    "id": "2026-11-06_001",
+    "date": "2026-11-06",
+    "started": "2026-11-06T01:06:04.013576+11:00",
+    "last_turn": "2026-11-06T22:57:10.355492+11:00",
+    "turn_count": 44,
+    "summary": "Streaming model/split recovery and ongoing research"
+  },
+  "events_logged": [
+    {
+      "turn": 3,
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Direct human changed fresh evidence-timing Danus main and consulter to gpt-6-astra/medium; wrote isolated model contract/config. DeepSeek unchanged. Not launched; launcher/security/actual invocation verification pending. Historical canceled runs preserved.",
+      "evidence": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/config/MODELS.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Human clarified relationship modeling for knowledge/design, not mandatory joint modeling. Fresh Astra medium main/consult engine staged, privacy patches and 8 original inputs/5 papers/Opus round14 tentative background frozen. Dummy security272489 passed17 tests/20 code hashes. Actual native qsub rejected by automatic review for missing explicit Opus-private-payload DeepSeek consent; narrow authorization requested, no job/model call launched.",
+      "evidence": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/TASK.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/RUN_STATE.json"
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "pivot",
+      "id": "N12813541",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Natural reasoning problem, observable failure of ignoring relation under justified conditions, added knowledge and falsifier before method or bound"
+    },
+    {
+      "turn": 43,
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "User directs preserve unfinished Qwen Math Prefix TEST dependencies, delete other streaming_hd_features; shared cache cleanup completed, native token identities retained. Recovery273049 plus afterany273054 restore exact deleted teacher rows and22 originally missing selected pools, original layer51 epoch20/threshold and TESTonce unchanged. Four accepted split plans prepared by273064,120 own-VAL fit cells registered,15 unique source producers with node-local bulk/selected caches and finite event dispatch. DS24GB Factuality native OOM preserved, continuation273119 on48GB; no precision/input change. Node audits found no exact missing-middle cache alternatives. Shared transport lifecycle recorded in Cetus runbook. Scientific results still in progress, no false completion.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_split_four_20261106/PREPARED.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_split_four_20261106/cleanup_audit/OTHER_FEATURES_DELETE_COMPLETE.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_qwen_math_prefix_test_recovery_20261106/SUBMISSION.json",
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/training/streaming_split_four_20261106/TASK.md"
+      ]
+    },
+    {
+      "turn": 44,
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Direct human requested shared-storage breakdown and public frozen native inputs. Measured models190.95GiB, experiment runs147.88GiB, home.cache16.43GiB, Conda11.43GiB; filesystem df590Gused435Gavailable is not a personal-directory total. Published278886b69f2f0b6e44fb76f846da98497092d99b: all15697samples/45Parquet files include saved full prompt-plus-reasoning extraction inputIDs through last retainedStep, reasoning_start_token, retainedStep spans, exact model/tokenizer commits and hashes,3causal overrides;40651352inputtokens. Old values/roworder/labels/original622splits unchanged. All51changedfiles pinned-download hash/value readback PASS; three model configs actual datasets.load_dataset/export PASS. Missing PyArrow/datasets validation dependencies fixed in isolated CPU paths; existing remote commit resumed read-only, no duplicate upload/model forward. Versioned source28b196a.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_native_inputs_20261106/reports/STORAGE_REPORT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_native_inputs_20261106/reports/BUILD_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_native_inputs_20261106/reports/INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_native_inputs_20261106/reports/PUBLICATION_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_native_inputs_20261106/reports/DATASETS_LOAD_SMOKE.json"
+      ]
+    },
+    {
+      "turn": 45,
+      "event": "Direct human authorized runs cleanup with previous622/currentfourplan retention and temporary live dependencies; fixed reusable runtime in assets. Actual VAL storage codec gate passed exact arrays and corruption rejection.",
+      "provenance": "human-request and executed evidence",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_split_four_20261106/STORAGE_CODEC_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_split_four_20261106/RUNS_CLEANUP_PLAN.json"
+      ]
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "provenance": "ai-executed",
+      "action": "Bounded three-arm recovery: observed16GiB source CPU OOM; replaced repeated Torch/Gloo CPU readers with finite NumPy socket transfer and closed source mmap explicitly. Actual longest-row byteSHA gates sourceRSS234000/302176KiB under2GiB. Prefix completed20epoch checkpoint/prediction/baseline SHA verified before continuation; Step complete-layer banks/optimizer SHA retained. QwenFact startup-only physical gate safely resumed. DS selectedTEST both legal48/96GB queue options explicit sourceQlist; dispatch before newfits. Actual8R9Q,19/80accepted including11history; no performance conclusion.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/lightweight_transport_recovery_20261106T010603/RECOVERY_SUMMARY.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_gemma_split_622_316_217_20261105",
+        "workspaces/streaming_hd/pipelines/training/streaming_qwen_split_622_316_217_20261105",
+        "workspaces/streaming_hd/pipelines/training/streaming_ds_split_316_217_20261105/cell_dispatch.py",
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105/dispatch_all.py"
+      ]
+    },
+    {
+      "turn": 1,
+      "provenance": "ai-executed",
+      "action": "Later same followup: one queued Qwen Math job using per-call Apptainer source reader ended on2GiB memory/exit timeout despite small-row gate. Replaced source shell with existing native tauq-e01 NumPy, no per-layer source container. Actual CPU gates263196/263197 pass original row SHA and no_source_container at242756/309360KiB. New DS217PrefixMath acceptance263006: AUROC.853053321 AP.921714558 F1.868485574, empiricalTPR1%.188998650, completeTESTmissing0; reported separately from11history. Latest current progress report is authoritative.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/CURRENT_CELL_PROGRESS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/COMPLETED_RESULTS_20261106.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_gemma_split_622_316_217_20261105/pool_reader.sh",
+        "workspaces/streaming_hd/pipelines/training/streaming_qwen_split_622_316_217_20261105/pool_reader.sh"
+      ]
+    },
+    {
+      "turn": 2,
+      "provenance": "ai-executed",
+      "action": "Bounded three-arm continuation: actual current-job failures and stale PBS stderr replay path diagnosed; per-layer remote task launch replaced by one allocation-bound NumPy worker per source and cell.24 consecutive longest-row byteSHA requests reused one PID and fit2GiB (Gemma242780/Qwen327744KiB). Six old-reader incomplete transfers resumed only after complete optimizer/layer/epoch proof; exact cause not invented for runtime-empty143. Occupiedexec21 C/G contexts preserved and only main-GPU placements avoided. Live textual PBS stime parsed; each placement refreshes node assignment. Bounded fair dispatch fills legal capacity, full queues skip huge metadata parsing. Existing Qwen final reused; one Gemma final restored.30/80 accepted at03:26 with11history; latest report remains authoritative, no final scientific conclusion.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/bounded_recovery_20261106T034641/RECOVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/SINGLE_SOURCE_WORKER_BOUNDED_CONTINUATIONS.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105/report_progress.py",
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105/dispatch_all.py"
+      ]
+    },
+    {
+      "turn": 3,
+      "provenance": "ai-executed",
+      "action": "Cached selected TEST separated from genuine native missing rows;32GiB CPU/head-only GPU for cached cases,72GiB CPU/96GB GPU for native cases based measured source peaks. Removed unnecessary selected TEST source CPU chunks without modifying original indices; queued271170 launched after pruning exec11.17 pre-GPU claim failures all onexec13 safely continued and main node quarantined; all foreign processes preserved. One self-introduced shell-file staging manifest error in271265 corrected and resumed before TEST_STARTED. DS20/20,Qwen18/30,Gemma28/30 accepted,11historical. Remaining14 not complete. At bounded check2GPU R+2Q; sourceexec19 exclusive from05:08 wall6h blocks original cached rows; no duplicate extraction or source access bypass. Finite existing terminal callbacks preserved; no polling/monitor created. Final CPU validators restored when own current guards exist.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/LATEST_RECOVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/CURRENT_CELL_PROGRESS.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/PRE_GPU_STARTUP_RECOVERY.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/STAGING_MANIFEST_CORRECTION.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105",
+        "workspaces/streaming_hd/pipelines/training/streaming_qwen_split_622_316_217_20261105",
+        "workspaces/streaming_hd/pipelines/training/streaming_gemma_split_622_316_217_20261105"
+      ]
+    },
+    {
+      "turn": 4,
+      "provenance": "ai-executed",
+      "action": "Bounded three-scope follow-up:75/80 per-cell accepted equals64 new+11 exact historical. DS20 new finalPASS and112-job actual ledger closed. Gemma24new+6historical: fixed missing PYTHONPATH for CPU final; current final271438F0 independently rechecked saved candidates/threshold/metrics, source/data/native/teacher/checkpoint/freeze/prediction paths+hashes and output layout;382-job ledger closed. Qwen20new+5historical accepted; remaining5 all64layer TRAIN/VAL complete, TEST_STARTED absent: Math622/316/217 layer51 epochs20/15/1, Fact622 layer49epoch15, Fact316 layer51epoch1. Sourceexec19 exclusively allocated, realcache cannot be read until legal allocation. Unique zeroGPU CPU gate271435 (10min) plus guard271436 and exact held final271437 arranged; retained guard throughout laterGPU dependency handoff. Optional5.84GiB shared copy withdrawn after df/statvfs0 observation; no bulk duplicate or deletion. Small durable writes continue, no ENOSPC observed; do not infer quota. Only243 genuinely absent selected native arrays remain,1,042,309,120rawbytes.13-node CPU-only nvidia-smi inventory271461F0 preserved foreign processes, no currently both-physical-and-PBS-assignable96GB main; old quarantine13/21 still occupied. Fresh queues/ACL/reservation/releases and measured native GPU/CPU/I/O evidence saved. No accepted inference/fit/TEST replay, new scientific scope/API/AutoDL or periodic monitoring. No performance interpretation promoted.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/bounded_followup_20261106T0647/RECOVERY_AND_DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/bounded_followup_20261106T0647/REPORT_INDEX_SHA256.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/bounded_followup_20261106T0647/PENDING_TEST_AND_STORAGE_EVIDENCE.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_model_split_622_316_217_20261105/bounded_followup_20261106T0647/CAPACITY_AND_COMPLETION_DECISION.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105",
+        "workspaces/streaming_hd/pipelines/training/streaming_qwen_split_622_316_217_20261105",
+        "workspaces/streaming_hd/pipelines/training/streaming_gemma_split_622_316_217_20261105"
+      ]
+    },
+    {
+      "turn": 5,
+      "provenance": "ai-executed",
+      "action": "User requested completed-result report. Fresh08:31Sydney snapshot75/80accepted (64new,11historical); DS20/Gemma30 finalsPASS, Qwen25 with same5source-exclusive TEST waits. Computed equal-weight five-domain macro AUROC/AP/empiricalTPR1%/ACC/F1 from saved accepted metrics only.13 complete model-ratio-level groups reported;3 incomplete Qwen Prefix groups3/5,3/5,4/5 withheld from macro comparison. No inference/training/TEST or scheduler mutation.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/MACRO_中文.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/MACRO_中文.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/CURRENT_CELL_PROGRESS.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105/aggregate_completed.py"
+      ]
+    },
+    {
+      "turn": 6,
+      "provenance": "ai-executed",
+      "action": "At direct human request, appended historical DS6:2:2 to separate90row domain comparison.8existingPASS acceptances verified against actual config/dataset/checkpoint/freeze/TESTprediction SHA; Step5domains and PrefixLogic/Multi-hop/Factuality available. PrefixMath/Science have no acceptance/freeze/predictions and stay explicitly unfinished. Original80cell execution scope and counts unchanged; no paused job resumed or model/feature/TEST replay.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_model_split_622_316_217_20261105/reports/COMPARISON_WITH_DS622_中文.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_model_split_622_316_217_20261105/compare_with_ds622.py"
+      ]
+    },
+    {
+      "turn": 7,
+      "provenance": "ai-executed",
+      "action": "At direct human request, audited saved AUROC/AP for83accepted groups and166selectedVAL/TEST splits using one CPU-onlyPBS271634. All83PASS;20adversarial casesPASS; maximum absolute discrepancy2.220446049250313e-16 against independent tied-pair AUROC, grouped recall-increment AP and sklearn. Verified released labels/IDs, hallucination-positive score direction, frozen artifact identity and percentage exports. No neural inference, TEST replay, scientific selection change or result mutation.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_metric_audit_20261106/reports/AUDIT.json"
+      ],
+      "files_changed": [
+        "workspaces/streaming_hd/pipelines/training/streaming_metric_audit_20261106/TASK.md",
+        "workspaces/streaming_hd/pipelines/training/streaming_metric_audit_20261106/audit.py",
+        "workspaces/streaming_hd/pipelines/training/streaming_metric_audit_20261106/audit.pbs"
+      ]
+    },
+    {
+      "turn": 8,
+      "provenance": "ai-executed",
+      "action": "Direct human requested per-model/domain trajectory-level Prefix state variation, clarified any within-trajectory variation. CPU-only PBS271685 completed Exit0. Counted15697released trajectories across45disjoint split files, source manifestSHA and countsPASS;9814contain both0and1 (62.5215%). No virtual initial state. Saved split/domain summaries and per-trajectory counts. Label variation does not itself establish semantic correction. No scientific artifact changes or model/API calls.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_transitions_20261106/reports/REPORT.json"
+      ]
+    },
+    {
+      "turn": 9,
+      "provenance": "ai-executed",
+      "action": "Direct human authorized finishing four missing622Prefix cells and moving Qwen features to other nodes. Re-audited legal queues/nodes/reservations and preserved foreignexclusiveexec19. Queued unique Qwen622Math271724(mainexec12) and Factuality271726(mainexec10) with actualsource19CPUchunks, SHAverifiedselectedlayerRAMtransport, existingmodelcallbacks271725/271727 and final271437dependencyupdated. Corrected sourcegate271435Qlist declaration. Created isolated DS622Math/Science successor with originalreleasedsplits/frozenStepteacher/officialrecipe; mergedportable/supplement/committedoldrows, no old pausedscope beyond these two cells. CPUreusepreflight271719 onexec37 currently R; submitted GPUowners271728(exec30) and271730(exec31) dependentafterokpreflight, per-cell terminalcallbacks271729/271731. Full32layers ownVALselection and TESTonce validators retained. No claim of completedmigration/training/TEST; all healthyforeignjobs untouched. Scopedcodecommita071717.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_prefix_622_completion_20261106/DISPATCH_RECEIPT.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_qwen_split_622_316_217_20261105/REMOTE_622_TEST_MIGRATION_20261106.json"
+      ]
+    },
+    {
+      "turn": 10,
+      "provenance": "ai-executed",
+      "action": "Direct human requested622TEST trajectory Prefix1->0 prevalence and metrics on all Prefix positions of those trajectories. Recomputed15cells from released labels:1661/3131trajectories=53.0501%. CPUjob271813 stopped at overly strict dataset-directory equality assertion; preserved failure logs, repaired by checking actual config manifest, own fullpredictionID/labels and releasedTEST membership/label equivalence with ID alignment. CPUjob271818 Exit0/PASS;11available accepted Prefix cells evaluated,4pending remain explicit. Independently matched sklearn AUROC/AP/empiricalTPR1% and reproduced fullTEST metrics to1e-12. No new model forward, selection, thresholds, labels or original predictions changed. Descriptive subset does not prove semantic correction.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_recovery_subset_20261106/reports/REPORT.json"
+      ]
+    },
+    {
+      "turn": 11,
+      "provenance": "ai-executed",
+      "action": "Human narrowed repeatedPrefix1->0 analysis to onlyk1/2/3, interpreted as nested at-leastk subsets consistent with previousk1. CPUjob271862 Exit0/PASS. All15released622TEST combinations counted;47available full/subset metric slices independently matched sklearn and completeTEST, prior k1 reproduced. Qwen622Math newly has accepted predictions and is included. DS622Math/Science and Qwen622Factuality predictions pending in snapshot;DSFactualityk3empty, explicitundefined. No neuralforward/thresholdselection/scientificdatachanges; k>3metrics not computed.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_recovery_k123_20261106/reports/REPORT.json"
+      ]
+    },
+    {
+      "turn": 12,
+      "provenance": "ai-executed",
+      "action": "Direct human requested original622 TRAIN/VAL at-leastkPrefix1->0 trajectory proportions againstTEST, explicitlyk1/2/3 before new split design. CPU271923 Exit0/PASS;135model/domain/split/k records across15697validated unique trajectories, frozeninputSHA and45sourcecounts verified; allTESTk123 counts exactly reproduce prior report. Saved numerator/denominator/percent andTESTminusTRAIN/VAL pp. Largest absoluteTESTminusTRAIN8.3593pp (GemmaMathk1), TESTminusVAL9.1727pp (samecell). Original data/splits unchanged; no training/feature/model/API execution or monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_k123_split_compare_20261106/reports/REPORT.json"
+      ]
+    },
+    {
+      "turn": 13,
+      "provenance": "ai-executed",
+      "action": "Human requested candidate repartitions with TRAIN>TEST and similar3levelrates, relaxed rate closeness then TEST requirement to>=70%trajectories having>=2Prefix1->0. CPU271947 Exit0 solved165candidates:140concretefeasible,25proveninsufficienteligiblecapacity. Independentaudits271951/271952 Exit0 verified all140witnesses,135rates in15proposedcells, fullcoverage/no duplicates/family+canonicalquestiondisjoint incl acrossdomains. Proposed12cells622;DSFactuality885/100/15(11eligible,73.33%,maxgap3.33pp),GemmaMulti-hop980/115/58(41eligible,70.69%,maxgap2.84pp),GemmaFactuality700/200/100(70eligible,70%,maxgap3.14pp). All15proposed max3levelcrosssplitgap<=5pp; original15697trajectories retained. Saved candidate assignment manifests separately, originaldata/splits unchanged, no modeltraining/inference/evaluation/API or TEST-performance-based selection. Solver search-band witnesses not claimed globallyoptimal.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_k2_test70_feasibility_20261106/reports/INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_k2_test70_feasibility_20261106/reports/PROPOSED_15_CELLS.json"
+      ]
+    },
+    {
+      "turn": 14,
+      "provenance": "ai-executed",
+      "action": "Human first relaxed three exceptions toTEST50percent then superseded with fixed622and maximumeligiblecoverage. CPU272001+272002 verified50percentfeasibility: onlyGemmaFactuality622feasible;other2capacityinsufficient. SuccessorCPU272006+272008Exit0/PASS:9witnesses independentlychecked, maximumcoveragecertified for3cells at actual3levelrate-range<=5pp. DSFact600/200/200:11eligibleTEST=5.5%,gap3.5978pp;GemmaMulti-hop692/231/230:80eligibleTEST=34.7826%,gap4.7133pp;GemmaFact600/200/200:105eligibleTEST=52.5%,gap4.4499pp. GemmaFactunconstrainedquantity107=53.5%has witnessgap31.7793pp; certified105optimum forrange<=5pp via optimalcount105inweakerpooled+-5ppMILP and actual105witnessgap<=5pp. Combined15cellcandidateindex preserves prior12exactly and replaces only3exceptions; allapprox622, fullcoverage/modelinternalquestion+familydisjoint. Originaldata/splits unchanged; no detectorperformance used, training/feature/model/API calls or monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_k2_622_max_three_cells_20261106/reports/INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_k2_622_max_three_cells_20261106/reports/PROPOSED_ALL_15_CELLS.json"
+      ]
+    },
+    {
+      "turn": 15,
+      "provenance": "ai-executed",
+      "action": "Direct human requested currentproposedall622 model/domain hallucinationrates and>=2Prefix1->0 trajectoryfractions. CPU272016 Exit0/PASS;recomputed45splitrows fromSHA-bound current15cellassignments and verifiedoriginaltrajectorycounts, exactfull15697coverage/family+canonicalIDdisjoint, matchedall savedcandidate3levelrates andTESTeligiblecounts. Reports rates asTRAIN/VAL/TEST, Step/Prefixperposition andAnswerpertrajectory. DSFact andGemmaMulti-hop have0eligibleTRAIN/VAL becauseall11/all80eligibletrajectoriesinTEST;GemmaFacthas1eligibleTRAIN,1VAL,105TEST. No originalsplit/data changes, no training/inference/API ormonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/current_split_domain_rates_20261106/reports/REPORT.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "provenance": "ai-executed",
+      "action": "Direct human authorized StreamingStep/Prefix on current15-cell622plan, all3models, maximumlegalparallelism; clarified bothweights/layers use owncompleteVALAUROC (APsecondary, unresolvedexactties no layer/update preference), then ownVALF1max threshold and selectedTESTonce. Created30uniqueactivefitregistry with finitePBSstage/terminaldispatch and canonicalrowSHAfeature reuse. Initialprepare272071 failed before fits because witnessrecords lacked domain;272075 passed after enriching enclosingmodel/domain without changing sample->split. NativeDSsource272078 stopped at exacttokenidentity duegenericAutoTokenizer versus originalPreTrainedTokenizerFast; fixed class before any new pool saved. In-allocation physicalfailures onexec03 stopped before worker/training/TEST, quarantinednode and preserved retries. MeasuredDSnativepeaks16663932928/16339313664bytes; used24GBcards and measured2CPU32GiB detector/resourceprofiles without precision/truncation changes, preservedhealthyjobs. Human then required DSFactTRAIN/VAL>=1%eligible and GemmaMulti-hop/Fact>=5%-10%; froze5%lowerend forGemma, paused only3oldcells and canceled only unstartedGemmaexceptionproducer272111. CPU272142 produced capacity-upper-bound-matching optimalTESTcoverage:DSFact6/600,2/200,3/200;GemmaMulti-hop35/692,12/231,33/230;GemmaFact30/600,10/200,67/200;actual3levelsplitgaps<=5pp. Independentactivation272190 verified all15family/canonicaldisjointness and12unchangedcells;6revisedfits activated afterprepare272154. Other24fits continue under originalnewplan. Prior12witnesses notclaimed globallyoptimal, nor622ratio optimalamongratios. ObservedDSMulti-hopStep accepted and Prefixtraining;DSnewFactStepteacher accepted and Prefixstarted. Remainingfits/sources queue/dependencyevents; no residentmonitor and no claim alltrainingfinished. Scopedsourcecommit2fe7079.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/PREPARE_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106_floor/reports/INDEPENDENT_SPLIT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_k2_622_trainval_floor_20261106/reports/PROPOSED_ALL_15_CELLS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/CURRENT_OWNERS.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "provenance": "ai-executed",
+      "action": "Direct human requested publishing hidden_states generation script toexistingHFdataset; addedexplicitrequirements promptformatting/hashcalculation/tokencounting. Published actualnativehookengine and BothPoolsclass byte-bound to production plus portableCLI/inputpreparation and threehelpers. V1CPU272248/pass and publish272254/pass commit62928fb6708a0f67c5a451d8e6dd0a001f714e4c;extendedV2CPU272265/pass8checks and publish272266/pass commita545d72e03dc57fc79aa94f09148f43b37692537. All11updated/newpublicfiles downloaded at exactrevision andhashverified;54existingotherremotefiles unchanged, no dataset/label/split change, no weights/nativeinputrecords/privatepaths/credentials uploaded. Explicitnativefamilychatformat, DSPreTrainedTokenizerFast, Qwenenable_thinkingTrue/medium; exactUTF8/defaultseparator sortedJSON/int64LEtoken/array/fileSHA256; prompt/reasoning/Step/prefixanduniqueuniontokens documented andCPUchecked, includingfuturecrossingBPEoverride. NativeAPI/fixedshapecausalgates preserved; portablewrapper notnewGPUend-to-endtested, no newGPUforward for publication. CurrentHF release/delivery pointers and localpublicpayload advanced; liveStreamingtraining left in place. Sourcecommitsd843630/bfbbdee.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_hidden_states_script_20261106_v2/reports/VALIDATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/hf_hidden_states_script_20261106_v2/reports/PUBLICATION_RECEIPT.json",
+        "https://huggingface.co/datasets/pillow-streaming/streaming-hd-v1/commit/a545d72e03dc57fc79aa94f09148f43b37692537"
+      ]
+    },
+    {
+      "turn": 17,
+      "provenance": "ai-executed",
+      "action": "Human asked split experiment progress. Fresh bounded jobs/queues/nodes/reservations audit: current30fits4CPUaccepted (DSMulti-hop Step/Prefix, revisedDSFact Step/Prefix), Math Step atlayer13/32, Logic Stepqueued, Science missing23TRAIN/VALpooltrajectoriesqueued. Qwen3sourcejobsqueued96GB, other2Qwen and5activeGemmasources waitqueueentries; no acceptable96GBGPUimmediatelyfree. Moved unstartedScience272086 fromGPUfull exec52 toassignableexec45 underdispatchlock; verifiedR14:56Sydney. Math272147healthyRexec51. ActualcurrentGPUparallelism2, current4GPUqueued, excludes2historicalold622queuejobs and6retiredfits. Boundedexistingdispatch finished, source/fituniqueness andTESTonce preserved. No residentmonitor ornewtrainingrecipe.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106_ds_floor/622/prefix/reports/deepseek_r1_distill_llama_8b/Factuality/CPU_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 18,
+      "provenance": "ai-executed",
+      "action": "Direct human reiterates maximum legal GPUs, oneGPU per scientific combination and movablecache. Fresh combined allqueues/nodes/reservations/serverlimits audit;28theoretical legalqueuejobslots12small+12med+4large, noextracap. Current30fitregistry reused, no duplicate fit or source. DSScience272280 alreadytrainingexec33 fromfiniteCPUsource45, Math272147healthyexec51 atlayer18. Repositioned queuedDSLogic272145 toexec44 plus1CPUngpus0source47; source47 currentlyfull so genuineCPUcachedependency persists, notclaimedR. Repositioned uniqueunstarted Qwen source27220222->16,27211317->18,27210911->08 basedfreshroute pending/resource/releasepriority; target-local immutablemodelbyteSHAstaging. Qwen/Gemma sourceGPU>=87GB, no legalidle96GBGPU, largequeue4queuedentries includesoldunrelatedpreservedauthorizedQwen622job so furthernewsources awaitentry. Finiteexistingdispatch finished. ActualcurrentGPU2R/4Q; othercells waitmissingTRAINVALpools orownStepteacher. Readiness, precision, fulltrajectorygates andTESTonce unchanged. No residentmonitor orsourceforwardduplicate.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/audits/max_parallel_verified_1793938126807556903.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 19,
+      "provenance": "ai-executed",
+      "action": "Human requested progress. Fresh current30fitstates/acceptances and boundeddispatch livequeues/nodes/reservations audit:4acceptedunchanged (DSMulti-hop and revisedFact Step/Prefix);DSMathStep272147Rexec51 layer20/32, DSLogicStep272145newR15:11exec44 plusCPUsource47, DSScienceStep272280Rexec33 layer6/32. Current3RindependentphysicalGPUs;3QwensourceGPUjobsQ;7othermodeldomains missingnativepools awaitlargequeueentry. ThreeDSremainingPrefixes await ownStepteacher. No legalimmediatelyavailable96GBGPU; advertisedfree96slots exec07/19/13 jobexclusive and15downoffline, notassignable. Preservedallhealthyjobs/scientificgates; no newsubmission, no residentmonitor. AcceptedPrefixCURRENTstage stale TEST_PENDING; authoritative CPU_ACCEPTANCE PASS used.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 20,
+      "provenance": "ai-executed",
+      "action": "Human requests all tasks dispatched and actualoccupiedGPUs eachcombinationpreferone. Boundedexistingdispatch recheckedalllegalqueues/nodes/reservations. 15:17Sydney current30fits4accepted,3DSstepR(Mathlayer23,Logic8,Science9),3ownStepteacherwait,20missingpoolwait. PhysicalALLOCATIONjobIDs andUUIDs verified3distinctGPUs exec51GPU1,exec44GPU1,exec33GPU0, oneGPUeach.3Qwenunique sourcesqueued,7otherQwen/Gemma sourceproducers pendinglargequeueentry; accountlargequeue4queuedentriesfull (includespreservedoldQwen622entry), no96GBGPUimmediatelyassignable. All30registered inexistingfiniteeventdispatch, explicitlynotallPBSsubmitted; no fabricated30GPUs orGPUheldidleforunreadyinputs, no duplicatedcalls ornewmonitor. LocalPBSmanualmaxqueueddescriptionincludesrunning, so priorclaim28theoreticalsimultaneousslots is not asserted;effectiveadmissionremainsPBSenforced.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 21,
+      "provenance": "ai-executed",
+      "action": "Human requests completionASAP. Invoked existing bounded maximumusefulparallelism dispatch withfreshliveaudit; healthyDSMath/Logic/ScienceStep3R preserved. 15:21Sydney progresslayer26/32,15/32,11/32respectively. ThreeQwensourcejobs remainQ awaiting96GBcapacity; no changedscientificrecipe orduplicatedfeatureforward. Existingfinitecallbacks continue teacher->Prefix andtrain->selectedTEST.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 22,
+      "provenance": "ai-executed",
+      "action": "Human asks completedresults. 16:17Sydney authoritativeCPU_ACCEPTANCE inventory8/30PASS:all5DSstep andLogic/Multi-hop/revisedFactPrefix. NewDSMathStep AUROC83.17/AP38.49/TPR1%14.64/ACC87.16/F140.95 selectedlayer17;LogicStep89.81/31.86/19.08/92.26/36.43 layer17;ScienceStep82.96/39.03/13.72/86.52/42.46 layer17;LogicPrefix87.07/73.06/13.30/79.95/66.84 layer18. DSMathPrefixRlayer25epoch20 andSciencePrefixRlayer14epoch20;QwenMathuniqueproducer272202Rexec16 completed18/79 missingrows peak73898243584bytes. GemmaLogicproducerqueued; othermodel fitsremainfeaturedependent. Existingboundeddispatch invokedfreshqueues/nodes/reservationsaudit, no residentmonitor orscientificchange.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106_ds/622/prefix/reports/deepseek_r1_distill_llama_8b/Logic/CPU_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 23,
+      "provenance": "ai-executed",
+      "action": "HumancompletionASAP. Existingboundeddispatch freshaudit submittednewuniqueQwenMulti-hop77missingrows nativeproducer272421largeexec07 (Qatdispatch,notclaimedR).16:25verified4Rindependentfits:DSMathPrefixlayer29/32,SciencePrefix19/32;QwenMathStep272407Rexec45after79/79sourcecomplete;GemmaLogicStep272410Rexec09after64/64sourcecomplete. QwenLogicprevious272113physicalGPUbusyfailurebeforeworker alreadyquarantinedandlegalreplacement272400Qexec11, no duplicateforward. Nohealthyfitinterruption/scientificchanges. Currentaccepted8/30;finitecallbackcontinuationonly.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 24,
+      "provenance": "ai-executed",
+      "action": "Humancompletedresultsrequest.16:35 authoritativeacceptancesstill8/30;no newacceptedTESTscores. DSMathPrefixtrained/frozenlayer21epoch1 TESTjob272430Q;SciencePrefixRlayer27/32;QwenMathStepRlayer39/64;QwenLogicStepalllayerscomplete/frozen55 TESTwaitentry andPrefix272439Q. QwenScienceproducer272428Rexec09. DetectedGemmaLogic272410failedatfinitecachelistenerbeforeanyoptimizer:leafsource_sessionstderrPBS tm_init MOM cannot be contacted17000; noFRESH_STARTEDorcompletedlayerfiles verified andjobF. Preservedfailure, markeduniqueownerREADYunderdispatchlock (safe beforeoptimizer), boundedfreshauditdispatcher submittedreplacement272444small_gpuqexec02, notclaimedrunning. Actualsnapshot3RGPUs. No scientificconfig/epoch/TESTreplay orresidentmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106_gemma/CELL_OWNERS.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 25,
+      "provenance": "ai-executed",
+      "action": "Humancorrects22unfinishedfitsshouldallbeGPUrunning/queued. Acknowledged registration!=PBSsubmission and auditedexact22identitystates. ResearchedinstalledPBSman andofficialOpenPBSarraydocs, butdidnotdeployarrays/helddummyjobsoroverridequeue/ownership/inputgates. Freshguide/examplesread andcompatibleallqueue/node/reservationaudit. SafelymovedunstartedfrozenDSMathPrefixTEST272430frombusyexec32med tofreeexec57small withexistingCPUcache30;verifiedR. ExistingboundeddispatchsubmittednewreadyQwenScienceStep272447Q after74/74nativecomplete. At16:41current22=4fitR+2fitQ+1TESTwaitqueueentry+3teacherwait+12missingpool;separate3sourceQ,3sourcependingentry. Thuscurrentphysical4R andtotal5Qincludes2fit+3source;not22submittedfits. Preservehealthyjobs,alltestfreezesandminimumVRAM,novacuousGPUwaitjobs ornewmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106_ds/CELL_OWNERS.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/DISPATCH_SUMMARY.json"
+      ]
+    },
+    {
+      "turn": 3,
+      "action": "Direct human changed fresh evidence-timing Danus main and consulter to gpt-6-astra/medium; wrote isolated model contract/config. DeepSeek unchanged. Not launched; launcher/security/actual invocation verification pending. Historical canceled runs preserved.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/config/MODELS.json",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/config/models.env",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/AGENTS.md"
+      ]
+    },
+    {
+      "turn": 26,
+      "provenance": "ai-executed",
+      "action": "Human askswhywaitingnotqueued,thenclarifiesPrefixneedsStepbutallStep mustprequeue. ImplementedStep-onlyearlyPBSGPUadmission inparentdispatch andTASK amendment, sourcecommit04b5b3e. SixpreviousunsubmittedStepsnowrealngpus1heldentries:QwenMulti-hop272460,Fact272462;GemmaMath272473,Science272475,Multi-hop272477,Fact272479. Userholds allocate0GPUs andpersist sameentry whileexactmissingpools unavailable. Existingfiniteeventscheckfullcoverage/sourceCPUidentity, qalter/qmovethesameheldentry, publishsourceCPUrankbeforeqrls;originalterminalcallbackreused, no duplicatefit. Prefixteacherdependencyunchanged. Fixedroutesmax_queuedaccountingusingallnonFjobsafterrealPBSsmall6entryrejection;fallbackmedadmitted4Gemmas. Unit-mock lifecyclechecksconfirmed noearlyqrls,uniquejob/callbackreuse,source-rankpublishordering,runningmutationrejection;syntax/diffchecksPASS. ActualPBSacceptance16:48:everyunfinishedStepTRAINhasQorHentry (2Q6H);QwenMathSteptrainingfinishedandTEST272481R;QwenLogicSteptrainingfinishedandTESTstillwaitslargequeueentry. DSall10cellownersCOMPLETE (finalscoresnotyetreportedthisturn). AccountGPU2R7Q6H includespreservedoldjobs, notcurrentfitcount. No scientificchanges orresidentmonitor. BoundreportSTEP_QUEUE_ADMISSION_ACCEPTANCE.json.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/STEP_QUEUE_ADMISSION_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/training/streaming_k2_622_20261106/dispatch.py"
+      ]
+    },
+    {
+      "turn": 27,
+      "provenance": "ai-executed",
+      "action": "Humancompletedresultsrequest.16:55authoritative11/30PASS:DSall10completeandQwenMathStep. NewDSMathPrefixlayer21AUROC82.28/AP91.08/TPR1%13.76/ACC79.53/F186.68;DSSciencePrefixlayer17 86.28/94.68/14.36/84.84/90.90;QwenMathSteplayer51 78.52/20.95/9.14/88.16/28.61. CurrentQwenScienceStepRlayer31/64;QwenLogicStepandPrefixtrained/frozen butselectedTESTwaitlargequeueentry;MathPrefixwaitsourceCPUallocation,notclaimedrunning.6StepinputsremainrealheldPBSentries,prefixdependenciesintact. Existingboundeddispatchfreshqueues/nodes/reservationsauditfinished,no newsubmission thisboundedcheck. ActualGPU1Rexec58;notall19pendingrunning. SavedaggregateacceptedreportsfromimmutableleafCPUacceptances,noreplayedmodelorTEST.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/CURRENT_ACCEPTED_RESULTS.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "action": "Human clarified relationship modeling for knowledge/design, not mandatory joint modeling. Fresh Astra medium main/consult engine staged, privacy patches and 8 original inputs/5 papers/Opus round14 tentative background frozen. Dummy security272489 passed17 tests/20 code hashes. Actual native qsub rejected by automatic review for missing explicit Opus-private-payload DeepSeek consent; narrow authorization requested, no job/model call launched.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/TASK.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/RUN_STATE.json"
+      ]
+    },
+    {
+      "turn": 28,
+      "provenance": "ai-executed",
+      "action": "HumanrequestsnewDSsplitvspriorAUROC/AP,thenaddsACC/F1. Usedpreviousreportedconventional622 source bindings inCOMPARISON_WITH_DS622_中文.json, verifiedall8availableoldacceptanceSHA, comparedfullprecisionwithcurrent10DSacceptances. OldMath/SciencePrefixnotaccepted soleftmissing. Step5domainmacrodeltaAUROC-3.69/AP-7.47/ACC-2.51/F1-6.28pp;Prefix3comparableLogic/Multi-hop/Factmacro-6.95/-7.09/-4.66/-7.18pp. FactlargestdropsStepAUROC-12.63/AP-16.47/ACC-13.40/F1-12.21,Prefix-13.67/-7.35/-8.76/-9.51pp. FoundbaselinefreshStepCONFIG explicitlyVAL_APprimary andselectedMath15vsbestAUROC17,Logic16vsbestAUROC17,Multi-hop15vsbestAUROC17;currentStepVAL_AUROCprimary. Explicitlydisclosedcomparisonincludesselectioncriterionchanges,notcausalsplit-onlyclaim. OldPrefixAUROCprimaryconfirmed butbaselinehasoldtiepoliciesandteachers;unchangedhistoricalassets,nomodelorTESTreplay. SavedDS_VS_PREVIOUS_622.jsonwithsourcepaths/limitations.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/DS_VS_PREVIOUS_622.json",
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/training/streaming_step_fresh_val_ap_onepass_622_20261105/CONFIG.json"
+      ]
+    },
+    {
+      "turn": 5,
+      "action": "Direct human authorized enumerated source/Opus payload and Astra/official DeepSeek recipients. Native272493 running hpc-exec24, smallq1cpu4gb0gpu6h; requested Astra medium verified in main receipt and started consulter ledger. Real initial consultation includes exact latest correction: relationship research for new knowledge/design, not mandatory joint modeling. Public input inspected and high-level coordinator feedback delivered. First reply still pending at audit; no theory result claimed.",
+      "provenance": "ai-executed",
+      "evidence": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/logs/native-main-request.json",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/CONSULTATION_INPUT.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/control_inbox/001_high_level_review.md"
+      ]
+    },
+    {
+      "turn": 29,
+      "provenance": "ai-executed",
+      "action": "Human asksoptimalalternative ratiosbeyond622. ReadcurrentfrozenfloorMILP andSOURCE_METADATA, computedarithmeticcapacityupperboundssixcommonratios622/712/811/721/613/514 for3bottleneckcells, noassignment/fit changes.721TRAIN70VAL20TEST10 preservesVAL20; upperDSFact2%,GemmaMulti-hop27/11523.48%,GemmaFact62%;811upper2%,27/11623.28%,62%;622actualcertified1.5%,14.35%,33.5%.712hasessentiallysame20%TESTbottleneckcaps1.5%,14.29%,33.5%. NoalternateMILPfeasibilityorlabel-gap certification performed, so onlycandidate notglobaloptimumclaimed. RatiooptimizationneedsminimumTESTsize/objective,otherwisecan inflatefractionvia tinyTEST. DSFactonly11/1000eligible plus1%TRAINVALfloor fundamentallylimitscommonratio. Recommend721candidateconditionallyif~100TEST/domain acceptable, no performancepromise and no currenttraininginterruption.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/ALTERNATIVE_RATIO_CAPACITY_BOUNDS.json"
+      ]
+    },
+    {
+      "turn": 6,
+      "action": "Human follow-up: prepared same-thread272493 continuation, retained original F1/schema failure, compatible separate checkpoint validator accepts evidence_links. New native entry only protected-code change;17tests/20hashes passed in272563. Submitted272565 smallq1cpu4GBexec24; actual resume request confirms original thread Astra medium, DeepSeek unchanged. New discriminating feedback002 pending public ACK; no candidate pass/new result claimed.",
+      "provenance": "ai-executed",
+      "evidence": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/FOLLOWUP_RESUME_01_RECEIPT.json",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/logs/native-main-resume-01-request.json"
+      ]
+    },
+    {
+      "turn": 7,
+      "action": "Human requested follow until normal Danus output. Verified same-session feedback002 ACK, public comparison03 and independent main test; real Astra consultation03 completed and reply read in full. Candidate cue cumulative quantity exceeds stated bound gives conditional evidence-role distinction, explicitly not new contribution or performance gain. Retrieved/read requested Caruana1997 §§3.1–3.2 and Hewitt/Liang2019 §§1–3 originals, delivered two SHA-bound PDFs and short page-located source summaries to inbox003; actual uptake pending. No tests/training/replay/labels or fact acceptance.",
+      "provenance": "ai-executed",
+      "evidence": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/CONSULTATION_03.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/NORMAL_OUTPUT_CHECK_03.json"
+      ]
+    },
+    {
+      "turn": 30,
+      "provenance": "ai-executed",
+      "action": "Humanrequestsbestpartitionpermodel/domain. Frozeprimary maximizeTEST whileTEST>=baseline, exactcurrentTESTk2fractionretained, VAL>=currentcount, TRAIN>TEST, full15697coverage/modelinternalsample/group/family/canonicaldisjoint, actual3levelraterange<=5pp, bothclasses.3existingfractionfloorsretainedDSFact1%/GemmaMulti-hopFact5%. No detectorperformance used orcurrenttrainingchange. CPU272578+validator272579constructed13capacity-upper-boundmatches;hardQwenFact329feasiblebutinitialoptlimit,GemmaLogicinitialfallbackbaseline. Recordedfailures/solverlimits. AddedlogicalAnswerintegerupperbounds329/346;CPU272588 necessaryconvexweighted-rate tangents tightenedGemmaLogicupper345,solver0;CPU272598 constructedactual345witness;CPU272603 independentlyreraw-labelcheckedall15697andprovedlargerGemmaLogicTESTinfeasible viaindependentnecessaryMILP;15V1primaryoptimaPASS. DetectednewzeroTRAINVALDSMulti-hopandVALQwenFact; explicitlycommunicatedgeneralatleast1k2trajectoryperTRAINVAL topreservemultisplittemporalcoverage,3fractionfloorsunchanged. IsolatedNONZEROsuccessorCPU272608Exit0 reused13validatedoptima andonlyre-solvedDSMulti-hop334(from337)andQwenFact329withnonzeroVAL. Finalindependent15/15PASS; allTESTk2fractions>=baseline,VALnotshrunk, TRAIN>TEST, pairwiserategapmax4.9689441pp, no originaldataset/HF/currentfitsactivated. TESTtotal3137->5388,+2251(+71.7565%). DScountsMath412/206/410,Logic401/200/399,Science424/212/423,Multi584/230/334,Fact600/200/200;QwenMath401/200/399,Logic401/200/399,Science436/218/434,Multi464/232/463,Fact483/203/329;GemmaMath401/200/399,Logic455/200/345,Science419/210/418,Multi680/237/236,Fact600/200/200. “Optimal”meansgloballymaximumTESTsizeunderthefrozenconstraints;globalassignment-movementoptimum/performanceimprovementnotasserted. Meaningfulexhaustive8rowtoyrate-linearizationgate,syntax/PBSchecksandraw-label/identity/hashindependentacceptancePASS. ReadonlySSHtoallocatednodefailedpublickey;noscopebypassattempt. Sourcecommitsf2728e7and3a799c4;noGPU/API/modelcall orresidentmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_per_cell_max_test_nonzero_20261106/reports/FINAL_INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/prefix_per_cell_max_test_nonzero_20261106/reports/SUMMARY_中文.md",
+        "${PROJECT_ROOT}/state/streaming_hd/prefix_per_cell_max_test_nonzero_20261106/CANDIDATE_READY.json"
+      ]
+    },
+    {
+      "turn": 31,
+      "provenance": "ai-executed",
+      "action": "Bounded current30 follow-up: independently read16 PASS acceptances, DS10 Qwen3 Gemma3. Reused unique dispatcher under lock, created Qwen Math Prefix selectedTEST272799 from frozen64-layer1280candidateVALselection; Science Prefix frozen but exclusive source07 and account admission block newTEST. No acceptedfit replay. Fresh full queues/nodes/ACL/reservations/releases snapshot. Same queued Gemma Logic Prefix272519 safely userheld/retargeted34->54 med->small with full sourceCPU ranks preserved, and QwenFactsource272109 retarget08->05 for shorter supported release wait; same IDs/callbacks, no healthyjob touched. ActualGPU0, fiveStepuserheld await exactpools, native3Gemma producers remain WAIT_QUEUE_ENTRY. NewpercellmaxTEST candidates not activated. No reliable whole-runETA.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/BOUNDED_FOLLOWUP_20261106T192649.json",
+        "${PROJECT_ROOT}/state/streaming_hd/streaming_k2_622_20261106/audits/bounded_final_20261106T192649.json"
+      ]
+    },
+    {
+      "turn": 32,
+      "provenance": "ai-executed",
+      "action": "Humanrequestsaccelerate. Boundeduniqueexistingdispatcher/freshallqueue-node-reservationaudit. Accepted20/30(DS10Qwen6Gemma4),4newPASS QwenSciencePrefix,FactStepPrefix,GemmaLogicPrefix. QwenFact55/55 andGemmaScience66/66nativepoolscomplete; GemmaScienceStep272475runningrealGPU05 andexactsourceCPU11/16. Existing4largeentriesconstrain3pendingGemmaandselectedTEST. Freshcandidate10lostslotbeforemutation;preserved. Safelyheld/retargeteduniqueQwenMulti-hopsource272421frombusy07toassignable23, sameID/callback/sourcecontract, allocationphysicalgateunchanged. Noacceptedfitreplay ornewsplitactivation;whole-runETAunknown.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/BOUNDED_ACCELERATION_20261106T2004.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/streaming_k2_622_20261106/reports/CURRENT_ACCEPTED_RESULTS.json"
+      ]
+    },
+    {
+      "turn": 33,
+      "provenance": "ai-executed",
+      "action": "Five newly supplied originals and primary bound/DRO/parity sources reviewed with existing native Danus session. Actual Astra consultation08 supports conditional composition-risk development, not final acceptance. Root independently read complete proof09-11 and identified loose lower envelope, confidence/Chernoff constants, cue-case and causal-history defects; coordinator022-029 delivered. Native official DeepSeek revision12 started09:03:49UTC. No accepted fact, verifier pass, final PDF, empirical gain, training/replay/TEST/data change. Human status query answered. Goal tool currently paused; no status mutation or native-job cancellation.",
+      "evidence": [
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/CONSULTATION_08.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/MAIN_PROOF_AUDIT_09.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/MAIN_PROOF_AUDIT_10.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/MAIN_PROOF_AUDIT_11.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/artifacts/RENEWED_COMPARISON_11.md",
+        "${PROJECT_ROOT}/theory/native_runs/evidence_timing_discovery_20261106/control_inbox/029_proof11_exact_audit.md"
+      ]
+    },
+    {
+      "turn": 34,
+      "provenance": "ai-executed",
+      "action": "Explicitrelayedhuman514analysisauthorization. Isolated fixedHamilton50/10/40 all15sourcecells, TESTcaptures>=ceil(M/2), maximizeTESTk2count, retainsourcecoverage/bothclasses/actual3levelmaxgap<=5pp/allidentityisolation/floorsDSFact1%GemmaMultiFact5%otherTRAINVAL>=1. No detectorperformanceornew30/10M rule. Versionedfd8fdf0+d8a73d8; initialCPU272920failedintegritystagebeforemodels/solverTASK.mdnotcopied, repairedandpreserved. CPU2729264cores16GiB11secondsExit0;14independentlyverifiedglobaloptimalwitnessesmatchingrebuiltnecessaryAnswer/countbound, DSFactproveninfeasibleM11 requiredTrain5+Val1+Test6=12, existingmax5capture45.45%. Independentlyrecomputed45rawsourcefiles15697labels/transitions, allsample/group/family/canonicaldisjointwithinmodel, sourcecoverageandallthreeactualrate-gaps<=5pp. Exactratelinearizationtoy1680assignmentsincluding2feasiblePASS. Reports15aggregateCSVJSONplusreadableChinese; localassignmentassetsretained, no rawtexttransferred. CurrentStreamingjobs/splits/HFuntouched.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_514_k2_capture50_20261106/reports/INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_514_k2_capture50_20261106/reports/SUMMARY.csv",
+        "${PROJECT_ROOT}/state/streaming_hd/split_514_k2_capture50_20261106/FINAL_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 35,
+      "provenance": "ai-executed",
+      "action": "DirecthumanallowsDSFactrelaxationandrequestsall514splitlevelratesandbothproportions. CommunicatedminimumTRAINfloor5->4(0.8%),VAL>=1unchanged. Isolatedsuccessor4cbddb1CPU272929Exit0/9sec, onlyDSFactresolved;predecessor14assignmentsreusedunmodified. DSFact500/100/400counts,k2=4/1/6,p=.8/1/1.5%,c=36.36/9.09/54.55%;globalupper6matched. All15independentlyvalidatedoptimal, raw15697/source45hash/familyisolation/sourcecoverage/rate<=5ppgatesPASS;preserved14oldsourceprovenance. Created45rowsCSVJSONwithallthreelevelpositive/valid/ratesandper-splitp,c,readable15rowtables. Noactivation/training/GPU/APIororiginaldatachange.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_514_k2_capture50_ds_fact_relaxed_20261106/reports/ALL_SPLITS_RATES_AND_PROPORTIONS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_514_k2_capture50_ds_fact_relaxed_20261106/reports/SUMMARY_中文.md",
+        "${PROJECT_ROOT}/state/streaming_hd/split_514_k2_capture50_ds_fact_relaxed_20261106/FINAL_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 36,
+      "provenance": "ai-executed",
+      "action": "HumanaskskeepTESTp,c>=50whileTRAINVALnotlow. Count-only exact514bounds from acceptedsource: minimumTESTeligible=max(ceil(TEST/2),ceil(M/2)). DSFactM11TEST400, GemmaMultiM80TEST461, GemmaFactM107TEST400 impossibleevenwithoutTRAINVALfloors (all-TESTp2.75/17.35/26.75%). DSMultiTESTneeds230/240left10/689TRAINVALp<=1.451%,c<=4.167%;QwenFactneeds203/239left36/609p<=5.911%,c<=15.063%. Remaining10cells countroomonly,nogatefeasibilityclaim. RecommendreplacepreviousmaximizeTESTobjectivewithminimumnecessaryTESTallocationthenbalanceTRAINVAL,adaptiveexceptioncells requirelowerTESTp orsmallerTEST;no arbitrary30/10Mflooradopted. No partitionoptimization/model/GPU/PBSchanges.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_514_k2_capture50_ds_fact_relaxed_20261106/reports/P50_C50_TRAIN_VAL_COUNT_BOUNDARIES.json"
+      ]
+    },
+    {
+      "turn": 37,
+      "provenance": "ai-executed",
+      "action": "Humanrequestswhich4candidatepartitionsworthtrying:622TESTp80,622p90,613p70,514p70. ExactHamiltoncountscreenon15acceptedsourcecellswithoriginalnonzero/fractionfloors yields12/15,12/15,11/15,9/15 respectively;necessaryonly,norate-balancedassignmentfeasibilityclaim. Approxwhole-Neligibleconsumption16%,18%,21%,28%. All4failDSFact/GemmaFact/GemmaMulti;613alsoDSMulti;514alsoDSMulti,QwenFact,GemmaLogic(lastwouldleavezeroTRAINVAL). Recommendation622p80primary,622p90matched-ratioenrichmentcomparison;613p70largerTESTsecondary;514p70lowerprioritydueTRAINVALsupportandcandidatecoverage. No newsolver/config/split/trainingexecutionadopted.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_514_k2_capture50_ds_fact_relaxed_20261106/reports/INDEPENDENT_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 38,
+      "action": "Preserved predecessor272565 F1 native9900s timeout. Submitted same-session resume272938; actual R on hpc-exec24 CPU1 RAM4GB, protected20 hashes and smoke passed. Request confirms original UUID and Astra medium. Native public ACK030 actually read/accepted human correction; M finalization superseded. Problem card15 and actual consult09 remain pending at this check. No new training/TEST or scientific success claim.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "theory/native_runs/evidence_timing_discovery_20261106/control_inbox/030_DIRECT_HUMAN_SCIENTIFIC_REDIRECTION.md",
+        "theory/native_runs/evidence_timing_discovery_20261106/control_inbox/main_resume_01.md",
+        "theory/native_runs/evidence_timing_discovery_20261106/control_inbox/RESUME_MAIN_01.json",
+        "theory/native_runs/evidence_timing_discovery_20261106/code/resume_02.pbs",
+        "theory/native_runs/evidence_timing_discovery_20261106/artifacts/RESUME02_PRESERVATION.json"
+      ]
+    },
+    {
+      "turn": 39,
+      "provenance": "ai-executed",
+      "action": "Directhumanasksconstruct622TESTp80/p90,relaxunattainable,andreportallsplits. Communicatedc report-only20%TESTprecludes50%captureinhighMcells;preserveTRAINVALsupportratherthanmaximizeTEST. Versioned4a64a4b,isolated2schemes30cells,frozenactual622countsandsource643c45;primaryminimumTESTintegercountatrequestedp,secondaryminimumTRAINVALpimbalance,existingDSFact1%/GemmaMultiFact5%/othernonzeroTRAINVALretained;rate<=5pp/sourcecoverage/all15697/modelinternalsample/group/family/canonicaldisjoint. CPU272947sameentry24->26beforestartforavailableCPU;17secExit0. p8012/15met,p90 11/15met;commonexceptionsDSFact3/2001.5%,GemmaMulti33/23014.35%,GemmaFact67/20033.5% countupperwitnessesreusedandindependentlyvalidated. Newp90QwenFact target183/203, independentnecessaryupper179andactualwitness179=>max88.177%,notnumericaltimeout. TRAINVALbalancedk2counts45/15. All30theoreticalintegerTRAINVALbalanceidealsattained. Independent45sourcehash/raw15697labeltransition/assignmentverificationPASS_ALL30;90splitrowsCSVJSONandfourChinese tables. No training/feature/model/APIcall orcurrentsplitactivation.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_622_p80_p90_balanced_20261106/reports/SUMMARY_中文.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_622_p80_p90_balanced_20261106/reports/ALL_SPLITS.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_622_p80_p90_balanced_20261106/reports/INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/state/streaming_hd/split_622_p80_p90_balanced_20261106/FINAL_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 40,
+      "provenance": "ai-executed",
+      "action": "Humanrequests613TESTp70allsplitreport. Isolatedc27cf39CPU2729584cores16GiB0GPU13sec, frozenHamilton613counts/seed42/source643c45; ptargetminimumTESTdepletionthenbalanceTRAINVAL,creportonly,existingDSFact1%GemmaMultiFact5%/othernonzeroTRAIVALfloorsretained,rate5pp/source/groupgates. IndependentPASS_ALL15/raw45sourceSHA15697labels.11targetmet;4relaxedatprovencountmaxDSFact4/3001.333%,DSMulti238/34469.186%(TRAINVAL1/1left),GemmaMulti39/34611.272%,GemmaFact72/30024%. All15TRAINVALpimbalancemeetscountideal;45splitaggregateCSVJSONandtwoChinesetables. No training/model/feature/APIorcurrentsplitactivation.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_613_p70_balanced_20261106/reports/SUMMARY_中文.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_613_p70_balanced_20261106/reports/INDEPENDENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_613_p70_balanced_20261106/reports/ALL_SPLITS.csv",
+        "${PROJECT_ROOT}/state/streaming_hd/split_613_p70_balanced_20261106/FINAL_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 41,
+      "provenance": "ai-executed",
+      "action": "Humanrequests622p60and613p60allsplitreport. Isolated20a9474CPU2729744cores16GiB0GPU14secExit0;622exactbaselinecountsand613Hamiltonidenticalpriorcomparisons, seed42,source643c45. SameTESTminimumdepletion+TRAINVALpbalancing andexistingfloors/rate5pp/source/identitygates,c report-only. PASS_ALL30 raw45SHA15697labels. Eachscheme12/15targetmet;622exceptionsDSFact3/2001.5%,GemmaMulti33/23014.35%,GemmaFact67/20033.5%;613exceptions4/3001.33%,39/34611.27%,72/30024%,allwitnessesmatchnecessaryupper. All30countbalanceideals attained;90splitrowsCSVJSONandfourChinese tables. No training/model/feature/APIorcurrentsplitactivation.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_622_613_p60_balanced_20261106/reports/SUMMARY_中文.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/split_622_613_p60_balanced_20261106/reports/ALL_SPLITS.csv",
+        "${PROJECT_ROOT}/state/streaming_hd/split_622_613_p60_balanced_20261106/FINAL_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 42,
+      "provenance": "ai-executed",
+      "action": "Archived prior resume logs without inspecting private role memory; wrote031 finite-sample complexity/approximation/learned-relation audit and static approved-source restriction grounding. Submitted273025 smallq CPU1 RAM4GB originalhpc-exec24; verified main phase originalUUID Astra medium and actual ACK031. No mathematical result, no training/replay/TEST, no scientific promotion.",
+      "files_changed": [
+        "theory/native_runs/evidence_timing_discovery_20261106/control_inbox/031_GENERALIZATION_BOUND_ENTRY.md",
+        "theory/native_runs/evidence_timing_discovery_20261106/control_inbox/main_resume_01.md",
+        "theory/native_runs/evidence_timing_discovery_20261106/control_inbox/RESUME_MAIN_01.json",
+        "theory/native_runs/evidence_timing_discovery_20261106/code/resume_03.pbs",
+        "theory/native_runs/evidence_timing_discovery_20261106/artifacts/RESUME03_PRESERVATION.json"
+      ]
+    },
+    {
+      "turn": 43,
+      "action": "Implemented isolated120fit coordinator/runtime, exact frozen assignment materialization and model-domain source deduplication; submitted PBS preparation, native producers, CPU cache audits, recovery and finite callbacks; source/identity/VALselection/TESTonce gates retained. Appended authorized shared transport cache policy.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/docs/CETUS_RUNBOOK.md",
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/training/streaming_split_four_20261106",
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/training/streaming_qwen_math_prefix_test_recovery_20261106"
+      ]
+    },
+    {
+      "turn": 44,
+      "action": "Measured bounded directory sizes; created isolated native-input export/build/parent-guarded publication with full old-field and frozen-byte checks, native tokenizer identity, pinned snapshot metadata and user-facing export documentation. Published and independently read back existing public repository. No files deleted and no GPU/training changed.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/delivery/hf_native_inputs_20261106"
+      ]
+    },
+    {
+      "turn": 45,
+      "action": "Created same-inode fixed v0.30 runtime asset, deployed compressed content-addressed result identity storage without numerical/config changes; relocated verified HF release receipts; submitted authorized old-run cleanup273644 preserving exact native source files and durable label/accounting data; registered finite consumer-finish retirement. Repaired selected-cache CPU session lookup before detector TEST and exact old-Qwen source serialization after actual frozen SHA gate. Max legal unique-job dispatch continued, no polling service.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/workspaces/streaming_hd/pipelines/training/streaming_split_four_20261106",
+        "${PROJECT_ROOT}/docs/CETUS_RUNBOOK.md"
+      ]
+    }
+  ],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 38,
+      "excerpt": "不够本质，就是问题提出来就让人知道推理确实有这个问题，然后建模step与prefix的关系是必要的"
+    },
+    {
+      "turn": 42,
+      "excerpt": "Direct human: 从generalization bound角度切入. Same-session research direction reopened; earlier substantive-problem requirement remains."
+    },
+    {
+      "turn": 43,
+      "excerpt": "Human: streaming_hd_features retains only required TEST features; future shared feature transport copies move promptly to compute nodes and shared cache is cleared after validation; expedite four plans."
+    },
+    {
+      "turn": 44,
+      "excerpt": "Human explicitly authorizes addition to Hugging Face of dataset sample IDs, full prompt-plus-reasoning token IDs, reasoning-start position, retained-step spans and exact model/tokenizer revision. Storage inventory is read-only."
+    }
+  ],
+  "open_threads": [
+    "Finish80cells via existing finite PBS events;61pending. OwnVAL selects layers/weights/threshold, selectedTESTonce. Inspect only on human/localCodex message; no resident monitor. Preserve original canceled/paused scopes.",
+    "Finish remaining80-cell comparison through existing real PBS start/end/afterany events only. Exact accepted counts, all80 cell layer/epoch/teacher/cache/VAL/TEST states and11historical source mappings are in model coordinator reports. No automatic polling, old-scope resume or scientific/TEST replay permitted.",
+    "Currentauthorized Streaming enriched622:30activeStep/Prefixfits across3models5domains;6oldexceptionfits retired in favor ofTRAIN/VALfloor successors. Parent sourceworkspaces/streaming_hd/pipelines/training/streaming_k2_622_20261106/CONFIG.json references5isolatedarms and latest15cellplan. OwnVALAUROC weights/layers, ownVALF1max, TESTonce, exactfeature reuse; continuefinitePBSstage/terminalevents only. Inspect on human/localCodex message, no residentpolling. PublicHF code completed at a545d72; no further code-publication followup needed unless asked.",
+    "evidence_timing_discovery_20261106: revision12 pending exact review, scientific acceptance, native fact/whole-paper verification and short core PDF. Goal tool paused; native272565 not cancelled."
+  ],
+  "ai_suggestions_pending": []
+}

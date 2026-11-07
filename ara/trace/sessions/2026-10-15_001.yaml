@@ -1,0 +1,61 @@
+{
+  "session": {
+    "id": "2026-10-15_001",
+    "date": "2026-10-15",
+    "started": "2026-10-15T09:51+11:00",
+    "last_turn": "2026-10-15T09:51+11:00",
+    "turn_count": 1,
+    "summary": "Problem-first native Streaming debate complete; source identities corrected; mechanism theories remain untested."
+  },
+  "events_logged": [
+    {
+      "turn": 1,
+      "type": "pivot",
+      "id": "N149",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Actual evidence before theory; tentative state-transition route."
+    },
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N150",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Two consultations, independent critique and supplemental-source audit complete; no new theorem."
+    },
+    {
+      "turn": 1,
+      "type": "observation",
+      "id": "O14",
+      "routing": "staged",
+      "provenance": "ai-suggested",
+      "summary": "Step order hypothesis and Prefix event semantics/cost remain untested."
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "action": "Created isolated native run, reused tested secure runtime, completed source and actual-call audits and Chinese logic chain.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "theory/native_runs/problem_first_streaming_20261015"
+      ]
+    }
+  ],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 1,
+      "excerpt": "先讨论出真实的问题，再基于问题出理论；状态转移关系为待定方案。"
+    }
+  ],
+  "open_threads": [
+    "Bind actual current-dataset annotation prompt and repair semantics.",
+    "If future authorized, run fixed-layer matched-budget pre/post aggregation and last-token controls without TEST tuning."
+  ],
+  "ai_suggestions_pending": [
+    "Step computation-order mechanism is hypothesis; Prefix state update is not yet established."
+  ]
+}

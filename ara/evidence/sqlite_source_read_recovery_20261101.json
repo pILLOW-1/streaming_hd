@@ -1,0 +1,16 @@
+{
+  "UTC": "2026-10-31T18:06:46.053326+00:00",
+  "status": "PASS_HOT_JOURNAL_RO_REPRODUCTION_AND_LOCKED_QUERY_ONLY_RECOVERY",
+  "fixture_error": {
+    "error": "attempt to write a readonly database",
+    "name": "SQLITE_READONLY_ROLLBACK"
+  },
+  "committed_data_preserved": true,
+  "uncommitted_fixture_rollback": true,
+  "SQL_write_rejected": true,
+  "API_calls": 0,
+  "model_calls": 0,
+  "before_SHA256": "9bfc3c72bd0fb2e7d65dda741fd8d825f7d6b4e9a6de0651ff996d862936df27",
+  "after_SHA256": "58332295ce9c2fe1e3286df022b3fe269d83719de85fa6ee6c8c997741b276a7",
+  "actual_failure_subtype": "OperationalError readonly proven in logs; hot-journal subtype plausible, fixture reproduced, live error code not saved"
+}

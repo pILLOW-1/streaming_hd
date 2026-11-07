@@ -1,0 +1,113 @@
+session:
+  id: "2026-09-11_001"
+  date: "2026-09-11"
+  started: "2026-09-11T12:02+10:00"
+  last_turn: "2026-09-11T16:28+10:00"
+  turn_count: 3
+  summary: "Position diagnostics and positive-class weighting completed; the exact completed residual-mapper run was re-verified and a duplicate rerun prevented."
+
+events_logged:
+  - turn: 1
+    type: decision
+    id: N30
+    routing: direct
+    provenance: user
+    summary: "Authorized Figure-4-style Early/Middle/Late analysis of three audited frozen TEST prediction streams without retraining."
+  - turn: 1
+    type: experiment
+    id: N31
+    routing: direct
+    provenance: ai-executed
+    summary: "Completed 27 aligned stage cells, independent replay, three 300-dpi PNGs and matching PDF/SVG figures."
+  - turn: 1
+    type: observation
+    id: O08
+    routing: staged
+    provenance: ai-suggested
+    summary: "Staged the model-dependent relationship among late-stage separability, F1, recall, positive rate and learned-feature gains."
+  - turn: 2
+    type: decision
+    id: N32
+    routing: direct
+    provenance: user
+    summary: "Authorized model-specific canonical TRAIN positive-class weighting as the sole loss change to the learned-feature parent."
+  - turn: 2
+    type: experiment
+    id: N33
+    routing: direct
+    provenance: ai-executed
+    summary: "Completed exactly three fits and three frozen TEST inferences with independent overall, stage, source and float64 replay validation."
+  - turn: 2
+    type: observation
+    id: O09
+    routing: staged
+    provenance: ai-suggested
+    summary: "Staged the interpretation that weighting primarily shifted the fixed operating point and imposed an imbalance-dependent precision cost."
+  - turn: 3
+    type: decision
+    id: N34
+    routing: direct
+    provenance: ai-executed
+    summary: "Reconciled the stale residual-mapper pointer with the independently validated completed run and prevented a contract-violating duplicate rerun."
+
+ai_actions:
+  - turn: 1
+    action: "Created and froze an isolated read-only analysis contract, exact source manifest, deterministic thirds rule, CPU PBS workflow, independent validator and completion checker."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_position_figure4_analysis_20260911/"
+  - turn: 1
+    action: "Submitted CPU jobs 84152, 84154 and 84156; preserved two pre-analysis failures, completed 84156, synchronized all results, and repaired one omitted root completion manifest from validated durable files."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_position_figure4_analysis_20260911/audits/"
+      - "experiments/streaming_hd/runs/step_position_figure4_analysis_20260911/logs/"
+  - turn: 1
+    action: "Copied the validated stage table into ARA evidence and recorded the decision, experiment, and staged interpretation."
+    provenance: ai-executed
+    files_changed:
+      - "ara/evidence/tables/step_position_figure4_analysis_20260911.csv"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/staging/observations.yaml"
+  - turn: 2
+    action: "Built and executed the isolated weighted-loss campaign, including immutable profile/production/analysis freezes, three fits, VAL freeze, three TEST inferences and independent validation."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_feature_weighted_pos_weight_20260911/"
+  - turn: 2
+    action: "Preserved two physical-idle profile failures and one pre-access TEST staging failure, then completed non-destructive retries without changing scientific state."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_feature_weighted_pos_weight_20260911/audits/"
+      - "experiments/streaming_hd/runs/step_feature_weighted_pos_weight_20260911/logs/"
+  - turn: 2
+    action: "Copied validated overall and stage tables into ARA evidence and recorded the decision, experiment and staged interpretation."
+    provenance: ai-executed
+    files_changed:
+      - "ara/evidence/tables/feature_weighted_pos_weight_20260911_overall.csv"
+      - "ara/evidence/tables/feature_weighted_pos_weight_20260911_stages.csv"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/staging/observations.yaml"
+  - turn: 3
+    action: "Re-ran the residual-mapper identity/completion checker, verified an empty live owned-PBS inventory, and corrected the stale global current-task pointer without launching additional fits or TEST inference."
+    provenance: ai-executed
+    files_changed:
+      - "${HOME_ROOT}/CURRENT_STREAMING_TASK.md"
+      - "ara/trace/exploration_tree.yaml"
+      - "ara/trace/sessions/2026-09-11_001.yaml"
+
+claims_touched: []
+logic_revisions: []
+
+key_context:
+  - turn: 1
+    excerpt: "Use only completed audited TEST predictions on an identical Step population; reproduce Figure 4 style across three models and three methods, with exact stage-population audits and no retraining."
+  - turn: 2
+    excerpt: "Use the independently validated learned-feature parent and change only BCEWithLogitsLoss to canonical TRAIN negative/positive pos_weight on raw logits; run exactly three seed42 fits and three frozen TEST inferences."
+  - turn: 3
+    excerpt: "Immediately execute the same-width residual mapper capacity experiment, first checking that the cancelled task left no duplicate owned PBS job, and never add another seed regardless of the result."
+
+open_threads: []
+ai_suggestions_pending:
+  - "O08 awaits researcher interpretation or endorsement before crystallization."
+  - "O09 awaits researcher interpretation or endorsement before crystallization."

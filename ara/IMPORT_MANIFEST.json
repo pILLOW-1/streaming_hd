@@ -1,0 +1,605 @@
+{
+  "scope": "All existing canonical ARA research files; runtime lockfiles excluded",
+  "source_root": "${PROJECT_ROOT}/ara",
+  "files": [
+    {
+      "source_path": "ara/PAPER.md",
+      "published_path": "ara/imported_state/PAPER.md",
+      "source_SHA256": "17bf343030295b2779565ee6fd75dae4b73c6a7bfe902197ebc74edf03af64d4",
+      "published_SHA256": "17bf343030295b2779565ee6fd75dae4b73c6a7bfe902197ebc74edf03af64d4",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/README.md",
+      "published_path": "ara/imported_state/evidence/README.md",
+      "source_SHA256": "6a4a59f94a062ce604cfa6a3ef002d0b7262388558f9658314fde0db067deb8f",
+      "published_SHA256": "6a4a59f94a062ce604cfa6a3ef002d0b7262388558f9658314fde0db067deb8f",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/judge_admission_drain_238263.json",
+      "published_path": "ara/evidence/judge_admission_drain_238263.json",
+      "source_SHA256": "91231a0f893e792aab85aeca0d5790a6a4d4d795a89bc64a98c8dc9af17e90d4",
+      "published_SHA256": "91231a0f893e792aab85aeca0d5790a6a4d4d795a89bc64a98c8dc9af17e90d4",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/sqlite_source_read_recovery_20261101.json",
+      "published_path": "ara/evidence/sqlite_source_read_recovery_20261101.json",
+      "source_SHA256": "6fb1a9e27e739cfce23b1279eee5ce3f1c31cff84a4220e2e62d1be3edd64f5b",
+      "published_SHA256": "6fb1a9e27e739cfce23b1279eee5ce3f1c31cff84a4220e2e62d1be3edd64f5b",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/feature_weighted_pos_weight_20260911_overall.csv",
+      "published_path": "ara/evidence/tables/feature_weighted_pos_weight_20260911_overall.csv",
+      "source_SHA256": "4956eb2ae90aa576f759218ab5b9420c20b68f6b0473c1c4c9b1f5e4ed4a7888",
+      "published_SHA256": "4956eb2ae90aa576f759218ab5b9420c20b68f6b0473c1c4c9b1f5e4ed4a7888",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/feature_weighted_pos_weight_20260911_stages.csv",
+      "published_path": "ara/evidence/tables/feature_weighted_pos_weight_20260911_stages.csv",
+      "source_SHA256": "e9556c9e51bbf64e17b9eeea3fad63572312638ae7e23920b52306365cb40901",
+      "published_SHA256": "e9556c9e51bbf64e17b9eeea3fad63572312638ae7e23920b52306365cb40901",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/l2_single_variable_controls_and_cancellation_20260909.json",
+      "published_path": "ara/evidence/tables/l2_single_variable_controls_and_cancellation_20260909.json",
+      "source_SHA256": "d8f4b5811bf8376e3fb765f03b694012f6a9e0e05d426059e5ed30ad9b13199d",
+      "published_SHA256": "d8f4b5811bf8376e3fb765f03b694012f6a9e0e05d426059e5ed30ad9b13199d",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/legal_batch_controls_multiseed_prefix_decision_20260909.json",
+      "published_path": "ara/evidence/tables/legal_batch_controls_multiseed_prefix_decision_20260909.json",
+      "source_SHA256": "afa4213f06425a53e723a8d4f6388ee768165bf4da685c936c0922973d0191ba",
+      "published_SHA256": "afa4213f06425a53e723a8d4f6388ee768165bf4da685c936c0922973d0191ba",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/partial_qwen_llama_and_multiseed_completion_20260909.json",
+      "published_path": "ara/evidence/tables/partial_qwen_llama_and_multiseed_completion_20260909.json",
+      "source_SHA256": "4b1d30fd0f004030d986ee414bd769122ad5cf3527d48fbb385c82b2554ee13b",
+      "published_SHA256": "4b1d30fd0f004030d986ee414bd769122ad5cf3527d48fbb385c82b2554ee13b",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/residual_mapper_capacity_20260910.json",
+      "published_path": "ara/evidence/tables/residual_mapper_capacity_20260910.json",
+      "source_SHA256": "28dcce4c4cbc60cfa9aba430fb79c3ea08d65c1c99189f152eefd65631c21892",
+      "published_SHA256": "28dcce4c4cbc60cfa9aba430fb79c3ea08d65c1c99189f152eefd65631c21892",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/scorer_overnight_20260908.md",
+      "published_path": "ara/evidence/tables/scorer_overnight_20260908.md",
+      "source_SHA256": "b13b812cb50043785ab349d22ee704bbf401fef0787231cc76053d4d9be19f7e",
+      "published_SHA256": "b13b812cb50043785ab349d22ee704bbf401fef0787231cc76053d4d9be19f7e",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_four_group_balanced_bce_20260916.md",
+      "published_path": "ara/evidence/tables/step_four_group_balanced_bce_20260916.md",
+      "source_SHA256": "84d4ae06b0b294be3597fe918d546985ec5f26cdd4f48c11f5df03fdd56e1145",
+      "published_SHA256": "84d4ae06b0b294be3597fe918d546985ec5f26cdd4f48c11f5df03fdd56e1145",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_global_hinge_rank_20260914.md",
+      "published_path": "ara/evidence/tables/step_global_hinge_rank_20260914.md",
+      "source_SHA256": "134db0c5b8d1bef161aad0b54c131b5e30ed0119fb9a4f5175b172567e768a45",
+      "published_SHA256": "134db0c5b8d1bef161aad0b54c131b5e30ed0119fb9a4f5175b172567e768a45",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_hard_tail_cpu_test_20260914.md",
+      "published_path": "ara/evidence/tables/step_hard_tail_cpu_test_20260914.md",
+      "source_SHA256": "30b35bc45b830003ac91b744b14f1a1f165a5d03e84ba7677a22ac61c0abf8fd",
+      "published_SHA256": "30b35bc45b830003ac91b744b14f1a1f165a5d03e84ba7677a22ac61c0abf8fd",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_hard_tail_rank_val_20260914.md",
+      "published_path": "ara/evidence/tables/step_hard_tail_rank_val_20260914.md",
+      "source_SHA256": "afe4def502b0a049dd3bf3e8a3c4c658072942223409365c99b88c70df8f7a43",
+      "published_SHA256": "afe4def502b0a049dd3bf3e8a3c4c658072942223409365c99b88c70df8f7a43",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_position_figure4_analysis_20260911.csv",
+      "published_path": "ara/evidence/tables/step_position_figure4_analysis_20260911.csv",
+      "source_SHA256": "93707a3ed4cdbd093e056aea5d446645b16b7e96b856a952516a974edb749229",
+      "published_SHA256": "93707a3ed4cdbd093e056aea5d446645b16b7e96b856a952516a974edb749229",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_transition_full_keypos_val_20260915.md",
+      "published_path": "ara/evidence/tables/step_transition_full_keypos_val_20260915.md",
+      "source_SHA256": "061abe52719927f628074fa6919e1da2c9d1158416ad470219ced51c02af3d2e",
+      "published_SHA256": "061abe52719927f628074fa6919e1da2c9d1158416ad470219ced51c02af3d2e",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_val_conditional_auc_20260914.md",
+      "published_path": "ara/evidence/tables/step_val_conditional_auc_20260914.md",
+      "source_SHA256": "e6b34623dd73204edc5a6243b82f1eedfdcbd3d43b1c1be34fde6d00083ffe1e",
+      "published_SHA256": "e6b34623dd73204edc5a6243b82f1eedfdcbd3d43b1c1be34fde6d00083ffe1e",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_val_prefix_history_error_20260914.md",
+      "published_path": "ara/evidence/tables/step_val_prefix_history_error_20260914.md",
+      "source_SHA256": "3cb339bed2d41a5ebebbd6b75eee9216025b684bbb93a271e5e73628d3d4110e",
+      "published_SHA256": "3cb339bed2d41a5ebebbd6b75eee9216025b684bbb93a271e5e73628d3d4110e",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_val_prefix_history_error_streaming_20260914.md",
+      "published_path": "ara/evidence/tables/step_val_prefix_history_error_streaming_20260914.md",
+      "source_SHA256": "0f8597efa6c4d8157ae6b1bca38de103d399695a8b5f2d132c660d809f2ba180",
+      "published_SHA256": "0f8597efa6c4d8157ae6b1bca38de103d399695a8b5f2d132c660d809f2ba180",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_val_score_density_20260914.md",
+      "published_path": "ara/evidence/tables/step_val_score_density_20260914.md",
+      "source_SHA256": "1a120b4974a53cc0625ee88e09d5b087ac47b227ee35c54197541832bce2c173",
+      "published_SHA256": "1a120b4974a53cc0625ee88e09d5b087ac47b227ee35c54197541832bce2c173",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_val_score_density_20260914_model_y_color_stages.md",
+      "published_path": "ara/evidence/tables/step_val_score_density_20260914_model_y_color_stages.md",
+      "source_SHA256": "9923140b1060e18af83774153e0482fa06a3cf9ba8f836ebbf76805c5cf8cda4",
+      "published_SHA256": "9923140b1060e18af83774153e0482fa06a3cf9ba8f836ebbf76805c5cf8cda4",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/step_val_stage_score_separation_20260913.md",
+      "published_path": "ara/evidence/tables/step_val_stage_score_separation_20260913.md",
+      "source_SHA256": "6d1c30f522085a48fc11048317df4161c4b1b10198acfd2f2c90647b452470aa",
+      "published_SHA256": "6d1c30f522085a48fc11048317df4161c4b1b10198acfd2f2c90647b452470aa",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/evidence/tables/top6_initial_execution_20260909.json",
+      "published_path": "ara/evidence/tables/top6_initial_execution_20260909.json",
+      "source_SHA256": "f901c8449e6dfc9fb51f7f8fa7093cb53220fdd523f6abc9649a097e15199b55",
+      "published_SHA256": "c842a9c3bb4f048ede67169195dbf2528672f5b6cc17c4115ca7653bc3aaeb13",
+      "public_substitutions": {
+        "email": 3,
+        "${PROJECT_ROOT}": 12,
+        "${HOME_ROOT}": 25
+      }
+    },
+    {
+      "source_path": "ara/evidence/tables/top6_recovery_early_gru_admin_pause_20260909.json",
+      "published_path": "ara/evidence/tables/top6_recovery_early_gru_admin_pause_20260909.json",
+      "source_SHA256": "ad9a702fa5513ef99c550c0b33f2850cca8b6df5cab4ac79f8f04a46cffe677e",
+      "published_SHA256": "545d49d9aa4e3eff3887ad9157629e39c0ffaed61de15cadaf81823170e4822c",
+      "public_substitutions": {
+        "email": 8,
+        "${PROJECT_ROOT}": 18,
+        "${HOME_ROOT}": 36,
+        "${SCRATCH_ROOT}": 1
+      }
+    },
+    {
+      "source_path": "ara/logic/claims.md",
+      "published_path": "ara/logic/claims.md",
+      "source_SHA256": "b002e18cd8a332b5afc42b2b989995d3dceaea17daaa7aadd5277e29e26fdf37",
+      "published_SHA256": "b002e18cd8a332b5afc42b2b989995d3dceaea17daaa7aadd5277e29e26fdf37",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/logic/problem.md",
+      "published_path": "ara/imported_state/logic/problem.md",
+      "source_SHA256": "480404de35e7b97729d8e55e974e259dcb18a8e29184ff4d557772c197978e00",
+      "published_SHA256": "480404de35e7b97729d8e55e974e259dcb18a8e29184ff4d557772c197978e00",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/logic/solution/heuristics.md",
+      "published_path": "ara/logic/solution/heuristics.md",
+      "source_SHA256": "5b57ceb82162b6139389b94cda46f1092f4db1948c230c44cb300487cd534d5c",
+      "published_SHA256": "5b57ceb82162b6139389b94cda46f1092f4db1948c230c44cb300487cd534d5c",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/pm_reasoning_log.md",
+      "published_path": "ara/pm_reasoning_log.md",
+      "source_SHA256": "4f22066a4993e8bce42321d7203a08150e183db66dfc2d283300a7d81efa6ade",
+      "published_SHA256": "4f22066a4993e8bce42321d7203a08150e183db66dfc2d283300a7d81efa6ade",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/src/environment.md",
+      "published_path": "ara/imported_state/src/environment.md",
+      "source_SHA256": "b0674ce7d23e0c5e659f52b0ec7284fa8eab46b039c809b2da5db1cead75d6f5",
+      "published_SHA256": "b0674ce7d23e0c5e659f52b0ec7284fa8eab46b039c809b2da5db1cead75d6f5",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/staging/observations.yaml",
+      "published_path": "ara/staging/observations.yaml",
+      "source_SHA256": "3e033d0dcc114d82496a2e8a23c43370b26e2b249ada4477fc87b13eb5b15c3d",
+      "published_SHA256": "7e775472411a2c5327733b0b51f106e45b3b814cdf62e77ddedd50bef4cab2cb",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 2
+      }
+    },
+    {
+      "source_path": "ara/trace/exploration_tree.yaml",
+      "published_path": "ara/trace/exploration_tree.yaml",
+      "source_SHA256": "87fe263d241f25dcf7c51ebbdf23990e48c4243074548f7862faea49aba7e99a",
+      "published_SHA256": "31de9dc710cefa6e8b32bd1598a51a182a1dc0c6f969ae85b00af11fcf8d0d76",
+      "public_substitutions": {
+        "credential_like": 1,
+        "${PROJECT_ROOT}": 939,
+        "${HOME_ROOT}": 1
+      }
+    },
+    {
+      "source_path": "ara/trace/pm_reasoning_log.yaml",
+      "published_path": "ara/trace/pm_reasoning_log.yaml",
+      "source_SHA256": "dd3552474bcbefd01daed84f2646eebefdebc58f94e63b7f62b92cf306a3aeeb",
+      "published_SHA256": "933b287a1baa27ed8d9954c6471e16ede6a00ad7843a2cf67975c39f684cb762",
+      "public_substitutions": {
+        "credential_like": 2,
+        "${PROJECT_ROOT}": 12
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-08_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-08_001.yaml",
+      "source_SHA256": "77e4b5100e872565d1b10522a779e6ee1263ebb33556190b76527d6cd6c3a775",
+      "published_SHA256": "77e4b5100e872565d1b10522a779e6ee1263ebb33556190b76527d6cd6c3a775",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-09_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-09_001.yaml",
+      "source_SHA256": "00b7a8df91ff3a779d0b343d9bb851dc7341be0f834c109f38d41500460e7402",
+      "published_SHA256": "00b7a8df91ff3a779d0b343d9bb851dc7341be0f834c109f38d41500460e7402",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-10_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-10_001.yaml",
+      "source_SHA256": "615b65fcca87daa4f8179cdc0a4b354482e79af24ca12672aa037de314f742dc",
+      "published_SHA256": "615b65fcca87daa4f8179cdc0a4b354482e79af24ca12672aa037de314f742dc",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-11_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-11_001.yaml",
+      "source_SHA256": "3032a69b9251a44a0040f4082f050dfe586a10869097d25d4e1613ea0f33fd5e",
+      "published_SHA256": "e2db31f133baf6cc62b7c55e66fb18f49566e98fb5dda48c84b184e68480b9f1",
+      "public_substitutions": {
+        "${HOME_ROOT}": 1
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-13_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-13_001.yaml",
+      "source_SHA256": "4d3546775e98ab1b3f7b7a18849bc5812fa5e9458c8fd2c67ce88d0773bbb354",
+      "published_SHA256": "4d3546775e98ab1b3f7b7a18849bc5812fa5e9458c8fd2c67ce88d0773bbb354",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-14_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-14_001.yaml",
+      "source_SHA256": "e2402e5035c4052f8545c7d44916ddc61670877baaccc30c94375d1035446c5e",
+      "published_SHA256": "e2402e5035c4052f8545c7d44916ddc61670877baaccc30c94375d1035446c5e",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-15_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-15_001.yaml",
+      "source_SHA256": "53141be857c02829221dd9ddb68af7395f67312df6e3e334096a8ef13acf9f11",
+      "published_SHA256": "53141be857c02829221dd9ddb68af7395f67312df6e3e334096a8ef13acf9f11",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-16_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-16_001.yaml",
+      "source_SHA256": "88543d46a1cd8858e50327c9305b395d2b1ccc568bd6a71036c3f026460058f3",
+      "published_SHA256": "88543d46a1cd8858e50327c9305b395d2b1ccc568bd6a71036c3f026460058f3",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-17_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-17_001.yaml",
+      "source_SHA256": "01f1368b0dd77ab0a6811dbe27afb98c166bbe95b97c47cb2804f912822e81e2",
+      "published_SHA256": "01f1368b0dd77ab0a6811dbe27afb98c166bbe95b97c47cb2804f912822e81e2",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-18_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-18_001.yaml",
+      "source_SHA256": "c19fb028fdfbee89a90d35946cf86c350f06cfbffda23baa49ef5fce2f6a468e",
+      "published_SHA256": "c19fb028fdfbee89a90d35946cf86c350f06cfbffda23baa49ef5fce2f6a468e",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-20_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-20_001.yaml",
+      "source_SHA256": "637f3fd5ec2fc8c0bd8e947205473df01ebd8b377ce308ff87b65d0a4327dfa6",
+      "published_SHA256": "637f3fd5ec2fc8c0bd8e947205473df01ebd8b377ce308ff87b65d0a4327dfa6",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-21_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-21_001.yaml",
+      "source_SHA256": "938610b18f1d5d553744f39cf57dd22c345e1f3773a3e61d92975dde23d561b1",
+      "published_SHA256": "938610b18f1d5d553744f39cf57dd22c345e1f3773a3e61d92975dde23d561b1",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-22_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-22_001.yaml",
+      "source_SHA256": "a8fdb330676cf137f8119a148dc4f030764a720b315e5482224552fd2ae7f7d0",
+      "published_SHA256": "a8fdb330676cf137f8119a148dc4f030764a720b315e5482224552fd2ae7f7d0",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-23_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-23_001.yaml",
+      "source_SHA256": "64c5215d2b31d526367295e7fd8f55e5a986cef3895d576345f793d6badc9e8a",
+      "published_SHA256": "64c5215d2b31d526367295e7fd8f55e5a986cef3895d576345f793d6badc9e8a",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-09-24_001.yaml",
+      "published_path": "ara/trace/sessions/2026-09-24_001.yaml",
+      "source_SHA256": "99c8dbd0d4056cde9d1d780773038735e123cffde22f1db21c4176a71f02be8f",
+      "published_SHA256": "99c8dbd0d4056cde9d1d780773038735e123cffde22f1db21c4176a71f02be8f",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-01_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-01_001.yaml",
+      "source_SHA256": "ea1e914cafdffe752ff6416e597aeec4857799235c754527bf0d44713207e1b8",
+      "published_SHA256": "ea1e914cafdffe752ff6416e597aeec4857799235c754527bf0d44713207e1b8",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-14_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-14_001.yaml",
+      "source_SHA256": "c77f3be5fbb8885c85b2ace088aa339c8896b57ba6211c150a781153a12d9df6",
+      "published_SHA256": "c77f3be5fbb8885c85b2ace088aa339c8896b57ba6211c150a781153a12d9df6",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-15_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-15_001.yaml",
+      "source_SHA256": "6d41b9af36a7d545d84b2c24f0b416a52d08a7241b83970c974e4a726b3e98f6",
+      "published_SHA256": "6d41b9af36a7d545d84b2c24f0b416a52d08a7241b83970c974e4a726b3e98f6",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-18_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-18_001.yaml",
+      "source_SHA256": "f98539ac5d8857d599ca323b1bb56ec80d4aee02e27423ea22db2ec7ab30197c",
+      "published_SHA256": "f98539ac5d8857d599ca323b1bb56ec80d4aee02e27423ea22db2ec7ab30197c",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-19_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-19_001.yaml",
+      "source_SHA256": "89c0cd62921cb951547a1d1fc4a3f2391ec32cbea31bd757add3d09cc2d6c9ee",
+      "published_SHA256": "89c0cd62921cb951547a1d1fc4a3f2391ec32cbea31bd757add3d09cc2d6c9ee",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-20_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-20_001.yaml",
+      "source_SHA256": "65c183c216510df6116faabb7c3ff947318194261f6a91836f6cbd66588c6b2e",
+      "published_SHA256": "d2492029ef8ca588462a0066082b2beb10850e49a7e0cef1b22c0456e353bc70",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 4
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-21_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-21_001.yaml",
+      "source_SHA256": "eb2c46f3ba43c44a521ebafe72c9907e72d27e48c37365a116e54249ce2765ce",
+      "published_SHA256": "261c26ef821484d19cad0f087b15f6082a92058d719541939b38f33daaa47453",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 46
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-22_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-22_001.yaml",
+      "source_SHA256": "42c3ad94cd807302e9a01247f846ee3d399e1ef06343567f36f1be2a2baf1ad6",
+      "published_SHA256": "3f83985a018dd5e3eb4755a034a90fd0f74ba2fcba6778bb5fbebceba0763736",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 78
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-23_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-23_001.yaml",
+      "source_SHA256": "a8eb2cf67a142d41c12a666844c71b92f2faa1b05426c796474e3584ad149bf6",
+      "published_SHA256": "cf4f5361b7af47dc27ac365b6f7293c3a8d4921600210c4ee9297134c54480c0",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 135
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-24_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-24_001.yaml",
+      "source_SHA256": "3dcd33a1dc728fce85cb74428a6421daf96ccf01a22f2e6175a2e9c884bee415",
+      "published_SHA256": "f6528d3d9e151f1e7ea4624e6015c34b7cb9996957b8412a4971fb953643996b",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 19
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-25_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-25_001.yaml",
+      "source_SHA256": "1eda53445485f900083c29e9dd6876335e758a02be777f3c9228ffde36deecfc",
+      "published_SHA256": "0ffda2215008a47a773a807513b3b9ec2c4f6b1819768ebaa9e7a758a98d2ce5",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 68
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-26_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-26_001.yaml",
+      "source_SHA256": "14118af0ca91d01c694b70c355a560ab59035151433206aad78017c9d332b973",
+      "published_SHA256": "14118af0ca91d01c694b70c355a560ab59035151433206aad78017c9d332b973",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-27_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-27_001.yaml",
+      "source_SHA256": "b2ddddedcea7924f3feea9b1d2f1fc92791533fd522e7d9d90825d36ec8301ec",
+      "published_SHA256": "ae53872654d8a071fdf86471c5009279af451f2890fe721d61387a184bda71ac",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 68
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-28_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-28_001.yaml",
+      "source_SHA256": "06cf5558839ed9ff7fac5bc502da1c5afc2b5e3ca88ef877f38dd517296d938d",
+      "published_SHA256": "94f7fbcf9d68ecd0a358434076775b778c339ce2203179f553bc1d29cdf74f5c",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 16
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-29_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-29_001.yaml",
+      "source_SHA256": "d04870474fd05d5fd363860bdfcddb2c68f34d1d8d195ba7bd502a68ff042320",
+      "published_SHA256": "a6cfbf434bd565ceb0f68d30a4d67b11ff053dfabd7cd884638665f09ddd1e22",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 27
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-30_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-30_001.yaml",
+      "source_SHA256": "37e5cea4fb363fbd25296732ac9db14d13698b843a440190add6779d0f840bed",
+      "published_SHA256": "9a715d5b2bbf860a535f9ad3ff9f4120d250a6a522dbcc41722f4674ab6a0b04",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 29
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-10-31_001.yaml",
+      "published_path": "ara/trace/sessions/2026-10-31_001.yaml",
+      "source_SHA256": "424c56e0d07017d159c6c075d2681d3ecbb02e0f22b4eaa7165ace0dc91ab14a",
+      "published_SHA256": "86daf7642ebb63eaeff8a46e7c94cd66622c830f72020f1bc6ee390784e9736e",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 51
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-01_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-01_001.yaml",
+      "source_SHA256": "2552b038ad209e11d733ceab3243b377ec635786b631bb86080a7197eeddec7c",
+      "published_SHA256": "0c2a99241adb7de435b58c1e69567ef1a266aac8d201c8d70cc2ffa8ce3e164d",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 45
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-02_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-02_001.yaml",
+      "source_SHA256": "bbb8a170f8a55242ec7c1d4575018e5ff2ac26e0a381061762d3d71dc71c887f",
+      "published_SHA256": "505bb3484837b28bc6cdb5c9d82a8217c7885e1f57c638d276c0a2ad1c1e2f24",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 1
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-03_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-03_001.yaml",
+      "source_SHA256": "2acfe38ea2b8a9b0ba25aecf79575bec584986bd5806d4e7821390f38aa0a883",
+      "published_SHA256": "2acfe38ea2b8a9b0ba25aecf79575bec584986bd5806d4e7821390f38aa0a883",
+      "public_substitutions": {}
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-04_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-04_001.yaml",
+      "source_SHA256": "480e479f86064fa86ee7aad2f6d8d1c48f4efbc18214485a5af3a898998ae751",
+      "published_SHA256": "54aff9b9079c5af17a900f1de40cc2c375599a8cf1ef858759f390b0a36c8d89",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 76
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-05_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-05_001.yaml",
+      "source_SHA256": "a922e575abaa443b825ab3b7ce6cf5c7b3eb1c979b55283973c9c7d3091d3971",
+      "published_SHA256": "8d88f8a4b174d641c8ccedb756dcf9a90bf4ff8beb0e60a3003436c4f53d5582",
+      "public_substitutions": {
+        "credential_like": 2,
+        "${PROJECT_ROOT}": 99
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-06_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-06_001.yaml",
+      "source_SHA256": "6aa6baa7ffcd77760771e58a0569ebcd891046fe3685effd6f3fd28b25d2aefc",
+      "published_SHA256": "c9794599fda6af8de1bf66d05e12e9655a9f969a939ea1cdc6d75edf27bfb862",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 119
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/2026-11-07_001.yaml",
+      "published_path": "ara/trace/sessions/2026-11-07_001.yaml",
+      "source_SHA256": "7ad7ae3564d7aa866d43908f18a6eb5e386cdd4cc69fb555b4c915bb8a9c81b1",
+      "published_SHA256": "e4ba9778f47a8b9ae6027b32eae4535942a778c2490d1d9fbc6936cefe8fbab4",
+      "public_substitutions": {
+        "${PROJECT_ROOT}": 37
+      }
+    },
+    {
+      "source_path": "ara/trace/sessions/session_index.yaml",
+      "published_path": "ara/trace/sessions/session_index.yaml",
+      "source_SHA256": "6f15b79679f69aad51a125a6c6e5c5c2d60b6bfa8f8dff4a998b688b624567e7",
+      "published_SHA256": "2861112ca54547a329e41e8a3d679b3f227472b23aa577a0b4556863774702bb",
+      "public_substitutions": {
+        "credential_like": 1,
+        "${PROJECT_ROOT}": 1
+      }
+    }
+  ],
+  "omitted": [
+    {
+      "path": ".research_manager.lock",
+      "reason": "runtime synchronization file; no research content"
+    },
+    {
+      "path": ".writer.lock",
+      "reason": "runtime synchronization file; no research content"
+    },
+    {
+      "path": "trace/.bounded_followup_write.lock",
+      "reason": "runtime synchronization file; no research content"
+    },
+    {
+      "path": "trace/.epilogue.lock",
+      "reason": "runtime synchronization file; no research content"
+    },
+    {
+      "path": "trace/epilogue.lock",
+      "reason": "runtime synchronization file; no research content"
+    },
+    {
+      "path": "trace/latest_label_rates_record.lock",
+      "reason": "runtime synchronization file; no research content"
+    },
+    {
+      "path": "trace/record.lock",
+      "reason": "runtime synchronization file; no research content"
+    }
+  ]
+}

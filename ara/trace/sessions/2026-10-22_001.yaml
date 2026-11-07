@@ -1,0 +1,353 @@
+{
+  "session": {
+    "id": "2026-10-22_001",
+    "date": "2026-10-22",
+    "started": "2026-10-21T22:34:38.751324+00:00",
+    "last_turn": "2026-10-22T12:48:40.588153+00:00",
+    "turn_count": 24,
+    "summary": "Direct newDS96 budget approval, actual gatesPASS andtraining+finitecompletionDAG; savednoL2/legacytopk comparison accepted"
+  },
+  "events_logged": [
+    {
+      "turn": 1,
+      "type": "decision",
+      "id": "N197",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Authorize DS-only global-softmax retained-mass top-k without L2"
+    },
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N198",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Pass actual new-selector CPU and GPU worst128 gates; start continuous full-layer training"
+    },
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N199",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Recalculate full saved VAL F1max for accepted all-token noL2 and compare immutable legacytopk"
+    },
+    {
+      "turn": 3,
+      "type": "decision",
+      "id": "N200",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Use exactly Step native-token length and Prefix retained-Step count, reported separately for each domain"
+    },
+    {
+      "turn": 3,
+      "type": "experiment",
+      "id": "N201",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Complete34 accepted saved-prediction domain-length cells with1000 paired question cluster draws"
+    },
+    {
+      "turn": 4,
+      "type": "dead_end",
+      "id": "N202",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded idle24GB placement request does not obtain a legal mixed CPU-source allocation"
+    },
+    {
+      "turn": 4,
+      "type": "experiment",
+      "id": "N203",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Verify currentDS top1/top3 fullVAL15each, exact checkpoints and noTEST; top2stillqueued"
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "action": "Prepared andfroze newoperator; preservedhealthyfullstate fits andoriginal7200runtimeguard; connectedfinitePBScompletionDAG; exactsavedpredictionCPUcomparison; allfailures andcosts retained",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/RUN_STATE.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/CURRENT_ALLOCATED_COSTS_AND_RESERVATIONS.json"
+      ]
+    },
+    {
+      "turn": 2,
+      "timestamp": "2026-10-21T22:37:11.135858+00:00",
+      "action": "One bounded fresh alllegalGPUresourceaudit and acceptedcandidatehash/fullVALcoveragecheck. Preservehealthyfits; no assignableidleGPU forqueuedtop2 and no demonstrablyearliermigration. No new scientificresultclaim orpolling.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/follow_20261021_223522/ACTUAL_FOLLOW_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 3,
+      "timestamp": "2026-10-22T00:01:18.253545+00:00",
+      "action": "Independent frozen-source CPU metadata/points/clusterbootstrap/report pipeline; exactnativeboundary andretainedprefix audits; inspect Multi-hop Step andSciencePrefix plots; preserve initial failure/estimate deviation andall historicalruns.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/existing_step_tokenlength_prefix_stepcount_by_domain_20261022/audits/FINAL_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/existing_step_tokenlength_prefix_stepcount_by_domain_20261022/audits/INTERPRETATION_OUTPUT_BINDING.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "timestamp": "2026-10-22T00:12:48.962151+00:00",
+      "action": "One boundedalllegalqueue/node/reservation audit, exactacceptedcandidate/currentcheckpoint hashes, legalminimum24GBprofileattemptandfullyverifiedrollback, approvedbudget/cost/protectedcapacityaccounting. Preserve twohealthyR andsamequeuedowner; no newfit, producer, scientificparameterchange or analysisrerun.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/follow_20261022_000346/ACTUAL_FOLLOW_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 5,
+      "timestamp": "2026-10-22T02:55:05.607250+00:00",
+      "provenance": "ai-executed",
+      "action": "User requests continued TEST completion. Verified top1/top3 all32 and F0; top2 unique owner running layer8. Fresh legal GPU queue/node/reservation audit, all accepted candidate hashes and frozen pipeline hashes PASS; preserve existing finite TEST/CPU acceptance DAG after top2. No new polling, duplicate fit or source; no TEST result claimed.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/CONTINUE_TEST_20261022_0254.json"
+      ]
+    },
+    {
+      "turn": 6,
+      "timestamp": "2026-10-22T02:58:52.505591+00:00",
+      "provenance": "ai-executed",
+      "action": "Direct user requests early top1/3 TEST. Versioned finite dispatcher retains original frozen scientific files, selectedTESTonce, CPU7metrics/bootstrap, source reuse and original budget. Cancelled verified unallocated184673;185483F0 freezes17e3/20e3, submits185486/185488 plusCPUmetrics anddeferredtop2. Q185488 moved08to10 for earlier parallelrelease. Healthy top2R untouched; no TEST result or physicalidle claim.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/EARLY_TEST_ACTUAL_SUBMISSION_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/EARLY_TEST_PIPELINE_CODE_FREEZE.json"
+      ]
+    },
+    {
+      "turn": 7,
+      "timestamp": "2026-10-22T04:22:50.355371+00:00",
+      "provenance": "ai-executed",
+      "action": "Direct human relayed DS Cetus/AutoDL generation race. Independently verified transferred ZIPs,11x100sampleSHA/uniqueIDs andexactexistingDSconfigs. Safe temporary preparation only; package metadata read without imports. Direct human approvednew4CPUh/1GPUh128MiBshared24GiBscratch. Bounded legalGPU audit noidle24/48GB. SourceoriginalDScontext73728 recovered; nofullmodelSHA or runtimegatePASS claimed. Newsharedprotectedcapacityshortfall130701545B preventsgenerationadmission; noPBS/owner/newAPIcalls/oldjobchanges.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/CETUS_PREPARATION_AND_CAPACITY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/configs/CETUS_FIRST_STAGE_PLAN.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/DIRECT_USER_FIRST_STAGE_BUDGET_APPROVAL.json"
+      ]
+    },
+    {
+      "turn": 8,
+      "timestamp": "2026-10-22T04:29:19.494163+00:00",
+      "provenance": "ai-executed",
+      "action": "Directhuman requests cleanup andpromptcompletion. Inventoried anddeleted only137931311B obsolete incomplete nondefaultRust install/download/installer+Condaindexfiles; actualfree+137887744B. Protectedoldclaims/32GiB/topkfuture/newpilot reservation PASS. Verifiedpayload1100uniqueIDs staged; exactnativeDSsinglecanary launcher AST/shell/freezePASS. FreshalllegalGPUqueues/nodes audit, submitted185821med4CPU32GB1L40/1h withinnew4CPUh1GPUh cap. NoactualgenerationPASS/uniqueproducerwinner claimed; nooldjobchanges, paidAPI ornewmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/VERIFIED_HOME_CACHE_CLEANUP.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FIRST_STAGE_PRE_SUBMISSION_RESOURCE_AUDIT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FIRST_STAGE_CODE_FREEZE.json"
+      ]
+    },
+    {
+      "turn": 9,
+      "timestamp": "2026-10-22T04:34:08.853316+00:00",
+      "provenance": "ai-executed",
+      "action": "Coordinator relays directhuman promptstartgeneration/annotation; boundedPBSaudit185821Q nooutput/noownerwinner. Alllegal24/48GPUsassigned, no32GBclass; preserve48unpinentry. Verifiedunstarted jobtemporarilyuserheld, versionedpreexecutionlauncheramendment: sequentialpendingoriginalquestion limit1 calls withatomicperrecordsync/versionedmanifest, immutablev4compatiblefirstvaliddeliveryZIP andreceipt, max32terminals/50minfromstart/64MiBnextquestionguard insideexisting1GPUh4CPUhcap. ReleasedsameID verifiedQ Holdn; no duplicatejob/oldjobchanges/APIkeys/annotation.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/BOUNDED_FOLLOW_CURRENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FIRST_STAGE_LAUNCHER_AMENDMENT_V2.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/INCREMENTAL_DELIVERY_READY_ACTUAL_STATUS.json"
+      ]
+    },
+    {
+      "turn": 10,
+      "timestamp": "2026-10-22T06:12:23.139239+00:00",
+      "provenance": "ai-executed",
+      "action": "Verified185821F1 actualPBS313sec29cput/nooutput, nativeweightsSHA/import/idlepassed; oldvllm0.11 physicaldeviceint(UUID) startupfailure preserved. V3 strictone-to-one nvidia UUID/indexresolution + singlevisibleindex + torchlogicalUUIDequality; scientificpayload unchanged. Archivedv2/failureproofs. Freshlegalqueue/node/reservationaudit, exec32 earliest48GBbound6428sec andsameverifiedscratchweights. Sole185997Qexec32/4CPU32GB1GPU54m30submitted; spent+reserved3583GPUsec14332CPUcoresec withinoriginal1/4h. CurrentidentitycheckerPASS; no servicegenerationPASS/firstoutput claimed, nooldjobchange/newmonitor/APIcalls.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FAILED_185821_TERMINAL_PBS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FIRST_STAGE_LAUNCHER_AMENDMENT_V3.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/UUID_FIX_RETRY_ACTUAL_PBS_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/CURRENT_FIRST_STAGE_ALLOCATED_COSTS.json"
+      ]
+    },
+    {
+      "turn": 11,
+      "timestamp": "2026-10-22T06:17:47.053057+00:00",
+      "provenance": "ai-executed",
+      "action": "DirecthumanrelayAutoDLpriority+existing30minheartbeat; no newmonitor. Bounded185997Q/fulllegalGPUqueue-node-reservation-releaseaudit, nophysicalidleclaim outsideallocation. exec32release37736svsother48node3361s so removedQhostbinding samePID/caps afterverifiednoexec. NoAutoDLDSownerreadyinstruction/nooutput/no cancellation. ReadonlyformalQwenmediumTask/source/cappolicy/nativeconfigs andactualrecord: exactrevision/sampling/context65536/native single-user template confirmed,18acceptedshardreceipt metadata/sizesmatch. SmallsourceconfigreferenceZIP/report writtenonlynewpilot; oldformalassetsreadonly. Identifiedreceivedv4hasnoQwenprofile andGemmaelsepromptincompatible; noQwenrun.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/AUTODL_PRIORITY_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/AUTODL_PRIORITY_AND_HALF_HOUR_POLICY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/reports/QWEN_ORIGINAL_GENERATION_BINDING.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/QWEN_BINDING_BUNDLE.json"
+      ]
+    },
+    {
+      "turn": 12,
+      "timestamp": "2026-10-22T06:26:18.355776+00:00",
+      "provenance": "ai-executed",
+      "action": "One requestedboundedDSfollow: actual185997Q/noexec/nooutput; freshalllegalGPUqueues/nodes/ACL/reservation/releaseaudit allslotsassigned. Earliest48runningwalltimebound2827s on33notstartpromise. Keepunpinmedqueue/sameowner/caps; no betterplacementproved. Coldstage16.06GB/fullSHA/24GiBscratch checks required; generationthroughput/peakmemorynotmeasured andnotclaimed. Existinglocal30minheartbeatnextcheck recorded; no newmonitor/agent/service, Qwensourcerework, cancellation orduplicateproducer.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/LATEST_BOUNDED_DS_FOLLOW.json"
+      ]
+    },
+    {
+      "turn": 13,
+      "timestamp": "2026-10-22T06:50:44.070315+00:00",
+      "provenance": "ai-executed",
+      "action": "User asksnewtopkresults. CurrentidentityPASS; verifiedtop1/3TESTprediction/checkpoint/VALthreshold/all32selectionSHAs andindependentmetrics+1000pairedbootstrapbindings. Both20,033Steps accepted; reportpartialcurrentnewresults andreadonlyC/Streaming/alltokennoL2. Top3F1.484358 vsC.476670, deltaCIcross0; nostablesuperiorityclaim. All96trained; top2selectedL22e2/186043Q,186044/186045dependent. Freshlegalresourceaudit allBlackwellassigned/17earliestwallbound1421s; freeL40notvalidnativebridgefamily. No repeatcompletedtop1/3 oroldexperimentwork, no schedulingmutation/newmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/reports/PARTIAL_NEW_TOPK_RESULTS.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/reports/TEST_METRICS_top1.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/reports/TEST_METRICS_top3.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/reports/READONLY_COMPARISON_top3.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/audits/TOP1_TOP3_RESULTS_RESOURCE_FOLLOW.json"
+      ]
+    },
+    {
+      "turn": 14,
+      "timestamp": "2026-10-22T07:17:48.981783+00:00",
+      "provenance": "ai-executed",
+      "action": "Verified185997F1 exec31 allocated15s/no server/no records at exact-zeroGPUidleguard; actualquerynotpreserved so noclaimofdriverresidueasmeasuredcause. V4 resourcegates: rawGPU/PIDdiagnostics, nocomputePID+util0+<=64MiBdriverbookkeeping+commonlease+freshcheck, strictsameUUID/index/torchUUID retained; dedicatedgroupcleanup, native-ready memorysnapshot. ArchivedV3andfailedproofs; source/AST/frozenlineage/budget/capacityPASS. Freshalllegalqueues/nodes/reservations audit noidle24/48/no32; sole186096Qmed4CPU32GB1L40/54m15, spent328GPUsec+reserve3255=3583<3600, allocatedCPU14332<14400. HLEboundedreadonlyCetus source/backupsearch negative, originalAutoDLpath/revision noted; no downloads/resampling/oldjobchanges/newmonitor/APIcalls.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FAILED_185997_TERMINAL_PBS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FIRST_STAGE_LAUNCHER_AMENDMENT_V4.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/IDLE_GATE_RETRY_ACTUAL_PBS_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/CURRENT_FIRST_STAGE_ALLOCATED_COSTS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/HLE_EXISTING_SOURCE_READONLY_SEARCH.json"
+      ]
+    },
+    {
+      "turn": 15,
+      "timestamp": "2026-10-22T08:46:47.156924+00:00",
+      "provenance": "ai-executed",
+      "action": "Requestedboundedfreshaudit186096Q: all24/48assigned, 96GB19schedulerfree. HonoredpriorDS24/32/48preferenceuntildirecthumanexplicitapprovalof96GBsamebudget. Fresh19resource/ACL check; atomicallyheldsameQowner, qalter/qmovetolarge19, released; actualRexec19/0*4 Holdn verified. Same4CPU32GB1GPU54m15, no newjob/budget/modelprecision/context/payloadchange. Coldmodelstagepending, no currentnativegatePASS/firstrecord/producerwinnerclaimed. Existingheartbeatnext20:12Sydney; no newmonitor oroldjobchanges. OldHLEsearchstoppedbylatesthuman; no newHLEaction.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/CURRENT_BOUNDED_RESOURCE_FOLLOW.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/DIRECT_HUMAN_96GB_MIGRATION_PLAN.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/ACTUAL_96GB_MIGRATION_PBS_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "timestamp": "2026-10-22T09:31:18.394551+00:00",
+      "action": "Verified current topk identity andaccepted top1/3; top2remainsQ. Continued directlyauthorizedCetus annotation/credentialhandoff: exactprivatepermissions andsource receiptPASS, initial401job2coresec zero paidcalls; prepared versioned sourcefixture-reusingretry within2CPUh20CNY, awaiting upstreamsourcefixturezip. HLE200 receivedSHAchecked andisolated withoutmutatinghealthyproducer.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/cetus_annotation_v1/audits/LOCAL_CREDENTIAL_ADMISSION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/cetus_annotation_v1/ACTIVE_ANNOTATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/cetus_annotation_v1/audits/HLE_DELTA_QUARANTINE_ADMISSION.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "timestamp": "2026-10-22T09:33:37.563748+00:00",
+      "action": "Continuation within same turn: sourcefixturezip arrivedSHAverified, exactrenderer/messages/API/3actualpassedlabels/ledgerchecked; reuse0newfixturecalls. FrozenV2 uniqueCPUretry186271actualRexec25, accountCNYsourcegatesPASS andrealdatajournal confirmed. Firsttrajectorynotyetcomplete; remoteonlydata amendment honored.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/cetus_annotation_v1/audits/RETRY_ACTUAL_START_AND_LABEL_PROGRESS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/cetus_annotation_v1/audits/ANNOTATION_CODE_FREEZE_V2.json"
+      ]
+    },
+    {
+      "turn": 17,
+      "timestamp": "2026-10-22T09:52:00.724039+00:00",
+      "action": "Directhuman lifts DSgeneration firststagebudget andrequestsfullcompletion. AdmitfrozenHLE200append/1300total preservingold11and5terminal. Implement/freezeoriginal-native fullcontinuation, crossnodecompletecheckpointrestore and losslessincrementalattemptshards; realprefix/idempotence/interruptedtailroundtripPASS. Unique186297acceptedQlarge6h4CPU32GB1GPU withfiniteafteroksuccessor, freshcompatiblequeue/node/ACL/reservation/releaseaudit; noidleGPU. Separatepaidannotation/protectedstorage/unrelatedjobs preserved; no residentpoll/monitor orlocaldatatransfer.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/DIRECT_HUMAN_FULL_DS_GENERATION_AMENDMENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FULL_GENERATION_CODE_FREEZE_V1.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FULL_CHECKPOINT_ROUNDTRIP_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/ACTIVE_EXPERIMENT.json"
+      ]
+    },
+    {
+      "turn": 18,
+      "timestamp": "2026-10-22T10:15:57.451523+00:00",
+      "action": "Verified directhumanoriginalthreadQ/Gscope; reusedcanonicalnativeweights/Qwenmediumretry2/SIF andoriginalGemma, admittedsame1300IDs andglobalAPIescrow20/20/20/1940. ActualCPU186314/186315F0 supportsnativearchitectures/templates, noforward. Frozenversionedproducer+firstacceptedCPUannotationtrigger; administrativepath/triggerfixturePASS isnotgeneration. GPU186319/186320acceptedQlegal96GB,0realrecords/labels,winnerunfrozen. Freshresourceaudit andprotectedcapacityfirstrecordadmission; fullforecastheadroomgap/quotarefusalreported. DS186297actualR andnewacceptedrecords, firstcomplete271labelscryptographicallychecked. No protectedjobs/assets/data-policychange.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/THREE_MODELS_ACTUAL_STATUS_QG_SUBMITTED.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/AUTODL_QG_ESCROW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/arms/qwen3_8_27b/audits/GENERATION_CODE_FREEZE_V2.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/arms/gemma_4_31b_it/audits/GENERATION_CODE_FREEZE_V2.json"
+      ]
+    },
+    {
+      "turn": 19,
+      "timestamp": "2026-10-22T11:11:45.875452+00:00",
+      "action": "Directhuman fixesallCetus andremovesthree-model compute/annotation monetarycaps. DiagnoseGemmahostCUDAF1 beforegeneration, preservefailureandnativeSIFGPU/BF16/UUIDprotectedrepair; same186345unstartedH→Qprioritypreserved witharchivedV3→V4firstfullannotationhandoff. Qwenfirstrealnative585Stepsaccepted, initialpaid186375R; oldCPUlockblocksentryswitchsafelybeforemutation, queuefull186379afterany. DSfull186368actualR/8workers spendsbeyondold20 following186271F0. Implementpaidresult-before-settle/recovery/global2retry/unknownstop andfiniteeventfullannotation; temporaryfinancialsafetyPASSnoactualAPI. StrictadminhostkeyexistingSSHnodehealthsummaryconfirmsQwendecodingwithoutquestion/tokentransfer. Exactremainingfullstate/costs persisted; no fakecompletion, no newmonitor, unrelatedjobs intact.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/LATEST_FULL_THREE_MODELS_NO_BUDGET_STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/DIRECT_HUMAN_NO_BUDGET_FULL_THREE_MODEL_AMENDMENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FULL_ANNOTATION_FINANCIAL_SAFETY_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/arms/gemma_4_31b_it/audits/GENERATION_CODE_FREEZE_V4.json"
+      ]
+    },
+    {
+      "turn": 20,
+      "timestamp": "2026-10-22T11:28:50.536959+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedfreshlegalresourceaudit; Q/G requestparallelF3 synthetic17groups/33labels exactpromptRIDAPIlabel equivalence max8 andresume0replay. PreserveDS186368R/Qinitial186375R; replaceonlyunstarted186379→186414afterany; Gemma186345samequeuepriority archiveV4→V5 firstF3handoff releasedQ. Latesttruecounts/unknown/inflightcosts retained. IndependentlyverifyOlympiaddirecthumanrelayedmessage; platformapprovalrejectscrosssessionevidencetwice, askcurrentchathuman, no workaround/download/newGPU. Original1300continues.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/request_parallel_followup_20261022/SWITCH_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/REQUEST_LEVEL_ANNOTATION_PARALLELISM_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/LATEST_REQUEST_PARALLEL_STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/FRONTIERSCIENCE_DELTA_CURRENT_STATUS.json"
+      ]
+    },
+    {
+      "turn": 21,
+      "timestamp": "2026-10-22T11:57:06.989912+00:00",
+      "provenance": "ai-executed",
+      "action": "Thisexecutionchat human confirmsOlympiad100, total900, exactDS/Qsafequestionboundarydrain. OfficialHFdirectCetusfixedrev25ed67db7da8f4591484e764008ff585544f5a30 fetch100unique physics50chem40bio10/exactold1300overlap0. Freeze seed42 SuperGPQA25x4/BBEH34,33,33 independentlyofoutcomes;900sameIDs3modelsSHA7dd4a9dacd1dd3c9e210efc031fc83576b45d87d26725c5f7174eb7dbf886393. Prepareisolated900nativealltoken/checkpoint/selectedpaidreuse, keepwholefinancialledger/unknownsafety; syntheticimport/idempotence/unknownrefusalPASS0API. Same8requestfullannotations, originalsourcerenderers/parser/nativeQmedium/bf16/contextunchanged; same-nodeimmutableweightshardlink/fullSHA. RetirefutureoldPBSentryonly withexactarchives, running spool/native/paidunchanged; cancelonlyH186414. Submitunique900DS186448/Q186449/G186450afteranyold186297/186319/186345, allactualH. Gemmaold186345nowRnativeGPUgatePASSfirstclientnotaccepted. FiniteownDSQdrainscriptreadyhandlesApptainerdescendants/PIDfd/noresidentpoll/deadlineguard; exacthumanapprovalobtainedafterautoreviewrejection. Localappmessage transportfailedtwice; ownnodeSSHpublickeydenied, no bypass; canonicalcoordinationhandoffpending, noDRAIN_STARTEDandnoactualstopclaim. Current900identityPASS/notcomplete;source/predecessorselectedcountsnotconflated. No newagent/thread/service/monitor;oldprotectedclaims/topk32GiB preserved.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/SCOPE_SELECTION_FREEZE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/CHECKPOINT_HANDOFF_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/ACTUAL_SUBMITTED_PBS_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/OLD_FUTURE_ENTRY_RETIREMENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/audits/CURRENT_COORDINATION_REQUIRED.json"
+      ]
+    },
+    {
+      "turn": 22,
+      "timestamp": "2026-10-22T12:03:39.034701+00:00",
+      "provenance": "ai-executed",
+      "action": "Directhuman orderscanceloldgenerationnow andresume900 withoutwaiting. VerifyexactownR/H IDs/freshlegalallqueue-nodeACLreservationaudit/current900identityPASS. Prebind3newentries tooldcachednodes; qdelonlyold186297/319/345, actualallF143; afteranynew186448/449/450 dependenciesreleasedHtoQ. PBSolder1863242GPUand186468claimfreedslots beforeours. FreshfullcompatibleauditnoscheduleridleGPU; unpinall3newQentries preservesqueuepriorityforfirstcompatible96slot,DS48laterobservedbound. No qrun/PBSownershipbypass/unrelatedinterference; nofalseclaimnewR. PaidDS186368R preserved,Q186375naturalF0. SupersedependingSSHdraincanonicalhandoff; localappmessagefailedagainwithoutworkaround. Durablecurrent900status/preserveddata/inmemorylossriskrecorded; no newmonitor/service/agent.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/DIRECT_CANCEL_AND_IMMEDIATE_CONTINUATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/POST_CANCEL_UNPIN_DECISION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/immediate_cancel_resource_audit/ACTUAL_POST_CANCEL.json"
+      ]
+    },
+    {
+      "turn": 22,
+      "timestamp": "2026-10-22T12:05:58.720458+00:00",
+      "provenance": "ai-executed",
+      "action": "Latesame-turnschedulertruthoverridesearlier3Qsnapshot:DS186448gotexec15thenF1hosttorchCUDAgatebeforemodelservice, notsciencefailure; inheritedselected12terminal/11acceptedalltokencheckpointdurable. Qwen186449actuallyRexec15/nativeweightstage; Gemma186450Q. FreshalllegalGPUslotsassigned; submituniqueDS186472Qpinexec21earliestcompatibleboundavoidsfailed15, exactengineBF16unchanged. Updatecurrentowner/identity/controlhandoff, nofalse3Rclaimornewlygenerated11claim.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/arms/deepseek_r1_distill_llama_8b/audits/NATIVE_CUDA_FAILURE_RETRY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/immediate_cancel_resource_audit/RETRY_RESOURCE_JOBS_SANITIZED.json"
+      ]
+    },
+    {
+      "turn": 23,
+      "timestamp": "2026-10-22T12:24:39.720669+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedcoordinatorfollow actualallthreeexec15F1sameGPU0UUID:NVMLidlepassesbutnativeCUDAfails; Q/GoriginalSIF2.13failsaswell,nothost2.8-onlygatefalsepositive. No newproducer/APIsuccess. Freshalllegalqueues/nodesACL/reservationsreleaseaudit;24GBinadequatefullDScontext,48GBlater. Preservefailedlogs/currentcheckpoints; archiveV1→V2denyexec15 andmovebyteidenticalweightstageafterunchangedCUDA/BF16/UUIDgate/nativecommandASTequal,staticonlyPASS. DSunique186472unstartedHu→Qpreservepriority/moveexec23; Q/Gunique186495Qexec09/186496Qexec22 afterverifiedfailedold. Originalruntime/modelprecision/prompts/parser/seed unchanged, actualGPUrepairpending. AuditoldDS8464/Q395labelsretainedandcost/unknown/livepending; emptynewannotationexpectedawaitsafeownerdrain, no label-lossclaim/no inherited11asfreshclaim. CorrectallACTIVEs/home/nextcheck; no newagent/service/monitor/poll.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/native_failure_followup_20261022/FAILURE_INTERPRETATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/native_failure_followup_20261022/CURRENT_RETRY_JOBS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/NATIVE_PRESTAGE_REORDER_GATE_V2.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/ANNOTATION_LEGACY_AND_SCOPE900_STATUS.json"
+      ]
+    },
+    {
+      "turn": 24,
+      "timestamp": "2026-10-22T12:48:40.588153+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedmonitorfollow current900identityPASS; DS186472/Q186495/G186496 allstillQ, noactualnewnativeGPU/record. Freshfulllegalqueue/nodeACL/reservation/releaseauditnoscheduleridlecompatibleGPU, currentthree96healthyhostsremainshortestobservedrelease;24GBDSfullcontextinsufficient,48GBlater, no saferfasterplacement. Preservequeuepriority/pins/nodenativeguard, no newjobs/monitors/agents/services/polls. LegacyDSpaidR9092labels134.98717upperCNY2livepending0unknown andQ395labels10.1055720pending0unknown preserved; currentemptynewann prehandoffnotdataloss. Saveactualcountsandnextcheck, quietunchangedsourcefollow.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_124840/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_124840/CURRENT_JOBS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_124840/ALL_JOBS_SANITIZED.json"
+      ]
+    }
+  ],
+  "open_threads": [
+    "CurrentDS96 fit andselectedTEST/independentcomparison unfinished; top2unique ownerqueued. Noautomaticpolling."
+  ],
+  "ai_suggestions_pending": [
+    "Evidence-bounded independent enrichment pilot by domain/length/classsupport; no new generation authorized. Prioritize independent Math questions, Logic positive-question support, QwenMulti-hop long-Step recall and uncertain middleSciencePrefix. No causalclaim."
+  ],
+  "logic_revisions": []
+}

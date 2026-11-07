@@ -1,0 +1,24 @@
+session:
+  id: "2026-09-18_001"
+  date: "2026-09-18"
+  started: "2026-09-18T11:30+10:00"
+  last_turn: "2026-09-18T11:33+10:00"
+  turn_count: 1
+  summary: "User cancelled the queued compact attention-routing experiment before GPU replay; exact jobs and monitor stopped with prior evidence preserved."
+
+events_logged:
+  - {turn: 1, type: decision, id: N79, routing: direct, provenance: user, summary: "Cancel only queued compact attention-routing GPU preflights and dependent audit; stop monitor, retain artifacts, do not auto-resubmit."}
+
+ai_actions:
+  - turn: 1
+    action: "Verified exact PBS ownership, job names, experiment workdir and dependency; cancelled only 89438/89439/89440/89443, observed each F in job history, removed only the experiment's cron marker and verified empty crontab, then recorded cancellation in run state, monitor state and logs."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/RUN_STATE.json", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/ops/pbs_monitor.json", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/logs/CANCELLATION_20260918.json"]
+
+claims_touched: []
+logic_revisions: []
+key_context:
+  - {turn: 1, excerpt: "User explicitly cancelled the current two-arm attention-routing experiment; no GPU sample replay, Q/H/S asset extraction, training or TEST inference had completed."}
+open_threads:
+  - "Do not resume this cancelled experiment without a new explicit user instruction."
+ai_suggestions_pending: []

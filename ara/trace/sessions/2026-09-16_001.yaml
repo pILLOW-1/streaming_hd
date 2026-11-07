@@ -1,0 +1,41 @@
+session:
+  id: "2026-09-16_001"
+  date: "2026-09-16"
+  started: "2026-09-16T15:05+10:00"
+  last_turn: "2026-09-16T23:51+10:00"
+  turn_count: 3
+  summary: "Four-group BCE VAL and conditional rank-hinge TEST completed separately; new exact B/C state-relative experiment is implemented and dependency-gated but all scientific jobs remain pending."
+
+events_logged:
+  - {turn: 1, type: decision, id: N68, routing: direct, provenance: user, summary: "Authorize exact-parent TRAIN-only four-group cyclic balancing, natural VAL comparison and no TEST."}
+  - {turn: 1, type: experiment, id: N69, routing: direct, provenance: ai-executed, summary: "Three fits and independent VAL audit PASS; balanced batches verified; all three support gates false."}
+  - {turn: 1, type: observation, id: O11, routing: staged, provenance: ai-suggested, summary: "FN gap equalization accompanied mixed conditional effects and insufficient natural-VAL preservation."}
+  - {turn: 2, type: decision, id: N70, routing: direct, provenance: user, summary: "Authorize one frozen TEST inference per conditional rank hinge model and independent comparator audit; no TEST-based selection or retraining."}
+  - {turn: 2, type: experiment, id: N71, routing: direct, provenance: ai-executed, summary: "Three once-only inferences and NumPy/Pandas independent TEST audit PASS; preserve wrapper exit-1 exception and mixed comparator deltas."}
+  - {turn: 3, type: decision, id: N72, routing: direct, provenance: user, summary: "Authorize only B/C causal q-input contrast, six seed42 fits, VAL-only freeze, six once-only TEST inferences, and paired trajectory bootstrap."}
+  - {turn: 3, type: experiment, id: N73, routing: direct, provenance: ai-executed, summary: "Code/synthetic/provenance checks and eight owner-bound dependency-gated PBS submissions; three training jobs Q, downstream H, no real preflight or result."}
+
+ai_actions:
+  - turn: 1
+    action: "Audited the exact no-L2 parent, implemented independent cyclic G00/G01/G10/G11 queues, passed real-source preflight, audited all GPU queues, submitted one three-model GPU job plus dependent CPU validation, registered exact-ID five-minute monitoring, and completed job-bound hash validation without TEST access."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_four_group_balanced_bce_20260916", "ara/evidence/tables/step_four_group_balanced_bce_20260916.md"]
+  - turn: 2
+    action: "Verified frozen VAL, checkpoint identity and single TEST access; preserved the completed outputs after the inference wrapper's missing tee-log-directory failure, ran CPU-only independent tie-aware rank-AUROC audit of the immutable predictions and both comparator sources, verified hashes and exact PBS terminal states, and stopped the failed-job monitor."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_conditional_rank_hinge_20260916/test_extension", "experiments/streaming_hd/runs/step_conditional_rank_hinge_20260916/RUN_STATE.md", "experiments/streaming_hd/runs/step_conditional_rank_hinge_20260916/ACTIVE_EXPERIMENT.json"]
+  - turn: 3
+    action: "Implemented the isolated B/C model, canonical source staging, real-cache gradient/memory preflight, VAL-only fit/freeze, once-only TEST inference and independent CPU audit; audited the exact parent and descriptive packed comparator; owner-verified eight PBS job dependencies, registered the five-minute scoped monitor and observed a real cron smoke."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_state_relative_innovation_bc_20260916"]
+
+claims_touched: []
+logic_revisions: []
+key_context:
+  - {turn: 1, excerpt: "User authorized only TRAIN sampler balancing: exact 32/32/32/32 groups per batch, unchanged parent training semantics and frozen natural VAL, with no TEST access."}
+  - {turn: 2, excerpt: "Later, separately authorized conditional rank hinge frozen TEST extension: three VAL-selected checkpoints, once-only inference, exact parent/global comparison, independent CPU-only recovery of saved outputs, and no TEST-based model choice."}
+  - {turn: 3, excerpt: "Latest relayed user contract supersedes stale experiments: exactly B/C state-relative innovation across three models, six seed42 fits, VAL-only selection and frozen TEST even if VAL negative; no extra variants."}
+open_threads:
+  - "B/C pipeline 89004–89011 is Q/H under a five-minute remote monitor; actual-cache preflight, six fits, VAL freeze, six TEST inferences and final independent audit remain pending."
+ai_suggestions_pending:
+  - "O11 remains staged until the researcher comments on whether the conditional-error versus natural-VAL trade-off is the intended interpretation."

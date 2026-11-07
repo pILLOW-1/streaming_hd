@@ -1,0 +1,62 @@
+{
+  "recorded_at": "2026-09-09T18:39:08.873961+10:00",
+  "pooling_controls": {
+    "formal_complete": true,
+    "fits": 6,
+    "new_test_inferences": 6,
+    "gpu_seconds": 2066,
+    "analysis_cpu_core_seconds": 4104,
+    "B_strict_wins": {
+      "Streaming": 9,
+      "content_only": 8,
+      "feature_max": 7
+    },
+    "A_strict_wins_each_baseline": 0
+  },
+  "recovery": {
+    "fits": 9,
+    "independent_val_pass": true,
+    "test_prompt_pass_models": [
+      "qwen",
+      "llama"
+    ],
+    "deepseek_prefix_failures": 1,
+    "deepseek_trajectories": 562,
+    "status": "SCIENTIFIC_DECISION_REQUIRED",
+    "exception_implemented": false,
+    "gpu_seconds": 10093,
+    "analysis_cpu_core_seconds": 10556
+  },
+  "multiseed": {
+    "new_fits_complete": 18,
+    "independent_val_pass": true,
+    "new_test_inferences_complete_at_recording": 0,
+    "formal_complete": false,
+    "coordinator": "82659.hpc-head01",
+    "queued_test_jobs": [
+      "82672.hpc-head01",
+      "82673.hpc-head01",
+      "82675.hpc-head01"
+    ],
+    "desired_per_seed_rows": 27,
+    "desired_summary_rows": 9,
+    "ddof": 1,
+    "n_seeds": 3
+  },
+  "feishu_delivery_complete": false,
+  "preserve_two_seed42_controls": true,
+  "source_hashes": {
+    "experiments/streaming_hd/runs/step_pooling_space_controls_20260909/execution/batch_r2/audits/TEST_FINAL_VALIDATION.json": "bba564eb6751e83923355772076fffaf2ff9c451e7e58cfcc04faaed7124bbc3",
+    "experiments/streaming_hd/runs/step_pooling_space_controls_20260909/execution/batch_r2/FINAL_VALIDATION_PASS": "4a8d4d9480a5e0a1582befe56e9393da6b549790365d97df0615d113e04c4e2c",
+    "experiments/streaming_hd/runs/step_pooling_space_controls_20260909/execution/batch_r2/reports/test/RESULTS.md": "ca01a5d2512d22c5a407a30cb03a717a08cccb3d0fff90835b74285dcbf32c76",
+    "experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1/audits/VAL_FINAL_VALIDATION.json": "271d64eedc44bf314c720db74701ee6b2738ce3c80036145ba2c64377111828d",
+    "experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1/TEST_FREEZE.json": "606abbeee551376d25a7a9b2661b814da1ab07ebb149400f1e5af163d9c157ec",
+    "experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1/batch_r2/diagnostics/deepseek_test_input_v1/DECISION_AUDIT.json": "4e7bda9e55ff67b0a794d18dcda0cc19bbd62990d4ae0cd6b98d9743f3368596",
+    "experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1/batch_r2/BUDGET_WITH_INPUT_DIAGNOSTIC.json": "5a415add103e74a8e24cebc801f0c5a130f822609b736012d85f8f7dbe213dbb",
+    "experiments/streaming_hd/runs/step_three_method_multiseed_20260909/TASK.md": "cf49decee17c5c95ab9d5475fb2625406c2340a81e8be4e1f68d34af99429c95",
+    "experiments/streaming_hd/runs/step_three_method_multiseed_20260909/PRODUCTION_FREEZE.json": "ae6f0af414fda16ff5774715cb18ea9b4655c6835716abf16c9dcb619290533e",
+    "experiments/streaming_hd/runs/step_three_method_multiseed_20260909/TEST_FREEZE.json": "8c172303124f02804700622533d508b81e3cf75476d3f42df2ab762343a79634",
+    "experiments/streaming_hd/runs/step_three_method_multiseed_20260909/audits/VAL_FINAL_VALIDATION.json": "b93d4e844ff22f8ab69979d18da77bfda99ee806da89e808b3048c39f23ea949",
+    "experiments/streaming_hd/runs/step_three_method_multiseed_20260909/audits/VAL_TEST_FREEZE_READINESS_REVIEW.json": "d7e364730f0f2659f3050ce6ea2d5b647c8e6ddc861e378a2519d8bdf94948c3"
+  }
+}

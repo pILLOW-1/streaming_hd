@@ -1,0 +1,59 @@
+session:
+  id: "2026-09-09_001"
+  date: "2026-09-09"
+  started: "2026-09-09T12:51+10:00"
+  last_turn: "2026-09-09T21:23+10:00"
+  turn_count: 4
+  summary: "Qwen/Llama prompt and multiseed results were preserved then remaining work cancelled; both final-L2 single-variable controls completed independent validation."
+events_logged:
+  - {turn: 1, type: decision, id: N05, routing: direct, provenance: user, summary: "Authorize six arms and18jointfits"}
+  - {turn: 1, type: experiment, id: N06, routing: direct, provenance: ai-executed, summary: "Allocatedsix-armindependentnumericalselfcheckPASS"}
+  - {turn: 1, type: experiment, id: N07, routing: direct, provenance: ai-executed, summary: "ThreeinitialGPUjobssubmitted; persistentcoordinatorrunning"}
+  - {"turn": 2, "type": "decision", "id": "N08", "routing": "direct", "provenance": "user", "summary": "Recover missing fits and prioritize already-trained GRU TEST"}
+  - {"turn": 2, "type": "experiment", "id": "N09", "routing": "direct", "provenance": "ai-executed", "summary": "Independently verify the repaired GRU and its early frozen TEST"}
+  - {"turn": 2, "type": "experiment", "id": "N10", "routing": "direct", "provenance": "ai-executed", "summary": "Pass native prompt numerical diagnosis and start extraction"}
+  - {"turn": 2, "type": "decision", "id": "N11", "routing": "direct", "provenance": "user", "summary": "Authorize independent pooling-space controls"}
+  - {"turn": 2, "type": "experiment", "id": "N12", "routing": "direct", "provenance": "ai-executed", "summary": "Audit max-probe source and pass its three-model preflight"}
+  - {"turn": 2, "type": "decision", "id": "N13", "routing": "direct", "provenance": "ai-executed", "summary": "Pause GPU retries after administrator termination"}
+  - {turn: 2, type: observation, id: O02, routing: staged, provenance: ai-suggested, summary: "GRU gains vary by model and metric; no interpretation promoted"}
+  - {"turn": 3, "type": "decision", "id": "N14", "routing": "direct", "provenance": "user", "summary": "Resume authorized experiments on legal batch queues"}
+  - {"turn": 3, "type": "experiment", "id": "N15", "routing": "direct", "provenance": "ai-executed", "summary": "Complete and independently audit both pooling controls"}
+  - {"turn": 3, "type": "experiment", "id": "N16", "routing": "direct", "provenance": "ai-executed", "summary": "Complete missing recovery fits and validate frozen checkpoints"}
+  - {"turn": 3, "type": "decision", "id": "N17", "routing": "direct", "provenance": "user", "summary": "Freeze three-method multiseed completion and retain meeting controls"}
+  - {"turn": 3, "type": "experiment", "id": "N18", "routing": "direct", "provenance": "ai-executed", "summary": "Complete eighteen multiseed fits and freeze TEST"}
+  - {"turn": 3, "type": "decision", "id": "N19", "routing": "direct", "provenance": "ai-executed", "summary": "Pause only the DeepSeek prefix exception for a scientific decision"}
+  - {"turn": 3, "type": "observation", "id": "O03", "routing": "staged", "provenance": "ai-suggested", "summary": "Pooling-control interpretation remains exploratory and unpromoted"}
+  - {"turn": 4, "type": "decision", "id": "N20", "routing": "direct", "provenance": "user", "summary": "Evaluate only unaffected Qwen and Llama prompt arms"}
+  - {"turn": 4, "type": "experiment", "id": "N21", "routing": "direct", "provenance": "ai-executed", "summary": "Complete and independently audit four Qwen/Llama prompt TEST cells"}
+  - {"turn": 4, "type": "experiment", "id": "N22", "routing": "direct", "provenance": "ai-executed", "summary": "Complete and independently verify three-method multiseed results"}
+  - {"turn": 4, "type": "observation", "id": "O04", "routing": "staged", "provenance": "ai-suggested", "summary": "Prompt cosine partial-result interpretation remains unpromoted"}
+  - {"turn": 4, "type": "decision", "id": "N23", "routing": "direct", "provenance": "user", "summary": "Authorize learned-feature pooled-L2 control"}
+  - {"turn": 4, "type": "experiment", "id": "N24", "routing": "direct", "provenance": "ai-executed", "summary": "Complete and independently validate learned-feature pooled-L2 control"}
+  - {"turn": 4, "type": "decision", "id": "N25", "routing": "direct", "provenance": "user", "summary": "Authorize canonical content-only final-L2 removal"}
+  - {"turn": 4, "type": "experiment", "id": "N26", "routing": "direct", "provenance": "ai-executed", "summary": "Complete and independently validate canonical content-only no-L2 control"}
+  - {"turn": 4, "type": "decision", "id": "N27", "routing": "direct", "provenance": "user", "summary": "Cancel remaining multiseed and prompt-conditioning work while preserving completed artifacts"}
+  - {"turn": 4, "type": "observation", "id": "O05", "routing": "staged", "provenance": "ai-suggested", "summary": "Learned-feature pooled-L2 operating-point interpretation remains unpromoted"}
+  - {"turn": 4, "type": "observation", "id": "O06", "routing": "staged", "provenance": "ai-suggested", "summary": "Canonical content-only no-L2 ranking interpretation remains unpromoted"}
+ai_actions:
+  - turn: 1
+    action: "Implemented and reviewed6models,prompt extraction,training,independentVAL/TEST and persistentPBScoordination; isolated immutable snapshots."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_top6_parallel_20260909/"]
+  - turn: 2
+    action: "Repaired and audited missing architectures; completed earlyGRU TEST; froze prompt extraction and full adoption pipeline; implemented and profiled new controls; preserved scheduler administrator-termination evidence and stopped retries."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1", "experiments/streaming_hd/runs/step_pooling_space_controls_20260909"]
+  - {"turn": 3, "action": "Resumed legal batch execution; preserved failures and repaired only equivalent operational/runtime issues; independently completed pooling controls and all multiseed fits/VAL; froze TEST; diagnosed a single DeepSeek prefix incompatibility and prepared a reviewable exception; retained active unaffected coordination and pending local Feishu merge.", "provenance": "ai-executed", "files_changed": ["experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1", "experiments/streaming_hd/runs/step_pooling_space_controls_20260909", "experiments/streaming_hd/runs/step_three_method_multiseed_20260909"]}
+  - {"turn": 4, "action": "Completed the hash-bound Qwen/Llama prompt partial and verified multiseed results; then implemented, profiled, trained, froze, tested and independently validated both requested final-L2 single-variable controls on legal workq jobs. Preserved failed preflight evidence, enforced physical GPU locks and TEST boundaries, recorded cancellation of all remaining older-scope work with no jobs to delete, and finalized durable handoffs/resource ledgers.", "provenance": "ai-executed", "files_changed": ["experiments/streaming_hd/runs/step_top6_parallel_20260909/recovery/r1/partial_qwen_llama_v1", "experiments/streaming_hd/runs/step_three_method_multiseed_20260909", "experiments/streaming_hd/runs/step_feature_weighted_l2_20260909", "experiments/streaming_hd/runs/step_content_only_no_l2_20260909", "CURRENT_STREAMING_TASK.md", "ara/"]}
+claims_touched: []
+logic_revisions: []
+key_context:
+  - turn: 1
+    excerpt: "User approved: 可以，先让远程并行跑前6个. Max3GPUallocations,10GPUhours,18fits; no extraseeds/newdirections."
+  - turn: 2
+    excerpt: "Latest user steering prioritizes frozen GRU TEST while prompt recovery and independent pooling controls continue. Administrator termination then externally blocks further GPU work; user clarification requested."
+  - {"turn": 3, "excerpt": "User authorized legal batch continuation and exactly18 new seed43/44 fits, requested gpt-5.6-sol/high (not verifiable through remote tools), and required preservation of two existing seed42 controls in the final meeting table. Explicit DeepSeek scientific exception remains pending; silence is not approval."}
+  - {"turn": 4, "excerpt": "User requested and then preserved the completed Qwen/Llama-only prompt and full multiseed results, cancelled their remaining work without new TEST access, and authorized two strict final-L2 controls. Both controls completed exactly three seed42 fits, frozen TEST and independent validation."}
+open_threads: []
+ai_suggestions_pending:
+  - "O01/O02/O03/O04/O05/O06 remain staged; no qualifying endorsement or interpretation closure this turn."

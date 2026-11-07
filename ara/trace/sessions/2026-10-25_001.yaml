@@ -1,0 +1,391 @@
+{
+  "session": {
+    "id": "2026-10-25_001",
+    "date": "2026-10-25",
+    "started": "2026-10-24T13:37:41.632166+00:00",
+    "last_turn": "2026-10-25T12:44:31.579529+00:00",
+    "turn_count": 16,
+    "summary": "Cetus5preforwardbusy failures relocated;9live7830ranges2R7Q;HLElengthUnicodequarantine preserved;partiallabels2454/2887/2775,fullscopeunfinished"
+  },
+  "events_logged": [
+    {
+      "turn": 4,
+      "type": "experiment",
+      "id": "N205",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "DSCetus890terminalscopeaccepted805valid85discardedonly;10foreignheld/full900andlabelsnotaccepted"
+    },
+    {
+      "turn": 6,
+      "type": "decision",
+      "id": "N206",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Direct human approves isolated offline DS title and Gemma generated-close TruthfulQA boundary exceptions"
+    },
+    {
+      "turn": 6,
+      "type": "experiment",
+      "id": "N207",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Offline TruthfulQA390 source structures restored under approved versioned exceptions;labels/features pending"
+    },
+    {
+      "turn": 7,
+      "type": "decision",
+      "id": "N208",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Direct human regenerates only remaining592 with exact original prompts and at most3 calls per question"
+    },
+    {
+      "turn": 7,
+      "type": "experiment",
+      "id": "N209",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "592 exact old prompts and max3 client controls CPUverified; two unique GPU owners queued"
+    },
+    {
+      "turn": 7,
+      "type": "question",
+      "id": "N210",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Original MATH500Pilot50 annotation authorized but exact source archives absent on Cetus"
+    },
+    {
+      "turn": 8,
+      "type": "decision",
+      "id": "N211",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Human precise MATH50 backup transfer exception, all-disabled formal judge, and one extra isolatedRID approved"
+    },
+    {
+      "turn": 8,
+      "type": "experiment",
+      "id": "N212",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "OriginalMATH500149 trajectories all three-level labels independently accepted;0newgeneration"
+    },
+    {
+      "turn": 9,
+      "type": "decision",
+      "id": "N213",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "One additional original-prompt Fact regeneration round on nonaccepted IDs"
+    },
+    {
+      "turn": 9,
+      "type": "experiment",
+      "id": "N214",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Fact second-round finite dependency bootstrap submitted; ETA revised from fresh progress"
+    },
+    {
+      "turn": 10,
+      "type": "decision",
+      "id": "N215",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Human requests immediate partial three-model candidate hallucination comparison before final selection"
+    },
+    {
+      "turn": 10,
+      "type": "experiment",
+      "id": "N216",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Independently verify frozen partial14dataset/3model hallucination report with explicit mode strata"
+    },
+    {
+      "turn": 11,
+      "type": "experiment",
+      "id": "N217",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded5340 source expansion: real newQ outputs and disabled annotation ingestion, preserving partial gates"
+    },
+    {
+      "turn": 12,
+      "type": "decision",
+      "id": "N218",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Direct human continues oldTruthfulQA until eachmodel reaches80percent usability"
+    },
+    {
+      "turn": 12,
+      "type": "experiment",
+      "id": "N219",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Prepare and submit continuous whole-round recovery with cumulativeacceptedskip and targetboundaryexit"
+    },
+    {
+      "turn": 13,
+      "type": "experiment",
+      "id": "N220",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded Cetus follow: correct empty-source continuation, durable source-event annotation and originalcanonical coverage"
+    },
+    {
+      "turn": 14,
+      "type": "experiment",
+      "id": "N221",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Atomic Qwen scheduling union reuses queued owner and covers all7830new ranges with9effectiveentries"
+    },
+    {
+      "turn": 14,
+      "type": "experiment",
+      "id": "N222",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Admit all390approvedoffline structures for disabledlabels and independently closeGemma originalTruth80target"
+    },
+    {
+      "turn": 15,
+      "type": "experiment",
+      "id": "N223",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Cetus bounded resource follow and independently verified currentdomain/frozenTEST label rates"
+    },
+    {
+      "turn": 16,
+      "type": "experiment",
+      "id": "N224",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Cetus5preforwardbusy failures relocated;9live7830ranges2R7Q;HLElengthUnicodequarantine preserved;partiallabels2454/2887/2775,fullscopeunfinished"
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "timestamp": "2026-10-24T13:37:41.632166+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU195617F0rolling13:33UTC/00:33SydneyOct25 DS884terminal802accepted799trajectorycardcomplete,Q680/667/664,G390/327/326;lateridentityG394/331. Initialauditqsubauto-reviewdeniedassimplestatus,explicitexistingchat/TASK/AGENTSauthorizationevidencecheckedandSAMEcommandapproved(noindirectbypass). Actual4GPU R0GenQ+3afterokH:Gemma195045/046verified old5h13/4h25;DS195618newafterok1935483h57. Q192398F0normal5h11/195044Rnativefullrestore. DSnewunlabeledtrajectorybeyond2quarantines,old195158F0pending0unknownfalse->existing195586safelyreleased;G195600Rpreserved,Qcaughtupapart39quarantines. Alllegalresources/own4Rnativeproofsrecorded,healthyRpreserved;quarantine2/39/0unsettled0snapshot/nopaidreplay. Finaldomain3levelstatsrequiredpendingactual900candidate_pilotcompletion,0newmodel/statisticsAPI;foreign109+4holdsunchanged/no newmonitor/service/agent. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1333/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1333/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 2,
+      "timestamp": "2026-10-24T15:36:51.352217+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU195911F0rolling15:27UTC/02:27SydneyOct25DS885terminal802accepted800trajectorycardcomplete,Q688/674/671,G482/418/418;lateridentityQ689/675. ExactCetusremainingDS5Logic,Q157Science100Math57,G370Science171Logic99Fact98Multi-hop2;CSVIDsandforeignheld10/55/48saved(109foreignterminal+4nonterminalcheckpointnotreplayed). OldDS193548/G192399/400allF0nativeboundary;actual2GPU R2Q. DS195618Q35->36minimumsufficient48/G195045Q23->05immediatejointresourcesearlier;bothDScompatible48/96classesexact32GBaudited,conditional96forecastnotphysicalPASS. HealthyQ195044/G195046Rpreserved/ownnativeproofs;Qpaid195887Rpreserved,DS/GcaughtupfiniteH,quarantines2/39/0unsettled0snapshot/noAPIreplay. Diagnosticinlineelse96syntaxfailedbeforePBSreads/writes,correctedreadonlycodepassed. Finalmodel/domain3levelcounts/denoms/rates/coveragefilesrequiredpendingcompletion,0extrareplay/API,actualcandidate_pilotnotformalTEST. No newmonitor/service/agent. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1529/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1529/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 3,
+      "timestamp": "2026-10-24T17:38:00.885148+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU196083F0rolling17:26UTC/04:26SydneyOct25DS885terminal802accepted800trajectorycardcomplete,Q693/679/676,G531/466/466;lateridentityQ694/679. ExactCetusremainingDS5Logic/Q152Science100Math52/G321Science171Logic52Fact98;foreign109terminal+4nonterminalheldseparate. Q195044/G195046newunique196084/085afterokpreparedbefore2hgap. DS195618old48GBwait>=4.5hvs96uncontended~1h,samejobmed->largeexec10GPUwt3/4CPU32GB1GPU6h,actualR/strictidleUUIDruntimeBlackwell/completecheckpointrestorePASS,weights/servermaystillstage. PBS/science/manifesthashesunchanged;finite196091afterokexplicitfuturequeuekeepscontinuationssafe;originalPBSmedheader/mainjoinfallbackintact. InitialPBScombinedselect/gpuwtandrollbackfailed,ownneverstartedjobholdrestoredtoQthenfixedseparatestepsretry succeeded,nohealthyRtouch;fullevidencearchived. G195045Q05retainedfreshalllegalresources/IOaudit;own3Rproofs. Availableunquarantinedlabelscaughtup,activeQconsumerautoRpreserved,quarantines2/39/0unsettled0snapshot/nopaidreplay. Finaldomain3levelcounts/denoms/rates/coveragefilespendingcompletion/0extraAPIreplay,actualcandidate_pilotnotformalTEST. No newmonitor/service/agent. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1727/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1727/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "timestamp": "2026-10-24T19:48:59.334077+00:00",
+      "provenance": "ai-executed",
+      "action": "DSCetusgenerationphase independentlyPASS890uniqueterminal=805accepted85discarded,exactallfrozenownedIDs/0foreignintersection/900union/recordsSHA/poolF0+Facts100importSHAcontrolledlegacyF143sealverified;10foreignrawheldnotimported/not900valid/notfullannotationaccepted. Validatorv1round790omittedprecompletedFacts100andv2incorrectparentF0requirementfailedF1,originaljobs/logspreserved;v3CPU196391F0correctprovenanceawaregatepassedwithoutmodel/APIreplay. Broadercoverage196374STATUSwrittenbeforev1gatefailure:19:36UTC/06:36SydneyDS890/805/803cardcomplete,Q701/685/679,G566/500/500;quarantines2/39/0unsettled0snapshot,QpaidRcatchup preserved. ActualQ196084R/G195045Q23(from05),G196085Q07(from18)freshalllegalresourcesearlierdistinctrelease/cacheIOaudit,healthyRunmodified/queuedphysicalgatespending. ExactCetusremaining0/144/286IDsCSV,foreign10/55/48separate109terminal+4nonterminalholds. DSproducerphaseclosed/no moreDSsubmission;full900anddomain3levelcounts/rates/coveragefinalreportpending,actualcandidate_pilotnotformalTEST,0extramodel/statisticsAPI. No newmonitor/agent/service. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1936/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1936/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 5,
+      "timestamp": "2026-10-24T21:49:28.070376+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU196653F0rolling21:39UTC/08:39SydneyOct25 DS890terminal805accepted803trajectorycardcomplete,Q709/693/687,G618/551/549. DSCetus890scopeacceptanceunchanged/0remaining;Q136/G234ownedpendingIDsCSV,foreign109+4holdsseparate. G196085actuallyF1after7secprelaunchstrictidleutil100gate(no model/forward),completecheckpointrestoreproofarchived;newunique196674Qexec08avoids07,no relaxedgate/terminalreplay;Q196084healthyR->newunique196675afterokpreparedbefore2hgap. ActualQ/GpaidownersRpreserved;Q43unsettledreservedattemptsatsnapshotarenotunknownusage/failure,drainnaturally,no restart/cancel;quarantine2/39/0stable. Freshalllegalresources/VRAMCPU-RAM/IO+own2Rphysicalproofs,queuednewgatespending;DSno newgen. Finalmodel/domain3levelcounts/denoms/rates/coveragefilespendingcomplete,0extrareplay/statsAPI,actualcandidate_pilotnotformalTEST. No newmonitor/agent/service. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_2140/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_2140/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 6,
+      "timestamp": "2026-10-24T23:21:21.081719+00:00",
+      "provenance": "ai-executed",
+      "action": "Read original parser/manual/tokenizer schema and saved attempt/prompt evidence. Found Gemma348 unique generated eoc101 with already-closed prompt prefill; obtained direct approval for explicit new boundary exceptions; CPU accepted390 structures with independent source-ID/char-token/Step checks;preserved982scope and56excluded. No new model/API or activejob changes.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/original_truthfulqa_recovery_v1_20261025/approved_recovery_v1/OFFLINE_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/original_truthfulqa_recovery_v1_20261025/approved_recovery_v1/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "turn": 7,
+      "timestamp": "2026-10-24T23:36:40.071145+00:00",
+      "provenance": "ai-executed",
+      "action": "Prepared isolated592sameprompt regeneration with fresh draw seeds; CPUverified all592 sourcepromptSHA and mock max3/stop;submitted uniqueDS/GemmaGPUownersafterallcompatibleclassaudit;fixedqsubreadonlyattribute rejection beforeID. Created MATH50 missingcanonicalsource gate; no substitutedsource/inference/API.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_boundary_regeneration_ds_gemma_20261025/configs/CONTRACT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_boundary_regeneration_ds_gemma_20261025/audits/ACTUAL_SUBMISSION_RECEIPTS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_math500_pilot50_three_model_annotation_20261025/audits/MISSING_SOURCES.json"
+      ]
+    },
+    {
+      "turn": 8,
+      "timestamp": "2026-10-25T00:00:41.991006+00:00",
+      "provenance": "ai-executed",
+      "action": "Completed source-gated originalMATH149paidannotationandindependentfinalrates;oneprecisehumanretryexception. LatestCPU19701610:56Sydneycurrent900 Q719terminal703valid700complete126pending/G731655655121pending;Q39quarantine/G0,0unsettledsnapshot. FactDS397/G195jobs196965/66Q0terminal;fresh11:00alllegal48/96nodeaudit0unassignedGPU. Healthyexistingjobsunchanged; no newmonitor/agent.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/math500_three_models_annotation_20261025/audits/FINAL_COMPLETION_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/status_20261025_1100/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_boundary_regeneration_ds_gemma_20261025/audits/LATEST_ALL_LEGAL_RESOURCE_AUDIT.json"
+      ]
+    },
+    {
+      "turn": 9,
+      "timestamp": "2026-10-25T02:41:46.082783+00:00",
+      "provenance": "ai-executed",
+      "action": "Prepared and submitted one finite afterany Factround2 CPUbootstrap with frozenhumancontract and nativepreflight/scheduler/acceptance chain; noGPUlaunchyet, noannotation/newmonitor. RefreshedQ/GETAfromCPU197429source/labelcoverage.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_boundary_regeneration_round2_ds_gemma_20261025/TASK.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_boundary_regeneration_round2_ds_gemma_20261025/audits/BOOTSTRAP_FREEZE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_boundary_regeneration_round2_ds_gemma_20261025/audits/BOOTSTRAP_SUBMISSION_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 10,
+      "timestamp": "2026-10-25T02:54:09.402442+00:00",
+      "provenance": "ai-executed",
+      "action": "ImplementedCPUcomplete-prefixcompressedprovenancesnapshots/6views/independentrawverification/ChineseCSVJSONcandidatecomparison. Appliedlatesthumanimmediatereporttiming; no scientificselection ornewpaid/modelcalls.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/reports/three_model_dataset_partial_20261025_1350/REPORT_ZH.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/reports/three_model_dataset_partial_20261025_1350/DATASET_RATES.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/reports/three_model_dataset_partial_20261025_1350/COVERAGE.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/reports/three_model_dataset_partial_20261025_1350/MODE_MANUAL_SOURCE_STRATA.csv"
+      ]
+    },
+    {
+      "turn": 11,
+      "action": "Sourceidentity5340/model frozenPASS;8then9/10shardsadmitted, Qmath450197950realID, remainingQ1760preparednotadmitted due large_gpuq4queued/4runninglimits. NewQhle00197695actual4accepted, importsnotcountedfresh. CPU197908/197923actualclientmockthreelevels/disabled/causality/dedup/accountguardPASS0realHTTP; DS/G197909/197911prepaidstrictimportfieldassertfailed, immutablev2fix197925/197926successful, Q197910healthyretained. Actualnewpaid14500successgroups (DS3669/Q8110/G2721), firstcomplete3levelproofall3,0HTTP429/5xx/unknown, allcaughtupF0/pending0 finitecontinuations. Cache-awarepeakrepricedknownusage28.49465932CNYnotinvoice, conservativeledgerseparate.109AutoDLterminalunchanged4incompleteblocked/Qfeaturetokenmappinggateunchanged. Fullcompatiblequeue/node/ACL/reservation/array-subjobreleaseaudits; DSqueued197687exec35→36sameallocation~128min earlierwalltimebound, noRjobtouched. FactR2DS250terminal47accepted+prior147=194/397;G27terminal6accepted+119=125/195partialR. Full5340/currentoriginalcanonlabelmappingunfinished; countcompatiblecompleteonlylowerbound. No formalcompletion/newmonitor/agent/service/replay/statisticAPI.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/TASK.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/ANNOTATION_OFFLINE_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/GENERATION_SUBMISSIONS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261025_1620/QUEUED_DS_RELOCATION.json"
+      ]
+    },
+    {
+      "turn": 12,
+      "action": "198075CPUpreparefailedbeforemodel/APIonwrongloopmarker; fullfailedtreepreserved, actualrange(lenquestionIDs)fixed/refrozen.198084 native203DS exactoldprompt/render/retryfixturesPASS max3calls/freshdraws/successimmediatestop,0realpreflightmodelcalls. DSround3 actual198088Qlargeexec19 4CPU32GB1GPU6h,198089afteranyfiniteCPU. Alllegal48/96classes/queues/ACL/reservations/arraysubjobrelease/CPU-RAM/IOaudit, runlimit4retained/inallocationphysicalidlegatepending. CumulativeDS194/397priorrounds,124furtherneeded; eachnextdurableboundary stopsat318. Gemmahealthy197682retained;198077finiteafteranyindependentcontinuation. Fullstatewalltimecontinuation and newfreshroundonlynonaccepted; noresidentmonitor/agent/service. Versionedfutureexistingexpansionannotationcontroller_v3readsrecoveredcharacter-spanswithunchangeddisabledprompts; noAPIforstatistics/validation. Overalltargetnotmet/noactualnewroundacceptedclaimed.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025/RUN_STATE.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025/audits/CODE_FREEZE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025/audits/deepseek_r1_distill_llama_8b_STATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025/audits/gemma_4_31b_it_WAKE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025_round003_ds/audits/SELECTION_FREEZE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025_round003_ds/audits/SUBMISSION_RECEIPTS.json"
+      ]
+    },
+    {
+      "turn": 13,
+      "action": "Freshalllegalqueue/node/ACL/reservation/allarraysubjobrelease/CPU-RAM/IOaudits; PBS4largeRlimit honored.9/10newshardsaccepted, Q1760pendingadmission. Snapshot2026-10-25T06:42:21UTC:DS2730terminal2413usable2412complete;Q2725/2698/2693;G2733/2189/2187. FreshNQhle00R5accepted;Gnew00R26accepted29terminal;importsnotfresh. Newpaidgroups3669/9589/3615=16873,0HTTP429/5xx;Q1unknownkeptunderexisting10CNYupper/max2rule;cache-awareknownpeakrepricing34.58841108CNYnotinvoice. CanonicaloldDS1523/Q1975/G1368 reusedafterfileSHA/rawquestion/trajectorychecks;16020distinctcurrentqidstatescompletecountsindependentmetadataPASS. Qinitialpublishedviewomitted4discard+1explicitexcluded;rawoldresultsSHAfailedandnotused. IndependentlyvalidatedhistoricalcandidateMANIFEST+explicitexcludedqid+complete1975publishIDsetusedfor5control-onlyterminalstates, nofakeraw/noAPI/re-generation. GTruththird198219loadednativeenginebutfailedbeforefirstforwardonabsentparentrecords;0durableattempts, concreteemptyguardrepair, oldcode/freeze retained, resubmitted198329/198330. DS198088queuedsameguardfixed.7unstartednewshardscontrolledhold→versionedsourcewakehelper→release,2healthyRskipped.4DSmedQhostpinremoved;Qmath197950toexec07 andDSuntil198088toexec12onlyadvantage;othermovesnoadvantageskipped. LegacyQ197795healthyretained;join197796userheld,finite198395afterexitnarrowsnextowner toselectedHLEMath/fullstate/noHLEscience;sourceprompts/raw/capsunchanged. OriginalTruthlastcumulativeDS194/397,G147/195,80targetnotmet.0modelreplay/statisticsAPI/newmonitor/agent/service. Overallincomplete.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/CURRENT_ID_LEDGER_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/HOURLY_SOURCE_EVENT_AND_EMPTY_RECORD_REPAIR.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/HOURLY_QUEUED_PLACEMENT_REFRESH.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/LEGACY_QWEN_SELECTED_HANDOFF.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/logs/current_status.198401.hpc-head01.log",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/logs/current_status.198371.hpc-head01.log"
+      ]
+    },
+    {
+      "turn": 14,
+      "action": "Freshallcompatiblequeue/node/ACL/reservation/arrayrelease/CPU-RAM/IOaudit; all48L40assigned and96user4Rlimit preserved. CPU199045 transactionheldonlyunstarted197950, sourceA450+sourceB1760 exact disjoint union2210, native runtimebytes/config same, original InitialCapPolicy class offline replay per7pool restores unchanged caps/evidence. Initialsource/split/ledger/frozen10unitplan untouched; executionoverlay9units same7830pairs. Redirectqueuedsharedcontroller to isolatedmath_science, alloldcode/freeze retained; sameactual197950 laterR andaccepted5at08:41snapshot. No extra model/APIinmergegate. Effectiveall9unitsactualentry/noadmissionrangeleft. RealGPUstart/end callbacks canrefreshonlyQeligibleplacements whenuserRslotfree; healthyR/inallocationphysical-idle+UUIDlease/nativeBF16/fullcontexts unchanged.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/GENERATION_EXECUTION_PLAN.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/arms/qwen3_8_27b/pool_shards/math_science/audits/SCHEDULING_SOURCE_UNION_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/arms/qwen3_8_27b/pool_shards/math_science/audits/CAP_HISTORY_PROVENANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/GENERATION_SUBMISSIONS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.json"
+      ]
+    },
+    {
+      "turn": 14,
+      "action": "Discovered approved390rows retain outcomeaccepted_offline_structure and were excluded by nativeaccepted filters. Versionedannotation-onlyadapterV5 checksapprovedprotocol/recordSHAs, preservesrawoutcome/nativeparsernonPASS/featurespending, no acceptednative reclassification. ActualDS42/G348 admitted; CPU199185 independentcausalmessages/promptSHA/RID/binary/disabledproofPASS6340/6340(159DS+6181G),0missing/extraAPIorforward. Initialverification199178failedsolelylegacylistspansread-as-dict; verifierfixed, source/judgeuntouched. Gemma3rd198329F0 actual9accepted stopsat156/195=.8; CPU199190 independentthree-roundSHA/unique/noacceptedreplay/max3savedrequestsperqidperroundPASS(413/197/94attempts). CompletedGemmaTruthregenexitsfollow;DS194/397target318continues. New5340snapshot09:02UTC nativeacceptedDS2413/Q2727/G2364; approvedoffline42/0/348;annotable2455/2727/2712;full3labels2454/2724/2703;Npaidgroups3828/12903/13869,pending0,HTTP429/5xx0,Qunknown1/Gunknown4upper50CNYseparate,Gfixedexhausted2isolated. Knownnewcache-awarepeakusage60.09419068notinvoice;liveconditionalremainingpeak2255.957079/offpeak1127.978540 includesrecovery/DS80future-successsupplement,tailriskexplicit. No raw/split/source/model/retrychange. Finaldomain/TESTstatisticsstillpendingfullfeasiblegeneration/labels andindependentacceptance; nofalsecompletion.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/OFFLINE_STRUCTURE_390_LABEL_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/ANNOTATION_CODE_FREEZE_V5.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/annotation_cost_forecast_live/SUMMARY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/CURRENT_ID_LEDGER_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/original_truthfulqa_recovery_until80_20261025/reports/GEMMA_TARGET80_INDEPENDENT_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 15,
+      "action": "Fresh09:27UTC alllegalqueues/nodes/ACL/reservations/arraysubjobrelease/CPU-RAM/IO:20publicL40assigned,DS4minimum48GBQ;96GBuser4Rfull. Nohealthy/unrelatedRchanged orphysicalprobeoutsideallocation. VerifiedqueuedDSoriginal198088selectexec12→08same4CPU32GB1GPU6h seeksownQ197695exit, limitsstillapply. Explicit10logical→9actual7830unique-paircoveragePASS. Existingfinite199348dispatchwokeavailablepaidconsumers; onlypriorF0/fullstatecontinuationsupgradev1→v2sourcewake, no livepayloadmutation. Current20:50Sydney snapshot nativeaccepted2413/2759/2418,approvedoffline42/0/348,full3labels2454/2755/2756;16020currentIDcountsretainprotocol-excluded/control-onlystates. GemmaTruth156/195independentF0closed(notfollowedagain),DS194target318continues,390offline6340labelsacceptedproofretained. NewCPUdomain/dataset/frozenTESTreport199318initiallyfailedMATHnamespaceassumption; exactoldMATHcontractnamespacebound199335PASS,199384fullmode-coveragePASS. Immutablefileprefix/SHA andpertrajectorycounts; secondCSVaggregate verifiesnumerators/denominators/macro;canonicaldirect/effectiveprefixall0differences, separateviewskept;unknownhistoricalmodeexplicit,allmodevalidcountsconserved.0model/APIforstatistics,0TESTtuning. Newsource-reportfinancialliveconditionalremainingpeak2249.2013886/offpeak1124.6006943notinvoice/upper;unknownconservativebudgetseparate. Finalfullscope/domain/TESTacceptanceremainsopen, no newmonitor/agent/service.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/CURRENT_STATUS.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/SOURCE_RANGE_TO_PHYSICAL_JOB_COVERAGE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/CURRENT_ID_LEDGER_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/bounded_follow_20261025_092703",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/CURRENT_DOMAIN_TEST_RATES.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/domain_test_rates/20261025T095033Z/REPORT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/domain_test_rates/20261025T095033Z/DOMAIN_RATES.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/domain_test_rates/20261025T095033Z/DATASET_RATES.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/domain_test_rates/20261025T095033Z/MODE_SOURCE_COUNTS.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/reports/annotation_cost_forecast_live/SUMMARY.json"
+      ]
+    }
+  ],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 6,
+      "excerpt": "Directhuman: 截断的不考虑，只争取边界解析失败的; same-chat reply: 批准两项离线恢复规则. Offline phase only."
+    },
+    {
+      "turn": 8,
+      "excerpt": "Currenthuman asksFactregeneration andQwen/Gemmacandidates status while exactapprovedMATHone-requestcloseout continued. FullMATH149accepted, oldgrouped900/592scopes remainunfinished."
+    },
+    {
+      "turn": 9,
+      "excerpt": "Human: Fact 重生成这一轮结束后对未合格的再做一轮，争取达到80%可用率; then asksQwen/Gemma remaininggeneration/annotationtime."
+    },
+    {
+      "turn": 10,
+      "excerpt": "Immediatepartialcandidatecomparisonrequested to supporthumanfinalselection; no extra generation/statisticsAPI or automaticmanifestfreeze."
+    },
+    {
+      "turn": 12,
+      "excerpt": "旧 TruthfulQA持续尝试，直到恢复80%. Supersedes prioroneextra-roundstop only; fixedoriginal unresolved DS397/G195 targets318/156, exactoldprompts/nativeprofile/parser/Stepsemantics andmax3calls/question/round preserved; independentpermodelstop, onlycumulativenonaccepted re-enter."
+    }
+  ],
+  "open_threads": [
+    "Completecurrent900nativegeneration/annotation;foreigncheckpoint/isolationheld;finaldomainthreelevelstatisticsrequired",
+    "TruthfulQA offline390 restored structures: later authorized labels/features pending; remaining DS397/Gemma195 ambiguous;56truncatedexcluded. No unchanged-original-parserPASS or newcomplete3levelclaim.",
+    "TruthfulQA592sameprompt max3regeneration twoGPUQ; nativeallocationgates/generation/independentvalidcoverage pending.",
+    "Factround2oneadditionalisolatedround afterfirstcomplete;nativegates/actualGPU/80percentoutcome pending. No unboundedrounds.",
+    "Finish selected5340/model generation/disabled annotation, reconcile originalcanonical Stepfilterlabelreuse, remaining1760PBSadmission/4incomplete/Qfeaturemappinggate and originalTruthfulQA R2 actualacceptance; finite existingcoordinator only."
+  ],
+  "ai_suggestions_pending": []
+}

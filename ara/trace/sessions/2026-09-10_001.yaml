@@ -1,0 +1,24 @@
+session:
+  id: "2026-09-10_001"
+  date: "2026-09-10"
+  started: "2026-09-10T23:32+10:00"
+  last_turn: "2026-09-10T23:32+10:00"
+  turn_count: 1
+  summary: "The same-width residual mapper capacity control completed three seed42 fits, frozen TEST and independent validation; the predeclared majority AUROC rule was not met."
+events_logged:
+  - {turn: 1, type: decision, id: N28, routing: direct, provenance: user, summary: "Authorize the same-width residual mapper capacity control"}
+  - {turn: 1, type: experiment, id: N29, routing: direct, provenance: ai-executed, summary: "Complete and independently validate three residual-mapper fits and frozen TEST inferences"}
+  - {turn: 1, type: observation, id: O07, routing: staged, provenance: ai-suggested, summary: "Capacity interpretation remains model-dependent and unpromoted"}
+ai_actions:
+  - turn: 1
+    action: "Implemented, preflighted, trained, VAL-froze, TEST-evaluated and independently validated the strict residual-mapper control on legal workq jobs; preserved and audited operational retries; finalized resource and identity records."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_feature_weighted_residual_mapper_20260910", "ara/"]
+claims_touched: []
+logic_revisions: []
+key_context:
+  - turn: 1
+    excerpt: "User authorized immediate execution of exactly one same-width residual mapper layer over the learned features for Qwen, Llama and DeepSeek at seed42, with every other parent protocol element fixed and no extra seeds under any outcome."
+open_threads: []
+ai_suggestions_pending:
+  - "O01/O02/O03/O04/O05/O06/O07 remain staged; no qualifying researcher endorsement of their interpretations occurred this turn."

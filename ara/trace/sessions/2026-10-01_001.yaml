@@ -1,0 +1,102 @@
+session:
+  id: "2026-10-01_001"
+  date: "2026-10-01"
+  started: "2026-10-01T11:07:07+10:00"
+  last_turn: "2026-10-01T21:30:41+10:00"
+  turn_count: 5
+  summary: "Qwen medium full GPU and Cetus CPU Judge run; corrected three-total extraction retry is prepared, offline validated, and waits for safe post-job switch."
+
+events_logged:
+  - turn: 1
+    type: decision
+    id: N139
+    routing: direct
+    provenance: user
+    summary: "Authorized the exact frozen v1 question manifest and prompt contract for a pinned Qwen3.8-27B generator, with fastest compliant sufficient GPU selection and Cetus-only artifacts."
+  - turn: 3
+    type: dead_end
+    id: N140
+    routing: direct
+    provenance: ai-executed
+    summary: "The saved container lacks python but provides python3; first canary stopped before inference, its dependent full job never ran, and a minimal repaired canary was submitted."
+  - turn: 4
+    type: dead_end
+    id: N141
+    routing: direct
+    provenance: ai-executed
+    summary: "Second canary rejected an occupied and partly unqueryable PBS node before inference; a safer node-pinned retry was submitted."
+
+  - {"turn": 5, "type": "decision", "id": "N142", "routing": "direct", "provenance": "user-revised", "summary": "Corrected the extraction-error rule from four to three total generation attempts, with two retries after the initial call and no in-flight interruption."}
+  - {"turn": 5, "type": "experiment", "id": "N143", "routing": "direct", "provenance": "ai-executed", "summary": "Offline retry-budget, prompt-identity, unique-worklist and interrupted-terminal tests passed; no retry2 GPU job was launched."}
+
+ai_actions:
+  - turn: 1
+    action: "Verified the 1,980-row question SHA256, manual and code bundle hashes; audited PBS queues and nodes; prepared an isolated BF16 weight-hashing and five-domain canary pipeline; submitted owner-verified job 105985.hpc-head01 to large_gpuq, running on hpc-exec16. No full-generation or Judge result is claimed."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/TASK.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/ACTIVE_EXPERIMENT.json"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/run_qwen_generation.py"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/qwen_canary.pbs"
+  - turn: 2
+    action: "Submitted full-generation job 105993.hpc-head01 to workq with an exact afterok dependency on canary 105985.hpc-head01 and a second canary-audit gate in the script. Owner verification found state H with dependency hold; full generation had not started."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/qwen_full.pbs"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/ACTIVE_EXPERIMENT.json"
+  - turn: 3
+    action: "Preserved the failed scripts and logs; verified F/255 for canary 105985 and F without generation for dependency job 105993; changed container Python invocations to python3; submitted owner-verified canary 106000 to large_gpuq, initially Q without hold."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/audits/CANARY_R1_FAILURE_AND_R2_RETRY.json"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/qwen_canary.pbs"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/qwen_full.pbs"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/ACTIVE_EXPERIMENT.json"
+  - turn: 4
+    action: "Verified F/3 for canary 106000 and zero generation records; refreshed all compatible node and queue status, preserved r2 logs/script, moved the physical-idle gate before large staging, and submitted owner-verified node-pinned canary 106006, initially Q without hold."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/audits/CANARY_R2_GPU_STOP_AND_R3_RETRY.json"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/qwen_canary.pbs"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/code/qwen_full.pbs"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_20261001/ACTIVE_EXPERIMENT.json"
+
+  - turn: 5
+    action: "Read-only checked GPU 106090 and Cetus CPU Judge 106238 as running; audited 92 unique generation terminals and 3,836 valid Judge labels at 21:28 AEST; prepared versioned retry2 runner, checker and PBS switch guard; archived unrun retry3 draft; updated current identity and status."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/code/run_qwen_generation_retry2.py"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/code/check_generation_retry2.py"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/code/qwen_full_retry2.pbs"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/audits/RETRY2_AMENDMENT.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/audits/LIVE_STATUS.json"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/streaming_hd_v1_qwen38_27b_medium_20261001/ACTIVE_EXPERIMENT.json"
+      - "CURRENT_STREAMING_TASK.md"
+
+claims_touched: []
+logic_revisions: []
+
+key_context:
+  - turn: 1
+    excerpt: "The user required the exact SHA256-frozen 1,980 questions and original v1 prompt and segmentation, Qwen official thinking and sampling, and no local output transfer. The coordinating chat will poll this exact PBS ID every 30 minutes; no remote cron was registered."
+  - turn: 2
+    excerpt: "The coordinating chat will poll every five minutes until full PBS generation starts and shared records are growing, then return to 30-minute checks. No remote cron or resident heartbeat is authorized."
+  - turn: 3
+    excerpt: "The user requested a minimal executable-name repair inside the compliant PBS runtime, an exact replacement canary, and no new full execution until the canary audit passes."
+  - turn: 4
+    excerpt: "The user asked for current execution status. Live PBS and logs show zero accepted generations, no live full job, and a new r3 canary queued after the safety gate rejected hpc-exec15."
+
+  - turn: 5
+    excerpt: "The user corrected extraction failures to initial generation plus two retries, total three attempts; the versioned continuation is prepared but blocked until GPU 106090 finishes naturally. Qwen Judge is Cetus CPU PBS 106238 only, with migrated labels and the USD 200 Qwen cap preserved."
+
+open_threads:
+  - "Wait for GPU 106090 to finish naturally, verify final sync and identities, re-audit resources, then submit only the prepared retry2 continuation if needed; preserve original journals and emit one effective record per question."
+  - "Continue Cetus CPU Judge 106238 and future one-shot snapshots with existing request IDs, cumulative USD 200 protection and no AutoDL Qwen transfer."
+  - "Complete the 1,980-question generation and independent Judge coverage audits; no final result is claimed yet."
+
+ai_suggestions_pending: []

@@ -30,7 +30,7 @@ Use `--mode train` to fit independent layer candidates on TRAIN, select using VA
 Some baselines require separately obtained upstream dependencies. Follow [THIRD_PARTY.md](../THIRD_PARTY.md) before running HaMI, ARS, RACE or ReDe.
 
 - [baselines](baselines/README.md): method recipes, training and feature inputs.
-- [ours](ours/README.md): learnable Step and Prefix implementations.
+- [ours](ours/README.md): placeholder for the proposed method, which is not yet finalized.
 - [generation](generation/README.md): native formatting, hashes, token counts and hidden states.
 - `tools/`: dataset validation and feature preparation.
 - `tests/`: CPU equation, alignment and integration checks.

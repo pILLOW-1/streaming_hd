@@ -1,0 +1,38 @@
+session:
+  id: "2026-09-17_001"
+  date: "2026-09-17"
+  started: "2026-09-17T10:46+10:00"
+  last_turn: "2026-09-17T15:15+10:00"
+  turn_count: 3
+  summary: "C-only frozen TEST passed; separate two-arm attention experiment stopped at CPU capacity/source gate before GPU extraction."
+
+events_logged:
+  - {turn: 1, type: pivot, id: N74, routing: direct, provenance: user, summary: "Cancel B and replace the unstarted paired pipeline with C-only, preserving C science, three models, seed42 and frozen VAL/TEST audit gates."}
+  - {turn: 1, type: experiment, id: N75, routing: direct, provenance: ai-executed, summary: "Exact old jobs cancelled and old monitor removed; C-only code/model identity checked and new eight-job dependency chain and scoped monitor registered, currently Q/H."}
+  - {turn: 2, type: decision, id: N76, routing: direct, provenance: user, summary: "Switch only unstarted C-only TEST/audit jobs to CPU after verifying no prior TEST access; keep freeze/checkpoints and once-only inference."}
+  - {turn: 2, type: experiment, id: N77, routing: direct, provenance: ai-executed, summary: "VAL-only CPU dry-run, three once-only CPU TEST jobs and independent audit PASS; exact-ID monitor validated 31 hashes and stopped."}
+  - {turn: 3, type: experiment, id: N78, routing: direct, provenance: ai-executed, summary: "Two CPU preflights quantified full selected-layer attention capacity and a smaller query-row lower bound; full matrix exceeds free storage, six Llama Step token alignments fail, and GPU extraction/training were stopped."}
+
+ai_actions:
+  - turn: 1
+    action: "Read exact PBS owner/state/script evidence, cancelled only old 89004–89011 before execution, removed only the old monitor line, isolated the original C definition in a new run, checked C parameter/output identity and static gates, audited compatible queues/nodes, submitted/owner-verified eight C-only PBS jobs and registered exact-ID five-minute monitoring."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_state_relative_innovation_bc_20260916/RUN_STATE.json", "experiments/streaming_hd/runs/step_state_relative_innovation_bc_20260916/audits/CANCELLATION_20260917.json", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917"]
+  - turn: 2
+    action: "Verified old C-only TEST jobs Q and audit H with no TEST artifacts; cancelled those four exact IDs. Added separate CPU transport and VAL-only dry-run without changing frozen code, checkpoints or TEST_FREEZE; submitted dry-run and three CPU TEST plus dependency audit, checked exact ownership, once-only markers, final audit hashes and monitor terminal state. Independently computed read-only frozen-VAL previous-released-Prefix group diagnostics against exact parent without saving a VAL artifact."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/code/test_infer_cpu.py", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/code/cpu_dry_run.py", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/code/check_identity_cpu.py", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/pbs/cpu_dry_run.pbs", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/pbs/test_model_cpu.pbs", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/ops/pipeline_monitor.py", "experiments/streaming_hd/runs/step_state_relative_innovation_c_only_20260917/RUN_STATE.json"]
+  - turn: 3
+    action: "Created isolated two-arm attention experiment contract and CPU-only capacity scripts; submitted and verified exact PBS jobs 89423/89427, checked source alignment and nine split-level matrix estimates, and stopped at capacity/source Gate 0 without any GPU or TEST attention extraction."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/TASK.md", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/RUN_STATE.json", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/code/capacity_preflight.py", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/code/minimum_scope_preflight.py", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/pbs/capacity_preflight.pbs", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/pbs/minimum_scope_preflight.pbs", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/audits/CAPACITY_PREFLIGHT.json", "experiments/streaming_hd/runs/step_attention_routing_two_arms_20260917/audits/MINIMUM_SCOPE_PREFLIGHT.json"]
+
+claims_touched: []
+logic_revisions: []
+key_context:
+  - {turn: 1, excerpt: "Latest user instruction supersedes B/C: cancel B, run C-only on Qwen/Llama/DeepSeek with seed42, VAL-selected frozen TEST and independent audit; no unrelated job changes."}
+  - {turn: 2, excerpt: "Latest direction moved only the still-unstarted frozen C TEST chain to CPU, after a VAL-only numeric dry-run; original B cancellation and seed42 C selection remained fixed."}
+  - {turn: 3, excerpt: "The separate attention-routing two-arm experiment is stopped at Gate 0: full native matrices exceed free shared space, quota and native precision are unverified, and six Llama Steps lack fully contained query tokens; no GPU fit or TEST attention extraction occurred."}
+open_threads:
+  - "Decide whether to accept a reasoning-query-row-only permanent attention asset in place of complete matrices after exact Llama token-boundary repair, native dtype replay and user-quota verification."
+ai_suggestions_pending: []

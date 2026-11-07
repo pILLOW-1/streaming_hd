@@ -1,0 +1,125 @@
+{
+  "session": {
+    "id": "2026-10-24_001",
+    "date": "2026-10-24",
+    "started": "2026-10-23T13:06:24.104374+00:00",
+    "last_turn": "2026-10-24T11:29:17.692309+00:00",
+    "turn_count": 10,
+    "summary": "Bounded900 source/annotation continuation andresourcechecks"
+  },
+  "events_logged": [
+    {
+      "turn": 10,
+      "type": "decision",
+      "id": "N204",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Directhumanrelayedpostcompletionmodel-domain3levelhallucinationstats;sourcecandidatepilotexplicit,finalratespending"
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "timestamp": "2026-10-23T13:06:24.104374+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU189829rollingcoverage653/596/595DS,258/257/254Q,148/128/128G;quarantine1/38/0unsettled0. ThreeoldproducersF0normalboundary,uniqueQ752Rrestore. QueuedDS62132->31/Q24305->14 freshresourcesearlier;Q195newRgatepending;6GPU R5Q. Nohealthyinterrupt/APIreplay/newmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261023_1305/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 2,
+      "timestamp": "2026-10-23T15:25:01.069745+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU190004F0rolling15:22UTC DS672terminal613accepted611trajectorycardinalitycomplete;Q369/368/361;G151/130/130. QuarantineDS2(new1)/Q38/G0,unsettled0snapshot. DS621F1beforemodel occupiedphysicalgate,no newgeneration; checkpointpreservedunique190011Q33replacement. FournearboundaryRafteroknext190005/006/007/008Hpreparedsamecache/nativecheckpoint;oldhealthyuntouched. Actual6GPU R5Q+4afterokH. No newmonitor/poll/APIreplay/sciencechange. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261023_1525/BOUNDED_RECEIPT.json. Nextcheckabout2h onlyexistingcoordinator/directhumanmessage.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261023_1525/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 3,
+      "timestamp": "2026-10-23T22:21:43.596043+00:00",
+      "provenance": "ai-executed",
+      "action": "Directhuman remainingparallel:7normalboundarysavedrootsresubmitted190485-190491unique(nativecheckpoint/successskip),actual6GPUR4Q+1afterokH. CPU19048409:18SydneyDS810term741accepted739cardcomplete,Q544/540/538,G249/200/200;quarantine2/38/0unsettled0. Existing3paidconsumerswoken;DS/GavailablecaughtupthenfiniteH,QstillR. UpcomingDS190495afterok190006prepared;QextraGPUPBSqueue-limitdenied,finiteCPU190497afterok189243oneadmissionattempt. Actualownidle/UUID/SHA/nativeGPUproofssaved,newstagependingnotPASS. AllCetusremainingentrybound,deferred0,foreign109+4checkpointisolationspreserved. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/parallel_remaining_20261024_0920/BOUNDED_RECEIPT.json. Nextcheckexistingcoordinator/human~2h,no newmonitor/service/agent.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/parallel_remaining_20261024_0920/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "timestamp": "2026-10-23T23:29:10.082965+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU190581F0rolling23:27UTC/10:27SydneyDS842terminal773accepted771trajectorycardcomplete;Q564/559/550;G251/202/202. Actual8GPU R2Q+1DSafterokH. DS190006~4h/6h->unique190495genuineafterok/same38cache verified. Q561Q14/G622Q18 blocked4largeRlimit;G622queued-onlyfreshresourceearlierwarmG18->23,physicalgatepending. Freshalllegalqueues/nodes/ACL/reservations/IO/native8ownRproofs stored,nohealthychange/nooccupiedGPU. ActualpaidDS/Q R,GcaughtupfiniteH;quarantine2/38/0unsettled0snapshot,shortpartialthroughputnotsteadyrate. NoAPIreplay/sciencechange/newmonitor/agent/service. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261023_2330/BOUNDED_RECEIPT.json. Nextonlyexistingcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261023_2330/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 5,
+      "timestamp": "2026-10-24T01:29:03.276091+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU190908F0rolling01:26UTC/12:26SydneyDS855terminal782accepted780trajectorycardcomplete,Q608/601/595,G257/206/206. DS190006F0nativeboundaryleft9/unique495Q38->31earlier;190487F0science75remaining0fullpooldone. Actual6GPU R3Q+2DSafterokH(190922/923);Q/GboundaryfiniteCPU190932/933/934afterokold489/490/488preparedBEFOREnext2hcheck,modelQlock+joincompanioncontrols preserved. Large4RquotabindsG622/Q561,keepwarm23/14afteralllegalresources/IOaudit;own6Rphysicalproofssaved,queuednewgatespending. Quarantines2/38/0unsettled0snapshot;QpaidR/DSGcaughtupfiniteH,noinflightstop/successRIDreplay/unknowncapchange. No newmonitor/service/agent. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0128/BOUNDED_RECEIPT.json. Nextexistingcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0128/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 6,
+      "timestamp": "2026-10-24T03:26:17.580455+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU191944F0rolling03:24UTC/14:24Sydney DS873terminal798accepted796trajectorycardcomplete,Q636/629/626,G261/209/209;lateridentityG262/210. Actual4GPU R1Q+1DSafterokH. DS17Cetusownedremainingexclusivecurrent190486R4h13/6->unique190923afterok35;7otherDSrootsterminal, no900validclaim. Gemma191928stillQ23->18 immediateallnodejointresourceearlier;currently3ownlargeR leaves1slotbutnoassignablefreecompatibleGPU. G189622R23/Q191936R22healthy/nativegatesrecorded; nooccupiedGPU/outsideprobe. ActualpaidQ R/DSGfinitewait;quarantine2/38/0unsettled0snapshot/ledgerandpartialthroughputstored. NoAPIreplay/oldforeign4holdrelease/sciencechange/newmonitor/agent/service. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0325/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0325/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 7,
+      "timestamp": "2026-10-24T05:29:24.981921+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU192391F0rolling05:26UTC/16:26SydneyDS876terminal800accepted798trajectorycardcomplete,Q656/649/647,G284/231/231. Actual4GPU R0GenQ;G191928actuallyR18. Allavailableunquarantinedlabels caughtup;3oldpaidowners192042/238/334F0, checkpointpending0unknownfalse,3finiteHwaitnormal/no forcedwake. Quarantines2/38/0unsettled0journal snapshot,configured512notactiveworkers. UniqueafterokQ192398/G192399/192400preparedsamecached14/23/18;healthyRpreserved. Freshalllegalqueues/nodes/ACL/reservations/IO+native4ownRphysicalproofs;additionalnear-releaseGPUnotpermissiontoduplicatecurrentexclusiveclaims. DS14ownedremaining/foreign109+4holdpreserved,noAPIreplay/newmonitor/agent/service. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0528/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0528/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 8,
+      "timestamp": "2026-10-24T07:30:02.432054+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU193545F0rolling07:28UTC/18:28SydneyDS878terminal800accepted798trajectorycardcomplete,Q664/655/652,G296/243/243. Actual4GPU R0GenQ+4afterokH. Q1905614h35/G1896224h10 existingunique192398/399/400afterokverified;DS1909233h20/12ownedremaining->new193548afteroksame35cachepreparedbefore2hgap. Freshalllegalqueues/nodes/ACL/reservations/IO+native4ownRproofs, nohealthyRchange/freeGPUnotpermissiontoduplicateliveclaims. Q193211paidRcatchup,DS/GcaughtupfiniteH;quarantine2/38/0unsettled0snapshot/previouscheckpointownersF0verified,shortpartialthroughputnotsteady. No paidRIDreplay/inflightstop/unknowncapchange/newmonitor/service/agent. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0729/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0729/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 9,
+      "timestamp": "2026-10-24T09:28:34.088434+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU194260F0rolling09:25UTC/20:25SydneyDS879terminal800accepted798trajectorycardcomplete,Q667/657/654,G323/267/267. Actual4GPU R0GenQ+1DSafterokH. OldQ190561/G189622/G191928F0nativePBS_CONTINUATION_WINDOW,uniquesuccessors192398/399/400Rfullrestoreproofs. DS1909235h16currentquestion/11ownedremaining,193548genuineafterokverified;noexternalstop/nativeadmission-deadlineunchanged/unreturnedKVnotresumable. Availableunquarantinedlabelscaughtup,currentoldpaidownersF0checkpointpending0unknownfalse,3finiteHnormal/no redundantwake. QuarantinesDS2/Q39(new1)/G0,noextra fixed-cap retry,unsettled0journal snapshot/partialwindowsnotsteadyrates. Freshalllegalqueues/nodes/ACL/reservations/IO+own4Rnativeproofs;noqueueadjustmentneeded/freeGPUcannotduplicate liveclaims. Preserveforeign109+4holds,no newmonitor/agent/service. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0927/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_0927/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 10,
+      "timestamp": "2026-10-24T11:29:17.692309+00:00",
+      "provenance": "ai-executed",
+      "action": "CPU195023F0rolling11:23UTC/22:23SydneyDS881terminal801accepted799trajectorycardcomplete,Q677/666/663,G354/295/295;lateridentityQ678terminal/G355terminal296accepted. Actual4GPU R0GenQ+3newQ/GafterokH195044/045/046preparedbefore2hgap;DS190923F0normalboundary5h27/193548Rnativefullrestore. Allavailableunquarantinedlabelscaughtup,oldpaidownersF0/pending0unknownfalse/finiteHnormal;quarantine2/39/0unsettled0snapshot. Freshalllegalresources/native4ownRproofs, healthyRpreserved. Directhumannewpostcompletionmodel-domainStepPrefixAnswerhallucinationcounts/validdenoms/rates/coverage requirementboundconfig/groupdomainCSV,0extrareplay/API,missingnevernegative. Manifestactualcandidate_pilot/noformalTESTsplit recorded,notrelabelled;finalratespendingallgeneration/annotationdrain. Foreign109+4holdsunchanged/no newmonitor/service/agent. Receipt ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1125/BOUNDED_RECEIPT.json. Nextcoordinator/human~2h.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_cetus_follow_20261024_1125/BOUNDED_RECEIPT.json"
+      ]
+    }
+  ],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 10,
+      "excerpt": "等生成与标注结束后，统计测试中每个domain的三个level的幻觉率",
+      "relayed_by": "01a0797a-ff01-7922-abed-afcee05f40aa"
+    }
+  ],
+  "open_threads": [
+    "Current900generation/annotation incomplete; preservefixedquarantines andforeigncheckpointblocks"
+  ],
+  "ai_suggestions_pending": []
+}

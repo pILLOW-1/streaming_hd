@@ -1,0 +1,182 @@
+session:
+  id: "2026-09-14_001"
+  date: "2026-09-14"
+  started: "2026-09-14T10:43+10:00"
+  last_turn: "2026-09-14T21:40+10:00"
+  turn_count: 15
+  summary: "Hard-tail and hinge TEST validated; matched frozen VAL prior-Prefix error and conditional-AUROC diagnostics independently completed."
+
+events_logged:
+  - {turn: 1, type: experiment, id: N38, routing: direct, provenance: ai-executed, summary: "Qwen 15,321-Step extraction passed; stage-index bug blocked geometry; hash-bound recovery passed and corrected Phase A retry queued."}
+  - {turn: 2, type: experiment, id: N39, routing: direct, provenance: ai-executed, summary: "All 57,801 frozen VAL Step scores paired and six AUROCs replayed; a six-panel bounded density figure and hash audit completed."}
+  - {turn: 3, type: decision, id: N40, routing: direct, provenance: user, summary: "Preserve old outputs; request model-colored Overall and stage-specific 2x3 VAL figures, vertically matched y axes, and local transfer."}
+  - {turn: 3, type: experiment, id: N41, routing: direct, provenance: ai-executed, summary: "Four versioned 2x3 figures, 24 panels and all 57,801 stage assignments independently passed; local Windows transfer remains unverified."}
+  - {turn: 5, type: decision, id: N42, routing: direct, provenance: user, summary: "Stop only geometry Phase A/conditional Phase B, monitor and autoresume; preserve partial artifacts; no unrelated changes."}
+  - {turn: 6, type: decision, id: N43, routing: direct, provenance: user, summary: "Authorize one three-model seed42 hard-tail Step rank arm, matching prior all-pairs control except detached 20% tail selection; VAL only, no TEST."}
+  - {turn: 6, type: experiment, id: N44, routing: direct, provenance: ai-executed, summary: "Synthetic loss/gradient and source/split preflight passed; frozen PBS 87129 accepted workq/normal and queued, no fit/result yet."}
+  - {turn: 7, type: decision, id: N45, routing: direct, provenance: user, summary: "User requested unchanged hard-tail resubmission after first allocation failed the physical-idle GPU guard."}
+  - {turn: 7, type: decision, id: N46, routing: direct, provenance: user, summary: "Coordinating task relayed user approval of five-minute known-Q/H-job checks, disabled otherwise; automatic monitor not installed here."}
+  - {turn: 8, type: experiment, id: N47, routing: direct, provenance: ai-executed, summary: "Retry 87165 exit0; exactly three seed42 fits, complete VAL predictions and 67 durable artifact hashes independently validated PASS; no TEST."}
+  - {turn: 9, type: decision, id: N48, routing: direct, provenance: user, summary: "Authorize one frozen TEST inference and independent audit per VAL-selected checkpoint, matched four-method comparison, and autonomous known-job five-minute monitor; resubmit job 87196."}
+  - {turn: 10, type: decision, id: N49, routing: direct, provenance: user, summary: "Request separate short CPU feasibility pilot and conditional full three-model frozen TEST without cancelling already-running GPU job."}
+  - {turn: 10, type: experiment, id: N50, routing: direct, provenance: ai-executed, summary: "CPU pilot 87205 F/exit0: 5481/3478/4055 Steps/s, 10.14-second full pure-inference projection, 0.79-GB process peak RSS, pilot audit PASS."}
+  - {turn: 10, type: experiment, id: N51, routing: direct, provenance: ai-executed, summary: "Full CPU 87210 F/exit0: 11.79-second pure inference, 78-second walltime; all three TEST metrics and original GPU predictions independently rechecked PASS."}
+  - {turn: 11, type: decision, id: N52, routing: direct, provenance: user, summary: "Authorize strict softplus-to-zero-margin-hinge three-model control with frozen TEST and five matched comparator methods."}
+  - {turn: 11, type: experiment, id: N53, routing: direct, provenance: ai-executed, summary: "Numerical/source/config preflight PASS; first interq private-node placement stopped before GPU work; public large_gpuq retry 87219 accepted Q with known-job monitor."}
+  - {turn: 12, type: experiment, id: N54, routing: direct, provenance: ai-executed, summary: "Three hinge fits and three frozen TEST inferences completed; original PBS F/exit1 due NumPy int64 JSON serialization; CPU-only independent audit repair PASS, no rerun."}
+  - {turn: 13, type: experiment, id: N55, routing: direct, provenance: ai-executed, summary: "Three-model frozen VAL prior-Prefix-label conditional errors and 2,000 trajectory-bootstrap CIs independently validated; released Prefix versus Step-OR mismatch quantified."}
+  - {turn: 14, type: decision, id: N56, routing: direct, provenance: user, summary: "Request original Streaming as the sole detector change for a matched, frozen VAL previous released-Prefix-label diagnostic and same-population learned comparison."}
+  - {turn: 14, type: experiment, id: N57, routing: direct, provenance: ai-executed, summary: "Original Streaming three-model 12-row conditional errors, 2,000 trajectory-bootstrap CIs, six paired-method rows and both figure datasets independently validated PASS."}
+  - {turn: 15, type: decision, id: N58, routing: direct, provenance: user, summary: "Authorize matched original Streaming versus learned-feature frozen VAL conditional and cross-state AUROC with paired trajectory bootstrap, no training/TEST/GPU."}
+  - {turn: 15, type: experiment, id: N59, routing: direct, provenance: ai-executed, summary: "Six model-method conditional-AUROC rows, 12,000 paired bootstrap rows and exact four-pair decomposition independently validated PASS; Llama Error paired CI crosses zero."}
+
+ai_actions:
+  - turn: 1
+    action: "Verified failed PBS job 85792 exit1 and original Qwen extraction hashes; corrected integer stage selection, added per-stage class count audit and independent checks; implemented and CPU-tested Qwen z/metadata recovery with no large Qwen token restaging; audited current GPU queues and submitted corrected job 86890 to med_gpuq, confirmed Q state."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/code/phase_a.py"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/code/validate_phase_a.py"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/code/test_phase_a_recovery.py"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/audits/PHASE_A_RETRY_20260914.json"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/ACTIVE_EXPERIMENT.json"
+  - turn: 2
+    action: "Verified frozen source identities and AUROCs; generated a validation-only paired CSV, six-cell AUROC summary, boundary-reflected KDE PNG/PDF, source/output hash audit and report; independently checked the output files. No GPU work or TEST access."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/"
+      - "reports/step_val_score_density_20260914.md"
+      - "reports/step_val_score_density_20260914.png"
+      - "ara/evidence/tables/step_val_score_density_20260914.md"
+  - turn: 3
+    action: "Reused unchanged frozen VAL paired scores and exact predecessor stage rule; generated versioned Overall/Early/Middle/Late colored PNG/PDF pairs, 24-panel metrics, sample-stage mapping, source/output hashes, and independent validation. Staged eight copies in shared reports; verified the local D: drive is inaccessible from this remote host."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/TASK_MODEL_Y_COLOR_STAGE_EXTENSION.md"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/render_model_y_color.py"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/render_stage_model_y_color.py"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/validate_model_y_color_stages.py"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/figures/"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/results/"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/audits/"
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/reports/MODEL_Y_COLOR_STAGE_RESULTS.md"
+      - "reports/step_val_score_density_20260914/figures/"
+      - "ara/evidence/tables/step_val_score_density_20260914_model_y_color_stages.md"
+  - turn: 4
+    action: "Recorded the coordinating local task's report that SCP copied figures, reports, audits, and results to the requested Windows directory and all four figures open; left remote scientific artifacts unchanged."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_score_density_20260914/RUN_STATE.md"
+  - turn: 5
+    action: "Verified exact geometry retry 86890 in final PBS state F after owner qdel, confirmed no owner nonterminal PBS jobs, closed this experiment's monitor/autoresume state, and preserved prior failed-job logs and Qwen partial VAL extraction. No new geometry result, training or TEST access."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/ACTIVE_EXPERIMENT.json"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/step_val_geometry_margin_20260913/CANCELED_BY_USER.json"
+  - turn: 6
+    action: "Created isolated hard-tail experiment contract, config, training and independent VAL validation code; passed six-case brute-force loss/gradient test and exact TRAIN/VAL source audit; audited all compatible PBS queues/nodes; froze payload and submitted one 4-CPU/24-GB/1-GPU workq job 87129, confirmed initial Q."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/"
+  - turn: 7
+    action: "Verified historical PBS 87129 F/exit75 after both allocated-node GPUs were busy; confirmed no fit began, reran full compatible queue/node and owner-job audits, verified unchanged frozen payload, submitted retry 87165 to workq/normal with identical resources, and confirmed initial Q. Recorded five-minute known-job eligibility from later user approval, but no automatic monitor is verified: app automation tool absent and cluster crontab denied by PAM."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/ACTIVE_EXPERIMENT.json"
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/audits/SCHEDULER_AUDIT.json"
+  - turn: 8
+    action: "Checked only known job 87165, confirmed PBS F/exit0 on hpc-exec09; inspected all three numerical gate audits and independent VAL audit, re-hashed all 67 shared artifacts, updated current-run completion and disabled waiting-job monitoring. No new training or TEST access."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/ACTIVE_EXPERIMENT.json"
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/RUN_STATE.md"
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/audits/SCHEDULER_AUDIT.json"
+  - turn: 9
+    action: "Built and froze the TEST extension, passed code and comparator alignment preflights, submitted job 87196 to workq/normal, created and smoke-tested project-local remote cron monitor, fixed cron PATH after first tick, verified known-job Q query and zero query errors. No new TEST inference completed yet."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/test_extension/"
+      - ".agents/skills/pbs-experiment-monitor/"
+  - turn: 10
+    action: "Created isolated CPU benchmark contract/code/PBS jobs; ran and hash-validated three-model pilot and full frozen TEST on medq; independently replayed CPU logits and rechecked preserved GPU predictions; recorded original GPU validator-only BF16 failure without altering predictions; closed both CPU remote monitors."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_cpu_benchmark_20260914/"
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/test_extension/STATE.json"
+      - "experiments/streaming_hd/runs/step_hard_tail_rank_20260914/test_extension/VALIDATION_REPAIR_HANDOFF.md"
+      - "ara/evidence/tables/step_hard_tail_cpu_test_20260914.md"
+      - "ara/evidence/tables/step_hard_tail_rank_val_20260914.md"
+  - turn: 11
+    action: "Created isolated zero-margin hinge contract, code, config, PBS pipeline, preflight and final TEST auditor; verified synthetic derivatives and parent source identities; stopped unexpected private-node allocation at runtime gate; resubmitted with explicit public GPU Qlist, verified owner and Q state, and registered five-minute job-bound cron audit."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_global_hinge_rank_20260914/"
+  - turn: 12
+    action: "Confirmed PBS 87219 F/exit1 and durable completion of all three fits, VAL freeze and TEST inferences; added CPU-only final-audit repair without touching frozen checkpoints/predictions/metrics; independently replayed all 18 metric and 15 comparator rows and 21 artifact hashes; preserved historical monitor FAILED_JOB and verified cron removal."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_global_hinge_rank_20260914/code/repair_final_audit.py"
+      - "experiments/streaming_hd/runs/step_global_hinge_rank_20260914/audits/TEST_FINAL_VALIDATION.json"
+      - "experiments/streaming_hd/runs/step_global_hinge_rank_20260914/audits/POST_TEST_AUDIT_REPAIR.json"
+      - "experiments/streaming_hd/runs/step_global_hinge_rank_20260914/RUN_STATE.json"
+      - "ara/evidence/tables/step_global_hinge_rank_20260914.md"
+  - turn: 13
+    action: "Created isolated CPU-only frozen VAL analysis; independently replayed original scores/labels, canonical previous released Prefix joins, stage and 2,000 trajectory-bootstrap CIs; audited released Prefix label against Step-label OR and corrected onset wording without changing the authorized grouping."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_prefix_history_error_20260914/"
+      - "ara/evidence/tables/step_val_prefix_history_error_20260914.md"
+  - turn: 14
+    action: "Created isolated original-Streaming CPU-only VAL replay, checked archived scores/logits/predictions and native threshold, reused unchanged released-Prefix group membership, generated stage and ECDF figures plus paired-method table, and independently rechecked identities, rates, CIs and figure data."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_prefix_history_error_streaming_20260914/"
+      - "ara/evidence/tables/step_val_prefix_history_error_streaming_20260914.md"
+
+  - turn: 15
+    action: "Created an isolated CPU-only VAL conditional-AUROC run, joined both frozen score sources to unchanged released-Prefix membership, generated full tables, paired bootstrap trace and minimal figure, then independently replayed source, all point/bootstrap AUCs, CIs and decomposition."
+    provenance: ai-executed
+    files_changed:
+      - "experiments/streaming_hd/runs/step_val_conditional_auc_20260914/"
+      - "ara/evidence/tables/step_val_conditional_auc_20260914.md"
+
+claims_touched: []
+logic_revisions: []
+key_context:
+  - turn: 1
+    excerpt: "Preserve and reuse the validated Qwen extraction, repair the stage-index bug, audit same-type mistakes, and retry the same frozen VAL-only protocol; Phase B still requires the original independent gate."
+  - turn: 2
+    excerpt: "The latest user image specified a white-grid purple density style, normal solid and hallucinated dashed, AUROC in-panel; frozen VAL predictions only, across Qwen/Llama/DeepSeek."
+  - turn: 3
+    excerpt: "Use distinct model colors and model-column shared y limits, then add Early/Middle/Late figures from the prior validated complete-trajectory partition without changing Overall scores or original files."
+  - turn: 4
+    excerpt: "Coordinating local task reports completing SCP of figures, reports, audits and results to the requested D: reports directory and confirms all four figures open; this remote task did not independently verify Windows hashes."
+  - turn: 5
+    excerpt: "User stopped only geometry; owner qdel returned exit 0, PBS showed final F terminated before start, and no new Phase A/Phase B work is authorized. The attached density screenshot repeats the already-delivered VAL plot style, not permission to resume geometry."
+  - turn: 6
+    excerpt: "New independent hard-tail contract permits exactly three seed42 fits and frozen VAL diagnostics, not TEST; geometry stays cancelled. Job 87129 first Q check at 16:11 AEST, next check no earlier than 16:42 AEST."
+  - turn: 7
+    excerpt: "User said to resubmit. The original job exited before training on occupied GPUs; unchanged retry 87165 was accepted Q at 16:35 AEST. Coordinating task relayed later user approval of five-minute known-job checks, but this session has no verified automatic monitor."
+  - turn: 8
+    excerpt: "Known-job check found retry 87165 completed successfully; three VAL-only fits passed independent validation, durable hash replay and no-TEST gate. No waiting job remains, so monitoring is disabled."
+  - turn: 9
+    excerpt: "The later explicit TEST authorization supersedes only the original VAL-only prohibition. Job 87196 is queued with no TEST result yet; the earlier open-thread authorization requirement is satisfied and job-bound audit remains pending."
+  - turn: 10
+    excerpt: "The original GPU job started before the CPU decision, so it was never cancelled. Its three frozen TEST predictions survived an original BF16 validator failure; separate CPU full inference and independent GPU-prediction recheck both passed, while the historical GPU exit remains 1."
+  - turn: 11
+    excerpt: "User requested resubmission of the newly authorized hinge control. Initial interq placement on private genome was safely rejected; exact retry 87219 is queued on public large_gpuq with no fit or TEST access yet."
+  - turn: 12
+    excerpt: "The coordinating request authorized a narrow final-audit repair. All three fits and TEST inferences were already complete; CPU revalidation wrote the missing audit only. Original PBS F/exit1 and monitor FAILED_JOB remain explicit, while the independent output audit is PASS."
+  - turn: 13
+    excerpt: "Use actual released previous Prefix labels rather than synthesized Step OR; audit showed they differ in 1,418 Qwen, 447 Llama and 4,814 DeepSeek prefixes, so G01 is not a first-hallucination/onset group. The frozen VAL diagnostic and independent validation remain complete without PBS or TEST."
+  - turn: 14
+    excerpt: "Explicit parallel request changed only the frozen detector to original Streaming while preserving prior released-Prefix groups, 57,801 VAL Steps, seed42 trajectory resampling and no-TEST scope. Native Streaming strict S_prob>0.5 was verified; both matched methods have model-specific group-rate tradeoffs, not a uniform winner."
+  - turn: 15
+    excerpt: "The explicit parallel request compares continuous-score Clean/Error AUROCs, cross-state pair contributions and matched-method bootstrap differences on the same frozen VAL population. Independent audit PASS; Llama Error method difference remains unresolved at 95% CI, and ranking is not calibration."
+open_threads: []
+ai_suggestions_pending:
+  - "O10 remains staged; the geometry follow-on and implementation recovery do not endorse the prior score-shift interpretation."

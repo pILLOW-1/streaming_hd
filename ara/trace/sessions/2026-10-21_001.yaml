@@ -1,0 +1,337 @@
+{
+  "session": {
+    "id": "2026-10-21_001",
+    "date": "2026-10-21",
+    "started": "2026-10-20T22:28:02.656598+00:00",
+    "last_turn": "2026-10-21T12:50:34.143627+00:00",
+    "turn_count": 7,
+    "summary": "ActualovernightVALprogress;Bphasecapacityrecovery,Gemmafullsource,andDSselectedCPUpreparepass;GPUtestpendingqueuecap"
+  },
+  "events_logged": [
+    {
+      "turn": 1,
+      "type": "dead_end",
+      "id": "N165",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Generic Qlist diagnostic does not prove mixedqueue infeasibility"
+    },
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N166",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Overnight fullstate progress and actual B/Gemma continuation after ended-phase reservation reconciliation"
+    },
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N167",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "SAPLMA DS all32 native5 VAL complete and actual selected-model CPU source preparation passes"
+    },
+    {
+      "turn": 2,
+      "type": "experiment",
+      "id": "N172",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Actual DeepSeek current-Step all32 source and all4 worst128 GPU gates pass; unique first formalall32 entry admitted"
+    },
+    {
+      "turn": 3,
+      "type": "dead_end",
+      "id": "N173",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Float numeric equality alone does not establish signed-zero bitidentity"
+    },
+    {
+      "turn": 3,
+      "type": "experiment",
+      "id": "N174",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Pre-allocation fixed scoring dependency gate and strict A lean-source bridge pass; old-scope placement remains resource constrained"
+    },
+    {
+      "turn": 4,
+      "type": "experiment",
+      "id": "N175",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Recover current Step memory failure and completed Prefix A selection without refit"
+    },
+    {
+      "turn": 5,
+      "type": "experiment",
+      "id": "N176",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Audit actual nine runs and fifteen result arms with no assignable GPU slots"
+    },
+    {
+      "turn": 5,
+      "type": "decision",
+      "id": "N177",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Check legal available GPU slots at every bounded follow-up"
+    },
+    {
+      "turn": 6,
+      "type": "experiment",
+      "id": "N178",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded all15 follow with actual selected A source interface validation"
+    },
+    {
+      "turn": 7,
+      "type": "experiment",
+      "id": "N179",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Complete first enhanced Step all32 VAL selection and independently verify frozen threshold"
+    },
+    {
+      "id": "N189",
+      "timestamp": "2026-10-21T12:50:34.143627+00:00",
+      "provenance": "user",
+      "action": "Direct human scope: top-k only DeepSeek, top1/2/3 x32 native layers=96 candidates. Verified existing DS unique owners; Gemma/Qwen withdrawn. Current code binding checker updated for approved DS-only overlay; no new submissions in this follow.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/DIRECT_DS_ONLY_AMENDMENT.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/approved_start_20261021/DS_ONLY_SCOPE_CONFIRMATION.json"
+      ]
+    },
+    {
+      "id": "N190",
+      "timestamp": "2026-10-21T13:39:23.369885+00:00",
+      "provenance": "ai-executed",
+      "action": "Bounded DS-only follow: top1 six fullVAL candidate artifact SHA PASS, layer7 epoch11 currentcheckpoint SHA verified. Existing queued gate/top2/top3 moved to earliest supported legal21/21/23, same IDs and dependencies, no qsub; gate Q and fits H remain unstarted. Budget and shared protected headroom recorded; scratch live check blocked SSH auth/hostkey, not claimed verified.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1335/ACTUAL_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1335/QUEUED_PLACEMENT_TRANSACTION.json"
+      ]
+    },
+    {
+      "id": "N191",
+      "timestamp": "2026-10-21T14:38:42.233996+00:00",
+      "provenance": "ai-executed",
+      "action": "Bounded DS-only14:35 follow: top1 14/32 fullVAL20245rows/hashverified, currentlayer15epoch7updates3250 and currentcheckpoint SHA match. GateQ/top2H/top3H nofirstupdate; changedqueuedsameIDs to23gate/top2 and08top3 basedfreshlegalreleaseaudit. Aggregatecost partitions and526537994Bprotectedheadroom recorded. Scratchlive verification remainsblocked; no bypass/no newjob/no oldresume.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1435/ACTUAL_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1435/LEGAL_COMPATIBLE_RESOURCE_COMPARISON.json"
+      ]
+    },
+    {
+      "id": "N192",
+      "timestamp": "2026-10-21T15:42:18.937600+00:00",
+      "provenance": "ai-executed",
+      "action": "DS bounded15:35: top121fullVALverified; movedgatelegalfree10, actualgate6casePASS and top2formalupdatesverified. Top3startupfailed7810>7200guardbeforefit; preservedfailedcost/numerics, uniqueidenticalsameentryretry184089Q afterterminalF1, noepochreset/guardrelaxation. Fullaggregateforecast1000CPU236GPUwithincaps; scratchliveunverified.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1535/ACTUAL_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1535/TOP3_RETRY_ADMISSION.json"
+      ]
+    },
+    {
+      "id": "N193",
+      "timestamp": "2026-10-21T16:38:13.266582+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedDS16:35 allthreeactualformaltraining; top1/2/3 fullVAL28/8/6 candidates20245rows each/checkpointSHAverified. Current29e11/9e5/7e7; top3retry original7200guardPASS5108.602seconds, previousfailurecostpreserved. Freshresource/cost/storageaudit; protectedshared525215228B,scratchdfstillunverified. MetadataonlyselectedTESTsourceaudit preparedwithoutTESTreads/layerselection; no newsubmission/change.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1635/ACTUAL_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1635/PRE_SELECTED_TEST_SOURCE_REUSE_AUDIT.json"
+      ]
+    },
+    {
+      "id": "N194",
+      "timestamp": "2026-10-21T17:49:53.190199+00:00",
+      "provenance": "ai-executed",
+      "action": "DS top1all32complete; CPU184168F0 freezesownVAL18/e8 strictF1maxthreshold. Implementednative-source/TESTonce/CPU7metrics chain. Initial184174F1registrystartup race beforeforward/test; ownnodeGPUanddiskproofpassed,80CPU20GPUcharged; atomicclaim/controllerlockfix, unique184179Q+184180H. Top2/3R retained. Independentready-arm sourceworstforecast1024CPU244GPUwithinapproved1500/320. No scientificperformanceclaim/testresult yet.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1735/ACTUAL_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/VAL_THRESHOLD_FREEZE_top1.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1735/REGISTRY_STARTUP_RACE_FIX.json"
+      ]
+    },
+    {
+      "id": "N195",
+      "timestamp": "2026-10-21T18:40:08.826406+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedDS18:35 top1frozen18/e8unchanged, top2/3actualRfullVALcoverageverified. TEST184179F1exec15NVML/CUDAdeviceinitfailure beforeforward/score;12CPU3GPUcharged, CPUdependencyunallocated. Exactcodeunique184219Qpinhealthy17+184220H withinaggregatecaps, no nativegate/tolerance relaxation. Actualscratch15/22proof retained,17pending; quotaRPCrefused, no falsequota/TESTclaim.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1835/ACTUAL_FOLLOW_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1835/TEST_EXEC15_GPU_INITIALIZATION_FAILURE.json"
+      ]
+    },
+    {
+      "id": "N196",
+      "timestamp": "2026-10-21T20:02:29.084150+00:00",
+      "provenance": "ai-executed",
+      "action": "COMPLETE DSonlytop1/2/3: all96fullVAL candidates20245rows and3selectedTESTonce20033rows accepted, independent7metrics+1000pairedquestionbaselinecomparisonsPASS. Selected18e8/15e8/15e8. Top1ACC.873109F1.412118;top2ACC.896770F1.470558;top3ACC.887036F1.471138. Unique layer18and15nativeproducers;15sharedscores2/3 once, legacy15rawSHAexact. Allcurrentjobs terminal, actual48.8CPUcoreh12.192222GPUh includesallfailures, zerooutstanding. Formalfrozenoutputmanifest/identitycompletionPASS; oldworkpaused/GQwithdrawn/cachepreserved; no nextcheck/followsolelyforcleanup.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/reports/FINAL_DS_TOPK_REPORT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/reports/FINAL_DS_TOPK_METRICS.csv",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/FINAL_EXPERIMENT_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/FINAL_ALLOCATED_COSTS.json"
+      ]
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "action": "ReadactualnewPBSstatesandownedcheckpointcursors;reconciledonlyprovenendedfuturecapacity;repairedsameAjobplacement;submitteduniqueB/GemmasourceandDSselectedCPUprepare;actualCPUF0readback;reviewedendtoendselectedgates/acceptanceandcorrectPrefixcomparisons;persistedcost/capacity/cursorsandnextmessage.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_prefix_scalar_gate_c_seed42_20261019/control/all32_expansion/scheduler_audits/follow_2158/ACTUAL_COMBINED_FOLLOW_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "provenance": "ai-executed",
+      "action": "Verified current failed states, full checkpoint metadata and all32 A SHA; submitted unique resume/select-only entries, read back CPUF0, documented exact source capacity blocker and independent ledgers.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_prefix_scalar_gate_c_seed42_20261019/control/all32_expansion/scheduler_audits/current_two_failure_recovery_20261021/ACTUAL_RECOVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 5,
+      "provenance": "ai-executed",
+      "action": "Fresh PBS/resource/identity audit and stdlib checkpoint snapshots; persisted 15arm status, independent full forecasts, capacity and readonlysource reuse analysis; recorded latest everyfollow scheduling requirement without extra poll or job mutation.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_prefix_scalar_gate_c_seed42_20261019/control/all32_expansion/scheduler_audits/status_all9_runs_20261021/ACTUAL_STATUS_SNAPSHOT.json",
+        "${PROJECT_ROOT}/AGENTS.md"
+      ]
+    },
+    {
+      "turn": 6,
+      "provenance": "ai-executed",
+      "action": "Actual15arm state/resource/identity audit,sourceinterfacegateimplementationandCPUrun,failedqueueattemptpreserved,numericgatesandterminalreadback,independentbudget/capacityreceipt.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_prefix_scalar_gate_c_seed42_20261019/control/all32_expansion/scheduler_audits/follow_0600_20261021/ACTUAL_STATUS_SNAPSHOT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_prefix_ab_c_teacher_all32_seed42_20261020/audits/A_SELECTED17_READONLY_TRAIN_VAL_INTERFACE.json"
+      ]
+    },
+    {
+      "turn": 7,
+      "provenance": "ai-executed",
+      "action": "Freshlegalresourceandall9identityaudit,ownedcheckpointsummary,independentVALthresholdCPUimplementation/repair/actualF0,TESTsourceinventoryandseparatecost,budget/capacityreceipt.",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_prefix_scalar_gate_c_seed42_20261019/control/all32_expansion/scheduler_audits/follow_0700_20261021/ACTUAL_STATUS_SNAPSHOT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_repr_aggr_seq_metric_seed42_20261021/audits/INDEPENDENT_SELECTED_VAL_THRESHOLD_repr_metric.json"
+      ]
+    }
+  ],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 1,
+      "excerpt": "No newhumanapproval ormodel/budget/numericalchanges;existing8groups11resultscope. Sourcecachefeature-type distinction preserved: nativeh isnotKV."
+    },
+    {
+      "turn": 4,
+      "excerpt": "No epoch reset, no A refit, no TEST acceptance. Memory kill is PBS evidence; underlying growth and NFS timing not independently proven. Latest recovery supersedes historical scheduling-switch-only response."
+    }
+  ],
+  "open_threads": [
+    "SAPDSselectedGPUadmissionandactualnativegates/TESTmetrics/CI;Qwennativegate;A/B/NT/TR/KValllayercontinuations;leanAadapterandotherPrefixatomicstorage/DAG/comparisons."
+  ],
+  "ai_suggestions_pending": [],
+  "events": [
+    {
+      "id": "N180",
+      "timestamp": "2026-10-21T09:30:23.877197+00:00",
+      "provenance": "ai-executed",
+      "action": "TESTonce amendment, bounded recovery and earliest selectedTEST triage",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_prefix_scalar_gate_c_seed42_20261019/control/all32_expansion/scheduler_audits/follow_0920_20261021/ACTUAL_TEST_PRIORITY_RECEIPT.json"
+      ]
+    },
+    {
+      "id": "N181",
+      "timestamp": "2026-10-21T09:59:22.289629+00:00",
+      "provenance": "user-revised",
+      "action": "Pause remote oldwork; prepare domain evaluation and selected-token joint topk",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/control/pause_old_for_domain_topk_20261021/ACTUAL_PAUSE_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/control/pause_old_for_domain_topk_20261021/ACTUAL_SUBMISSION_BLOCK_CHECK.json",
+        "${PROJECT_ROOT}/experiments/control/pause_old_for_domain_topk_20261021/domain_inventory/DOMAIN_INPUT_INVENTORY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/TASK.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/INCREMENTAL_RESOURCE_PROPOSAL.json"
+      ]
+    },
+    {
+      "id": "N182",
+      "timestamp": "2026-10-21T10:05:58.275773+00:00",
+      "provenance": "user-revised",
+      "action": "Final authorized ST Gumbel topk replaces prior gradient policy",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/COMBINED_PAUSE_FINAL_GUMBEL_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/TASK.md"
+      ]
+    },
+    {
+      "id": "N183",
+      "timestamp": "2026-10-21T10:56:41.909743+00:00",
+      "provenance": "user-revised",
+      "action": "Human-authorized cancellation of13 stopped old jobs;4GPU allocations released,12 durable checkpoint hashes preserved and10 queued holds retained",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/control/pause_old_for_domain_topk_20261021/CONTROLLED_EXIT_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/control/pause_old_for_domain_topk_20261021/CONTROLLED_EXIT_AUTHORIZATION_AND_ACTION.json"
+      ]
+    },
+    {
+      "id": "N184",
+      "timestamp": "2026-10-21T11:50:56.426722+00:00",
+      "provenance": "user-revised",
+      "action": "Final human selector supersedes Gumbel: top1 sigmoid after SourceL2 and top23 selectedsoftmax then SourceL2; actualCPU fixture and nativewidth shortDS/Gemma gradients pass, notfullGPUgate",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/TASK.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/JOINT_SOURCE_REVIEW.json"
+      ]
+    },
+    {
+      "id": "N185",
+      "timestamp": "2026-10-21T11:50:56.426722+00:00",
+      "provenance": "ai-executed",
+      "action": "All88 unique accepted savedprediction cells/440domains complete globalownVALF1max and independent sklearn sevenmetrics, original0.5calibration explicitlyposthocTESTseen; old15currentTESTremainpaused",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_level_domain_existing_predictions_20261021/reports/UNIQUE_CURRENT_METHOD_MODEL_SCOPE_INVENTORY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_level_domain_existing_predictions_20261021/audits/ALL88_INDEPENDENT_DOMAIN_METRICS.json"
+      ]
+    },
+    {
+      "id": "N186",
+      "timestamp": "2026-10-21T11:50:56.426722+00:00",
+      "provenance": "ai-executed",
+      "action": "IndependentCPU verification missing sklearn beforepredictionread; reused existingacceptedprojectdeps, retry183675F0; failurecostretained, no newinstall",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_level_domain_existing_predictions_20261021/audits/INDEPENDENT88_MISSING_SKLEARN_REPAIR.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1132/FINAL_CPU_ALLOCATED_COSTS.json"
+      ]
+    },
+    {
+      "id": "N187",
+      "timestamp": "2026-10-21T11:50:56.426722+00:00",
+      "provenance": "ai-suggested",
+      "action": "Full468candidate resourceproposal updated1500CPU/320GPU/6GiBshared/2TiBscratch;1.612TBknownmissingTRAINVALcache and6.414GBdurablegap blockadmission; budgetunapproved and noformalfit",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/INCREMENTAL_RESOURCE_PROPOSAL.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_model_step_topk_joint_seed42_20261021/audits/follow_20261021_1132/COMBINED_RESOURCE_AUDIT.json"
+      ]
+    },
+    {
+      "id": "N188",
+      "timestamp": "2026-10-21T11:53:58.729481+00:00",
+      "provenance": "ai-executed",
+      "action": "Four acceptedlegacy DS16/Gemma30Streaming/LTWcells haveTESTbutno savedfullVALscores; primaryglobalVALF1maxpending exactmissinginput. 88availablecellsindependentPASS retained; no newinference or0.5/TESTsubstitution.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/three_level_domain_existing_predictions_20261021/reports/SUPPLEMENTAL_PENDING_SOURCE_INVENTORY.json"
+      ]
+    }
+  ]
+}

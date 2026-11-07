@@ -1,0 +1,564 @@
+{
+  "session": {
+    "id": "2026-10-31_001",
+    "date": "2026-10-31",
+    "started": "2026-10-30T13:30:58.457613+00:00",
+    "last_turn": "2026-10-31T12:14:18.486345+00:00",
+    "turn_count": 32,
+    "summary": "Cursor merge recovered with observed new votes; source checksum repaired and legal capacity reserved; full pipeline incomplete."
+  },
+  "events_logged": [
+    {
+      "turn": 1,
+      "type": "experiment",
+      "id": "N317",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Original5340CPU232593F0 actual12:37UTC/data12:34/due13:37 independent; usable5240/5253/5143 full35234/5238/5133, QMathgap18/GMath51Logic10, unknown14/58/8 andattemptcaps preserved. Q232572R22losslessnativeBF16ready; Gsame232206unpinnedthenR11. Spark/Ling/Nemotron each16944firstoutputs existingv2accepted/hashverified; strict4260/13394/11282, formatnotsemanticaccuracy; GranitehealthyR/no prematurefamilyranking. FourQ entriesunpin SAMEIDs/queues/resources afteralllegal freshaudit; noL2B232500R37fullVAL11SHAverified/A232502R02>=1 actualfirstformalmarkers; Streaming232514QexactCPU+inlineGPUgate, HaMI232506Qnative232490PASS/firstformalNONE. LAFaCTV1float14/V2stablemaxsoftmax8/V3nativeCPUbf16primitive8 casesPASS, v3actual/refbitexact maxcomplete1.4043534974916838e-6, GPUfusedSDPA/block/fullcontextpending/no productionfits. Mathematicalprototypesnotmethodperformance; newAS_ADAPTATIONrulesfrozen beforeCPU, no modelprecisionchange/gradientIGsubstitute. No newagent/chat/service/monitor/API/rental orhealthyinterference; completedoldmethods STOP."
+    },
+    {
+      "turn": 2,
+      "type": "experiment",
+      "id": "N318",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Streaming232514/HaMI232506 F1 diagnosed at strict physical-idle lease before any formal update/checkpoint/optimizer/RNG; both visible UUIDs active. Protected healthy repr/agg/source owners; one all-legal fresh audit then same-contract placement-only unique continuations232774/232776 Qexec19, callbacks preserved. repr28/32 andagg8/32 accepted fullVAL/checkpoint+prediction SHAverified, TEST0. Fourmodels16944each v2firstpass final independently reread CPU232780F0; strict Spark4260/Ling13394/Granite12285/Nemotron11282, format not semanticaccuracy. FinalZH/overallCSV/aggregateJSON and exactreceipt/hash established; no replay or formatretry. LAFaCT genuine nativeBF16 SDPA paired-reference V4 implemented/frozen short-only and232785Qexec23; true DSblock/fullcontext remainpending, no production/proxy/encoder/TEST. Original5340 CPU232778F0 sourceprefix14:32 actual14:35 due15:35 separate: usable5240/5255/5171 full35234/5240/5160, QMathgap16/GMath30Logic3. Incrementalcleanup232794/795F0 independentPASS Q2/G30 newframes, later inputprefix than source snapshot; accepted5163G not silently substituted into earlier5160full3. Same unknown/attempt constraints, no newAPI/source/agent/chat/service/monitor/rental; completedoldmethodsSTOP."
+    },
+    {
+      "turn": 3,
+      "type": "experiment",
+      "id": "N319",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded all-legal audit found assignableexec05. SameQ IDs repr232849/SDPA232785 movedfrom23to05; bothactualF0, no replay. Repr32/32select17e7 freeze2e6a9a79 threshold.18466240167617798strict>, uniqueTEST20033 accepted independentSHA: AUROC.8924631523 AP.4541752336 ACC.8924774123 F1.4628428928; arm STOP. Streaming30/32 andagg23/32 verifiedfullVALbest/predSHAs; healthyR preserved. HaMI same232776 Qsmall03 then freed05 aftershortjobs ended, nowR05 committedrealupdate and2/32fullVALaccepted hashes. LAFaCTV4 trueBF16GPU SDPA4casesPASS actual/refbitexact,maxcomplete4.906141214e-6,50MiBVRAM1.34GiBRSS, syntheticonlynotblock. FrozenV5realweightDSblock0+nativeRoPE/GQA/SiLU/RMS/residual/sourceAST/pad baseline prepared,232989Q24GiB; fullmodel/full67553 stillpending, proxy/attribution/encoder/TEST0. Original5340 CPU232970F0 prefix16:35 actual16:38:12/due17:38:12 separate, usable5240/5258/5194 full35234/5243/5184; QMathgap13/GMath7Logic3. DomainRID CPU232978F0 allmapped exhaustive5/13/10, quarantineoverlap, unknown14/58/8 retained. Incremental232981/982F0 Q3+G21 newframes, no conflicts; oldskips5240/5163. No expansion/retry/protocolchanges or pilots/oldmethodscheck, agent/chat/service/newmonitor/rental/API."
+    },
+    {
+      "turn": 4,
+      "type": "experiment",
+      "id": "N320",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Original5340CPU233251F0 prefix18:33 actual18:36:15 due19:36:15 independent, usable5240/5259/5194 full35234/5244/5184; QMathgap12/GMath7Logic3. OldQ232572/G232206 F0 finitecallbacks continued SAMEround001 native state233172R05/233206R16; no accepted/inflight replay or attemptreset. CPUdomainRID233270F0 exact5/13/10 exhausted andunknown14/58/8 history; incrementalQ233261F0 one new3363Steps unchanged/no conflicts, G233262F0 no new frames. ThreeNoL2/HaMI/pilot allSTOP fit/TEST/replay/wait, no completedmethodchecks. One alllegal freshaudit: full32 nativeLibrary short gate233260F0 exec19 true32+finalRMSNorm actual/reference bitexact; completenessmax1.1359132116695037e-4 passes originalSCALED bound, notabsolute1e-4. Peak72.23GB. TiledV7 query rules denseoracle multiplierserror0; full67553 synthetic SDPA allkeys/ONEactiveoutputquery F0 233266, completeness5.055e-9/peak28.38GiB, NOT full-model densegate. Old20GiB forecast disproved, futuremin36GiB/48class recorded. V8 CPU233275F0 exact layer checkpoint/offload chain multipliererror0 andownedviewstorage serializationtest; notGPUmodelproof. V5shortrealblock AST PASS lateststatus corrected. OriginalTR/VAL80092bag longestStepcausalprefix67514, maxraw67554 inclEOS; avoid futureAnswer tofill67553, exactrenderer/visible/cutoff next. Fullmodel long realpad reference/native1e-4/source/IO/complete dense reverse stillpending, proxy/production/encoder/TEST0. No newsource/APIbudget/agent/chat/monitor/service/rental."
+    },
+    {
+      "turn": 5,
+      "type": "experiment",
+      "id": "N321",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Original5340CPU233503F0 prefix20:36 actual20:38:57 due21:38:57 independent: usable5240/5260/5204 full35234/5245/5194. Gemma233206F0 targetMath1000Logic1000/all domainsusable>=1000, still10incomplete3/exhausted; Q233172R05 Math989gap11/full3982gap17. No source/attempt/unknown14/58/8 expansion; domainRID233530F0 counts5/13/10. IncrementalQ1/1548Steps unchanged, Gemma10/1877->1876/no conflicts accepted233526/527F0. ThreeNoL2/HaMI/pilot oldmethodsSTOP no checks/replay. Exact long prompt/visible/owned boundary CPU233512PASS67514causal vs67553profile39suffix excluded. CPU233506 source-bound resume error0, identity/inflightguards; GPU233525 real32 short integration66native33reverse error0 and long native sourceH1/16/32 lastownedtoken profile/causal0 withinunchanged1e-4. CPUhookprobe found inner temporary graph leaked to outerdiskhooks; ownbuggygate controlledF143 afterretained9longnativepairs, SSHtargetsoftsignal authunavailable, originalsourceRuntouched. ScopedV12 CPU233550 PASS exactforward/reference/multiplier0; outertile spillzero. Commitfaultfixture233561PASS payload-first/hash/source amendment, corruptadvancedmetadata fallback/noacceptreplay/newunknownflagreject. FirstV12 233570F1 atstaleoracle identity binding, no newlongcompute; numerical-source fields/oracleerrors unchanged, durablebindingreconciled/audited. Samefrozencode233579 actualR05 reuses accepted short/sourceOracle/18nativecalls and advances to66native33blocks, sourceboundfullreverse pending. Frozen cursor snapshotavoids liveSHA race. Wholelong contribution/denseVRAMRAMIO notaccepted,0proxy/production/encoder/TEST. One freshalllegal audit +samefreed05adaptivechecks, no newagent/chat/service/monitor/rental/API."
+    },
+    {
+      "turn": 6,
+      "type": "experiment",
+      "id": "N322",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "OOM233579F1 saved; exact pointwise FP64 CPU storage repair original BF16 source and full FP64 GEMMs unchanged. CPU233680F0/GPU233688 component15case allforward/referencebitexact and multipliererror0; resume233685F0 no accepted replay, reject future unknown.233688 actualR05 2CPU64GiB1GPU6h,33nativeblocks+normreverse1 retained, nextreverse31 notcommitted; complete long gate/proxy/production/encoder/TEST pending. Normaloriginal5340 due22:13:42UTC retained/no redundant dispatch. PriorN321 QMath full3 typo3982 corrected to3983 with gap17 per canonical receipt. Completed methodsSTOP."
+    },
+    {
+      "turn": 7,
+      "type": "experiment",
+      "id": "N323",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "233688F-27 hostRAM83GiB>64 retained33 native blocks+norm VJP1; V14 exact storage elides ownedCPU clone, mmap SHA reload, malloctrim. CPU233733F0 and GPU233742 storage chain actual/reference/VJP bitexact error0; resume fixture no accepted norm replay/unknown future flag rejected. Measured64MiB storage fixture RSS700588->648708KiB, not full-long peak. Two launcher-only failures233732/233735 preserved and corrected versionedPBS;233742 actualR05 with2CPU128GiB1GPU6h, committed reverse31 still pending; full-long reference/contribution/resource gate and proxy/production/encoder/TEST0. Fresh alllegal audit chooses05 exactcache/sufficient128GiB unassignedRAM, no healthyQpreemption. Source233727F0 prefix22:38:12 actual22:41:10 next23:41:10UTC; usable5240/5261/5204 full3 5234/5246/5194; QMath990/984; sourceq/domain and RID233737F0 known counts5/13/10 unknown14/58/8 unchanged. New-only Qcleanup233743R. All accepted methods/pilotSTOP."
+    },
+    {
+      "turn": 8,
+      "type": "experiment",
+      "id": "N324",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Userrequested saved small-model review=true coverage of thinking-vs-disabled disagreements. Exact150original trajectories/16944requests per4models matched; no missing pairs, shown-label/directthinking mismatch0. Step D1137,Prefix4770,Answer7. Strict captured Step/Prefix/Answer: Spark157/633/1;Ling735/2679/4;Granite634/2119/3;Nemotron555/1974/4. All disagreement denominators retained; invalidformat uncaptured but notnegative. Schema-only and strictvalidconditional rates separately exported with generator/domain strata. Original small-model prompts show thinkinglabels, so capture is not disabled-label correction accuracy; neither labelmode gold. CPU233750F0 secondaggregator/hash/IDs; independent source233752F0 exactSteptexts/Answer/revision/manual; initial verifier233751F1 assumed dictspans, nativeoffset schemaadaptation fixed without rerunning primarycounts/model. No inference/API/label edits or accepted method replay."
+    },
+    {
+      "turn": 9,
+      "type": "experiment",
+      "id": "N325",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directhuman new3 default-thinking review pilot: retainLing, addQwen3-8B/Qwen3.5-9B; userdeclinesNemotron9B afterofficialavailabilityanswer. Sameoriginal150/140sourceq/16944requests each50832total, oldthinkinglabels/prompt bytes unchanged. NativeBF16 official default/recommended thinking no separateeffort/budget; totaloutput32768 vsold512 disclosed; Qwen3 officialYaRN4x131072 no crop. Ling/Q35 pinnedassetSHA reused; Qwen3 publicBF16 newdownload233812R. CPU233828F0 sampleID/boundary/defaultfixtures/runtimevllm032 native3architecturePASS. NewGPU233833/233835F1 containercouldnotseehostPBS_NODEFILE, exactguardbeforeGPUpobe/modelcalls0; hostqstat/nodefile/owner/ngpus verified SHA-bound allocationreceipt fixes immutableV2, no ownershipbypass. Finiteafterok/afterany uniqueowners/globaldispatchbooking no residentpoll:Q35 233841R11/Ling233843R21, no firstnativeprofile/formaloutputyet;Q3 unique233840H afterasset. Fresh legal perarmresourceauditschoosefree96 only48allassigned, min44GiBforecast/reserve<=44; healthyQ233740 andLAFaCT233742 preserved. Source233832F0 snapshot23:52:58 actual23:55:53 next00:55:53UTC independent;usable5240/5262/5204 full35234/5247/5194;QMath991/full3985=>9usable gap,31existingincomplete total. Existingfrozenattempt/unknown/hold/exhausted rules unchanged. Originalmethods/pilot acceptedSTOP, newpilot notcomplete."
+    },
+    {
+      "turn": 10,
+      "type": "experiment",
+      "id": "N326",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directhuman authorizes exactly14 missing disabled-mode annotation RIDs, one extra attempt each, not blanket68. CPU233922F0 exact14 originalpromptSHA/twofailed/successskip gate;13API responses valid,1 GemmaMath Step43 returns misspelled prefix_hallination=0, Step0. Independent233923 savedRID/ledger/mode/prompt/schema reconciliationPASS:12 trajectories restored DSLogic1,QMath6,GMath4,GLogic1. No accepted replay; all original failures/ledger retained and new raw responses private. Directhuman separately approves only saved one-response field rename with labels unchanged/no API/generalparser change; versioned233931 afterok233923 applies and validates derived label then fullcurrentCPUcounts/rates, actualacceptancepending. Healthy Q233740 sourceowner preserved; domain1000/full3 not allcomplete."
+    },
+    {
+      "turn": 11,
+      "type": "experiment",
+      "id": "N327",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directhuman original5340 per-domain quota audit excludes already-failed retries from never-generated intake. CPU233956 exact16020unique pairs/quotas1060Math1098Science1000Logic1165Multi1017Fact: generated5240/5264/5204 deficits100/76/136; no confirmed never-generated;8protectedunclosed4/1/3 notnew. Confirmed terminalattempt>=3 failed85/28/85; remaining tried11/39/45 andQ4historical failures have no completecap proof. No generation/API fromaudit. Separately required sameidentityQwen3 pilot diagnosis actual233849F1 preLLM notOOM: officialenabledassistantprefix lacks literalopen-think, disabled appends emptyblock. Exactnative CPU233958PASS, versionedV3 gate no prompt/template/mode/cap/precision/contextchanges; uniqueGPU233963+callback233964, previoussaved/inflight0. HealthyLing/Q35/LAF/originalQ untouched; AutoDL withdrawal honored. LAFactualdurable33forward/3reverse next29 (localrelay stale1 corrected), lastdense53min naive30remaining26.5GPUh onlyrough, fullgate/proxy/fit/TEST notaccepted. CPUjobsQ to1core originalIDs usingtwo actualfree singleCPUslots, fresh legalGPU/CPU/queues/ACL/reservations/release audits; next5min messageonly, no monitor."
+    },
+    {
+      "turn": 12,
+      "type": "experiment",
+      "id": "N328",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Userrequests smallmodel/experiment progress. Exact complete savedprefix Ling171/16944 strict95, all171thinking,1truncated;Q3578/16944 strict73 all78thinking0truncated. Qwen3 fixednativeCPUgatePASS but233963Q/0outputs; fresh alllegalqueue/node/ACL/reservation/walltime audit free48slots0, ownlarge4 limitbinding, keepuniqueunpinnedmed. No AutoDL/healthyjobinterruption/newmonitor. LAF233742healthyR actual durable33forward/4pairedreverse nextdecoder28, decoder29 localcompleteness1.0136095829282876e-5<5.056432076560068e-5 andnativeactual/referenceerror0; wholelong/production/fit/TEST stillpending. Previously accepted HaMI and3noL2 reports read-only identityPASS/completedSTOP, no replay."
+    },
+    {
+      "turn": 13,
+      "type": "decision",
+      "id": "N329",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "取消LAFaCT; cancel only verifiedLAF233742, preserve committedoutputs/logs andHaMI, prohibitautomaticresume/follow. ActualF143/activeentries0."
+    },
+    {
+      "turn": 13,
+      "type": "experiment",
+      "id": "N330",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directhuman cancels LAFaCT. Durable no-resume/no-follow amendment and identity-specificcancel, verified233742F143/activeLAFentries0; committed33forward4reverse retained, partial decoder28 no acceptance; HaMI/otherjobs preserved, no deletion. Userthenasks smallmodel speed: savedformal182Ling mean20.069s median14.430 weighted277.729outputtok/s inclprefill, avg5519.758thinkingtokens;81Q35 mean44.479s median42.823 weighted81.002tok/s inclprefill,avg3564.654thinkingtokens. Warmup/staging excluded, earlyunequalprefix/concurrency1; crude93/208h extrapolations are not ETApromises. Q3233963actualRexec35,0measuredformal; no placementmutation because alreadyR. Fresh resources4readsaudit; initial proposedmovescript syntaxerror before anycommands, preserved originalentry and healthyjobs. AutoDLwithdrawal stillhonored."
+    },
+    {
+      "turn": 14,
+      "id": "N331",
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Directhuman switches to exactly Qwen3-8B andQwen3.5-9B native nonthinking, noLing. Old thinkingGPU/callbacks cancelled and verifiedinactive; savedoutputs retained. New isolated same150/16944each/32768cap officialnonthinking pilot. Q3 old normalizedRoPE40960 failure fixed by binding actual YaRN4/orig32768/max131072, realCPUModelConfig/nativeFalse gatePASS both. CPUqueue full; initial queuedCPU233996 cancelledbeforeexecution, identical CPUgates moved beforeinference inside actualGPU allocations.233997Rexec11 and233999Rexec19, physicalidle/ownership/poststage receipts; native modelinitialization/fullcontext profiles/formaloutputs pending. No paidAPI/label edits/newLing/monitor/agent; existinggeneration preserved, LAFcancelledSTOP."
+    },
+    {
+      "turn": 15,
+      "id": "N332",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded relayed status/authorization check: directhuman two-Qwen nonthinking/noLing quote and contract/code/prompt/pins/cap bound in aggregate receipt. Both actualR and native longest/firstformalPASS; savedoutputs partial, zero reasoningtokens. LAF233742 F143 is directhuman cancellation, noOOM inference or resume. Archived staleR operatorstatus then corrected cancellation and committed66native/4reverse next28; wholelong/production/fits/TEST incomplete. Fresh4resourceaudit, no additional inference/API/monitor/agent/AutoDL."
+    },
+    {
+      "turn": 16,
+      "id": "N333",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded original5340 duefollow completed sourceinclusiveCPU234088F0/234090F0 actual02:52:09UTC next03:52:09UTC. Usable DS5240/Q5265/G5204, full3 5235/5254/5200; QMath994usable992full3 remaining6generation/8full3to1000. Allotherfive-domain/model targets met. OldV8 stats omitted recovery family; preserved and superseded notdataloss.234082 actual8GiBmemoryfailure preserved,16GiBsourceinclusive succeeds. Qannotation234076preAPI asserted one savedsuccessoutsidecurrentneeded: exacthumanapprovedtarget14RID onexternalreuseqid. CPU234079F0 diagnosed; V9zero-call failed because journal intentionally lacksattemptid, preserved; V10 actualpaidattempt+claim/responseID/usage/labels/prompt/mode/source bindingPASS and sole234089R resumes originalskip/maxattempt/accounting. Incrementalcleanup234083/84/85F0 independentlyvalidated DS1/Q8/G6 newtrajectories, accepted totals5235/5254/5200; alreadyacceptedskip andQsemantic4holds retained. Twohealthy nonthinkingGPU entries saved1463/625prefix at02:50:44UTC, zero thought; frozen25filesPASS, no replayofinvalidformats. Original233740healthyR, no newsource/retryextension/agent/monitor/AutoDL. LAF/Ling/oldthinking STOP."
+    },
+    {
+      "turn": 17,
+      "id": "N334",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directuser currentstatus: threehealthyGPU R originalQ233740 andnonthinking233997/233999, no activepaidannotation; latest234101 checkpointCAUGHT_UP pending0 unknownstopfalse/493864savedgroups. Fresh234187 sourceinclusiveCPU16GiB ledger exact5340each yields usable5240/5266/5204 full35235/5257/5200; QMath995usable/full3=>gap5, otherfive-domain targetsmet. Two nativeFalse prefixes3564/770 at03:46:30UTC strict2860/506 mean2.278/10.483s zero reasoning; partialunequalprefix notfinalranking/ETA. Source+rates234187 andnewonlyQcleanup234188afterok finite, acceptedcontentsskip. Freshqueues/nodes/reservations/jobs saved. LAF/Ling/oldthinkingSTOP; no newAPI/source/retries/agent/monitor/AutoDL."
+    },
+    {
+      "turn": 18,
+      "id": "N335",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "User asks two nonthinking reviewers speed. Savedformal prefixes only/warmups excluded: Q3n3824 mean2.244856s median1.619435 avg171.879outputtokens weighted76.5659tokens/s inclprefill,1603.666req/h;Q35n809 mean10.589177s median1.981816 avg845.111outputtokens weighted79.809tokens/s inclprefill,339.970req/h. Unequal partialinputs andlongoutputtails; tokenrates similar, not isolateddecode benchmarking or finalETA. No inference,API,scheduler mutation."
+    },
+    {
+      "turn": 19,
+      "id": "N336",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "User asks Ling speed; readonly savedformal outputs excludingwarmup: oldnonthinking n16944 mean0.766501s median0.727847s 4696.669req/h weighted252.704outputtokens/s inclprefill,strict13394,932captruncations/outputcap512. Cancelledthinking savedprefix225 mean19.832332s median15.293485s 181.522req/h weighted277.432tok/s,avg5443.444thinkingtokens. Different outputcaps/partialcoverage/hardware preclude controlled comparison with currentQwen32768cap. No Ling resume or model/API calls."
+    },
+    {
+      "turn": 20,
+      "id": "N337",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "User requests all tested smallmodel speed/format table; accepted fourmodel reports independently hashchecked. Nemotron rawembeddedstrict0 is historical EOS scorer bug, use independently accepted nativeEOS-normalized11282/16944=66.584%; preserve rawoutputs, no inference/parserreplay. All other old4 use finaloverallcounts; two liveQwens andcancelledthinking use savedprefix counts. Sharedfirst150/cap512vs32768 andunequalpartialcoverage disclosed; strictformat notsemanticaccuracy. Artifact ${PROJECT_ROOT}/experiments/streaming_hd/runs/two_qwen_nonthinking_review_pilot_20261031/reports/ALL_SMALL_MODEL_SPEED_FORMAT_20261031T035842Z.json"
+    },
+    {
+      "turn": 21,
+      "id": "N338",
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Directhuman cancels twoQwen smallmodels includingnonthinking, retains Ling andNemotron4B candidatepool. Under exactdispatchlock cancelcallbacks233998/234000 first thenGPU233997/233999; actualbothF143/callbacksF/remainingactive0. Data/weights/inflightmarkers retained, no healthyoriginalQwen27B interruption. ThirdrecommendationMinistral3-3B-Instruct2512 fromofficialcard nativeJSON/functioncalling/256Kcompactedge; originalFP8 explicit, untestedprojectlatency/format, no download/inference authorizedorexecuted. Suggestedmatchedsame150/512cap/physicalhardware acceptance mean<=1s andstrict>=Ling79.05%, notfrozennewexperiment. LFM32K excluded for >60Kinputs ratherthancrop."
+    },
+    {
+      "turn": 22,
+      "id": "N339",
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Directhuman additionally authorizes exactQwen/Qwen3-4B nonthinking. Newisolated qwen3_4b_nonthinking_review_pilot_20261031 same150/16944 Englishprompts/causalinputs/displayedlabels, nativeBF16officialFalse T.7/P.8/K20/minP0/seed42/batch1. New512cap statedonintake matches retainedLing/Nemotron, notmode-only32768comparison. Officialrevision1cfa9a7208912126459214e8b04321603b3df60c pinnedCPU, asset234222Rexec29 andfinite234223afterok H. NativeYaRN4/orig32768/max131072 normalizedconfig/fullcontext2warmup gates/acceptedskip/independent savedvalidator prepared,frozen20files/AST/bash/identityPASS; modelcalls0/gatespending/no GPUentry yet. All24/48/96 audit;24TuringBF16incompatible,48L40fitsVRAMbuttimingdifferent, plannedmatchingBlackwell96 reserves22GiBengine. Source/nativepins/paths/resources receipted, no monitor/agent/AutoDL/paidJudge. OldQ8/Q9cancelledSTOP;Ling/Nemotron candidatesonly,Ministralnominationnotlaunched."
+    },
+    {
+      "turn": 23,
+      "id": "N340",
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Directhuman authorizes proposedMinistral-3-3B-Instruct trial; new ministral3_3b_nonthinking_review_pilot_20261031 officialmistralai2512 pinnedb35d4dfe56c142746f54dbd64f579faab2744308/nativeFP8 no dequantization, precisiondifference disclosed. Exactsame150/16944/512cap/T.1/seed42/batch1/native262144context. NativeMistralTokenizer/mistral_common serializer returnsactualinputIDs, noretokenizingcontroltoken display; nativeconfig/tokenizer/quantization/physicalidle/longest2warmup gates andindependent savedvalidation prepared,21filesfrozen/ASTbashidentityPASS. Asset234227Rexec25 CPU2/4GiB/1h,234232afterok H finite GPUdispatch; nativeCPU/GPUprofile/formal0. Onlyconsolidated4.67GBofficialweights, skipduplicateHF4.67GBmodel.safetensors; fixedassetdir. DefaultDNSmetadatafailed, narrowreadonlyofficialmetadataapproved, no modelcallslogin. Qwen4BassetPASS/coactiveGPU234229 submitted/R onlatestaudit; no interference. CancelledQ8Q9/Lingthinking/LAFSTOP. No agent/monitor/AutoDL/paidJudge."
+    },
+    {
+      "turn": 24,
+      "id": "N341",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directuser status: Qwen3-4B234229Rexec19 nativeprofilePASS formal2001/16944 strict876=43.778% mean.892235s;Ministral234234Rexec09 nativeFP8profilePASS formal555 strict0 mean.571906s, all555 finalresponsesMarkdownJSONfenced. TruefrozenpureJSON failures, not EOSscorer/runnererror; no fence stripping/retry/prompt/labelprecisionchange. Nativeactualformat outputs+mode boundedreceipt saved, identityPASS both. Freshallqueues/nodes/jobs/reservations onebounded audit. OriginalQwen27Bgeneration234190R withfinite234191;annotation234245caughtup/pending0/unknownstopfalse. Sourceinclusive234247CPU16GiB andafterok234248finiteactualsourceclock saved; lastcompletesource03:46 QMath995 gap5, no stalecountpromotedfresh. CancelledQ8Q9/Lingthinking/LAFSTOP, no newagent/monitor/AutoDL/APIcall."
+    },
+    {
+      "turn": 25,
+      "id": "N342",
+      "type": "decision",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "User asks other smallmodels then explicitlycancelsMinistral. Underexactdispatchlockcancel finitecallback234235first thenGPU234234; actualF143/callbackF/active0, preserveoutputsweights/inflight/logs, no Qwen4B or originalsourceinterference. Officialread candidates: Granite4.0-h-1b actual1.5B/4attention36Mamba2/128K promisinglatency byarchitecture(inferenceonly);SmolLM3-3B nativeFalse/officialYaRN128K instructiontooltraining. Bothlocal speed/formatunknown, no newtest/download. HistoricalGranite4.2-3B1.0996s72.5035% remainsreadonly, notimplicitlyreinstated. Candidatebenchmarksnotourstrictschema orsemanticcorrectness, no guaranteeinvented."
+    },
+    {
+      "turn": 26,
+      "id": "N343",
+      "type": "question",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "User asks additional smallmodel options. Officialsources verified Falcon-H1-1.5B-Instruct hybridTransformer+Mamba, config131072context/24layers/2048hidden/8Q2KV/nativeBF16, officialIFEval is notourJSONformat; prioritizeasnewlatencycandidate(inferenceonly). Llama3.2-3B-Instruct official3.21B128K textinstruct andPhi4-mini-instruct3.8B128K alternate; no measuredprojectspeed/format or guarantee. DefaultpublicconfigDNSblocked previously; narrowreadonlyofficialFalconconfigread verified maxpositions, no weights/download/inference/jobmutation/newmonitor. Existingstops preserved."
+    },
+    {
+      "turn": 27,
+      "id": "N344",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Directuser Qwen3-4B status: exactidentityPASS,234229Rexec19/wall48:09,234230dependencyH. Saved3062/16944 strict1450=47.3547%,mean.8666655s median.8513461s weighted127.326outputtok/s inclprefill; JSON/schema2859,Booleanreason1450,2truncated/0unexpectedthinking, noBLOCKER/sessionend. Freshallqueues/nodes/reservations/jobs readonlyaudit. Partialunequalprefix, no finalranking/semanticaccuracy/ETAclaim; no jobmutation or stoppedMinistralresume."
+    },
+    {
+      "turn": 28,
+      "id": "N345",
+      "type": "experiment",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "User asks Boolean/reason rule issue. SavedQwen4B3158responses:1467schema-valid responses violate reviewFalse=>reasonexactempty,1467falsewithnonempty/0trueempty. Fieldcounts Step1238 Prefix904 overlap withinresponses, notadditive. ExampleFalse reasons explainwhycurrentStep hasnoerror, semanticallyconsistent but frozenpureoutputcontractrequiresemptyFalse reason. No parser/prompt/labels modified, no modelcalls or semanticcorrectnessclaim."
+    },
+    {
+      "turn": 29,
+      "type": "decision",
+      "id": "N346",
+      "routing": "direct",
+      "provenance": "user",
+      "summary": "Direct human: 允许后续批次增量进入. Future independently cleaned second-round original nonthinking inputs may enter same fixed-panel review; first-round, thinking and unknown-source positions remain excluded or blocked. Original labels immutable."
+    },
+    {
+      "turn": 29,
+      "type": "experiment",
+      "id": "N347",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Scope source acceptance:8968 trajectories,911432 eligible requests/reviewer. Ling/Qwen saved screening; first DeepSeek enabled LOW adjudication independently accepted. CPU234542 failed report.py hash startup gate; current identity passes; failed owner archived and merge-only234552/callback234553 submitted. Adjudicator234530 and Nemotron234501 confirmed R. Original sources unchanged; overall incomplete, no model/API replay or resident polling."
+    },
+    {
+      "turn": 30,
+      "type": "experiment",
+      "id": "N348",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "One bounded receipt-only follow-up: exact identity PASS; CPU recovery234552 F0 and later merges preserved cursor. Aggregate audit234819 F0:181 source whole-file/frozen-prefix hashes unchanged; fixed-panel saved valid Ling11859/Nem5290/Qwen13544; DS185accepted=157kept+28changed,3consistency exceptions,3825queued/1claimed/1rejected. Full workflow incomplete. Actual DS enabled LOW request independently accepted. Fresh all legal resources, owned gates and measured profiles audited; no queue headroom, failed pre-model placements deferred. Original5340 latest Qwen complete5258; generation234190 F0 protected storage stop, callback234191 F1, annotation234413 F0 caught up; no source jobs running, protection/deadline unchanged. No replay/API audit call/new monitor/agent."
+    },
+    {
+      "turn": 31,
+      "type": "experiment",
+      "id": "N349",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Authorized concrete same-identity source/review recovery. Actual filesystem1TiB/free86827859968B; quota RPC refused, not inferred. Old generated Qwen branch omitted existing8GiB authorized reservation loan: corrected floor82666330368B,32GiB safety and assets preserved. Callback now classifies storage stop and defers safely on real queue cap; inflight/unknown remainblocked,round/attempt counters unchanged. Safety fixturesPASS. Control235254F0,annotation235257F0; finite capacity235258H after234313, next large entitlement handoff avoids review callback starvation without interruptingR. Review failed234450 already replaced by234876R;234456/234458 exact pre-model empty-device failures deferred at real queue caps. New-only cleanup235264 completed1trajectory/3892retainedsteps, existing5257 skipped; event235265 feeds intake235284 pending independent validation. Paired baseline902465SP+8967Answer=911432 requests/reviewer verified; unknown staysblocked, original181source paths disjoint from patches. No budget/attempt reset, protected deletion, accepted/unknown replay, new monitor/agent/AutoDL or original followup-clock reset."
+    },
+    {
+      "turn": 32,
+      "type": "experiment",
+      "id": "N350",
+      "routing": "direct",
+      "provenance": "ai-executed",
+      "summary": "Bounded same-identity callback recovery: strict current checker PASS, merge SHA61ba1cf8cf9c2c859a56845d0b444afa36a35e918b18e07ac61ee1bd6e64018c. Archived exact F1 owner235830 after88 committed votes; preserved offsets, unique recovery235956->merge235957/callback235958. Independent235963/235964 F0 shows actual Ling votes45652->64495(valid50189/unassessed14306), Nem49184,Q45290; current paid0QUEUED/0CLAIMED,9002totalaccepted/currentgate3views2006,15unknown unchanged. No paid replay or false judge-running claim. Freshalllegalresources:6GPU R+4Q, actual med6/large4 caps, no legal idle; native profiles128/256 verified, actualtail batches2..212/aggregate~16.4responses/s conditional tail sample, no maximum/ETA claim. Source235850 F1 before native due previously approvedstoragepatch omittedfrom freeze; exact patchhash verified, identitymanifest repaired,235960F0 resumes234190completeboundary/round1 and unchanged attempts; finite235962 reservesnextlargeafter234876, healthyR preserved. Review scope original second-round nonthinking only, strict3of3 perlevel, original labels immutable/currentnamespace separate, completefalse. No new monitor/agent/service/AutoDL."
+    }
+  ],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "action": "RestoredsourceCPUcoverageandclock, verifiedreceivedv2pilotcomponents withoutreplay, loosenedQhostconstraints only, independentlycheckedactualfirstformalproofs/VALSHA, implementedandCPUvalidatedgenuinereference-difference/max/nativeBF16primitiveprototype rules, preservedunpassedGPU/fullcontextgates.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261030_1233/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/native_bf16_primitives_v3.py"
+      ]
+    },
+    {
+      "turn": 2,
+      "action": "Diagnosed actual pre-update failures, preserved and resumed unique entries after bounded legal audit; independently accepted and delivered four saved-output reports; progressed genuine GPU SDPA operator gate; refreshed independent original-source clock and incremental cleanup.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261030_1435/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/native_bf16_sdpa_v4.py"
+      ]
+    },
+    {
+      "turn": 3,
+      "action": "Completed bounded legal placement audit and same-ID scheduling; verified once-only repr acceptance; advanced genuine native GPU attention and real-weight block gate; refreshed independent domain source/disposition clock and new-only cleanup.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261030_1635/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/native_ds_decoder_v5.py"
+      ]
+    },
+    {
+      "turn": 4,
+      "action": "Reconciled original source and same-round finite continuations; new-only cleanup; implemented/validated direct native full32 short gate, query tiled reference multipliers, exact-value layer offload, and longest causal prefix metadata; retained full-long/model gates and all completed-method STOP.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261030_1835/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/tiled_gqa_v7.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/layer_checkpoint_offload_v8.py"
+      ]
+    },
+    {
+      "turn": 5,
+      "action": "Reconciled partial domain coverage/labels/new-only cleanup and source clock; froze exact causal input; implemented and tested source-bound cursor/durable commit/scoped tile storage; controlled diagnosed own gate stop preserving accepted computation; repaired oracle binding and resumed actual native long gate.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261030_2035/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/native_full_long_v12.py"
+      ]
+    },
+    {
+      "turn": 6,
+      "action": "Diagnosed exact OOM, tested precision-preserving CPU multiplier storage and exact source-bound continuation, resumed unique owner without committed replay.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261030_2140_oom/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/audits/LAFaCT_LATEST_OPERATOR_STATUS.json"
+      ]
+    },
+    {
+      "turn": 7,
+      "action": "Saved actual hostRAM failure, changed only lossless storage lifetime, tested exact CPU/GPU chain and source-bound resume, repaired two launcher-only typos and resumed unique full-state owner with measured128GiB margin; refreshed source and independent domainRID counts/new-only cleanup.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/audits/ram_repair_v14_20261030/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/layer_checkpoint_offload_v14.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/code/lafact/native_full_long_v14.py"
+      ]
+    },
+    {
+      "turn": 8,
+      "action": "Joined existing four-model outputs with exact150 trajectory original-step identities and both judge modes; retained invalid denominators and exported main/schema/conditional statistics; independent source and aggregation verified.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/first_round_small_model_speed_format_pilot_20261030/analysis/review_capture_20261031/reports/RESULTS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/first_round_small_model_speed_format_pilot_20261030/analysis/review_capture_20261031/reports/REPORT_ZH.md"
+      ]
+    },
+    {
+      "turn": 9,
+      "action": "Prepared isolated thinking-mode pilot with pinnedassets/runtime reuse, exactsource/ID/default/boundary gates, legal unique finite GPU owners and callbacks; diagnosed pre-forward container allocation binding and preserved failures; refreshed original source gap snapshot.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/reports/DELIVERY_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/TASK.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/code/run_vllm_v2.py"
+      ]
+    },
+    {
+      "turn": 10,
+      "action": "Exact14 authorization manifest, CPU paid one-shot worker, immutable raw failure bodies, independent no-API reconciliation, one separately approved offline single-response field alias, finite dependent full-count refresh.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/targeted14_retry_20261031/run.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/targeted14_retry_20261031/validate.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/targeted14_retry_20261031/apply_one_alias.py"
+      ]
+    },
+    {
+      "turn": 11,
+      "action": "Original quota/attempt/protected audit and exact native-template failure repair, independent actual tokenizerCPU gate, unique queued GPU continuation; no scientificclaim promotion.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/original_quota_attempt_audit_20261031/audit.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/code/run_vllm_v3.py",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/code/advance_v3.py"
+      ]
+    },
+    {
+      "turn": 12,
+      "action": "Read-only complete-line prefix counts/hash, independent existing method identity, fresh bounded resource audit and durable current cursor report; no new inference or replay.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/audits/follow_20261031T005845Z/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 13,
+      "action": "Cancel exact owned LAFjob and confirmF143/noentries; persiststopamendment; savedformal latency/token-speed prefix and freshqueueaudit, existingQwen3alreadyRpreserved.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/LAFACT_CANCELLED_BY_USER.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/ACTIVE_EXPERIMENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/audits/speed_20261031T010320Z/REPORT.json"
+      ]
+    },
+    {
+      "turn": 14,
+      "action": "Directhuman switches to exactly Qwen3-8B andQwen3.5-9B native nonthinking, noLing. Old thinkingGPU/callbacks cancelled and verifiedinactive; savedoutputs retained. New isolated same150/16944each/32768cap officialnonthinking pilot. Q3 old normalizedRoPE40960 failure fixed by binding actual YaRN4/orig32768/max131072, realCPUModelConfig/nativeFalse gatePASS both. CPUqueue full; initial queuedCPU233996 cancelledbeforeexecution, identical CPUgates moved beforeinference inside actualGPU allocations.233997Rexec11 and233999Rexec19, physicalidle/ownership/poststage receipts; native modelinitialization/fullcontext profiles/formaloutputs pending. No paidAPI/label edits/newLing/monitor/agent; existinggeneration preserved, LAFcancelledSTOP.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/two_qwen_nonthinking_review_pilot_20261031",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/small_model_thinking_review_pilot_20261031/CANCELLED_BY_USER.json"
+      ]
+    },
+    {
+      "turn": 15,
+      "action": "Bounded relayed status/authorization check: directhuman two-Qwen nonthinking/noLing quote and contract/code/prompt/pins/cap bound in aggregate receipt. Both actualR and native longest/firstformalPASS; savedoutputs partial, zero reasoningtokens. LAF233742 F143 is directhuman cancellation, noOOM inference or resume. Archived staleR operatorstatus then corrected cancellation and committed66native/4reverse next28; wholelong/production/fits/TEST incomplete. Fresh4resourceaudit, no additional inference/API/monitor/agent/AutoDL.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/two_qwen_nonthinking_review_pilot_20261031/audits/authorization_follow_20261031T0141",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ds_step_hami_lafact_val_layer_seed42_20261030/audits/LAFaCT_LATEST_OPERATOR_STATUS.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "action": "Bounded original5340 duefollow completed sourceinclusiveCPU234088F0/234090F0 actual02:52:09UTC next03:52:09UTC. Usable DS5240/Q5265/G5204, full3 5235/5254/5200; QMath994usable992full3 remaining6generation/8full3to1000. Allotherfive-domain/model targets met. OldV8 stats omitted recovery family; preserved and superseded notdataloss.234082 actual8GiBmemoryfailure preserved,16GiBsourceinclusive succeeds. Qannotation234076preAPI asserted one savedsuccessoutsidecurrentneeded: exacthumanapprovedtarget14RID onexternalreuseqid. CPU234079F0 diagnosed; V9zero-call failed because journal intentionally lacksattemptid, preserved; V10 actualpaidattempt+claim/responseID/usage/labels/prompt/mode/source bindingPASS and sole234089R resumes originalskip/maxattempt/accounting. Incrementalcleanup234083/84/85F0 independentlyvalidated DS1/Q8/G6 newtrajectories, accepted totals5235/5254/5200; alreadyacceptedskip andQsemantic4holds retained. Twohealthy nonthinkingGPU entries saved1463/625prefix at02:50:44UTC, zero thought; frozen25filesPASS, no replayofinvalidformats. Original233740healthyR, no newsource/retryextension/agent/monitor/AutoDL. LAF/Ling/oldthinking STOP.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/follow_20261031_0243",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/code/annotation_controller_v10_external_reuse.py"
+      ]
+    },
+    {
+      "turn": 17,
+      "action": "Directuser currentstatus: threehealthyGPU R originalQ233740 andnonthinking233997/233999, no activepaidannotation; latest234101 checkpointCAUGHT_UP pending0 unknownstopfalse/493864savedgroups. Fresh234187 sourceinclusiveCPU16GiB ledger exact5340each yields usable5240/5266/5204 full35235/5257/5200; QMath995usable/full3=>gap5, otherfive-domain targetsmet. Two nativeFalse prefixes3564/770 at03:46:30UTC strict2860/506 mean2.278/10.483s zero reasoning; partialunequalprefix notfinalranking/ETA. Source+rates234187 andnewonlyQcleanup234188afterok finite, acceptedcontentsskip. Freshqueues/nodes/reservations/jobs saved. LAF/Ling/oldthinkingSTOP; no newAPI/source/retries/agent/monitor/AutoDL.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/five_domain_expansion_execution_20261025/audits/status_20261031_0345"
+      ]
+    },
+    {
+      "turn": 21,
+      "action": "Directhuman cancels twoQwen smallmodels includingnonthinking, retains Ling andNemotron4B candidatepool. Under exactdispatchlock cancelcallbacks233998/234000 first thenGPU233997/233999; actualbothF143/callbacksF/remainingactive0. Data/weights/inflightmarkers retained, no healthyoriginalQwen27B interruption. ThirdrecommendationMinistral3-3B-Instruct2512 fromofficialcard nativeJSON/functioncalling/256Kcompactedge; originalFP8 explicit, untestedprojectlatency/format, no download/inference authorizedorexecuted. Suggestedmatchedsame150/512cap/physicalhardware acceptance mean<=1s andstrict>=Ling79.05%, notfrozennewexperiment. LFM32K excluded for >60Kinputs ratherthancrop.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/two_qwen_nonthinking_review_pilot_20261031/audits/cancel_qwen_20261031",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/two_qwen_nonthinking_review_pilot_20261031/ACTIVE_EXPERIMENT.json"
+      ]
+    },
+    {
+      "turn": 22,
+      "action": "Directhuman additionally authorizes exactQwen/Qwen3-4B nonthinking. Newisolated qwen3_4b_nonthinking_review_pilot_20261031 same150/16944 Englishprompts/causalinputs/displayedlabels, nativeBF16officialFalse T.7/P.8/K20/minP0/seed42/batch1. New512cap statedonintake matches retainedLing/Nemotron, notmode-only32768comparison. Officialrevision1cfa9a7208912126459214e8b04321603b3df60c pinnedCPU, asset234222Rexec29 andfinite234223afterok H. NativeYaRN4/orig32768/max131072 normalizedconfig/fullcontext2warmup gates/acceptedskip/independent savedvalidator prepared,frozen20files/AST/bash/identityPASS; modelcalls0/gatespending/no GPUentry yet. All24/48/96 audit;24TuringBF16incompatible,48L40fitsVRAMbuttimingdifferent, plannedmatchingBlackwell96 reserves22GiBengine. Source/nativepins/paths/resources receipted, no monitor/agent/AutoDL/paidJudge. OldQ8/Q9cancelledSTOP;Ling/Nemotron candidatesonly,Ministralnominationnotlaunched.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/qwen3_4b_nonthinking_review_pilot_20261031"
+      ]
+    },
+    {
+      "turn": 23,
+      "action": "Directhuman authorizes proposedMinistral-3-3B-Instruct trial; new ministral3_3b_nonthinking_review_pilot_20261031 officialmistralai2512 pinnedb35d4dfe56c142746f54dbd64f579faab2744308/nativeFP8 no dequantization, precisiondifference disclosed. Exactsame150/16944/512cap/T.1/seed42/batch1/native262144context. NativeMistralTokenizer/mistral_common serializer returnsactualinputIDs, noretokenizingcontroltoken display; nativeconfig/tokenizer/quantization/physicalidle/longest2warmup gates andindependent savedvalidation prepared,21filesfrozen/ASTbashidentityPASS. Asset234227Rexec25 CPU2/4GiB/1h,234232afterok H finite GPUdispatch; nativeCPU/GPUprofile/formal0. Onlyconsolidated4.67GBofficialweights, skipduplicateHF4.67GBmodel.safetensors; fixedassetdir. DefaultDNSmetadatafailed, narrowreadonlyofficialmetadataapproved, no modelcallslogin. Qwen4BassetPASS/coactiveGPU234229 submitted/R onlatestaudit; no interference. CancelledQ8Q9/Lingthinking/LAFSTOP. No agent/monitor/AutoDL/paidJudge.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ministral3_3b_nonthinking_review_pilot_20261031"
+      ]
+    },
+    {
+      "turn": 24,
+      "action": "Directuser status: Qwen3-4B234229Rexec19 nativeprofilePASS formal2001/16944 strict876=43.778% mean.892235s;Ministral234234Rexec09 nativeFP8profilePASS formal555 strict0 mean.571906s, all555 finalresponsesMarkdownJSONfenced. TruefrozenpureJSON failures, not EOSscorer/runnererror; no fence stripping/retry/prompt/labelprecisionchange. Nativeactualformat outputs+mode boundedreceipt saved, identityPASS both. Freshallqueues/nodes/jobs/reservations onebounded audit. OriginalQwen27Bgeneration234190R withfinite234191;annotation234245caughtup/pending0/unknownstopfalse. Sourceinclusive234247CPU16GiB andafterok234248finiteactualsourceclock saved; lastcompletesource03:46 QMath995 gap5, no stalecountpromotedfresh. CancelledQ8Q9/Lingthinking/LAFSTOP, no newagent/monitor/AutoDL/APIcall.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ministral3_3b_nonthinking_review_pilot_20261031/audits/follow_20261031_0447"
+      ]
+    },
+    {
+      "turn": 25,
+      "action": "User asks other smallmodels then explicitlycancelsMinistral. Underexactdispatchlockcancel finitecallback234235first thenGPU234234; actualF143/callbackF/active0, preserveoutputsweights/inflight/logs, no Qwen4B or originalsourceinterference. Officialread candidates: Granite4.0-h-1b actual1.5B/4attention36Mamba2/128K promisinglatency byarchitecture(inferenceonly);SmolLM3-3B nativeFalse/officialYaRN128K instructiontooltraining. Bothlocal speed/formatunknown, no newtest/download. HistoricalGranite4.2-3B1.0996s72.5035% remainsreadonly, notimplicitlyreinstated. Candidatebenchmarksnotourstrictschema orsemanticcorrectness, no guaranteeinvented.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ministral3_3b_nonthinking_review_pilot_20261031/audits/cancel_ministral_20261031",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/ministral3_3b_nonthinking_review_pilot_20261031/ACTIVE_EXPERIMENT.json"
+      ]
+    },
+    {
+      "turn": 29,
+      "action": "Scope source acceptance:8968 trajectories,911432 eligible requests/reviewer. Ling/Qwen saved screening; first DeepSeek enabled LOW adjudication independently accepted. CPU234542 failed report.py hash startup gate; current identity passes; failed owner archived and merge-only234552/callback234553 submitted. Adjudicator234530 and Nemotron234501 confirmed R. Original sources unchanged; overall incomplete, no model/API replay or resident polling.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/second_round_three_model_review_20261031/RUN_STATE.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/second_round_three_model_review_20261031/reports/DELIVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 30,
+      "action": "One bounded receipt-only follow-up: exact identity PASS; CPU recovery234552 F0 and later merges preserved cursor. Aggregate audit234819 F0:181 source whole-file/frozen-prefix hashes unchanged; fixed-panel saved valid Ling11859/Nem5290/Qwen13544; DS185accepted=157kept+28changed,3consistency exceptions,3825queued/1claimed/1rejected. Full workflow incomplete. Actual DS enabled LOW request independently accepted. Fresh all legal resources, owned gates and measured profiles audited; no queue headroom, failed pre-model placements deferred. Original5340 latest Qwen complete5258; generation234190 F0 protected storage stop, callback234191 F1, annotation234413 F0 caught up; no source jobs running, protection/deadline unchanged. No replay/API audit call/new monitor/agent.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/second_round_three_model_review_20261031/audits/bounded_receipt_20261031_0755/AGGREGATE_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 31,
+      "action": "Authorized concrete same-identity source/review recovery. Actual filesystem1TiB/free86827859968B; quota RPC refused, not inferred. Old generated Qwen branch omitted existing8GiB authorized reservation loan: corrected floor82666330368B,32GiB safety and assets preserved. Callback now classifies storage stop and defers safely on real queue cap; inflight/unknown remainblocked,round/attempt counters unchanged. Safety fixturesPASS. Control235254F0,annotation235257F0; finite capacity235258H after234313, next large entitlement handoff avoids review callback starvation without interruptingR. Review failed234450 already replaced by234876R;234456/234458 exact pre-model empty-device failures deferred at real queue caps. New-only cleanup235264 completed1trajectory/3892retainedsteps, existing5257 skipped; event235265 feeds intake235284 pending independent validation. Paired baseline902465SP+8967Answer=911432 requests/reviewer verified; unknown staysblocked, original181source paths disjoint from patches. No budget/attempt reset, protected deletion, accepted/unknown replay, new monitor/agent/AutoDL or original followup-clock reset.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/domain1000_failed_recovery_20261030/audits/storage_callback_repair_20261031/RECOVERY_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 32,
+      "action": "Bounded same-identity callback recovery: strict current checker PASS, merge SHA61ba1cf8cf9c2c859a56845d0b444afa36a35e918b18e07ac61ee1bd6e64018c. Archived exact F1 owner235830 after88 committed votes; preserved offsets, unique recovery235956->merge235957/callback235958. Independent235963/235964 F0 shows actual Ling votes45652->64495(valid50189/unassessed14306), Nem49184,Q45290; current paid0QUEUED/0CLAIMED,9002totalaccepted/currentgate3views2006,15unknown unchanged. No paid replay or false judge-running claim. Freshalllegalresources:6GPU R+4Q, actual med6/large4 caps, no legal idle; native profiles128/256 verified, actualtail batches2..212/aggregate~16.4responses/s conditional tail sample, no maximum/ETA claim. Source235850 F1 before native due previously approvedstoragepatch omittedfrom freeze; exact patchhash verified, identitymanifest repaired,235960F0 resumes234190completeboundary/round1 and unchanged attempts; finite235962 reservesnextlargeafter234876, healthyR preserved. Review scope original second-round nonthinking only, strict3of3 perlevel, original labels immutable/currentnamespace separate, completefalse. No new monitor/agent/service/AutoDL.",
+      "provenance": "ai-executed",
+      "files_changed": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/second_round_three_model_review_20261031/audits/callback_recovery_20261031_1200/BOUNDED_ACCEPTANCE_V2.json"
+      ]
+    }
+  ],
+  "claims_touched": [],
+  "logic_revisions": [],
+  "key_context": [
+    {
+      "turn": 10,
+      "excerpt": "允许14个请求各追加1次（推荐）；允许仅更正这一处字段名（推荐）"
+    },
+    {
+      "turn": 11,
+      "excerpt": "按照最初的分配题数，已按手册重复失败的不考虑，考虑还没有生成过的"
+    },
+    {
+      "turn": 13,
+      "excerpt": "取消LAFaCT；小模型速度如何"
+    },
+    {
+      "turn": 14,
+      "excerpt": "把2个qwen小模型用无思考重跑，ling不跑"
+    },
+    {
+      "turn": 21,
+      "excerpt": "取消Qwen3-8B和Qwen3.5-9B；保留Ling、Nemotron-3-Nano-4B；再挑速度格式同量级的第三个"
+    },
+    {
+      "turn": 22,
+      "excerpt": "Qwen3-4B也试下，无思考"
+    },
+    {
+      "turn": 23,
+      "excerpt": "Ministral-3-3B-Instruct也试下"
+    },
+    {
+      "turn": 25,
+      "excerpt": "还有小模型能试试吗；Ministral-3-3B-Instruct取消"
+    },
+    {
+      "turn": 29,
+      "excerpt": "允许后续批次增量进入"
+    }
+  ],
+  "open_threads": [
+    "Qwen3-4Bnonthinking test continues uniqueentry; partialformat belowretainedbaselines.",
+    "Original5340Qwen27B generation/annotation independent.",
+    "Granite4.0H1B/SmolLM3recommendationonly; cancelledMinistral/Qwen8B9B/Lingthinking/LAFSTOP."
+  ],
+  "ai_suggestions_pending": []
+}

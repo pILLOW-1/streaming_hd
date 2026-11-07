@@ -1,0 +1,548 @@
+{
+  "session": {
+    "id": "2026-10-23_001",
+    "date": "2026-10-23",
+    "started": "2026-10-22T13:25:05.127103+00:00",
+    "last_turn": "2026-10-23T12:32:01.892783+00:00",
+    "turn_count": 48,
+    "summary": "Full old-dataset disabled-thinking agreement audit actually running; exact prompt/reuse/numeric gates passed; unknown and storage guards preserved."
+  },
+  "events_logged": [],
+  "ai_actions": [
+    {
+      "turn": 1,
+      "timestamp": "2026-10-22T13:25:05.127103+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedfreshalllegalresourceaudit findsassignable48GBexec31 fitsDSfull73728BF16/4CPU32RAM. Preserve186472sameID/state, userhold\u2192queuechange+host31\u2192release; actualRoriginaltorch2.8/vllm0.11 CUDA-BF16-UUID pass,weightsSHApass,nativeserverready/L40memoryproof; nofreshrecordyet/11acceptedinherited. Q/Gsamequeuedownersretargetexec11/18earliestupdatedhealthy96bounds, no runningjobinterference/duplicateproducer. Immutableoldnative/sciencesame, currentreadonlyidentityreportsfreshversusinheritedIDs toavoidattributingreusedfirstreceiptasnew. Paidlegacyresults/cost/pending/unknownrecorded,properhandoffawaitsoldpaidownerdrain. No newmonitor/service/agent/residentpoll.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_132505/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_132505/DS_ACTUAL_REPAIR_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_132505/AFTER_JOBS.json"
+      ]
+    },
+    {
+      "turn": 2,
+      "timestamp": "2026-10-22T13:54:36.783368+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedfollowactualDS18terminal/17accepted splits12inherited(11accepted1discarded)+6freshaccepted viaimmutablelegacyparentSHAbound; firstfresh402Step recordlosslessgzip+scope900manifest/nativeparseridentitysealed,notinheritedFIRST_VALIDadmission/noextraAPIreplay. VerifyuniqueCPU186708Hafteranyhealthyoldpaid186368R, no 8workerdualowner; preservelegacylabels/selectedRIDs/fullcostjournal/livepending/0unknown whileimportwaitsdrain, newfirstcompletelabelpending. Freshalllegalqueue/nodeACL/reservations/releasesauditnoidlecompatibleGPU; Qsame186495unstartedHu\u2192host18\u2192Q earliesttwo96bounds699/2624versusold11slotclaimed/5443,Galready18,DSRuntouched. No newmonitor/service/agent/producer/APIowner. Saveaccuratecurrent/nextcheck.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_135436/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/arms/deepseek_r1_distill_llama_8b/audits/FIRST_FRESH_VALID_GENERATION_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_135436/CURRENT_AND_PAID_JOBS.json"
+      ]
+    },
+    {
+      "turn": 3,
+      "timestamp": "2026-10-22T14:48:56.559858+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedfollowconfirmsoldpaidownerstilllabels excludedIDs beyondinflight. ImplementfiniteCPUexistingbatch-lock cooperativehandoff186910actualRexec25, kernelwait/no signalsorsemanticgate/Key/ledger/labels edits. Entryguardonlyaftercurrentann.mainbatchreleases, oldnextbatchLOCK_NBstopsbeforeAPI; originalfinallycheckpoint/outerlockrelease allows186708afteranysafeimport. Multi-processzeroAPI currentresponse/nextbatchblocked/pending0fixturePASS. OperatoractualWAIT notfalsehandoffclaim. QueuednewDSbootstrapwaitsbriefoldouterguard safely; realcontrollerfakenetworkfixture catches inherited-complete-firstfalseNO_PROGRESS bugandpreverifyfix,old2groups/post0 vsnew4groups/post2/0realAPI, adoptedonlyunstarted186708 witharchives/freezeoverlay,DShealthygenunchanged. Freshfulllegalqueue/nodeACL/reservation/releaseauditnoidle96; qalteronly Q186495exec12/G186496exec08 asprior18slotsclaimed, no newhold/resubmit. DSnewrecordabsence notstallproof; shared00:46mirrormetadata stale, originalcaps/retriescanlast>30min; one-shotownnode31metricshelperprepared, coordinatorappsendtransportfailed/canonicalrequestsaved, no reboot/workaround/healthyinterrupt. Saveactualpending/unknown/nextheartbeat.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_144856/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/ANNOTATION_BOUNDARY_LOCK_OFFLINE_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/legacy_annotation_boundary/CURRENT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/REUSED_FIRST_TRAJECTORY_HANDOFF_GATE.json"
+      ]
+    },
+    {
+      "turn": 3,
+      "timestamp": "2026-10-22T15:02:34.802634+00:00",
+      "provenance": "ai-executed",
+      "action": "Sameboundedturnactualoutcome:boundary186910F0; old186368F1intentionalLOCK_NBguard/finalcheckpoint5603groups210.078866upperCNY/0pending0unknown,oldledger/labelsSHA unchanged. New186708Rexec25 actualsafeimport2908selectedsuccessgroups/excluded2695legacyretained, firstreusedfulltrajectory1093labelsPASS14:46:43 notfreshlabels. RealnewAPI297completedsuccess/304reserves/7livepending0unknown; assertALLnewreservesandresponsesdisjointoldsuccessfulRIDsinclshortcuts,inflight/errorpaths,0repaid. IncrementalupperCNY6.891074 excludesalreadybilled210.078866baseline/newledger216.96994. Preverifyfixnowactuallyadvancing, no falseNoProgress. CorrectoldandnewACTIVE/handoffs andnextcheck, no moreguard/producer/monitorjobs.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/handoff_completed_20261022_150234/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/ACTUAL_SELECTED_PAID_HANDOFF_ACCEPTANCE_V2.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/arms/deepseek_r1_distill_llama_8b/annotation_v1/audits/FIRST_COMPLETE_ANNOTATION_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 4,
+      "timestamp": "2026-10-22T15:30:11.045928+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedfollow verifiesDS19terminal17accepted split12inherited+fresh6accepted1discard. Immutablegzipnativeattempts0039prove5lengthcaps8192/16384/32768/65536/70206 total193086tokens5353.176sec89.22min/errorNone, finalfull73728contextceilingdiscardnotinfra/enginefailure; preservehealthyR/policy. Newann186708Rprogress allnewreserveRIDscurrentselectedaccepted/noneoldsuccessfulrepaid inclinflight,0unknown/old210.078866baselineexcludednewspend; firstfresh0050exactprompt/schema/RIDcoverage0/403 asselectedinheritedbacklogadvances,firstreusedcompletekeptseparate. One-shotread-onlyfreshlabelverifier0API/model/Keyloads writesacceptanceonlyifcomplete. Freshfulllegalresourceauditnoidle96; qalteronlyQ18649505/G18649610 newearliestbounds+Gexpectedpriorcache, no holds/resubmit orhealthyrunninginterference. Coordinatortrustednode31hostkeymissing, noSSHbypass/newservice/Keytransfer/failureinference; actualfinishedlongrequestevidenceadequate,no restart. Saveboundedreceipts/nextcheck, no queuedhealthynotification.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_153011/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/FRESH_DISCARD_LENGTH_CHAIN_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_153011/FIRST_FRESH_LABEL_COVERAGE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/RESOURCE_OVERRIDE_1516.json"
+      ]
+    },
+    {
+      "turn": 5,
+      "timestamp": "2026-10-22T15:56:46.914767+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedfollow900identity/sourcehashPASS, DShealthyR17freshaccepted+11inherited2discarded initialsnapshot;newannRgroups4819\u21924922+allcurrentselectednecessaryinherited beforefreshfirst0/403,6975inheritedgroupdenominator explainsorder, no replayfornotifications. Allnewreservesaccepted900RIDs/noneoldsuccessrepaidinclinflight,oldfinancial/labelsSHAunchanged,0unknown,billbaseline210.078866notdoublecounted. Freshalllegalqueue/nodeACL/reservation/releaseauditnoidle96,10previousreleaseclaimed186353;next05whole2GPU/RAM377CPU48bound1297svs10bound9672s fitsQ4CPU40GB/G4CPU96GB. KeepQ18649505andqalteronlyG18649610\u219205,nohold/resubmit/healthyRchange. Samecontract/caps/source/manual/Cetusonly/AutoDLoff,no newmonitor/service/agent/model/API. Savequietboundedstatus/nextcheck.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_155646/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_155646/FIRST_FRESH_LABEL_COVERAGE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/RESOURCE_OVERRIDE_1546.json"
+      ]
+    },
+    {
+      "turn": 6,
+      "timestamp": "2026-10-22T16:19:36.743251+00:00",
+      "provenance": "ai-executed",
+      "action": "2026-10-22T16:19:36.743251+00:00 \u2014 Bounded follow-up\nDS186472Rexec31 remains30terminal28accepted (17freshaccepted), annotation186708R 5444groups; selectedinherited5444/6975 thenfreshfirst0/403, preserveorder. AllnewreserveRIDs selectedaccepted/disjointoldsuccess,0unknown,oldfinancial/labelsSHAunchanged; inherited210.078866baseline excludednewspend. Freshalllegalqueue/nodeACL/Qlist/reservation/releasesaudit: noidlecompatibleGPU; previous05release claimed186948, now21159sbound. SamequeuedIDs qalteronlyQ186495\u219207/G186496\u219213 earliesthealthy96 bounds5330/5511s CPU/RAMfit; physicalhealth/idle inallocation stillrequired,no promisedstart. HealthyDS/paidconsumer untouched,no SSHtrustbypass/no newproducer/APIreplay/monitor/service/agent. Exactsnapshot ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_161741/STATUS.json, next existingheartbeat 2026-10-22T16:46:00+00:00.\n",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_161741/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_161741/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 7,
+      "timestamp": "2026-10-22T16:53:18.627880+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T16:53:18.627880+00:00 \u2014 Bounded follow-up\nDS186472Rexec31 actual34terminal/32accepted,21freshaccepted distinctfrom11inherited. Consumer186708R6075groups/12140labels; inherited6075/6975 beforefirstfresh0/403. AllnewreservedRIDs selectedaccepted/disjointoldsuccessinclinflight,0unknown,oldfinancial/labelsSHAunchanged. Newupper93.576948CNY excludesalreadybilled210.078866baseline. Alllegalqueues/nodes/ACL/Qlist/reservations/releases freshly audited; no idle compatible GPU. Keep Q186495 host07/G186496 host13 sameIDs/no mutation: earliesthealthy96 releases07=3288s oneGPU /13=3471s twoGPU vs19=4187s/21=5214s/10=5830s. CPU/RAM fits both after release; minimum native weights55.56/62.55GB exceed48GB class. Canonical weightSHA stage inside PBS, inallocation physicalidle/health remainsrequired, releasebounds not startup promise. DS healthy48L40 exec31 preserved; no SSHtrustbypass. Original900SHA/manual/native source/config frozenidentityPASS; healthyjobsuntouched, noextrareplay/API/newproducer/monitor/agent/service. Exactsnapshot ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_165221/STATUS.json, next existingheartbeat 2026-10-22T17:16:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_165221/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_165221/RESOURCE_DECISION.json"
+      ]
+    },
+    {
+      "turn": 8,
+      "timestamp": "2026-10-22T17:19:30.945629+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T17:19:30.945629+00:00 \u2014 Bounded follow-up\nDS186472Rexec31 actual34terminal/32accepted,21freshaccepted distinctfrom11inherited. Consumer186708R6386groups/12762labels; inherited6386/6975 beforefirstfresh0/403. AllnewreservedRIDs selectedaccepted/disjointoldsuccessinclinflight,0unknown,oldfinancial/labelsSHAunchanged. Newupper109.34624CNY excludesalreadybilled210.078866baseline. Freshfulllegalresourceaudit:07 earlier release claimed187067; next07bound7703s.13twoGPUrelease1911s earlierthan19=2627s/21=3654s/10=4270s.13postrelease48CPU/377GiBRAM/2native96GPUs sufficientQ4CPU40GB+G4CPU96GB. No idlelegalcompatibleGPU, nativeweights exceed48GB. KeepIDs/noholds/resubmit/healthyRchanges; physicalidlehealthinsideallocation, not guaranteed start. DScontinuationcodeverified completeattempt/recordrestore,afterokunique successor whencontrollerends,not yetclaimedsubmitted;1hadmissionwindow cannotguarantee89minretrychainfullydrains,unreturnedtokens/KVnotcheckpointed,documentedexactlimitation in ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_171734/DS_CONTINUATION_CODE_REVIEW.json. Noactualtimeout/healthyrestart/sciencechange/newproducer/APIreplay/monitor/agent/service. Original900SHA/manual/native identityPASS. Exactsnapshot ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_171734/STATUS.json, next existingheartbeat 2026-10-22T17:46:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_171734/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_171734/RESOURCE_OVERRIDE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_171734/DS_CONTINUATION_CODE_REVIEW.json"
+      ]
+    },
+    {
+      "turn": 9,
+      "timestamp": "2026-10-22T17:50:17.125622+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T17:50:17.125622+00:00 \u2014 Bounded follow-up\nDS32accepted/34terminal(21freshaccepted),newann6963groups/13915labels,inherited6963/6975,firstfresh0/403.0unknown/oldsuccessfulRIDrepaid,oldjournalSHAunchanged,newupper131.646606CNY excludes210.078866alreadybilledbaseline. Freshalllegalqueue/nodeACL/Qlist/reservation/releasesaudit:noidlelegalcompatibleGPU. KeepQ186495/G186496sameIDs13 earliestwhole2GPUrelease111sbound,19=827s,21=1854s,10=2470s;postrelease13CPU48/RAM377GiB fitsQ4CPU40GB/G4CPU96GB/native96GPUeach.48GBinsufficientweights,exec15denied. CanonicalSHAstage andphysicalidlehealthinsideallocation, no startupguarantee/extraallocations/probes. DSR4h27m/6h. Completeattempt/recordSHArestore andafterokuniquecontinuationsupported, terminalacceptedskip. Inflightunreturnedtokens/KVcannotresume. Final1hnewquestionguard shorterthanobserved89minfullcapchain; cannotguarantee nointernaldeadlinekill/recompute. No timeoutcurrentlyobserved, no healthyrestart/livecode/sciencechange. Safequestionboundarydrainwouldneedtrustedownnode31access; none currentlyavailable, pbs_remshwrapsSSH. Authorizedexistingcoordinatorappmessageattemptfailed127.0.0.1:65260; no trustbypass. Needexistingcoordinatorreadhandoff, notnewmonitor/agent/service. Snapshot ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_174849/STATUS.json; next existingheartbeat2026-10-22T18:16:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_174849/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_174849/DS_CONTINUATION_REVIEW.json"
+      ]
+    },
+    {
+      "turn": 10,
+      "timestamp": "2026-10-22T18:20:26.698116+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T18:20:26.698116+00:00 \u2014 Firstfreshfullannotation accepted\nCurrent900DS33accepted/36terminal(22freshaccepted). FIRST_FRESH_COMPLETE_ANNOTATION_ACCEPTANCE actualPASS question0050/current900SHA/exactprompt/RID/schema:403groups=402Step402Prefix1Answer805labels. Distinctfromreusedfirst1093labels. Consumer7574groups/15135labels,inherited6975/6975,fresh599;allnewreservesaccepted900/noneoldsuccessfulRIDrepaid/unknown0/oldjournalsSHAunchanged. Newupper147.900668CNY excludes210.078866baseline. 13earlierreleaseclaimed186949(twoGPU), now19904sbound. Freshhealthy96 earliest21singleGPUnext53sbound\u2192Q,07next3978s\u2192G vs21second5025s/23=5717s; native96/Q4CPU40GB/G4CPU96GBfitspostreleaseCPU/RAM. No legalidleGPU ininitialsnapshot; canonical weights SHAstage/physicalidlehealth inallocation required. PreserveIDs/noholds/resubmits/healthyRchanges, boundsnotstartpromise. Alllegalqueues/ACL/Qlist/reservations audited; smaller48GBnativeinsufficient. CurrentRDS4h57m hasno supportedexternalgracefulSTOP/sharedflag; SIGTERMwouldkillinflight, notused. Durableattempt/cap/retry/seedrestore supportedbutKV/unreturnedstateisnot. Internaldeadline mayterminateunreturnedattempt, nofullstatePASSclaim/noactualtimeoutyet; exactreview ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_181822/DS_ACTUAL_CONTINUATION_LIMITATION.json. Existinguniqueafteroksuccessor notyetemitted, no duplicatecreated. Snapshot ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_181822/STATUS.json, nextexistingheartbeat2026-10-22T18:46:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_181822/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_181822/DS_ACTUAL_CONTINUATION_LIMITATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/arms/deepseek_r1_distill_llama_8b/annotation_v1/audits/FIRST_FRESH_COMPLETE_ANNOTATION_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 11,
+      "timestamp": "2026-10-22T18:49:46.478479+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T18:49:46.478479+00:00 \u2014 Actual DS safe continuation\nOld186472F0normalPBS_CONTINUATION_WINDOW18:20:57 aftercurrent0057complete/377Steps;37terminalrecordsand64committedattemptrows22972701B SHAverified restoredby uniqueafterok187177R31 started18:20:59. NativeGPU/BF16/weights/serverPASS;6newterminalsincehandoff, now43terminal/40accepted/29freshaccepted. Nointernaldeadline/interruptedrequest thishandoff;generalKVlimitation retainednotpromotedfullstateguarantee. Q186495R21actualnativeGPU/weightSHA/serverPASS/admittednativeclient,0current900terminal; Rnotclaimedgenerationcomplete. GstillQ07. Freshalllegalqueues/nodes/ACL/Qlist/reservations/releasesaudit:noidlecompatibleGPU. PreservehealthyDS187177R31(minsufficient48L40),Q186495R21(native96BF16). G186496Q07still earliesthealthy96next2188s vs21=3197s/23=3917s/14=4062s,keepID/no alteration/no duplicateproducer. RAM/CPUfitsG96GB/4CPU afterrelease; canonicalweightsSHAstage/physicalidlehealthonlyinsideallocation; releaseboundsnotstartpromise. Annotation7988groups/15963labels,fresh1013/inherited6975covered; firstfresh805labelsPASSpreviouslynotified. Allnewreservesaccepted900/disjointoldsuccessfulRID/unknown0/oldjournalSHAunchanged;newupper161.719012CNY excludes210.078866baseline. Snapshot${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_184750/STATUS.json, next existingheartbeat2026-10-22T19:16:00+00:00. No newmonitor/agent/service/producer/APIreplay,healthyRquiet.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_184750/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_184750/DS_ACTUAL_SAFE_HANDOFF_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 12,
+      "timestamp": "2026-10-22T19:19:12.525399+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T19:19:12.525399+00:00 \u2014 Bounded three-model generation and annotation follow-up\nQ186495R21 actualfirstvalid900record0189/1705Steps at18:57:44, second0070/947Steps; actualaccepted2, annotationunique187276Rexec40. Detailedall-modelsourcefresh/inherited/discard andthreelevelrequired/covered/completefreshtrajectorycounts ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_191731/STATUS.json. AllnewpaidreserveRIDs selectedaccepted/nooldsuccessrepaid inclinflight;unknown0,DSoldjournalsSHAunchanged,inheritedcostbaselinesnotdoublecounted. No idlelegalcompatibleGPU.07 earlier slot claimed187223(next13140s), healthy96 earliest14next2215s vs23=2237s/22=5696s/12=5978s/08=5979s.14sufficientfreeCPU/RAM G4CPU96GB; samecanonicalread-onlyweights mustSHAstage insideallocation,native62.55GBweights exceed48GBGPU. PreserveID/qtime/noholds/resubmit/healthyDS-Q-annchanges; physicalidlehealthinsideallocation andboundsnotguaranteedstarts. DSsafe187177Rafterold186472F0handoff remainshealthy, no modelreplay/sciencechange/duplicateproducer/paidowner/newmonitor/agent/service. Next existingheartbeat2026-10-22T19:46:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_191731/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_191731/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 13,
+      "timestamp": "2026-10-22T19:48:21.509419+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T19:48:21.509419+00:00 \u2014 Bounded three-model generation and annotation follow-up\nQ186495R21 actualfirstvalid900record0189/1705Steps at18:57:44, second0070/947Steps; actualaccepted4, annotationunique187276Rexec40. Detailedall-modelsourcefresh/inherited/discard andthreelevelrequired/covered/completefreshtrajectorycounts ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_194730/STATUS.json. AllnewpaidreserveRIDs selectedaccepted/nooldsuccessrepaid inclinflight;unknown0,DSoldjournalsSHAunchanged,inheritedcostbaselinesnotdoublecounted. Freshfulllegalqueues/nodesACL/Qlist/reservations/releasesaudit:noidleassignablecompatibleGPU. KeepGemma186496Qhost14 sameID;14next495sbound vs22=3876s/12=4178s/23=5233s/10=5587s, sufficientCPU/RAM G4CPU96GB.08assigned2GPU despite noRlist therefore notfree;E/transition occupancy not ownershipbypass. Canonicalweights62.55GB/native96required,48GBinsufficient. Physicalidle/nativehealth/SHAstageonlyinsideallocation; no startupguarantee. HealthyDS187177R31/Q186495R21/DSann186708R25/Qann187276R40unchanged. DSpaidCPU5h/12h, admissionguard10h+2hdrain, notnear5hwalltime; do not interruptpaidbatch. DSsafe187177Rafterold186472F0handoff remainshealthy, no modelreplay/sciencechange/duplicateproducer/paidowner/newmonitor/agent/service. Next existingheartbeat2026-10-22T20:16:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_194730/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_194730/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 14,
+      "timestamp": "2026-10-22T20:18:26.666594+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T20:18:26.666594+00:00 \u2014 Bounded three-model generation and annotation follow-up\nQ186495R21 actualfirstvalid900record0189/1705Steps at18:57:44, second0070/947Steps; actualaccepted6, annotationunique187276Rexec40. Detailedall-modelsourcefresh/inherited/discard andthreelevelrequired/covered/completefreshtrajectorycounts ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_201724/STATUS.json. AllnewpaidreserveRIDs selectedaccepted/nooldsuccessrepaid inclinflight;unknown0,DSoldjournalsSHAunchanged,inheritedcostbaselinesnotdoublecounted. Freshalllegalqueues/nodes/ACL/Qlist/reservations/releasesaudit:noidlelegalcompatibleGPU. AllthreehealthyRpreserved:DS187177exec31native48L40/Q186495exec21native96/G186496exec14native96.12next2377s/10=3787s;22next2106sRAMconstrained(now385024MBassigned)notearlierthanhealthycurrentR. Smaller48GBcannotfitQ55.56GB/G62.55GBnativeweights. Inallocationphysicalidle/UUID/commonlease/nativegateandfullweightSHAproven; Gemma0MiB/0util/noPIDbeforeuse, actualreserved86665MiBnotpeak. Canonicalreadonlyassets/SHAstage retained/no move/extraallocation/duplicateproducer. DSCPU5h30/12h,10hadmission+2hdrain; Q/GCPUhealthy paidbatchnotinterrupted. DSsafe187177Rafterold186472F0handoff remainshealthy, no modelreplay/sciencechange/duplicateproducer/paidowner/newmonitor/agent/service. Next existingheartbeat2026-10-22T20:46:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_201724/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_201724/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 15,
+      "timestamp": "2026-10-22T20:50:38.658159+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T20:50:38.658159+00:00 \u2014 Bounded three-model generation and annotation follow-up\nQ186495R21 actualfirstvalid900record0189/1705Steps at18:57:44, second0070/947Steps; actualaccepted9, annotationunique187276Rexec40. Detailedall-modelsourcefresh/inherited/discard andthreelevelrequired/covered/completefreshtrajectorycounts ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_204724/STATUS.json. AllnewpaidreserveRIDs selectedaccepted/nooldsuccessrepaid inclinflight;unknownreportedexactly,DSoldjournalsSHAunchanged,inheritedcostbaselinesnotdoublecounted;DS/Gunknownusage1each(recorded10CNYuppereach)explicit,notknownactualcharge. Freshalllegalqueues/nodes/ACL/Qlist/reservations/releases/CPU/RAMaudit. Legalassignable22has1free96GPUbutRAM~17GiB insufficientQ40/G96;38has1free48L40andCPU/RAM, but healthyDSalready48L40andzeroqueueadvantage, no move. AllthreehealthyRpreserved/nativeweightSHA/ioalreadyvalidated, smaller48cannotfitQ55.56GB/G62.55GBweights. No physicalprobeoutsideallocation/no newGPUallocation/producer. DSandGCPUF1unknownusageguard stopped/pending0; no retry/CPUresubmitwithoutspecificunknownexception. QCPUhealthy12hguard10h+2hdrain untouched. Actualbounds inLEGAL_RELEASE_BOUNDS not startup promises. DSsafe187177Rafterold186472F0handoff remainshealthy, no modelreplay/sciencechange/duplicateproducer/paidowner/newmonitor/agent/service. Next existingheartbeat2026-10-22T21:16:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_204724/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_204724/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "timestamp": "2026-10-22T21:11:05.415724+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T21:11:05.415724+00:00 \u2014 Bounded three-model generation and annotation follow-up\nQ186495R21 actualfirstvalid900record0189/1705Steps at18:57:44, second0070/947Steps; actualaccepted11, annotationunique187276Rexec40. Detailedall-modelsourcefresh/inherited/discard andthreelevelrequired/covered/completefreshtrajectorycounts ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/unknown_usage_recovery_20261022_210747/STATUS.json. AllnewpaidreserveRIDs selectedaccepted/nooldsuccessrepaid inclinflight;unknownreportedexactly,DSoldjournalsSHAunchanged,inheritedcostbaselinesnotdoublecounted;DS/Gunknownusage1each(recorded10CNYuppereach)explicit,notknownactualcharge. Freshalllegalqueue/nodeACL/Qlist/reservations/releases/CPU/RAMaudit,no GPUmigration: healthyDS187177R31native48L40/Q186495R21native96/G186496R14native96. Available22GPU96RAM~17GBinsufficientQ/G,38GPU48notimprovementoverhealthyDS. CPUunpinworkq2CPU16GB12h jobs187662R25/187663R29 actual started; oneconsumerperarm verifiedoldF/locksfree. Originalreadonlyassets/fullSHAstagealreadyvalid; no extraGPUproducer/service/agent/monitor/AutoDL. ExistingQCPUhealthy/no APIinterruption. DSsafe187177Rafterold186472F0handoff remainshealthy, no modelreplay/sciencechange/duplicateproducer/paidowner/newmonitor/agent/service. Next existingheartbeat2026-10-22T21:46:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/unknown_usage_recovery_20261022_210747/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/unknown_usage_recovery_20261022_210747/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 16,
+      "timestamp": "2026-10-22T21:12:02.703430+00:00",
+      "provenance": "ai-executed",
+      "action": "Same-turnactualrecovery 2026-10-22T21:12:02.703430+00:00: DS187662R25/G187663R29 started, exactauthorizedtargetretryadmittedonceeach; currenttargetsuccess[('deepseek_r1_distill_llama_8b', True), ('gemma_4_31b_it', True)]. Allpre-recovery9523DS/271GsuccessRIDspreservedand0repaid, historicalunknown10CNYeach/rawrecordsunchanged,newunknown0. No newGPU/Qconsumerinterruption. Installedcode/freezesofflinegatePASS;actual ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/unknown_usage_recovery_20261022_210747/ACTUAL_RECOVERY_PAID_DEDUP_ACCEPTANCE.json. Next existingheartbeat2026-10-22T21:16:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/unknown_usage_recovery_20261022_210747/ACTUAL_RECOVERY_PAID_DEDUP_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 17,
+      "timestamp": "2026-10-22T21:28:01.514750+00:00",
+      "provenance": "ai-executed",
+      "action": "## 2026-10-22T21:28:01.514750+00:00 \u2014 Bounded three-model generation and annotation follow-up\nQ186495R21 actualfirstvalid900record0189/1705Steps at18:57:44, second0070/947Steps; actualaccepted13, annotationunique187276Rexec40. Detailedall-modelsourcefresh/inherited/discard andthreelevelrequired/covered/completefreshtrajectorycounts ${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_212657/STATUS.json. AllnewpaidreserveRIDs selectedaccepted/nooldsuccessrepaid inclinflight;unknownreportedexactly,DSoldjournalsSHAunchanged,inheritedcostbaselinesnotdoublecounted;DS/Gunknownusage1each(recorded10CNYuppereach)explicit,notknownactualcharge. Freshalllegalqueues/nodes/ACL/Qlist/reservations/releases/VRAMCPU/RAMcanonicalIOaudit retainedinLEGAL_RESOURCE_CANDIDATES. HealthyDS187177R31native48L40/Q186495R21native96/G186496R14native96; paidconsumersDS187662R25/G187663R29/Q187276R40. Freeassignable22GPU96RAM~17GBinsufficientQ40/G96;33/39native48slots do notimprovehealthyDS and cannotfitQ55.56/G62.55GBweights. No migration/newGPUproducer/extraallocation/physicalprobeoutsideallocation. OriginalinallocationUUIDidlelease/weightSHA/nativegates remainvalid; preserveallhealthyR/existingcostdedup and2exactunknownexceptions only. DSsafe187177Rafterold186472F0handoff remainshealthy, no modelreplay/sciencechange/duplicateproducer/paidowner/newmonitor/agent/service. Next existingheartbeat2026-10-22T21:46:00+00:00.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_212657/STATUS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261022_212657/RESOURCE_OVERRIDE.json"
+      ]
+    },
+    {
+      "turn": 18,
+      "timestamp": "2026-10-22T22:23:32.989506+00:00",
+      "provenance": "ai-executed",
+      "action": "Prepared14exclusivepoolproducers/model plus finiteboot187797/8/9 afteroldhealthy3GPU; actualnewpoolGPU0,oldnativepreserved. Addedatomicclaims/merge/nativeattemptdeadline/CPU-RAMreleasegates and offlinePASS42poolfreezes. AdaptiveV4offlinePASS and safeentryguard187815/7 waitsDS/Gmainnaturaldrain; no paidinterrupt. Qwennewexactunknown exception directhumanapproved,original10CNYretained,one remainingretrySUCCESS,0oldsuccessRIDrepaid. Actual187942R27/16workers; afterlatestrelayedhumanmaxconcurrency/todaygoal, armedsupportedSTOP todrainpaidinflight and queuedunique187959afteranyold. Revisedboundedmeasuredlevels8\u2013512/live10GiBmemoryadmission andCPU/RAM/error/429/throughputbackoff,offline512PASS; DS/Gpending187840/2inheritrevision. Forecastconditionalandtodayrequiredthroughputrecordedwithoutpromisingdeadline;noextraAPI/generationforforecast,no newagent/monitor/service. Same-turn actualhandoff:old187942F1intentionalpolicyrevision/checkpoint0pending/no unknownstop;187959R27/target32 andnewsuccessresponses. Actualfirst16window1143.26groupsh/64success201.53s/0errors0limits. Higher512notactualcalibrated.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/qwen_unknown_recovery_20261022_2210/ACTUAL_RECOVERY_PAID_DEDUP_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/max_annotation_20261022_2223/DIRECT_HUMAN_MAX_CONCURRENCY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/max_annotation_20261022_2223/TODAY_REQUIRED_THROUGHPUT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/PARALLEL_POOL_OFFLINE_GATE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/reports/CURRENT_EXECUTION_AND_FORECAST.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/max_annotation_20261022_2223/ACTUAL_MAX_CONCURRENCY_TRANSITION.json"
+      ]
+    },
+    {
+      "turn": 19,
+      "timestamp": "2026-10-22T22:52:46.328183+00:00",
+      "provenance": "ai-executed",
+      "action": "DirecthumanrelayedindependentidleGPU/shortqueue/all2700coverageandAutoDLrentQG96/DSsmall. ImplementedfinitePBSownnodeCPUfutureseal:SIGSTOPonlylegacycontroller,currentnativechild1questioncontinues,noimmutablemanifestchange. OtherpoolsreleasedbeforeoldF,canonicalmergeotherwiseoldfinallywouldoverwriteguardeddeferred. Q/GoldcurrentchildsafedrainedoriginalfinallyF143,controlsF0;DSoldfuturestillsealed/currentchildcontinues. RealnewDS188094R30/188095R36/188096R37,first2newacceptedfulltokenproofnotimportedrows. EightactualCetusGPUentriescover800/model;96queuesjointplacement4Q/Hnotwaitsameold2cards;RAMblockedfreeexec22excluded. Queuegenericlimitsrequirednever-submittedDSunitsmergedintoonefailed-before-claimunit;0IDgaps. Initialfieldgatepresealfailedsafely; computePythonpidfdmissingaftersealkeptfutureblocked,CPUrecoveryuseskernelpidfd+finitecompatwait;3DSclaimpreflightfailures0modelattemptsuniquelyreplaced. AutoDLOlympiad100/modelglobalownerpending,movedoutonlyverifiedQ/HorFbefore-forwardCetusplans,IDdisjointhashes800+100=900each/nooverlap/unassigned0. 9MBnativeinputarchiveexcludesweights/raw/key; control-onlyremoteSSHbootstrapusesexistingCetuspublictransportkeyandhostkeypin/serverdirectprocedure,modelassetrevision/SIF/pointerSHAprepared. Localcoordinatorlaterverifiedusercreated2AutoDLrentalsDS/G,SSHpending/0nativegenerationready;Q41awaitsuserfinalcreate,noautoapprovalbypass. Qwenannactual512latest2470success/120s74.1kgroupsh/0errors0limits;DS/G8untilnaturalpaidcallboundary. Correctstatusdoesnotclaimall2700executionlaunchedorfinalcompletion/todayguarantee.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/independent_pool_submission_20261022_2230/ALL_GENERATION_SUBMISSION_COVERAGE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/independent_pool_submission_20261022_2230/ACTUAL_NEW_DS_FIRST_ACCEPTED.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/independent_pool_submission_20261022_2230/CPU_CONTROLS_EXACT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/independent_pool_submission_20261022_2230/DS_RETRY_UNIQUE_SUBMISSIONS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/cross_platform_autodl_handoff/CROSS_PLATFORM_AUTODL_HANDOFF.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/cross_platform_autodl_handoff/AUTODL_INSTANCE_BINDINGS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/cross_platform_autodl_handoff/SERVER_TO_SERVER_BOOTSTRAP.md"
+      ]
+    },
+    {
+      "turn": 20,
+      "timestamp": "2026-10-23T00:21:34.633905+00:00",
+      "provenance": "ai-executed",
+      "action": "Direct human expanded cleanup to stale project experiment dependencies. Verified active queued held script references, removed six explicitly inventoried unused dependency directories; retained shared Qwen runtime/DS-Gemma pydeps, nativeSIF and formal outputs. Earlier user-named faithful_lrm_pydeps removal recorded separately. Original32GiBsafety and oldclaims preserved. New DS source188512 actually R exec31; other recovered entries Q. Replaced stale generation joins by finite correct dependency DAG; no formal annotation restart or new monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/control/project_stale_cleanup_20261023/reports/CLEANUP_SUMMARY.json",
+        "${PROJECT_ROOT}/experiments/control/project_stale_cleanup_20261023/audits/CLEANUP_ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/control/project_stale_cleanup_20261023/audits/OWNED_LIVE_QUEUED_HELD_SCRIPT_REFERENCES.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/repair_generation_20261023/DS_AFTER_PROJECT_DEPENDENCY_CLEANUP.json"
+      ]
+    },
+    {
+      "turn": 21,
+      "timestamp": "2026-10-23T00:46:28.689940+00:00",
+      "provenance": "ai-executed",
+      "action": "User authorized all old three-model formal trajectories nonthinking annotation and label agreement; explicitly approved exact143inheritedblocked requests eachoneattempt. Full282017originalpromptSHA/historicalcoveragegatePASS across4866trajectories.91322exactvalidsuccesses reused without paid replay;190695newcalls. Compressed durable gzip journals, per-thread no-retry HTTPsessions, gracefuladmissionhold andoriginal32GiB/oldreservationdiskgate. Full independent model-domain-level confusion/F1/kappa and zero incremental reusefee preflightPASS; paidcanaryPASS,188555actualRexec27/2492workers,actual2491inflight. Newunknownstop preserved; formaloldlabels andcurrent900generation unchanged. No periodicfollow/newagent/monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/PREPARATION_PASS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/REUSE_PASS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/APPROVED_INHERITED_RECOVERY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/FULL_ACCOUNTING_PREFLIGHT_PASS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/PAID_CANARY.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/SUBMISSION_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 22,
+      "timestamp": "2026-10-23T01:48:15.678810+00:00",
+      "provenance": "ai-executed",
+      "action": "Bounded Cetus-only follow from existing coordinator. Verified changed current exclusive claimsDS800/Q300/G300 and0foreign overlap; fixed stale selected-pool metadata without reclaimingIDs. Copied missing Q/G native prelaunch receipts only after byte-identical plan/model/image validation. Replaced failed DS with actualR188642exec33physicalidle+weightSHA/nativeclient gatePASS; replaced failed Q and migrated only queued Q/G using fresh legalCPU/RAM/GPU-releaseaudit,updatedsamefinitejoins. All formalpaidconsumersnowdrained/held,pending0,successreplay0; inheritedunapprovedG/Qunknownsretained. Fulloldnonthinkingactual188555F0unknownHTTP5021,notSSL,101286validof282017;newpolicyquestionpendinghumanapproval,noautomaticreplay. No rawdata/key/externalprogress transfer ornewmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261023_013313/COMPACT_CONTROL_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261023_013313/QUEUED_QG_PRELAUNCH_AND_CLAIM_METADATA_REPAIR.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261023_013313/SCHEDULER_REPAIR_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_follow_20261023_013313/ACTUAL_POST_REPAIR_JOBS.json"
+      ]
+    },
+    {
+      "turn": 23,
+      "timestamp": "2026-10-23T02:49:01.563213+00:00",
+      "provenance": "ai-executed",
+      "action": "Direct human approved bounded full-old-dataset unknown gateway/connection recovery. Archived predecessor, preserved unknown ledger, enforced cap2 and exact143 cap1 with isolate-on-exhaustion, no successful RID replay; fakeHTTP gatesPASS and resumed188778R41 actual advancing. Independent Q/G writable Apptainer pool-cache repair applied to fourcontrollers, archived freezes, native args unchanged; 188788/188789 replace failedentries, existing queuedentries adjusted and samefinitejoinsupdated using full legalresourceaudit. All4GPUentries stillQ, native cache gate pendingallocation; healthyDS preserved. No new monitors/agents or key transfer.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/RECOVERY_RESUME_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/cache_repair_20261023/COMPACT_CONTROL_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 24,
+      "timestamp": "2026-10-23T03:09:51.463507+00:00",
+      "provenance": "ai-executed",
+      "action": "Human-relayed bounded Cetus follow: fresh all legal queues/nodes/ACL/Qlist/reservations/releases audited. Verified both Gemma native-container writable cache+Dynamo import PASS with separate own idle GPUs; weights/server/first accepted pending. Moved only two unique queued Qwen entries11->05 for shortest evidence-supported deadline; healthyDS andforeignclaims preserved. ExistingSSH readonly exactowncache diagnosis denied(publickey), no authentication changes or bypass. User queried top2: readonly currentDS96 identity/finalproof hashesPASS completiontrue, reported top2 TEST AUROC .891656698761988 ACC .8838416612589228 F1 .4597167401903877 on20033Steps, VALF1max threshold .20205393433570862 L22e2. No new fit/replay or fullcompletedexperiment monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/cache_follow_20261023_030223/COMPACT_CONTROL_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/deepseek_step_global_softmax_topk_no_l2_seed42_20261022/reports/TEST_METRICS_top2.json"
+      ]
+    },
+    {
+      "turn": 25,
+      "timestamp": "2026-10-23T03:28:24.227193+00:00",
+      "provenance": "ai-executed",
+      "action": "User requested current generation and annotation progress. Fresh full legal Cetus resourceaudit/currentidentity PASS. Full-old-dataset nonthinking188778F0 ended282005/282017 valid,12exhaustedStepPrefix missing,4866Answers valid, no pendinginflight orsuccessfulreplay; partialindependentallmetrics/accountingPASS. DS363terminal317accepted continues3healthyGPUjobs,Q20/20stillqueued. Diagnosed second Gemma startupfailure precisely as >107byte ZMQipc path after native writablecache gatepassed; operationalshortprivatebind+nativeZMQprobeadded preserving science;4QGcontrollers archived/refrozen, onlyfailedGemma twoentries replaced188837/188838 andalreadyterminaljoinreplaced188839. AllnewGPUQ, no formalnewacceptedclaim. No extra annotation attemptcap expansion, formal900stillheld;noagents/monitors/foreignIDreclaim.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/ipc_repair_20261023_032600/COMPACT_CONTROL_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/audits/INDEPENDENT_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "turn": 26,
+      "timestamp": "2026-10-23T03:42:41.799098+00:00",
+      "provenance": "ai-executed",
+      "action": "Bounded Cetus follow freshalllegalACL/queues/nodes/reservations/releases found0idle96GB; movedonlyqueuedGemma18883721->23 for117min vs182min deadline, retainedQ05/G18 andhealthy3DS, allnewQGactualgatesstillpending. Directuser requested discrepancy locations:1CPU4GB offline188855/188857 noAPI/modelcalls; correctednestedhistoricalusagefield withv1archived, allpairedconfusions matchacceptedreport andsourceSHAunchanged. Prefix69,199diff/277,139,60,669bothcurrentStep0 (87.67%),48,241old1new0(69.71%). Protocolread explicitlyallowsPrefixerrorsresolved/retracted andnoadjacenttransitionconstraint; rawtransitioncountsnoterrors. Documented selectedcases for activeerrorresolution vs inheritedrepeat/newStepboundary andunadjudicatedAnswerambiguity. Lengthbins descriptive/nonmonotonic, no causalclaim/groundtruthassumption. No extra12retries/new900annotation/foreignclaimchange/monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/disagreement_20261023_033528/reports/ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/disagreement_20261023_033528/reports/DISAGREEMENT_REVIEW.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/disagreement_20261023_033528/reports/PROTOCOL_INTERPRETATION.json"
+      ]
+    },
+    {
+      "turn": 27,
+      "timestamp": "2026-10-23T03:57:31.639716+00:00",
+      "provenance": "ai-executed",
+      "action": "Directuser corrected length to trajectory excludingquestion. IsolatedCPU188892 computesfullreasoningtokenlength fromoriginalparser for4866/4866, excludesquestion/prompts/finalAnswer/delimiters;allStepsoftrajectoryusefulltrajectorybin. Global277139StepPrefix/4866Answerpairedconfusionclosure andsourceSHAunchangedPASS,0API/modelcalls. >2k432trajectories8.88%contribute51072Prefixdisagreements73.80%;8k16khighestlabeldiffrate34.66%,>16k41trajectories15937Prefixdiff. Explicitlabel-weighteddenominators andmodel/domainconfounding noted;no causalclaim or oldlabelsashumantruth.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/trajectory_length_20261023_035538/reports/ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/trajectory_length_20261023_035538/reports/TRAJECTORY_LENGTH_REVIEW.md"
+      ]
+    },
+    {
+      "turn": 28,
+      "timestamp": "2026-10-23T04:12:40.707105+00:00",
+      "provenance": "ai-executed",
+      "action": "UserrequestedwherepairedlabeldiscrepanciesoccurbyStepinterval,affectedtrajectorytotalSteps,anddomain. IsolatedCPU188907 completed originalandretainedStepdualordinalanalysis; globalconfusions andsourceSHAclosurePASS,0API/modelcalls. RetainedPrefixdiffmaximumrate101-20034.05%,maxcount201-50015200;affected3039trajectoriesmedian31IQR15-59,Math237/Science63.5/Logic39/MultiHop21/Truth12.5totalSteps. Savedfulljointdomain/positiondistributions anddescriptivethresholdcoverage;20-stepcutstill74.54%requests thinking,notactualcostoraccuracygain. No routerexecution/newlabels/groundtruthclaim.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/step_ranges_20261023_041000/reports/ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/step_ranges_20261023_041000/reports/STEP_RANGE_REVIEW.md"
+      ]
+    },
+    {
+      "turn": 29,
+      "timestamp": "2026-10-23T04:18:56.072592+00:00",
+      "provenance": "ai-executed",
+      "action": "Directuser requested eachdomain stratifiedbyfulltrajectorytotalSteps,within-domaintrajectoryproportionandlabeldisagreement. ReadonlyCPU188916 complete35domainbins across4866trajectories; threeleveldomainconfusionand sourceSHAclosurePASS,0API/modelcalls. SavedMarkdownCSVJSON includingpairdenominators,modelmix,equaltrajectoryrates,andn<10flags. Logic<=50steps84.19%withStepdiff1.08-2.87%;shortMultiHop1-10Stepdiff12.64%;Science>50034trajectoriesPrefixdiff40.63%;Truth<=20steps85.99%butAnswerdiff11.11/12.63. No newrouter/annotationorcausalgroundtruthassumption.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_total_steps_20261023_041704/reports/ACCEPTANCE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_total_steps_20261023_041704/reports/DOMAIN_TOTAL_STEPS.md"
+      ]
+    },
+    {
+      "turn": 30,
+      "timestamp": "2026-10-23T04:27:37.061027+00:00",
+      "provenance": "ai-executed",
+      "action": "Directhuman proposedwholetrajectory50-stepmodecut andthenaskedadaptivewholetrajectoryrouting. Readonly1CPU4GB188930 computesexactsuccesspairedtoken-costmix, noAPI/modelcalls/formalhybridlabelwrites; costsallthinking9610.04/50cut8816.25/allnonthinking247.89CNYfixedrates,cut50saves8.26%,long19.28%trajectoriesaccount73.87%calls91.18%thinkingfee. ReadprimaryRACER2605.10805,RouteLLM2406.18665,DART2606.23181; proposeowncost-awarerouterusing4866trajectoryunitswithper-leveldisagreementfractions/costs,questiongroupvalidation,andmanualadjudicationfortruequalitybenefit; notimplemented/approvedfit. Avoidany-disagreementtargetwhichbiaseslongtrajectories.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/cut50_20261023_042425/reports/CUT50_EVALUATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/cut50_20261023_042425/reports/CUT50_EVALUATION.md"
+      ]
+    },
+    {
+      "turn": 31,
+      "timestamp": "2026-10-23T04:40:19.718221+00:00",
+      "provenance": "user-revised",
+      "action": "Humanrequested intervaldisagreement denominatorbeentiredomain. Implementedexplicitview: intervaldifferingpairs/domainallmatchedcorrespondinglevelpairs, keepingtrajectorysharesandoldconditionalrates. Allintervalscloseexactlytoeachaccepted domainoverallStep/Prefix/Answer rate; providedMDCSVJSON, noAPI/modelinference. Preserve distinctioncontribution-to-domainrateversuswithin-intervalrate.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_total_steps_20261023_041704/reports/DOMAIN_DENOMINATOR_VIEW.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_total_steps_20261023_041704/reports/DOMAIN_DENOMINATOR_VIEW.md"
+      ]
+    },
+    {
+      "turn": 32,
+      "timestamp": "2026-10-23T04:47:55.171898+00:00",
+      "provenance": "ai-executed",
+      "action": "Directuser proposedinterpretingdomain-contributionmetricsas500-stepmodecut. Correcteddenominatorinterpretationwithconditionalrisk; offline1CPU4GB188953 hypotheticalsuccessfulpairedfee5284.96CNYvs9610.04(-45.01%),4770<=500trajectories98.03%but65.95%requests;96long34.05%requests. ShortgroupStep7.85/Prefix22.26/Answer7.17%disagreementand58.30%ofallPrefixdiffremains. Sourcefeesreconcileexistingreport;noactualrouting/formallabelchange/API/modelinference. Candidatebaselineonly,nogroundtruthqualityclaim.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/cut500_20261023_044601/reports/CUT500_EVALUATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/cut500_20261023_044601/reports/CUT500_EVALUATION.md"
+      ]
+    },
+    {
+      "turn": 33,
+      "timestamp": "2026-10-23T04:51:44.376809+00:00",
+      "provenance": "user-revised",
+      "action": "Humanasked200-stepcutthenexplicitlyclarifiedwholetrajectory mode,notstep-position switch. Verifiedpreexistinganalysiscode usesfulltrajectorytotal uniformroute forallStepPrefixAnswer. Readonly188954successfulpairedfee7264.49CNYvs9610.04(-24.41%),4609short94.72%trajectories48.19%calls and257long5.28%51.81%calls. Savedclear150-stepallnonthinking/300-stepallthinking examples and50/200/500wholetrajectorycomparison. NoactualAPI/router/formallabelchange orclaimoftrueaccuracy. Correctedprior500reportlinkusingverifiedrealroot.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/cut200_20261023_045010/reports/CUT200_EVALUATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/cut200_20261023_045010/reports/CUT200_EVALUATION.md"
+      ]
+    },
+    {
+      "turn": 34,
+      "timestamp": "2026-10-23T05:18:57.195669+00:00",
+      "provenance": "user-revised",
+      "action": "User corrected denominator to all corresponding-level labels within domain; requested reselect thresholds and maximize nonthinking coverage while minimizing Step/Prefix disagreement. Offline CPU188997 enumerated all observed whole-trajectory Step boundaries, preserved Answer always disabled, provided domain-wide cap1/3/5/10/15/20 percent tradeoff frontier. Total cheap coverage30.76% at both caps5%,52.15% at10%; same-batch success cost8338.67/6884.74 CNY. Bounds are AI-proposed alternatives, not user-approved tolerance or true accuracy. No paid annotation resumed or route activated. Identity and frontier checks PASS;12missing source pairs excluded.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_denominator_reselect_20261023_051737/reports/DOMAIN_CUT_FRONTIERS.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_denominator_reselect_20261023_051737/reports/RESELECTED_DOMAIN_THRESHOLDS.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/domain_denominator_reselect_20261023_051737/reports/VALIDATION.json"
+      ]
+    },
+    {
+      "turn": 35,
+      "timestamp": "2026-10-23T05:26:07.032862+00:00",
+      "provenance": "user",
+      "action": "Message-triggered Cetus generation status only. IdentityPASS canonical terminal/accepted DS379/331 Q21/21 G14/13;4GPU R+2Q. New Q/G native short IPC/cache gate and actual new accepted records verified; not merely Rstartup. Fresh allqueues/nodes/reservations/ACL resource audit:exec36one48GBidle insufficient Q/G native weights; no eligible idle96GB, no scheduler mutation. Formal annotation remains held. External results not requested or included.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/generation_status_20261023_052506/STATUS.json"
+      ]
+    },
+    {
+      "turn": 36,
+      "timestamp": "2026-10-23T05:28:30.429874+00:00",
+      "provenance": "user",
+      "action": "Requested thinking-token concentration by domain. ReadonlyCPU189026 historical final-success usage for282017 requests: completion tokens1,177,702,900, Science54.43%,Math25.20%,Multi-hop13.94%,Logic3.30%,Truthfulness3.13%. Explicitreasoning_token usage absentall requests, so report completion asproxy inclfinalJSON, notexactreasoning. StepPrefix99.5653%,Answer0.4347%;QwenScience39.46%ofglobal. Separateknownallattempt totals and63usage-missing history reported, nofakecost/token. NoAPI/newannotation calls.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/thinking_tokens_by_domain_20261023_052733/reports/THINKING_OUTPUT_BY_DOMAIN.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/analysis/thinking_tokens_by_domain_20261023_052733/reports/THINKING_OUTPUT_BY_DOMAIN.md"
+      ]
+    },
+    {
+      "turn": 37,
+      "timestamp": "2026-10-23T05:46:09.403503+00:00",
+      "provenance": "user",
+      "action": "Directhuman submitsafeunfinishedgeneration: sourcebound1187freshIDs claims atomicallyreturned, narrowallowerfilter/newpoolsourcegate PASS, whole900union exact nooverlap; newDS189060R32/90IDs physicalidleUUIDgatePASSstaging, Gemma189061Q13/552, Qwen189062H13/545 explicitly blockedmissing sourceadaptivecaphistory;109terminal4nonterminalexcluded. Existinghealthyjobs preserved; currentfinitejoin dependencies extended all3; noannotationresume. Humancostqueriesannotationonlythinking/nothinking scaled balanced1000/model/domain:73948.98CNYthinkingStepPrefix+Answerdisabled vs2015.74allnonthinkingwithactualcache;allnonthinkingnocache36958.82. Domainfullpaired disagreement report SciencePrefix32%,MultiStep11.79%,TruthAnswer13.45%;nottrutherror. Source Qcapcheckpointtransfer needed durablecontrol, noautoreset/no sourceproducerrestart.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/return_claim_acceptance_20261023_054115/ALL_RETURN_SUBMISSION_COVERAGE.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/judge_no_thinking_full_three_models_20261023/reports/FORECAST_1000_PER_DOMAIN_AND_DOMAIN_DISAGREEMENT.json"
+      ]
+    },
+    {
+      "turn": 38,
+      "timestamp": "2026-10-23T07:22:08.360661+00:00",
+      "provenance": "ai-executed",
+      "action": "Explicit human obsolete-experiment/model/Git cleanup:29oldroots+4models+96tmp packs deleted after exacttargetclassification, tenunstartedoldjobsverifiedF. BothCPUcleanupPASS,652.15GiBactualfreegain; refsunchanged,4keptmodels, oldreserve8GiBrepaid. Generationfiniteadmissionresumed5R10Q+2DSdeferred; Qwenprelaunchfailure0attempts retry189243Q; strictnativegate preserved. Allnewlevelsnothinkingadaptive512, finitecatchupconsumers; current900identityPASS, scientificcompletionfalse. Initialbulkauto-reviewrejection resolved via scope narrowing and verified cancellations, then individually classified additional23 approved.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/control/user_authorized_old_experiments_cleanup_20261023/reports/FINAL_CLEANUP_AND_CONTINUATION.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/max_parallel_generation_20261023_062630/ALL_GENERATION_ADMISSION.json"
+      ]
+    },
+    {
+      "turn": 39,
+      "timestamp": "2026-10-23T07:39:26.357796+00:00",
+      "provenance": "ai-executed",
+      "action": "Bounded existingcoordinatorfollow: read-onlyCPU189264 current900union/labelcoverage/PBSowner/ledgerauditPASS, DS341of342completecardinalitywith1maxretryquarantine/Q65of66/G37of38. ReleaseexistingGemmafiniteconsumerfornew1trajectory; no paidinflightcut. Freshallmodelresourceaudits, twoDSfreshpoolsubmissionrequests stillPBSlimitblocked, reusefinite189200; healthyGPUandmanifests preserved, no newmonitor or deletion. IdentityPASS, fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_post_cleanup_20261023_0738/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 40,
+      "timestamp": "2026-10-23T08:21:38.539908+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedcoordinatorfollow resolved2PBS-limitdeferredDS25pools:exactunstartedbio/chem/physics3x25coalescedone75root; old189228neverstartedcancelledF/new189335Q sameGPUresources; oldhistoricalclaimsallFgatefixedafterinitialsafestop; byteidenticalnativecode/qidseed, exact900unionPASS/overlap0; deferred0. NewCPU189336 rollingcoverage andledger/RIDaudit; actual7GPU R8Q, healthyRpreserved, Q/DSpaidconsumersR/Gexistingconsumerreleasedfornew5trajectories. Formalcompletionfalse, foreign109terminal/4checkpointblockedretained, no extra deletion/monitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/ds_unstarted_three_pools_coalesce_20261023_0805/FINAL_BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 41,
+      "timestamp": "2026-10-23T08:36:57.514329+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundedexistingcoordinatorfollow CPU189354 current900coverage/ledger/PBSmetadata audit: DS505term454accepted449labels-cardinalitycomplete,Q163/163/154,G75/60/58;8GPU R7Q,deferred0. BothhistoricalCPU189300/315F0confirmed. HealthyDS/Qpaidownerspreserved/Gexistingfiniteconsumerwakefor2newtrajectories; boundedretry/quarantinedDSexhausted retained,noreplay. Freshlegalresourcesand8ownGPUallocationidle/UUID/nativeVRAMproofs;queuedphysicalgatespending,noeligibleearliercapacity, noGPUchange/newmonitor. Latestpartialwindowratesnotsteady;512notactiveAPIclaim; fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_paid_coverage_20261023_0835/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 42,
+      "timestamp": "2026-10-23T09:06:55.197097+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedcoordinatorfollowCPU189383 current900scope/label/PBSledger metadata:DS608term556accepted555labels-completecardinality,Q204/204/199,G79/64/64. DS189187/188bothnormalF0,6GPUR7Q/deferred0. Freshresourceaudit foundnocompatibleassignableGPU;pre-moveassertsafelypreventedqueuedmigrationafterexec36releaseboundworsened3552->19779s;noqalteroccurred,healthyRpreserved. D/Gfiniteconsumerwakechecked,QpaidRunchanged;unknown/exhaustedmaxretryandRIDdeduppreserved. All6Rownphysical/VRAMproofsretained,7Qgatepending;no outsideprobe/newmonitor,fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_capacity_and_labels_20261023_0905/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 43,
+      "timestamp": "2026-10-23T09:36:18.546995+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedCPU189430current900coverage/ledgerauditDS609term556accepted555cardinalitycomplete,Q222/222/219,G82/66/66. Q189231full179poolF0/remaining0verified;5GPUR7Q,deferred0. Qpaid189425actualR,G189416finitewakecheckedthenF0/fullavailablelabels,DS189428Honlyexhaustedgap/sourcewait;historicalquarantinesDS1/Q38/G0stablefrom08:18,nounapprovedretry. Resourceauditexec19freeGPUbutCPU0/RAM17GiBinsufficient,nolegalearlierslot,5ownRphysical/VRAMproofsread,queuedgatespending; nohealthychange/newmonitor. IdentityPASS,fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_annotation_and_gpu_20261023_0935/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 44,
+      "timestamp": "2026-10-23T10:09:00.157032+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedCPU189468coverageauditDS611term558accepted557cardinalitycomplete,Q231/231/228,G82/66/66. ReviewedGemma6h/5h02nativeboundary<1hnewquestioncutoff; prearrangedunique189469afterokold188837samepool/cache23/nativecode, preservedcurrentquestion, updatedfinitejoin, nooverlap.5GPUR7Q+1genuineafterokH/deferred0. DS/Qexistingpaidconsumerswakechecked,nooldsuccessreplay/unknownmaxretryandexhaustedisolation; allnewlabelsdisabled; actualworkerconcurrencyunasserted. Freshlegalresourcesandownphysicalgatesretained,newphysicalgatepending; no newmonitor, fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_gemma_boundary_and_labels_20261023_1005/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 45,
+      "timestamp": "2026-10-23T10:37:22.749957+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedCPU189505current900coverage/ledger auditDS617term563accepted562cardinalitycomplete,Q237/237/235,G84/66/66. DS189179full100HLEF0;Gemma188837nativeboundaryF0/68remaining,unique189469R/lossless32rows/native-serverreadinessPASS/firstnewrecordpending. FreshlegalGPU+CPU+RAMaudits supported3queuedmovesDS184->31(nowR),G233->14,Q243->05; allminimumresources/scienceunchanged/large4Rquota preserved. Q193newRstaging0recordsnotaccepted. HealthyRpreserved,DSfiniteconsumerwake/Qlivepaidowner/Gcaughtup; exhausted/unknown/RIDdedupretained,no newmonitor,fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_ds_finish_and_coverage_20261023_1035/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 46,
+      "timestamp": "2026-10-23T11:09:58.849253+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedCPU189561current900coverage/ledgerauditDS622term568accepted567cardinalitycomplete,Q243/243/239,G101/82/82;7GPUR4Q/deferred0. HealthyRpreserved;queuedG23314->23verifiedwarmGemmacache/Q19508->22afterimmediateCPU-RAM-GPUaudit;large4Rquotaunchanged. Q193nativeweight/servergatePASSandfrozencap16k->32k10:51progress,0terminalnotaccepted. DS/Gavailablelabels caughtupapartfrom1DSquarantine, Qactualpaid189553Rcatchup;Q38G0stablequarantines/ledgerunsettled0snapshot/RIDdedup, no redundantpaidwake/newmonitor;completionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_source_catchup_20261023_1105/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 46,
+      "timestamp": "2026-10-23T11:10:25.737322+00:00",
+      "provenance": "ai-executed",
+      "action": "Same-turn auditbinding correction: copiedschedulerutilityretainedoldrelativeauditroot; actualtwoqueuedmoves werecorrect. Original1035queuedreceipt losslesslyrestoredfromembeddedBOUNDED_RECEIPT; new1105receiptandcurrentownershipreferencescorrected; scheduler/science notrerun. Original1035G/Qimmediatepremoveauditfilesoverwritten; originalCPUresources/fullbefore-afterstates/releasebounds retained; limitationexplicit, no fabricatedrestore.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_source_catchup_20261023_1105/AUDIT_PATH_REPAIR.json"
+      ]
+    },
+    {
+      "turn": 47,
+      "timestamp": "2026-10-23T11:42:18.068348+00:00",
+      "provenance": "ai-executed",
+      "action": "BoundedCPU189615current900coverage/ledgerauditDS624term569accepted568cardinalitycomplete,Q246/246/243,G120/101/101. Twohealthy6hboundarysuccessorsDS189621afterok185/G189622afterok232preparedsamecache/nativecode/nooverlap; currentquestionspreserved. Q194also~4hused; QfutureGPUqsubPBSlimitrejected, finiteCPU189641afterokoneattempt/joindepregistered,no bypass/poll.7GPUR4Q+2afterokH,initialdeferred0. ActualG/QpaidRpreserved/DSfinitehelperchecked,DS1Q38G0quarantinesstable/ledgerunsettled0snapshot/RIDdedup. Freshlegalresources/currentownphysicalproofs,futuregatespending; nonewmonitor,fullcompletionfalse.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_two_boundaries_20261023_1135/BOUNDED_RECEIPT.json"
+      ]
+    },
+    {
+      "turn": 48,
+      "timestamp": "2026-10-23T12:32:01.892783+00:00",
+      "provenance": "ai-executed",
+      "action": "Boundeddeadlinefollow:CPU189709streamcurrent900committedattempttimes/per-datasetpending+labels;CPU189730actualwallpace avoidscompleted-sampleoptimism. DS625term569accepted568complete,Q247/247/245,G139/120/120;pending265/598/713. PacecriticalconditionalDS29.6h/G24.7h/Gtailscenario70h;Qall598insufficientown-datasetsamples,noreliablepointETA. Today23:59fullgoalnotpromised/formalalso4checkpointblocks/source109/39labelquarantines. DS185F0naturalboundary/unique621Qmoved35->32earlierlegaljointrelease;Gemma622/Qfinite641controlsretained, nohealthyRchange/inflightkill/replay. Originalscopeinitialdeferred0,availablelabels caughtup, financialsnapshots/quotas/physicalgatespreserved; no newmonitor.",
+      "evidence": [
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_deadline_eta_20261023_1205/BOUNDED_RECEIPT.json",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_deadline_eta_20261023_1205/ETA_REPORT.md",
+        "${PROJECT_ROOT}/experiments/streaming_hd/runs/candidate13_uniform100_three_models_autodl_20261022/scopes/grouped900_20261022/audits/bounded_deadline_eta_20261023_1205/ETA_SCENARIOS.json"
+      ]
+    }
+  ],
+  "open_threads": [
+    "Complete900questions3models generation/causalannotation withuniqueowners; sourcefreshproof andnewlabelhandoff pending"
+  ],
+  "ai_suggestions_pending": [
+    "Trajectory-level cost-aware nonthinking/thinking router; train only after explicit scope, group by question, distinguish disagreement proxy from human-verified quality gain; no fit or API started."
+  ],
+  "logic_revisions": []
+}

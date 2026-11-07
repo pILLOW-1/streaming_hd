@@ -1,0 +1,314 @@
+[
+  {
+    "path": "ara/trace/sessions/2026-09-08_001.yaml",
+    "id": "2026-09-08_001",
+    "date": "2026-09-08",
+    "turns": 1,
+    "events": 5,
+    "summary": "Completed contextual validation, froze mean_context by the binding validation rule, ran all 12 frozen tests, and independently verified a valid negative 9/9 result."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-09_001.yaml",
+    "id": "2026-09-09_001",
+    "date": "2026-09-09",
+    "turns": 4,
+    "events": 28,
+    "summary": "Qwen/Llama prompt and multiseed results were preserved then remaining work cancelled; both final-L2 single-variable controls completed independent validation."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-10_001.yaml",
+    "id": "2026-09-10_001",
+    "date": "2026-09-10",
+    "turns": 1,
+    "events": 3,
+    "summary": "The same-width residual mapper capacity control completed three seed42 fits, frozen TEST and independent validation; the predeclared majority AUROC rule was not met."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-11_001.yaml",
+    "id": "2026-09-11_001",
+    "date": "2026-09-11",
+    "turns": 3,
+    "events": 7,
+    "summary": "Position diagnostics and positive-class weighting completed; the exact completed residual-mapper run was re-verified and a duplicate rerun prevented."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-13_001.yaml",
+    "id": "2026-09-13_001",
+    "date": "2026-09-13",
+    "turns": 2,
+    "events": 4,
+    "summary": "Frozen VAL score separation validated; separate geometry-gated margin experiment authorized and Phase A GPU job queued."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-14_001.yaml",
+    "id": "2026-09-14_001",
+    "date": "2026-09-14",
+    "turns": 15,
+    "events": 22,
+    "summary": "Hard-tail and hinge TEST validated; matched frozen VAL prior-Prefix error and conditional-AUROC diagnostics independently completed."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-15_001.yaml",
+    "id": "2026-09-15_001",
+    "date": "2026-09-15",
+    "turns": 3,
+    "events": 8,
+    "summary": "Corrected key-position Full three-model VAL independently passed and checkpoints froze; one-shot TEST queued behind the successful VAL gate."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-16_001.yaml",
+    "id": "2026-09-16_001",
+    "date": "2026-09-16",
+    "turns": 3,
+    "events": 7,
+    "summary": "Four-group BCE VAL and conditional rank-hinge TEST completed separately; new exact B/C state-relative experiment is implemented and dependency-gated but all scientific jobs remain pending."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-17_001.yaml",
+    "id": "2026-09-17_001",
+    "date": "2026-09-17",
+    "turns": 3,
+    "events": 5,
+    "summary": "C-only frozen TEST passed; separate two-arm attention experiment stopped at CPU capacity/source gate before GPU extraction."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-18_001.yaml",
+    "id": "2026-09-18_001",
+    "date": "2026-09-18",
+    "turns": 1,
+    "events": 1,
+    "summary": "User cancelled the queued compact attention-routing experiment before GPU replay; exact jobs and monitor stopped with prior evidence preserved."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-20_001.yaml",
+    "id": "2026-09-20_001",
+    "date": "2026-09-20",
+    "turns": 5,
+    "events": 8,
+    "summary": "HLE and repaired 16-component CPU dry-run passed; reduced CPU manifest retry 92059 is queued and monitored before independent PBS validation."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-21_001.yaml",
+    "id": "2026-09-21_001",
+    "date": "2026-09-21",
+    "turns": 10,
+    "events": 35,
+    "summary": "Fourteen GPU pilot jobs remain live with 4,384 durable trajectories; BigCodeBench is formally blocked at 99/100 by its official process guard, and unattended alerts now use the working desktop-task queue transport."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-22_001.yaml",
+    "id": "2026-09-22_001",
+    "date": "2026-09-22",
+    "turns": 7,
+    "events": 13,
+    "summary": "The transient sample-size stop was corrected before execution; exact v0.19 generation and complete gated A/B Judge coverage are restored under 32 exact monitors."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-23_001.yaml",
+    "id": "2026-09-23_001",
+    "date": "2026-09-23",
+    "turns": 1,
+    "events": 2,
+    "summary": "Three-provider SkyPilot workflow opened; provider-neutral object-store relay proposed for durable Cetus ingestion."
+  },
+  {
+    "path": "ara/trace/sessions/2026-09-24_001.yaml",
+    "id": "2026-09-24_001",
+    "date": "2026-09-24",
+    "turns": 2,
+    "events": 2,
+    "summary": "Parallel AutoDL Pilot execution remains budget-gated; Qwen3.8-27B A failed the Cetus BF16 hardware gate with zero output and is explicitly unfulfilled."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-01_001.yaml",
+    "id": "2026-10-01_001",
+    "date": "2026-10-01",
+    "turns": 5,
+    "events": 5,
+    "summary": "Qwen medium full GPU and Cetus CPU Judge run; corrected three-total extraction retry is prepared, offline validated, and waits for safe post-job switch."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-14_001.yaml",
+    "id": "2026-10-14_001",
+    "date": "2026-10-14",
+    "turns": 3,
+    "events": 6,
+    "summary": "Corrected native proof accepted; six-page paper and full appendix delivered after zero-model export repair; performance hypotheses remain unproved."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-15_001.yaml",
+    "id": "2026-10-15_001",
+    "date": "2026-10-15",
+    "turns": 1,
+    "events": 3,
+    "summary": "Problem-first native Streaming debate complete; source identities corrected; mechanism theories remain untested."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-18_001.yaml",
+    "id": "2026-10-18_001",
+    "date": "2026-10-18",
+    "turns": 1,
+    "events": 3,
+    "summary": "Bounded shared-C conditional theorem and whole-paper verification completed; empirical interpretation staged."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-19_001.yaml",
+    "id": "2026-10-19_001",
+    "date": "2026-10-19",
+    "turns": 2,
+    "events": 6,
+    "summary": "Broad Prefix retention/refresh theory accepted with standalone Chinese explanation; English manuscript source-reference gate failed within fixed authoring budget."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-20_001.yaml",
+    "id": "2026-10-20_001",
+    "date": "2026-10-20",
+    "turns": 4,
+    "events": 8,
+    "summary": "All-layer PBS scheduling prepared, control-flow fixturePASS; batch mutation pending exact confirmation after auto-review rejection"
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-21_001.yaml",
+    "id": "2026-10-21_001",
+    "date": "2026-10-21",
+    "turns": 7,
+    "events": 19,
+    "summary": "ActualovernightVALprogress;Bphasecapacityrecovery,Gemmafullsource,andDSselectedCPUpreparepass;GPUtestpendingqueuecap"
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-22_001.yaml",
+    "id": "2026-10-22_001",
+    "date": "2026-10-22",
+    "turns": 24,
+    "events": 7,
+    "summary": "Direct newDS96 budget approval, actual gatesPASS andtraining+finitecompletionDAG; savednoL2/legacytopk comparison accepted"
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-23_001.yaml",
+    "id": "2026-10-23_001",
+    "date": "2026-10-23",
+    "turns": 48,
+    "events": 0,
+    "summary": "Full old-dataset disabled-thinking agreement audit actually running; exact prompt/reuse/numeric gates passed; unknown and storage guards preserved."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-24_001.yaml",
+    "id": "2026-10-24_001",
+    "date": "2026-10-24",
+    "turns": 10,
+    "events": 1,
+    "summary": "Bounded900 source/annotation continuation andresourcechecks"
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-25_001.yaml",
+    "id": "2026-10-25_001",
+    "date": "2026-10-25",
+    "turns": 16,
+    "events": 20,
+    "summary": "Cetus5preforwardbusy failures relocated;9live7830ranges2R7Q;HLElengthUnicodequarantine preserved;partiallabels2454/2887/2775,fullscopeunfinished"
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-26_001.yaml",
+    "id": "2026-10-26_001",
+    "date": "2026-10-26",
+    "turns": 12,
+    "events": 12,
+    "summary": "203494R small_gpuqexec03/PBSsession3608284. GPU1leased3MiB/0util/noPID thenpoststageidlePASS; TorchsinglevisibleUUID14356470-8983-a3ac-59d5-e27b80be81e2exact. All7realworstTRAIN12813486tokens/VAL25616973tokens finiteactivegrad/diskoptimizerBNscheduler/shuffle4RNGnextupdateexact0PASS;359MiBallocated/656MiBreserved/2.585GiBRSS. Native11.35GBTRAINVALstageSHA124s,no8B/newfeatures/TEST. Firstformalmean_control epoch1update1loss.6759405136grad.2663142979checkpointSHA3bf59cf0b1e2470dacb2be2993324e45cf0e107399a9993f0762116029380f91 verified. Full7\u00d720initialbatchthroughputpure2.882h, planning3\u20134hconditionalIO/earlystop; frozenmeasuredfiniteupper11.3908GPUh,current6hentryexistingcallback. CPUrawacceptedskip;healthyjobsuntouched. ChildPIDnotverifiedSSHauthdenied, sessionPIDexplicit;no alternateidentity/restart/newpoll."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-27_001.yaml",
+    "id": "2026-10-27_001",
+    "date": "2026-10-27",
+    "turns": 28,
+    "events": 36,
+    "summary": "Relayed human changes learnable search to32layers1..32 x sixAdam configs192, all randominit originalC. CPU206155F0 actual5 source/initialization review: exactbd186C,1049858params,noDropout,correctpostpoolL2,6initSHA992b9645same. Fullnative16 reused,28registeredTRAINVAL,other30notlocatedboundedregistry; TESTonlyselectedlayer. GPUprofile206166Q small_gpuq4CPU16GiB600sec, finiteclosure206168. No actualGPUprofile/fit/candidateVAL/TEST. Samegrant69CPU0GPUspent,28731CPU7200GPUremain before600GPU2400CPU+60CPUreserves. Whole192cost/additionalgrant pendingrealprofile; no newH/partialwinner/oldweights/budgetreset. Original5340/AutoDLOFF/retiredwarmstart preserved."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-28_001.yaml",
+    "id": "2026-10-28_001",
+    "date": "2026-10-28",
+    "turns": 16,
+    "events": 25,
+    "summary": "KnownDS02 progress confirmed without intervention; original5340 independent coverage/cost refresh and separatefixed96 clocks, no A0follow."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-29_001.yaml",
+    "id": "2026-10-29_001",
+    "date": "2026-10-29",
+    "turns": 10,
+    "events": 10,
+    "summary": "Directhuman deliveryorder amendment original5340 persisted: afterfirst-roundclosure FIRST frozen-domain uniqueqID sources and domain/model uniqueusable+complete3counts vs1000/exactshortfalls THEN originallevel hallucinationrates/validdenoms/missing/exhausted/hold/coverage. NoSteps/three-modelpooling/autosourceexpansion/splitchange; first_round_original5340_v1 writeonce afterexplicitclosure andoriginalIDjoins preserved. Three-small-model2/3+targetedthinkingreview discussiononly/modelbudgetunset; zero newreviewjobs/API. Coverageaudit prepared/syntaxPASS requiresimmutable snapshotclosure, notexecuted/nofinal1000 orratesclaim. OriginalTASK SHA0d3b unchanged. Independentdue sourceCPU226795 prefix12:38UTC usable4901/4912/4935/full34895/4901/4926 partial; fullcurrentlegalscheduler/resourceauditallpublicGPUsassigned. Fixednodesreoccupied: existing6QIDs222775/222778/222780/223133/220965/225935 unpinned SAMEqueues/scientificresources; HARPwall48->6h fullstatecontinuation/backfill. No newGPUproducer/healthyRinterruption, originalraw4096/batch/precision intact; new128alllastQ/noGPUprofile/formalupdate/VAL/TEST. Source next13:38UTC independently, Qonly5min/endturn saved; no agents/services/monitors/AutoDL; completedmethods preserved."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-30_001.yaml",
+    "id": "2026-10-30_001",
+    "date": "2026-10-30",
+    "turns": 9,
+    "events": 11,
+    "summary": "Source-bound three noL2 +officialHaMI pipelines nowhave actualCPU/nativegates and4uniquequeued32-layer entries; noformalcheckpoint/VALwinner/TEST. OriginalStreaming CPUrawpool/Normalizer corrected fromnativeparent, CPU232532PASS, exactnativegateinline232514; zero-updateByteBCE232498failure retained/fixedliteralF32. Hami3d277 source/MIL100updates/pairedBN/native23250tokens/restor0/batchedsource0 pass;232506Q. LAFaCTPDFSHAmatches, operator232486 diagnosticRMSNormfallbackcompletenesserror.039384774, unsupportedrules pendingnotmethodfailure; no proxy/attribution/encoderfit. ExactbaselineAP fourreferences andsavedStream1000questionbootstraproute, deletedoldpairedpreds disclosed. Finitecallbacksonly, healthyoriginal/pilot preserved."
+  },
+  {
+    "path": "ara/trace/sessions/2026-10-31_001.yaml",
+    "id": "2026-10-31_001",
+    "date": "2026-10-31",
+    "turns": 32,
+    "events": 34,
+    "summary": "Cursor merge recovered with observed new votes; source checksum repaired and legal capacity reserved; full pipeline incomplete."
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-01_001.yaml",
+    "id": "2026-11-01_001",
+    "date": "2026-11-01",
+    "turns": 14,
+    "events": 20,
+    "summary": "Maximum Cetus GPU entries restored:6R4Q across6med+4large. UniqueLOW2500headroom available; twozero-forward failures recovered, healthyjobs preserved. AutoDLpaused; fullreview incomplete."
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-02_001.yaml",
+    "id": "2026-11-02_001",
+    "date": "2026-11-02",
+    "turns": 14,
+    "events": 14,
+    "summary": "Nine normal finite native continuations:221655savedrows verified, ten successorsR med6+large4; lastpaid sessions2/2/1F0 LOW andUNKNOWN57unchanged; fullvalid3panel304810units, source/layout stillpending, no repeatedrates/normalETA."
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-03_001.yaml",
+    "id": "2026-11-03_001",
+    "date": "2026-11-03",
+    "turns": 3,
+    "events": 3,
+    "summary": "UNKNOWN58exactHTTP200ClientPayload policycovered/no retry10CNYupperalreadybooked;5exec34F1zero-model/tasksdueexistingPIDbothGPUs; archivedonlydiagnosedowners,unique5Qsuccessorsavoiding34,healthy5Runchanged/LOWunsentpaidresumed."
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-04_001.yaml",
+    "id": "2026-11-04_001",
+    "date": "2026-11-04",
+    "turns": 23,
+    "events": 32,
+    "summary": "Direct human restores official whole causal trajectory once. Newonepass nativegatesPASS,firstGemmaLogic VAL-selected53TEST independentlyPASS(.8750AUC/.1816AP/.1654TPR1%). Oldnumericprefix/scientificconfigs preserved;2R7Q othercells progressing, no full completion claimed."
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-05_001.yaml",
+    "id": "2026-11-05_001",
+    "date": "2026-11-05",
+    "turns": 51,
+    "events": 55,
+    "summary": "Directhuman\u5148\u53d6\u6d88\u73b0\u5728\u7684\u5b9e\u9a8c. Verified261164R currenttheoryowner andqdel261164.hpc-head01 succeeded. Cancellationmarker and STOPinbox prohibitautomaticresume/newcalls pendingexplicit humanresume. Existingacceptedfact/results/logspreserved; unrelatedjobsuntouched."
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-06_001.yaml",
+    "id": "2026-11-06_001",
+    "date": "2026-11-06",
+    "turns": 44,
+    "events": 6,
+    "summary": "Streaming model/split recovery and ongoing research"
+  },
+  {
+    "path": "ara/trace/sessions/2026-11-07_001.yaml",
+    "id": "2026-11-07_001",
+    "date": "2026-11-07",
+    "turns": 10,
+    "events": 10,
+    "summary": "Bounded ongoing Streaming experiment coordination"
+  }
+]

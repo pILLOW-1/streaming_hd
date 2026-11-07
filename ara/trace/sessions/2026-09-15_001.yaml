@@ -1,0 +1,41 @@
+session:
+  id: "2026-09-15_001"
+  date: "2026-09-15"
+  started: "2026-09-15T18:13+10:00"
+  last_turn: "2026-09-15T22:24+10:00"
+  turn_count: 3
+  summary: "Corrected key-position Full three-model VAL independently passed and checkpoints froze; one-shot TEST queued behind the successful VAL gate."
+
+events_logged:
+  - {turn: 1, type: decision, id: N60, routing: direct, provenance: user, summary: "Authorize new isolated Full attention/Prefix GRU three-model arm."}
+  - {turn: 1, type: decision, id: N61, routing: direct, provenance: user-revised, summary: "One complete trajectory per update and equal-trajectory TRAIN epoch means supersede packing."}
+  - {turn: 1, type: experiment, id: N62, routing: direct, provenance: ai-executed, summary: "Preflight PASS; sklearn import failed before fitting; equivalent AUROC repair frozen and three retries Q."}
+  - {turn: 2, type: decision, id: N63, routing: direct, provenance: user-revised, summary: "Provisional key-space token-position formula corrected earlier query/logit expansion, then superseded before implementation."}
+  - {turn: 2, type: decision, id: N64, routing: direct, provenance: user, summary: "Pause Full pending explicit attention contract; no further training/TEST/queue patrol."}
+  - {turn: 2, type: experiment, id: N65, routing: direct, provenance: ai-executed, summary: "Six owned Full PBS IDs terminal; three old-formula fit artifacts retained on shared, no cancellation needed or TEST access."}
+  - {turn: 3, type: decision, id: N66, routing: direct, provenance: user-revised, summary: "Latest explicit key-position attention contract superseded pause; fresh isolated Full three-model fit/VAL/frozen TEST authorized."}
+  - {turn: 3, type: experiment, id: N67, routing: direct, provenance: ai-executed, summary: "Three fresh Full fits F/0; independent VAL audit PASS and checkpoints frozen; TEST Q, final audit H with remote monitor."}
+
+ai_actions:
+  - turn: 1
+    action: "Created isolated Full train protocol/code/PBS, passed source/synthetic gates, submitted three first attempts, diagnosed pre-fit import failure, repaired AUROC dependency, re-froze and revalidated, submitted three owner-verified retries."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_transition_full_token_attention_gru_20260915"]
+  - turn: 2
+    action: "Checked exact six owner/model-bound Full PBS terminal states; stopped provisional new-run setup, preserved old frozen code/config/checkpoints/VAL predictions/logs, and marked Full paused pending attention contract."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_transition_full_token_attention_gru_20260915/RUN_STATE.md", "experiments/streaming_hd/runs/step_transition_full_token_attention_gru_20260915/ACTIVE_EXPERIMENT.json", "experiments/streaming_hd/runs/step_transition_full_token_attention_gru_20260915/audits/PAUSED_PENDING_ATTENTION_CONTRACT.md"]
+  - turn: 3
+    action: "Implemented isolated fresh key-position Full code with synthetic/source gates; froze TRAIN and pipeline code, submitted three owned fits and success-gated CPU VAL/TEST/final jobs, independently verified VAL PASS and checkpoint hashes, and registered/smoke-tested a quiet remote final-job monitor. Explained that epoch trajectory division is logging/scheduler aggregation, not per-update loss scaling."
+    provenance: ai-executed
+    files_changed: ["experiments/streaming_hd/runs/step_transition_full_keypos_token_attention_gru_20260915", "ara/evidence/tables/step_transition_full_keypos_val_20260915.md"]
+
+claims_touched: []
+logic_revisions: []
+key_context:
+  - {turn: 1, excerpt: "User clarified exactly one complete trajectory per optimizer batch; asked what dividing epoch loss by trajectory count means. The denominator gives each trajectory equal weight, not Step-pooling."}
+  - {turn: 2, excerpt: "User first specified key-space current-token position and removed the old query step term, then urgently instructed to pause until attention is explicitly determined; latest pause controls."}
+  - {turn: 3, excerpt: "Later explicit relayed final attention and fresh three-model authorization superseded the pause; within each epoch the loss sum is divided by trajectory count only for the epoch mean, while each complete trajectory still produces one unscaled full-BPTT update."}
+open_threads:
+  - "Corrected Full VAL passed and checkpoint freeze committed; await only the three dependency-released one-shot TEST jobs and success-gated independent final TEST/prior-Prefix VAL bias audit. Remote five-minute final-job monitor is active; no TEST efficacy conclusion yet."
+ai_suggestions_pending: []
