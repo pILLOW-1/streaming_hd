@@ -1,0 +1,77 @@
+{
+  "method": "llm_check",
+  "official_repo": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection",
+  "commit": "2f3bf9ea6db19e60a416090f77694816c92a9146",
+  "code_root": ".cache/upstream/llm_check/2f3bf9ea6db19e60a416090f77694816c92a9146",
+  "export_kind": "Metadata only: upstream source files listed below are NOT included in this repository",
+  "license_files": [
+    "LICENSE"
+  ],
+  "license_status": "PRESENT_SEE_ORIGINAL",
+  "files": [
+    {
+      "path": "LICENSE",
+      "SHA256": "8df29c8068b40c1791fd17f1d4bf52982ca5c2931562ed064f094c8053d3dc51",
+      "bytes": 1741,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "SHA256": "5c2572ca1fbeb05dec8bcae8c828f745e64cd1061744fcb23ed60d2fbaa297d8",
+      "bytes": 6140,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/README.md"
+    },
+    {
+      "path": "common_utils.py",
+      "SHA256": "88cecd5336fe127ffc9a53ffbca290df3648180ccd0246890ef82eda24899dde",
+      "bytes": 16995,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/common_utils.py"
+    },
+    {
+      "path": "environment.yml",
+      "SHA256": "63ea0bc4f1f96bc055f7944464d6670cc9fa7dbee9fbe94aa94581af97e4ad5c",
+      "bytes": 10472,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/environment.yml"
+    },
+    {
+      "path": "run.sh",
+      "SHA256": "46d3eeb4ed6602f192000d63cd8237c1886db38138afb1306418a8af0d41b48c",
+      "bytes": 654,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/run.sh"
+    },
+    {
+      "path": "run_detection_combined.py",
+      "SHA256": "5697ca20452c643dccc0affeef6e84778697946f072d90a592bb13d488fbe6f5",
+      "bytes": 1405,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/run_detection_combined.py"
+    },
+    {
+      "path": "utils_fava.py",
+      "SHA256": "2a6f87a47509f4f665f668ceb68dd8011cddffe38f4d5dcd61a2977222908688",
+      "bytes": 3297,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_fava.py"
+    },
+    {
+      "path": "utils_fava_annotated.py",
+      "SHA256": "5f8e47dac1d3473835ab614ae7576992df90c546bfa0fbf3a1e025c6c8a0d9ac",
+      "bytes": 4096,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_fava_annotated.py"
+    },
+    {
+      "path": "utils_ragtruth.py",
+      "SHA256": "62956d6852855808354174a16d9f0225aeed79d1ef420af74dccde5e7dd27476",
+      "bytes": 2777,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_ragtruth.py"
+    },
+    {
+      "path": "utils_selfcheck.py",
+      "SHA256": "7370160ab5c182d0fc9ca333ab06f3eb9540c1892a8b4cc7239c6575034e38ef",
+      "bytes": 3376,
+      "source_url": "https://github.com/GaurangSriramanan/LLM_Check_Hallucination_Detection/blob/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_selfcheck.py"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false,
+  "distribution": "REFERENCE_ONLY; obtain directly from the original author under its terms",
+  "included_source_files": false
+}

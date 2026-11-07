@@ -1,0 +1,81 @@
+{
+  "method": "streaming",
+  "official_repo": "https://github.com/snowcatsmoking/StreamingHallucination",
+  "commit": "e7c7aa2df348a6212c1e7f13fdb5366936f219d3",
+  "code_root": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3",
+  "export_kind": "Unmodified source-only subset; generation/tagging scripts stored as source but never executed",
+  "license_files": [
+    "LICENSE"
+  ],
+  "license_status": "PRESENT_SEE_ORIGINAL",
+  "files": [
+    {
+      "path": "LICENSE",
+      "SHA256": "494d2deb6e946aefa0ce17b976448a1fe687df2ecfed10028a62e73e26030952",
+      "bytes": 1167,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "SHA256": "c32fd6bbfe3b3b6b6aadd528e133320bc9bf0f3d5331c917f5247d682e03366b",
+      "bytes": 5190,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/README.md"
+    },
+    {
+      "path": "pyproject.toml",
+      "SHA256": "8ac59b5074e61e21acbd752214d991051f7b9ec32dc86e8201029226abc387e3",
+      "bytes": 530,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/pyproject.toml"
+    },
+    {
+      "path": "src/extract_features.py",
+      "SHA256": "e9fb35437b026390a5e32a92943456f9d7ddc5f43a9198b7fc7f2a236d6c0245",
+      "bytes": 8887,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/extract_features.py"
+    },
+    {
+      "path": "src/process.py",
+      "SHA256": "725c9728d347e4c5e2ea2b1a2c6ff85fa8190eb95d0a0475b69b34298e376e71",
+      "bytes": 12180,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/process.py"
+    },
+    {
+      "path": "src/train.py",
+      "SHA256": "e10af1aaad193d9fc774a0715d21c4c1f528f023c301bc323a4301ea463900ed",
+      "bytes": 15670,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/train.py"
+    },
+    {
+      "path": "src/train_teacher.py",
+      "SHA256": "03fc2a272244cd1e9d1d5953f50bf9a01939ea36d12fbc83ae2ae20ffbdcd75e",
+      "bytes": 5905,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/train_teacher.py"
+    },
+    {
+      "path": "src/visualize.py",
+      "SHA256": "9e526ea72ca77321b3f4172231cc1daa362a60069d148cc5c7bfcf6cdd39fab4",
+      "bytes": 7744,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/visualize.py"
+    },
+    {
+      "path": "tag_validation/advanced_validation.py",
+      "SHA256": "df47596e1fd55bc927bf6f170d46c447a5b1c76995186eef9025cdc54db8e91c",
+      "bytes": 14035,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/advanced_validation.py"
+    },
+    {
+      "path": "tag_validation/analyze_tags.py",
+      "SHA256": "8eb1db1c7e3755b5180ea3e87d7ced74b1e3aca4985df49a86423e741752e693",
+      "bytes": 7779,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/analyze_tags.py"
+    },
+    {
+      "path": "tag_validation/compare_datasets.py",
+      "SHA256": "0b985c41893ef629ebd4be7395087279d04de2be38b2207373a0933d5fb66fa1",
+      "bytes": 7776,
+      "source_url": "https://github.com/snowcatsmoking/StreamingHallucination/blob/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/compare_datasets.py"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false
+}

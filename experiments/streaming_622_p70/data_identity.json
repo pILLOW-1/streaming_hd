@@ -1,0 +1,362 @@
+[
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Factuality",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "35281f3195e2d580839a7359bf267a7af77b888e70034e2c096fca3b8794602f",
+    "labels_SHA256": "14daf06ea23c7484651002f186c68df9815df2e70c2cf976926adb9f3507956d"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Factuality",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "7066a22e57138305cd97416126fecb586049bd9d32a0dda80f404e823ba0ecd7",
+    "labels_SHA256": "5d87030435b681cb0329ef6b313bf2348d44895d638932a7a8d8b82d1aadc220"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Factuality",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "d8fc30d944fd12a58060aded3d7119d08fcdd0a6ab953e1c47af2669db577b2f",
+    "labels_SHA256": "e3f3f2047b578effaa954e3f741a954f9dc93f0b02b13053fce8b06e34f88d85"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Logic",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "bfd430f9afdfd0de3431159f26e59c6c34170fbff76da83428fdd01d2cab23f3",
+    "labels_SHA256": "5e4ae3dab88c3dff66ccb657fe7475f2cc0f2423b0bf123db56bcd894b7c9c5f"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Logic",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "16f6ba282af9e0bcc2fa7516603bbf72c351e537308da5365a3bf8c11b22ff0f",
+    "labels_SHA256": "0a225c4ea924a80c1366f9061e5aff48bd2cb306f8b9fbcf3bd32ba2ad36c364"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Logic",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "a006b0e692297c2a2e8ba4c88fa9fc6f37aac128beae038c50be29f8b5bd1998",
+    "labels_SHA256": "4a5b1b92ed315e9b6fd5d152864aae5071fe9602c32547da04d2720a9f2ede99"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Math",
+    "split": "train",
+    "count": 617,
+    "generation_SHA256": "7a877aa19d45ff9ac173d470a7f206f1f7c6f96407e80fc5d038e90b6dbe308d",
+    "labels_SHA256": "f7e709c64b8e02dfabc8b5817b8f7f8b641faa61f4c085afacfd9d5b5ba0ade4"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Math",
+    "split": "val",
+    "count": 206,
+    "generation_SHA256": "a9411c32a27cb976527adc3e4d5a909eafa8cc63dab388ee95776b574d063d2d",
+    "labels_SHA256": "b87bc27d410327bbdb610398383b0890b21c587af1ee5439007d839aef576402"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Math",
+    "split": "test",
+    "count": 205,
+    "generation_SHA256": "ab0e1dbdda1fadf06163ca6b11a688ffa61009c433f47bcc61c864226ffb4728",
+    "labels_SHA256": "ec081f6a60aebdf52555370fc2026916c0c286018d9b48b57aab85dfb74f05bd"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Multi-hop",
+    "split": "train",
+    "count": 689,
+    "generation_SHA256": "342c77b27a2115528f8dc5ffb5a122c92a875db9b29b86d3ce2bcb65b31e38eb",
+    "labels_SHA256": "b3973b065206194acfe5f5f3887d10454ec6cf73fab27b0ddcc4190727e8016c"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Multi-hop",
+    "split": "val",
+    "count": 230,
+    "generation_SHA256": "0d2cb7e5cfa534824cd5de833e9e6f0ce73579efb5e5ea522026bff90c6edbd7",
+    "labels_SHA256": "0bca551b69cb4be738556500144bf2a7c322df776eebdeda97551c70497a1b9a"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Multi-hop",
+    "split": "test",
+    "count": 229,
+    "generation_SHA256": "ddd5e27453461e4da469198a9d7ab00a301f3bff8ae2b4cd47efbfa05c2fdc77",
+    "labels_SHA256": "7a6dc87ed03631e77243e256f03c80d568d1a14d079c71ae2289002154e4e4ae"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Science",
+    "split": "train",
+    "count": 635,
+    "generation_SHA256": "8b026123843360e743569973c25b03eb5238390d0575d1494ffd58b86cecab1c",
+    "labels_SHA256": "142132ee3631b210d9f0a768487ff1e2e61c5815289eb0cf7f3207b3d555413c"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Science",
+    "split": "val",
+    "count": 212,
+    "generation_SHA256": "7aefbde983f72e3c32e5befba0da7e2869244fba138222e465e949027c80ecc0",
+    "labels_SHA256": "2d61bb5801a59f3ee3397a5e21bda36f71d87eb9711d01e2ba5725742dc58a62"
+  },
+  {
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Science",
+    "split": "test",
+    "count": 212,
+    "generation_SHA256": "ce7520a08958f386b45979a040dbce917674f97394b93f079a5588c03b096aad",
+    "labels_SHA256": "d6e6b0acba7648e31ce19fdba1df5d2b1da7bc6885ece315d599ed3b09daad4c"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Factuality",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "ea29fe68ba40f14c154e6628fa59cba5b51672f96d35c845ac5489b28edd862f",
+    "labels_SHA256": "6d307cb82359ed0cc03aabf146953a540427ad873653def7949c5be41ab4fda4"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Factuality",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "d6e8640db73945dae13f2c28c74b42dc2a7ab26b60b7b3047fc6a2b658f768aa",
+    "labels_SHA256": "70c16c66c7a7bb32a2e74aaf96aed2f37659ea986ee3663c485451a0e196dcd3"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Factuality",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "1500dc0e5301d7e1273beef017f7017cc7b6ac859f55b82d4df489dd49ec2c40",
+    "labels_SHA256": "f6e4a144dfdc52911125dc77f7f5c0c688d13f8a461ca89a631c0d01f91b62a6"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Logic",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "b4c11ce4138d64149a4c987a9717e48d4e6442432cf240595574b78507af5f3e",
+    "labels_SHA256": "4dbb9d40e38710b465c9d60cad4105fba2f5adbb402c83a04cfc3d9309648bf6"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Logic",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "154757d4402667c664eee52357cfef7aeac54f55dab71be4e66ca5817c88437d",
+    "labels_SHA256": "86ad63a0ebf0e72a7c71b42d287cb04c1227fb01d57e807252f35d588829f29d"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Logic",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "2d7fcbc4a62b19d7b7feafa7afab3abdf4ad0dad2156210def33b87bd65b87a4",
+    "labels_SHA256": "bf459c293dc4da38f07bc2b2dd16ca5f08d66f81bafe68fe7c1ec2e8563c02bb"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "9fd52652713381c61237540d5d402a05eca2d0130b92621e1dd842181aeb1e93",
+    "labels_SHA256": "c6571d20eaa0c448be1ab3c624a68f83f6ebb280c42781196f2f4304c3d68229"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "251c585acdd6ff0dcbab224e1d50f6abf341a88ebfd29a6a11661f7e9aa7b871",
+    "labels_SHA256": "5002445261bd2178ff307946c1aeea71486c0f38d365ba45f328d6bc56766373"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "ccfe88961aaaacf6edd1300e9ec79e9cc75491618e2195aba417780e12037099",
+    "labels_SHA256": "278a57b87d14ae412789abcb5bbaa716ee7984ae9b3e46c286bddc4f0a5cfa83"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Multi-hop",
+    "split": "train",
+    "count": 692,
+    "generation_SHA256": "217861c636512093a4221e690a346df411d517246bff200075d4b69d64082a0c",
+    "labels_SHA256": "19c1843353d6bf3fc2cfac67cd6b53ddd51ce86f74774fec5389da907e88b2c4"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Multi-hop",
+    "split": "val",
+    "count": 231,
+    "generation_SHA256": "feb0518d0e666d3b4baeb44815cdab9877cc6555d7f90c2b945628fe6c233f79",
+    "labels_SHA256": "9043ba7425f9a85dec7f5d0e01ae21e527acdfe671dcd2772e879e325b1ba289"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Multi-hop",
+    "split": "test",
+    "count": 230,
+    "generation_SHA256": "1f6e83ad72e574f12d754fe6c2136ac13eade77bf11d07aef048675143b26fbd",
+    "labels_SHA256": "e0634299c78296fd0c39a72b8c87fd0db9206ef1233694b0941e5e9d10f6d6c6"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Science",
+    "split": "train",
+    "count": 628,
+    "generation_SHA256": "5a226ed122d453ef40997820a6962d1800fce994644a36b1567ecb74202ec42f",
+    "labels_SHA256": "7199ffd9e86deda69ad87644ce2de86b09566bc560156fd4addb6f31c6d82754"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Science",
+    "split": "val",
+    "count": 210,
+    "generation_SHA256": "bae8ab1a51475788454dc5cfc33a503636bd7e45d6e02fb29691d87ba90a06c2",
+    "labels_SHA256": "90b656aed38ffa64b9a3b8d47e4ce3fae49af331f00e365d01b3d28bd515b7e0"
+  },
+  {
+    "model": "gemma_4_31b_it",
+    "domain": "Science",
+    "split": "test",
+    "count": 209,
+    "generation_SHA256": "c20b805a0798d3aeb5c6e0ce0214b049e7b192c154ed6d967f26ba59f57cd077",
+    "labels_SHA256": "95c8669342036813f7109715891eb17f8def1f2c300f8656ccbf47ff31f13b4a"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Factuality",
+    "split": "train",
+    "count": 609,
+    "generation_SHA256": "3beb350ca680b40a3b539f1cc3d7eccf5aee45ea3bd82fa9afdeb2b4ef8a765d",
+    "labels_SHA256": "1ad448b7c9b7c634b74b8c530ad2dc2b6244a9193a254786f708acd698fa93d4"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Factuality",
+    "split": "val",
+    "count": 203,
+    "generation_SHA256": "082d68420344928734ca00bc35e198f216bf64246883531c74fbee506f9a1f21",
+    "labels_SHA256": "61a58d7f4047a0b04a3b10a0b839c05c1c9168d024c8386f3643614610404596"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Factuality",
+    "split": "test",
+    "count": 203,
+    "generation_SHA256": "9b5f758c28a8e0a14e5b04ba7e4309882e81596f8b6f1a10608f0941db8b1992",
+    "labels_SHA256": "ed495b48130f0f3a87debf7c890acd1cc7a75167a4537494f2685817d1159617"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Logic",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "f30be5b7b58af68e2580ed5cc4a8deb71e816ef406a64ff274e7eb727ab4fcc4",
+    "labels_SHA256": "b2ba5374096aad12318afd39587574f886e36b3962ce9b1edc2af3ece4b85fa0"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Logic",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "2f44f0baf976f4354cb97ad3cf6ec9ad84205b98a33d64d529d2428ec0069b6b",
+    "labels_SHA256": "ee10229c0bac95719107be19aa5876a19a5d60ab0dcd73f6c5cca3eb962fd0f4"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Logic",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "3191e12b85584ec0416ed535bab13d720a48f7724dc6416ef642243f10245a63",
+    "labels_SHA256": "d7f4e1f4b59867b82570dcdbe0ab168ce80e80ee9e66763c5b0a6df7847fc5d7"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Math",
+    "split": "train",
+    "count": 600,
+    "generation_SHA256": "928a2b944e34135b0eee0bcc64c6650f80ed68ed76fbb25c7872aef53381ac54",
+    "labels_SHA256": "63d07abb736d110e12604723e86a2481b9f93e7f3aaa29387f7a1e96788c3c54"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Math",
+    "split": "val",
+    "count": 200,
+    "generation_SHA256": "df79096bc68a343ffc3efbff279576f0645a2b4015c5465b97f6f36238284d2d",
+    "labels_SHA256": "cc0ba88cf1a4dc1162f50d8a3158c85c04fe620b675969acd16a02e1ed4ab14e"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Math",
+    "split": "test",
+    "count": 200,
+    "generation_SHA256": "0a837dc440e75dcf621a8ff1f3ce7920a2c8d8735577e7edd6097699416b4676",
+    "labels_SHA256": "f533f187065f2056ed9ccfd49c4e6d77792fbc8ee17cacfa836ac3a8c445cd2b"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "split": "train",
+    "count": 695,
+    "generation_SHA256": "f3eee559c5486f82a986334799f8dc37822d59fe81593febce25ef2a30c7c2a0",
+    "labels_SHA256": "0be7127f87fa8fb28f50eec686b62a83e72add1d8955b51687169f4141f55c3b"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "split": "val",
+    "count": 232,
+    "generation_SHA256": "5c859c26d58170f29c7132551611e94dceea074c9453ad22f0191cf80a079411",
+    "labels_SHA256": "18ddf85d0f8412c2e5685b22059913105e554316a173cd0b03f0fde54c562e39"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "split": "test",
+    "count": 232,
+    "generation_SHA256": "229160cf29c37079478c180b6c0cb88f5743bca71af43edcc6ae6935917b2489",
+    "labels_SHA256": "11cdef82485e2b4d1798eb343a896352155d221d35d375a99a204b12ebe0898a"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Science",
+    "split": "train",
+    "count": 653,
+    "generation_SHA256": "44802fc0e5e225226d9f0283631841208568e52952c36472bea8f24a0a0e98e3",
+    "labels_SHA256": "8e90832f8b92a1bbb0ef8d06e2f28098c4e53a89bfa9d7c6ad837d11d0ec85a0"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Science",
+    "split": "val",
+    "count": 218,
+    "generation_SHA256": "07b0e575801bc6bef889363f5e464bc148686bd7c08ba1a921221c5cdd7f05f9",
+    "labels_SHA256": "e0536c18351c04367d73b8a2c26c37e54cf6af81c16483c2400a6e51316baca1"
+  },
+  {
+    "model": "qwen3_8_27b",
+    "domain": "Science",
+    "split": "test",
+    "count": 217,
+    "generation_SHA256": "89da7eebea5313eb8ed6dbf42a070039fffd2c77f2e10753dbffd179bb1b48bd",
+    "labels_SHA256": "1cb302935f2235048bec642bc17b309f83ee1ed89017d1178882cf698e83ce61"
+  }
+]

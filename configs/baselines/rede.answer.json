@@ -1,0 +1,21 @@
+{
+  "method_key": "rede",
+  "level": "answer",
+  "dtype": "bfloat16",
+  "seed": 42,
+  "short_trace_policy": "keep",
+  "parameter_origin": "Paper fixed optimizer/probe recipe; explicit project defaults for unspecified projection/search choices. Expand candidates using TRAIN/VAL only.",
+  "candidates": [
+    {
+      "layer": "last",
+      "attention_layer": "last_full",
+      "hidden_width": 512,
+      "output_width": 128,
+      "epochs": 20,
+      "proxy_ratio": 0.2,
+      "lambda_disperse": 1.0,
+      "lambda_separate": 1.0,
+      "drop_ratio": 0.2
+    }
+  ]
+}

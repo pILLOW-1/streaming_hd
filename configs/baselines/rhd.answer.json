@@ -1,0 +1,16 @@
+{
+  "method_key": "rhd",
+  "level": "answer",
+  "layers": [
+    0
+  ],
+  "seed": 42,
+  "select_weights_by_val_auroc": true,
+  "score_sign": 1,
+  "weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ]
+}

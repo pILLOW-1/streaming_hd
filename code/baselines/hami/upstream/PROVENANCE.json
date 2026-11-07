@@ -1,0 +1,117 @@
+{
+  "method": "hami",
+  "official_repo": "https://github.com/mala-lab/HaMI",
+  "commit": "3d277605534999d2756a6eeef759d0a91199ad58",
+  "code_root": ".cache/upstream/hami/3d277605534999d2756a6eeef759d0a91199ad58",
+  "export_kind": "Metadata only: upstream source files listed below are NOT included in this repository",
+  "license_files": [],
+  "license_status": "NO_LICENSE_FILE_FOUND_DO_NOT_INVENT",
+  "files": [
+    {
+      "path": "README.md",
+      "SHA256": "003ef1842b3ab387155c5b3e6150fe5a077fbfec742b714701745540b52f2750",
+      "bytes": 3798,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/README.md"
+    },
+    {
+      "path": "generation/compute_entailment.py",
+      "SHA256": "e83c250410d7e9901435c824bd7dc3645bf4d4d48c8340c59b2eee87abc8c006",
+      "bytes": 3029,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/compute_entailment.py"
+    },
+    {
+      "path": "generation/evaluate_correctness.py",
+      "SHA256": "43bbfba055cf3215b68789771aca4925c986fe0d624c248d4009cbbc1f0db93e",
+      "bytes": 5803,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/evaluate_correctness.py"
+    },
+    {
+      "path": "generation/generate_answers.py",
+      "SHA256": "48e5196abab83ec9256f20de39b085b50e540f883001c4f8669064be2cff9f89",
+      "bytes": 6343,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/generate_answers.py"
+    },
+    {
+      "path": "generation/uncertainty/models/__init__.py",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/__init__.py"
+    },
+    {
+      "path": "generation/uncertainty/models/base_model.py",
+      "SHA256": "8dae269ec2c5967bdc2299a3287a0edc2888c7b32085ddc56019cadac1d5cd32",
+      "bytes": 285,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/base_model.py"
+    },
+    {
+      "path": "generation/uncertainty/models/huggingface_models.py",
+      "SHA256": "18cb43ef73c0f222a36b8d8db477502c0c08483c32f69ce60dfc0d1dfe108a6b",
+      "bytes": 9522,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/huggingface_models.py"
+    },
+    {
+      "path": "generation/uncertainty/uncertainty_measures/semantic_entropy.py",
+      "SHA256": "e1c5b75d100cc85b46525560cd49c8f3d3f1e6f6c61bbd99a073485bda1c0f38",
+      "bytes": 10328,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/uncertainty_measures/semantic_entropy.py"
+    },
+    {
+      "path": "generation/uncertainty/utils/eval_utils.py",
+      "SHA256": "0a8edac6ad6dcd3a240990c7f3ef659c9300ac4f6187d178e3d35be5ecc3d445",
+      "bytes": 1880,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/eval_utils.py"
+    },
+    {
+      "path": "generation/uncertainty/utils/openai.py",
+      "SHA256": "a1acff5d00d3f9d7e779791685cecdd3abaa21ffb858a2ec824b78aaeccf5639",
+      "bytes": 1417,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/openai.py"
+    },
+    {
+      "path": "generation/uncertainty/utils/utils.py",
+      "SHA256": "c04a74e200237048f5ebc4c19d802de7499e8761febcc2a0b8119ddc1b525f70",
+      "bytes": 4780,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/utils.py"
+    },
+    {
+      "path": "hami.py",
+      "SHA256": "f447969bc46daf8ed5baf56d2909b390c1fe607f53f6f03501898e6866919c87",
+      "bytes": 2255,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/hami.py"
+    },
+    {
+      "path": "main.py",
+      "SHA256": "9ad0effffc334c321bf76e0bdb331188fbb8843b69f4ffe20b183939a62eb090",
+      "bytes": 5821,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/main.py"
+    },
+    {
+      "path": "requirements.yml",
+      "SHA256": "1e36e64f96876b02a0008eb5de7f54ae8095feced2b9bd8e99de49b5bf60cb3b",
+      "bytes": 3709,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/requirements.yml"
+    },
+    {
+      "path": "train.py",
+      "SHA256": "da02a3cdb6693f332045d416664d86e8b6c890cdc3fc6e5e3d93aefc53a536a8",
+      "bytes": 2326,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/train.py"
+    },
+    {
+      "path": "utils.py",
+      "SHA256": "1810342dafd95c6962250ad2a7258864ee1cda610eac75a1304c0a5685641cc6",
+      "bytes": 5376,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/utils.py"
+    },
+    {
+      "path": "validate.py",
+      "SHA256": "ac7a41b61a0bb062ae77a58a303c173d4646cdc40dc8a8d8d77eadbc409093de",
+      "bytes": 762,
+      "source_url": "https://github.com/mala-lab/HaMI/blob/3d277605534999d2756a6eeef759d0a91199ad58/validate.py"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false,
+  "distribution": "REFERENCE_ONLY; obtain directly from the original author under its terms",
+  "included_source_files": false
+}

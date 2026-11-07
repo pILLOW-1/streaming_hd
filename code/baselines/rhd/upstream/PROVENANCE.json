@@ -1,0 +1,69 @@
+{
+  "method": "rhd",
+  "official_repo": "https://github.com/Jeryi-Sun/Reasoning_Hallucination",
+  "commit": "00c1946382301aa9432609ac605f7876c545e545",
+  "code_root": ".cache/upstream/rhd/00c1946382301aa9432609ac605f7876c545e545",
+  "export_kind": "Metadata only: upstream source files listed below are NOT included in this repository",
+  "license_files": [],
+  "license_status": "NO_LICENSE_FOR_RHD_SUBDIRECTORY_FOUND; do not infer from unrelated open-r1",
+  "files": [
+    {
+      "path": "Readme.md",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/Readme.md",
+      "bytes": 2544,
+      "SHA256": "6128abe5749ecf350ad642b4ae234579d3e6ad84e650327fdd316f39aacc291f"
+    },
+    {
+      "path": "RHD/hallucination_detection.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_detection.py",
+      "bytes": 6281,
+      "SHA256": "c65a46ca3603e9bfd227d91416351d68c127c354151a01d95a11aff43dbaa4b9"
+    },
+    {
+      "path": "RHD/hallucination_eval_task1.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_eval_task1.py",
+      "bytes": 4708,
+      "SHA256": "6d433c2062d9be42114d1df11798d6008bfa58b994e77814c25ae7f914323cb7"
+    },
+    {
+      "path": "RHD/hallucination_eval_task2.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_eval_task2.py",
+      "bytes": 6461,
+      "SHA256": "6d667bacc898588280adc4da58580f4ce1b0fcef0751f75f4489a5ce825f8350"
+    },
+    {
+      "path": "RHD/hallucination_score.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_score.py",
+      "bytes": 3895,
+      "SHA256": "7041bafb7147a39d418cab871d7522d5281c81162184e21f141f69d033ced1f4"
+    },
+    {
+      "path": "RHD/run_hallucination_detection.sh",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_detection.sh",
+      "bytes": 1977,
+      "SHA256": "46ebf7e836d08a787d0e51e72335cb1c43589344e3f32d2e0a7fbe5427421e53"
+    },
+    {
+      "path": "RHD/run_hallucination_eval.sh",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_eval.sh",
+      "bytes": 1657,
+      "SHA256": "9128343adc833da1f98f8a346ecbbb4eed3c2fa32d102beb5dabec8f9b899022"
+    },
+    {
+      "path": "RHD/run_hallucination_score.sh",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_score.sh",
+      "bytes": 1617,
+      "SHA256": "5d38f0b005e1605c2384aedf745113a44406d878da5db64cfacf7b0eab9165ec"
+    },
+    {
+      "path": "RHD/utils/get_hidden_score.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/RHD/utils/get_hidden_score.py",
+      "bytes": 29827,
+      "SHA256": "5dfc2bd3af3fdb7d2350c279357410c1de1aac536f73428f6d19ecc34ab51d39"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false,
+  "distribution": "REFERENCE_ONLY; obtain directly from the original author under its terms",
+  "included_source_files": false
+}

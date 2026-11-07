@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/Jeryi-Sun/Reasoning_Hallucination",
+  "commit": "00c1946382301aa9432609ac605f7876c545e545",
+  "code_root": "external",
+  "files": [
+    {
+      "path": "transformers/LICENSE",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/LICENSE",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049",
+      "bytes": 11418
+    },
+    {
+      "path": "transformers/setup.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/setup.py",
+      "sha256": "355ac52cdf5ad8bfaf3d3d7a52c995c853512c3bbf4b70b81a84689d110449b8",
+      "bytes": 16691
+    },
+    {
+      "path": "transformers/pyproject.toml",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/pyproject.toml",
+      "sha256": "e745d3449adfeb005687e5302b40ea7b445c8f900bf9b07bcdaf222e7b1da734",
+      "bytes": 1437
+    },
+    {
+      "path": "transformers/src/transformers/__init__.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/__init__.py",
+      "sha256": "c61e4866cd431e9ae2c2c4e09a8d3e7e9e451614192b1ade0c0baf41221ffb31",
+      "bytes": 319243
+    },
+    {
+      "path": "transformers/src/transformers/models/llama/configuration_llama.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/llama/configuration_llama.py",
+      "sha256": "ddd8c9e9de29965a4294a64dff6dc17f0950c88d68eaff4faeb9f3b0933f3784",
+      "bytes": 11761
+    },
+    {
+      "path": "transformers/src/transformers/models/llama/modeling_llama.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/llama/modeling_llama.py",
+      "sha256": "9ed32174c3e625dd518598944bbc3221f07fc1400b1fbdd011f75c04ac848ba5",
+      "bytes": 51701
+    },
+    {
+      "path": "transformers/src/transformers/models/qwen2/configuration_qwen2.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/qwen2/configuration_qwen2.py",
+      "sha256": "b2475f4f3e2c2c26f5cf9058897a224cad3e7cfa11e71aba4201747dd36c2b17",
+      "bytes": 10517
+    },
+    {
+      "path": "transformers/src/transformers/models/qwen2/modeling_qwen2.py",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/qwen2/modeling_qwen2.py",
+      "sha256": "c00a159aeb4aff17d311b263e718c7d306fa95d7e575b5fe2673a1c9b5ec81f7",
+      "bytes": 56979
+    },
+    {
+      "path": "requirements.txt",
+      "source_url": "https://raw.githubusercontent.com/Jeryi-Sun/Reasoning_Hallucination/00c1946382301aa9432609ac605f7876c545e545/requirements.txt",
+      "sha256": "a1e3bbd900cb16d7bef57f8986c67eedbc5bd1b54fbca4eadc19b6370634c122",
+      "bytes": 412
+    }
+  ],
+  "purpose": "Read-only static inspection of native early-exit/attention dependency; not an installed complete Transformers distribution",
+  "transformers_license": "See transformers/LICENSE; applies to that subtree, not assumed for RHD root",
+  "no_models_datasets_or_packages_downloaded": true,
+  "upstream_files_executed": false,
+  "full_RHD_implementation_status": "IMPLEMENTATION_PENDING",
+  "distribution": "REFERENCE_ONLY; unused by the native portable backend"
+}

@@ -1,0 +1,10 @@
+{
+  "method_key": "ars",
+  "level": "answer",
+  "layers": [
+    0
+  ],
+  "seed": 42,
+  "select_weights_by_val_auroc": true,
+  "score_sign": 1
+}

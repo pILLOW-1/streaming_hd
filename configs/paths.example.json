@@ -1,0 +1,20 @@
+{
+  "dataset_root": "",
+  "feature_cache_root": "",
+  "output_root": "",
+  "model_paths": {
+    "deepseek_r1_distill_llama_8b": "",
+    "qwen3_8_27b": "",
+    "gemma_4_31b_it": ""
+  },
+  "dataset_roots": {},
+  "native_input_root": "",
+  "baseline_feature_root": "",
+  "native_full_input_root": "",
+  "race_assets": {
+    "embedding_model": "",
+    "nli_model": "",
+    "scoring_model": "",
+    "sample_root": ""
+  }
+}

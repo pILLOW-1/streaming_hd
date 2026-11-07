@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+configs/paths.local.json
+.cache/
+outputs/
+*.log
+*.npy
+*.npz
+*.parquet
+*.safetensors

@@ -1,0 +1,6 @@
+{
+  "repo_id": "pillow-streaming/streaming-hd-v1",
+  "url": "https://huggingface.co/datasets/pillow-streaming/streaming-hd-v1",
+  "revision": "278886b69f2f0b6e44fb76f846da98497092d99b",
+  "split_membership": "Use experiments/streaming_622_p70/split_assignments.jsonl; the Hub release retains the earlier default split."
+}

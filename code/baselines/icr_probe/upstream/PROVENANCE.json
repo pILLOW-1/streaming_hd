@@ -1,0 +1,57 @@
+{
+  "method": "icr_probe",
+  "official_repo": "https://github.com/XavierZhang2002/ICR_Probe",
+  "commit": "40ec490e762cadbac6bcefdc24a8f0d5974e8448",
+  "code_root": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448",
+  "export_kind": "Unmodified source-only subset; generation/tagging scripts stored as source but never executed",
+  "license_files": [
+    "LICENSE"
+  ],
+  "license_status": "PRESENT_SEE_ORIGINAL",
+  "files": [
+    {
+      "path": "LICENSE",
+      "SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "SHA256": "3ddb039579f71f0508427915532d1150bec5045f3f45f1b0e445d36b1ad1a79f",
+      "bytes": 4298,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/README.md"
+    },
+    {
+      "path": "src/__init__.py",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/__init__.py"
+    },
+    {
+      "path": "src/config.py",
+      "SHA256": "4b6785659913fdc7b42ac05440f374152007b46dc8a3334f7bc24b24fa5b4cfb",
+      "bytes": 977,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/config.py"
+    },
+    {
+      "path": "src/icr_probe.py",
+      "SHA256": "fed2e85beed91715af61adf5cef3c339c8495114bd77c10b6e1c958a59fe6ca2",
+      "bytes": 6079,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/icr_probe.py"
+    },
+    {
+      "path": "src/icr_score.py",
+      "SHA256": "e0af974d382f7219d5d1fbbc7b465a66a8425cc12fb5bbc8d82bea086ce90ce2",
+      "bytes": 12606,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/icr_score.py"
+    },
+    {
+      "path": "src/utils.py",
+      "SHA256": "e87d0e360dd01efa49dc4bcb852f6b1b2c88dfe5f18897c762741bcdd2bc5406",
+      "bytes": 1796,
+      "source_url": "https://github.com/XavierZhang2002/ICR_Probe/blob/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/utils.py"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false
+}

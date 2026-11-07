@@ -1,0 +1,8 @@
+{
+  "method_key": "global_mean",
+  "level": "prefix",
+  "layers": "all",
+  "seed": 42,
+  "select_weights_by_val_auroc": true,
+  "score_sign": 1
+}

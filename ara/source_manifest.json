@@ -1,0 +1,827 @@
+[
+  {
+    "source": "workspaces/streaming_hd/baseline/README.md",
+    "destination": "code/baselines/README.md",
+    "source_SHA256": "ac8038757c4c57590d5dce965fa241967206f2c17802081d0f43ae018f310cab"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/kernel.py",
+    "destination": "code/baselines/llm_check/kernel.py",
+    "source_SHA256": "961f8195cb4fe5c60630837a418cdadb955be96a282486dc4183e2949fe7e7e8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/attention.py",
+    "destination": "code/baselines/icr_probe/attention.py",
+    "source_SHA256": "d7d7e77164a751102aa79f0ac414e35f8725e7c497f28fa64bf0fdd04981a591"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/kernel.py",
+    "destination": "code/baselines/icr_probe/kernel.py",
+    "source_SHA256": "7e6f7e7906b3d21ac0be7e687ee5daabebe5d5d5a5e105c30cc8d3dc9b6a7ddd"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rede/READINESS_REVIEW_20261102.md",
+    "destination": "code/baselines/rede/READINESS_REVIEW_20261102.md",
+    "source_SHA256": "e24f282f0df6f943359ca7d4e4c509fcdb477173039e3ba734732c0ad9c11956"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rede/kernel.py",
+    "destination": "code/baselines/rede/kernel.py",
+    "source_SHA256": "bcb473ef7a6ff57be5b6222e358b9d95b4fff5d708b2dfc96226f30ee4ed664b"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/detector_kernel.py",
+    "destination": "code/baselines/ars/detector_kernel.py",
+    "source_SHA256": "a2c585ff3c1b70928df48a78c5067ac11dcdd06a8ad5c72cd63c11f8c691f068"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/kernel.py",
+    "destination": "code/baselines/ars/kernel.py",
+    "source_SHA256": "2cbfebdad6d7397a1ef9717f357b98f5ce6f787d4987fafeb669f238a77b0f00"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/saplma/kernel.py",
+    "destination": "code/baselines/saplma/kernel.py",
+    "source_SHA256": "5ce48a47e0b2268dabd0353b82e236b2886ecc2447281bbb5a71b29abf4d0580"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/adapter.py",
+    "destination": "code/baselines/race/adapter.py",
+    "source_SHA256": "1ec9ed7c35778152c02affd4eddb8b834442785623c2e901567ed5975cbe17a8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/READINESS_REVIEW_20261102.md",
+    "destination": "code/baselines/rhd/READINESS_REVIEW_20261102.md",
+    "source_SHA256": "0ce06a8a436f948b8547b8fbf5206215dbdd63eba822daa95f65ff5b0af55057"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/kernel.py",
+    "destination": "code/baselines/streaming/kernel.py",
+    "source_SHA256": "92e2aa5601fc771b2c5d97163c6e97615c038d9db55f59ddd5ad431d54c3fd25"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/kernel.py",
+    "destination": "code/baselines/hami/kernel.py",
+    "source_SHA256": "22f67954021b1bfd835f86397e6db667d60eb8aef3e19556a32d0ca4ea22b25f"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/global_mean/kernel.py",
+    "destination": "code/baselines/global_mean/kernel.py",
+    "source_SHA256": "423a9ddf14a2103e34e02b2cec9e3306834e76ac56868a306080fcfb04973b6c"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/PROVENANCE.json",
+    "destination": "code/baselines/llm_check/upstream/PROVENANCE.json",
+    "source_SHA256": "74673aa4a14351875279c2e56380e15b81a6a1897be9fda6f86dbcf20c546706"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/run_detection_combined.py",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/run_detection_combined.py",
+    "source_SHA256": "5697ca20452c643dccc0affeef6e84778697946f072d90a592bb13d488fbe6f5"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_ragtruth.py",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_ragtruth.py",
+    "source_SHA256": "62956d6852855808354174a16d9f0225aeed79d1ef420af74dccde5e7dd27476"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/README.md",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/README.md",
+    "source_SHA256": "5c2572ca1fbeb05dec8bcae8c828f745e64cd1061744fcb23ed60d2fbaa297d8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/LICENSE",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/LICENSE",
+    "source_SHA256": "8df29c8068b40c1791fd17f1d4bf52982ca5c2931562ed064f094c8053d3dc51"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_fava.py",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_fava.py",
+    "source_SHA256": "2a6f87a47509f4f665f668ceb68dd8011cddffe38f4d5dcd61a2977222908688"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_selfcheck.py",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_selfcheck.py",
+    "source_SHA256": "7370160ab5c182d0fc9ca333ab06f3eb9540c1892a8b4cc7239c6575034e38ef"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/common_utils.py",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/common_utils.py",
+    "source_SHA256": "88cecd5336fe127ffc9a53ffbca290df3648180ccd0246890ef82eda24899dde"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/run.sh",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/run.sh",
+    "source_SHA256": "46d3eeb4ed6602f192000d63cd8237c1886db38138afb1306418a8af0d41b48c"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/environment.yml",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/environment.yml",
+    "source_SHA256": "63ea0bc4f1f96bc055f7944464d6670cc9fa7dbee9fbe94aa94581af97e4ad5c"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_fava_annotated.py",
+    "destination": "code/baselines/llm_check/upstream/2f3bf9ea6db19e60a416090f77694816c92a9146/utils_fava_annotated.py",
+    "source_SHA256": "5f8e47dac1d3473835ab614ae7576992df90c546bfa0fbf3a1e025c6c8a0d9ac"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/PROVENANCE.json",
+    "destination": "code/baselines/icr_probe/upstream/PROVENANCE.json",
+    "source_SHA256": "92a07b14da8b9fab380ad29e610ed1379055b10b820f1116a83806d0881737c7"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/README.md",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/README.md",
+    "source_SHA256": "3ddb039579f71f0508427915532d1150bec5045f3f45f1b0e445d36b1ad1a79f"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/LICENSE",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/LICENSE",
+    "source_SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/icr_score.py",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/icr_score.py",
+    "source_SHA256": "e0af974d382f7219d5d1fbbc7b465a66a8425cc12fb5bbc8d82bea086ce90ce2"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/icr_probe.py",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/icr_probe.py",
+    "source_SHA256": "fed2e85beed91715af61adf5cef3c339c8495114bd77c10b6e1c958a59fe6ca2"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/config.py",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/config.py",
+    "source_SHA256": "4b6785659913fdc7b42ac05440f374152007b46dc8a3334f7bc24b24fa5b4cfb"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/utils.py",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/utils.py",
+    "source_SHA256": "e87d0e360dd01efa49dc4bcb852f6b1b2c88dfe5f18897c762741bcdd2bc5406"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/__init__.py",
+    "destination": "code/baselines/icr_probe/upstream/40ec490e762cadbac6bcefdc24a8f0d5974e8448/src/__init__.py",
+    "source_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/PROVENANCE.json",
+    "destination": "code/baselines/ars/upstream/PROVENANCE.json",
+    "source_SHA256": "b7ae805795359cf252d22ee9fdd00af3c362a50d96d8e8c6014c079791ebb253"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/README.md",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/README.md",
+    "source_SHA256": "963819e7a78c04ec8d442129c136d4c306137b9b6840553b73d4b285a78c73a9"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/requirements.txt",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/requirements.txt",
+    "source_SHA256": "f2bc84e27266afd0dce534ba0bb9000f607905087e52baf33fd92fc1607fcafa"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/generation_and_judge/generation_and_judge.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/generation_and_judge/generation_and_judge.py",
+    "source_SHA256": "324c4d765d5796acde889b849f5671051b252ba864a41eaf2afd5eeec6307355"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/variant_generation_and_judge/variant_generation_and_judge.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/variant_generation_and_judge/variant_generation_and_judge.py",
+    "source_SHA256": "c1df1a9bc4740da5b2574bf72b1b4940f1943cd6a0fb85c3c3ec0ea3cf7b6bc4"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/extracting/extract_label.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/extracting/extract_label.py",
+    "source_SHA256": "286bc98071f56683b4b1d59ed1f1bdf3933a3ad9d252127cced6c33e07376e71"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/extracting/extract_embeddings.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/extracting/extract_embeddings.py",
+    "source_SHA256": "8c14eb30f4847b5271437c5cc693d25accc24c3208f90bfabbed66812bdcf8d2"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/train_ars/train_ARS.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/train_ars/train_ARS.py",
+    "source_SHA256": "8f07cd6f18a121eeed2eedc4ab70fae519503d2d3081831e321b95558d0a1140"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_haloscope.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_haloscope.py",
+    "source_SHA256": "e72540d0bb8293a717dac9ae703bb61a321f446690ce1c1f06e67ce1260afdbd"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_ccs.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_ccs.py",
+    "source_SHA256": "2300f591df2d0f3c22ca3cc24ddf1c946dd276217a69fa79ac09d13f15fe14c4"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/test_eigenscore.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/test_eigenscore.py",
+    "source_SHA256": "455573764ca23107a1894fc7c4fbb6802d8c44b13fe5f7d34c1c4c196031df70"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_probing.py",
+    "destination": "code/baselines/ars/upstream/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_probing.py",
+    "source_SHA256": "0129f12c393ed671995ed7af8da30408b10396f118f859d72b2b197cbfb71daf"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/PROVENANCE.json",
+    "destination": "code/baselines/race/upstream/PROVENANCE.json",
+    "source_SHA256": "6e476f31a0b0d2c222d9e685b13c3eea33fc9be7c30027ac50bbd3fa25129ed1"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/README.md",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/README.md",
+    "source_SHA256": "3bf87c2f84f6a4e02bf288e7f23bd3e5376f012324beb260e6e25f2c6943e523"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/cot_extraction.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/cot_extraction.py",
+    "source_SHA256": "323f86be12ab8883cd73e41d7d5ec90f1275735b68cbeb23b15b4b5a9f893482"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/datasum_prompt.txt",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/datasum_prompt.txt",
+    "source_SHA256": "eff9dfaa2628d3d1e47adbe7e3dd790536b9480eee964415e4a62d76b84e85a8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/main.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/main.py",
+    "source_SHA256": "8e24436a56b79cfd1d289bb19e7302955eb1c4a76f985ec985003371116f3b09"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/eval.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/eval.py",
+    "source_SHA256": "c34f58317d39b5367cec6005fdd64b31e097b167767327ac8e298b537b5d65c7"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/requirements.txt",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/requirements.txt",
+    "source_SHA256": "1c8c642efb98590f1ce06c6e59e85f7f25fc57c326b54c3019d0fbb59985688f"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/RACE.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/RACE.py",
+    "source_SHA256": "cf4000464bd3991cfb9dc6f5f4f0cd74de0f0debd42bfcbabe22e97657d3ec92"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/run.sh",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/run.sh",
+    "source_SHA256": "dbd2d36793ddf3f90337cfd1d1a291df63e69b7ddaff5857f722459f66974718"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/generate.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/generate.py",
+    "source_SHA256": "f4cde1311e757776ad7e3d4dd3354112ce7f08521406c9e2c9daa227a5885567"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft.sh",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft.sh",
+    "source_SHA256": "b25877307b700d1eb6e0edd651f920c745095a4e1c0f383534ae4647271789fd"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft_train.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft_train.py",
+    "source_SHA256": "93673bd8429fd49878eaf78a3a9dc7e9bf3d3e9e0635cdc9309f636a57abc80a"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/utils.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/utils.py",
+    "source_SHA256": "f2f88f19b79cf4c8c3a44d74e1494cfcf3af86e6408551f56f58802e0b0c588a"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft_dataset.py",
+    "destination": "code/baselines/race/upstream/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft_dataset.py",
+    "source_SHA256": "61fa41923820941892de910e1e2662417a65048c974a4d0f6948983991785b1a"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/PROVENANCE.json",
+    "destination": "code/baselines/rhd/upstream/PROVENANCE.json",
+    "source_SHA256": "27cd3987947cfff73f2256849390287feb7235ad034061c5ad72c49aae629af4"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/Readme.md",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/Readme.md",
+    "source_SHA256": "6128abe5749ecf350ad642b4ae234579d3e6ad84e650327fdd316f39aacc291f"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_detection.sh",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_detection.sh",
+    "source_SHA256": "46ebf7e836d08a787d0e51e72335cb1c43589344e3f32d2e0a7fbe5427421e53"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_score.py",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_score.py",
+    "source_SHA256": "7041bafb7147a39d418cab871d7522d5281c81162184e21f141f69d033ced1f4"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_eval_task2.py",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_eval_task2.py",
+    "source_SHA256": "6d667bacc898588280adc4da58580f4ce1b0fcef0751f75f4489a5ce825f8350"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_detection.py",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_detection.py",
+    "source_SHA256": "c65a46ca3603e9bfd227d91416351d68c127c354151a01d95a11aff43dbaa4b9"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_eval.sh",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_eval.sh",
+    "source_SHA256": "9128343adc833da1f98f8a346ecbbb4eed3c2fa32d102beb5dabec8f9b899022"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_eval_task1.py",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/hallucination_eval_task1.py",
+    "source_SHA256": "6d433c2062d9be42114d1df11798d6008bfa58b994e77814c25ae7f914323cb7"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_score.sh",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/run_hallucination_score.sh",
+    "source_SHA256": "5d38f0b005e1605c2384aedf745113a44406d878da5db64cfacf7b0eab9165ec"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/utils/get_hidden_score.py",
+    "destination": "code/baselines/rhd/upstream/00c1946382301aa9432609ac605f7876c545e545/RHD/utils/get_hidden_score.py",
+    "source_SHA256": "5dfc2bd3af3fdb7d2350c279357410c1de1aac536f73428f6d19ecc34ab51d39"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/DEPENDENCY_PROVENANCE.json",
+    "destination": "code/baselines/rhd/dependencies/upstream/DEPENDENCY_PROVENANCE.json",
+    "source_SHA256": "abaa8d4250f60b8e513a9215bb6de01206e88d476b72bb0afe83838a0b5e8781"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/requirements.txt",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/requirements.txt",
+    "source_SHA256": "a1e3bbd900cb16d7bef57f8986c67eedbc5bd1b54fbca4eadc19b6370634c122"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/LICENSE",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/LICENSE",
+    "source_SHA256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/pyproject.toml",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/pyproject.toml",
+    "source_SHA256": "e745d3449adfeb005687e5302b40ea7b445c8f900bf9b07bcdaf222e7b1da734"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/setup.py",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/setup.py",
+    "source_SHA256": "355ac52cdf5ad8bfaf3d3d7a52c995c853512c3bbf4b70b81a84689d110449b8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/__init__.py",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/__init__.py",
+    "source_SHA256": "c61e4866cd431e9ae2c2c4e09a8d3e7e9e451614192b1ade0c0baf41221ffb31"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/llama/configuration_llama.py",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/llama/configuration_llama.py",
+    "source_SHA256": "ddd8c9e9de29965a4294a64dff6dc17f0950c88d68eaff4faeb9f3b0933f3784"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/llama/modeling_llama.py",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/llama/modeling_llama.py",
+    "source_SHA256": "9ed32174c3e625dd518598944bbc3221f07fc1400b1fbdd011f75c04ac848ba5"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/qwen2/modeling_qwen2.py",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/qwen2/modeling_qwen2.py",
+    "source_SHA256": "c00a159aeb4aff17d311b263e718c7d306fa95d7e575b5fe2673a1c9b5ec81f7"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/qwen2/configuration_qwen2.py",
+    "destination": "code/baselines/rhd/dependencies/upstream/00c1946382301aa9432609ac605f7876c545e545/transformers/src/transformers/models/qwen2/configuration_qwen2.py",
+    "source_SHA256": "b2475f4f3e2c2c26f5cf9058897a224cad3e7cfa11e71aba4201747dd36c2b17"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/PROVENANCE.json",
+    "destination": "code/baselines/streaming/upstream/PROVENANCE.json",
+    "source_SHA256": "f003ce7fd009fd11d291b3d25b71888bc8b63e65486791dbac94bf7f993ca2d7"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/README.md",
+    "destination": "code/baselines/streaming/upstream/README.md",
+    "source_SHA256": "df4ff88b42c8fcc5e58e25ec454a7b35a20eddd4a3f5edf45ce1716dc3f19792"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/README.md",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/README.md",
+    "source_SHA256": "c32fd6bbfe3b3b6b6aadd528e133320bc9bf0f3d5331c917f5247d682e03366b"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/LICENSE",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/LICENSE",
+    "source_SHA256": "494d2deb6e946aefa0ce17b976448a1fe687df2ecfed10028a62e73e26030952"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/pyproject.toml",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/pyproject.toml",
+    "source_SHA256": "8ac59b5074e61e21acbd752214d991051f7b9ec32dc86e8201029226abc387e3"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/process.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/process.py",
+    "source_SHA256": "725c9728d347e4c5e2ea2b1a2c6ff85fa8190eb95d0a0475b69b34298e376e71"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/train.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/train.py",
+    "source_SHA256": "e10af1aaad193d9fc774a0715d21c4c1f528f023c301bc323a4301ea463900ed"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/extract_features.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/extract_features.py",
+    "source_SHA256": "e9fb35437b026390a5e32a92943456f9d7ddc5f43a9198b7fc7f2a236d6c0245"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/visualize.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/visualize.py",
+    "source_SHA256": "9e526ea72ca77321b3f4172231cc1daa362a60069d148cc5c7bfcf6cdd39fab4"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/train_teacher.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/src/train_teacher.py",
+    "source_SHA256": "03fc2a272244cd1e9d1d5953f50bf9a01939ea36d12fbc83ae2ae20ffbdcd75e"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/advanced_validation.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/advanced_validation.py",
+    "source_SHA256": "df47596e1fd55bc927bf6f170d46c447a5b1c76995186eef9025cdc54db8e91c"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/compare_datasets.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/compare_datasets.py",
+    "source_SHA256": "0b985c41893ef629ebd4be7395087279d04de2be38b2207373a0933d5fb66fa1"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/analyze_tags.py",
+    "destination": "code/baselines/streaming/upstream/e7c7aa2df348a6212c1e7f13fdb5366936f219d3/tag_validation/analyze_tags.py",
+    "source_SHA256": "8eb1db1c7e3755b5180ea3e87d7ced74b1e3aca4985df49a86423e741752e693"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/adapters/llama/README.md",
+    "destination": "code/baselines/streaming/adapters/llama/README.md",
+    "source_SHA256": "deaa8794c23ad09ad4af72464e06e0b83be7e9cc39ad8aff81a6a524dbf64b85"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/adapters/deepseek/README.md",
+    "destination": "code/baselines/streaming/adapters/deepseek/README.md",
+    "source_SHA256": "6d07ed6ba1939c25e733655c2e530480332f90530b0ced5382e115d8464a58f7"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/streaming/adapters/qwen/README.md",
+    "destination": "code/baselines/streaming/adapters/qwen/README.md",
+    "source_SHA256": "feee3122c94133b04cbe1088ed2aec71c119abceb42fa4bc121c996644ddb3e8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/PROVENANCE.json",
+    "destination": "code/baselines/hami/upstream/PROVENANCE.json",
+    "source_SHA256": "0fa2a32561ded4b8fae405df4d02b1f3b87c3eab9c9d245b14fdc7d76c02de65"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/README.md",
+    "destination": "code/baselines/hami/upstream/README.md",
+    "source_SHA256": "5a21607ff8db090c40d811c1555ccebc0af733ad80327e76001f5dee0907de04"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/validate.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/validate.py",
+    "source_SHA256": "ac7a41b61a0bb062ae77a58a303c173d4646cdc40dc8a8d8d77eadbc409093de"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/README.md",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/README.md",
+    "source_SHA256": "003ef1842b3ab387155c5b3e6150fe5a077fbfec742b714701745540b52f2750"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/train.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/train.py",
+    "source_SHA256": "da02a3cdb6693f332045d416664d86e8b6c890cdc3fc6e5e3d93aefc53a536a8"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/main.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/main.py",
+    "source_SHA256": "9ad0effffc334c321bf76e0bdb331188fbb8843b69f4ffe20b183939a62eb090"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/hami.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/hami.py",
+    "source_SHA256": "f447969bc46daf8ed5baf56d2909b390c1fe607f53f6f03501898e6866919c87"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/utils.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/utils.py",
+    "source_SHA256": "1810342dafd95c6962250ad2a7258864ee1cda610eac75a1304c0a5685641cc6"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/requirements.yml",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/requirements.yml",
+    "source_SHA256": "1e36e64f96876b02a0008eb5de7f54ae8095feced2b9bd8e99de49b5bf60cb3b"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/evaluate_correctness.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/evaluate_correctness.py",
+    "source_SHA256": "43bbfba055cf3215b68789771aca4925c986fe0d624c248d4009cbbc1f0db93e"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/compute_entailment.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/compute_entailment.py",
+    "source_SHA256": "e83c250410d7e9901435c824bd7dc3645bf4d4d48c8340c59b2eee87abc8c006"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/generate_answers.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/generate_answers.py",
+    "source_SHA256": "48e5196abab83ec9256f20de39b085b50e540f883001c4f8669064be2cff9f89"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/openai.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/openai.py",
+    "source_SHA256": "a1acff5d00d3f9d7e779791685cecdd3abaa21ffb858a2ec824b78aaeccf5639"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/eval_utils.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/eval_utils.py",
+    "source_SHA256": "0a8edac6ad6dcd3a240990c7f3ef659c9300ac4f6187d178e3d35be5ecc3d445"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/utils.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/utils/utils.py",
+    "source_SHA256": "c04a74e200237048f5ebc4c19d802de7499e8761febcc2a0b8119ddc1b525f70"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/uncertainty_measures/semantic_entropy.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/uncertainty_measures/semantic_entropy.py",
+    "source_SHA256": "e1c5b75d100cc85b46525560cd49c8f3d3f1e6f6c61bbd99a073485bda1c0f38"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/base_model.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/base_model.py",
+    "source_SHA256": "8dae269ec2c5967bdc2299a3287a0edc2888c7b32085ddc56019cadac1d5cd32"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/__init__.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/__init__.py",
+    "source_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "workspaces/streaming_hd/baseline/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/huggingface_models.py",
+    "destination": "code/baselines/hami/upstream/3d277605534999d2756a6eeef759d0a91199ad58/generation/uncertainty/models/huggingface_models.py",
+    "source_SHA256": "18cb43ef73c0f222a36b8d8db477502c0c08483c32f69ce60dfc0d1dfe108a6b"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/joint_step_prefix/README.md",
+    "destination": "code/ours/joint_step_prefix/README.md",
+    "source_SHA256": "556f54ea6f94354345f56160796f7c8a03a764fe67475bd39572769a3c4550ba"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/joint_step_prefix/validate_joint_three_level.py",
+    "destination": "code/ours/joint_step_prefix/validate_joint_three_level.py",
+    "source_SHA256": "f43cb36843533898f38d5920d36de619dd3dcae9aac9afa2c6a068bec4b7dfc3"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/joint_step_prefix/train_joint.py",
+    "destination": "code/ours/joint_step_prefix/train_joint.py",
+    "source_SHA256": "27549d91b56cd8dde13ea8632af979992e36f2957ac93c1a01ead256fd5ec0bc"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/joint_step_prefix/train_joint_three_level.py",
+    "destination": "code/ours/joint_step_prefix/train_joint_three_level.py",
+    "source_SHA256": "5561d716ebe6f1a61a4c993f71f07f149beab2fff00c87fc9672b5143f1e9a55"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/prefix_content_relation_gate/README.md",
+    "destination": "code/ours/prefix_content_relation_gate/README.md",
+    "source_SHA256": "89bc0d6f35b68649a9e97bbe9581500886dd2a868187d6aebd40c17731ed8871"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/prefix_content_relation_gate/train_prefix_content_relation.py",
+    "destination": "code/ours/prefix_content_relation_gate/train_prefix_content_relation.py",
+    "source_SHA256": "e0cbc1ff609464430a9227e05fa9b2de6b384b668712b09e8d00d533243e7609"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/prefix_content_relation_gate/validate_and_report.py",
+    "destination": "code/ours/prefix_content_relation_gate/validate_and_report.py",
+    "source_SHA256": "77c1cf10a6aa789977a959b7344bf276dc8e710ea12b793847ea68ba54bb02f2"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_relation_residual/README.md",
+    "destination": "code/ours/step_token_relation_residual/README.md",
+    "source_SHA256": "247ca0e49c1d505e861277458911b41a3b6655194b769e9787d7bc44fc21c00b"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_relation_residual/validate_key_value_and_report.py",
+    "destination": "code/ours/step_token_relation_residual/validate_key_value_and_report.py",
+    "source_SHA256": "82808c1eb8525a53b5731dbc23fe42ea63c4b582abe45e5edbce2c266e579e6d"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_relation_residual/train_step_relation_residual.py",
+    "destination": "code/ours/step_token_relation_residual/train_step_relation_residual.py",
+    "source_SHA256": "b5eece21c2a89217cd27d6b78864c17a13cf83d83c35f2b31ad35b5458ca44bc"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_relation_residual/validate_and_report.py",
+    "destination": "code/ours/step_token_relation_residual/validate_and_report.py",
+    "source_SHA256": "4e827446d1b26c6bddaff53cdc8fcee0cc94523ba15b9bdb495d4e7715c58436"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/direct_mlp_prefix/README.md",
+    "destination": "code/ours/direct_mlp_prefix/README.md",
+    "source_SHA256": "242dbaf24549eb17de5c2b1c3c7e019bc71a78356e96d55e7c9c3f9f482179c5"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/direct_mlp_prefix/train_direct_mlp.py",
+    "destination": "code/ours/direct_mlp_prefix/train_direct_mlp.py",
+    "source_SHA256": "59666a3dc48cc3d5ef1d9b1d5af4ddabe045fbe6ab788afc590e5b0bfa1bd6f5"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation_representation/README.md",
+    "destination": "code/ours/learnable_aggregation_representation/README.md",
+    "source_SHA256": "2894329d8ab775c8ee0449b6bb927cbc0a8cef59cc19137f2497870dbdd14b61"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation/train_step.py",
+    "destination": "code/ours/learnable_aggregation/train_step.py",
+    "source_SHA256": "c7a455a0622c66e6ac0a0a471669423e760c5e3b4d8601e785825ee1e0a3621c"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation/README.md",
+    "destination": "code/ours/learnable_aggregation/README.md",
+    "source_SHA256": "090fd95a3bb5675300e87b4f2635b277e54fc31a56567015b647beed27e1218e"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_standard_self_attention/validate_width_ablation.py",
+    "destination": "code/ours/step_standard_self_attention/validate_width_ablation.py",
+    "source_SHA256": "6ce2a887f0ebee20b98ec8e487c4641411ea93e5c5de00777db913dfd685fc43"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_standard_self_attention/README.md",
+    "destination": "code/ours/step_standard_self_attention/README.md",
+    "source_SHA256": "162134f74fe8ad603cae1b73a383a52996e5c49e79b5d0184aa69ab28910f789"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_standard_self_attention/verify_width_smoke.py",
+    "destination": "code/ours/step_standard_self_attention/verify_width_smoke.py",
+    "source_SHA256": "700dd24e3879e9efc3deeceaeb4a066ebb99f9078a180e19b05d4bd951837be5"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_standard_self_attention/train_step_attention.py",
+    "destination": "code/ours/step_standard_self_attention/train_step_attention.py",
+    "source_SHA256": "d8d0e160582cafe37ae32db494c69eaee2b0f5c1668571adf0dee2a9b499fd1d"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_standard_self_attention/validate_and_report.py",
+    "destination": "code/ours/step_standard_self_attention/validate_and_report.py",
+    "source_SHA256": "2a609312ca696db2cc6dc70589244cc1ae747fc2bda5658fe163bc57d87d3bdb"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/prefix_transition/README.md",
+    "destination": "code/ours/prefix_transition/README.md",
+    "source_SHA256": "9bc00553c10ae23c04b09efaf8617b386115a4a588b23f6b0cc1d65d5d6ca423"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/prefix_transition/validate_full_vector_gate.py",
+    "destination": "code/ours/prefix_transition/validate_full_vector_gate.py",
+    "source_SHA256": "2f3d5f4cb990f104cf790fe239d11e5935a3369fcfb846fdb9947db3869ffcfa"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/prefix_transition/full_vector_prefix_gate.py",
+    "destination": "code/ours/prefix_transition/full_vector_prefix_gate.py",
+    "source_SHA256": "b8c53077527ed19c395c2350e39dc2dc6aad5a6615e2372e6b821f8f05002638"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_content_relation/validate_content_and_report.py",
+    "destination": "code/ours/step_token_content_relation/validate_content_and_report.py",
+    "source_SHA256": "77135e7794d29d27ebdd8a9fc70c015433554c110775853ec2bbe36fae02ea3d"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_content_relation/train_step_content_relation.py",
+    "destination": "code/ours/step_token_content_relation/train_step_content_relation.py",
+    "source_SHA256": "a3f681ef66d9cea5548c8cb4bdcee4a81f96ece33ca5bd0745e65de6fc6806d7"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/step_token_content_relation/README.md",
+    "destination": "code/ours/step_token_content_relation/README.md",
+    "source_SHA256": "19c67fec302fd756ce5de069c193e391b736d5a69216793b627b211ae1df863f"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation_representation/recovered_20261027/shared_representation.py",
+    "destination": "code/ours/learnable_aggregation_representation/recovered_20261027/shared_representation.py",
+    "source_SHA256": "bd186ccb4b9548855db5613005bbf114c3df85f7eb1127b968e947ceb216122b"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation_representation/hparam_20261027/formal_common.py",
+    "destination": "code/ours/learnable_aggregation_representation/hparam_20261027/formal_common.py",
+    "source_SHA256": "f1e9aae7e55a82c1d823ed7de861a13b84531617def9c57a1ee12d6a7d7eb41a"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation_representation/hparam_20261027/train_all192.py",
+    "destination": "code/ours/learnable_aggregation_representation/hparam_20261027/train_all192.py",
+    "source_SHA256": "45d8e6c772a3a7a9436aa5cdf62b836d8b93aaa63e0e2cad2aca9b0464953876"
+  },
+  {
+    "source": "workspaces/streaming_hd/ours/learnable_aggregation/recovered_20261027/aggregation_only_streaming.py",
+    "destination": "code/ours/learnable_aggregation/recovered_20261027/aggregation_only_streaming.py",
+    "source_SHA256": "172cf14467df162a14abc4a5dd74014cb3fb8b7e33ee2c03ef86559c92f9612a"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/baseline_data.py",
+    "destination": "code/common/baseline_data.py",
+    "source_SHA256": "2ea1c28aefeb321ab1cc5064aee44c0b0535435aebfa6961d9776b65206fa29d"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/baseline_metrics.py",
+    "destination": "code/common/baseline_metrics.py",
+    "source_SHA256": "ca237e615d62a1ae62d59568c303b55328d7b2b94d239bd5199d28825630d89f"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/baseline_io.py",
+    "destination": "code/common/baseline_io.py",
+    "source_SHA256": "731d7e1e73354a4e27329a824fa3d36b92345dcc9d56f392471469ee8e364831"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/source_integrity.py",
+    "destination": "code/common/source_integrity.py",
+    "source_SHA256": "48f4bded2ff92d7e705cdb76a57da1a76850977e267ed635689136d9bbdf80d8"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/__init__.py",
+    "destination": "code/common/__init__.py",
+    "source_SHA256": "3ef413fbfe4da885e4205e61084e0c2111f5bc131e7d021a43e50015662f6167"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/source_layout.py",
+    "destination": "code/common/source_layout.py",
+    "source_SHA256": "9d37139f6c9ee70d8f10bec8cf209dc1bfc2e86fd1645ce8c7e1cac4bbbd02a2"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/baseline_features.py",
+    "destination": "code/common/baseline_features.py",
+    "source_SHA256": "78e0eaa9acaa2217070898cc005e40545e9751f66680d18b370e29e69c77cc56"
+  },
+  {
+    "source": "workspaces/streaming_hd/common/baseline_training.py",
+    "destination": "code/common/baseline_training.py",
+    "source_SHA256": "b835359bc3a4d2329d747de14d0998821719bb0d6b5fd113d0f009c8fdea5d4f"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/native_layers.py",
+    "destination": "code/generation/native_layers.py",
+    "source_SHA256": "a6d65f592d8b3af26629718eb7e9698c824cb26e6d9d0bdd08a048127e367e94"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/feature_pooling.py",
+    "destination": "code/generation/feature_pooling.py",
+    "source_SHA256": "29f0aff0cfc8987027b99bffc118ffd05924c0ba8fd361b9dc0ec2c103f3988b"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/export_native_inputs.py",
+    "destination": "code/generation/export_native_inputs.py",
+    "source_SHA256": "9d05d3769f71a82db14456e584ef95aff029f9931885e72b6bcca4cea25596b9"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/hash_utils.py",
+    "destination": "code/generation/hash_utils.py",
+    "source_SHA256": "9dc5dc959b9ba171abccd2c05ca2827436fc3bd9f52a016630b7c16c9495ee49"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/format_prompt.py",
+    "destination": "code/generation/format_prompt.py",
+    "source_SHA256": "720069d0cb3aa716d0ab0820095e8c836dcc84c3b8d6cc58220ac4cad5c98fa7"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/token_count.py",
+    "destination": "code/generation/token_count.py",
+    "source_SHA256": "ab3e152baf922df5c42397db5c2f8d4632949fb14b6ddb186b6d263cbea671bb"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/generation.py",
+    "destination": "code/generation/generation.py",
+    "source_SHA256": "0e0eb0e8634aae053b529b4c063279009d01eeafba7657d0f1b0394b01595d94"
+  },
+  {
+    "source": "assets/hf_exports/streaming_hd_v1_20261104_622_public/generation/prepare_inputs.py",
+    "destination": "code/generation/prepare_inputs.py",
+    "source_SHA256": "cf44c7f22b1a38e557ba7e5db7eef2d0ef5f3c71b21529936bfb3d930dd2c2c6"
+  },
+  {
+    "source": "workspaces/streaming_hd/pipelines/training/streaming_k2_622_20261106_ds/622/step/observed_lbfgs.py",
+    "destination": "code/baselines/streaming/observed_lbfgs.py",
+    "source_SHA256": "740da90c13f407d2a6d271d82eefcd12113ea947ebfae7f78ebebac31cad83b1"
+  },
+  {
+    "source": "workspaces/streaming_hd/pipelines/training/streaming_k2_622_20261106_ds/622/step/PINNED_TORCH_LBFGS.py",
+    "destination": "code/baselines/streaming/PINNED_TORCH_LBFGS.py",
+    "source_SHA256": "a1bcd0a4650af947d74d73bdc5955860c7fceec84250784e0de82c37ea18f84f"
+  },
+  {
+    "source": "workspaces/streaming_hd/pipelines/training/streaming_k2_622_20261106_ds/622/step/stream_metrics.py",
+    "destination": "code/baselines/streaming/stream_metrics.py",
+    "source_SHA256": "8643958074769cc7973baedbbb6c96c0abc87a9df584e7fbb8e61d431788cd0b"
+  },
+  {
+    "source": "experiments/streaming_hd/runs/streaming_answer_last_prefix_five_splits_20261107/reports/STREAMING_622_P70_RESULTS.md",
+    "destination": "experiments/streaming_622_p70/result/RESULTS.md",
+    "source_SHA256": "777652c84b808e52bd4f3e525b40fe766f4bb72582baf3ec3c93a4767b336dc5"
+  }
+]

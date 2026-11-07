@@ -1,0 +1,81 @@
+{
+  "method": "ars",
+  "official_repo": "https://github.com/radiolab-ntu/ars_icml2026",
+  "commit": "518b83508edbb0e25fa5e71490f135f830c77e4b",
+  "code_root": ".cache/upstream/ars/518b83508edbb0e25fa5e71490f135f830c77e4b",
+  "export_kind": "Metadata only: upstream source files listed below are NOT included in this repository",
+  "license_files": [],
+  "license_status": "NO_LICENSE_FILE_FOUND_DO_NOT_INVENT",
+  "files": [
+    {
+      "path": "README.md",
+      "SHA256": "963819e7a78c04ec8d442129c136d4c306137b9b6840553b73d4b285a78c73a9",
+      "bytes": 7288,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/README.md"
+    },
+    {
+      "path": "detectors/test_eigenscore.py",
+      "SHA256": "455573764ca23107a1894fc7c4fbb6802d8c44b13fe5f7d34c1c4c196031df70",
+      "bytes": 4893,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/test_eigenscore.py"
+    },
+    {
+      "path": "detectors/train_ccs.py",
+      "SHA256": "2300f591df2d0f3c22ca3cc24ddf1c946dd276217a69fa79ac09d13f15fe14c4",
+      "bytes": 9360,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_ccs.py"
+    },
+    {
+      "path": "detectors/train_haloscope.py",
+      "SHA256": "e72540d0bb8293a717dac9ae703bb61a321f446690ce1c1f06e67ce1260afdbd",
+      "bytes": 12923,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_haloscope.py"
+    },
+    {
+      "path": "detectors/train_probing.py",
+      "SHA256": "0129f12c393ed671995ed7af8da30408b10396f118f859d72b2b197cbfb71daf",
+      "bytes": 9021,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/detectors/train_probing.py"
+    },
+    {
+      "path": "extracting/extract_embeddings.py",
+      "SHA256": "8c14eb30f4847b5271437c5cc693d25accc24c3208f90bfabbed66812bdcf8d2",
+      "bytes": 5056,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/extracting/extract_embeddings.py"
+    },
+    {
+      "path": "extracting/extract_label.py",
+      "SHA256": "286bc98071f56683b4b1d59ed1f1bdf3933a3ad9d252127cced6c33e07376e71",
+      "bytes": 2559,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/extracting/extract_label.py"
+    },
+    {
+      "path": "generation_and_judge/generation_and_judge.py",
+      "SHA256": "324c4d765d5796acde889b849f5671051b252ba864a41eaf2afd5eeec6307355",
+      "bytes": 12639,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/generation_and_judge/generation_and_judge.py"
+    },
+    {
+      "path": "requirements.txt",
+      "SHA256": "f2bc84e27266afd0dce534ba0bb9000f607905087e52baf33fd92fc1607fcafa",
+      "bytes": 4921,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/requirements.txt"
+    },
+    {
+      "path": "train_ars/train_ARS.py",
+      "SHA256": "8f07cd6f18a121eeed2eedc4ab70fae519503d2d3081831e321b95558d0a1140",
+      "bytes": 9318,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/train_ars/train_ARS.py"
+    },
+    {
+      "path": "variant_generation_and_judge/variant_generation_and_judge.py",
+      "SHA256": "c1df1a9bc4740da5b2574bf72b1b4940f1943cd6a0fb85c3c3ec0ea3cf7b6bc4",
+      "bytes": 12193,
+      "source_url": "https://github.com/radiolab-ntu/ars_icml2026/blob/518b83508edbb0e25fa5e71490f135f830c77e4b/variant_generation_and_judge/variant_generation_and_judge.py"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false,
+  "distribution": "REFERENCE_ONLY; obtain directly from the original author under its terms",
+  "included_source_files": false
+}

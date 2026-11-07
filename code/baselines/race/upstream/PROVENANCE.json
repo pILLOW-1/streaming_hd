@@ -1,0 +1,93 @@
+{
+  "method": "race",
+  "official_repo": "https://github.com/bebr2/RACE",
+  "commit": "6e9daba1ed87265bd264c5c045fecacfbaaa92fe",
+  "code_root": ".cache/upstream/race/6e9daba1ed87265bd264c5c045fecacfbaaa92fe",
+  "export_kind": "Metadata only: upstream source files listed below are NOT included in this repository",
+  "license_files": [],
+  "license_status": "NO_LICENSE_FILE_FOUND_DO_NOT_INVENT",
+  "files": [
+    {
+      "path": "RACE.py",
+      "SHA256": "cf4000464bd3991cfb9dc6f5f4f0cd74de0f0debd42bfcbabe22e97657d3ec92",
+      "bytes": 24109,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/RACE.py"
+    },
+    {
+      "path": "README.md",
+      "SHA256": "3bf87c2f84f6a4e02bf288e7f23bd3e5376f012324beb260e6e25f2c6943e523",
+      "bytes": 30787,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/README.md"
+    },
+    {
+      "path": "cot_extraction.py",
+      "SHA256": "323f86be12ab8883cd73e41d7d5ec90f1275735b68cbeb23b15b4b5a9f893482",
+      "bytes": 4508,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/cot_extraction.py"
+    },
+    {
+      "path": "eval.py",
+      "SHA256": "c34f58317d39b5367cec6005fdd64b31e097b167767327ac8e298b537b5d65c7",
+      "bytes": 532,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/eval.py"
+    },
+    {
+      "path": "generate.py",
+      "SHA256": "f4cde1311e757776ad7e3d4dd3354112ce7f08521406c9e2c9daa227a5885567",
+      "bytes": 5512,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/generate.py"
+    },
+    {
+      "path": "main.py",
+      "SHA256": "8e24436a56b79cfd1d289bb19e7302955eb1c4a76f985ec985003371116f3b09",
+      "bytes": 3170,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/main.py"
+    },
+    {
+      "path": "requirements.txt",
+      "SHA256": "1c8c642efb98590f1ce06c6e59e85f7f25fc57c326b54c3019d0fbb59985688f",
+      "bytes": 150,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/requirements.txt"
+    },
+    {
+      "path": "run.sh",
+      "SHA256": "dbd2d36793ddf3f90337cfd1d1a291df63e69b7ddaff5857f722459f66974718",
+      "bytes": 890,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/run.sh"
+    },
+    {
+      "path": "train/sft.sh",
+      "SHA256": "b25877307b700d1eb6e0edd651f920c745095a4e1c0f383534ae4647271789fd",
+      "bytes": 784,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft.sh"
+    },
+    {
+      "path": "train/sft_dataset.py",
+      "SHA256": "61fa41923820941892de910e1e2662417a65048c974a4d0f6948983991785b1a",
+      "bytes": 2310,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft_dataset.py"
+    },
+    {
+      "path": "train/sft_train.py",
+      "SHA256": "93673bd8429fd49878eaf78a3a9dc7e9bf3d3e9e0635cdc9309f636a57abc80a",
+      "bytes": 1996,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/sft_train.py"
+    },
+    {
+      "path": "train/utils.py",
+      "SHA256": "f2f88f19b79cf4c8c3a44d74e1494cfcf3af86e6408551f56f58802e0b0c588a",
+      "bytes": 1122,
+      "source_url": "https://github.com/bebr2/RACE/blob/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/train/utils.py"
+    },
+    {
+      "path": "datasum_prompt.txt",
+      "source_url": "https://raw.githubusercontent.com/bebr2/RACE/6e9daba1ed87265bd264c5c045fecacfbaaa92fe/datasum_prompt.txt",
+      "bytes": 1604,
+      "SHA256": "eff9dfaa2628d3d1e47adbe7e3dd790536b9480eee964415e4a62d76b84e85a8"
+    }
+  ],
+  "data_or_model_downloaded": false,
+  "executed_upstream_code": false,
+  "distribution": "REFERENCE_ONLY; obtain directly from the original author under its terms",
+  "included_source_files": false
+}

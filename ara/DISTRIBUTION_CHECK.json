@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_BUNDLES_EXCLUDED",
+  "redistributed_upstream": {
+    "streaming": "MIT; license included",
+    "icr_probe": "Apache-2.0; license included"
+  },
+  "reference_only": [
+    "llm_check",
+    "hami",
+    "ars",
+    "race",
+    "rhd"
+  ],
+  "notes": [
+    "Reference-only upstream directories contain README and metadata only, no upstream Python or license text.",
+    "HaMI and ARS kernel files are local-dependency import wrappers, not exported upstream definitions.",
+    "LLM-Check project kernel computes a scalar log-diagonal statistic with validation; the original upstream implementation is not bundled.",
+    "RHD patched Transformers source is not bundled.",
+    "No rejected Git tree is used as a base or parent of the final release tree."
+  ]
+}
