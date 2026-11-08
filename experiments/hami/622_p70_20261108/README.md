@@ -12,6 +12,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | deepseek_r1_distill_llama_8b | Factuality | step | 8 | 82.91 | 52.16 | 14.29 | 72.97 | 48.89 |
 | deepseek_r1_distill_llama_8b | Logic | step | 22 | 89.77 | 29.53 | 14.89 | 93.28 | 37.33 |
+| deepseek_r1_distill_llama_8b | Multi-hop | step | 15 | 83.14 | 46.26 | 12.10 | 85.07 | 47.36 |
 | gemma_4_31b_it | Factuality | step | 40 | 79.46 | 21.42 | 12.10 | 93.98 | 25.43 |
 | qwen3_8_27b | Factuality | step | 46 | 87.35 | 41.74 | 13.99 | 85.32 | 46.90 |
 
