@@ -13,6 +13,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | deepseek_r1_distill_llama_8b | Factuality | answer | 28 | 61.35 | 76.66 | 2.86 | 70.00 | 82.35 |
 | deepseek_r1_distill_llama_8b | Logic | answer | 28 | 45.81 | 39.99 | 5.63 | 34.50 | 51.30 |
 | deepseek_r1_distill_llama_8b | Multi-hop | answer | 28 | 54.20 | 69.65 | 3.40 | 64.19 | 78.19 |
+| gemma_4_31b_it | Logic | answer | 53 | 41.88 | 12.82 | 0.00 | 16.50 | 25.78 |
 | qwen3_8_27b | Factuality | answer | 56 | 72.60 | 62.57 | 2.35 | 51.23 | 62.07 |
 
 Detector weights are not included in this incremental release.
