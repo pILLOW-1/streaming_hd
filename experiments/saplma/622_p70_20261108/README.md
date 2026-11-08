@@ -26,6 +26,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Logic | step | 35 | 84.36 | 22.77 | 18.22 | 96.96 | 21.05 |
 | gemma_4_31b_it | Math | prefix | 38 | 80.19 | 74.57 | 8.87 | 70.17 | 72.88 |
 | gemma_4_31b_it | Math | step | 37 | 81.76 | 30.88 | 12.50 | 88.94 | 35.17 |
+| gemma_4_31b_it | Multi-hop | answer | 23 | 90.25 | 72.87 | 23.26 | 87.39 | 67.42 |
 | gemma_4_31b_it | Multi-hop | prefix | 33 | 76.96 | 63.62 | 10.11 | 66.58 | 64.77 |
 | gemma_4_31b_it | Multi-hop | step | 34 | 84.72 | 48.49 | 29.38 | 92.97 | 46.63 |
 | gemma_4_31b_it | Science | prefix | 43 | 81.20 | 64.59 | 8.31 | 69.66 | 63.26 |
