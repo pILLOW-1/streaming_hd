@@ -1,3 +1,15 @@
 # LLM-Check
 
-The initial result has been withdrawn: raw Attention Scores were not negated as required by the official evaluation notebook. Corrected own-VAL layer/threshold selection and selected-TEST evaluation are pending. No valid result is currently reported.
+Baseline evaluation on the selected 6:2:2 assignment. TEST targets trajectories with repeated Prefix 1→0 transitions (target p ≥ 70%, with the frozen domain-specific relaxations).
+
+Each model/domain/level is independent. We select layers and detector weights on complete VAL AUROC, breaking ties by VAL AP, then freeze a VAL F1max threshold and evaluate TEST once. TPR@1%FPR is the maximum empirical TEST ROC TPR at FPR ≤ 1%, without interpolation. Higher scores indicate hallucination.
+
+## Completed results
+
+Metrics below are percentages. JSON preserves unrounded values, thresholds and confusion counts. New rows are added only after saved-score checks pass.
+
+| Model | Domain | Level | Layer | AUROC | AP | TPR@1%FPR | ACC | F1 |
+|---|---|---|---:|---:|---:|---:|---:|---:|
+| gemma_4_31b_it | Factuality | prefix | 46 | 55.00 | 31.32 | 0.17 | 47.38 | 48.52 |
+
+Detector weights are not included in this incremental release.
