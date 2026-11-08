@@ -1,0 +1,63 @@
+{
+  "model": "qwen3_8_27b",
+  "domain": "Logic",
+  "level": "answer",
+  "method": "ars",
+  "split": "6:2:2, TEST target p >= 70% (frozen per-cell relaxations retained)",
+  "selected_layer": 37,
+  "selection": "own VAL AUROC, tie by VAL AP; threshold by own VAL F1max; strict score > threshold",
+  "threshold": 0.11312127858400345,
+  "VAL": {
+    "AUROC": 0.9711174242424242,
+    "AP": 0.820609442337165,
+    "ACC": 0.95,
+    "F1": 0.8076923076923077,
+    "precision": 0.75,
+    "recall": 0.875,
+    "FPR": 0.03977272727272727,
+    "TP": 21,
+    "FP": 7,
+    "TN": 169,
+    "FN": 3,
+    "steps": 200,
+    "positive": 24,
+    "negative": 176,
+    "missing": 0,
+    "threshold": 0.11312127858400345,
+    "TPR_at_1pct_FPR": 0.4583333333333333
+  },
+  "TEST": {
+    "AUROC": 0.8703021370670597,
+    "AP": 0.44294796343704596,
+    "ACC": 0.81,
+    "F1": 0.5,
+    "precision": 0.3584905660377358,
+    "recall": 0.8260869565217391,
+    "FPR": 0.192090395480226,
+    "TP": 19,
+    "FP": 34,
+    "TN": 143,
+    "FN": 4,
+    "steps": 200,
+    "positive": 23,
+    "negative": 177,
+    "missing": 0,
+    "threshold": 0.11312127858400345,
+    "TPR_at_1pct_FPR": 0.043478260869565216
+  },
+  "validation_status": "independently checked from saved TEST predictions",
+  "result_SHA256": "591981cfd7d9b0ea0ce6ab799c32a153cbf07574b6dc6f6101adeab9bfdffa90",
+  "selected_configuration": {
+    "layer": 37,
+    "AUROC": 0.9711174242424242,
+    "AP": 0.820609442337165,
+    "VAL_BCE": 0.22948949582025086,
+    "auxiliary_variant_policy": {
+      "expected_originals": 600,
+      "retained_originals": 600,
+      "expected_generated_variants": 2400,
+      "retained_generated_variants": 2400,
+      "isolated_format_variants": 0
+    }
+  }
+}
