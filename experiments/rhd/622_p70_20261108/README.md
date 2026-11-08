@@ -16,5 +16,6 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Logic | answer | 53 | 41.88 | 12.82 | 0.00 | 16.50 | 25.78 |
 | gemma_4_31b_it | Science | answer | 60 | 58.73 | 37.81 | 3.23 | 42.11 | 47.16 |
 | qwen3_8_27b | Factuality | answer | 56 | 72.60 | 62.57 | 2.35 | 51.23 | 62.07 |
+| qwen3_8_27b | Logic | answer | 64 | 64.63 | 18.83 | 0.00 | 68.00 | 25.58 |
 
 Detector weights are not included in this incremental release.
