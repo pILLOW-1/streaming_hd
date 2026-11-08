@@ -14,5 +14,6 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Factuality | prefix | 46 | 55.00 | 31.32 | 0.17 | 47.38 | 48.52 |
 | gemma_4_31b_it | Science | prefix | 12 | 69.24 | 45.87 | 1.11 | 60.15 | 54.92 |
 | qwen3_8_27b | Logic | prefix | 56 | 77.30 | 27.85 | 0.24 | 66.87 | 37.32 |
+| qwen3_8_27b | Multi-hop | prefix | 60 | 71.91 | 72.08 | 6.74 | 64.19 | 70.63 |
 
 Detector weights are not included in this incremental release.
