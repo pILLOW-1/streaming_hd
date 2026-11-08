@@ -4,5 +4,6 @@
   "layers": "all",
   "seed": 42,
   "select_weights_by_val_auroc": true,
-  "score_sign": 1
+  "score_sign": -1,
+  "score_orientation_source": "Official pinned check_scores_fava_annotated.ipynb negates raw Attn scores; hallucination=1"
 }

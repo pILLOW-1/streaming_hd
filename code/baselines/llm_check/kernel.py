@@ -2,7 +2,8 @@
 
 Source common_utils.get_attn_eig_prod at 2f3bf9e: SUM over heads of the mean
 log diagonal. Prompt inclusion is the existing project's full-prefix adaptation.
-Score orientation is bound separately on TRAIN; it is never chosen on TEST.
+The official evaluation notebook negates this raw statistic for hallucination=1.
+Use score_sign=-1 before own-VAL layer/threshold selection; never choose a sign on TEST.
 """
 import torch
 
