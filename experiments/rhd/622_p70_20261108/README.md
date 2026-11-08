@@ -11,5 +11,6 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | Model | Domain | Level | Layer | AUROC | AP | TPR@1%FPR | ACC | F1 |
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | deepseek_r1_distill_llama_8b | Factuality | answer | 28 | 61.35 | 76.66 | 2.86 | 70.00 | 82.35 |
+| deepseek_r1_distill_llama_8b | Multi-hop | answer | 28 | 54.20 | 69.65 | 3.40 | 64.19 | 78.19 |
 
 Detector weights are not included in this incremental release.
