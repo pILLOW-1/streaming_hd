@@ -12,8 +12,14 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | deepseek_r1_distill_llama_8b | Factuality | prefix | 14 | 78.78 | 89.56 | 30.28 | 72.03 | 79.55 |
 | deepseek_r1_distill_llama_8b | Factuality | step | 5 | 79.13 | 48.11 | 9.52 | 75.68 | 49.14 |
+| deepseek_r1_distill_llama_8b | Logic | prefix | 18 | 87.75 | 76.54 | 16.58 | 80.88 | 70.51 |
+| deepseek_r1_distill_llama_8b | Logic | step | 17 | 90.24 | 36.07 | 21.95 | 94.28 | 37.36 |
+| deepseek_r1_distill_llama_8b | Math | prefix | 14 | 80.24 | 90.00 | 12.10 | 78.55 | 86.25 |
+| deepseek_r1_distill_llama_8b | Math | step | 17 | 83.17 | 39.07 | 15.10 | 87.64 | 41.65 |
 | deepseek_r1_distill_llama_8b | Multi-hop | prefix | 32 | 82.82 | 82.41 | 12.12 | 73.13 | 77.09 |
 | deepseek_r1_distill_llama_8b | Multi-hop | step | 15 | 82.73 | 47.59 | 14.52 | 84.76 | 48.44 |
+| deepseek_r1_distill_llama_8b | Science | prefix | 17 | 84.37 | 93.96 | 14.73 | 84.41 | 90.56 |
+| deepseek_r1_distill_llama_8b | Science | step | 18 | 82.82 | 38.84 | 14.11 | 87.92 | 41.37 |
 | gemma_4_31b_it | Factuality | prefix | 37 | 68.31 | 43.34 | 2.70 | 56.38 | 52.87 |
 | gemma_4_31b_it | Factuality | step | 39 | 80.40 | 23.27 | 13.52 | 89.68 | 28.81 |
 | gemma_4_31b_it | Logic | prefix | 43 | 76.81 | 32.43 | 8.34 | 76.11 | 36.81 |
