@@ -11,5 +11,6 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | Model | Domain | Level | Layer | AUROC | AP | TPR@1%FPR | ACC | F1 |
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | gemma_4_31b_it | Factuality | prefix | 46 | 55.00 | 31.32 | 0.17 | 47.38 | 48.52 |
+| qwen3_8_27b | Logic | prefix | 56 | 77.30 | 27.85 | 0.24 | 66.87 | 37.32 |
 
 Detector weights are not included in this incremental release.
