@@ -35,3 +35,36 @@ def validate_full_input(native, row):
     start, end = native['answer_token_span']
     if not spans[-1][1] <= start < end == len(ids):
         raise ValueError('Full native input must end at the generated Answer')
+
+
+def exact_decoded_text(tokenizer, native):
+    """Recover saved original Unicode spellings only when both frozen hashes pass.
+
+    Tokenizer NFC normalization can make decode(ids) differ from the original
+    text even though the token sequence is reversible. Saved Step/Answer text
+    supplies the spellings; the original full-text checksum is the authority.
+    """
+    ids=native['input_ids']
+    text=tokenizer.decode(ids,skip_special_tokens=False,clean_up_tokenization_spaces=False)
+    expected=native.get('full_text_SHA256')
+    def digest(value):return hashlib.sha256(value.encode()).hexdigest()
+    if expected and digest(text)!=expected:
+        normalizer=tokenizer.backend_tokenizer.normalizer
+        if normalizer is None:raise ValueError('Exact source text unavailable without a declared normalization')
+        for chunk in [native.get('question',''),native.get('options_or_context','')]:
+            if not chunk:continue
+            normalized=normalizer.normalize_str(chunk)
+            if normalized!=chunk and normalized in text:text=text.replace(normalized,chunk,1)
+        approximate=len(tokenizer.decode(ids[:native['step_token_spans'][0][0]],skip_special_tokens=False,clean_up_tokenization_spaces=False))
+        cursor=max(0,approximate-128);parts=[]
+        for step in native['original_steps']:
+            normalized=normalizer.normalize_str(step);start=text.find(normalized,cursor)
+            if start<cursor:raise ValueError('Cannot locate a normalized original Step')
+            parts.extend([text[:start] if not parts else text[cursor:start],step]);cursor=start+len(normalized)
+        parts.append(text[cursor:]);text=''.join(parts)
+        answer=native.get('answer','');normalized=normalizer.normalize_str(answer)
+        if answer and normalized!=answer and text.endswith(normalized):text=text[:-len(normalized)]+answer
+        if digest(text)!=expected:raise ValueError('Recovered text does not match frozen full-text checksum')
+    if tokenizer(text,add_special_tokens=False)['input_ids']!=ids:
+        raise ValueError('Recovered text changed frozen native token IDs')
+    return text

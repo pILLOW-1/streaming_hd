@@ -22,7 +22,8 @@ class NativeBackend:
         if len(modules)!=1:raise ValueError('Native text decoder cannot be identified uniquely')
         self.norm=self.model.get_submodule(modules[0][0].rsplit('.',1)[0]).norm
         self.head=self.model.get_output_embeddings()
-        self.tokenizer=transformers.AutoTokenizer.from_pretrained(path,local_files_only=True,use_fast=True)
+        tokenizer_class=transformers.PreTrainedTokenizerFast if cfg.model_type=='llama' else transformers.AutoTokenizer
+        self.tokenizer=tokenizer_class.from_pretrained(path,local_files_only=True,use_fast=True)
 
     def logits(self, hidden):
         result=self.head(hidden)
@@ -64,7 +65,8 @@ class NativeBackend:
 All separators, prompt and final Answer are retained. The sidecar must include
 all original Steps in order and the full sequence through the final Answer.
 """
-        ids=native['input_ids'];text=self.tokenizer.decode(ids,skip_special_tokens=False,clean_up_tokenization_spaces=False)
+        from common.native_inputs import exact_decoded_text
+        ids=native['input_ids'];text=exact_decoded_text(self.tokenizer,native)
         if self.tokenizer(text,add_special_tokens=False)['input_ids']!=ids:
             raise ValueError('Frozen native full input does not round-trip through tokenizer')
         spans=[];cursor=len(self.tokenizer.decode(ids[:native['reasoning_start_token']],skip_special_tokens=False,clean_up_tokenization_spaces=False))

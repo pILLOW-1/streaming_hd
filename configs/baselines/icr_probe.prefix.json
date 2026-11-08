@@ -6,5 +6,6 @@
   ],
   "seed": 42,
   "select_weights_by_val_auroc": true,
-  "score_sign": 1
+  "score_sign": 1,
+  "selection_tie_breaker": "VAL_BCE"
 }

@@ -142,14 +142,18 @@ def main():
                     raise ValueError('HaMI feature branch differs from declared ori/SE recipe')
                 model,options = fit_hami(train,val,y,vy,args.device,progress)
             elif method == 'ars':
-                model,options = fit_ars(train,val,y,vy,args.device,progress,select_weights_by_val_auroc=cfg.get("select_weights_by_val_auroc",False))
+                model,options = fit_ars(train,val,y,vy,args.device,progress,select_weights_by_val_auroc=cfg.get("select_weights_by_val_auroc",False),selection_tie_breaker=cfg.get("selection_tie_breaker"))
             else:
                 model,options = fit_vector(cfg,train,val,y,vy,args.device,progress)
             scores = predict(model,val,options,args.device)
         if scores.shape != vy.shape or not np.isfinite(scores).all():
             raise ValueError('Invalid VAL predictions')
         metrics = evaluate_metrics(vy,scores,.5)
-        candidates.append(dict(layer=layer,AUROC=metrics['AUROC'],AP=metrics['AP']))
+        candidate=dict(layer=layer,AUROC=metrics['AUROC'],AP=metrics['AP'])
+        if cfg.get('selection_tie_breaker')=='VAL_BCE':
+            from sklearn.metrics import log_loss
+            candidate['VAL_BCE']=float(log_loss(vy,np.asarray(scores,dtype=np.float64),labels=[0,1]))
+        candidates.append(candidate)
         # Only detector state and compact VAL scores are retained between layers.
         if model is not None:
             state = ({k:v.state_dict() for k,v in model.items()} if isinstance(model,dict) else model.state_dict())
@@ -157,7 +161,12 @@ def main():
             for module in (model.values() if isinstance(model,dict) else [model]):
                 module.to('cpu')
         bundles[layer] = (model,options,scores)
-    selected = choose(candidates)
+    if cfg.get('selection_tie_breaker')=='VAL_BCE':
+        rank=max((c['AUROC'],c['AP'],-c['VAL_BCE']) for c in candidates)
+        winners=[c for c in candidates if (c['AUROC'],c['AP'],-c['VAL_BCE'])==rank]
+        if len(winners)!=1:raise ValueError('Exact best VAL AUROC/AP/BCE layer tie remains unresolved')
+        selected=winners[0]
+    else:selected = choose(candidates)
     layer = selected['layer'];model,options,vs = bundles[layer]
     if model is not None:
         for module in (model.values() if isinstance(model,dict) else [model]):

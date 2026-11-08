@@ -23,6 +23,7 @@ def main():
     from common.dataset import load_cell,read_jsonl
     from common.native_backend import NativeBackend
     from baselines.rhd.kernel import token_depth,step_statistics,components
+    from baselines.rhd.segmentation import split_single_step_spans
     paths=json.loads(a.paths.read_text())
     for key in ('native_input_root','baseline_feature_root'):
         if not paths.get(key):p.error('Set '+key)
@@ -52,8 +53,9 @@ def main():
                     premature=torch.stack([backend.logits(backend.norm(states[i][begin:end])) for i in anchors])
                     depth,entropy=token_depth(final,premature)
                 depths.append(depth.cpu());entropies.append(entropy.cpu())
-            r,e=step_statistics(torch.cat(depths),torch.cat(entropies),n['step_token_spans'])
-            spans=n['step_token_spans'];matrix=np.zeros((len(spans),len(spans)),dtype=np.float64)
+            spans,was_split=split_single_step_spans(n['step_token_spans'])
+            r,e=step_statistics(torch.cat(depths),torch.cat(entropies),spans)
+            matrix=np.zeros((len(spans),len(spans)),dtype=np.float64)
             # Exact mean over native heads, token pairs, and declared layers.
             for i,(left,right) in enumerate(spans):
                 for j,(start,stop) in enumerate(spans[:i]):
@@ -63,7 +65,7 @@ def main():
         target=out/(split+'.npz')
         np.savez(target,components=np.stack(result),position_id=np.asarray([r['sample_id']+':answer' for r in records]))
         receipt=dict(method='rhd',level='answer',layer=0,anchors=anchors,mature=mature,attention_layers=attn_layers,
-                     dtype=a.dtype,SHA256=hashlib.sha256(target.read_bytes()).hexdigest(),native_SHA256=hashlib.sha256(path.read_bytes()).hexdigest())
+                     dtype=a.dtype,single_step_policy='RHD_only_native_token_midpoint_v1',SHA256=hashlib.sha256(target.read_bytes()).hexdigest(),native_SHA256=hashlib.sha256(path.read_bytes()).hexdigest())
         (out/(split+'.json')).write_text(json.dumps(receipt,indent=2)+'\n')
 
 

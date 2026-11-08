@@ -150,7 +150,11 @@ def fit_vector(config, train, val, labels, val_labels, device, progress):
                 nonlocal best
                 prediction=probabilities(model,normalized_val,device)
                 metric=evaluate_metrics(np.asarray(val_labels),prediction,.5)
-                best=best_snapshot((metric['AUROC'],metric['AP']),model.state_dict(),best)
+                rank=(metric['AUROC'],metric['AP'])
+                if config.get('selection_tie_breaker')=='VAL_BCE':
+                    from sklearn.metrics import log_loss
+                    rank=rank+(-float(log_loss(val_labels,np.asarray(prediction,dtype=np.float64),labels=[0,1])),)
+                best=best_snapshot(rank,model.state_dict(),best)
             optimizer=ObservedLBFGS(model.parameters(),on_accepted=accepted,lr=1.,max_iter=100,
                 line_search_fn="strong_wolfe" if config["level"]!="prefix" else None)
             completed, _ = progress.restore("linear_selection",model,optimizer)
@@ -210,6 +214,9 @@ def fit_vector(config, train, val, labels, val_labels, device, progress):
             pred = probabilities(model, xv, device, sigmoid=sigmoid)
             metric = evaluate_metrics(np.asarray(val_labels), pred, .5)
             rank = (metric["AUROC"], metric["AP"])
+            if config.get("selection_tie_breaker")=="VAL_BCE":
+                from sklearn.metrics import log_loss
+                rank=rank+(-float(log_loss(val_labels,np.asarray(pred,dtype=np.float64),labels=[0,1])),)
             if rank > best_rank:
                 best_rank, best, best_tie = rank, copy.deepcopy(model.state_dict()), False
             elif rank == best_rank and any(not torch.equal(best[k], v) for k, v in model.state_dict().items()):
@@ -357,7 +364,7 @@ def fit_hami(train, val, labels, val_labels, device, progress):
     return model, {"family": "hami"}
 
 
-def fit_ars(train, val, labels, val_labels, device, progress, select_weights_by_val_auroc=False):
+def fit_ars(train, val, labels, val_labels, device, progress, select_weights_by_val_auroc=False, selection_tie_breaker=None):
     """Official answer-agreement shaping then official nonlinear supervised probe."""
     from baselines.ars.kernel import LinearMap, icm_sameid_ars_loss
     from baselines.ars.detector_kernel import NonLinearClassifier
@@ -419,6 +426,7 @@ def fit_ars(train, val, labels, val_labels, device, progress, select_weights_by_
             from baselines.streaming.run import evaluate_metrics
             metric=evaluate_metrics(np.asarray(val_labels),prediction,.5)
             rank=(metric['AUROC'],metric['AP'])
+            if selection_tie_breaker=='VAL_BCE':rank=rank+(-value,)
             if rank>best_rank:best_rank,best,best_tie=rank,copy.deepcopy(head.state_dict()),False
             elif rank==best_rank and any(not torch.equal(best[k],v) for k,v in head.state_dict().items()):best_tie=True
         scheduler.step(value)
