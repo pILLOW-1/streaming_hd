@@ -52,6 +52,9 @@ def load_pack(folder, rows, level, method=None, layer=None):
     for name, value in pack.items():
         if value.dtype.kind in 'fc' and not np.isfinite(value).all():
             raise ValueError(f'Nonfinite feature: {name}')
+    if method=='hami':
+        pack['hami_mode']=manifest.get('hami_mode','se')
+        pack['token_dtype']=manifest.get('token_dtype','float')
     return pack, np.asarray(y, dtype=np.int64), keys, digest
 
 
@@ -135,6 +138,8 @@ def main():
                             layer=layer,train_SHA256=train_hash,val_SHA256=val_hash,recipe=cfg)
             progress = Progress(out/f'progress_layer_{layer}.pt',identity)
             if method == 'hami':
+                if train['hami_mode']!=cfg.get('hami_mode','se') or val['hami_mode']!=cfg.get('hami_mode','se'):
+                    raise ValueError('HaMI feature branch differs from declared ori/SE recipe')
                 model,options = fit_hami(train,val,y,vy,args.device,progress)
             elif method == 'ars':
                 model,options = fit_ars(train,val,y,vy,args.device,progress,select_weights_by_val_auroc=cfg.get("select_weights_by_val_auroc",False))
@@ -162,6 +167,8 @@ def main():
     save(out/'FROZEN_SELECTION.json',dict(selected=selected,threshold=threshold,VAL=evaluate_metrics(vy,vs,threshold)))
     # TEST is opened only after selection and operating point have been frozen.
     test,ty,tkeys,thash = load_pack(feature_root/f'layer_{layer}'/'test',rows['test'],level,method,layer)
+    if method=='hami' and test['hami_mode']!=cfg.get('hami_mode','se'):
+        raise ValueError('HaMI TEST branch differs from frozen recipe')
     ts = raw_scores(method,test,cfg) if model is None else predict(model,test,options,args.device)
     if ts.shape != ty.shape or not np.isfinite(ts).all():
         raise ValueError('Invalid TEST predictions')

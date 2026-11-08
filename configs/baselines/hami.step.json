@@ -4,5 +4,7 @@
   "layers": "all",
   "seed": 42,
   "select_weights_by_val_auroc": true,
-  "score_sign": 1
+  "score_sign": 1,
+  "hami_mode": "ori",
+  "parameter_origin": "Official ori MIL branch; explicit human choice 2026-11-08. No semantic-probability feature or additional sampling."
 }

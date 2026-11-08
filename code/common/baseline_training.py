@@ -153,6 +153,9 @@ def fit_vector(config, train, val, labels, val_labels, device, progress):
                 best=best_snapshot((metric['AUROC'],metric['AP']),model.state_dict(),best)
             optimizer=ObservedLBFGS(model.parameters(),on_accepted=accepted,lr=1.,max_iter=100,
                 line_search_fn="strong_wolfe" if config["level"]!="prefix" else None)
+            completed, _ = progress.restore("linear_selection",model,optimizer)
+            if completed:
+                return model,{"normalize":True,"sigmoid":True}
             progress.begin("linear_selection",0,model,optimizer)
             def closure():
                 optimizer.zero_grad();loss=teacher_objective(model,normalized,y.to(device));loss.backward();return loss
@@ -261,15 +264,36 @@ def fit_prefix(train, labels, train_meta, teacher_labels, device, progress):
     return model, {"normalize": True, "sigmoid": True}
 
 
+class TokenBags:
+    """Read exactly one native token bag at a time; no full-bank RAM copy."""
+    def __init__(self,pack):
+        self.tokens=pack['tokens'];self.offsets=np.asarray(pack['offsets'],dtype=np.int64)
+        if self.offsets[0]!=0 or self.offsets[-1]!=len(self.tokens) or np.any(np.diff(self.offsets)<=0):
+            raise ValueError('Exact nonempty ragged token spans required')
+        self.mode=pack.get('hami_mode','se');self.dtype=pack.get('token_dtype','float')
+        if self.mode not in ('ori','se'):raise ValueError('Unsupported HaMI branch')
+        self.probability=None
+        if self.mode=='se':
+            self.probability=np.asarray(pack['semantic_probability'])
+            if len(self.probability)!=len(self) or not np.all((0<=self.probability)&(self.probability<=1)):
+                raise ValueError('Aligned real semantic probabilities required for SE')
+        if self.dtype=='bfloat16_bits' and np.dtype(self.tokens.dtype)!=np.dtype('uint16'):
+            raise ValueError('BF16 bit bank must use uint16 storage')
+    def __len__(self):return len(self.offsets)-1
+    def __getitem__(self,index):
+        if index<0:index+=len(self)
+        if not 0<=index<len(self):raise IndexError(index)
+        a,b=self.offsets[index:index+2]
+        value=torch.from_numpy(np.array(self.tokens[a:b],copy=True))
+        if isinstance(self.tokens,np.memmap):
+            import mmap
+            self.tokens._mmap.madvise(mmap.MADV_DONTNEED)
+        if self.dtype=='bfloat16_bits':value=value.view(torch.bfloat16)
+        value=value.float()[:,None,:]
+        return value if self.mode=='ori' else value*(1+float(self.probability[index]))
+
 def token_bags(pack):
-    tokens = torch.as_tensor(pack["tokens"]).float()
-    offsets = pack["offsets"].astype(int)
-    if offsets[0] != 0 or offsets[-1] != len(tokens) or np.any(np.diff(offsets) <= 0):
-        raise ValueError("Exact nonempty ragged token spans required")
-    probability = np.asarray(pack["semantic_probability"])
-    if len(probability) != len(offsets) - 1 or not np.all((0 <= probability) & (probability <= 1)):
-        raise ValueError("HaMI official SE augmentation requires aligned semantic probabilities")
-    return [tokens[a:b, None, :] * (1 + float(p)) for a, b, p in zip(offsets[:-1], offsets[1:], probability)]
+    return TokenBags(pack)
 
 
 def hami_scores(model, pack, device):

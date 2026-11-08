@@ -38,11 +38,17 @@ def main():
             if hashlib.sha256(path.read_bytes()).hexdigest()!=spec['SHA256']:raise ValueError('Auxiliary feature hash mismatch')
             arrays[name]=np.load(path,allow_pickle=False)
         if a.method=='hami':
-            if metadata['semantic_probability_source']!='same_backbone_sample_clusters':raise ValueError('HaMI requires sampled semantic clusters')
-            if not {'tokens','offsets','semantic_probability'}<=arrays.keys():raise ValueError('Incomplete HaMI feature arrays')
+            mode=metadata.get('hami_mode','se')
+            if mode not in ('ori','se'):raise ValueError('Unknown HaMI branch')
+            if not {'tokens','offsets'}<=arrays.keys():raise ValueError('Incomplete HaMI token bags')
             if len(arrays['offsets'])!=len(keys)+1 or arrays['offsets'][0]!=0 or arrays['offsets'][-1]!=len(arrays['tokens']) or np.any(np.diff(arrays['offsets'])<=0):raise ValueError('HaMI token bag alignment mismatch')
-            probability=arrays['semantic_probability']
-            if probability.shape!=(len(keys),) or not np.isfinite(probability).all() or np.any((probability<0)|(probability>1)):raise ValueError('Invalid semantic probability')
+            if mode=='se':
+                if metadata.get('semantic_probability_source')!='same_backbone_sample_clusters':raise ValueError('HaMI SE requires actual sampled semantic clusters')
+                if 'semantic_probability' not in arrays:raise ValueError('HaMI SE probability missing')
+                probability=arrays['semantic_probability']
+                if probability.shape!=(len(keys),) or not np.isfinite(probability).all() or np.any((probability<0)|(probability>1)):raise ValueError('Invalid semantic probability')
+            if metadata.get('token_dtype')=='bfloat16_bits' and arrays['tokens'].dtype!=np.uint16:
+                raise ValueError('BF16 native token storage must use uint16 bits')
         else:
             if arrays['x'].shape[0]!=len(keys):raise ValueError('ARS original embedding coverage mismatch')
             if split=='train':

@@ -5,7 +5,7 @@ import torch
 class ObservedLBFGS(torch.optim.LBFGS):
     def __init__(self, params, *, on_accepted, **kwargs):
         super().__init__(params, **kwargs)
-        assert self.param_groups[0]['line_search_fn']=='strong_wolfe'
+        assert self.param_groups[0]['line_search_fn'] in (None, 'strong_wolfe')
         self._trial_depth=0
         self._on_accepted=on_accepted
         self.accepted_iterations=[]
