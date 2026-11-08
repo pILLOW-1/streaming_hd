@@ -46,5 +46,10 @@
     "TPR_at_1pct_FPR": 0.09523809523809523
   },
   "validation_status": "independently checked from saved TEST predictions",
-  "result_SHA256": "c584e172f2f029c377a82372ca45d289d3adf27ebf74d1e62280ebfe92883ee0"
+  "result_SHA256": "c584e172f2f029c377a82372ca45d289d3adf27ebf74d1e62280ebfe92883ee0",
+  "selected_configuration": {
+    "layer": 5,
+    "AUROC": 0.8924803769122618,
+    "AP": 0.5953096928661031
+  }
 }
