@@ -15,5 +15,6 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Multi-hop | answer | 24 | 91.61 | 78.11 | 32.56 | 87.39 | 70.10 |
 | qwen3_8_27b | Factuality | answer | 51 | 92.85 | 92.44 | 48.24 | 76.35 | 76.47 |
 | qwen3_8_27b | Logic | answer | 49 | 89.17 | 44.56 | 4.35 | 84.50 | 55.07 |
+| qwen3_8_27b | Multi-hop | answer | 36 | 88.44 | 73.28 | 28.30 | 79.31 | 61.90 |
 
 Detector weights are not included in this incremental release.
