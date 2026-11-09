@@ -12,6 +12,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | deepseek_r1_distill_llama_8b | Factuality | prefix | 23 | 80.89 | 91.00 | 27.85 | 71.09 | 81.86 |
 | deepseek_r1_distill_llama_8b | Logic | prefix | 32 | 79.16 | 68.06 | 18.17 | 75.84 | 59.30 |
+| deepseek_r1_distill_llama_8b | Multi-hop | prefix | 29 | 70.71 | 73.33 | 9.59 | 53.05 | 68.23 |
 | gemma_4_31b_it | Factuality | prefix | 46 | 55.00 | 31.32 | 0.17 | 47.38 | 48.52 |
 | gemma_4_31b_it | Logic | prefix | 60 | 72.48 | 25.21 | 6.37 | 69.18 | 32.05 |
 | gemma_4_31b_it | Math | prefix | 48 | 73.55 | 64.13 | 2.28 | 66.72 | 70.92 |
