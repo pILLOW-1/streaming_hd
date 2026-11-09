@@ -11,6 +11,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | Model | Domain | Level | Layer | AUROC | AP | TPR@1%FPR | ACC | F1 |
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | deepseek_r1_distill_llama_8b | Factuality | answer | 27 | 72.85 | 84.45 | 7.14 | 72.50 | 83.08 |
+| deepseek_r1_distill_llama_8b | Logic | answer | 16 | 82.19 | 65.88 | 5.63 | 72.50 | 69.27 |
 | gemma_4_31b_it | Factuality | answer | 41 | 87.13 | 79.68 | 37.29 | 84.50 | 66.67 |
 | gemma_4_31b_it | Logic | answer | 34 | 94.71 | 84.52 | 63.33 | 92.50 | 75.41 |
 | gemma_4_31b_it | Multi-hop | answer | 24 | 91.61 | 78.11 | 32.56 | 87.39 | 70.10 |
