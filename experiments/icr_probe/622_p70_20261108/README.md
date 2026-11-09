@@ -10,6 +10,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 
 | Model | Domain | Level | Layer | AUROC | AP | TPR@1%FPR | ACC | F1 |
 |---|---|---|---:|---:|---:|---:|---:|---:|
+| deepseek_r1_distill_llama_8b | Multi-hop | prefix | 0 | 81.28 | 80.94 | 9.10 | 72.34 | 75.80 |
 | gemma_4_31b_it | Multi-hop | prefix | 0 | 71.94 | 54.28 | 2.11 | 62.24 | 60.81 |
 | qwen3_8_27b | Factuality | prefix | 0 | 77.21 | 73.94 | 13.43 | 69.19 | 69.78 |
 | qwen3_8_27b | Logic | prefix | 0 | 78.49 | 33.17 | 5.24 | 68.84 | 38.33 |
