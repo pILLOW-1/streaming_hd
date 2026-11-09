@@ -16,5 +16,6 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | qwen3_8_27b | Factuality | answer | 51 | 92.85 | 92.44 | 48.24 | 76.35 | 76.47 |
 | qwen3_8_27b | Logic | answer | 49 | 89.17 | 44.56 | 4.35 | 84.50 | 55.07 |
 | qwen3_8_27b | Multi-hop | answer | 36 | 88.44 | 73.28 | 28.30 | 79.31 | 61.90 |
+| qwen3_8_27b | Science | answer | 41 | 71.60 | 59.11 | 14.49 | 71.43 | 54.41 |
 
 Detector weights are not included in this incremental release.
