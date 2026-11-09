@@ -40,5 +40,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | qwen3_8_27b | Math | step | 47 | 80.46 | 23.76 | 10.77 | 89.61 | 30.49 |
 | qwen3_8_27b | Multi-hop | prefix | 46 | 80.49 | 79.54 | 9.52 | 72.94 | 76.63 |
 | qwen3_8_27b | Multi-hop | step | 47 | 90.22 | 58.47 | 31.43 | 92.33 | 56.89 |
+| qwen3_8_27b | Science | prefix | 47 | 75.70 | 67.29 | 5.07 | 66.26 | 68.02 |
+| qwen3_8_27b | Science | step | 49 | 82.55 | 23.79 | 12.30 | 91.08 | 29.62 |
 
 Detector weights are not included in this incremental release.
