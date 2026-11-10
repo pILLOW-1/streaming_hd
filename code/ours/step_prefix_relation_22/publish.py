@@ -15,6 +15,10 @@ GH='/shared/homes/u26487468/.local/bin/gh'
 RULE='''\n## Method-design experiment records\n\nFor every new method-design experiment, create a dedicated `experiments/<experiment_id>/` directory before execution. Use concise English: motivation, a configuration table with one configuration per row, and a separate training-parameter table. Result tables use configurations as rows and domains as columns. Step and Prefix have separate tables with identical rows/columns; unfinished cells stay empty. Put each independently verified completed configuration in `result/` immediately and refresh the result index in the same concrete Git commit/push. Never report registered, queued, trained-only or frozen-only configurations as completed results. Keep code/configuration versioned, raw data/features and trained weights outside the publication. Commit messages identify the actual model, domain, configuration and result or fix.\n'''
 
 
+def sync_checkout():
+    subprocess.run(['/usr/bin/python3.12',str(PROJECT/'workspaces/streaming_hd/common/sync_published_checkout.py')],check=True,timeout=240)
+
+
 def main():
     cfg=config();files={};results=[];index=[]
     for arm_index,arm in enumerate(cfg['arms']):
@@ -70,7 +74,8 @@ def main():
         ledger_path=STATE/'PUBLICATION_LEDGER.json'
         ledger=json.loads(ledger_path.read_text()) if ledger_path.exists() else dict(files={},commits=[])
         changed={p:b for p,b in files.items() if ledger['files'].get(p)!=hashlib.sha256(b).hexdigest()}
-        if not changed:return
+        if not changed:
+            sync_checkout();return
         with tempfile.TemporaryDirectory(prefix='sp22_git_') as directory:
             repo=Path(directory)/'repo'
             def git(*args):
@@ -109,6 +114,7 @@ def main():
         for p,b in changed.items():ledger['files'][p]=hashlib.sha256(b).hexdigest()
         ledger['commits'].append(dict(commit=commit,completed=len(results),files=sorted(changed),time=time.time()))
         save(ledger_path,ledger)
+        sync_checkout()
         print(json.dumps(ledger['commits'][-1]))
 
 
