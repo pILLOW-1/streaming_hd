@@ -2,7 +2,7 @@
 
 6:2:2, TEST target p ≥ 70% (frozen per-combination relaxations retained).
 
-AUROC (%), higher is better. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers and weights are selected on VAL.
+AUROC (%), higher is better. Bold marks the highest available AUROC in each column within each level, compared before rounding; exact ties are all bold. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers and weights are selected on VAL.
 
 <h2>Step-level (AUROC)</h2>
 <table>
@@ -31,18 +31,18 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <tr><td>SAPLMA</td>
 <td>83.17</td>
 <td>82.82</td>
-<td>90.24</td>
+<td><strong>90.24</strong></td>
 <td>82.73</td>
 <td>79.13</td>
-<td>81.76</td>
-<td>84.32</td>
-<td>84.36</td>
+<td><strong>81.76</strong></td>
+<td><strong>84.32</strong></td>
+<td><strong>84.36</strong></td>
 <td>84.72</td>
-<td>80.40</td>
-<td>80.46</td>
-<td>82.55</td>
-<td>88.22</td>
-<td>90.22</td>
+<td><strong>80.40</strong></td>
+<td><strong>80.46</strong></td>
+<td><strong>82.55</strong></td>
+<td><strong>88.22</strong></td>
+<td><strong>90.22</strong></td>
 <td>86.07</td>
 </tr>
 <tr><td>HaMI</td>
@@ -50,17 +50,17 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td></td>
 <td>89.77</td>
 <td>83.14</td>
-<td>82.91</td>
+<td><strong>82.91</strong></td>
 <td></td>
 <td></td>
 <td></td>
-<td>86.05</td>
+<td><strong>86.05</strong></td>
 <td>79.46</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>87.35</td>
+<td><strong>87.35</strong></td>
 </tr>
 <tr><td>Global Mean</td>
 <td>63.66</td>
@@ -80,10 +80,10 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td>69.79</td>
 </tr>
 <tr><td>Streaming</td>
-<td>83.17</td>
-<td>82.96</td>
+<td><strong>83.17</strong></td>
+<td><strong>82.96</strong></td>
 <td>89.81</td>
-<td>83.27</td>
+<td><strong>83.27</strong></td>
 <td>80.13</td>
 <td>80.40</td>
 <td>79.51</td>
@@ -142,15 +142,15 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <tr><td>SAPLMA</td>
 <td>80.24</td>
 <td>84.37</td>
-<td>87.75</td>
+<td><strong>87.75</strong></td>
 <td>82.82</td>
 <td>78.78</td>
 <td>80.19</td>
-<td>81.20</td>
+<td><strong>81.20</strong></td>
 <td>76.81</td>
-<td>76.96</td>
-<td>68.31</td>
-<td>73.98</td>
+<td><strong>76.96</strong></td>
+<td><strong>68.31</strong></td>
+<td><strong>73.98</strong></td>
 <td>75.70</td>
 <td>80.78</td>
 <td>80.49</td>
@@ -178,7 +178,7 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td>82.24</td>
 <td>79.16</td>
 <td>70.71</td>
-<td>80.89</td>
+<td><strong>80.89</strong></td>
 <td>73.55</td>
 <td>69.24</td>
 <td>72.48</td>
@@ -191,8 +191,8 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td>77.90</td>
 </tr>
 <tr><td>Global Mean</td>
-<td>83.01</td>
-<td>86.56</td>
+<td><strong>83.01</strong></td>
+<td><strong>86.56</strong></td>
 <td>87.46</td>
 <td>85.67</td>
 <td>80.54</td>
@@ -202,25 +202,25 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td>71.57</td>
 <td>66.44</td>
 <td>71.39</td>
-<td>76.44</td>
+<td><strong>76.44</strong></td>
 <td>81.00</td>
-<td>83.81</td>
-<td>82.26</td>
+<td><strong>83.81</strong></td>
+<td><strong>82.26</strong></td>
 </tr>
 <tr><td>Streaming</td>
 <td>82.28</td>
 <td>86.28</td>
 <td>87.07</td>
-<td>85.95</td>
+<td><strong>85.95</strong></td>
 <td>80.29</td>
-<td>80.44</td>
+<td><strong>80.44</strong></td>
 <td>80.43</td>
-<td>77.90</td>
+<td><strong>77.90</strong></td>
 <td>75.06</td>
 <td>66.62</td>
 <td>73.57</td>
 <td>76.16</td>
-<td>82.56</td>
+<td><strong>82.56</strong></td>
 <td>83.44</td>
 <td>82.22</td>
 </tr>
@@ -286,8 +286,8 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 </tr>
 <tr><td>ARS</td>
 <td></td>
-<td>70.53</td>
-<td>82.44</td>
+<td><strong>70.53</strong></td>
+<td><strong>82.44</strong></td>
 <td>78.85</td>
 <td>68.35</td>
 <td></td>
@@ -308,7 +308,7 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td>54.20</td>
 <td>61.35</td>
 <td></td>
-<td>58.73</td>
+<td><strong>58.73</strong></td>
 <td>41.88</td>
 <td>44.24</td>
 <td>43.73</td>
@@ -336,28 +336,28 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td></td>
 </tr>
 <tr><td>ReDe</td>
-<td>90.09</td>
+<td><strong>90.09</strong></td>
 <td></td>
 <td>82.19</td>
-<td>79.51</td>
+<td><strong>79.51</strong></td>
 <td>72.85</td>
 <td></td>
 <td></td>
-<td>94.71</td>
-<td>91.61</td>
+<td><strong>94.71</strong></td>
+<td><strong>91.61</strong></td>
 <td>87.13</td>
 <td></td>
-<td>71.60</td>
-<td>89.17</td>
-<td>88.44</td>
-<td>92.85</td>
+<td><strong>71.60</strong></td>
+<td><strong>89.17</strong></td>
+<td><strong>88.44</strong></td>
+<td><strong>92.85</strong></td>
 </tr>
 <tr><td>Global Mean</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>74.40</td>
+<td><strong>74.40</strong></td>
 <td></td>
 <td></td>
 <td></td>
@@ -375,12 +375,12 @@ AUROC (%), higher is better. Only completed, independently verified TEST results
 <td>70.59</td>
 <td>66.08</td>
 <td>66.51</td>
-<td>77.58</td>
+<td><strong>77.58</strong></td>
 <td>57.49</td>
 <td>85.53</td>
 <td>67.12</td>
-<td>87.85</td>
-<td>85.13</td>
+<td><strong>87.85</strong></td>
+<td><strong>85.13</strong></td>
 <td>57.73</td>
 <td>82.29</td>
 <td>73.31</td>

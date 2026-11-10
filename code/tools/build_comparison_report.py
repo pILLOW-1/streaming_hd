@@ -57,6 +57,14 @@ def build(root: Path) -> None:
     tables = []
     rows = []
     for level, methods in METHODS.items():
+        best = {}
+        for model, _ in MODELS:
+            for domain in DOMAINS:
+                available = [values[(level, method, model, domain)]
+                             for method, _ in methods
+                             if (level, method, model, domain) in values]
+                if available:
+                    best[(model, domain)] = max(available)
         lines = [f"<h2>{level.title()}-level (AUROC)</h2>", "<table>", '<thead><tr><th rowspan="2">Method</th>']
         lines += [f'<th colspan="5">{html.escape(name)}</th>' for _, name in MODELS]
         lines += ["</tr><tr>"]
@@ -67,12 +75,18 @@ def build(root: Path) -> None:
             for model, _ in MODELS:
                 for domain in DOMAINS:
                     value = values.get((level, method, model, domain))
-                    lines.append(f"<td>{100 * value:.2f}</td>" if value is not None else "<td></td>")
+                    if value is None:
+                        lines.append("<td></td>")
+                    else:
+                        text = f"{100 * value:.2f}"
+                        if value == best[(model, domain)]:
+                            text = f"<strong>{text}</strong>"
+                        lines.append(f"<td>{text}</td>")
                     rows.append({"level": level, "method": label, "model": model, "domain": domain, "AUROC_percent": f"{100 * value:.2f}" if value is not None else ""})
             lines.append("</tr>")
         lines += ["</tbody></table>"]
         tables.append("\n".join(lines))
-    intro = "# Main comparison\n\n6:2:2, TEST target p ≥ 70% (frozen per-combination relaxations retained).\n\nAUROC (%), higher is better. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers and weights are selected on VAL.\n\n"
+    intro = "# Main comparison\n\n6:2:2, TEST target p ≥ 70% (frozen per-combination relaxations retained).\n\nAUROC (%), higher is better. Bold marks the highest available AUROC in each column within each level, compared before rounding; exact ties are all bold. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers and weights are selected on VAL.\n\n"
     (output / "comparison.md").write_text(intro + "\n\n".join(tables) + "\n")
     with (output / "comparison.csv").open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
