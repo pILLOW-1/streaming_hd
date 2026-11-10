@@ -1,0 +1,30 @@
+{
+  "analysis": "Final Prefix versus independent Answer label contingency",
+  "models": [
+    "deepseek_r1_distill_llama_8b",
+    "gemma_4_31b_it",
+    "qwen3_8_27b"
+  ],
+  "domains": [
+    "Math",
+    "Science",
+    "Logic",
+    "Multi-hop",
+    "Factuality"
+  ],
+  "splits": [
+    "train",
+    "val",
+    "test"
+  ],
+  "primary_aggregation": "Union of TRAIN,VAL,TEST; one count per retained model-specific trajectory",
+  "prefix_endpoint": "labels.prefix[-1], last retained reasoning Step",
+  "answer": "labels.answer, independent annotation",
+  "cases": {
+    "C1_A0": "final Prefix erroneous, Answer non-hallucinatory",
+    "C0_A1": "final Prefix clean, Answer hallucinatory"
+  },
+  "primary_denominator": "All trajectories in corresponding model/domain/split",
+  "data_and_labels_changed": false,
+  "model_training_or_inference": false
+}
