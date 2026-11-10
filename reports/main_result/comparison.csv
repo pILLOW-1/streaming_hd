@@ -21,7 +21,7 @@ step,HaMI,deepseek_r1_distill_llama_8b,Multi-hop,83.14
 step,HaMI,deepseek_r1_distill_llama_8b,Factuality,82.91
 step,HaMI,gemma_4_31b_it,Math,
 step,HaMI,gemma_4_31b_it,Science,
-step,HaMI,gemma_4_31b_it,Logic,
+step,HaMI,gemma_4_31b_it,Logic,86.62
 step,HaMI,gemma_4_31b_it,Multi-hop,86.05
 step,HaMI,gemma_4_31b_it,Factuality,79.46
 step,HaMI,qwen3_8_27b,Math,

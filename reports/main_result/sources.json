@@ -399,6 +399,15 @@
     "level": "step",
     "method": "hami",
     "model": "gemma_4_31b_it",
+    "domain": "Logic",
+    "AUROC": 0.8661589850453543,
+    "source": "experiments/hami/622_p70_20261108/result/gemma_4_31b_it/Logic/step.json",
+    "SHA256": "f3f98eb1f3f693ffa1e7dff10b0049eece40841d695a096675bd730e8d7f3231"
+  },
+  {
+    "level": "step",
+    "method": "hami",
+    "model": "gemma_4_31b_it",
     "domain": "Multi-hop",
     "AUROC": 0.8605144122160274,
     "source": "experiments/hami/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/step.json",
