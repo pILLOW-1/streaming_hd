@@ -5,19 +5,23 @@ import subprocess
 import tempfile
 import time
 import sys
+import csv
+import io
 from pathlib import Path
 from relation_common import *
 
 PUBLIC=Path('experiments')/IDENTITY
 GH='/shared/homes/u26487468/.local/bin/gh'
-RULE='''\n## Method-design experiment records\n\nFor every new method-design experiment, create a dedicated `experiments/<experiment_id>/` directory before execution. Its concise README states motivation, frozen configuration, selection/evaluation protocol and current completion status. Put each independently verified completed configuration in `result/` immediately and refresh the result index in the same concrete Git commit/push. Never report registered, queued, trained-only or frozen-only configurations as completed results. Keep code/configuration versioned, raw data/features and trained weights outside the publication. Commit messages identify the actual model, domain, configuration and result or fix.\n'''
+RULE='''\n## Method-design experiment records\n\nFor every new method-design experiment, create a dedicated `experiments/<experiment_id>/` directory before execution. Use concise English: motivation, a configuration table with one configuration per row, and a separate training-parameter table. Result tables use configurations as rows and domains as columns. Step and Prefix have separate tables with identical rows/columns; unfinished cells stay empty. Put each independently verified completed configuration in `result/` immediately and refresh the result index in the same concrete Git commit/push. Never report registered, queued, trained-only or frozen-only configurations as completed results. Keep code/configuration versioned, raw data/features and trained weights outside the publication. Commit messages identify the actual model, domain, configuration and result or fix.\n'''
 
 
 def main():
     cfg=config();files={};results=[];index=[]
-    for arm in cfg['arms']:
+    for arm_index,arm in enumerate(cfg['arms']):
         out,_=arm_paths(arm);p=out/'TEST_RESULT.json'
-        row=dict(configuration=arm,status='PENDING',step=None,prefix=None)
+        domain,readout,head,loss=arm.split('.')
+        row=dict(ID='C'+str(arm_index%16+1).zfill(2),domain=domain,readout=readout,head=head,loss=loss,
+                 configuration=arm,status='PENDING',step=None,prefix=None)
         if p.exists():
             x=json.loads(p.read_text());assert x['status']=='PASS_SELECTED_TEST_ONCE_CPU_VERIFIED'
             assert x['predictions_SHA256']==sha(out/'test_predictions.npz')
@@ -29,13 +33,30 @@ def main():
         index.append(row)
     files[str(PUBLIC/'config.json')]=(WORK/'config.json').read_bytes()
     files[str(PUBLIC/'result/index.json')]=(json.dumps(dict(completed=len(results),total=80,configurations=index),indent=2)+'\n').encode()
+    domains=['Math','Logic','Science','Multi-hop','Factuality']
+    ids=['C'+str(i).zfill(2) for i in range(1,17)]
+    lookup={(item['ID'],item['domain']):item for item in index}
+    assert len(lookup)==80
+    def matrix_csv(level,metric):
+        stream=io.StringIO();writer=csv.writer(stream,lineterminator='\n');writer.writerow(['Configuration']+domains)
+        for cid in ids:
+            writer.writerow([cid]+[(lookup[cid,d][level] or {}).get(metric,'') for d in domains])
+        return stream.getvalue().encode()
+    for level in ('step','prefix'):
+        for metric in ('AUROC','AP'):
+            files[str(PUBLIC/'result'/(level+'_'+metric.lower()+'.csv'))]=matrix_csv(level,metric)
+    summary=io.StringIO();writer=csv.writer(summary,lineterminator='\n');writer.writerow(['Configuration']+domains)
+    for cid in ids:
+        writer.writerow([cid]+[(str(lookup[cid,d]['step']['AUROC'])+' / '+str(lookup[cid,d]['prefix']['AUROC'])) if lookup[cid,d]['step'] else '' for d in domains])
+    files[str(PUBLIC/'result/summary.csv')]=summary.getvalue().encode()
     readme=(WORK/'README.md').read_text().replace('{{COMPLETED}}',str(len(results)))
-    table=['\n## 已完成配置\n','| Domain | Readout | Head | Loss | Layer | Step AUROC/AP | Prefix AUROC/AP |',
-           '|---|---|---|---|---:|---:|---:|']
-    for x in results:
-        table.append('| '+' | '.join([x['domain'],x['readout'],x['head'],x['loss'],str(x['selected_layer']),
-             f"{x['step']['AUROC']:.4f} / {x['step']['AP']:.4f}",f"{x['prefix']['AUROC']:.4f} / {x['prefix']['AP']:.4f}"])+' |')
-    if not results:table.append('\n尚无已验收结果；未完成配置不填入数值。')
+    table=[]
+    for level in ('step','prefix'):
+        table+=['\n## '+level.title()+' AUROC\n','| Configuration | '+' | '.join(domains)+' |','|---|'+'---:|'*len(domains)]
+        for cid in ids:
+            values=[f"{lookup[cid,d][level]['AUROC']:.4f}" if lookup[cid,d][level] else '' for d in domains]
+            table.append('| '+' | '.join([cid]+values)+' |')
+    if not results:table.append('\nNo accepted results yet. Pending configurations have no result values.')
     files[str(PUBLIC/'README.md')]=(readme+'\n'.join(table)+'\n').encode()
     for p in sorted(WORK.glob('*.py')):
         compile(p.read_text(),str(p),'exec')
@@ -62,8 +83,13 @@ def main():
                 assert name.startswith((str(PUBLIC)+'/', 'code/ours/step_prefix_relation_22/'))
                 p=repo/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
             policy=repo/'AGENTS.md';policy_text=policy.read_text() if policy.exists() else '# Repository instructions\n'
-            if '## Method-design experiment records' not in policy_text:
-                policy.write_text(policy_text.rstrip()+'\n'+RULE);changed['AGENTS.md']=policy.read_bytes()
+            marker='## Method-design experiment records'
+            if marker not in policy_text:updated=policy_text.rstrip()+'\n'+RULE
+            else:
+                start=policy_text.index(marker);end=policy_text.find('\n## ',start+len(marker))
+                updated=policy_text[:start].rstrip()+'\n'+RULE+(policy_text[end:] if end>=0 else '')
+            if updated!=policy_text:
+                policy.write_text(updated);changed['AGENTS.md']=policy.read_bytes()
             git('add','--',*sorted(changed))
             if git('diff','--cached','--name-only'):
                 fresh=[x for x in results if str(PUBLIC/'result'/Path(*x['arm'].split('.')).with_suffix('.json')) in changed]
