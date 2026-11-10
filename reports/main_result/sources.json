@@ -477,6 +477,15 @@
     "SHA256": "772ebe51777644bd4e58ce0b5802b0416b9e236789d4eeb527822b70af450d67"
   },
   {
+    "level": "step",
+    "method": "hami",
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "AUROC": 0.907997112956625,
+    "source": "experiments/hami/622_p70_20261108/result/qwen3_8_27b/Multi-hop/step.json",
+    "SHA256": "45e8f3fb6241a55f5a868e6caebe1d64109b01f4a15eae546e6ff19185caf4fe"
+  },
+  {
     "level": "prefix",
     "method": "icr_probe",
     "model": "deepseek_r1_distill_llama_8b",
@@ -718,6 +727,15 @@
     "AUROC": 0.9470588235294117,
     "source": "experiments/rede/622_p70_20261108/result/gemma_4_31b_it/Logic/answer.json",
     "SHA256": "c4ca8d53d5a98e4bb4a146422a1f461e556d8c8e361781225a23a4fd1f0ef614"
+  },
+  {
+    "level": "answer",
+    "method": "rede",
+    "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "AUROC": 0.868500889214353,
+    "source": "experiments/rede/622_p70_20261108/result/gemma_4_31b_it/Math/answer.json",
+    "SHA256": "d13c9684ae8bbc4a8a2e203fa0f0142782891e2553ee96806263cdb308f83287"
   },
   {
     "level": "answer",

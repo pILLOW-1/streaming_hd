@@ -27,7 +27,7 @@ step,HaMI,gemma_4_31b_it,Factuality,79.46
 step,HaMI,qwen3_8_27b,Math,
 step,HaMI,qwen3_8_27b,Science,
 step,HaMI,qwen3_8_27b,Logic,88.75
-step,HaMI,qwen3_8_27b,Multi-hop,
+step,HaMI,qwen3_8_27b,Multi-hop,90.80
 step,HaMI,qwen3_8_27b,Factuality,87.35
 step,Global Mean,deepseek_r1_distill_llama_8b,Math,63.66
 step,Global Mean,deepseek_r1_distill_llama_8b,Science,59.63
@@ -229,7 +229,7 @@ answer,ReDe,deepseek_r1_distill_llama_8b,Science,
 answer,ReDe,deepseek_r1_distill_llama_8b,Logic,82.19
 answer,ReDe,deepseek_r1_distill_llama_8b,Multi-hop,79.51
 answer,ReDe,deepseek_r1_distill_llama_8b,Factuality,72.85
-answer,ReDe,gemma_4_31b_it,Math,
+answer,ReDe,gemma_4_31b_it,Math,86.85
 answer,ReDe,gemma_4_31b_it,Science,
 answer,ReDe,gemma_4_31b_it,Logic,94.71
 answer,ReDe,gemma_4_31b_it,Multi-hop,91.61

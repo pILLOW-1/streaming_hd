@@ -42,7 +42,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td><strong>80.46</strong></td>
 <td><strong>82.55</strong></td>
 <td>88.22</td>
-<td><strong>90.22</strong></td>
+<td>90.22</td>
 <td>86.07</td>
 </tr>
 <tr><td>HaMI</td>
@@ -59,7 +59,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td><strong>88.75</strong></td>
-<td></td>
+<td><strong>90.80</strong></td>
 <td><strong>87.35</strong></td>
 </tr>
 <tr><td>Global Mean</td>
@@ -341,7 +341,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>82.19</td>
 <td><strong>79.51</strong></td>
 <td>72.85</td>
-<td></td>
+<td>86.85</td>
 <td></td>
 <td><strong>94.71</strong></td>
 <td><strong>91.61</strong></td>
