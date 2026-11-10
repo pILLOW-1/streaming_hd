@@ -234,7 +234,7 @@ answer,ReDe,gemma_4_31b_it,Science,
 answer,ReDe,gemma_4_31b_it,Logic,94.71
 answer,ReDe,gemma_4_31b_it,Multi-hop,91.61
 answer,ReDe,gemma_4_31b_it,Factuality,87.13
-answer,ReDe,qwen3_8_27b,Math,
+answer,ReDe,qwen3_8_27b,Math,88.80
 answer,ReDe,qwen3_8_27b,Science,71.60
 answer,ReDe,qwen3_8_27b,Logic,89.17
 answer,ReDe,qwen3_8_27b,Multi-hop,88.44

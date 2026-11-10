@@ -768,6 +768,15 @@
     "level": "answer",
     "method": "rede",
     "model": "qwen3_8_27b",
+    "domain": "Math",
+    "AUROC": 0.8879619974510485,
+    "source": "experiments/rede/622_p70_20261108/result/qwen3_8_27b/Math/answer.json",
+    "SHA256": "f96c6b0d4382015ea9508c8d5996e2d519f2a37b8ee12e2244eadd1c62f9f8b5"
+  },
+  {
+    "level": "answer",
+    "method": "rede",
+    "model": "qwen3_8_27b",
     "domain": "Multi-hop",
     "AUROC": 0.8843680826394014,
     "source": "experiments/rede/622_p70_20261108/result/qwen3_8_27b/Multi-hop/answer.json",
