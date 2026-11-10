@@ -13,3 +13,7 @@ Preserve data identities, independent labels, model/domain fits and own-VAL sele
 Record research-significant decisions, experiments, failures and pivots in ARA. Keep trace/staging append-only, maintain the current logic separately, and bind numerical claims to actual evidence. Missing old artifacts must remain explicitly marked missing. Do not infer a finalized method from old exploratory code or an unconfirmed observation.
 
 Keep credentials, local datasets, backbone weights, caches and machine-specific paths outside Git. Observe upstream license/dependency requirements in `THIRD_PARTY.md`. Do not delete old research assets without an approved explicit list.
+
+## Method-design experiment records
+
+For every new method-design experiment, create a dedicated `experiments/<experiment_id>/` directory before execution. Its concise README states motivation, frozen configuration, selection/evaluation protocol and current completion status. Put each independently verified completed configuration in `result/` immediately and refresh the result index in the same concrete Git commit/push. Never report registered, queued, trained-only or frozen-only configurations as completed results. Keep code/configuration versioned, raw data/features and trained weights outside the publication. Commit messages identify the actual model, domain, configuration and result or fix.

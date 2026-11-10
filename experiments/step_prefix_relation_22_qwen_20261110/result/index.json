@@ -1,0 +1,486 @@
+{
+  "completed": 0,
+  "total": 80,
+  "configurations": [
+    {
+      "configuration": "Factuality.last_token.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.last_token.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.last_token.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.last_token.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.global_mean.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.global_mean.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.global_mean.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.global_mean.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.step_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.step_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.step_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.step_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.prefix_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.prefix_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.prefix_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Factuality.prefix_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.last_token.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.last_token.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.last_token.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.last_token.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.global_mean.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.global_mean.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.global_mean.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.global_mean.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.step_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.step_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.step_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.step_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.prefix_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.prefix_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.prefix_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Logic.prefix_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.last_token.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.last_token.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.last_token.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.last_token.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.global_mean.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.global_mean.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.global_mean.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.global_mean.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.step_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.step_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.step_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.step_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.prefix_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.prefix_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.prefix_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Multi-hop.prefix_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.last_token.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.last_token.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.last_token.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.last_token.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.global_mean.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.global_mean.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.global_mean.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.global_mean.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.step_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.step_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.step_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.step_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.prefix_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.prefix_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.prefix_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Science.prefix_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.last_token.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.last_token.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.last_token.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.last_token.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.global_mean.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.global_mean.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.global_mean.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.global_mean.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.step_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.step_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.step_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.step_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.prefix_exp.linear.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.prefix_exp.linear.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.prefix_exp.mlp.marginal_bce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    },
+    {
+      "configuration": "Math.prefix_exp.mlp.ce",
+      "status": "PENDING",
+      "step": null,
+      "prefix": null
+    }
+  ]
+}
