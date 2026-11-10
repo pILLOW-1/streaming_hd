@@ -153,6 +153,15 @@
     "SHA256": "cda9ec3165ae127e6ee8797d7b89ec14daf4e299f6fcad042b5ce40dc92694b9"
   },
   {
+    "level": "answer",
+    "method": "global_mean",
+    "model": "gemma_4_31b_it",
+    "domain": "Factuality",
+    "AUROC": 0.8933766077653563,
+    "source": "experiments/global_mean/622_p70_20261108/result/gemma_4_31b_it/Factuality/answer.json",
+    "SHA256": "b62a583b336ca65e7efc97da8416048351c1464556485791262903e49ded6162"
+  },
+  {
     "level": "prefix",
     "method": "global_mean",
     "model": "gemma_4_31b_it",
@@ -250,6 +259,15 @@
     "AUROC": 0.6667291307818881,
     "source": "experiments/global_mean/622_p70_20261108/result/gemma_4_31b_it/Science/step.json",
     "SHA256": "3a64109ec4853fe4896334478d3f79789218d4bc647f5ee0a02cac1b28f9ee3b"
+  },
+  {
+    "level": "answer",
+    "method": "global_mean",
+    "model": "qwen3_8_27b",
+    "domain": "Factuality",
+    "AUROC": 0.9217347956131604,
+    "source": "experiments/global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/answer.json",
+    "SHA256": "27e585525defaaab95c49625b5232ec45babefc8289e4cb92c17a8880d1e1d47"
   },
   {
     "level": "prefix",
@@ -891,6 +909,15 @@
     "SHA256": "22f3c8466af5c6dffc77795a5fa4e0fd8671307c47f3bce6d03c9e8367027399"
   },
   {
+    "level": "answer",
+    "method": "saplma",
+    "model": "gemma_4_31b_it",
+    "domain": "Factuality",
+    "AUROC": 0.8805144849140522,
+    "source": "experiments/saplma/622_p70_20261108/result/gemma_4_31b_it/Factuality/answer.json",
+    "SHA256": "a25eda8c5a665b4c9e3c7f4a886952ebbb78aa421ac90bc792517978b718ec12"
+  },
+  {
     "level": "prefix",
     "method": "saplma",
     "model": "gemma_4_31b_it",
@@ -988,6 +1015,15 @@
     "AUROC": 0.8431821273908567,
     "source": "experiments/saplma/622_p70_20261108/result/gemma_4_31b_it/Science/step.json",
     "SHA256": "31e21dff538cded2d5ea9cb3c878d0eaff472a8becfe5bf0aa993be3ae30c542"
+  },
+  {
+    "level": "answer",
+    "method": "saplma",
+    "model": "qwen3_8_27b",
+    "domain": "Factuality",
+    "AUROC": 0.9114656031904288,
+    "source": "experiments/saplma/622_p70_20261108/result/qwen3_8_27b/Factuality/answer.json",
+    "SHA256": "33d6c7efdd80ed2fe17d754c7ce8da267a8baeb41ca689ad348f471b638b3205"
   },
   {
     "level": "prefix",

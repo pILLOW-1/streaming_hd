@@ -173,12 +173,12 @@ answer,SAPLMA,gemma_4_31b_it,Math,
 answer,SAPLMA,gemma_4_31b_it,Science,
 answer,SAPLMA,gemma_4_31b_it,Logic,
 answer,SAPLMA,gemma_4_31b_it,Multi-hop,90.25
-answer,SAPLMA,gemma_4_31b_it,Factuality,
+answer,SAPLMA,gemma_4_31b_it,Factuality,88.05
 answer,SAPLMA,qwen3_8_27b,Math,
 answer,SAPLMA,qwen3_8_27b,Science,
 answer,SAPLMA,qwen3_8_27b,Logic,
 answer,SAPLMA,qwen3_8_27b,Multi-hop,
-answer,SAPLMA,qwen3_8_27b,Factuality,
+answer,SAPLMA,qwen3_8_27b,Factuality,91.15
 answer,ARS,deepseek_r1_distill_llama_8b,Math,
 answer,ARS,deepseek_r1_distill_llama_8b,Science,70.53
 answer,ARS,deepseek_r1_distill_llama_8b,Logic,82.44
@@ -248,12 +248,12 @@ answer,Global Mean,gemma_4_31b_it,Math,
 answer,Global Mean,gemma_4_31b_it,Science,
 answer,Global Mean,gemma_4_31b_it,Logic,
 answer,Global Mean,gemma_4_31b_it,Multi-hop,80.33
-answer,Global Mean,gemma_4_31b_it,Factuality,
+answer,Global Mean,gemma_4_31b_it,Factuality,89.34
 answer,Global Mean,qwen3_8_27b,Math,
 answer,Global Mean,qwen3_8_27b,Science,
 answer,Global Mean,qwen3_8_27b,Logic,
 answer,Global Mean,qwen3_8_27b,Multi-hop,
-answer,Global Mean,qwen3_8_27b,Factuality,
+answer,Global Mean,qwen3_8_27b,Factuality,92.17
 answer,Streaming,deepseek_r1_distill_llama_8b,Math,82.15
 answer,Streaming,deepseek_r1_distill_llama_8b,Science,58.94
 answer,Streaming,deepseek_r1_distill_llama_8b,Logic,70.59
