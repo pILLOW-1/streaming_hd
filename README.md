@@ -11,6 +11,7 @@ Streaming HD studies hallucinations at three complementary levels: individual re
 | [`code/`](code/) | Baseline implementations, feature extraction, utilities, tests, and a placeholder for the proposed method. |
 | [`data/`](data/) | Dataset access and format documentation. |
 | [`experiments/`](experiments/) | Experiment protocols, results, and detector checkpoints. |
+| [`reports/`](reports/) | Paper-ready comparisons, ablation studies, and robustness results. |
 | [`configs/`](configs/) | Method configurations and local path templates. |
 | [`environment/`](environment/) | Dependencies and environment setup. |
 | [`ara/`](ara/) | Research history and design decisions. |

@@ -1,0 +1,286 @@
+level,method,model,domain,AUROC_percent
+step,SAPLMA,deepseek_r1_distill_llama_8b,Math,83.17
+step,SAPLMA,deepseek_r1_distill_llama_8b,Science,82.82
+step,SAPLMA,deepseek_r1_distill_llama_8b,Logic,90.24
+step,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,82.73
+step,SAPLMA,deepseek_r1_distill_llama_8b,Factuality,79.13
+step,SAPLMA,gemma_4_31b_it,Math,81.76
+step,SAPLMA,gemma_4_31b_it,Science,84.32
+step,SAPLMA,gemma_4_31b_it,Logic,84.36
+step,SAPLMA,gemma_4_31b_it,Multi-hop,84.72
+step,SAPLMA,gemma_4_31b_it,Factuality,80.40
+step,SAPLMA,qwen3_8_27b,Math,80.46
+step,SAPLMA,qwen3_8_27b,Science,82.55
+step,SAPLMA,qwen3_8_27b,Logic,88.22
+step,SAPLMA,qwen3_8_27b,Multi-hop,90.22
+step,SAPLMA,qwen3_8_27b,Factuality,86.07
+step,HaMI,deepseek_r1_distill_llama_8b,Math,
+step,HaMI,deepseek_r1_distill_llama_8b,Science,
+step,HaMI,deepseek_r1_distill_llama_8b,Logic,89.77
+step,HaMI,deepseek_r1_distill_llama_8b,Multi-hop,83.14
+step,HaMI,deepseek_r1_distill_llama_8b,Factuality,82.91
+step,HaMI,gemma_4_31b_it,Math,
+step,HaMI,gemma_4_31b_it,Science,
+step,HaMI,gemma_4_31b_it,Logic,
+step,HaMI,gemma_4_31b_it,Multi-hop,86.05
+step,HaMI,gemma_4_31b_it,Factuality,79.46
+step,HaMI,qwen3_8_27b,Math,
+step,HaMI,qwen3_8_27b,Science,
+step,HaMI,qwen3_8_27b,Logic,
+step,HaMI,qwen3_8_27b,Multi-hop,
+step,HaMI,qwen3_8_27b,Factuality,87.35
+step,Global Mean,deepseek_r1_distill_llama_8b,Math,63.66
+step,Global Mean,deepseek_r1_distill_llama_8b,Science,59.63
+step,Global Mean,deepseek_r1_distill_llama_8b,Logic,77.52
+step,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,68.39
+step,Global Mean,deepseek_r1_distill_llama_8b,Factuality,74.77
+step,Global Mean,gemma_4_31b_it,Math,66.09
+step,Global Mean,gemma_4_31b_it,Science,66.67
+step,Global Mean,gemma_4_31b_it,Logic,66.92
+step,Global Mean,gemma_4_31b_it,Multi-hop,72.63
+step,Global Mean,gemma_4_31b_it,Factuality,61.05
+step,Global Mean,qwen3_8_27b,Math,61.67
+step,Global Mean,qwen3_8_27b,Science,60.19
+step,Global Mean,qwen3_8_27b,Logic,67.05
+step,Global Mean,qwen3_8_27b,Multi-hop,67.38
+step,Global Mean,qwen3_8_27b,Factuality,69.79
+step,Streaming,deepseek_r1_distill_llama_8b,Math,83.17
+step,Streaming,deepseek_r1_distill_llama_8b,Science,82.96
+step,Streaming,deepseek_r1_distill_llama_8b,Logic,89.81
+step,Streaming,deepseek_r1_distill_llama_8b,Multi-hop,83.27
+step,Streaming,deepseek_r1_distill_llama_8b,Factuality,80.13
+step,Streaming,gemma_4_31b_it,Math,80.40
+step,Streaming,gemma_4_31b_it,Science,79.51
+step,Streaming,gemma_4_31b_it,Logic,80.69
+step,Streaming,gemma_4_31b_it,Multi-hop,82.47
+step,Streaming,gemma_4_31b_it,Factuality,79.34
+step,Streaming,qwen3_8_27b,Math,78.52
+step,Streaming,qwen3_8_27b,Science,81.45
+step,Streaming,qwen3_8_27b,Logic,87.16
+step,Streaming,qwen3_8_27b,Multi-hop,89.53
+step,Streaming,qwen3_8_27b,Factuality,87.20
+step,Ours,deepseek_r1_distill_llama_8b,Math,
+step,Ours,deepseek_r1_distill_llama_8b,Science,
+step,Ours,deepseek_r1_distill_llama_8b,Logic,
+step,Ours,deepseek_r1_distill_llama_8b,Multi-hop,
+step,Ours,deepseek_r1_distill_llama_8b,Factuality,
+step,Ours,gemma_4_31b_it,Math,
+step,Ours,gemma_4_31b_it,Science,
+step,Ours,gemma_4_31b_it,Logic,
+step,Ours,gemma_4_31b_it,Multi-hop,
+step,Ours,gemma_4_31b_it,Factuality,
+step,Ours,qwen3_8_27b,Math,
+step,Ours,qwen3_8_27b,Science,
+step,Ours,qwen3_8_27b,Logic,
+step,Ours,qwen3_8_27b,Multi-hop,
+step,Ours,qwen3_8_27b,Factuality,
+prefix,SAPLMA,deepseek_r1_distill_llama_8b,Math,80.24
+prefix,SAPLMA,deepseek_r1_distill_llama_8b,Science,84.37
+prefix,SAPLMA,deepseek_r1_distill_llama_8b,Logic,87.75
+prefix,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,82.82
+prefix,SAPLMA,deepseek_r1_distill_llama_8b,Factuality,78.78
+prefix,SAPLMA,gemma_4_31b_it,Math,80.19
+prefix,SAPLMA,gemma_4_31b_it,Science,81.20
+prefix,SAPLMA,gemma_4_31b_it,Logic,76.81
+prefix,SAPLMA,gemma_4_31b_it,Multi-hop,76.96
+prefix,SAPLMA,gemma_4_31b_it,Factuality,68.31
+prefix,SAPLMA,qwen3_8_27b,Math,73.98
+prefix,SAPLMA,qwen3_8_27b,Science,75.70
+prefix,SAPLMA,qwen3_8_27b,Logic,80.78
+prefix,SAPLMA,qwen3_8_27b,Multi-hop,80.49
+prefix,SAPLMA,qwen3_8_27b,Factuality,78.42
+prefix,ICR Probe,deepseek_r1_distill_llama_8b,Math,
+prefix,ICR Probe,deepseek_r1_distill_llama_8b,Science,
+prefix,ICR Probe,deepseek_r1_distill_llama_8b,Logic,84.33
+prefix,ICR Probe,deepseek_r1_distill_llama_8b,Multi-hop,81.28
+prefix,ICR Probe,deepseek_r1_distill_llama_8b,Factuality,63.26
+prefix,ICR Probe,gemma_4_31b_it,Math,
+prefix,ICR Probe,gemma_4_31b_it,Science,
+prefix,ICR Probe,gemma_4_31b_it,Logic,
+prefix,ICR Probe,gemma_4_31b_it,Multi-hop,71.94
+prefix,ICR Probe,gemma_4_31b_it,Factuality,
+prefix,ICR Probe,qwen3_8_27b,Math,
+prefix,ICR Probe,qwen3_8_27b,Science,
+prefix,ICR Probe,qwen3_8_27b,Logic,78.49
+prefix,ICR Probe,qwen3_8_27b,Multi-hop,
+prefix,ICR Probe,qwen3_8_27b,Factuality,77.21
+prefix,LLM-Check,deepseek_r1_distill_llama_8b,Math,75.72
+prefix,LLM-Check,deepseek_r1_distill_llama_8b,Science,82.24
+prefix,LLM-Check,deepseek_r1_distill_llama_8b,Logic,79.16
+prefix,LLM-Check,deepseek_r1_distill_llama_8b,Multi-hop,70.71
+prefix,LLM-Check,deepseek_r1_distill_llama_8b,Factuality,80.89
+prefix,LLM-Check,gemma_4_31b_it,Math,73.55
+prefix,LLM-Check,gemma_4_31b_it,Science,69.24
+prefix,LLM-Check,gemma_4_31b_it,Logic,72.48
+prefix,LLM-Check,gemma_4_31b_it,Multi-hop,70.38
+prefix,LLM-Check,gemma_4_31b_it,Factuality,55.00
+prefix,LLM-Check,qwen3_8_27b,Math,62.88
+prefix,LLM-Check,qwen3_8_27b,Science,66.26
+prefix,LLM-Check,qwen3_8_27b,Logic,77.30
+prefix,LLM-Check,qwen3_8_27b,Multi-hop,71.91
+prefix,LLM-Check,qwen3_8_27b,Factuality,77.90
+prefix,Global Mean,deepseek_r1_distill_llama_8b,Math,83.01
+prefix,Global Mean,deepseek_r1_distill_llama_8b,Science,86.56
+prefix,Global Mean,deepseek_r1_distill_llama_8b,Logic,87.46
+prefix,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,85.67
+prefix,Global Mean,deepseek_r1_distill_llama_8b,Factuality,80.54
+prefix,Global Mean,gemma_4_31b_it,Math,79.10
+prefix,Global Mean,gemma_4_31b_it,Science,79.60
+prefix,Global Mean,gemma_4_31b_it,Logic,76.68
+prefix,Global Mean,gemma_4_31b_it,Multi-hop,71.57
+prefix,Global Mean,gemma_4_31b_it,Factuality,66.44
+prefix,Global Mean,qwen3_8_27b,Math,71.39
+prefix,Global Mean,qwen3_8_27b,Science,76.44
+prefix,Global Mean,qwen3_8_27b,Logic,81.00
+prefix,Global Mean,qwen3_8_27b,Multi-hop,83.81
+prefix,Global Mean,qwen3_8_27b,Factuality,82.26
+prefix,Streaming,deepseek_r1_distill_llama_8b,Math,82.28
+prefix,Streaming,deepseek_r1_distill_llama_8b,Science,86.28
+prefix,Streaming,deepseek_r1_distill_llama_8b,Logic,87.07
+prefix,Streaming,deepseek_r1_distill_llama_8b,Multi-hop,85.95
+prefix,Streaming,deepseek_r1_distill_llama_8b,Factuality,80.29
+prefix,Streaming,gemma_4_31b_it,Math,80.44
+prefix,Streaming,gemma_4_31b_it,Science,80.43
+prefix,Streaming,gemma_4_31b_it,Logic,77.90
+prefix,Streaming,gemma_4_31b_it,Multi-hop,75.06
+prefix,Streaming,gemma_4_31b_it,Factuality,66.62
+prefix,Streaming,qwen3_8_27b,Math,73.57
+prefix,Streaming,qwen3_8_27b,Science,76.16
+prefix,Streaming,qwen3_8_27b,Logic,82.56
+prefix,Streaming,qwen3_8_27b,Multi-hop,83.44
+prefix,Streaming,qwen3_8_27b,Factuality,82.22
+prefix,Ours,deepseek_r1_distill_llama_8b,Math,
+prefix,Ours,deepseek_r1_distill_llama_8b,Science,
+prefix,Ours,deepseek_r1_distill_llama_8b,Logic,
+prefix,Ours,deepseek_r1_distill_llama_8b,Multi-hop,
+prefix,Ours,deepseek_r1_distill_llama_8b,Factuality,
+prefix,Ours,gemma_4_31b_it,Math,
+prefix,Ours,gemma_4_31b_it,Science,
+prefix,Ours,gemma_4_31b_it,Logic,
+prefix,Ours,gemma_4_31b_it,Multi-hop,
+prefix,Ours,gemma_4_31b_it,Factuality,
+prefix,Ours,qwen3_8_27b,Math,
+prefix,Ours,qwen3_8_27b,Science,
+prefix,Ours,qwen3_8_27b,Logic,
+prefix,Ours,qwen3_8_27b,Multi-hop,
+prefix,Ours,qwen3_8_27b,Factuality,
+answer,SAPLMA,deepseek_r1_distill_llama_8b,Math,
+answer,SAPLMA,deepseek_r1_distill_llama_8b,Science,
+answer,SAPLMA,deepseek_r1_distill_llama_8b,Logic,
+answer,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,
+answer,SAPLMA,deepseek_r1_distill_llama_8b,Factuality,74.04
+answer,SAPLMA,gemma_4_31b_it,Math,
+answer,SAPLMA,gemma_4_31b_it,Science,
+answer,SAPLMA,gemma_4_31b_it,Logic,
+answer,SAPLMA,gemma_4_31b_it,Multi-hop,90.25
+answer,SAPLMA,gemma_4_31b_it,Factuality,
+answer,SAPLMA,qwen3_8_27b,Math,
+answer,SAPLMA,qwen3_8_27b,Science,
+answer,SAPLMA,qwen3_8_27b,Logic,
+answer,SAPLMA,qwen3_8_27b,Multi-hop,
+answer,SAPLMA,qwen3_8_27b,Factuality,
+answer,ARS,deepseek_r1_distill_llama_8b,Math,
+answer,ARS,deepseek_r1_distill_llama_8b,Science,70.53
+answer,ARS,deepseek_r1_distill_llama_8b,Logic,82.44
+answer,ARS,deepseek_r1_distill_llama_8b,Multi-hop,78.85
+answer,ARS,deepseek_r1_distill_llama_8b,Factuality,68.35
+answer,ARS,gemma_4_31b_it,Math,
+answer,ARS,gemma_4_31b_it,Science,
+answer,ARS,gemma_4_31b_it,Logic,
+answer,ARS,gemma_4_31b_it,Multi-hop,
+answer,ARS,gemma_4_31b_it,Factuality,
+answer,ARS,qwen3_8_27b,Math,
+answer,ARS,qwen3_8_27b,Science,
+answer,ARS,qwen3_8_27b,Logic,87.03
+answer,ARS,qwen3_8_27b,Multi-hop,
+answer,ARS,qwen3_8_27b,Factuality,89.84
+answer,RHD,deepseek_r1_distill_llama_8b,Math,54.49
+answer,RHD,deepseek_r1_distill_llama_8b,Science,49.78
+answer,RHD,deepseek_r1_distill_llama_8b,Logic,45.81
+answer,RHD,deepseek_r1_distill_llama_8b,Multi-hop,54.20
+answer,RHD,deepseek_r1_distill_llama_8b,Factuality,61.35
+answer,RHD,gemma_4_31b_it,Math,
+answer,RHD,gemma_4_31b_it,Science,58.73
+answer,RHD,gemma_4_31b_it,Logic,41.88
+answer,RHD,gemma_4_31b_it,Multi-hop,44.24
+answer,RHD,gemma_4_31b_it,Factuality,43.73
+answer,RHD,qwen3_8_27b,Math,
+answer,RHD,qwen3_8_27b,Science,55.81
+answer,RHD,qwen3_8_27b,Logic,64.63
+answer,RHD,qwen3_8_27b,Multi-hop,
+answer,RHD,qwen3_8_27b,Factuality,72.60
+answer,RACE,deepseek_r1_distill_llama_8b,Math,
+answer,RACE,deepseek_r1_distill_llama_8b,Science,
+answer,RACE,deepseek_r1_distill_llama_8b,Logic,
+answer,RACE,deepseek_r1_distill_llama_8b,Multi-hop,
+answer,RACE,deepseek_r1_distill_llama_8b,Factuality,
+answer,RACE,gemma_4_31b_it,Math,
+answer,RACE,gemma_4_31b_it,Science,
+answer,RACE,gemma_4_31b_it,Logic,
+answer,RACE,gemma_4_31b_it,Multi-hop,
+answer,RACE,gemma_4_31b_it,Factuality,
+answer,RACE,qwen3_8_27b,Math,
+answer,RACE,qwen3_8_27b,Science,
+answer,RACE,qwen3_8_27b,Logic,
+answer,RACE,qwen3_8_27b,Multi-hop,
+answer,RACE,qwen3_8_27b,Factuality,
+answer,ReDe,deepseek_r1_distill_llama_8b,Math,90.09
+answer,ReDe,deepseek_r1_distill_llama_8b,Science,
+answer,ReDe,deepseek_r1_distill_llama_8b,Logic,82.19
+answer,ReDe,deepseek_r1_distill_llama_8b,Multi-hop,79.51
+answer,ReDe,deepseek_r1_distill_llama_8b,Factuality,72.85
+answer,ReDe,gemma_4_31b_it,Math,
+answer,ReDe,gemma_4_31b_it,Science,
+answer,ReDe,gemma_4_31b_it,Logic,94.71
+answer,ReDe,gemma_4_31b_it,Multi-hop,91.61
+answer,ReDe,gemma_4_31b_it,Factuality,87.13
+answer,ReDe,qwen3_8_27b,Math,
+answer,ReDe,qwen3_8_27b,Science,71.60
+answer,ReDe,qwen3_8_27b,Logic,89.17
+answer,ReDe,qwen3_8_27b,Multi-hop,88.44
+answer,ReDe,qwen3_8_27b,Factuality,92.85
+answer,Global Mean,deepseek_r1_distill_llama_8b,Math,
+answer,Global Mean,deepseek_r1_distill_llama_8b,Science,
+answer,Global Mean,deepseek_r1_distill_llama_8b,Logic,
+answer,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,
+answer,Global Mean,deepseek_r1_distill_llama_8b,Factuality,74.40
+answer,Global Mean,gemma_4_31b_it,Math,
+answer,Global Mean,gemma_4_31b_it,Science,
+answer,Global Mean,gemma_4_31b_it,Logic,
+answer,Global Mean,gemma_4_31b_it,Multi-hop,80.33
+answer,Global Mean,gemma_4_31b_it,Factuality,
+answer,Global Mean,qwen3_8_27b,Math,
+answer,Global Mean,qwen3_8_27b,Science,
+answer,Global Mean,qwen3_8_27b,Logic,
+answer,Global Mean,qwen3_8_27b,Multi-hop,
+answer,Global Mean,qwen3_8_27b,Factuality,
+answer,Streaming,deepseek_r1_distill_llama_8b,Math,82.15
+answer,Streaming,deepseek_r1_distill_llama_8b,Science,58.94
+answer,Streaming,deepseek_r1_distill_llama_8b,Logic,70.59
+answer,Streaming,deepseek_r1_distill_llama_8b,Multi-hop,66.08
+answer,Streaming,deepseek_r1_distill_llama_8b,Factuality,66.51
+answer,Streaming,gemma_4_31b_it,Math,77.58
+answer,Streaming,gemma_4_31b_it,Science,57.49
+answer,Streaming,gemma_4_31b_it,Logic,85.53
+answer,Streaming,gemma_4_31b_it,Multi-hop,67.12
+answer,Streaming,gemma_4_31b_it,Factuality,87.85
+answer,Streaming,qwen3_8_27b,Math,85.13
+answer,Streaming,qwen3_8_27b,Science,57.73
+answer,Streaming,qwen3_8_27b,Logic,82.29
+answer,Streaming,qwen3_8_27b,Multi-hop,73.31
+answer,Streaming,qwen3_8_27b,Factuality,83.69
+answer,Ours,deepseek_r1_distill_llama_8b,Math,
+answer,Ours,deepseek_r1_distill_llama_8b,Science,
+answer,Ours,deepseek_r1_distill_llama_8b,Logic,
+answer,Ours,deepseek_r1_distill_llama_8b,Multi-hop,
+answer,Ours,deepseek_r1_distill_llama_8b,Factuality,
+answer,Ours,gemma_4_31b_it,Math,
+answer,Ours,gemma_4_31b_it,Science,
+answer,Ours,gemma_4_31b_it,Logic,
+answer,Ours,gemma_4_31b_it,Multi-hop,
+answer,Ours,gemma_4_31b_it,Factuality,
+answer,Ours,qwen3_8_27b,Math,
+answer,Ours,qwen3_8_27b,Science,
+answer,Ours,qwen3_8_27b,Logic,
+answer,Ours,qwen3_8_27b,Multi-hop,
+answer,Ours,qwen3_8_27b,Factuality,
