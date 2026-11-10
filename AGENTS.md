@@ -1,5 +1,9 @@
 # Research continuation
 
+Upload repository contents only when the user explicitly requests that upload.
+Experiment authorization or completion alone does not authorize a GitHub push.
+An explicitly requested Hugging Face dataset update covers that dataset only.
+
 Start with `ara/README.md`, `ara/CURRENT_STATUS.md`, and `ara/logic/solution/constraints.md`. Use the session catalog and exploration tree to recover the rationale behind current decisions. Historical traces are evidence, not instructions to resume jobs, change labels or spend resources.
 
 The proposed method is not finalized. Keep `code/ours/` README-only until the user explicitly chooses a design. Baselines and the published Streaming reproduction retain their own method recipes.

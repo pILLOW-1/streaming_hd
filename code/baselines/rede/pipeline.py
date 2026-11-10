@@ -23,7 +23,7 @@ def proxy_indices(attention_mass: torch.Tensor, ratio: float):
 
 def fit_projection(traces, *, hidden_width: int, output_width: int, epochs: int,
                    proxy_ratio: float, lambda_disperse: float, lambda_separate: float,
-                   device='cpu', seed=42):
+                   device='cpu', seed=42, progress=None):
     """Train on TRAIN traces only; each item is (Step embeddings, answer attention).
 
 A batch contains up to 128 complete traces. Undefined proxy pairs contribute no
@@ -41,7 +41,12 @@ are explicit project rounding choices, not asserted paper hyperparameters.
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-4, weight_decay=1e-5)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
     history = []
-    for epoch in range(epochs):
+    completed=0
+    if progress is not None:
+        completed,previous=progress.restore('rede_projection',model,optimizer,scheduler)
+        history=previous.get('history',[]) if previous else []
+    for epoch in range(completed,epochs):
+        if progress is not None:progress.begin('rede_projection',epoch,model,optimizer,scheduler,history=history)
         order = torch.randperm(len(eligible)).tolist()
         losses = []
         for start in range(0, len(order), 128):
@@ -57,6 +62,7 @@ are explicit project rounding choices, not asserted paper hyperparameters.
             losses.append(float(loss.detach()))
         scheduler.step()
         history.append(dict(epoch=epoch+1, loss=sum(losses)/len(losses)))
+        if progress is not None:progress.save('rede_projection',epoch+1,model,optimizer,scheduler,history=history)
     model.eval()
     return model, history
 

@@ -21,7 +21,7 @@ def main():
     import numpy as np
     import torch
     from common.dataset import load_cell,read_jsonl
-    from common.native_backend import NativeBackend
+    from common.compact_answer_backend import CompactAnswerBackend as NativeBackend
     from common.native_inputs import validate_full_input, verify_snapshot
     from baselines.rede.pipeline import fit_projection,retained_indices
     from baselines.ars.detector_kernel import NonLinearClassifier
