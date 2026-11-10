@@ -20,8 +20,8 @@ def objective(logits, y, c, kind):
     # Stable exact marginal logits: no clamps and no detached softmax gradients.
     ly = logits[:, 0] - torch.logsumexp(logits[:, 1:], dim=1)
     lc = torch.logsumexp(logits[:, :2], dim=1) - logits[:, 2]
-    return 0.5 * (F.binary_cross_entropy_with_logits(ly, y.float()) +
-                  F.binary_cross_entropy_with_logits(lc, c.float()))
+    return 0.5 * (F.binary_cross_entropy_with_logits(ly, y.to(logits.dtype)) +
+                  F.binary_cross_entropy_with_logits(lc, c.to(logits.dtype)))
 
 
 @torch.inference_mode()

@@ -4,6 +4,7 @@ import json
 import subprocess
 import tempfile
 import time
+import sys
 from pathlib import Path
 from relation_common import *
 
@@ -72,6 +73,9 @@ def main():
                 else:
                     subject='experiment: configure Qwen five-domain Step-Prefix readout/head/loss study'
                     body='80 independent configurations:4 raw Streaming readouts x2 heads x2 objectives x5 domains; VAL selects64 layers and checkpoint; selected TEST once.\nAdd experiment README/config/result index and versioned execution/validation source; preserve pending results as null.'
+                if '--subject' in sys.argv:
+                    subject=sys.argv[sys.argv.index('--subject')+1]
+                    body=sys.argv[sys.argv.index('--body')+1]
                 git('commit','--quiet','-m',subject,'-m',body+'\n\nFiles:\n'+'\n'.join(sorted(changed)))
                 git('push','origin','HEAD:main')
             commit=git('rev-parse','HEAD');assert git('ls-remote','origin','refs/heads/main').split()[0]==commit
