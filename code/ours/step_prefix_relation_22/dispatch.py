@@ -86,7 +86,8 @@ def main():
                 source_host=receipt['host'].split('.')[0]
                 # All candidate layers stay in this continuous job entry.
                 options=['small_gpuq','med_gpuq','large_gpuq']
-                need='1:ncpus=4:mem=32gb:ngpus=1:mpiprocs=1:Qlist={queue}+1:ncpus=1:mem=4gb:mpiprocs=1:host='+source_host
+                source_queue=nodes[source_host]['resources_available']['Qlist']
+                need='1:ncpus=4:mem=32gb:ngpus=1:mpiprocs=1:Qlist={queue}+1:ncpus=1:mem=4gb:ngpus=0:mpiprocs=1:host='+source_host+':Qlist='+source_queue
             elif kind in ('features','test'):
                 domain=key
                 if kind=='features' and (RUN/'reports/features'/domain/'FEATURE_MANIFEST.json').exists():
