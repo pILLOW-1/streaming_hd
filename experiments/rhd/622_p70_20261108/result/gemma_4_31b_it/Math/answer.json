@@ -1,0 +1,168 @@
+{
+  "model": "gemma_4_31b_it",
+  "domain": "Math",
+  "level": "answer",
+  "method": "rhd",
+  "split": "6:2:2, TEST target p >= 70% (frozen per-cell relaxations retained)",
+  "selected_layer": 53,
+  "selection": "own VAL AUROC, tie by VAL AP; threshold by own VAL F1max; strict score > threshold",
+  "threshold": 0.09730587305145397,
+  "VAL": {
+    "AUROC": 0.5682602782717857,
+    "AP": 0.4302962642816846,
+    "ACC": 0.525,
+    "F1": 0.5957446808510638,
+    "precision": 0.44871794871794873,
+    "recall": 0.8860759493670886,
+    "FPR": 0.7107438016528925,
+    "TP": 70,
+    "FP": 86,
+    "TN": 35,
+    "FN": 9,
+    "steps": 200,
+    "positive": 79,
+    "negative": 121,
+    "missing": 0,
+    "threshold": 0.09730587305145397,
+    "TPR_at_1pct_FPR": 0.0
+  },
+  "TEST": {
+    "AUROC": 0.6149178784391672,
+    "AP": 0.47516300880314055,
+    "ACC": 0.49,
+    "F1": 0.592,
+    "precision": 0.4327485380116959,
+    "recall": 0.9367088607594937,
+    "FPR": 0.8016528925619835,
+    "TP": 74,
+    "FP": 97,
+    "TN": 24,
+    "FN": 5,
+    "steps": 200,
+    "positive": 79,
+    "negative": 121,
+    "missing": 0,
+    "threshold": 0.09730587305145397,
+    "TPR_at_1pct_FPR": 0.012658227848101266
+  },
+  "validation_status": "independently checked from saved TEST predictions",
+  "result_SHA256": "7754182490510d0de091078098694cd3e49a9e1da60e75456631413393eec045",
+  "selected_configuration": {
+    "family": 0,
+    "weights": [
+      0.22222222222222227,
+      0.7777777777777778,
+      0.0,
+      0.0
+    ],
+    "AUROC": 0.5682602782717857,
+    "AP": 0.4302962642816846,
+    "VAL_BCE": 1.0849534756070591,
+    "VAL_min": 0.049274279649078184,
+    "VAL_max": 0.2307853664712116
+  },
+  "method_configuration": {
+    "dataset_manifest_SHA256": "e5ffd6b6e18677dae1727e2ca18cb405b356af493e8bebeb38e84689bf9c9d3b",
+    "producer_SHA256": "18427dbba97793680863c3056c4464ed581ac9ca518aab1979c03ecdaf0e7de6",
+    "adapter_SHA256": "9236ce8c38b8a155c1fc585e79b6ee6778909de8e20b9104812539a6abf2fdcb",
+    "segmentation_SHA256": "0dc42e4abde80324177ea18d0f50f99c32ccb32af8b3b884789c8f245da69de6",
+    "method": "rhd",
+    "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "families": [
+      {
+        "name": "official7B_relative_native_depth",
+        "anchors": [
+          26,
+          30,
+          34,
+          38,
+          41,
+          45,
+          49
+        ],
+        "mature": 53,
+        "attention_layers": [
+          26,
+          30,
+          34,
+          38,
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "name": "official14B_relative_native_depth",
+        "anchors": [
+          40,
+          45,
+          50,
+          53,
+          55,
+          58
+        ],
+        "mature": 60,
+        "attention_layers": [
+          40,
+          45,
+          50,
+          53,
+          55,
+          58,
+          60
+        ]
+      }
+    ],
+    "weight_candidates": [
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      [
+        0.38095238095238093,
+        0.42857142857142855,
+        0.0,
+        0.19047619047619047
+      ],
+      [
+        0.22222222222222227,
+        0.7777777777777778,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.6666666666666666,
+        0.19999999999999998,
+        0.0,
+        0.13333333333333333
+      ],
+      [
+        0.888888888888889,
+        0.0,
+        0.0,
+        0.11111111111111112
+      ],
+      [
+        0.8333333333333333,
+        0.0,
+        0.08333333333333333,
+        0.08333333333333333
+      ]
+    ],
+    "native_dtype": "bfloat16",
+    "single_step_policy": "RHD_only_native_token_midpoint_v1",
+    "depth_mapping": "Original 32-/48-layer anchor families scaled by native layer count; round half up; hybrid attention uses nearest preceding true full-attention block; no reconstructed linear attention",
+    "weight_source": "Official task1 weight vectors and official uniform default; positive-scale-equivalent vectors deduplicated",
+    "selection": "own VAL AUROC, AP, then BCE of VAL min-max-scaled raw score; no TEST fitting"
+  }
+}

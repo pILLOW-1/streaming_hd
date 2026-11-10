@@ -831,6 +831,15 @@
     "level": "answer",
     "method": "rhd",
     "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "AUROC": 0.6149178784391672,
+    "source": "experiments/rhd/622_p70_20261108/result/gemma_4_31b_it/Math/answer.json",
+    "SHA256": "2c9f3e85fb66d4bf8b45cbaaf85890a65c93b5db8484cd101abdce8fbcd9da04"
+  },
+  {
+    "level": "answer",
+    "method": "rhd",
+    "model": "gemma_4_31b_it",
     "domain": "Multi-hop",
     "AUROC": 0.44242009700286034,
     "source": "experiments/rhd/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/answer.json",

@@ -199,7 +199,7 @@ answer,RHD,deepseek_r1_distill_llama_8b,Science,49.78
 answer,RHD,deepseek_r1_distill_llama_8b,Logic,45.81
 answer,RHD,deepseek_r1_distill_llama_8b,Multi-hop,54.20
 answer,RHD,deepseek_r1_distill_llama_8b,Factuality,61.35
-answer,RHD,gemma_4_31b_it,Math,
+answer,RHD,gemma_4_31b_it,Math,61.49
 answer,RHD,gemma_4_31b_it,Science,58.73
 answer,RHD,gemma_4_31b_it,Logic,41.88
 answer,RHD,gemma_4_31b_it,Multi-hop,44.24
