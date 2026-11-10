@@ -24,8 +24,10 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Factuality | answer | 33 | 88.05 | 82.62 | 50.85 | 85.00 | 67.39 |
 | gemma_4_31b_it | Factuality | prefix | 37 | 68.31 | 43.34 | 2.70 | 56.38 | 52.87 |
 | gemma_4_31b_it | Factuality | step | 39 | 80.40 | 23.27 | 13.52 | 89.68 | 28.81 |
+| gemma_4_31b_it | Logic | answer | 28 | 88.88 | 65.71 | 26.67 | 91.00 | 70.00 |
 | gemma_4_31b_it | Logic | prefix | 43 | 76.81 | 32.43 | 8.34 | 76.11 | 36.81 |
 | gemma_4_31b_it | Logic | step | 35 | 84.36 | 22.77 | 18.22 | 96.96 | 21.05 |
+| gemma_4_31b_it | Math | answer | 38 | 87.93 | 71.96 | 1.27 | 86.00 | 84.44 |
 | gemma_4_31b_it | Math | prefix | 38 | 80.19 | 74.57 | 8.87 | 70.17 | 72.88 |
 | gemma_4_31b_it | Math | step | 37 | 81.76 | 30.88 | 12.50 | 88.94 | 35.17 |
 | gemma_4_31b_it | Multi-hop | answer | 23 | 90.25 | 72.87 | 23.26 | 87.39 | 67.42 |
@@ -36,12 +38,14 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | qwen3_8_27b | Factuality | answer | 49 | 91.15 | 91.70 | 45.88 | 68.97 | 71.49 |
 | qwen3_8_27b | Factuality | prefix | 47 | 78.42 | 73.44 | 7.95 | 70.03 | 71.92 |
 | qwen3_8_27b | Factuality | step | 36 | 86.07 | 40.72 | 12.10 | 87.28 | 44.25 |
+| qwen3_8_27b | Logic | answer | 60 | 85.53 | 39.85 | 8.70 | 85.50 | 50.85 |
 | qwen3_8_27b | Logic | prefix | 27 | 80.78 | 36.38 | 6.12 | 75.65 | 42.68 |
 | qwen3_8_27b | Logic | step | 41 | 88.22 | 20.02 | 20.32 | 95.96 | 27.39 |
 | qwen3_8_27b | Math | prefix | 47 | 73.98 | 57.18 | 7.10 | 65.67 | 57.90 |
 | qwen3_8_27b | Math | step | 47 | 80.46 | 23.76 | 10.77 | 89.61 | 30.49 |
 | qwen3_8_27b | Multi-hop | prefix | 46 | 80.49 | 79.54 | 9.52 | 72.94 | 76.63 |
 | qwen3_8_27b | Multi-hop | step | 47 | 90.22 | 58.47 | 31.43 | 92.33 | 56.89 |
+| qwen3_8_27b | Science | answer | 56 | 69.80 | 52.00 | 8.70 | 67.74 | 46.15 |
 | qwen3_8_27b | Science | prefix | 47 | 75.70 | 67.29 | 5.07 | 66.26 | 68.02 |
 | qwen3_8_27b | Science | step | 49 | 82.55 | 23.79 | 12.30 | 91.08 | 29.62 |
 

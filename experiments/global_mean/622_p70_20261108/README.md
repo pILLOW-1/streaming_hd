@@ -24,8 +24,10 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Factuality | answer | 44 | 89.34 | 80.05 | 27.12 | 83.50 | 65.98 |
 | gemma_4_31b_it | Factuality | prefix | 58 | 66.44 | 38.04 | 0.75 | 60.33 | 52.93 |
 | gemma_4_31b_it | Factuality | step | 41 | 61.05 | 10.37 | 6.41 | 91.46 | 15.49 |
+| gemma_4_31b_it | Logic | answer | 53 | 93.47 | 73.33 | 43.33 | 89.50 | 66.67 |
 | gemma_4_31b_it | Logic | prefix | 53 | 76.68 | 27.34 | 4.50 | 69.78 | 36.84 |
 | gemma_4_31b_it | Logic | step | 28 | 66.92 | 5.40 | 3.39 | 88.46 | 7.09 |
+| gemma_4_31b_it | Math | answer | 53 | 85.75 | 75.91 | 18.99 | 77.00 | 72.62 |
 | gemma_4_31b_it | Math | prefix | 60 | 79.10 | 74.48 | 9.18 | 69.17 | 72.61 |
 | gemma_4_31b_it | Math | step | 58 | 66.09 | 14.19 | 3.96 | 81.71 | 20.70 |
 | gemma_4_31b_it | Multi-hop | answer | 58 | 80.33 | 51.31 | 9.30 | 76.52 | 46.00 |
@@ -36,12 +38,14 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | qwen3_8_27b | Factuality | answer | 64 | 92.17 | 90.95 | 54.12 | 74.38 | 75.70 |
 | qwen3_8_27b | Factuality | prefix | 49 | 82.26 | 79.44 | 12.06 | 72.42 | 74.07 |
 | qwen3_8_27b | Factuality | step | 51 | 69.79 | 21.16 | 5.67 | 76.63 | 27.06 |
+| qwen3_8_27b | Logic | answer | 51 | 89.12 | 50.74 | 4.35 | 69.50 | 41.90 |
 | qwen3_8_27b | Logic | prefix | 64 | 81.00 | 37.63 | 6.51 | 75.14 | 42.09 |
 | qwen3_8_27b | Logic | step | 64 | 67.05 | 3.24 | 0.65 | 86.47 | 6.70 |
 | qwen3_8_27b | Math | prefix | 51 | 71.39 | 53.99 | 6.30 | 64.71 | 54.78 |
 | qwen3_8_27b | Math | step | 64 | 61.67 | 8.03 | 1.59 | 74.99 | 13.81 |
 | qwen3_8_27b | Multi-hop | prefix | 64 | 83.81 | 82.77 | 8.90 | 75.04 | 78.29 |
 | qwen3_8_27b | Multi-hop | step | 51 | 67.38 | 16.12 | 4.15 | 64.75 | 21.64 |
+| qwen3_8_27b | Science | answer | 57 | 68.99 | 48.96 | 7.25 | 66.36 | 55.21 |
 | qwen3_8_27b | Science | prefix | 54 | 76.44 | 68.63 | 6.56 | 64.81 | 67.56 |
 | qwen3_8_27b | Science | step | 64 | 60.19 | 7.39 | 3.04 | 83.42 | 11.24 |
 

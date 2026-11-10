@@ -26,7 +26,7 @@ step,HaMI,gemma_4_31b_it,Multi-hop,86.05
 step,HaMI,gemma_4_31b_it,Factuality,79.46
 step,HaMI,qwen3_8_27b,Math,
 step,HaMI,qwen3_8_27b,Science,
-step,HaMI,qwen3_8_27b,Logic,
+step,HaMI,qwen3_8_27b,Logic,88.75
 step,HaMI,qwen3_8_27b,Multi-hop,
 step,HaMI,qwen3_8_27b,Factuality,87.35
 step,Global Mean,deepseek_r1_distill_llama_8b,Math,63.66
@@ -169,14 +169,14 @@ answer,SAPLMA,deepseek_r1_distill_llama_8b,Science,
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Logic,
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Factuality,74.04
-answer,SAPLMA,gemma_4_31b_it,Math,
+answer,SAPLMA,gemma_4_31b_it,Math,87.93
 answer,SAPLMA,gemma_4_31b_it,Science,
-answer,SAPLMA,gemma_4_31b_it,Logic,
+answer,SAPLMA,gemma_4_31b_it,Logic,88.88
 answer,SAPLMA,gemma_4_31b_it,Multi-hop,90.25
 answer,SAPLMA,gemma_4_31b_it,Factuality,88.05
 answer,SAPLMA,qwen3_8_27b,Math,
-answer,SAPLMA,qwen3_8_27b,Science,
-answer,SAPLMA,qwen3_8_27b,Logic,
+answer,SAPLMA,qwen3_8_27b,Science,69.80
+answer,SAPLMA,qwen3_8_27b,Logic,85.53
 answer,SAPLMA,qwen3_8_27b,Multi-hop,
 answer,SAPLMA,qwen3_8_27b,Factuality,91.15
 answer,ARS,deepseek_r1_distill_llama_8b,Math,
@@ -188,7 +188,7 @@ answer,ARS,gemma_4_31b_it,Math,
 answer,ARS,gemma_4_31b_it,Science,
 answer,ARS,gemma_4_31b_it,Logic,
 answer,ARS,gemma_4_31b_it,Multi-hop,
-answer,ARS,gemma_4_31b_it,Factuality,
+answer,ARS,gemma_4_31b_it,Factuality,82.75
 answer,ARS,qwen3_8_27b,Math,
 answer,ARS,qwen3_8_27b,Science,
 answer,ARS,qwen3_8_27b,Logic,87.03
@@ -244,14 +244,14 @@ answer,Global Mean,deepseek_r1_distill_llama_8b,Science,
 answer,Global Mean,deepseek_r1_distill_llama_8b,Logic,
 answer,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,
 answer,Global Mean,deepseek_r1_distill_llama_8b,Factuality,74.40
-answer,Global Mean,gemma_4_31b_it,Math,
+answer,Global Mean,gemma_4_31b_it,Math,85.75
 answer,Global Mean,gemma_4_31b_it,Science,
-answer,Global Mean,gemma_4_31b_it,Logic,
+answer,Global Mean,gemma_4_31b_it,Logic,93.47
 answer,Global Mean,gemma_4_31b_it,Multi-hop,80.33
 answer,Global Mean,gemma_4_31b_it,Factuality,89.34
 answer,Global Mean,qwen3_8_27b,Math,
-answer,Global Mean,qwen3_8_27b,Science,
-answer,Global Mean,qwen3_8_27b,Logic,
+answer,Global Mean,qwen3_8_27b,Science,68.99
+answer,Global Mean,qwen3_8_27b,Logic,89.12
 answer,Global Mean,qwen3_8_27b,Multi-hop,
 answer,Global Mean,qwen3_8_27b,Factuality,92.17
 answer,Streaming,deepseek_r1_distill_llama_8b,Math,82.15
