@@ -59,7 +59,7 @@ The MLP architecture follows SAPLMA; the unified optimizer settings and stopping
 
 ## Results
 
-**CPU-verified: 0 / 80.** Each accepted run is added immediately to `result/<domain>/<readout>/<head>/<loss>.json`, with `result/index.json` refreshed in the same concrete Git commit. Pending entries contain no result values. Result tables use configurations C01–C16 as rows and the five domains as columns. Step and Prefix have separate AUROC tables; `result/step_auroc.csv`, `prefix_auroc.csv`, `step_ap.csv`, and `prefix_ap.csv` preserve the same matrix layout. `result/summary.csv` uses Step AUROC / Prefix AUROC in each domain cell.
+**CPU-verified: 16 / 80.** Each accepted run is added immediately to `result/<domain>/<readout>/<head>/<loss>.json`, with `result/index.json` refreshed in the same concrete Git commit. Pending entries contain no result values. Result tables use configurations C01–C16 as rows and the five domains as columns. Step and Prefix have separate AUROC tables; `result/step_auroc.csv`, `prefix_auroc.csv`, `step_ap.csv`, and `prefix_ap.csv` preserve the same matrix layout. `result/summary.csv` uses Step AUROC / Prefix AUROC in each domain cell.
 
 Each result records both tasks' AUROC, AP, TPR@1%FPR, ACC, F1, precision, recall, FPR, confusion counts and coverage, plus selected layer/epoch/threshold and configuration, data, checkpoint and prediction hashes. Raw data, feature banks and trained weights are not published.
 
@@ -69,42 +69,40 @@ Frozen settings: [config.json](config.json). Source: [code/ours/step_prefix_rela
 
 | Configuration | Math | Logic | Science | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| C01 |  |  |  |  |  |
-| C02 |  |  |  |  |  |
-| C03 |  |  |  |  |  |
-| C04 |  |  |  |  |  |
-| C05 |  |  |  |  |  |
-| C06 |  |  |  |  |  |
-| C07 |  |  |  |  |  |
-| C08 |  |  |  |  |  |
-| C09 |  |  |  |  |  |
-| C10 |  |  |  |  |  |
-| C11 |  |  |  |  |  |
-| C12 |  |  |  |  |  |
-| C13 |  |  |  |  |  |
-| C14 |  |  |  |  |  |
-| C15 |  |  |  |  |  |
-| C16 |  |  |  |  |  |
+| C01 |  | 0.8853 |  |  |  |
+| C02 |  | 0.8897 |  |  |  |
+| C03 |  | 0.8865 |  |  |  |
+| C04 |  | 0.8870 |  |  |  |
+| C05 |  | 0.7441 |  |  |  |
+| C06 |  | 0.7441 |  |  |  |
+| C07 |  | 0.7532 |  |  |  |
+| C08 |  | 0.7465 |  |  |  |
+| C09 |  | 0.8833 |  |  |  |
+| C10 |  | 0.8907 |  |  |  |
+| C11 |  | 0.8801 |  |  |  |
+| C12 |  | 0.8899 |  |  |  |
+| C13 |  | 0.7846 |  |  |  |
+| C14 |  | 0.7829 |  |  |  |
+| C15 |  | 0.7751 |  |  |  |
+| C16 |  | 0.7849 |  |  |  |
 
 ## Prefix AUROC
 
 | Configuration | Math | Logic | Science | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| C01 |  |  |  |  |  |
-| C02 |  |  |  |  |  |
-| C03 |  |  |  |  |  |
-| C04 |  |  |  |  |  |
-| C05 |  |  |  |  |  |
-| C06 |  |  |  |  |  |
-| C07 |  |  |  |  |  |
-| C08 |  |  |  |  |  |
-| C09 |  |  |  |  |  |
-| C10 |  |  |  |  |  |
-| C11 |  |  |  |  |  |
-| C12 |  |  |  |  |  |
-| C13 |  |  |  |  |  |
-| C14 |  |  |  |  |  |
-| C15 |  |  |  |  |  |
-| C16 |  |  |  |  |  |
-
-No accepted results yet. Pending configurations have no result values.
+| C01 |  | 0.8169 |  |  |  |
+| C02 |  | 0.8196 |  |  |  |
+| C03 |  | 0.8208 |  |  |  |
+| C04 |  | 0.8232 |  |  |  |
+| C05 |  | 0.8232 |  |  |  |
+| C06 |  | 0.8231 |  |  |  |
+| C07 |  | 0.8250 |  |  |  |
+| C08 |  | 0.8231 |  |  |  |
+| C09 |  | 0.8241 |  |  |  |
+| C10 |  | 0.8282 |  |  |  |
+| C11 |  | 0.8268 |  |  |  |
+| C12 |  | 0.8290 |  |  |  |
+| C13 |  | 0.8284 |  |  |  |
+| C14 |  | 0.8291 |  |  |  |
+| C15 |  | 0.8282 |  |  |  |
+| C16 |  | 0.8382 |  |  |  |
