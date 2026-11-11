@@ -102,7 +102,7 @@ prefix,ICR Probe,gemma_4_31b_it,Factuality,
 prefix,ICR Probe,qwen3_8_27b,Math,
 prefix,ICR Probe,qwen3_8_27b,Science,
 prefix,ICR Probe,qwen3_8_27b,Logic,78.49
-prefix,ICR Probe,qwen3_8_27b,Multi-hop,
+prefix,ICR Probe,qwen3_8_27b,Multi-hop,73.15
 prefix,ICR Probe,qwen3_8_27b,Factuality,77.21
 prefix,LLM-Check,deepseek_r1_distill_llama_8b,Math,75.72
 prefix,LLM-Check,deepseek_r1_distill_llama_8b,Science,82.24
@@ -211,7 +211,7 @@ answer,RHD,qwen3_8_27b,Multi-hop,
 answer,RHD,qwen3_8_27b,Factuality,72.60
 answer,RACE,deepseek_r1_distill_llama_8b,Math,
 answer,RACE,deepseek_r1_distill_llama_8b,Science,
-answer,RACE,deepseek_r1_distill_llama_8b,Logic,
+answer,RACE,deepseek_r1_distill_llama_8b,Logic,56.19
 answer,RACE,deepseek_r1_distill_llama_8b,Multi-hop,
 answer,RACE,deepseek_r1_distill_llama_8b,Factuality,
 answer,RACE,gemma_4_31b_it,Math,

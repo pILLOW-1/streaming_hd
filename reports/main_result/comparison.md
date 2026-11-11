@@ -170,7 +170,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td>78.49</td>
-<td></td>
+<td>73.15</td>
 <td>77.21</td>
 </tr>
 <tr><td>LLM-Check</td>
@@ -321,7 +321,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>RACE</td>
 <td></td>
 <td></td>
-<td></td>
+<td>56.19</td>
 <td></td>
 <td></td>
 <td></td>

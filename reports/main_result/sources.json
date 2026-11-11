@@ -541,6 +541,15 @@
   },
   {
     "level": "prefix",
+    "method": "icr_probe",
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "AUROC": 0.7314751682658657,
+    "source": "experiments/icr_probe/622_p70_20261108/result/qwen3_8_27b/Multi-hop/prefix.json",
+    "SHA256": "f3267a876420cbde2fb209ab2cc25e0156c5642ff677908b39a2fd1d50c38ba2"
+  },
+  {
+    "level": "prefix",
     "method": "llm_check",
     "model": "deepseek_r1_distill_llama_8b",
     "domain": "Factuality",
@@ -673,6 +682,15 @@
     "AUROC": 0.6625857003910997,
     "source": "experiments/llm_check/622_p70_20261108/result/qwen3_8_27b/Science/prefix.json",
     "SHA256": "f4baf058ba15dc0a25f96142ca7bd9276684134eedbbf6e8f39422d6fbcf03e1"
+  },
+  {
+    "level": "answer",
+    "method": "race",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Logic",
+    "AUROC": 0.5618517305382683,
+    "source": "experiments/race/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Logic/answer.json",
+    "SHA256": "0c273a8c77bbc0fd510acf209c72b894007ceb958bde099e934f330ad2ffa5fd"
   },
   {
     "level": "answer",
