@@ -1,0 +1,29 @@
+{
+  "analysis": "Three-outcome composition of Step/Prefix labels",
+  "models": [
+    "deepseek_r1_distill_llama_8b",
+    "gemma_4_31b_it",
+    "qwen3_8_27b"
+  ],
+  "domains": [
+    "Math",
+    "Science",
+    "Logic",
+    "Multi-hop",
+    "Factuality"
+  ],
+  "splits": [
+    "train",
+    "val"
+  ],
+  "test_included": false,
+  "unit": "retained Step position",
+  "classes": {
+    "new": "labels.step[t]=1",
+    "inherited": "labels.step[t]=0 and labels.prefix[t]=1",
+    "clean": "labels.prefix[t]=0"
+  },
+  "inherited_share": "inherited / (new + inherited)",
+  "primary_aggregation": "Union of TRAIN and VAL",
+  "data_and_labels_changed": false
+}
