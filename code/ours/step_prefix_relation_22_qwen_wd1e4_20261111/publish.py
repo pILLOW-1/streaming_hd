@@ -14,7 +14,7 @@ from relation_common import *
 PUBLIC=Path('experiments')/IDENTITY
 PUBLIC_CODE='code/ours/'+IDENTITY+'/'
 GH='/shared/homes/u26487468/.local/bin/gh'
-RULE='''\n## Method-design experiment records\n\nFor every new method-design experiment, create a dedicated `experiments/<experiment_id>/` directory before execution. Use concise English: motivation, a configuration table with one configuration per row, and a separate training-parameter table. Result tables use configurations as rows and domains as columns. Step and Prefix have separate tables with identical rows/columns; unfinished cells stay empty. Put each independently verified completed configuration in `result/` immediately and refresh the result index in the same concrete Git commit/push. Never report registered, queued, trained-only or frozen-only configurations as completed results. Keep code/configuration versioned, raw data/features and trained weights outside the publication. Commit messages identify the actual model, domain, configuration and result or fix.\n'''
+RULE='''\n## Method-design experiment records\n\nFor every new method-design experiment, create a dedicated `experiments/<experiment_id>/` directory before execution. Use concise English: motivation, a configuration table with one configuration per row, and a separate training-parameter table. Result tables use configurations as rows and domains as columns. Step and Prefix have separate tables with identical rows/columns; unfinished cells stay empty. Bold the best verified value in each metric column based on full precision. Bold all exact ties. Put each independently verified completed configuration in `result/` immediately and refresh the result index in the same concrete Git commit/push. Never report registered, queued, trained-only or frozen-only configurations as completed results. Keep code/configuration versioned, raw data/features and trained weights outside the publication. Commit messages identify the actual model, domain, configuration and result or fix.\n'''
 
 
 def sync_checkout():
@@ -66,8 +66,21 @@ def main():
     table=[]
     for level in ('step','prefix'):
         table+=['\n## '+level.title()+' AUROC\n','| Configuration | '+' | '.join(domains)+' |','|---|'+'---:|'*len(domains)]
+        best = {
+            domain: max((lookup[cid, domain][level]['AUROC'] for cid in ids
+                         if lookup[cid, domain][level] is not None), default=None)
+            for domain in domains
+        }
         for cid in ids:
-            values=[f"{lookup[cid,d][level]['AUROC']:.4f}" if lookup[cid,d][level] else '' for d in domains]
+            values = []
+            for domain in domains:
+                result = lookup[cid, domain][level]
+                if result is None:
+                    values.append('')
+                    continue
+                score = result['AUROC']
+                cell = f'{score:.4f}'
+                values.append(f'**{cell}**' if score == best[domain] else cell)
             table.append('| '+' | '.join([cid]+values)+' |')
     if not results:table.append('\nNo accepted results yet. Pending configurations have no result values.')
     files[str(PUBLIC/'README.md')]=(readme+'\n'.join(table)+'\n').encode()

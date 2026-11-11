@@ -3,7 +3,7 @@
   "status": "SOURCE_FROZEN_AWAIT_NEW_CPU_GATE",
   "files": {
     "FEATURE_COMPATIBILITY.json": "1aff0cbd5485c057289a65aba46236962caff1ba9f0aaed0792de4cf67d1ef23",
-    "README.md": "3e5347daeb74269aecc7521fe76e1b89c520f67651a2917c7c4e44ebfb6dce2a",
+    "README.md": "54f37dd1a72e31f7f3bcc732701a25eb541803d528e360ab920f0c247bebaa37",
     "config.json": "2f114eb857886b2b7784ef4bfb1a4111ac22fca3aa28d56ee5399246aa15da01",
     "dispatch.py": "e42c811d13c2221b84f141ec4d8f2978090520113176b7d1d5b593dcca740127",
     "evaluate.py": "7198be2e9ea28bc077cceed024d919e0a9484db5b29467be3ba11208aeab3e68",
@@ -12,7 +12,7 @@
     "launch.py": "f8ec0a2dd1d4ff11b5ec97dea6a4ea3502d88ba706bbee443124ab3252439f84",
     "model.py": "18ff0f7d70554c2ab3e57cbc9d29b52b8be28b260b2d51ead0d9eda8045b7091",
     "prepare.py": "dcdc227a7856f2c430e0c2f1a37d8575d6e42c3e7748d758ba6fe8f875722e7c",
-    "publish.py": "121da857cc4722dc83210a18892994ec32f8d5d4b2a63af0bdedf8fb03149428",
+    "publish.py": "2d99b3224638566c42d5714ee4462ea583686af4845e6eab477ee418fa02bab2",
     "relation_common.py": "50ff201be40548644d53923690d2e88334ec45f8db20eac6dcc327337cb54185",
     "train.py": "51284c08123f296d1fd54c9fa88a2ce61d606fcaf9b5b5c81593ec8e3d28a760"
   }

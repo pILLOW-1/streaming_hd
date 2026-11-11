@@ -59,7 +59,7 @@ The MLP architecture follows SAPLMA; the unified optimizer settings and stopping
 
 ## Results
 
-**CPU-verified: 16 / 80.** Each accepted run is added immediately to `result/<domain>/<readout>/<head>/<loss>.json`, with `result/index.json` refreshed in the same concrete Git commit. Pending entries contain no result values. Result tables use configurations C01–C16 as rows and the five domains as columns. Step and Prefix have separate AUROC tables; `result/step_auroc.csv`, `prefix_auroc.csv`, `step_ap.csv`, and `prefix_ap.csv` preserve the same matrix layout. `result/summary.csv` uses Step AUROC / Prefix AUROC in each domain cell.
+**CPU-verified: 16 / 80.** Each accepted run is added immediately to `result/<domain>/<readout>/<head>/<loss>.json`, with `result/index.json` refreshed in the same concrete Git commit. Pending entries contain no result values. Result tables use configurations C01–C16 as rows and the five domains as columns. Step and Prefix have separate AUROC tables. The highest AUROC in each domain column is bolded. Exact ties share bold formatting. `result/step_auroc.csv`, `prefix_auroc.csv`, `step_ap.csv`, and `prefix_ap.csv` preserve the same matrix layout. `result/summary.csv` uses Step AUROC / Prefix AUROC in each domain cell.
 
 Each result records both tasks' AUROC, AP, TPR@1%FPR, ACC, F1, precision, recall, FPR, confusion counts and coverage, plus selected layer/epoch/threshold and configuration, data, checkpoint and prediction hashes. Raw data, feature banks and trained weights are not published.
 
@@ -78,7 +78,7 @@ Frozen settings: [config.json](config.json). Source: [code/ours/step_prefix_rela
 | C07 |  | 0.7532 |  |  |  |
 | C08 |  | 0.7465 |  |  |  |
 | C09 |  | 0.8833 |  |  |  |
-| C10 |  | 0.8907 |  |  |  |
+| C10 |  | **0.8907** |  |  |  |
 | C11 |  | 0.8801 |  |  |  |
 | C12 |  | 0.8899 |  |  |  |
 | C13 |  | 0.7846 |  |  |  |
@@ -105,4 +105,4 @@ Frozen settings: [config.json](config.json). Source: [code/ours/step_prefix_rela
 | C13 |  | 0.8284 |  |  |  |
 | C14 |  | 0.8291 |  |  |  |
 | C15 |  | 0.8282 |  |  |  |
-| C16 |  | 0.8382 |  |  |  |
+| C16 |  | **0.8382** |  |  |  |
