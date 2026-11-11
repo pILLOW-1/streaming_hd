@@ -69,8 +69,22 @@ All three probabilities are computable: every position's labels $(Y_t, C_t)$ fal
 \pi^C_t &= P(C_t=1\mid X_{\le t})\\[2pt]
 &= P(C_t=1,\,Y_t=1\mid X_{\le t}) + P(C_t=1,\,Y_t=0\mid X_{\le t}) && \text{total probability over } Y_t\\[2pt]
 &= P(Y_t=1\mid X_{\le t}) + P(C_t=1,\,Y_t=0\mid X_{\le t}) && \{Y_t=1\}\subseteq\{C_t=1\}\text{ (first constraint)}\\[2pt]
-&= \pi^Y_t + \psi_t && \text{definitions}
+&= \pi^Y_t + \psi_t && \text{definitions}\\[2pt]
+&= \pi^Y_t + P(Y_t=0\mid X_{\le t})\,P(C_t=1\mid Y_t=0,\,X_{\le t}) && \text{chain rule}\\[2pt]
+&= \pi^Y_t + (1-\pi^Y_t)\,\kappa_t && \text{definitions}
 \end{aligned}
+```
+
+where
+
+```math
+\kappa_t = P(C_t=1\mid Y_t=0,\,X_{\le t})
+```
+
+is the probability that an earlier error is still active, given that step $t$ introduces no new error.
+
+```math
+\boxed{\;\pi^C_t = \pi^Y_t + (1-\pi^Y_t)\,\kappa_t\;}
 ```
 
 ---
@@ -91,36 +105,32 @@ The manual imposes no hard constraint between $C_T$ and $A$, so all four combina
 
 | Outcome | Labels | Probability |
 |---|---|---|
-| An unresolved error remains, and the answer is wrong | $C_T=1,\ A=1$ | $q^A-\mu^A$ |
-| An unresolved error remains, but it does not reach the answer | $C_T=1,\ A=0$ | $\mu^A$ |
-| Reasoning is clean, yet the answer is wrong | $C_T=0,\ A=1$ | $\nu^A$ |
-| Reasoning is clean, and the answer is correct | $C_T=0,\ A=0$ | $1-q^A-\nu^A$ |
+| An unresolved error remains, and the answer is wrong | $C_T=1,\ A=1$ | $q^A a^1$ |
+| An unresolved error remains, but it does not reach the answer | $C_T=1,\ A=0$ | $q^A(1-a^1)$ |
+| Reasoning is clean, yet the answer is wrong | $C_T=0,\ A=1$ | $(1-q^A)\,a^0$ |
+| Reasoning is clean, and the answer is correct | $C_T=0,\ A=0$ | $(1-q^A)(1-a^0)$ |
 
 where
 
 ```math
-q^A = P(C_T=1\mid \cdot),\qquad \mu^A = P(C_T=1,\,A=0\mid \cdot),\qquad \nu^A = P(C_T=0,\,A=1\mid \cdot).
+q^A = P(C_T=1\mid \cdot),\qquad a^1 = P(A=1\mid C_T=1,\,\cdot),\qquad a^0 = P(A=1\mid C_T=0,\,\cdot).
 ```
-
-All four probabilities are computable: every trajectory's labels $(C_T, A)$ fall into exactly one of the four classes.
 
 ### 3.2 Derivation over $C_T$
 
 ```math
 \begin{aligned}
 \pi^A &= P(C_T=1,\,A=1\mid \cdot) + P(C_T=0,\,A=1\mid \cdot) && \text{total probability over } C_T\\[2pt]
-&= \big[P(C_T=1\mid \cdot) - P(C_T=1,\,A=0\mid \cdot)\big] + P(C_T=0,\,A=1\mid \cdot) && \text{total probability of } C_T=1 \text{ over } A\\[2pt]
-&= q^A - \mu^A + \nu^A && \text{definitions}\\[2pt]
-&\approx \pi^C_T - \mu^A + \nu^A && X_A \text{ adds little information about } C_T
+&= P(C_T=1\mid \cdot)\,P(A=1\mid C_T=1,\,\cdot) + P(C_T=0\mid \cdot)\,P(A=1\mid C_T=0,\,\cdot) && \text{chain rule}\\[2pt]
+&= q^A a^1 + (1-q^A)\,a^0 && \text{definitions}\\[2pt]
+&\approx \pi^C_T\, a^1 + (1-\pi^C_T)\,a^0 && X_A \text{ adds little information about } C_T
 \end{aligned}
 ```
 
 ```math
-\boxed{\;\pi^A \approx \pi^C_T - \mu^A + \nu^A\;}
+\boxed{\;\pi^A \approx \pi^C_T\, a^1 + (1-\pi^C_T)\,a^0\;}
 ```
 
-The approximation holds because the answer mostly restates the conclusion of the reasoning; it fails when the answer itself revises the reasoning. Answer starts from Prefix at the end of reasoning, removes errors that do not reach the answer, and adds errors that first appear at the answer. With §2.1 at $t=T$,
+The approximation holds because the answer mostly restates the conclusion of the reasoning; it fails when the answer itself revises the reasoning.
 
-```math
-\pi^A \approx \pi^Y_T + \psi_T - \mu^A + \nu^A .
-```
+Prefix has the same form over $Y_t$, $\pi^C_t=\pi^Y_t\cdot 1+(1-\pi^Y_t)\,\kappa_t$, where the first conditional is fixed to $1$ by the manual constraint $Y_t=1\Rightarrow C_t=1$. Answer has no such constraint, so both conditionals $a^1$ and $a^0$ remain free.
