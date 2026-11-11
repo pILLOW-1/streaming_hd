@@ -5,6 +5,7 @@ import subprocess
 import tempfile
 import time
 import sys
+import shutil
 import csv
 import io
 from pathlib import Path
@@ -21,6 +22,13 @@ def sync_checkout():
 
 
 def main():
+    # Some compute nodes lack Git. CPU verification must finish all arms.
+    # The login-node publication pass consumes the saved verified results.
+    if shutil.which('git') is None:
+        save(STATE/'PUBLICATION_PENDING_NO_GIT.json',
+             dict(time=time.time(), host=__import__('os').uname().nodename,
+                  reason='Publish saved verified results from the login node.'))
+        return
     cfg=config();files={};results=[];index=[]
     for arm_index,arm in enumerate(cfg['arms']):
         out,_=arm_paths(arm);p=out/'TEST_RESULT.json'
