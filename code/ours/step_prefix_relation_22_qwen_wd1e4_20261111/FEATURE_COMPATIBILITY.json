@@ -1,0 +1,15 @@
+{
+  "supersedes": "step_prefix_relation_22_qwen_20261110",
+  "old_config_SHA256": "a534441fc5ea25dc9b46288b5867d8f1be57e2a42b5e8884efe23cba5fa5ae7f",
+  "new_config_SHA256": "2f114eb857886b2b7784ef4bfb1a4111ac22fca3aa28d56ee5399246aa15da01",
+  "differing_config_keys": [
+    "experiment_id",
+    "weight_decay"
+  ],
+  "old_weight_decay": 0,
+  "new_weight_decay": 0.0001,
+  "completed_source_manifest_SHA256": {
+    "Factuality": "40c7595c287219309704e3206e40bababbb2837e61cb315f9beb20c023350e95"
+  },
+  "validation": "TRAIN/VAL backbone feature reuse only. Existing per-layer file SHA256, row/position hashes and native input identities are verified before use. All probes and TEST products use the new configuration."
+}
