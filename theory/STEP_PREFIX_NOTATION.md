@@ -1,4 +1,4 @@
-# Step and Prefix: Notation and Error Probabilities
+# Step, Prefix and Answer: Notation and Error Probabilities
 
 ---
 
@@ -14,6 +14,9 @@
 | $C_t\in\lbrace 0,1\rbrace$ | Prefix label: whether, after step $t$, an unresolved error remains, i.e. one that is still endorsed or used and has not been explicitly retracted or replaced |
 | $\pi^Y_t$ | Step error probability: $\pi^Y_t=P(Y_t=1\mid X_{\le t})$ |
 | $\pi^C_t$ | Prefix error probability: $\pi^C_t=P(C_t=1\mid X_{\le t})$ |
+| $X_A$ | Information of the final answer: its text and internal signals |
+| $A\in\lbrace 0,1\rbrace$ | Answer label: whether the final answer is wrong; the Answer Judge sees only the final answer |
+| $\pi^A$ | Answer error probability: $\pi^A=P(A=1\mid X_{\le T}, X_A)$ |
 
 **Meaning of probability.** Probabilities are taken over the data distribution. The randomness has three sources: the sampled problem, the reasoning produced by the generator, and the labels assigned by the Judge. Whatever is not covered by $X_{\le t}$ is the source of uncertainty in $\pi^Y_t$ and $\pi^C_t$.
 
@@ -70,27 +73,54 @@ All three probabilities are computable: every position's labels $(Y_t, C_t)$ fal
 \end{aligned}
 ```
 
-### 2.3 Decomposition over $C_{t-1}$
+---
 
-> **Status: pending.** Whether this decomposition is needed for detection is to be decided by experiment.
+## 3. Answer error probability
+
+The Answer error probability is conditioned on all visible information, the reasoning and the final answer:
+
+```math
+\pi^A = P(A=1\mid X_{\le T}, X_A).
+```
+
+It is linked to the Prefix label at the end of reasoning, $C_T$. Below, "$\cdot$" abbreviates the condition $X_{\le T}, X_A$.
+
+### 3.1 Four outcomes for the answer
+
+The manual imposes no hard constraint between $C_T$ and $A$, so all four combinations can occur:
+
+| Outcome | Labels | Probability |
+|---|---|---|
+| An unresolved error remains, and the answer is wrong | $C_T=1,\ A=1$ | $q^A-\mu^A$ |
+| An unresolved error remains, but it does not reach the answer | $C_T=1,\ A=0$ | $\mu^A$ |
+| Reasoning is clean, yet the answer is wrong | $C_T=0,\ A=1$ | $\nu^A$ |
+| Reasoning is clean, and the answer is correct | $C_T=0,\ A=0$ | $1-q^A-\nu^A$ |
+
+where
+
+```math
+q^A = P(C_T=1\mid \cdot),\qquad \mu^A = P(C_T=1,\,A=0\mid \cdot),\qquad \nu^A = P(C_T=0,\,A=1\mid \cdot).
+```
+
+All four probabilities are computable: every trajectory's labels $(C_T, A)$ fall into exactly one of the four classes.
+
+### 3.2 Derivation over $C_T$
 
 ```math
 \begin{aligned}
-\psi_t &= P(Y_t=0,\,C_t=1\mid X_{\le t})\\[2pt]
-&= P(C_{t-1}=1,\,Y_t=0,\,C_t=1\mid X_{\le t}) + P(C_{t-1}=0,\,Y_t=0,\,C_t=1\mid X_{\le t}) && \text{total probability over } C_{t-1}\\[2pt]
-&= P(C_{t-1}=1,\,Y_t=0,\,C_t=1\mid X_{\le t}) && C_{t-1}=0 \Rightarrow C_t=Y_t\text{ (second constraint)}\\[2pt]
-&= P(C_{t-1}=1\mid X_{\le t})\; P(Y_t=0,\,C_t=1\mid C_{t-1}=1,\,X_{\le t}) && \text{chain rule}\\[2pt]
-&= q_t\,\rho_t
+\pi^A &= P(C_T=1,\,A=1\mid \cdot) + P(C_T=0,\,A=1\mid \cdot) && \text{total probability over } C_T\\[2pt]
+&= \big[P(C_T=1\mid \cdot) - P(C_T=1,\,A=0\mid \cdot)\big] + P(C_T=0,\,A=1\mid \cdot) && \text{total probability of } C_T=1 \text{ over } A\\[2pt]
+&= q^A - \mu^A + \nu^A && \text{definitions}\\[2pt]
+&\approx \pi^C_T - \mu^A + \nu^A && X_A \text{ adds little information about } C_T
 \end{aligned}
 ```
 
-| Symbol | Meaning | How it is computed |
-|---|---|---|
-| $q_t=P(C_{t-1}=1\mid X_{\le t})$ | Whether the previous prefix was erroneous, judged after seeing step $t$ | Head at position $t$, label $C_{t-1}$ |
-| $\rho_t=P(Y_t=0, C_t=1\mid C_{t-1}=1, X_{\le t})$ | On an erroneous prefix, step $t$ adds no new error and the earlier error stays active | Head at positions with $C_{t-1}=1$, label $\mathbb{1}[Y_t=0, C_t=1]$ |
+```math
+\boxed{\;\pi^A \approx \pi^C_T - \mu^A + \nu^A\;}
+```
 
-Substituting into §2.1:
+The approximation holds because the answer mostly restates the conclusion of the reasoning; it fails when the answer itself revises the reasoning. Answer starts from Prefix at the end of reasoning, removes errors that do not reach the answer, and adds errors that first appear at the answer. With §2.1 at $t=T$,
 
 ```math
-\boxed{\;\pi^C_t = \pi^Y_t + q_t\,\rho_t\;},\qquad \pi^C_1=\pi^Y_1 .
+\pi^A \approx \pi^Y_T + \psi_T - \mu^A + \nu^A .
 ```
