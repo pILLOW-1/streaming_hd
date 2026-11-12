@@ -1,5 +1,0 @@
-configuration,Factuality,Logic,Math,Multi-hop,Science
-linear.marginal_bce,,0.06020558002936858,,,
-linear.ce,,0.06363191385217817,,,
-mlp.marginal_bce,,0.0930004894762604,,,
-mlp.ce,,0.08076358296622614,,,
