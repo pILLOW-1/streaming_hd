@@ -74,11 +74,13 @@ Values are means over combinations.
 | Multi-hop | 0.721 | 0.212 |
 | Factuality | 0.806 | 0.140 |
 
-### 3. Recovered positions hold most of the remaining Prefix headroom
+### 3. Overall Prefix AUROC hides the deficit
 
-With the negatives fixed, the clean-negative part of Prefix AUROC is the count-weighted mean of AUROC_rec and AUROC_fresh.
+Fresh clean positions outnumber recovered ones and are easy to separate, so they dominate the aggregate score.
 
-For Streaming on Qwen Logic, this is (2,390×0.696 + 5,677×0.985)/8,067 ≈ 0.900, close to its VAL Prefix AUROC of 0.891. Raising AUROC_rec to 0.9 alone would lift this part to about 0.96.
+For Streaming on Qwen Logic, AUROC over all clean negatives (with inherited positives) is the count-weighted mean (2,390×0.696 + 5,677×0.985)/8,067 ≈ 0.900.
+
+Since AUROC_fresh is already near 1, improvement must come from recovered positions. Raising AUROC_rec to 0.9 alone would lift this value to about 0.96.
 
 ## Interpretation
 
