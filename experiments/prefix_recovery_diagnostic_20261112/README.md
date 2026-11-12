@@ -58,7 +58,7 @@ Values are means over combinations.
 - The gap's 95% interval excludes zero in 65 pairs. The two exceptions are DS-L8 Factuality, which has only 39 recovered positions.
 - Learned probes, a training-free score and a dedicated streaming detector show the same pattern.
 
-### 2. The deficit is shared across generators and domains, and is largest for Gemma
+### 2. The deficit is shared across generators and domains
 
 | Generator | Mean AUROC_rec | Mean gap |
 |---|---:|---:|
