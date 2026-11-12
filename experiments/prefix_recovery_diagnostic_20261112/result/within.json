@@ -1,0 +1,2152 @@
+{
+  "status": "PASS",
+  "split": "val",
+  "definitions": "E1b: within-trajectory vs between-trajectory separation of inherited errors (VAL, read-only).\n\nOn Y=0 positions, positive = inherited (C=1); negatives = fresh clean (no earlier C=1) or recovered clean\n(earlier C=1). For each negative type we count (inherited, clean) pairs:\n  within   both positions in the same trajectory\n  between  positions in different trajectories\nAUROC_<type>_within  = correctly ordered within pairs / within pairs   (ties count 1/2)\nAUROC_<type>_between = same over between pairs\nAUROC_<type>_within_trajmean = mean over trajectories that contain both classes of the per-trajectory AUROC.\nWithin-trajectory fresh clean positions necessarily precede the first error of that trajectory.\n95% CIs for within quantities from a trajectory bootstrap.\n",
+  "n_boot": 1000,
+  "results": [
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.8404063763322943,
+      "fresh": {
+        "AUROC_all": 0.9722117231993901,
+        "AUROC_within": 0.9775130580088266,
+        "AUROC_within_CI95": [
+          0.9647297848288232,
+          0.9863998967707294
+        ],
+        "AUROC_between": 0.9721820691576409,
+        "AUROC_within_trajmean": 0.9483977315231803,
+        "within_pairs": 390182.0,
+        "between_pairs": 69753912.0,
+        "trajectories_within": 138
+      },
+      "recovered": {
+        "AUROC_all": 0.7762470878621719,
+        "AUROC_within": 0.7280071054240178,
+        "AUROC_within_CI95": [
+          0.6981405340190252,
+          0.7579368106803802
+        ],
+        "AUROC_between": 0.7767031293772029,
+        "AUROC_within_trajmean": 0.6753368375637598,
+        "within_pairs": 1549239.0,
+        "between_pairs": 163878199.0,
+        "trajectories_within": 128
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.858646785576941,
+      "fresh": {
+        "AUROC_all": 0.9878632832580316,
+        "AUROC_within": 0.9996821995889098,
+        "AUROC_within_CI95": [
+          0.9993232958323501,
+          0.9999107791977027
+        ],
+        "AUROC_between": 0.9877971718632784,
+        "AUROC_within_trajmean": 0.9934846595205922,
+        "within_pairs": 390182.0,
+        "between_pairs": 69753912.0,
+        "trajectories_within": 138
+      },
+      "recovered": {
+        "AUROC_all": 0.8046256721935088,
+        "AUROC_within": 0.7592185582728036,
+        "AUROC_within_CI95": [
+          0.7229273429392772,
+          0.794832225310787
+        ],
+        "AUROC_between": 0.8050549329017217,
+        "AUROC_within_trajmean": 0.6979454509326035,
+        "within_pairs": 1549239.0,
+        "between_pairs": 163878199.0,
+        "trajectories_within": 128
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7704902741481585,
+      "fresh": {
+        "AUROC_all": 0.9838787140083384,
+        "AUROC_within": 0.9988928243742664,
+        "AUROC_within_CI95": [
+          0.9966719864555224,
+          0.9999325888896509
+        ],
+        "AUROC_between": 0.9837947296776702,
+        "AUROC_within_trajmean": 0.9992621671579786,
+        "within_pairs": 390182.0,
+        "between_pairs": 69753912.0,
+        "trajectories_within": 138
+      },
+      "recovered": {
+        "AUROC_all": 0.6839265019627518,
+        "AUROC_within": 0.729889965331366,
+        "AUROC_within_CI95": [
+          0.6845862745412171,
+          0.7759923312680288
+        ],
+        "AUROC_between": 0.6834919817492014,
+        "AUROC_within_trajmean": 0.6936882832521439,
+        "within_pairs": 1549239.0,
+        "between_pairs": 163878199.0,
+        "trajectories_within": 128
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.856236129695165,
+      "fresh": {
+        "AUROC_all": 0.9872241275224112,
+        "AUROC_within": 0.9991849957199461,
+        "AUROC_within_CI95": [
+          0.9986491386754793,
+          0.999609012752825
+        ],
+        "AUROC_between": 0.9871572220924326,
+        "AUROC_within_trajmean": 0.9866645664013527,
+        "within_pairs": 390182.0,
+        "between_pairs": 69753912.0,
+        "trajectories_within": 138
+      },
+      "recovered": {
+        "AUROC_all": 0.7983341765832098,
+        "AUROC_within": 0.749271416482544,
+        "AUROC_within_CI95": [
+          0.7179817346542993,
+          0.7816439454086859
+        ],
+        "AUROC_between": 0.798797996309442,
+        "AUROC_within_trajmean": 0.7117676039840568,
+        "within_pairs": 1549239.0,
+        "between_pairs": 163878199.0,
+        "trajectories_within": 128
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.869529331759923,
+      "fresh": {
+        "AUROC_all": 0.9817482509254241,
+        "AUROC_within": 0.9928172836393314,
+        "AUROC_within_CI95": [
+          0.9898121249753075,
+          0.995030001823691
+        ],
+        "AUROC_between": 0.9817076306500759,
+        "AUROC_within_trajmean": 0.9776083173829192,
+        "within_pairs": 301418.0,
+        "between_pairs": 82136462.0,
+        "trajectories_within": 196
+      },
+      "recovered": {
+        "AUROC_all": 0.7940191082258503,
+        "AUROC_within": 0.7423618671929174,
+        "AUROC_within_CI95": [
+          0.6870815364582515,
+          0.7714587105604995
+        ],
+        "AUROC_between": 0.7944448379087895,
+        "AUROC_within_trajmean": 0.6930459931390901,
+        "within_pairs": 935929.0,
+        "between_pairs": 113563869.0,
+        "trajectories_within": 172
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8903754260913528,
+      "fresh": {
+        "AUROC_all": 0.9901904925260087,
+        "AUROC_within": 0.9999800940886079,
+        "AUROC_within_CI95": [
+          0.9999629019400449,
+          0.9999943263251316
+        ],
+        "AUROC_between": 0.9901545674075906,
+        "AUROC_within_trajmean": 0.999096644881061,
+        "within_pairs": 301418.0,
+        "between_pairs": 82136462.0,
+        "trajectories_within": 196
+      },
+      "recovered": {
+        "AUROC_all": 0.8275295821919266,
+        "AUROC_within": 0.782104198074854,
+        "AUROC_within_CI95": [
+          0.6909776248131833,
+          0.8321947089189928
+        ],
+        "AUROC_between": 0.8279039524445931,
+        "AUROC_within_trajmean": 0.7154605582623768,
+        "within_pairs": 935929.0,
+        "between_pairs": 113563869.0,
+        "trajectories_within": 172
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8350263391300315,
+      "fresh": {
+        "AUROC_all": 0.9822162942569606,
+        "AUROC_within": 0.9999734587848105,
+        "AUROC_within_CI95": [
+          0.9999450695778493,
+          0.9999932317998544
+        ],
+        "AUROC_between": 0.9821511303956579,
+        "AUROC_within_trajmean": 0.9992118418430783,
+        "within_pairs": 301418.0,
+        "between_pairs": 82136462.0,
+        "trajectories_within": 196
+      },
+      "recovered": {
+        "AUROC_all": 0.7429195464606846,
+        "AUROC_within": 0.7893173520640989,
+        "AUROC_within_CI95": [
+          0.6874773744771815,
+          0.847849424686554
+        ],
+        "AUROC_between": 0.7425371620616413,
+        "AUROC_within_trajmean": 0.710523775083562,
+        "within_pairs": 935929.0,
+        "between_pairs": 113563869.0,
+        "trajectories_within": 172
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8842846199788185,
+      "fresh": {
+        "AUROC_all": 0.9901313449593804,
+        "AUROC_within": 0.9989682102595068,
+        "AUROC_within_CI95": [
+          0.9971328220273648,
+          0.999910659359423
+        ],
+        "AUROC_between": 0.9900989161183982,
+        "AUROC_within_trajmean": 0.9965670478918459,
+        "within_pairs": 301418.0,
+        "between_pairs": 82136462.0,
+        "trajectories_within": 196
+      },
+      "recovered": {
+        "AUROC_all": 0.8152407177172487,
+        "AUROC_within": 0.746240366523529,
+        "AUROC_within_CI95": [
+          0.6972112937120106,
+          0.770908286782235
+        ],
+        "AUROC_between": 0.8158093794779042,
+        "AUROC_within_trajmean": 0.7237914078309036,
+        "within_pairs": 935929.0,
+        "between_pairs": 113563869.0,
+        "trajectories_within": 172
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.962561656942014,
+      "fresh": {
+        "AUROC_all": 0.9769265655963254,
+        "AUROC_within": 0.9764606809159081,
+        "AUROC_within_CI95": [
+          0.9612413341735847,
+          0.9872945529642411
+        ],
+        "AUROC_between": 0.9769271231782715,
+        "AUROC_within_trajmean": 0.9671665808944105,
+        "within_pairs": 24937.0,
+        "between_pairs": 20835980.0,
+        "trajectories_within": 89
+      },
+      "recovered": {
+        "AUROC_all": 0.9031861519857872,
+        "AUROC_within": 0.698520428939867,
+        "AUROC_within_CI95": [
+          0.6329606991490601,
+          0.7593959590188651
+        ],
+        "AUROC_between": 0.9040064809240649,
+        "AUROC_within_trajmean": 0.6305770782098546,
+        "within_pairs": 14734.0,
+        "between_pairs": 3676019.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.9650540668972066,
+      "fresh": {
+        "AUROC_all": 0.9837289990655732,
+        "AUROC_within": 0.9993583831254762,
+        "AUROC_within_CI95": [
+          0.9985197100314045,
+          0.999892308109196
+        ],
+        "AUROC_between": 0.9837102934443208,
+        "AUROC_within_trajmean": 0.9970704662444753,
+        "within_pairs": 24937.0,
+        "between_pairs": 20835980.0,
+        "trajectories_within": 89
+      },
+      "recovered": {
+        "AUROC_all": 0.901973662285176,
+        "AUROC_within": 0.739853400298629,
+        "AUROC_within_CI95": [
+          0.6645432748386871,
+          0.8002791596777423
+        ],
+        "AUROC_between": 0.9026234630452128,
+        "AUROC_within_trajmean": 0.5681085315608628,
+        "within_pairs": 14734.0,
+        "between_pairs": 3676019.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8948708506161622,
+      "fresh": {
+        "AUROC_all": 0.9288913330128297,
+        "AUROC_within": 0.9992380799615029,
+        "AUROC_within_CI95": [
+          0.9979509974431603,
+          0.9999596133071187
+        ],
+        "AUROC_between": 0.9288071403408911,
+        "AUROC_within_trajmean": 0.9994242209293224,
+        "within_pairs": 24937.0,
+        "between_pairs": 20835980.0,
+        "trajectories_within": 89
+      },
+      "recovered": {
+        "AUROC_all": 0.7978762057498836,
+        "AUROC_within": 0.6995384824216099,
+        "AUROC_within_CI95": [
+          0.5644841504669386,
+          0.7978085816200485
+        ],
+        "AUROC_between": 0.7982703571445088,
+        "AUROC_within_trajmean": 0.5548227180618407,
+        "within_pairs": 14734.0,
+        "between_pairs": 3676019.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.9355822964816327,
+      "fresh": {
+        "AUROC_all": 0.9613255256228669,
+        "AUROC_within": 0.9903356458274852,
+        "AUROC_within_CI95": [
+          0.984024962642482,
+          0.9947622280041142
+        ],
+        "AUROC_between": 0.9612908056160545,
+        "AUROC_within_trajmean": 0.9780283656786851,
+        "within_pairs": 24937.0,
+        "between_pairs": 20835980.0,
+        "trajectories_within": 89
+      },
+      "recovered": {
+        "AUROC_all": 0.8519875212456645,
+        "AUROC_within": 0.713587620469662,
+        "AUROC_within_CI95": [
+          0.6139566741395781,
+          0.7909767146745854
+        ],
+        "AUROC_between": 0.8525422474693412,
+        "AUROC_within_trajmean": 0.5882033381888425,
+        "within_pairs": 14734.0,
+        "between_pairs": 3676019.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.9655847857755443,
+      "fresh": {
+        "AUROC_all": 0.9834648687782996,
+        "AUROC_within": 0.9897341300076192,
+        "AUROC_within_CI95": [
+          0.9743183749290824,
+          0.9997223048520386
+        ],
+        "AUROC_between": 0.9834573655762772,
+        "AUROC_within_trajmean": 0.9935478813102493,
+        "within_pairs": 24937.0,
+        "between_pairs": 20835980.0,
+        "trajectories_within": 89
+      },
+      "recovered": {
+        "AUROC_all": 0.9006305759285436,
+        "AUROC_within": 0.7175240939324012,
+        "AUROC_within_CI95": [
+          0.6438485650831018,
+          0.7880282297801615
+        ],
+        "AUROC_between": 0.9013644924033309,
+        "AUROC_within_trajmean": 0.5872600000269131,
+        "within_pairs": 14734.0,
+        "between_pairs": 3676019.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8691063330654919,
+      "fresh": {
+        "AUROC_all": 0.9292438820086167,
+        "AUROC_within": 0.9641721433114268,
+        "AUROC_within_CI95": [
+          0.9410711020300353,
+          0.9804775923687803
+        ],
+        "AUROC_between": 0.9289667850133119,
+        "AUROC_within_trajmean": 0.9295236557342602,
+        "within_pairs": 4717.0,
+        "between_pairs": 594581.0,
+        "trajectories_within": 61
+      },
+      "recovered": {
+        "AUROC_all": 0.7913044065689832,
+        "AUROC_within": 0.7495741056218058,
+        "AUROC_within_CI95": [
+          0.6476602770618557,
+          0.8490279594588304
+        ],
+        "AUROC_between": 0.7920625913507007,
+        "AUROC_within_trajmean": 0.6283785681798337,
+        "within_pairs": 5283.0,
+        "between_pairs": 290775.0,
+        "trajectories_within": 41
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.884623436436908,
+      "fresh": {
+        "AUROC_all": 0.9507440371901792,
+        "AUROC_within": 0.9976680093279627,
+        "AUROC_within_CI95": [
+          0.9953045759072275,
+          0.9992214086320894
+        ],
+        "AUROC_between": 0.9503717744092058,
+        "AUROC_within_trajmean": 0.9906907264435307,
+        "within_pairs": 4717.0,
+        "between_pairs": 594581.0,
+        "trajectories_within": 61
+      },
+      "recovered": {
+        "AUROC_all": 0.8293611386957961,
+        "AUROC_within": 0.7743706227522241,
+        "AUROC_within_CI95": [
+          0.6925679722945983,
+          0.8507400375227856
+        ],
+        "AUROC_between": 0.8303602441750494,
+        "AUROC_within_trajmean": 0.617761594571961,
+        "within_pairs": 5283.0,
+        "between_pairs": 290775.0,
+        "trajectories_within": 41
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.6970220338095986,
+      "fresh": {
+        "AUROC_all": 0.7940340198031697,
+        "AUROC_within": 0.9987280050879797,
+        "AUROC_within_CI95": [
+          0.9969201868167358,
+          0.9997943568409452
+        ],
+        "AUROC_between": 0.7924101173767746,
+        "AUROC_within_trajmean": 0.9562578814627996,
+        "within_pairs": 4717.0,
+        "between_pairs": 594581.0,
+        "trajectories_within": 61
+      },
+      "recovered": {
+        "AUROC_all": 0.6609346817177715,
+        "AUROC_within": 0.7724777588491387,
+        "AUROC_within_CI95": [
+          0.6867198416143183,
+          0.8555351833193001
+        ],
+        "AUROC_between": 0.6589080904479409,
+        "AUROC_within_trajmean": 0.623790332405338,
+        "within_pairs": 5283.0,
+        "between_pairs": 290775.0,
+        "trajectories_within": 41
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8026447036657338,
+      "fresh": {
+        "AUROC_all": 0.9119436407263165,
+        "AUROC_within": 0.9936400254398983,
+        "AUROC_within_CI95": [
+          0.9879728253414268,
+          0.9974497250994793
+        ],
+        "AUROC_between": 0.9112955173475102,
+        "AUROC_within_trajmean": 0.949784171029691,
+        "within_pairs": 4717.0,
+        "between_pairs": 594581.0,
+        "trajectories_within": 61
+      },
+      "recovered": {
+        "AUROC_all": 0.7302724466151903,
+        "AUROC_within": 0.769070603823585,
+        "AUROC_within_CI95": [
+          0.6782326647330006,
+          0.8501116837050546
+        ],
+        "AUROC_between": 0.7295675350356805,
+        "AUROC_within_trajmean": 0.6445451563854084,
+        "within_pairs": 5283.0,
+        "between_pairs": 290775.0,
+        "trajectories_within": 41
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8842039720582847,
+      "fresh": {
+        "AUROC_all": 0.9506556003857847,
+        "AUROC_within": 0.9972440110239559,
+        "AUROC_within_CI95": [
+          0.9946105646661614,
+          0.9988453226222243
+        ],
+        "AUROC_between": 0.9502859997208118,
+        "AUROC_within_trajmean": 0.988968587016473,
+        "within_pairs": 4717.0,
+        "between_pairs": 594581.0,
+        "trajectories_within": 61
+      },
+      "recovered": {
+        "AUROC_all": 0.8262299954738599,
+        "AUROC_within": 0.7667991671398826,
+        "AUROC_within_CI95": [
+          0.6872672627444807,
+          0.8409266269168004
+        ],
+        "AUROC_between": 0.8273097755996904,
+        "AUROC_within_trajmean": 0.6112321388936326,
+        "within_pairs": 5283.0,
+        "between_pairs": 290775.0,
+        "trajectories_within": 41
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9223869532987398,
+      "fresh": {
+        "AUROC_all": 0.9537631021249785,
+        "AUROC_within": 0.9533762057877814,
+        "AUROC_within_CI95": [
+          0.5302211302211302,
+          0.9893112432130596
+        ],
+        "AUROC_between": 0.953764254186494,
+        "AUROC_within_trajmean": 0.76394783377542,
+        "within_pairs": 622.0,
+        "between_pairs": 208886.0,
+        "trajectories_within": 29
+      },
+      "recovered": {
+        "AUROC_all": 0.9341764319139885,
+        "AUROC_within": 0.7099644128113879,
+        "AUROC_within_CI95": [
+          0.35286764705882356,
+          0.7200009149130833
+        ],
+        "AUROC_between": 0.9391579363510575,
+        "AUROC_within_trajmean": 0.5349693596446843,
+        "within_pairs": 562.0,
+        "between_pairs": 25295.0,
+        "trajectories_within": 11
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9340993328391402,
+      "fresh": {
+        "AUROC_all": 0.9692422246405865,
+        "AUROC_within": 0.9839228295819936,
+        "AUROC_within_CI95": [
+          0.8048647932131495,
+          0.9991119595297242
+        ],
+        "AUROC_between": 0.9691985101921622,
+        "AUROC_within_trajmean": 0.9364500442086648,
+        "within_pairs": 622.0,
+        "between_pairs": 208886.0,
+        "trajectories_within": 29
+      },
+      "recovered": {
+        "AUROC_all": 0.9437289708782921,
+        "AUROC_within": 0.7704626334519573,
+        "AUROC_within_CI95": [
+          0.1111111111111111,
+          0.7875553869788228
+        ],
+        "AUROC_between": 0.9475785728404823,
+        "AUROC_within_trajmean": 0.35972901557317144,
+        "within_pairs": 562.0,
+        "between_pairs": 25295.0,
+        "trajectories_within": 11
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8372288651819383,
+      "fresh": {
+        "AUROC_all": 0.9464698245413063,
+        "AUROC_within": 1.0,
+        "AUROC_within_CI95": [
+          1.0,
+          1.0
+        ],
+        "AUROC_between": 0.9463104276974044,
+        "AUROC_within_trajmean": 1.0,
+        "within_pairs": 622.0,
+        "between_pairs": 208886.0,
+        "trajectories_within": 29
+      },
+      "recovered": {
+        "AUROC_all": 0.9010326023900684,
+        "AUROC_within": 0.7722419928825622,
+        "AUROC_within_CI95": [
+          0.09988095238095239,
+          0.7882930172342635
+        ],
+        "AUROC_between": 0.9038940502075509,
+        "AUROC_within_trajmean": 0.34457750042165625,
+        "within_pairs": 562.0,
+        "between_pairs": 25295.0,
+        "trajectories_within": 11
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8467496051825829,
+      "fresh": {
+        "AUROC_all": 0.9288237203352616,
+        "AUROC_within": 0.9212218649517685,
+        "AUROC_within_CI95": [
+          0.26187888198757764,
+          0.9775548733851304
+        ],
+        "AUROC_between": 0.9288463563857798,
+        "AUROC_within_trajmean": 0.5006701426652166,
+        "within_pairs": 622.0,
+        "between_pairs": 208886.0,
+        "trajectories_within": 29
+      },
+      "recovered": {
+        "AUROC_all": 0.9021154813010016,
+        "AUROC_within": 0.7829181494661922,
+        "AUROC_within_CI95": [
+          0.34778428093645486,
+          0.7930204602784795
+        ],
+        "AUROC_between": 0.904763787309745,
+        "AUROC_within_trajmean": 0.4359925788497217,
+        "within_pairs": 562.0,
+        "between_pairs": 25295.0,
+        "trajectories_within": 11
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9326360911464209,
+      "fresh": {
+        "AUROC_all": 0.9670179659010635,
+        "AUROC_within": 0.9598070739549839,
+        "AUROC_within_CI95": [
+          0.5572775744071303,
+          0.9946717571783451
+        ],
+        "AUROC_between": 0.9670394377794587,
+        "AUROC_within_trajmean": 0.8288019451812555,
+        "within_pairs": 622.0,
+        "between_pairs": 208886.0,
+        "trajectories_within": 29
+      },
+      "recovered": {
+        "AUROC_all": 0.9412151448350543,
+        "AUROC_within": 0.7722419928825622,
+        "AUROC_within_CI95": [
+          0.26625000000000004,
+          0.7840999499378442
+        ],
+        "AUROC_between": 0.9449693615339,
+        "AUROC_within_trajmean": 0.40484623601506714,
+        "within_pairs": 562.0,
+        "between_pairs": 25295.0,
+        "trajectories_within": 11
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.8278844301308801,
+      "fresh": {
+        "AUROC_all": 0.9810296528233802,
+        "AUROC_within": 0.9664688550441963,
+        "AUROC_within_CI95": [
+          0.9432014064925921,
+          0.985522685808844
+        ],
+        "AUROC_between": 0.9810900453540109,
+        "AUROC_within_trajmean": 0.9215033395122808,
+        "within_pairs": 72291.0,
+        "between_pairs": 17429550.0,
+        "trajectories_within": 111
+      },
+      "recovered": {
+        "AUROC_all": 0.6926361482840184,
+        "AUROC_within": 0.5908787705055043,
+        "AUROC_within_CI95": [
+          0.5671005080796068,
+          0.6100035662412326
+        ],
+        "AUROC_between": 0.6959497058286855,
+        "AUROC_within_trajmean": 0.5807459671048291,
+        "within_pairs": 640133.0,
+        "between_pairs": 19658103.0,
+        "trajectories_within": 110
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.813810180096945,
+      "fresh": {
+        "AUROC_all": 0.9866884860855495,
+        "AUROC_within": 0.984451729814223,
+        "AUROC_within_CI95": [
+          0.9514479688511503,
+          0.999612102504976
+        ],
+        "AUROC_between": 0.986697763281324,
+        "AUROC_within_trajmean": 0.9862588689769118,
+        "within_pairs": 72291.0,
+        "between_pairs": 17429550.0,
+        "trajectories_within": 111
+      },
+      "recovered": {
+        "AUROC_all": 0.6718328873504081,
+        "AUROC_within": 0.5526109417886595,
+        "AUROC_within_CI95": [
+          0.5097818024294328,
+          0.6025481953860634
+        ],
+        "AUROC_between": 0.6757151491168807,
+        "AUROC_within_trajmean": 0.5641517267895702,
+        "within_pairs": 640133.0,
+        "between_pairs": 19658103.0,
+        "trajectories_within": 110
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7437374823208992,
+      "fresh": {
+        "AUROC_all": 0.9714350621743164,
+        "AUROC_within": 0.9999723340388154,
+        "AUROC_within_CI95": [
+          0.9999207840777169,
+          1.0
+        ],
+        "AUROC_between": 0.9713167006606597,
+        "AUROC_within_trajmean": 0.9999889635686586,
+        "within_pairs": 72291.0,
+        "between_pairs": 17429550.0,
+        "trajectories_within": 111
+      },
+      "recovered": {
+        "AUROC_all": 0.5656948219539866,
+        "AUROC_within": 0.5644748825634672,
+        "AUROC_within_CI95": [
+          0.503072537862694,
+          0.6095486757585805
+        ],
+        "AUROC_between": 0.5657345472246228,
+        "AUROC_within_trajmean": 0.5464859268674179,
+        "within_pairs": 640133.0,
+        "between_pairs": 19658103.0,
+        "trajectories_within": 110
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.821048781181993,
+      "fresh": {
+        "AUROC_all": 0.9874482918682669,
+        "AUROC_within": 0.9956287781328242,
+        "AUROC_within_CI95": [
+          0.9899703507996334,
+          0.999417106351637
+        ],
+        "AUROC_between": 0.9874143623903084,
+        "AUROC_within_trajmean": 0.992956037200414,
+        "within_pairs": 72291.0,
+        "between_pairs": 17429550.0,
+        "trajectories_within": 111
+      },
+      "recovered": {
+        "AUROC_all": 0.6822839925597476,
+        "AUROC_within": 0.5804731204296607,
+        "AUROC_within_CI95": [
+          0.5542708843709349,
+          0.6136518235912846
+        ],
+        "AUROC_between": 0.6855992920578349,
+        "AUROC_within_trajmean": 0.5839477658894977,
+        "within_pairs": 640133.0,
+        "between_pairs": 19658103.0,
+        "trajectories_within": 110
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8100548214270425,
+      "fresh": {
+        "AUROC_all": 0.9472607723842229,
+        "AUROC_within": 0.8890478056426332,
+        "AUROC_within_CI95": [
+          0.8135294945082012,
+          0.9528037727459321
+        ],
+        "AUROC_between": 0.9474900767190475,
+        "AUROC_within_trajmean": 0.8802512190720148,
+        "within_pairs": 51040.0,
+        "between_pairs": 12957408.0,
+        "trajectories_within": 149
+      },
+      "recovered": {
+        "AUROC_all": 0.6805267350384678,
+        "AUROC_within": 0.5881295471872147,
+        "AUROC_within_CI95": [
+          0.5581373683203609,
+          0.6219320765471197
+        ],
+        "AUROC_between": 0.6827041506516217,
+        "AUROC_within_trajmean": 0.5379701623398961,
+        "within_pairs": 318741.0,
+        "between_pairs": 13525563.0,
+        "trajectories_within": 142
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8181549152080183,
+      "fresh": {
+        "AUROC_all": 0.9686277717372588,
+        "AUROC_within": 0.996551724137931,
+        "AUROC_within_CI95": [
+          0.9937647485139313,
+          0.9981943945216326
+        ],
+        "AUROC_between": 0.9685177776296,
+        "AUROC_within_trajmean": 0.9641071296895359,
+        "within_pairs": 51040.0,
+        "between_pairs": 12957408.0,
+        "trajectories_within": 149
+      },
+      "recovered": {
+        "AUROC_all": 0.6900554552977166,
+        "AUROC_within": 0.5918598485918034,
+        "AUROC_within_CI95": [
+          0.5262764097786102,
+          0.652924393800376
+        ],
+        "AUROC_between": 0.6923695154131477,
+        "AUROC_within_trajmean": 0.4701869687061073,
+        "within_pairs": 318741.0,
+        "between_pairs": 13525563.0,
+        "trajectories_within": 142
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7555143124285286,
+      "fresh": {
+        "AUROC_all": 0.9292076964138997,
+        "AUROC_within": 0.9938479623824451,
+        "AUROC_within_CI95": [
+          0.9860792869809137,
+          0.9978180073969202
+        ],
+        "AUROC_between": 0.9289530745655303,
+        "AUROC_within_trajmean": 0.971767484425836,
+        "within_pairs": 51040.0,
+        "between_pairs": 12957408.0,
+        "trajectories_within": 149
+      },
+      "recovered": {
+        "AUROC_all": 0.6114357211456783,
+        "AUROC_within": 0.5055044691457955,
+        "AUROC_within_CI95": [
+          0.4331396560010993,
+          0.5995985045384039
+        ],
+        "AUROC_between": 0.6139320780953813,
+        "AUROC_within_trajmean": 0.44363408776810004,
+        "within_pairs": 318741.0,
+        "between_pairs": 13525563.0,
+        "trajectories_within": 142
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.824446045015124,
+      "fresh": {
+        "AUROC_all": 0.9717259122687042,
+        "AUROC_within": 0.983365987460815,
+        "AUROC_within_CI95": [
+          0.9602870998880676,
+          0.9957736171447443
+        ],
+        "AUROC_between": 0.9716800613209061,
+        "AUROC_within_trajmean": 0.9588852172164785,
+        "within_pairs": 51040.0,
+        "between_pairs": 12957408.0,
+        "trajectories_within": 149
+      },
+      "recovered": {
+        "AUROC_all": 0.6975013695163007,
+        "AUROC_within": 0.6009110845482696,
+        "AUROC_within_CI95": [
+          0.5702877646730375,
+          0.6360219158677551
+        ],
+        "AUROC_between": 0.6997775989066037,
+        "AUROC_within_trajmean": 0.5069396371818564,
+        "within_pairs": 318741.0,
+        "between_pairs": 13525563.0,
+        "trajectories_within": 142
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8696154553505746,
+      "fresh": {
+        "AUROC_all": 0.9614057864438361,
+        "AUROC_within": 0.9300907100406631,
+        "AUROC_within_CI95": [
+          0.8908978732809657,
+          0.9535565625371872
+        ],
+        "AUROC_between": 0.9615509540032466,
+        "AUROC_within_trajmean": 0.8911742520708893,
+        "within_pairs": 12788.0,
+        "between_pairs": 2758586.0,
+        "trajectories_within": 54
+      },
+      "recovered": {
+        "AUROC_all": 0.6147962319505679,
+        "AUROC_within": 0.5444263540649082,
+        "AUROC_within_CI95": [
+          0.5214232927602757,
+          0.5911469180737221
+        ],
+        "AUROC_between": 0.6182812750297535,
+        "AUROC_within_trajmean": 0.5401924329515457,
+        "within_pairs": 46065.0,
+        "between_pairs": 930143.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8576154535650261,
+      "fresh": {
+        "AUROC_all": 0.9822607847226682,
+        "AUROC_within": 0.9952299030340944,
+        "AUROC_within_CI95": [
+          0.9881431380284871,
+          0.9990016747814736
+        ],
+        "AUROC_between": 0.9822006636733457,
+        "AUROC_within_trajmean": 0.9898192720023625,
+        "within_pairs": 12788.0,
+        "between_pairs": 2758586.0,
+        "trajectories_within": 54
+      },
+      "recovered": {
+        "AUROC_all": 0.593115401635717,
+        "AUROC_within": 0.43469011179854555,
+        "AUROC_within_CI95": [
+          0.3722885654382281,
+          0.5534997395915413
+        ],
+        "AUROC_between": 0.6009613575546986,
+        "AUROC_within_trajmean": 0.4657306576647215,
+        "within_pairs": 46065.0,
+        "between_pairs": 930143.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8280090509452693,
+      "fresh": {
+        "AUROC_all": 0.960913972635956,
+        "AUROC_within": 1.0,
+        "AUROC_within_CI95": [
+          1.0,
+          1.0
+        ],
+        "AUROC_between": 0.9607327812147238,
+        "AUROC_within_trajmean": 1.0,
+        "within_pairs": 12788.0,
+        "between_pairs": 2758586.0,
+        "trajectories_within": 54
+      },
+      "recovered": {
+        "AUROC_all": 0.5106063461885172,
+        "AUROC_within": 0.3866927168131987,
+        "AUROC_within_CI95": [
+          0.3272196004902374,
+          0.5495927401221156
+        ],
+        "AUROC_between": 0.5167431244443059,
+        "AUROC_within_trajmean": 0.43287560635444416,
+        "within_pairs": 46065.0,
+        "between_pairs": 930143.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8635253958560991,
+      "fresh": {
+        "AUROC_all": 0.978795355661127,
+        "AUROC_within": 0.9914763841101032,
+        "AUROC_within_CI95": [
+          0.981091483971236,
+          0.996978159897071
+        ],
+        "AUROC_between": 0.9787365701123691,
+        "AUROC_within_trajmean": 0.9775942624019395,
+        "within_pairs": 12788.0,
+        "between_pairs": 2758586.0,
+        "trajectories_within": 54
+      },
+      "recovered": {
+        "AUROC_all": 0.6138312736629898,
+        "AUROC_within": 0.5168566156517964,
+        "AUROC_within_CI95": [
+          0.4651076401332709,
+          0.5933835877793691
+        ],
+        "AUROC_between": 0.618633908979587,
+        "AUROC_within_trajmean": 0.48087878530440525,
+        "within_pairs": 46065.0,
+        "between_pairs": 930143.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.9053090435183156,
+      "fresh": {
+        "AUROC_all": 0.9435269858346781,
+        "AUROC_within": 0.9359449444150344,
+        "AUROC_within_CI95": [
+          0.8986453951488015,
+          0.969579191990854
+        ],
+        "AUROC_between": 0.9435527544435068,
+        "AUROC_within_trajmean": 0.9145283325363268,
+        "within_pairs": 1889.0,
+        "between_pairs": 555811.0,
+        "trajectories_within": 80
+      },
+      "recovered": {
+        "AUROC_all": 0.7031195200738348,
+        "AUROC_within": 0.5854410857495373,
+        "AUROC_within_CI95": [
+          0.44972130610040695,
+          0.6800280039144994
+        ],
+        "AUROC_between": 0.7049068200770174,
+        "AUROC_within_trajmean": 0.49771720341483355,
+        "within_pairs": 1621.0,
+        "between_pairs": 106729.0,
+        "trajectories_within": 35
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.9108601987450636,
+      "fresh": {
+        "AUROC_all": 0.9717321140398063,
+        "AUROC_within": 0.9867654843832716,
+        "AUROC_within_CI95": [
+          0.9766323940071076,
+          0.993348060171356
+        ],
+        "AUROC_between": 0.9716810210665137,
+        "AUROC_within_trajmean": 0.949569715007215,
+        "within_pairs": 1889.0,
+        "between_pairs": 555811.0,
+        "trajectories_within": 80
+      },
+      "recovered": {
+        "AUROC_all": 0.6711675126903554,
+        "AUROC_within": 0.5737199259716225,
+        "AUROC_within_CI95": [
+          0.38701044226044223,
+          0.7197947163830319
+        ],
+        "AUROC_between": 0.6726475465899615,
+        "AUROC_within_trajmean": 0.47406804975485334,
+        "within_pairs": 1621.0,
+        "between_pairs": 106729.0,
+        "trajectories_within": 35
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.7578029064639894,
+      "fresh": {
+        "AUROC_all": 0.84159046082123,
+        "AUROC_within": 1.0,
+        "AUROC_within_CI95": [
+          1.0,
+          1.0
+        ],
+        "AUROC_between": 0.8410520842516611,
+        "AUROC_within_trajmean": 1.0,
+        "within_pairs": 1889.0,
+        "between_pairs": 555811.0,
+        "trajectories_within": 80
+      },
+      "recovered": {
+        "AUROC_all": 0.49114905399169356,
+        "AUROC_within": 0.5854410857495373,
+        "AUROC_within_CI95": [
+          0.38142986530545075,
+          0.7484876024662223
+        ],
+        "AUROC_between": 0.489716946659296,
+        "AUROC_within_trajmean": 0.32975101593095274,
+        "within_pairs": 1621.0,
+        "between_pairs": 106729.0,
+        "trajectories_within": 35
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.886596223956139,
+      "fresh": {
+        "AUROC_all": 0.9424081047157971,
+        "AUROC_within": 0.9475913181577554,
+        "AUROC_within_CI95": [
+          0.8964103530850184,
+          0.9837551451821462
+        ],
+        "AUROC_between": 0.9423904888532253,
+        "AUROC_within_trajmean": 0.9307969318579783,
+        "within_pairs": 1889.0,
+        "between_pairs": 555811.0,
+        "trajectories_within": 80
+      },
+      "recovered": {
+        "AUROC_all": 0.6960959852330411,
+        "AUROC_within": 0.5144972239358421,
+        "AUROC_within_CI95": [
+          0.38681701929783774,
+          0.647236284695516
+        ],
+        "AUROC_between": 0.6988541071311453,
+        "AUROC_within_trajmean": 0.4122973726039388,
+        "within_pairs": 1621.0,
+        "between_pairs": 106729.0,
+        "trajectories_within": 35
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.9160922833212558,
+      "fresh": {
+        "AUROC_all": 0.9752931683700915,
+        "AUROC_within": 0.9835892006352568,
+        "AUROC_within_CI95": [
+          0.9687861291446479,
+          0.992463623158986
+        ],
+        "AUROC_between": 0.9752649731653386,
+        "AUROC_within_trajmean": 0.9454346590909092,
+        "within_pairs": 1889.0,
+        "between_pairs": 555811.0,
+        "trajectories_within": 80
+      },
+      "recovered": {
+        "AUROC_all": 0.6779972311952007,
+        "AUROC_within": 0.5872917951881554,
+        "AUROC_within_CI95": [
+          0.43740809490809496,
+          0.6946432850296668
+        ],
+        "AUROC_between": 0.6793748653130827,
+        "AUROC_within_trajmean": 0.49842885117520136,
+        "within_pairs": 1621.0,
+        "between_pairs": 106729.0,
+        "trajectories_within": 35
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8555490131135073,
+      "fresh": {
+        "AUROC_all": 0.8899012401445466,
+        "AUROC_within": 0.7516059957173448,
+        "AUROC_within_CI95": [
+          0.6516561780354165,
+          0.8623340582450832
+        ],
+        "AUROC_between": 0.8905674585572668,
+        "AUROC_within_trajmean": 0.8009623994018404,
+        "within_pairs": 934.0,
+        "between_pairs": 193882.0,
+        "trajectories_within": 28
+      },
+      "recovered": {
+        "AUROC_all": 0.6582697088068182,
+        "AUROC_within": 0.48065296251511486,
+        "AUROC_within_CI95": [
+          0.3595426977956852,
+          0.7370719652036378
+        ],
+        "AUROC_between": 0.6650384774895166,
+        "AUROC_within_trajmean": 0.5397875085621628,
+        "within_pairs": 1654.0,
+        "between_pairs": 43402.0,
+        "trajectories_within": 23
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8904795201118758,
+      "fresh": {
+        "AUROC_all": 0.9390553137319316,
+        "AUROC_within": 0.9785867237687366,
+        "AUROC_within_CI95": [
+          0.94999715261959,
+          0.9948850919235581
+        ],
+        "AUROC_between": 0.9388648765744112,
+        "AUROC_within_trajmean": 0.916574050949051,
+        "within_pairs": 934.0,
+        "between_pairs": 193882.0,
+        "trajectories_within": 28
+      },
+      "recovered": {
+        "AUROC_all": 0.7069646661931818,
+        "AUROC_within": 0.46795646916565903,
+        "AUROC_within_CI95": [
+          0.38789397271087056,
+          0.6409708394537837
+        ],
+        "AUROC_between": 0.7160729920280171,
+        "AUROC_within_trajmean": 0.435495829469994,
+        "within_pairs": 1654.0,
+        "between_pairs": 43402.0,
+        "trajectories_within": 23
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8130926532464824,
+      "fresh": {
+        "AUROC_all": 0.890517205978975,
+        "AUROC_within": 0.7580299785867237,
+        "AUROC_within_CI95": [
+          0.5903435874560907,
+          0.9519315326633165
+        ],
+        "AUROC_between": 0.8911554450645238,
+        "AUROC_within_trajmean": 0.8962741085445167,
+        "within_pairs": 934.0,
+        "between_pairs": 193882.0,
+        "trajectories_within": 28
+      },
+      "recovered": {
+        "AUROC_all": 0.5625665838068182,
+        "AUROC_within": 0.5646916565900847,
+        "AUROC_within_CI95": [
+          0.42785334928731866,
+          0.6310680546179096
+        ],
+        "AUROC_between": 0.5624855997419473,
+        "AUROC_within_trajmean": 0.43079331844048563,
+        "within_pairs": 1654.0,
+        "between_pairs": 43402.0,
+        "trajectories_within": 23
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8843858486978495,
+      "fresh": {
+        "AUROC_all": 0.9340967887647832,
+        "AUROC_within": 0.9561027837259101,
+        "AUROC_within_CI95": [
+          0.9162807767590398,
+          0.9897801766745642
+        ],
+        "AUROC_between": 0.9339907778958335,
+        "AUROC_within_trajmean": 0.9071480602730603,
+        "within_pairs": 934.0,
+        "between_pairs": 193882.0,
+        "trajectories_within": 28
+      },
+      "recovered": {
+        "AUROC_all": 0.6899192116477273,
+        "AUROC_within": 0.4655380894800484,
+        "AUROC_within_CI95": [
+          0.3788812515739803,
+          0.6553310364054393
+        ],
+        "AUROC_between": 0.6984701165844892,
+        "AUROC_within_trajmean": 0.5013415544194945,
+        "within_pairs": 1654.0,
+        "between_pairs": 43402.0,
+        "trajectories_within": 23
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7525836976985205,
+      "fresh": {
+        "AUROC_all": 0.9613174323821848,
+        "AUROC_within": 0.963324550997324,
+        "AUROC_within_CI95": [
+          0.94541358661067,
+          0.9778690116251244
+        ],
+        "AUROC_between": 0.9613054598105089,
+        "AUROC_within_trajmean": 0.9251317540142361,
+        "within_pairs": 579952.0,
+        "between_pairs": 97224931.0,
+        "trajectories_within": 134
+      },
+      "recovered": {
+        "AUROC_all": 0.7390298085641577,
+        "AUROC_within": 0.6252250279585757,
+        "AUROC_within_CI95": [
+          0.6064112924292773,
+          0.6461873047494905
+        ],
+        "AUROC_between": 0.7407070720232706,
+        "AUROC_within_trajmean": 0.6233933279310484,
+        "within_pairs": 21775072.0,
+        "between_pairs": 1477470506.0,
+        "trajectories_within": 135
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7164663729995704,
+      "fresh": {
+        "AUROC_all": 0.9811256100577309,
+        "AUROC_within": 0.9989119789223936,
+        "AUROC_within_CI95": [
+          0.9972187785089144,
+          0.9998992260590913
+        ],
+        "AUROC_between": 0.9810195134003232,
+        "AUROC_within_trajmean": 0.9899447897394877,
+        "within_pairs": 579952.0,
+        "between_pairs": 97224931.0,
+        "trajectories_within": 134
+      },
+      "recovered": {
+        "AUROC_all": 0.7166534737646563,
+        "AUROC_within": 0.5733153029298824,
+        "AUROC_within_CI95": [
+          0.5437747010572337,
+          0.5993003377047719
+        ],
+        "AUROC_between": 0.7187660025614074,
+        "AUROC_within_trajmean": 0.5200487905550595,
+        "within_pairs": 21775072.0,
+        "between_pairs": 1477470506.0,
+        "trajectories_within": 135
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.6701492698302141,
+      "fresh": {
+        "AUROC_all": 0.9285569923947458,
+        "AUROC_within": 0.9233022732915828,
+        "AUROC_within_CI95": [
+          0.8329996527094785,
+          0.9936319685200732
+        ],
+        "AUROC_between": 0.9285883370799204,
+        "AUROC_within_trajmean": 0.9535687493966214,
+        "within_pairs": 579952.0,
+        "between_pairs": 97224931.0,
+        "trajectories_within": 134
+      },
+      "recovered": {
+        "AUROC_all": 0.674427380568869,
+        "AUROC_within": 0.5079846349072922,
+        "AUROC_within_CI95": [
+          0.4588187623455138,
+          0.5569273241293339
+        ],
+        "AUROC_between": 0.6768804263359014,
+        "AUROC_within_trajmean": 0.4791365973051454,
+        "within_pairs": 21775072.0,
+        "between_pairs": 1477470506.0,
+        "trajectories_within": 135
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7394647609832509,
+      "fresh": {
+        "AUROC_all": 0.9852652704466709,
+        "AUROC_within": 0.9962496896294866,
+        "AUROC_within_CI95": [
+          0.9932117167059362,
+          0.9984871042382528
+        ],
+        "AUROC_between": 0.9851997477889699,
+        "AUROC_within_trajmean": 0.9854209824735427,
+        "within_pairs": 579952.0,
+        "between_pairs": 97224931.0,
+        "trajectories_within": 134
+      },
+      "recovered": {
+        "AUROC_all": 0.7368360238712006,
+        "AUROC_within": 0.6359626503186764,
+        "AUROC_within_CI95": [
+          0.6176525059664446,
+          0.656124105115411
+        ],
+        "AUROC_between": 0.7383227032756754,
+        "AUROC_within_trajmean": 0.5835102212343075,
+        "within_pairs": 21775072.0,
+        "between_pairs": 1477470506.0,
+        "trajectories_within": 135
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7826474109584509,
+      "fresh": {
+        "AUROC_all": 0.9695272796044737,
+        "AUROC_within": 0.9739268007075765,
+        "AUROC_within_CI95": [
+          0.9601936382396217,
+          0.9828689725808339
+        ],
+        "AUROC_between": 0.9695111857246345,
+        "AUROC_within_trajmean": 0.9062937927887701,
+        "within_pairs": 240822.0,
+        "between_pairs": 65832570.0,
+        "trajectories_within": 160
+      },
+      "recovered": {
+        "AUROC_all": 0.7372511366005363,
+        "AUROC_within": 0.6399576952939896,
+        "AUROC_within_CI95": [
+          0.5940331406274983,
+          0.6841852681126165
+        ],
+        "AUROC_between": 0.7395408482128295,
+        "AUROC_within_trajmean": 0.5638947113464412,
+        "within_pairs": 5796991.0,
+        "between_pairs": 246323249.0,
+        "trajectories_within": 155
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7862339021851977,
+      "fresh": {
+        "AUROC_all": 0.9811863450267545,
+        "AUROC_within": 0.9996511946582953,
+        "AUROC_within_CI95": [
+          0.9990953952826676,
+          0.9999203504478487
+        ],
+        "AUROC_between": 0.981118798795186,
+        "AUROC_within_trajmean": 0.9941324188871438,
+        "within_pairs": 240822.0,
+        "between_pairs": 65832570.0,
+        "trajectories_within": 160
+      },
+      "recovered": {
+        "AUROC_all": 0.7495108127772685,
+        "AUROC_within": 0.5930811346783185,
+        "AUROC_within_CI95": [
+          0.5417849679318493,
+          0.651484656152569
+        ],
+        "AUROC_between": 0.7531922413056512,
+        "AUROC_within_trajmean": 0.5142881244698583,
+        "within_pairs": 5796991.0,
+        "between_pairs": 246323249.0,
+        "trajectories_within": 155
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.6923591857723465,
+      "fresh": {
+        "AUROC_all": 0.9696507029637589,
+        "AUROC_within": 0.9993812857629286,
+        "AUROC_within_CI95": [
+          0.9986805988013501,
+          0.9997469861724111
+        ],
+        "AUROC_between": 0.9695419455749639,
+        "AUROC_within_trajmean": 0.9845555627510741,
+        "within_pairs": 240822.0,
+        "between_pairs": 65832570.0,
+        "trajectories_within": 160
+      },
+      "recovered": {
+        "AUROC_all": 0.6289770944212968,
+        "AUROC_within": 0.5649122104898904,
+        "AUROC_within_CI95": [
+          0.511407611050979,
+          0.6470946972621368
+        ],
+        "AUROC_between": 0.6304848025124904,
+        "AUROC_within_trajmean": 0.5001427593124174,
+        "within_pairs": 5796991.0,
+        "between_pairs": 246323249.0,
+        "trajectories_within": 155
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7865536464635459,
+      "fresh": {
+        "AUROC_all": 0.9812150101208668,
+        "AUROC_within": 0.9982061439569474,
+        "AUROC_within_CI95": [
+          0.9958224342401855,
+          0.999396791943368
+        ],
+        "AUROC_between": 0.9811528548862668,
+        "AUROC_within_trajmean": 0.9835345791993241,
+        "within_pairs": 240822.0,
+        "between_pairs": 65832570.0,
+        "trajectories_within": 160
+      },
+      "recovered": {
+        "AUROC_all": 0.7473961630371286,
+        "AUROC_within": 0.6261552760733974,
+        "AUROC_within_CI95": [
+          0.5815163185070298,
+          0.6711503703066642
+        ],
+        "AUROC_between": 0.750249455746664,
+        "AUROC_within_trajmean": 0.5485436317047466,
+        "within_pairs": 5796991.0,
+        "between_pairs": 246323249.0,
+        "trajectories_within": 155
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8720166726197738,
+      "fresh": {
+        "AUROC_all": 0.964865096691103,
+        "AUROC_within": 0.9551323108039778,
+        "AUROC_within_CI95": [
+          0.9279511194921107,
+          0.974139047212566
+        ],
+        "AUROC_between": 0.9649110901472916,
+        "AUROC_within_trajmean": 0.9025545554405433,
+        "within_pairs": 29665.0,
+        "between_pairs": 6277482.0,
+        "trajectories_within": 62
+      },
+      "recovered": {
+        "AUROC_all": 0.6531951312286041,
+        "AUROC_within": 0.5334605405850619,
+        "AUROC_within_CI95": [
+          0.501392616744684,
+          0.5846592338464816
+        ],
+        "AUROC_between": 0.656572671691108,
+        "AUROC_within_trajmean": 0.513551652644159,
+        "within_pairs": 72847.0,
+        "between_pairs": 2582443.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8882295557316172,
+      "fresh": {
+        "AUROC_all": 0.9854774274327204,
+        "AUROC_within": 0.9994606438563964,
+        "AUROC_within_CI95": [
+          0.9983516262354556,
+          1.0
+        ],
+        "AUROC_between": 0.9854113480532481,
+        "AUROC_within_trajmean": 0.9964802028266264,
+        "within_pairs": 29665.0,
+        "between_pairs": 6277482.0,
+        "trajectories_within": 62
+      },
+      "recovered": {
+        "AUROC_all": 0.6962535165650456,
+        "AUROC_within": 0.5354510137685835,
+        "AUROC_within_CI95": [
+          0.4911937279872508,
+          0.5654738454088669
+        ],
+        "AUROC_between": 0.7007895237184325,
+        "AUROC_within_trajmean": 0.4381586927557222,
+        "within_pairs": 72847.0,
+        "between_pairs": 2582443.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8595658592489481,
+      "fresh": {
+        "AUROC_all": 0.9716591352635352,
+        "AUROC_within": 1.0,
+        "AUROC_within_CI95": [
+          1.0,
+          1.0
+        ],
+        "AUROC_between": 0.9715252070814381,
+        "AUROC_within_trajmean": 1.0,
+        "within_pairs": 29665.0,
+        "between_pairs": 6277482.0,
+        "trajectories_within": 62
+      },
+      "recovered": {
+        "AUROC_all": 0.6365184217166486,
+        "AUROC_within": 0.5325957143053248,
+        "AUROC_within_CI95": [
+          0.48461724360752517,
+          0.5646105664810978
+        ],
+        "AUROC_between": 0.6394499317119487,
+        "AUROC_within_trajmean": 0.3974653234506155,
+        "within_pairs": 72847.0,
+        "between_pairs": 2582443.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8683379953756851,
+      "fresh": {
+        "AUROC_all": 0.976356663321784,
+        "AUROC_within": 0.9989549974717681,
+        "AUROC_within_CI95": [
+          0.9975201120845387,
+          0.9997309018202204
+        ],
+        "AUROC_between": 0.9762498721621186,
+        "AUROC_within_trajmean": 0.9888288851370913,
+        "within_pairs": 29665.0,
+        "between_pairs": 6277482.0,
+        "trajectories_within": 62
+      },
+      "recovered": {
+        "AUROC_all": 0.6556099333782751,
+        "AUROC_within": 0.5322799840762146,
+        "AUROC_within_CI95": [
+          0.4825938205929097,
+          0.5645510091815309
+        ],
+        "AUROC_between": 0.6590888937335694,
+        "AUROC_within_trajmean": 0.39945578840897644,
+        "within_pairs": 72847.0,
+        "between_pairs": 2582443.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8904959501722481,
+      "fresh": {
+        "AUROC_all": 0.9853642225240667,
+        "AUROC_within": 0.9941682116972864,
+        "AUROC_within_CI95": [
+          0.9871271634404849,
+          0.9987546097471377
+        ],
+        "AUROC_between": 0.9853226182090208,
+        "AUROC_within_trajmean": 0.9763040849478343,
+        "within_pairs": 29665.0,
+        "between_pairs": 6277482.0,
+        "trajectories_within": 62
+      },
+      "recovered": {
+        "AUROC_all": 0.6964346643869408,
+        "AUROC_within": 0.5270086619901987,
+        "AUROC_within_CI95": [
+          0.49462789903391285,
+          0.5557909187610025
+        ],
+        "AUROC_between": 0.7012139280518486,
+        "AUROC_within_trajmean": 0.4621052699424939,
+        "within_pairs": 72847.0,
+        "between_pairs": 2582443.0,
+        "trajectories_within": 62
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8715670963011589,
+      "fresh": {
+        "AUROC_all": 0.9648011450059232,
+        "AUROC_within": 0.9522176910029232,
+        "AUROC_within_CI95": [
+          0.9333630927974417,
+          0.9661228876069424
+        ],
+        "AUROC_between": 0.9648542045978598,
+        "AUROC_within_trajmean": 0.9278118576690088,
+        "within_pairs": 55418.0,
+        "between_pairs": 13142767.0,
+        "trajectories_within": 144
+      },
+      "recovered": {
+        "AUROC_all": 0.7569621789253691,
+        "AUROC_within": 0.6133538195826861,
+        "AUROC_within_CI95": [
+          0.5941262591984178,
+          0.6467855084949954
+        ],
+        "AUROC_between": 0.7590859078784505,
+        "AUROC_within_trajmean": 0.5848922108894201,
+        "within_pairs": 178331.0,
+        "between_pairs": 12058894.0,
+        "trajectories_within": 111
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8952087507613724,
+      "fresh": {
+        "AUROC_all": 0.9860005750790733,
+        "AUROC_within": 0.9981233534230756,
+        "AUROC_within_CI95": [
+          0.9959783783778969,
+          0.9992554825469001
+        ],
+        "AUROC_between": 0.9859494579794347,
+        "AUROC_within_trajmean": 0.9828327891402571,
+        "within_pairs": 55418.0,
+        "between_pairs": 13142767.0,
+        "trajectories_within": 144
+      },
+      "recovered": {
+        "AUROC_all": 0.8091924844072084,
+        "AUROC_within": 0.6787434601948062,
+        "AUROC_within_CI95": [
+          0.6474683197469908,
+          0.7387263446953303
+        ],
+        "AUROC_between": 0.8111216086649405,
+        "AUROC_within_trajmean": 0.560743776730185,
+        "within_pairs": 178331.0,
+        "between_pairs": 12058894.0,
+        "trajectories_within": 111
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.771942957080641,
+      "fresh": {
+        "AUROC_all": 0.9104810244741985,
+        "AUROC_within": 0.9999819553213757,
+        "AUROC_within_CI95": [
+          0.9999302092661343,
+          1.0
+        ],
+        "AUROC_between": 0.9101036334281815,
+        "AUROC_within_trajmean": 0.9999934238215489,
+        "within_pairs": 55418.0,
+        "between_pairs": 13142767.0,
+        "trajectories_within": 144
+      },
+      "recovered": {
+        "AUROC_all": 0.6523146383269083,
+        "AUROC_within": 0.6809360122468893,
+        "AUROC_within_CI95": [
+          0.649485122986707,
+          0.7409874123246714
+        ],
+        "AUROC_between": 0.6518913757762528,
+        "AUROC_within_trajmean": 0.5603783093839658,
+        "within_pairs": 178331.0,
+        "between_pairs": 12058894.0,
+        "trajectories_within": 111
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8215062681565888,
+      "fresh": {
+        "AUROC_all": 0.9423235088764099,
+        "AUROC_within": 0.9627738279981234,
+        "AUROC_within_CI95": [
+          0.9386879151714047,
+          0.9824000950472146
+        ],
+        "AUROC_between": 0.9422372777361114,
+        "AUROC_within_trajmean": 0.9428126576323643,
+        "within_pairs": 55418.0,
+        "between_pairs": 13142767.0,
+        "trajectories_within": 144
+      },
+      "recovered": {
+        "AUROC_all": 0.7098836133191961,
+        "AUROC_within": 0.6003414997953245,
+        "AUROC_within_CI95": [
+          0.5547351442191324,
+          0.6787578473396055
+        ],
+        "AUROC_between": 0.7115035591157862,
+        "AUROC_within_trajmean": 0.580242122296975,
+        "within_pairs": 178331.0,
+        "between_pairs": 12058894.0,
+        "trajectories_within": 111
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8985023375970188,
+      "fresh": {
+        "AUROC_all": 0.9838411872541566,
+        "AUROC_within": 0.9955790537370529,
+        "AUROC_within_CI95": [
+          0.9904612932545018,
+          0.9981948840122034
+        ],
+        "AUROC_between": 0.9837916931799826,
+        "AUROC_within_trajmean": 0.9688950101751329,
+        "within_pairs": 55418.0,
+        "between_pairs": 13142767.0,
+        "trajectories_within": 144
+      },
+      "recovered": {
+        "AUROC_all": 0.812641509819424,
+        "AUROC_within": 0.6505599138680319,
+        "AUROC_within_CI95": [
+          0.6109236866205591,
+          0.7256056855689732
+        ],
+        "AUROC_between": 0.8150384272388496,
+        "AUROC_within_trajmean": 0.5600940639098245,
+        "within_pairs": 178331.0,
+        "between_pairs": 12058894.0,
+        "trajectories_within": 111
+      }
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9234649826506993,
+      "fresh": {
+        "AUROC_all": 0.962271184227706,
+        "AUROC_within": 0.9213850837138509,
+        "AUROC_within_CI95": [
+          0.8907542990711551,
+          0.9579468023527429
+        ],
+        "AUROC_between": 0.962447303029707,
+        "AUROC_within_trajmean": 0.9186730300786621,
+        "within_pairs": 13140.0,
+        "between_pairs": 3050460.0,
+        "trajectories_within": 73
+      },
+      "recovered": {
+        "AUROC_all": 0.801110845676063,
+        "AUROC_within": 0.6080191502094554,
+        "AUROC_within_CI95": [
+          0.546436539621157,
+          0.6703829674241792
+        ],
+        "AUROC_between": 0.8024041140090344,
+        "AUROC_within_trajmean": 0.5325464708020408,
+        "within_pairs": 5013.0,
+        "between_pairs": 748467.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9396394083695936,
+      "fresh": {
+        "AUROC_all": 0.9830464159811986,
+        "AUROC_within": 0.9986301369863013,
+        "AUROC_within_CI95": [
+          0.9958127441158713,
+          0.9997698038249855
+        ],
+        "AUROC_between": 0.9829792883696229,
+        "AUROC_within_trajmean": 0.9843457803340387,
+        "within_pairs": 13140.0,
+        "between_pairs": 3050460.0,
+        "trajectories_within": 73
+      },
+      "recovered": {
+        "AUROC_all": 0.8308568243350852,
+        "AUROC_within": 0.6788350289247955,
+        "AUROC_within_CI95": [
+          0.5842683038702378,
+          0.7422418121561732
+        ],
+        "AUROC_between": 0.8318750192059235,
+        "AUROC_within_trajmean": 0.48325310838695035,
+        "within_pairs": 5013.0,
+        "between_pairs": 748467.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8950983412271581,
+      "fresh": {
+        "AUROC_all": 0.9540125995560779,
+        "AUROC_within": 0.9963470319634703,
+        "AUROC_within_CI95": [
+          0.9850469653582206,
+          1.0
+        ],
+        "AUROC_between": 0.9538302419962891,
+        "AUROC_within_trajmean": 0.9972940977507188,
+        "within_pairs": 13140.0,
+        "between_pairs": 3050460.0,
+        "trajectories_within": 73
+      },
+      "recovered": {
+        "AUROC_all": 0.7798561342039603,
+        "AUROC_within": 0.6285657291043287,
+        "AUROC_within_CI95": [
+          0.5291543537220961,
+          0.7133721908553695
+        ],
+        "AUROC_between": 0.7808694304491715,
+        "AUROC_within_trajmean": 0.44170060053456467,
+        "within_pairs": 5013.0,
+        "between_pairs": 748467.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8967032050212427,
+      "fresh": {
+        "AUROC_all": 0.9490312051181616,
+        "AUROC_within": 0.9926179604261796,
+        "AUROC_within_CI95": [
+          0.9825133726208215,
+          0.9973859369969779
+        ],
+        "AUROC_between": 0.948843453118546,
+        "AUROC_within_trajmean": 0.9656760671552431,
+        "within_pairs": 13140.0,
+        "between_pairs": 3050460.0,
+        "trajectories_within": 73
+      },
+      "recovered": {
+        "AUROC_all": 0.8058143547273982,
+        "AUROC_within": 0.6225812886495112,
+        "AUROC_within_CI95": [
+          0.5350720433183999,
+          0.7118533538365185
+        ],
+        "AUROC_between": 0.807041593016125,
+        "AUROC_within_trajmean": 0.49721871360315106,
+        "within_pairs": 5013.0,
+        "between_pairs": 748467.0,
+        "trajectories_within": 52
+      }
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9391591472102068,
+      "fresh": {
+        "AUROC_all": 0.9833418200809505,
+        "AUROC_within": 0.9985540334855403,
+        "AUROC_within_CI95": [
+          0.9957814664228709,
+          0.9996662770797794
+        ],
+        "AUROC_between": 0.9832762927558466,
+        "AUROC_within_trajmean": 0.9831765538223465,
+        "within_pairs": 13140.0,
+        "between_pairs": 3050460.0,
+        "trajectories_within": 73
+      },
+      "recovered": {
+        "AUROC_all": 0.8281692944736423,
+        "AUROC_within": 0.6708557749850389,
+        "AUROC_within_CI95": [
+          0.5907945997996825,
+          0.7355064786840305
+        ],
+        "AUROC_between": 0.8292229316723383,
+        "AUROC_within_trajmean": 0.4835328768747392,
+        "within_pairs": 5013.0,
+        "between_pairs": 748467.0,
+        "trajectories_within": 52
+      }
+    }
+  ]
+}

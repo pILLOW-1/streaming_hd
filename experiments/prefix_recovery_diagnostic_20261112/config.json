@@ -40,5 +40,10 @@
     "published Streaming cells matched to source runs by freeze SHA256"
   ],
   "confidence_interval": "95% percentile, 1000 trajectory-bootstrap replicates, seed 0",
-  "data_and_labels_changed": false
+  "data_and_labels_changed": false,
+  "pair_split": {
+    "between": "inherited and clean positions from different trajectories",
+    "within": "both positions from the same trajectory",
+    "within_trajectory_mean": "per-trajectory AUROC averaged over trajectories containing both classes"
+  }
 }
