@@ -78,9 +78,7 @@ Values are means over combinations.
 
 Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of κ, the probability that an earlier error is still active. Their scores stay high after an error is corrected.
 
-Pooling past states, as global mean and Streaming do, can record that an error happened. It cannot show that the error was later withdrawn. A κ estimator needs evidence of correction: the current Step must be compared against the earlier content it may still rely on.
-
-AUROC_rec is the direct test of that ability.
+This suggests focusing on how to model κ better, so that corrected errors can be distinguished from errors that are still active. AUROC_rec measures this distinction directly.
 
 ## Limitations
 
