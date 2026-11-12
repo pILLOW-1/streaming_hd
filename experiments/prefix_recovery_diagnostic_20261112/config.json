@@ -1,0 +1,47 @@
+{
+  "analysis": "Separation of still-active errors from corrected ones by Prefix detectors",
+  "split": "val",
+  "test_included": false,
+  "models": [
+    "deepseek_r1_distill_llama_8b",
+    "gemma_4_31b_it",
+    "qwen3_8_27b"
+  ],
+  "domains": [
+    "Math",
+    "Science",
+    "Logic",
+    "Multi-hop",
+    "Factuality"
+  ],
+  "unit": "retained Step position with labels.step[t]=0",
+  "positive": "inherited: labels.prefix[t]=1",
+  "negatives": {
+    "recovered_clean": "labels.prefix[t]=0 and labels.prefix[s]=1 for some earlier retained position s<t of the same trajectory",
+    "fresh_clean": "labels.prefix[t]=0 and labels.prefix[s]=0 for every earlier retained position s<t"
+  },
+  "metrics": {
+    "AUROC_rec": "AUROC(inherited vs recovered clean)",
+    "AUROC_fresh": "AUROC(inherited vs fresh clean)",
+    "gap": "AUROC_fresh - AUROC_rec"
+  },
+  "score": "each detector's frozen selected-layer VAL Prefix score, as saved by its original run; no retraining or inference",
+  "detectors": {
+    "baselines": [
+      "streaming",
+      "saplma",
+      "global_mean",
+      "llm_check",
+      "icr_probe"
+    ],
+    "relation_study": "step_prefix_relation_22_qwen_wd1e4_20261111 C01-C16, Qwen3.8-27B Logic, Prefix score p(new)+p(inherited)"
+  },
+  "integrity_checks": [
+    "saved position ids equal the dataset loader's ids in order",
+    "saved labels equal Prefix labels",
+    "recomputed VAL Prefix AUROC equals the AUROC recorded at selection",
+    "published Streaming cells matched to source runs by freeze SHA256"
+  ],
+  "confidence_interval": "95% percentile, 1000 trajectory-bootstrap replicates, seed 0",
+  "data_and_labels_changed": false
+}

@@ -1,0 +1,2696 @@
+{
+  "status": "PASS",
+  "split": "val",
+  "definition": "Positions with Step=0. Positive: inherited (Prefix=1). Negatives: recovered clean (Prefix=0 after an earlier Prefix=1 in the same trajectory) or fresh clean (Prefix=0 with no earlier Prefix=1). Score: each detector's selected VAL Prefix score. gap = AUROC_fresh - AUROC_rec. 95% CIs from 1000 trajectory-bootstrap replicates (seed 0).",
+  "baselines": [
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.856236129695165,
+      "AUROC_rec": 0.7983341765832098,
+      "AUROC_rec_CI95": [
+        0.7670771383834106,
+        0.8269337704710514
+      ],
+      "AUROC_fresh": 0.9872241275224112,
+      "AUROC_fresh_CI95": [
+        0.9807910936394102,
+        0.9921417119252057
+      ],
+      "gap": 0.18888995093920136,
+      "gap_CI95": [
+        0.161951394928788,
+        0.21958790789600757
+      ],
+      "inherited": 22346,
+      "recovered_clean": 7403,
+      "fresh_clean": 3139,
+      "trajectories_with_recovered": 131
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.8404063763322943,
+      "AUROC_rec": 0.7762470878621719,
+      "AUROC_rec_CI95": [
+        0.7443754442965398,
+        0.8045632670411124
+      ],
+      "AUROC_fresh": 0.9722117231993901,
+      "AUROC_fresh_CI95": [
+        0.962071981059668,
+        0.9806736325646614
+      ],
+      "gap": 0.1959646353372182,
+      "gap_CI95": [
+        0.16975706421462097,
+        0.22526914766737843
+      ],
+      "inherited": 22346,
+      "recovered_clean": 7403,
+      "fresh_clean": 3139,
+      "trajectories_with_recovered": 131
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.858646785576941,
+      "AUROC_rec": 0.8046256721935088,
+      "AUROC_rec_CI95": [
+        0.7698286410283866,
+        0.8320442652962695
+      ],
+      "AUROC_fresh": 0.9878632832580316,
+      "AUROC_fresh_CI95": [
+        0.9817401697652269,
+        0.9930500510484855
+      ],
+      "gap": 0.18323761106452285,
+      "gap_CI95": [
+        0.15525112540748343,
+        0.21576224813406375
+      ],
+      "inherited": 22346,
+      "recovered_clean": 7403,
+      "fresh_clean": 3139,
+      "trajectories_with_recovered": 131
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7704902741481585,
+      "AUROC_rec": 0.6839265019627518,
+      "AUROC_rec_CI95": [
+        0.6215173842992666,
+        0.7415783811262352
+      ],
+      "AUROC_fresh": 0.9838787140083384,
+      "AUROC_fresh_CI95": [
+        0.9760021763176885,
+        0.9898724787145399
+      ],
+      "gap": 0.29995221204558653,
+      "gap_CI95": [
+        0.24372775213187914,
+        0.36137847562152325
+      ],
+      "inherited": 22346,
+      "recovered_clean": 7403,
+      "fresh_clean": 3139,
+      "trajectories_with_recovered": 131
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8842846199788185,
+      "AUROC_rec": 0.8152407177172487,
+      "AUROC_rec_CI95": [
+        0.7860132549494301,
+        0.8414979198034838
+      ],
+      "AUROC_fresh": 0.9901313449593804,
+      "AUROC_fresh_CI95": [
+        0.9847190901530304,
+        0.9939797944531946
+      ],
+      "gap": 0.17489062724213167,
+      "gap_CI95": [
+        0.15014564634318694,
+        0.20292025636995684
+      ],
+      "inherited": 24682,
+      "recovered_clean": 4639,
+      "fresh_clean": 3340,
+      "trajectories_with_recovered": 177
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.869529331759923,
+      "AUROC_rec": 0.7940191082258503,
+      "AUROC_rec_CI95": [
+        0.7652135824644999,
+        0.818012478148851
+      ],
+      "AUROC_fresh": 0.9817482509254241,
+      "AUROC_fresh_CI95": [
+        0.9754056223139821,
+        0.9866066545700122
+      ],
+      "gap": 0.18772914269957375,
+      "gap_CI95": [
+        0.1647012076929868,
+        0.21394643499910315
+      ],
+      "inherited": 24682,
+      "recovered_clean": 4639,
+      "fresh_clean": 3340,
+      "trajectories_with_recovered": 177
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8903754260913528,
+      "AUROC_rec": 0.8275295821919266,
+      "AUROC_rec_CI95": [
+        0.7980980526903777,
+        0.8513573494210995
+      ],
+      "AUROC_fresh": 0.9901904925260087,
+      "AUROC_fresh_CI95": [
+        0.9848473318579345,
+        0.9938541492631567
+      ],
+      "gap": 0.16266091033408203,
+      "gap_CI95": [
+        0.13924136066694492,
+        0.19044364627647659
+      ],
+      "inherited": 24682,
+      "recovered_clean": 4639,
+      "fresh_clean": 3340,
+      "trajectories_with_recovered": 177
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8350263391300315,
+      "AUROC_rec": 0.7429195464606846,
+      "AUROC_rec_CI95": [
+        0.6951949347429137,
+        0.7862785091373861
+      ],
+      "AUROC_fresh": 0.9822162942569606,
+      "AUROC_fresh_CI95": [
+        0.9759897959893826,
+        0.9872655560370178
+      ],
+      "gap": 0.23929674779627597,
+      "gap_CI95": [
+        0.19927974381771696,
+        0.28343222304816496
+      ],
+      "inherited": 24682,
+      "recovered_clean": 4639,
+      "fresh_clean": 3340,
+      "trajectories_with_recovered": 177
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.9655847857755443,
+      "AUROC_rec": 0.9006305759285436,
+      "AUROC_rec_CI95": [
+        0.848409766603913,
+        0.9359360197765438
+      ],
+      "AUROC_fresh": 0.9834648687782996,
+      "AUROC_fresh_CI95": [
+        0.97129845381449,
+        0.9915413380940332
+      ],
+      "gap": 0.08283429284975607,
+      "gap_CI95": [
+        0.052448232894849484,
+        0.12662234324820557
+      ],
+      "inherited": 3201,
+      "recovered_clean": 1153,
+      "fresh_clean": 6517,
+      "trajectories_with_recovered": 75
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.962561656942014,
+      "AUROC_rec": 0.9031861519857872,
+      "AUROC_rec_CI95": [
+        0.8564806023369843,
+        0.9354048793837417
+      ],
+      "AUROC_fresh": 0.9769265655963254,
+      "AUROC_fresh_CI95": [
+        0.9633747069633313,
+        0.986747045738549
+      ],
+      "gap": 0.07374041361053818,
+      "gap_CI95": [
+        0.04762597253085165,
+        0.11018709789255364
+      ],
+      "inherited": 3201,
+      "recovered_clean": 1153,
+      "fresh_clean": 6517,
+      "trajectories_with_recovered": 75
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.9650540668972066,
+      "AUROC_rec": 0.901973662285176,
+      "AUROC_rec_CI95": [
+        0.8500141098831939,
+        0.9358769462383977
+      ],
+      "AUROC_fresh": 0.9837289990655732,
+      "AUROC_fresh_CI95": [
+        0.971212078903644,
+        0.9918835251307697
+      ],
+      "gap": 0.08175533678039726,
+      "gap_CI95": [
+        0.052814707443114686,
+        0.12502703819978064
+      ],
+      "inherited": 3201,
+      "recovered_clean": 1153,
+      "fresh_clean": 6517,
+      "trajectories_with_recovered": 75
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8948708506161622,
+      "AUROC_rec": 0.7978762057498836,
+      "AUROC_rec_CI95": [
+        0.7364255607381698,
+        0.8453349276641369
+      ],
+      "AUROC_fresh": 0.9288913330128297,
+      "AUROC_fresh_CI95": [
+        0.9050158310959839,
+        0.9458982070119871
+      ],
+      "gap": 0.13101512726294606,
+      "gap_CI95": [
+        0.09297170339754439,
+        0.17969560675821825
+      ],
+      "inherited": 3201,
+      "recovered_clean": 1153,
+      "fresh_clean": 6517,
+      "trajectories_with_recovered": 75
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.9355822964816327,
+      "AUROC_rec": 0.8519875212456645,
+      "AUROC_rec_CI95": [
+        0.7861660759282263,
+        0.9022784495405124
+      ],
+      "AUROC_fresh": 0.9613255256228669,
+      "AUROC_fresh_CI95": [
+        0.9387791429592653,
+        0.9767863869484381
+      ],
+      "gap": 0.10933800437720242,
+      "gap_CI95": [
+        0.06438696313491052,
+        0.1633165013865339
+      ],
+      "inherited": 3201,
+      "recovered_clean": 1153,
+      "fresh_clean": 6517,
+      "trajectories_with_recovered": 75
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8842039720582847,
+      "AUROC_rec": 0.8262299954738599,
+      "AUROC_rec_CI95": [
+        0.7282025429281238,
+        0.888259143089132
+      ],
+      "AUROC_fresh": 0.9506556003857847,
+      "AUROC_fresh_CI95": [
+        0.9215287897100112,
+        0.971073694787663
+      ],
+      "gap": 0.12442560491192478,
+      "gap_CI95": [
+        0.06068908333133623,
+        0.2158317324803744
+      ],
+      "inherited": 798,
+      "recovered_clean": 371,
+      "fresh_clean": 751,
+      "trajectories_with_recovered": 61
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8691063330654919,
+      "AUROC_rec": 0.7913044065689832,
+      "AUROC_rec_CI95": [
+        0.6865829726763334,
+        0.8590118157861732
+      ],
+      "AUROC_fresh": 0.9292438820086167,
+      "AUROC_fresh_CI95": [
+        0.8968719448257114,
+        0.9537601530563034
+      ],
+      "gap": 0.13793947543963359,
+      "gap_CI95": [
+        0.07664183023158413,
+        0.22515765386709446
+      ],
+      "inherited": 798,
+      "recovered_clean": 371,
+      "fresh_clean": 751,
+      "trajectories_with_recovered": 61
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.884623436436908,
+      "AUROC_rec": 0.8293611386957961,
+      "AUROC_rec_CI95": [
+        0.7315786785205154,
+        0.8911280815193835
+      ],
+      "AUROC_fresh": 0.9507440371901792,
+      "AUROC_fresh_CI95": [
+        0.9217451726611265,
+        0.9713334151647534
+      ],
+      "gap": 0.1213828984943831,
+      "gap_CI95": [
+        0.054738019635668426,
+        0.21342432317822438
+      ],
+      "inherited": 798,
+      "recovered_clean": 371,
+      "fresh_clean": 751,
+      "trajectories_with_recovered": 61
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.6970220338095986,
+      "AUROC_rec": 0.6609346817177715,
+      "AUROC_rec_CI95": [
+        0.5402816286866908,
+        0.7514642066621493
+      ],
+      "AUROC_fresh": 0.7940340198031697,
+      "AUROC_fresh_CI95": [
+        0.7095967529369558,
+        0.861277980517087
+      ],
+      "gap": 0.1330993380853982,
+      "gap_CI95": [
+        0.057457818677730046,
+        0.21341466879996307
+      ],
+      "inherited": 798,
+      "recovered_clean": 371,
+      "fresh_clean": 751,
+      "trajectories_with_recovered": 61
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8026447036657338,
+      "AUROC_rec": 0.7302724466151903,
+      "AUROC_rec_CI95": [
+        0.5967928967558489,
+        0.818206545416827
+      ],
+      "AUROC_fresh": 0.9119436407263165,
+      "AUROC_fresh_CI95": [
+        0.8659890401983801,
+        0.9438526805628014
+      ],
+      "gap": 0.1816711941111262,
+      "gap_CI95": [
+        0.10361426072895798,
+        0.294997329351649
+      ],
+      "inherited": 798,
+      "recovered_clean": 371,
+      "fresh_clean": 751,
+      "trajectories_with_recovered": 61
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9326360911464209,
+      "AUROC_rec": 0.9412151448350543,
+      "AUROC_rec_CI95": [
+        0.6737980447860963,
+        0.9656226579594716
+      ],
+      "AUROC_fresh": 0.9670179659010635,
+      "AUROC_fresh_CI95": [
+        0.7819466416491806,
+        0.9890385806403934
+      ],
+      "gap": 0.025802821066009174,
+      "gap_CI95": [
+        0.0023448731122112025,
+        0.1549991058289414
+      ],
+      "inherited": 663,
+      "recovered_clean": 39,
+      "fresh_clean": 316,
+      "trajectories_with_recovered": 26
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9223869532987398,
+      "AUROC_rec": 0.9341764319139885,
+      "AUROC_rec_CI95": [
+        0.6375656446212221,
+        0.9609360762350325
+      ],
+      "AUROC_fresh": 0.9537631021249785,
+      "AUROC_fresh_CI95": [
+        0.7050625356066843,
+        0.9850477139300949
+      ],
+      "gap": 0.01958667021099003,
+      "gap_CI95": [
+        -0.030665856316841975,
+        0.13610072591391953
+      ],
+      "inherited": 663,
+      "recovered_clean": 39,
+      "fresh_clean": 316,
+      "trajectories_with_recovered": 26
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9340993328391402,
+      "AUROC_rec": 0.9437289708782921,
+      "AUROC_rec_CI95": [
+        0.6845840735094637,
+        0.9670222195347576
+      ],
+      "AUROC_fresh": 0.9692422246405865,
+      "AUROC_fresh_CI95": [
+        0.795556074346772,
+        0.9899718124532574
+      ],
+      "gap": 0.025513253762294408,
+      "gap_CI95": [
+        0.005527882052776446,
+        0.15344802853942427
+      ],
+      "inherited": 663,
+      "recovered_clean": 39,
+      "fresh_clean": 316,
+      "trajectories_with_recovered": 26
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8372288651819383,
+      "AUROC_rec": 0.9010326023900684,
+      "AUROC_rec_CI95": [
+        0.42692089388061555,
+        0.9525602760053488
+      ],
+      "AUROC_fresh": 0.9464698245413063,
+      "AUROC_fresh_CI95": [
+        0.6250650066588705,
+        0.9847465481846125
+      ],
+      "gap": 0.04543722215123791,
+      "gap_CI95": [
+        0.014407849765300849,
+        0.32623659268890903
+      ],
+      "inherited": 663,
+      "recovered_clean": 39,
+      "fresh_clean": 316,
+      "trajectories_with_recovered": 26
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8467496051825829,
+      "AUROC_rec": 0.9021154813010016,
+      "AUROC_rec_CI95": [
+        0.4554249341481218,
+        0.9516281354920099
+      ],
+      "AUROC_fresh": 0.9288237203352616,
+      "AUROC_fresh_CI95": [
+        0.5656330626284509,
+        0.9752640988123706
+      ],
+      "gap": 0.026708239034260006,
+      "gap_CI95": [
+        -0.006516521008828443,
+        0.180240226040485
+      ],
+      "inherited": 663,
+      "recovered_clean": 39,
+      "fresh_clean": 316,
+      "trajectories_with_recovered": 26
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.821048781181993,
+      "AUROC_rec": 0.6822839925597476,
+      "AUROC_rec_CI95": [
+        0.6243815877862997,
+        0.7437963335013681
+      ],
+      "AUROC_fresh": 0.9874482918682669,
+      "AUROC_fresh_CI95": [
+        0.980156419734915,
+        0.9930563438979784
+      ],
+      "gap": 0.3051642993085193,
+      "gap_CI95": [
+        0.24409152122762512,
+        0.36697693183204455
+      ],
+      "inherited": 5131,
+      "recovered_clean": 3956,
+      "fresh_clean": 3411,
+      "trajectories_with_recovered": 121
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.8278844301308801,
+      "AUROC_rec": 0.6926361482840184,
+      "AUROC_rec_CI95": [
+        0.6508289243984474,
+        0.7388904963672099
+      ],
+      "AUROC_fresh": 0.9810296528233802,
+      "AUROC_fresh_CI95": [
+        0.9734189318223003,
+        0.9870750212557056
+      ],
+      "gap": 0.28839350453936174,
+      "gap_CI95": [
+        0.24204884882480684,
+        0.32922954725529024
+      ],
+      "inherited": 5131,
+      "recovered_clean": 3956,
+      "fresh_clean": 3411,
+      "trajectories_with_recovered": 121
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.813810180096945,
+      "AUROC_rec": 0.6718328873504081,
+      "AUROC_rec_CI95": [
+        0.6125546403496848,
+        0.7243717325859497
+      ],
+      "AUROC_fresh": 0.9866884860855495,
+      "AUROC_fresh_CI95": [
+        0.9794712493380234,
+        0.9920969926535426
+      ],
+      "gap": 0.31485559873514135,
+      "gap_CI95": [
+        0.2622445231895593,
+        0.37350738144666173
+      ],
+      "inherited": 5131,
+      "recovered_clean": 3956,
+      "fresh_clean": 3411,
+      "trajectories_with_recovered": 121
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7437374823208992,
+      "AUROC_rec": 0.5656948219539866,
+      "AUROC_rec_CI95": [
+        0.5030521039629025,
+        0.6442217457130213
+      ],
+      "AUROC_fresh": 0.9714350621743164,
+      "AUROC_fresh_CI95": [
+        0.9541511439528174,
+        0.9821203629439921
+      ],
+      "gap": 0.40574024022032984,
+      "gap_CI95": [
+        0.32065887137734955,
+        0.468969203795215
+      ],
+      "inherited": 5131,
+      "recovered_clean": 3956,
+      "fresh_clean": 3411,
+      "trajectories_with_recovered": 121
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.824446045015124,
+      "AUROC_rec": 0.6975013695163007,
+      "AUROC_rec_CI95": [
+        0.6326915473658555,
+        0.75386894462719
+      ],
+      "AUROC_fresh": 0.9717259122687042,
+      "AUROC_fresh_CI95": [
+        0.9553568814794161,
+        0.9821752814985599
+      ],
+      "gap": 0.2742245427524035,
+      "gap_CI95": [
+        0.2204443777082138,
+        0.3336493879617522
+      ],
+      "inherited": 3512,
+      "recovered_clean": 3942,
+      "fresh_clean": 3704,
+      "trajectories_with_recovered": 153
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8100548214270425,
+      "AUROC_rec": 0.6805267350384678,
+      "AUROC_rec_CI95": [
+        0.6263276689549145,
+        0.7294998211903668
+      ],
+      "AUROC_fresh": 0.9472607723842229,
+      "AUROC_fresh_CI95": [
+        0.9270640325418267,
+        0.9625975907944938
+      ],
+      "gap": 0.26673403734575507,
+      "gap_CI95": [
+        0.22328948203782314,
+        0.31099295524777965
+      ],
+      "inherited": 3512,
+      "recovered_clean": 3942,
+      "fresh_clean": 3704,
+      "trajectories_with_recovered": 153
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.8181549152080183,
+      "AUROC_rec": 0.6900554552977166,
+      "AUROC_rec_CI95": [
+        0.620866506131291,
+        0.7533213371150939
+      ],
+      "AUROC_fresh": 0.9686277717372588,
+      "AUROC_fresh_CI95": [
+        0.9492569585600237,
+        0.9812545873363339
+      ],
+      "gap": 0.27857231643954217,
+      "gap_CI95": [
+        0.21893437382962141,
+        0.34290367023325913
+      ],
+      "inherited": 3512,
+      "recovered_clean": 3942,
+      "fresh_clean": 3704,
+      "trajectories_with_recovered": 153
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7555143124285286,
+      "AUROC_rec": 0.6114357211456783,
+      "AUROC_rec_CI95": [
+        0.5200587537827606,
+        0.6941519819766445
+      ],
+      "AUROC_fresh": 0.9292076964138997,
+      "AUROC_fresh_CI95": [
+        0.8894309744151782,
+        0.9540504669716015
+      ],
+      "gap": 0.3177719752682213,
+      "gap_CI95": [
+        0.23723815674957754,
+        0.396908153305905
+      ],
+      "inherited": 3512,
+      "recovered_clean": 3942,
+      "fresh_clean": 3704,
+      "trajectories_with_recovered": 153
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8635253958560991,
+      "AUROC_rec": 0.6138312736629898,
+      "AUROC_rec_CI95": [
+        0.5536700149790971,
+        0.6819239399886746
+      ],
+      "AUROC_fresh": 0.978795355661127,
+      "AUROC_fresh_CI95": [
+        0.9669364010378184,
+        0.98770249164871
+      ],
+      "gap": 0.3649640819981371,
+      "gap_CI95": [
+        0.29924557087448694,
+        0.4223796520950703
+      ],
+      "inherited": 629,
+      "recovered_clean": 1552,
+      "fresh_clean": 4406,
+      "trajectories_with_recovered": 73
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8696154553505746,
+      "AUROC_rec": 0.6147962319505679,
+      "AUROC_rec_CI95": [
+        0.5695839831914937,
+        0.6714684490709715
+      ],
+      "AUROC_fresh": 0.9614057864438361,
+      "AUROC_fresh_CI95": [
+        0.948911734406344,
+        0.9727901567665348
+      ],
+      "gap": 0.34660955449326825,
+      "gap_CI95": [
+        0.29206695188231957,
+        0.388943346195974
+      ],
+      "inherited": 629,
+      "recovered_clean": 1552,
+      "fresh_clean": 4406,
+      "trajectories_with_recovered": 73
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8576154535650261,
+      "AUROC_rec": 0.593115401635717,
+      "AUROC_rec_CI95": [
+        0.5194288027665278,
+        0.6731537496272291
+      ],
+      "AUROC_fresh": 0.9822607847226682,
+      "AUROC_fresh_CI95": [
+        0.9709266286742713,
+        0.9900277453535675
+      ],
+      "gap": 0.38914538308695124,
+      "gap_CI95": [
+        0.30857799130788144,
+        0.463076508533497
+      ],
+      "inherited": 629,
+      "recovered_clean": 1552,
+      "fresh_clean": 4406,
+      "trajectories_with_recovered": 73
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8280090509452693,
+      "AUROC_rec": 0.5106063461885172,
+      "AUROC_rec_CI95": [
+        0.4364296549403348,
+        0.6165281582310795
+      ],
+      "AUROC_fresh": 0.960913972635956,
+      "AUROC_fresh_CI95": [
+        0.9354139566098038,
+        0.9765145130103225
+      ],
+      "gap": 0.4503076264474388,
+      "gap_CI95": [
+        0.335117276325896,
+        0.5321161273714553
+      ],
+      "inherited": 629,
+      "recovered_clean": 1552,
+      "fresh_clean": 4406,
+      "trajectories_with_recovered": 73
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.9160922833212558,
+      "AUROC_rec": 0.6779972311952007,
+      "AUROC_rec_CI95": [
+        0.5648507491224737,
+        0.7963600428948966
+      ],
+      "AUROC_fresh": 0.9752931683700915,
+      "AUROC_fresh_CI95": [
+        0.9628673763282246,
+        0.9842628182673608
+      ],
+      "gap": 0.2972959371748908,
+      "gap_CI95": [
+        0.18091451559622745,
+        0.4053829810667074
+      ],
+      "inherited": 550,
+      "recovered_clean": 197,
+      "fresh_clean": 1014,
+      "trajectories_with_recovered": 45
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.9053090435183156,
+      "AUROC_rec": 0.7031195200738348,
+      "AUROC_rec_CI95": [
+        0.641178721535941,
+        0.7714899942149448
+      ],
+      "AUROC_fresh": 0.9435269858346781,
+      "AUROC_fresh_CI95": [
+        0.9250163736582099,
+        0.9581855769756936
+      ],
+      "gap": 0.24040746576084326,
+      "gap_CI95": [
+        0.17704203378533528,
+        0.30051445505596297
+      ],
+      "inherited": 550,
+      "recovered_clean": 197,
+      "fresh_clean": 1014,
+      "trajectories_with_recovered": 45
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.9108601987450636,
+      "AUROC_rec": 0.6711675126903554,
+      "AUROC_rec_CI95": [
+        0.5532755346404375,
+        0.7989419381298477
+      ],
+      "AUROC_fresh": 0.9717321140398063,
+      "AUROC_fresh_CI95": [
+        0.957375693060866,
+        0.9825148157872687
+      ],
+      "gap": 0.30056460134945095,
+      "gap_CI95": [
+        0.17413850611738607,
+        0.4127941118122404
+      ],
+      "inherited": 550,
+      "recovered_clean": 197,
+      "fresh_clean": 1014,
+      "trajectories_with_recovered": 45
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.7578029064639894,
+      "AUROC_rec": 0.49114905399169356,
+      "AUROC_rec_CI95": [
+        0.34114364520674406,
+        0.6821458048682697
+      ],
+      "AUROC_fresh": 0.84159046082123,
+      "AUROC_fresh_CI95": [
+        0.7989732765402872,
+        0.8782641809110433
+      ],
+      "gap": 0.35044140682953645,
+      "gap_CI95": [
+        0.17086275101123147,
+        0.4986930124274707
+      ],
+      "inherited": 550,
+      "recovered_clean": 197,
+      "fresh_clean": 1014,
+      "trajectories_with_recovered": 45
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.886596223956139,
+      "AUROC_rec": 0.6960959852330411,
+      "AUROC_rec_CI95": [
+        0.6024827060866731,
+        0.7886988674715729
+      ],
+      "AUROC_fresh": 0.9424081047157971,
+      "AUROC_fresh_CI95": [
+        0.9118948066659408,
+        0.9643769001574968
+      ],
+      "gap": 0.246312119482756,
+      "gap_CI95": [
+        0.154362583746371,
+        0.3359994129486661
+      ],
+      "inherited": 550,
+      "recovered_clean": 197,
+      "fresh_clean": 1014,
+      "trajectories_with_recovered": 45
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8843858486978495,
+      "AUROC_rec": 0.6899192116477273,
+      "AUROC_rec_CI95": [
+        0.5124511281732643,
+        0.8241852392278468
+      ],
+      "AUROC_fresh": 0.9340967887647832,
+      "AUROC_fresh_CI95": [
+        0.8697258952696926,
+        0.96491960499074
+      ],
+      "gap": 0.2441775771170559,
+      "gap_CI95": [
+        0.12215933943480674,
+        0.3843217783326008
+      ],
+      "inherited": 256,
+      "recovered_clean": 176,
+      "fresh_clean": 761,
+      "trajectories_with_recovered": 33
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8555490131135073,
+      "AUROC_rec": 0.6582697088068182,
+      "AUROC_rec_CI95": [
+        0.5044784391938039,
+        0.7775043536665343
+      ],
+      "AUROC_fresh": 0.8899012401445466,
+      "AUROC_fresh_CI95": [
+        0.8198869411171503,
+        0.9318927349720212
+      ],
+      "gap": 0.2316315313377284,
+      "gap_CI95": [
+        0.14237252785244772,
+        0.3596708021294809
+      ],
+      "inherited": 256,
+      "recovered_clean": 176,
+      "fresh_clean": 761,
+      "trajectories_with_recovered": 33
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8904795201118758,
+      "AUROC_rec": 0.7069646661931818,
+      "AUROC_rec_CI95": [
+        0.5282360838549948,
+        0.83853948752566
+      ],
+      "AUROC_fresh": 0.9390553137319316,
+      "AUROC_fresh_CI95": [
+        0.8783214942747855,
+        0.9680545057926389
+      ],
+      "gap": 0.23209064753874986,
+      "gap_CI95": [
+        0.11260054054052931,
+        0.3760088090837179
+      ],
+      "inherited": 256,
+      "recovered_clean": 176,
+      "fresh_clean": 761,
+      "trajectories_with_recovered": 33
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8130926532464824,
+      "AUROC_rec": 0.5625665838068182,
+      "AUROC_rec_CI95": [
+        0.35865733695539015,
+        0.8094334606234107
+      ],
+      "AUROC_fresh": 0.890517205978975,
+      "AUROC_fresh_CI95": [
+        0.7960793100370749,
+        0.9442285525939765
+      ],
+      "gap": 0.32795062217215676,
+      "gap_CI95": [
+        0.11577382190885165,
+        0.5038391482937739
+      ],
+      "inherited": 256,
+      "recovered_clean": 176,
+      "fresh_clean": 761,
+      "trajectories_with_recovered": 33
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7394647609832509,
+      "AUROC_rec": 0.7368360238712006,
+      "AUROC_rec_CI95": [
+        0.6865820931648814,
+        0.7802523856486988
+      ],
+      "AUROC_fresh": 0.9852652704466709,
+      "AUROC_fresh_CI95": [
+        0.9772376123127418,
+        0.99110196778776
+      ],
+      "gap": 0.24842924657547028,
+      "gap_CI95": [
+        0.20671562227948798,
+        0.29595654457842757
+      ],
+      "inherited": 24767,
+      "recovered_clean": 60534,
+      "fresh_clean": 3949,
+      "trajectories_with_recovered": 144
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7525836976985205,
+      "AUROC_rec": 0.7390298085641577,
+      "AUROC_rec_CI95": [
+        0.694472320321398,
+        0.7793530542838
+      ],
+      "AUROC_fresh": 0.9613174323821848,
+      "AUROC_fresh_CI95": [
+        0.9487664408158574,
+        0.9718975441592426
+      ],
+      "gap": 0.22228762381802714,
+      "gap_CI95": [
+        0.1878490063935853,
+        0.26157282276584803
+      ],
+      "inherited": 24767,
+      "recovered_clean": 60534,
+      "fresh_clean": 3949,
+      "trajectories_with_recovered": 144
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.7164663729995704,
+      "AUROC_rec": 0.7166534737646563,
+      "AUROC_rec_CI95": [
+        0.6594848570348829,
+        0.7654509307217314
+      ],
+      "AUROC_fresh": 0.9811256100577309,
+      "AUROC_fresh_CI95": [
+        0.9711437985941506,
+        0.9890732122111611
+      ],
+      "gap": 0.26447213629307464,
+      "gap_CI95": [
+        0.2165386910321247,
+        0.3210198362862649
+      ],
+      "inherited": 24767,
+      "recovered_clean": 60534,
+      "fresh_clean": 3949,
+      "trajectories_with_recovered": 144
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "VAL_prefix_AUROC": 0.6701492698302141,
+      "AUROC_rec": 0.674427380568869,
+      "AUROC_rec_CI95": [
+        0.6161677914895187,
+        0.7318942931598633
+      ],
+      "AUROC_fresh": 0.9285569923947458,
+      "AUROC_fresh_CI95": [
+        0.8957348688220168,
+        0.956048135843421
+      ],
+      "gap": 0.2541296118258768,
+      "gap_CI95": [
+        0.19634606998812806,
+        0.3158546803576246
+      ],
+      "inherited": 24767,
+      "recovered_clean": 60534,
+      "fresh_clean": 3949,
+      "trajectories_with_recovered": 144
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7865536464635459,
+      "AUROC_rec": 0.7473961630371286,
+      "AUROC_rec_CI95": [
+        0.6894344123186017,
+        0.7932548649197917
+      ],
+      "AUROC_fresh": 0.9812150101208668,
+      "AUROC_fresh_CI95": [
+        0.9687294756179484,
+        0.9884434182811879
+      ],
+      "gap": 0.23381884708373812,
+      "gap_CI95": [
+        0.18193821689234038,
+        0.2958389083288838
+      ],
+      "inherited": 14544,
+      "recovered_clean": 17335,
+      "fresh_clean": 4543,
+      "trajectories_with_recovered": 167
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7826474109584509,
+      "AUROC_rec": 0.7372511366005363,
+      "AUROC_rec_CI95": [
+        0.684889601345596,
+        0.7815892796191294
+      ],
+      "AUROC_fresh": 0.9695272796044737,
+      "AUROC_fresh_CI95": [
+        0.955956571534038,
+        0.9788167022033915
+      ],
+      "gap": 0.2322761430039374,
+      "gap_CI95": [
+        0.18470850933594243,
+        0.28690934734584606
+      ],
+      "inherited": 14544,
+      "recovered_clean": 17335,
+      "fresh_clean": 4543,
+      "trajectories_with_recovered": 167
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.7862339021851977,
+      "AUROC_rec": 0.7495108127772685,
+      "AUROC_rec_CI95": [
+        0.6888402286903893,
+        0.7948201170032573
+      ],
+      "AUROC_fresh": 0.9811863450267545,
+      "AUROC_fresh_CI95": [
+        0.9678613313368014,
+        0.989235650589206
+      ],
+      "gap": 0.231675532249486,
+      "gap_CI95": [
+        0.18006197518159178,
+        0.29389372990495194
+      ],
+      "inherited": 14544,
+      "recovered_clean": 17335,
+      "fresh_clean": 4543,
+      "trajectories_with_recovered": 167
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "VAL_prefix_AUROC": 0.6923591857723465,
+      "AUROC_rec": 0.6289770944212968,
+      "AUROC_rec_CI95": [
+        0.5583206236481106,
+        0.6969264495233336
+      ],
+      "AUROC_fresh": 0.9696507029637589,
+      "AUROC_fresh_CI95": [
+        0.9536725959716597,
+        0.9791285904044795
+      ],
+      "gap": 0.3406736085424621,
+      "gap_CI95": [
+        0.274077851464013,
+        0.4096311314054371
+      ],
+      "inherited": 14544,
+      "recovered_clean": 17335,
+      "fresh_clean": 4543,
+      "trajectories_with_recovered": 167
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8904959501722481,
+      "AUROC_rec": 0.6964346643869408,
+      "AUROC_rec_CI95": [
+        0.6427775346551181,
+        0.7354921292873403
+      ],
+      "AUROC_fresh": 0.9853642225240667,
+      "AUROC_fresh_CI95": [
+        0.9703205144298027,
+        0.9929941816781599
+      ],
+      "gap": 0.28892955813712595,
+      "gap_CI95": [
+        0.24932297768940748,
+        0.33865996098011036
+      ],
+      "inherited": 1111,
+      "recovered_clean": 2390,
+      "fresh_clean": 5677,
+      "trajectories_with_recovered": 70
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8720166726197738,
+      "AUROC_rec": 0.6531951312286041,
+      "AUROC_rec_CI95": [
+        0.6074598298356472,
+        0.6923660296249137
+      ],
+      "AUROC_fresh": 0.964865096691103,
+      "AUROC_fresh_CI95": [
+        0.9444825875614562,
+        0.978109369506693
+      ],
+      "gap": 0.3116699654624989,
+      "gap_CI95": [
+        0.27617430786228186,
+        0.3513714713358104
+      ],
+      "inherited": 1111,
+      "recovered_clean": 2390,
+      "fresh_clean": 5677,
+      "trajectories_with_recovered": 70
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8882295557316172,
+      "AUROC_rec": 0.6962535165650456,
+      "AUROC_rec_CI95": [
+        0.6317233532587098,
+        0.7428015860232946
+      ],
+      "AUROC_fresh": 0.9854774274327204,
+      "AUROC_fresh_CI95": [
+        0.9718828108088645,
+        0.9928621820145381
+      ],
+      "gap": 0.28922391086767474,
+      "gap_CI95": [
+        0.24414215096699474,
+        0.3508991946289273
+      ],
+      "inherited": 1111,
+      "recovered_clean": 2390,
+      "fresh_clean": 5677,
+      "trajectories_with_recovered": 70
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8595658592489481,
+      "AUROC_rec": 0.6365184217166486,
+      "AUROC_rec_CI95": [
+        0.5713624203507198,
+        0.6842384268722601
+      ],
+      "AUROC_fresh": 0.9716591352635352,
+      "AUROC_fresh_CI95": [
+        0.9530889230732476,
+        0.9837966920353256
+      ],
+      "gap": 0.33514071354688657,
+      "gap_CI95": [
+        0.2913161802681573,
+        0.3927322859794577
+      ],
+      "inherited": 1111,
+      "recovered_clean": 2390,
+      "fresh_clean": 5677,
+      "trajectories_with_recovered": 70
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "VAL_prefix_AUROC": 0.8683379953756851,
+      "AUROC_rec": 0.6556099333782751,
+      "AUROC_rec_CI95": [
+        0.5919001495589752,
+        0.7029459473109235
+      ],
+      "AUROC_fresh": 0.976356663321784,
+      "AUROC_fresh_CI95": [
+        0.9582697052843631,
+        0.9875270210043307
+      ],
+      "gap": 0.32074672994350883,
+      "gap_CI95": [
+        0.27516203295615344,
+        0.3781599634814945
+      ],
+      "inherited": 1111,
+      "recovered_clean": 2390,
+      "fresh_clean": 5677,
+      "trajectories_with_recovered": 70
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8985023375970188,
+      "AUROC_rec": 0.812641509819424,
+      "AUROC_rec_CI95": [
+        0.7604815947086335,
+        0.8591049794683723
+      ],
+      "AUROC_fresh": 0.9838411872541566,
+      "AUROC_fresh_CI95": [
+        0.9759102414120231,
+        0.9898091175874587
+      ],
+      "gap": 0.17119967743473263,
+      "gap_CI95": [
+        0.12526399441601524,
+        0.2189787877682478
+      ],
+      "inherited": 5005,
+      "recovered_clean": 2445,
+      "fresh_clean": 2637,
+      "trajectories_with_recovered": 126
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8715670963011589,
+      "AUROC_rec": 0.7569621789253691,
+      "AUROC_rec_CI95": [
+        0.7131267789679826,
+        0.802452966079681
+      ],
+      "AUROC_fresh": 0.9648011450059232,
+      "AUROC_fresh_CI95": [
+        0.9521176045914544,
+        0.9738401519391588
+      ],
+      "gap": 0.20783896608055408,
+      "gap_CI95": [
+        0.16569432456561467,
+        0.2478000449332816
+      ],
+      "inherited": 5005,
+      "recovered_clean": 2445,
+      "fresh_clean": 2637,
+      "trajectories_with_recovered": 126
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8952087507613724,
+      "AUROC_rec": 0.8091924844072084,
+      "AUROC_rec_CI95": [
+        0.7562174171187125,
+        0.8601004685420784
+      ],
+      "AUROC_fresh": 0.9860005750790733,
+      "AUROC_fresh_CI95": [
+        0.9784837809044754,
+        0.9914754930560867
+      ],
+      "gap": 0.17680809067186498,
+      "gap_CI95": [
+        0.12916852340940252,
+        0.22662421754378195
+      ],
+      "inherited": 5005,
+      "recovered_clean": 2445,
+      "fresh_clean": 2637,
+      "trajectories_with_recovered": 126
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.771942957080641,
+      "AUROC_rec": 0.6523146383269083,
+      "AUROC_rec_CI95": [
+        0.580202706282666,
+        0.7277159574569568
+      ],
+      "AUROC_fresh": 0.9104810244741985,
+      "AUROC_fresh_CI95": [
+        0.8720821691142833,
+        0.9371768556339287
+      ],
+      "gap": 0.25816638614729026,
+      "gap_CI95": [
+        0.1905623232491714,
+        0.3180112462761515
+      ],
+      "inherited": 5005,
+      "recovered_clean": 2445,
+      "fresh_clean": 2637,
+      "trajectories_with_recovered": 126
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "VAL_prefix_AUROC": 0.8215062681565888,
+      "AUROC_rec": 0.7098836133191961,
+      "AUROC_rec_CI95": [
+        0.6543326583015909,
+        0.7755832024502616
+      ],
+      "AUROC_fresh": 0.9423235088764099,
+      "AUROC_fresh_CI95": [
+        0.9217150238148645,
+        0.9581391063326059
+      ],
+      "gap": 0.23243989555721378,
+      "gap_CI95": [
+        0.16767041953254055,
+        0.29180754690645955
+      ],
+      "inherited": 5005,
+      "recovered_clean": 2445,
+      "fresh_clean": 2637,
+      "trajectories_with_recovered": 126
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9391591472102068,
+      "AUROC_rec": 0.8281692944736423,
+      "AUROC_rec_CI95": [
+        0.6899163631352506,
+        0.9202187823183212
+      ],
+      "AUROC_fresh": 0.9833418200809505,
+      "AUROC_fresh_CI95": [
+        0.9690813425610736,
+        0.9910096317140329
+      ],
+      "gap": 0.1551725256073082,
+      "gap_CI95": [
+        0.0669419335823379,
+        0.2884315111224588
+      ],
+      "inherited": 1656,
+      "recovered_clean": 455,
+      "fresh_clean": 1850,
+      "trajectories_with_recovered": 67
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9234649826506993,
+      "AUROC_rec": 0.801110845676063,
+      "AUROC_rec_CI95": [
+        0.69974312926871,
+        0.8712885277703222
+      ],
+      "AUROC_fresh": 0.962271184227706,
+      "AUROC_fresh_CI95": [
+        0.9407399492787716,
+        0.975614943352157
+      ],
+      "gap": 0.1611603385516429,
+      "gap_CI95": [
+        0.0944424904836771,
+        0.25240524883224713
+      ],
+      "inherited": 1656,
+      "recovered_clean": 455,
+      "fresh_clean": 1850,
+      "trajectories_with_recovered": 67
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.9396394083695936,
+      "AUROC_rec": 0.8308568243350852,
+      "AUROC_rec_CI95": [
+        0.6953963796577806,
+        0.9243727435703624
+      ],
+      "AUROC_fresh": 0.9830464159811986,
+      "AUROC_fresh_CI95": [
+        0.9688164684003849,
+        0.9906066265601774
+      ],
+      "gap": 0.15218959164611334,
+      "gap_CI95": [
+        0.062183721025820704,
+        0.28497062961476693
+      ],
+      "inherited": 1656,
+      "recovered_clean": 455,
+      "fresh_clean": 1850,
+      "trajectories_with_recovered": 67
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8950983412271581,
+      "AUROC_rec": 0.7798561342039603,
+      "AUROC_rec_CI95": [
+        0.621627733553577,
+        0.8724676114266278
+      ],
+      "AUROC_fresh": 0.9540125995560779,
+      "AUROC_fresh_CI95": [
+        0.9171923636370198,
+        0.9746883551089548
+      ],
+      "gap": 0.1741564653521176,
+      "gap_CI95": [
+        0.09332592276047795,
+        0.30738445065468756
+      ],
+      "inherited": 1656,
+      "recovered_clean": 455,
+      "fresh_clean": 1850,
+      "trajectories_with_recovered": 67
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "VAL_prefix_AUROC": 0.8967032050212427,
+      "AUROC_rec": 0.8058143547273982,
+      "AUROC_rec_CI95": [
+        0.6830495369892106,
+        0.8684260420245586
+      ],
+      "AUROC_fresh": 0.9490312051181616,
+      "AUROC_fresh_CI95": [
+        0.9120924050706467,
+        0.969334546042392
+      ],
+      "gap": 0.14321685039076348,
+      "gap_CI95": [
+        0.09238773741037802,
+        0.2399848064604076
+      ],
+      "inherited": 1656,
+      "recovered_clean": 455,
+      "fresh_clean": 1850,
+      "trajectories_with_recovered": 67
+    }
+  ],
+  "pending": [
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "status": "baseline run not completed"
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "status": "baseline run not completed"
+    }
+  ],
+  "relation_study_qwen_logic": {
+    "counts": {
+      "inherited": 1111,
+      "recovered": 2390,
+      "fresh": 5677,
+      "positions": 9332,
+      "trajectories": 200,
+      "new": 154,
+      "trajectories_with_recovered": 70
+    },
+    "configurations": [
+      {
+        "configuration": "C01",
+        "VAL_step_AUROC": 0.9050885375247981,
+        "VAL_prefix_AUROC": 0.8725181545269828,
+        "AUROC_rec": 0.6546482681740977,
+        "AUROC_rec_CI95": [
+          0.6020665152339675,
+          0.6947115905547006
+        ],
+        "AUROC_fresh": 0.9632697636506649,
+        "AUROC_fresh_CI95": [
+          0.9435257706818351,
+          0.9765454521849215
+        ],
+        "gap": 0.30862149547656714,
+        "gap_CI95": [
+          0.2720502546030913,
+          0.35241487079442696
+        ],
+        "step_score_AUROC_rec": 0.5716652418379913,
+        "step_score_AUROC_fresh": 0.8562662325771065
+      },
+      {
+        "configuration": "C02",
+        "VAL_step_AUROC": 0.9069995160646719,
+        "VAL_prefix_AUROC": 0.8731014120378197,
+        "AUROC_rec": 0.6554289738597291,
+        "AUROC_rec_CI95": [
+          0.602487310884284,
+          0.6951202746300758
+        ],
+        "AUROC_fresh": 0.9634917340597896,
+        "AUROC_fresh_CI95": [
+          0.9443335901301884,
+          0.9762522102180521
+        ],
+        "gap": 0.3080627602000605,
+        "gap_CI95": [
+          0.2719380183274492,
+          0.35062390460433146
+        ],
+        "step_score_AUROC_rec": 0.567001344485913,
+        "step_score_AUROC_fresh": 0.8322853423267287
+      },
+      {
+        "configuration": "C03",
+        "VAL_step_AUROC": 0.9112077723975741,
+        "VAL_prefix_AUROC": 0.8720886488700611,
+        "AUROC_rec": 0.6443258551796602,
+        "AUROC_rec_CI95": [
+          0.5939843797367159,
+          0.6838699312640024
+        ],
+        "AUROC_fresh": 0.9625390053537677,
+        "AUROC_fresh_CI95": [
+          0.9430710821446887,
+          0.9754984533521119
+        ],
+        "gap": 0.31821315017410745,
+        "gap_CI95": [
+          0.28160214942432354,
+          0.36200735781449195
+        ],
+        "step_score_AUROC_rec": 0.5836255173634518,
+        "step_score_AUROC_fresh": 0.889234704692946
+      },
+      {
+        "configuration": "C04",
+        "VAL_step_AUROC": 0.913977665394096,
+        "VAL_prefix_AUROC": 0.8742208901634582,
+        "AUROC_rec": 0.649476704992675,
+        "AUROC_rec_CI95": [
+          0.59828037409032,
+          0.6883786374669028
+        ],
+        "AUROC_fresh": 0.9648065916332693,
+        "AUROC_fresh_CI95": [
+          0.9461183990842912,
+          0.9774208695481492
+        ],
+        "gap": 0.31532988664059436,
+        "gap_CI95": [
+          0.27978136476924087,
+          0.36019633879985463
+        ],
+        "step_score_AUROC_rec": 0.5792941637259961,
+        "step_score_AUROC_fresh": 0.880917949113918
+      },
+      {
+        "configuration": "C05",
+        "VAL_step_AUROC": 0.8402787014685031,
+        "VAL_prefix_AUROC": 0.896089813033238,
+        "AUROC_rec": 0.7009125180300457,
+        "AUROC_rec_CI95": [
+          0.6380266323932017,
+          0.7451520949325674
+        ],
+        "AUROC_fresh": 0.9876960216719224,
+        "AUROC_fresh_CI95": [
+          0.9778927016099782,
+          0.9934219553439734
+        ],
+        "gap": 0.28678350364187666,
+        "gap_CI95": [
+          0.2426734242936132,
+          0.3471038825560125
+        ],
+        "step_score_AUROC_rec": 0.6442851816562409,
+        "step_score_AUROC_fresh": 0.9528539607527777
+      },
+      {
+        "configuration": "C06",
+        "VAL_step_AUROC": 0.8422448656159705,
+        "VAL_prefix_AUROC": 0.8928966937471796,
+        "AUROC_rec": 0.6920159379954732,
+        "AUROC_rec_CI95": [
+          0.6292713964049043,
+          0.7428475308605605
+        ],
+        "AUROC_fresh": 0.9883392602075074,
+        "AUROC_fresh_CI95": [
+          0.9786511453774401,
+          0.9938171451598786
+        ],
+        "gap": 0.29632332221203417,
+        "gap_CI95": [
+          0.24676155222514762,
+          0.3584013490913885
+        ],
+        "step_score_AUROC_rec": 0.6300419163255238,
+        "step_score_AUROC_fresh": 0.9477833638569071
+      },
+      {
+        "configuration": "C07",
+        "VAL_step_AUROC": 0.8424776356787689,
+        "VAL_prefix_AUROC": 0.9008053598543032,
+        "AUROC_rec": 0.7235495934530691,
+        "AUROC_rec_CI95": [
+          0.6737381469523254,
+          0.7636509781620354
+        ],
+        "AUROC_fresh": 0.9838800332384833,
+        "AUROC_fresh_CI95": [
+          0.9713042690976283,
+          0.991007715897442
+        ],
+        "gap": 0.26033043978541415,
+        "gap_CI95": [
+          0.2171053305107247,
+          0.3097310029665017
+        ],
+        "step_score_AUROC_rec": 0.6634209446049207,
+        "step_score_AUROC_fresh": 0.9487712907278045
+      },
+      {
+        "configuration": "C08",
+        "VAL_step_AUROC": 0.8425278687318347,
+        "VAL_prefix_AUROC": 0.8997463437387767,
+        "AUROC_rec": 0.7184010032802444,
+        "AUROC_rec_CI95": [
+          0.663123076931103,
+          0.7611468572784508
+        ],
+        "AUROC_fresh": 0.9834603506149452,
+        "AUROC_fresh_CI95": [
+          0.9709544594128179,
+          0.9905455992494802
+        ],
+        "gap": 0.2650593473347008,
+        "gap_CI95": [
+          0.22140030421861165,
+          0.3187949231807022
+        ],
+        "step_score_AUROC_rec": 0.6502977075950273,
+        "step_score_AUROC_fresh": 0.9448505005512001
+      },
+      {
+        "configuration": "C09",
+        "VAL_step_AUROC": 0.9150346820318491,
+        "VAL_prefix_AUROC": 0.874137497666529,
+        "AUROC_rec": 0.6572555163466137,
+        "AUROC_rec_CI95": [
+          0.608351075954747,
+          0.6953929083833359
+        ],
+        "AUROC_fresh": 0.9630466833894945,
+        "AUROC_fresh_CI95": [
+          0.9408523181058386,
+          0.9769531259669925
+        ],
+        "gap": 0.3057911670428808,
+        "gap_CI95": [
+          0.2684407270465182,
+          0.34776132472489774
+        ],
+        "step_score_AUROC_rec": 0.5783368294988495,
+        "step_score_AUROC_fresh": 0.8273810646874094
+      },
+      {
+        "configuration": "C10",
+        "VAL_step_AUROC": 0.9109509470699272,
+        "VAL_prefix_AUROC": 0.8788530444875943,
+        "AUROC_rec": 0.6640046849873272,
+        "AUROC_rec_CI95": [
+          0.6082206072865002,
+          0.7082036518762519
+        ],
+        "AUROC_fresh": 0.9690432139919999,
+        "AUROC_fresh_CI95": [
+          0.9479622300719263,
+          0.9813958137763816
+        ],
+        "gap": 0.30503852900467265,
+        "gap_CI95": [
+          0.2656265422769914,
+          0.3511447852295131
+        ],
+        "step_score_AUROC_rec": 0.5749010465900146,
+        "step_score_AUROC_fresh": 0.8421411455924525
+      },
+      {
+        "configuration": "C11",
+        "VAL_step_AUROC": 0.9169803284534163,
+        "VAL_prefix_AUROC": 0.8766604391776187,
+        "AUROC_rec": 0.6579153312820822,
+        "AUROC_rec_CI95": [
+          0.6097883099640354,
+          0.6986038678127063
+        ],
+        "AUROC_fresh": 0.9655332276225685,
+        "AUROC_fresh_CI95": [
+          0.945208124630653,
+          0.9776791163153297
+        ],
+        "gap": 0.3076178963404863,
+        "gap_CI95": [
+          0.2695770434237224,
+          0.3501509481342595
+        ],
+        "step_score_AUROC_rec": 0.5853545187154698,
+        "step_score_AUROC_fresh": 0.8537524176937686
+      },
+      {
+        "configuration": "C12",
+        "VAL_step_AUROC": 0.915744312344879,
+        "VAL_prefix_AUROC": 0.8783789517729725,
+        "AUROC_rec": 0.6594684573059817,
+        "AUROC_rec_CI95": [
+          0.6040815868023082,
+          0.7036754943246862
+        ],
+        "AUROC_fresh": 0.9683996583558303,
+        "AUROC_fresh_CI95": [
+          0.9476218397392948,
+          0.9807147374263582
+        ],
+        "gap": 0.3089312010498486,
+        "gap_CI95": [
+          0.27036466700570777,
+          0.35588221278616233
+        ],
+        "step_score_AUROC_rec": 0.5813067499218542,
+        "step_score_AUROC_fresh": 0.862549897758844
+      },
+      {
+        "configuration": "C13",
+        "VAL_step_AUROC": 0.8595434310731761,
+        "VAL_prefix_AUROC": 0.8992398151645973,
+        "AUROC_rec": 0.7091997484267255,
+        "AUROC_rec_CI95": [
+          0.65923092011093,
+          0.7484447989686002
+        ],
+        "AUROC_fresh": 0.9869482984937563,
+        "AUROC_fresh_CI95": [
+          0.9762696977707176,
+          0.9929796422415912
+        ],
+        "gap": 0.2777485500670308,
+        "gap_CI95": [
+          0.23800772534864628,
+          0.32712712165623326
+        ],
+        "step_score_AUROC_rec": 0.6383012778265275,
+        "step_score_AUROC_fresh": 0.946269367116384
+      },
+      {
+        "configuration": "C14",
+        "VAL_step_AUROC": 0.8612626750020518,
+        "VAL_prefix_AUROC": 0.8996356110460271,
+        "AUROC_rec": 0.7103412433293539,
+        "AUROC_rec_CI95": [
+          0.6594212833937277,
+          0.7509425770173499
+        ],
+        "AUROC_fresh": 0.9880231109247969,
+        "AUROC_fresh_CI95": [
+          0.9777661807934477,
+          0.99372299350932
+        ],
+        "gap": 0.277681867595443,
+        "gap_CI95": [
+          0.2372486991955156,
+          0.3269333012556498
+        ],
+        "step_score_AUROC_rec": 0.6365297199175984,
+        "step_score_AUROC_fresh": 0.9448771370002951
+      },
+      {
+        "configuration": "C15",
+        "VAL_step_AUROC": 0.8612761176500553,
+        "VAL_prefix_AUROC": 0.8998502168841878,
+        "AUROC_rec": 0.7089553306795114,
+        "AUROC_rec_CI95": [
+          0.6538210124436445,
+          0.7523894802780096
+        ],
+        "AUROC_fresh": 0.9852556155738879,
+        "AUROC_fresh_CI95": [
+          0.9745680933899147,
+          0.9916604680253573
+        ],
+        "gap": 0.2763002848943764,
+        "gap_CI95": [
+          0.2316891811889504,
+          0.3304146047659971
+        ],
+        "step_score_AUROC_rec": 0.6490183746408114,
+        "step_score_AUROC_fresh": 0.9523151275846274
+      },
+      {
+        "configuration": "C16",
+        "VAL_step_AUROC": 0.8643268912390726,
+        "VAL_prefix_AUROC": 0.9004566988624421,
+        "AUROC_rec": 0.7103612034843652,
+        "AUROC_rec_CI95": [
+          0.6572030783158377,
+          0.7529595901694308
+        ],
+        "AUROC_fresh": 0.9881914913351473,
+        "AUROC_fresh_CI95": [
+          0.9792966402617499,
+          0.9937785797755617
+        ],
+        "gap": 0.2778302878507821,
+        "gap_CI95": [
+          0.23454031401974748,
+          0.3312073681453831
+        ],
+        "step_score_AUROC_rec": 0.6272132234143917,
+        "step_score_AUROC_fresh": 0.9445010557071208
+      }
+    ]
+  },
+  "sources": [
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Math/saplma/prefix/reports/val_layer_14.npz",
+      "SHA256": "eec58f6efe86eaf83f32234d6feb23fcfeb4e897a8ad2d4edb0fbf016f4e6238"
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Math/global_mean/prefix/reports/val_layer_21.npz",
+      "SHA256": "77393716d26520a4c1773a55654873e44135d861b66c25877e5d18099f12a10b"
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Math/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "12b6cb1e617440bef8a7921ffdc1a781d3c4bc134a067f2e383590e1598411b7"
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Science/saplma/prefix/reports/val_layer_17.npz",
+      "SHA256": "e8aeca584d486468391f0555c9ce272c3a456344e1ab0291ca0f50cf0df53da6"
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Science/global_mean/prefix/reports/val_layer_17.npz",
+      "SHA256": "c817fbb744457623b6fd0c6eb48e3b3574157295f2460a820860172f56962c45"
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Science/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "eb5432322782825de03fd5575c062ff8108e3ffc090adabd179a925c39ee3131"
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Logic/saplma/prefix/reports/val_layer_18.npz",
+      "SHA256": "afa3b9572f3fb75641add87776ce9527fa4b76e3210b8b19de445159f26b5eac"
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Logic/global_mean/prefix/reports/val_layer_18.npz",
+      "SHA256": "823a51f7990b41dc653cf596fd8bc11c79eba566a814f18733ca38cc9325c150"
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Logic/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "82f6ff3809cf06a52ad2e0d33f0738d1391b845703dcebe816325a96adc76bbe"
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Logic/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "fe292678af60256fb95c9ac6a3c3487afc3bd37b8234d23d15de5f93ee6f74a8"
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Multi-hop/saplma/prefix/reports/val_layer_32.npz",
+      "SHA256": "1b658998fb1bc65bc7af6e15744a47c9f5f2c83c70a2488095c09d6755d988c8"
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Multi-hop/global_mean/prefix/reports/val_layer_32.npz",
+      "SHA256": "20212aee6fb517ae8f6ef9f8c8fa484721d554b373ffeb22783875dbd9c34185"
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Multi-hop/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "7183e39f3d198814575c78b95960e4d44e4d7844a2bb28ef08a5b5399e3258d5"
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Multi-hop/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "cfc394b59fedb3ac1d6100f7ea4e53686daca1ba365117ab50eae047b1e4768d"
+    },
+    {
+      "method": "saplma",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Factuality/saplma/prefix/reports/val_layer_14.npz",
+      "SHA256": "535ec6079ad702168cf405569ad1b1ddf8d7807806fbc6cc7e887c1bb3d7ba02"
+    },
+    {
+      "method": "global_mean",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Factuality/global_mean/prefix/reports/val_layer_14.npz",
+      "SHA256": "7cd85a125d1fe2693ed5dd43739238f1e723045d0ef87c91ad44b3ca0a24901c"
+    },
+    {
+      "method": "llm_check",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Factuality/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "b501a5cb3ca98b03fcb1f2276acac7091611bd0bfed2bf63b9b95554f9c6b976"
+    },
+    {
+      "method": "icr_probe",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/deepseek_r1_distill_llama_8b/Factuality/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "f42bad97cadca0849735315d2372556eace09708b86129f1cce4757c53959d0c"
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Math/saplma/prefix/reports/val_layer_38.npz",
+      "SHA256": "32f0e4d4383c20f00d3cc84fe248413a6cc4966932ac636bd7f856a5bfb8a5a5"
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Math/global_mean/prefix/reports/val_layer_60.npz",
+      "SHA256": "7eb4c6c5955cc63bb6f1cf70a291d21b18ef257b1a5f0eb844318a3928f1ebc0"
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Math/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "41b9600790b5ec38cba213b283f70b22d16dab05751519474e7b1ded90ea7412"
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Science/saplma/prefix/reports/val_layer_43.npz",
+      "SHA256": "57c6e13b3e9e8e88087ab77abc6d86c3c2db32d689ad3600b0d5a23c27b9105e"
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Science/global_mean/prefix/reports/val_layer_57.npz",
+      "SHA256": "61e31fb1e8ad9845ca1d6098be6625f3a79f706807f6170a6e3d7ee6c8db2fe0"
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Science/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "05545112ad03cfa24309714f2232ada01c1d637eb57ab1f41437adf814b20463"
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Logic/saplma/prefix/reports/val_layer_43.npz",
+      "SHA256": "c190c540cb547cb613bcdbde40c96eb13702afd65e60e3e092e3774c84cd0af8"
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Logic/global_mean/prefix/reports/val_layer_53.npz",
+      "SHA256": "f403a342c54d1b411ba2087c0def3d91183944fb180fc3810ca7c9e6ef34bd6a"
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Logic/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "48ed1c011891b5c4c13ae7512e770d30ac4cd1bba9b4b362d479a97976fb1b32"
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Multi-hop/saplma/prefix/reports/val_layer_33.npz",
+      "SHA256": "a7460df4c20e34e919b30f805304efe3fce554cf612e9d08fc8a509975fc34e6"
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Multi-hop/global_mean/prefix/reports/val_layer_53.npz",
+      "SHA256": "631f91b2316a4c88086d475054b070c07891313c5b2f02f4322b43e35bc47985"
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Multi-hop/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "ab2c34b0c1daa1860823cfd05b9fe083311f7daf37ae48d35c68856448fcbcca"
+    },
+    {
+      "method": "icr_probe",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Multi-hop/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "a76e839e5c7a4cc7b927b4f6f3a4ff7165be37e7c835c69caad280102faac687"
+    },
+    {
+      "method": "saplma",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Factuality/saplma/prefix/reports/val_layer_37.npz",
+      "SHA256": "5603c8dcc9def14b74346682a3a0c6d641a089349e3a9ae1dc8c3b969042214f"
+    },
+    {
+      "method": "global_mean",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Factuality/global_mean/prefix/reports/val_layer_58.npz",
+      "SHA256": "f1fc26667b01750592d661a70073c635673871e3c40009acf98b75ffc516da37"
+    },
+    {
+      "method": "llm_check",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/gemma_4_31b_it/Factuality/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "c4482978f510cf41079cf429830aa34e5944ca7bc1e521206cc9967f8e0e14d8"
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Math/saplma/prefix/reports/val_layer_47.npz",
+      "SHA256": "2d8b6bce09250f3825fd9e1c536ba4cc6e26dfcd65e78d93c7fcf5163fee825a"
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Math/global_mean/prefix/reports/val_layer_51.npz",
+      "SHA256": "b61c9b4d6c47e75363cadbe684f56157fb48f200d88d86aa2631faf4ed25f178"
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Math/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "b4e3070d9d19834b8122abb4d0965f29112d479cc062f312384103320c8a2e72"
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Science/saplma/prefix/reports/val_layer_47.npz",
+      "SHA256": "cb1112e39fccf9b9846c307295a97d9cd5184ddad428732978e888ababd91480"
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Science/global_mean/prefix/reports/val_layer_54.npz",
+      "SHA256": "8bf3bdfca89a2cfee5e7a42ea3634ee55bed6c2d8ac9036c4213fab9794bb10a"
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Science/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "b6b65917d134b7c0c06031bb33a0e341f720365f82c2b194a40616244a8cfe08"
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Logic/saplma/prefix/reports/val_layer_27.npz",
+      "SHA256": "f02cbce70340bf6c11fcfefa350120371b254c7b5cd216e3036372f059273f96"
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Logic/global_mean/prefix/reports/val_layer_64.npz",
+      "SHA256": "20af70783485091719b13d7897f5dd47cb0755a1a2a7baa52a96cadbad380975"
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Logic/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "ce18ab271ae6549206fb287a698eb66265ace1974b893d65039ccada60bb0944"
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Logic/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "a8f7885e08c3c43c25881110b48c11b0f912ef3940dd7fc7412da60b3638fcef"
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Multi-hop/saplma/prefix/reports/val_layer_46.npz",
+      "SHA256": "e04210f3018fc1c75489ab52eb1a87593c880810839548b3f5dc6ff120f5208a"
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Multi-hop/global_mean/prefix/reports/val_layer_64.npz",
+      "SHA256": "6913a72087017f80a6451b1f502b4dbafc93b6fa46ca4b82da5e4dea85c46f14"
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Multi-hop/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "4bfaf973253d889dfb33b589e92c589e7c36442c850b9ee2249ef35606f10db6"
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Multi-hop/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "3a42d6cd5a97ee2458ba88e7675bc8d49dbc1d0ecaf616387e75a604ba6d8c8d"
+    },
+    {
+      "method": "saplma",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Factuality/saplma/prefix/reports/val_layer_47.npz",
+      "SHA256": "fe2254eb0b552a540749aef0be8fb93097d36aa0095e9d43518e558b95308e54"
+    },
+    {
+      "method": "global_mean",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Factuality/global_mean/prefix/reports/val_layer_49.npz",
+      "SHA256": "acae386d9a8684002597beed2265b45362da2cb77d982e9b5566738400580146"
+    },
+    {
+      "method": "llm_check",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Factuality/llm_check/prefix/reports/val_predictions.npz",
+      "SHA256": "ce57064620c0ac44d64810c4e5dbea891eb956867f664735a40239b6d541876f"
+    },
+    {
+      "method": "icr_probe",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Factuality/icr_probe/prefix/reports/val_predictions.npz",
+      "SHA256": "b6ca4bc55251aa413039d022ae6e5ac468ed3fdeda95563f1885c51ce6792e2a"
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "file": "streaming_k2_622_20261106_ds_floor/622/prefix/checkpoints/deepseek_r1_distill_llama_8b/Factuality/layer_14/epoch_4.npz",
+      "SHA256": "c892bc38391ba9a0b365324892d58a4fddbfb290e4c5883be7a5f8a16f4a02f7"
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "file": "streaming_k2_622_20261106_ds/622/prefix/checkpoints/deepseek_r1_distill_llama_8b/Logic/layer_18/epoch_1.npz",
+      "SHA256": "0e32ba8137fb7faa6f44c0c0fe62a56d80fecb967088ebe3bf1d3bf574205efb"
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "file": "streaming_k2_622_20261106_ds/622/prefix/checkpoints/deepseek_r1_distill_llama_8b/Math/layer_21/epoch_1.npz",
+      "SHA256": "e1f56cc7c55e17fd1604987e75d4e87e8694cea599cd40aa4298454521186285"
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "file": "streaming_k2_622_20261106_ds/622/prefix/checkpoints/deepseek_r1_distill_llama_8b/Multi-hop/layer_32/epoch_1.npz",
+      "SHA256": "9a1e716306a7837db0666965bc705b99c733147b2832f632244b10488ca0e3d1"
+    },
+    {
+      "method": "streaming",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "file": "streaming_k2_622_20261106_ds/622/prefix/checkpoints/deepseek_r1_distill_llama_8b/Science/layer_17/epoch_1.npz",
+      "SHA256": "05d98c12c2c6d43343f7bfa55471241b0e3c76f3cffe82ad75ac3d475ab09060"
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "file": "streaming_k2_622_20261106_gemma_floor/622/prefix/checkpoints/gemma_4_31b_it/Factuality/layer_58/epoch_7.npz",
+      "SHA256": "963884baee52d1a6f02153d31208c98c2b4a2c350efb14a2b4a217985ae74d77"
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "file": "streaming_k2_622_20261106_gemma/622/prefix/checkpoints/gemma_4_31b_it/Logic/layer_53/epoch_20.npz",
+      "SHA256": "89188bf250c968174a19533110c3d89a6e8622e824262c06fe91ffdd6866508a"
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "file": "streaming_k2_622_20261106_gemma/622/prefix/checkpoints/gemma_4_31b_it/Math/layer_58/epoch_20.npz",
+      "SHA256": "0b997c0c6237ecb3ad700e2a9de3b6f710702d8f011f71983628b30ba9c89977"
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "file": "streaming_k2_622_20261106_gemma_floor/622/prefix/checkpoints/gemma_4_31b_it/Multi-hop/layer_53/epoch_17.npz",
+      "SHA256": "758a35f0724db566c2ef2599bc085023a5b0b742681e2379c7688168a66d8fb7"
+    },
+    {
+      "method": "streaming",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "file": "streaming_k2_622_20261106_gemma/622/prefix/checkpoints/gemma_4_31b_it/Science/layer_57/epoch_5.npz",
+      "SHA256": "85dc58321854c575a4343973da63688c174ded13fd7a1901eccb5ff2231576c5"
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "file": "streaming_k2_622_20261106_qwen/622/prefix/checkpoints/qwen3_8_27b/Factuality/layer_49/epoch_10.npz",
+      "SHA256": "f33d9a0d1ca313cc7df6e34decd9a984c63b816ea10ba5e6f2e8ba041a6d38ac"
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "file": "streaming_k2_622_20261106_qwen/622/prefix/checkpoints/qwen3_8_27b/Logic/layer_51/epoch_20.npz",
+      "SHA256": "929f05a0c83530231b675f99925f3e31b4d25d280dd50e310766d2b2737c8681"
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "file": "streaming_k2_622_20261106_qwen/622/prefix/checkpoints/qwen3_8_27b/Math/layer_51/epoch_20.npz",
+      "SHA256": "0608eb380d63f13a83f349d51c9818245d3153452460994e4ff2804e7d877b7a"
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "file": "streaming_k2_622_20261106_qwen/622/prefix/checkpoints/qwen3_8_27b/Multi-hop/layer_64/epoch_20.npz",
+      "SHA256": "a7041c4dacc5113aa30e3a0c60692cca600cf0d7d45ff492bd396964084aa727"
+    },
+    {
+      "method": "streaming",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "file": "streaming_k2_622_20261106_qwen/622/prefix/checkpoints/qwen3_8_27b/Science/layer_64/epoch_1.npz",
+      "SHA256": "dace4063fffbc3f9687465daf502b7af27db07999f60a13a5ebf3b3706327787"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C01",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/last_token/linear/marginal_bce/val_layer_35.npz",
+      "SHA256": "55af780081a90c4b68b9139e90b31bc2290977e65af4b33aa635992313576114"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C02",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/last_token/linear/ce/val_layer_35.npz",
+      "SHA256": "40eae1dbc9c57106924838dd4025c98c88401915e9e274387ccc2c8b253f4c20"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C03",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/last_token/mlp/marginal_bce/val_layer_35.npz",
+      "SHA256": "73da0eb375a6b8e431df138ffa10918fef8ddb1511ca66e7f52c6326892b2daf"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C04",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/last_token/mlp/ce/val_layer_35.npz",
+      "SHA256": "16a7d1d93322d2b90811224316839f11129d8e3aea15de747f42f6daed226e45"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C05",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/global_mean/linear/marginal_bce/val_layer_34.npz",
+      "SHA256": "66a0b792316ba8de4b3284c6fa3c4de2f6668425df91c008ef96c57f46b973e6"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C06",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/global_mean/linear/ce/val_layer_34.npz",
+      "SHA256": "71f194b7297afe826ee9b348076cfe364e7c768616613275d680936bce375ddf"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C07",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/global_mean/mlp/marginal_bce/val_layer_49.npz",
+      "SHA256": "cdb9964eb1d7a5a7e299bd976485636654ebf4c4cc22f9f9e7241daa1d456ff0"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C08",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/global_mean/mlp/ce/val_layer_51.npz",
+      "SHA256": "fa257aa3fae87f13b9ecd254b3da0a4629d50b0f101ffeced72683bc9c9c55a8"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C09",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/step_exp/linear/marginal_bce/val_layer_35.npz",
+      "SHA256": "ee810745cfe7c6647296c5d90e918afeff8b9f9bb0a4dffd9cf4023a0e29c1ef"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C10",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/step_exp/linear/ce/val_layer_35.npz",
+      "SHA256": "90272cb7f4e77023601c5ddee4a79f3b2bdea76a778920c68c6b5f173b211b0a"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C11",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/step_exp/mlp/marginal_bce/val_layer_47.npz",
+      "SHA256": "c312762a3e491dd4a20d65335acfc13a70ead1cca1ba88ac570e697714796e2d"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C12",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/step_exp/mlp/ce/val_layer_35.npz",
+      "SHA256": "1db677d6010f1718a4b84d11e0f97a37016fa69730416200f57170e44b773ffb"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C13",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/prefix_exp/linear/marginal_bce/val_layer_39.npz",
+      "SHA256": "4bca692fa4f6b4034e6d579ca752e7a5593349457d5c2dd0376b404543acb43e"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C14",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/prefix_exp/linear/ce/val_layer_39.npz",
+      "SHA256": "74bea5c33e6fe5d75465cc2df43343030f040dd9756954b8222e5b212846d8c4"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C15",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/prefix_exp/mlp/marginal_bce/val_layer_43.npz",
+      "SHA256": "bcb91fa73556e687be8e8595b7d656e13e4dbcde90c61e6043663c2bb716ec94"
+    },
+    {
+      "method": "step_prefix_relation_22_qwen_wd1e4",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "configuration": "C16",
+      "file": "step_prefix_relation_22_qwen_wd1e4_20261111/reports/Logic/prefix_exp/mlp/ce/val_layer_34.npz",
+      "SHA256": "fc4173c8ea2888ee2883f5a9c41dc8bb7e4e10c2e399681f4e35ebaabec86b2e"
+    }
+  ]
+}
