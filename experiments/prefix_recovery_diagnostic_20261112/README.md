@@ -74,21 +74,6 @@ Values are means over combinations.
 | Multi-hop | 0.721 | 0.212 |
 | Factuality | 0.806 | 0.140 |
 
-### 3. Overall Prefix AUROC hides the deficit
-
-AUROC is the fraction of (inherited, clean) pairs that a detector ranks correctly. Its errors are the misranked pairs.
-
-For Streaming on Qwen Logic:
-
-| Clean negatives | Share of clean negatives | Misranked pairs within group | Share of all misranked pairs |
-|---|---:|---:|---:|
-| fresh clean | 70% | 1.5% | 10% |
-| recovered clean | 30% | 30.4% | 90% |
-
-Recovered positions are a minority of clean negatives but cause almost all ranking errors. Across the 67 detector–combination pairs, they are on average 40% of clean negatives and 73% of misranked pairs (median 82%). In 54 pairs they cause most of the errors.
-
-The aggregate score stays high because the many fresh clean positions are easy. Fresh clean positions are already ranked almost perfectly, so further Prefix gains must come from recovered positions.
-
 ## Interpretation
 
 Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of κ, the probability that an earlier error is still active. Their scores stay high after an error is corrected.
