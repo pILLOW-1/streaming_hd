@@ -106,3 +106,7 @@ Frozen settings: [config.json](config.json). Source: [code/ours/step_prefix_rela
 | C14 |  | 0.8291 |  |  |  |
 | C15 |  | 0.8282 |  |  |  |
 | C16 |  | **0.8382** |  |  |  |
+
+## Ordered dual-readout configurations
+
+Four CPU-verified Logic configurations use separate Step and conditional Prefix heads. Their [configuration and results](ordered_dual.md) are recorded here alongside the fixed-readout study.
