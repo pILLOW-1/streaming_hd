@@ -32,7 +32,7 @@ A detector that tracks κ itself has a small gap. A detector that tracks only "a
 | Dataset | Retained Streaming HD, 6:2:2; **VAL only** |
 | Scope | Three generators, five domains |
 | Scores | Each detector's frozen, selected-layer VAL Prefix score saved by its original run; no retraining or inference |
-| Detectors | Streaming, SAPLMA, global mean, LLM-Check, ICR Probe; and the 16 fixed-readout configurations of the [Qwen Step–Prefix relation study](../step_prefix_relation_22_qwen_wd1e4_20261111/README.md) on Logic |
+| Detectors | Streaming, SAPLMA, global mean, LLM-Check, ICR Probe |
 | Integrity checks | Saved position ids and labels equal the dataset loader's in order. Recomputed VAL Prefix AUROC equals the value recorded at selection. Published Streaming cells are matched to their source runs by freeze SHA256. |
 | Uncertainty | 95% percentile intervals from 1,000 trajectory-bootstrap replicates |
 
@@ -74,32 +74,17 @@ Values are means over combinations.
 | Multi-hop | 0.721 | 0.212 |
 | Factuality | 0.806 | 0.140 |
 
-### 3. Changing the readout or the head does not remove the deficit
-
-In the Qwen Logic relation study, every configuration has AUROC_fresh 0.96–0.99 and AUROC_rec 0.64–0.72:
-
-| Readout (C01–C16) | AUROC_rec | AUROC_fresh | gap |
-|---|---:|---:|---:|
-| Last token | 0.644–0.655 | 0.963–0.965 | 0.31–0.32 |
-| Step exponential | 0.657–0.664 | 0.963–0.969 | 0.31 |
-| Global mean | 0.692–0.724 | 0.984–0.988 | 0.26–0.30 |
-| Prefix exponential | 0.709–0.710 | 0.985–0.988 | 0.28 |
-
-History pooling raises AUROC_rec by about 0.05 over local readouts, but the gap stays near 0.28. Within a readout, linear vs MLP heads and the two training losses move AUROC_rec by at most 0.03.
-
-The Step score alone gives AUROC_rec 0.57–0.66. On these positions, the ranking is carried by the inherited term rather than by the Step term.
-
-### 4. Recovered positions hold most of the remaining Prefix headroom
+### 3. Recovered positions hold most of the remaining Prefix headroom
 
 With the negatives fixed, the clean-negative part of Prefix AUROC is the count-weighted mean of AUROC_rec and AUROC_fresh.
 
-For C16 on Qwen Logic, this is (2,390×0.710 + 5,677×0.988)/8,067 ≈ 0.906, which matches its VAL Prefix AUROC of 0.90. Raising AUROC_rec to 0.9 alone would lift this part to about 0.96.
+For Streaming on Qwen Logic, this is (2,390×0.696 + 5,677×0.985)/8,067 ≈ 0.900, close to its VAL Prefix AUROC of 0.891. Raising AUROC_rec to 0.9 alone would lift this part to about 0.96.
 
 ## Interpretation
 
-Existing Prefix detectors, including ours with fixed readouts, behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of κ, the probability that an earlier error is still active. Their scores stay high after an error is corrected.
+Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of κ, the probability that an earlier error is still active. Their scores stay high after an error is corrected.
 
-Fixed pooling of past states can record that an error happened. It cannot show that the error was later withdrawn. A κ estimator needs evidence of correction: the current Step must be compared against the earlier content it may still rely on.
+Pooling past states, as global mean and Streaming do, can record that an error happened. It cannot show that the error was later withdrawn. A κ estimator needs evidence of correction: the current Step must be compared against the earlier content it may still rely on.
 
 AUROC_rec is the direct test of that ability.
 
@@ -107,13 +92,11 @@ AUROC_rec is the direct test of that ability.
 
 - Recovered clean positions come from a limited number of VAL trajectories per combination: 26–177, and 70 for Qwen Logic. Intervals are wide where this number is small.
 - Fresh clean positions lie mostly early in trajectories, so AUROC_fresh may also reflect position. This does not affect the low AUROC_rec.
-- The ordered dual-readout configurations (C17–C20) are not included because their VAL predictions are not yet available here.
 
 ## Artifacts
 
 - [Configuration](config.json): definitions, scope and integrity checks.
 - [Recovery JSON](result/recovery.json): unrounded statistics, confidence intervals, position counts, pending cells and source-file hashes.
 - [Recovery CSV](result/recovery.csv): one row per detector, generator and domain.
-- [Relation-study CSV](result/relation_logic.csv): C01–C16 on Qwen Logic, including the Step-score columns.
 
 Only aggregate statistics and input-file identities are published. Labels, splits, predictions and detector weights are unchanged and not included.

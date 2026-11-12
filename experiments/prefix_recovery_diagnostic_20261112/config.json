@@ -26,16 +26,13 @@
     "gap": "AUROC_fresh - AUROC_rec"
   },
   "score": "each detector's frozen selected-layer VAL Prefix score, as saved by its original run; no retraining or inference",
-  "detectors": {
-    "baselines": [
-      "streaming",
-      "saplma",
-      "global_mean",
-      "llm_check",
-      "icr_probe"
-    ],
-    "relation_study": "step_prefix_relation_22_qwen_wd1e4_20261111 C01-C16, Qwen3.8-27B Logic, Prefix score p(new)+p(inherited)"
-  },
+  "detectors": [
+    "streaming",
+    "saplma",
+    "global_mean",
+    "llm_check",
+    "icr_probe"
+  ],
   "integrity_checks": [
     "saved position ids equal the dataset loader's ids in order",
     "saved labels equal Prefix labels",
