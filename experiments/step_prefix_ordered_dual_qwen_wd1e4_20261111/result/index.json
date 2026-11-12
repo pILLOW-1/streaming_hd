@@ -1,0 +1,43 @@
+{
+  "experiment_id": "step_prefix_ordered_dual_qwen_wd1e4_20261111",
+  "completed": 4,
+  "configured": 8,
+  "results": [
+    {
+      "arm": "Logic.ordered_dual.linear.marginal_bce",
+      "domain": "Logic",
+      "head": "linear",
+      "loss": "marginal_bce",
+      "selected_layer": 35,
+      "selected_epoch": 6,
+      "result": "Logic/ordered_dual/linear/marginal_bce.json"
+    },
+    {
+      "arm": "Logic.ordered_dual.linear.ce",
+      "domain": "Logic",
+      "head": "linear",
+      "loss": "ce",
+      "selected_layer": 42,
+      "selected_epoch": 12,
+      "result": "Logic/ordered_dual/linear/ce.json"
+    },
+    {
+      "arm": "Logic.ordered_dual.mlp.marginal_bce",
+      "domain": "Logic",
+      "head": "mlp",
+      "loss": "marginal_bce",
+      "selected_layer": 42,
+      "selected_epoch": 10,
+      "result": "Logic/ordered_dual/mlp/marginal_bce.json"
+    },
+    {
+      "arm": "Logic.ordered_dual.mlp.ce",
+      "domain": "Logic",
+      "head": "mlp",
+      "loss": "ce",
+      "selected_layer": 44,
+      "selected_epoch": 7,
+      "result": "Logic/ordered_dual/mlp/ce.json"
+    }
+  ]
+}
