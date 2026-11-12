@@ -1,7 +1,7 @@
 {
   "experiment_id": "step_prefix_ordered_dual_qwen_wd1e4_20261111",
-  "completed": 4,
-  "configured": 8,
+  "completed": 8,
+  "configured": 12,
   "results": [
     {
       "arm": "Logic.ordered_dual.linear.marginal_bce",
@@ -38,6 +38,42 @@
       "selected_layer": 44,
       "selected_epoch": 7,
       "result": "Logic/ordered_dual/mlp/ce.json"
+    },
+    {
+      "arm": "Factuality.ordered_dual.linear.ce",
+      "domain": "Factuality",
+      "head": "linear",
+      "loss": "ce",
+      "selected_layer": 50,
+      "selected_epoch": 5,
+      "result": "Factuality/ordered_dual/linear/ce.json"
+    },
+    {
+      "arm": "Factuality.ordered_dual.linear.marginal_bce",
+      "domain": "Factuality",
+      "head": "linear",
+      "loss": "marginal_bce",
+      "selected_layer": 50,
+      "selected_epoch": 5,
+      "result": "Factuality/ordered_dual/linear/marginal_bce.json"
+    },
+    {
+      "arm": "Factuality.ordered_dual.mlp.ce",
+      "domain": "Factuality",
+      "head": "mlp",
+      "loss": "ce",
+      "selected_layer": 50,
+      "selected_epoch": 2,
+      "result": "Factuality/ordered_dual/mlp/ce.json"
+    },
+    {
+      "arm": "Factuality.ordered_dual.mlp.marginal_bce",
+      "domain": "Factuality",
+      "head": "mlp",
+      "loss": "marginal_bce",
+      "selected_layer": 47,
+      "selected_epoch": 3,
+      "result": "Factuality/ordered_dual/mlp/marginal_bce.json"
     }
   ]
 }

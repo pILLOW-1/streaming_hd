@@ -1,0 +1,11 @@
+{
+  "domain": "Factuality",
+  "arms": [
+    "Factuality.ordered_dual.linear.ce",
+    "Factuality.ordered_dual.linear.marginal_bce",
+    "Factuality.ordered_dual.mlp.ce",
+    "Factuality.ordered_dual.mlp.marginal_bce"
+  ],
+  "base_configuration": "config.ordered_dual.json",
+  "base_configuration_SHA256": "f93975fea81e4207238c36d986a750eb240512ada5abef0cf7dca755ef44c227"
+}

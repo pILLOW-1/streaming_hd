@@ -11,7 +11,7 @@ This experiment compares fixed readouts, head capacity, and training objectives.
 
 ## Configurations
 
-C01–C16 run in Math, Logic, Science, Multi-hop, and Factuality. C17–C20 run in Logic and Multi-hop. The study contains 88 configured runs. Answer-level detection is excluded.
+C01–C16 run in Math, Logic, Science, Multi-hop, and Factuality. C17–C20 run in Logic, Multi-hop, and Factuality. The study contains 92 configured runs. Answer-level detection is excluded.
 
 | ID | Readout | Prediction head | Loss |
 |---|---|---|---|
@@ -38,7 +38,7 @@ C01–C16 run in Math, Logic, Science, Multi-hop, and Factuality. C17–C20 run 
 
 All four readouts use raw FP32 vectors without L2 normalization. Global mean and the two exponential readouts follow Streaming's original token scope and pooling: Step weights ∝ exp(3u), u ∈ [0,1]; Prefix weights ∝ exp(0.003j). Only the native causal context visible through the current Step is used; pooling excludes the prompt and final Answer while preserving original reasoning tokens and boundary overrides.
 
-C17–C20 feed Step exponential pooling to the Step head and Prefix exponential pooling to the conditional Prefix head. The two heads use scalar outputs with the same hidden-layer widths as the original head family. With sigmoid outputs q and r, the ordered state probabilities are q, (1−q)r, and (1−q)(1−r). Step and Prefix probabilities are q and q + (1−q)r. See the [paired-readout configuration](config.ordered_dual.json).
+C17–C20 feed Step exponential pooling to the Step head and Prefix exponential pooling to the conditional Prefix head. The two heads use scalar outputs with the same hidden-layer widths as the original head family. With sigmoid outputs q and r, the ordered state probabilities are q, (1−q)r, and (1−q)(1−r). Step and Prefix probabilities are q and q + (1−q)r. See the [paired-readout configuration](config.ordered_dual.json) and [Factuality scope](config.ordered_dual.factuality.json).
 
 ## Training Parameters
 
@@ -65,9 +65,9 @@ The MLP architecture follows SAPLMA; the unified optimizer settings and stopping
 
 ## Results
 
-**CPU-verified: 20 / 88.** Each accepted run is added immediately to `result/<domain>/<readout>/<head>/<loss>.json`, with `result/index.json` refreshed in the same concrete Git commit. Pending entries contain no result values. Result tables use configurations C01–C20 as rows and the five domains as columns. Step and Prefix have separate AUROC tables. The highest AUROC in each domain column is bolded. Exact ties share bold formatting. `result/step_auroc.csv`, `prefix_auroc.csv`, `step_ap.csv`, and `prefix_ap.csv` preserve the same matrix layout. `result/summary.csv` uses Step AUROC / Prefix AUROC in each domain cell.
+**CPU-verified: 40 / 92.** Each accepted run is added immediately to `result/<domain>/<readout>/<head>/<loss>.json`, with `result/index.json` refreshed in the same concrete Git commit. Pending entries contain no result values. Result tables use configurations C01–C20 as rows and the five domains as columns. Step and Prefix have separate AUROC tables. The highest AUROC in each domain column is bolded. Exact ties share bold formatting. `result/step_auroc.csv`, `prefix_auroc.csv`, `step_ap.csv`, and `prefix_ap.csv` preserve the same matrix layout. `result/summary.csv` uses Step AUROC / Prefix AUROC in each domain cell.
 
-The [paired-readout result index](result/ordered_dual/index.json) links the individual C17–C20 reports. All four Logic runs cover 15,233 TEST positions. Feature readback and pooled-feature comparison were waived for this RunPod run.
+The [paired-readout result index](result/ordered_dual/index.json) links the individual C17–C20 reports. All four Logic runs cover 15,233 TEST positions. The Factuality runs reuse the BF16 per-token bank and cover 5,489 TEST positions. Feature readback and pooled-feature comparison were waived for this RunPod run.
 
 Each result records both tasks' AUROC, AP, TPR@1%FPR, ACC, F1, precision, recall, FPR, confusion counts and coverage, plus selected layer/epoch/threshold and configuration, data, checkpoint and prediction hashes. Raw data, feature banks and trained weights are not published.
 
@@ -77,48 +77,48 @@ Frozen settings: [config.json](config.json). Source: [code/ours/step_prefix_rela
 
 | Configuration | Math | Logic | Science | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| C01 |  | 0.8853 |  |  |  |
-| C02 |  | 0.8897 |  |  |  |
-| C03 |  | 0.8865 |  |  |  |
-| C04 |  | 0.8870 |  |  |  |
-| C05 |  | 0.7441 |  |  |  |
-| C06 |  | 0.7441 |  |  |  |
-| C07 |  | 0.7532 |  |  |  |
-| C08 |  | 0.7465 |  |  |  |
-| C09 |  | 0.8833 |  |  |  |
-| C10 |  | 0.8907 |  |  |  |
-| C11 |  | 0.8801 |  |  |  |
-| C12 |  | 0.8899 |  |  |  |
-| C13 |  | 0.7846 |  |  |  |
-| C14 |  | 0.7829 |  |  |  |
-| C15 |  | 0.7751 |  |  |  |
-| C16 |  | 0.7849 |  |  |  |
-| C17 |  | **0.8927** |  |  |  |
-| C18 |  | 0.8775 |  |  |  |
-| C19 |  | 0.8718 |  |  |  |
-| C20 |  | 0.8658 |  |  |  |
+| C01 |  | 0.8853 |  |  | 0.8639 |
+| C02 |  | 0.8897 |  |  | 0.8620 |
+| C03 |  | 0.8865 |  |  | 0.8600 |
+| C04 |  | 0.8870 |  |  | 0.8585 |
+| C05 |  | 0.7441 |  |  | 0.6829 |
+| C06 |  | 0.7441 |  |  | 0.6853 |
+| C07 |  | 0.7532 |  |  | 0.6927 |
+| C08 |  | 0.7465 |  |  | 0.6821 |
+| C09 |  | 0.8833 |  |  | 0.8757 |
+| C10 |  | 0.8907 |  |  | 0.8770 |
+| C11 |  | 0.8801 |  |  | 0.8677 |
+| C12 |  | 0.8899 |  |  | 0.8667 |
+| C13 |  | 0.7846 |  |  | 0.7160 |
+| C14 |  | 0.7829 |  |  | 0.7154 |
+| C15 |  | 0.7751 |  |  | 0.7008 |
+| C16 |  | 0.7849 |  |  | 0.7048 |
+| C17 |  | **0.8927** |  |  | 0.8818 |
+| C18 |  | 0.8775 |  |  | **0.8820** |
+| C19 |  | 0.8718 |  |  | 0.8783 |
+| C20 |  | 0.8658 |  |  | 0.8776 |
 
 ## Prefix AUROC
 
 | Configuration | Math | Logic | Science | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| C01 |  | 0.8169 |  |  |  |
-| C02 |  | 0.8196 |  |  |  |
-| C03 |  | 0.8208 |  |  |  |
-| C04 |  | 0.8232 |  |  |  |
-| C05 |  | 0.8232 |  |  |  |
-| C06 |  | 0.8231 |  |  |  |
-| C07 |  | 0.8250 |  |  |  |
-| C08 |  | 0.8231 |  |  |  |
-| C09 |  | 0.8241 |  |  |  |
-| C10 |  | 0.8282 |  |  |  |
-| C11 |  | 0.8268 |  |  |  |
-| C12 |  | 0.8290 |  |  |  |
-| C13 |  | 0.8284 |  |  |  |
-| C14 |  | 0.8291 |  |  |  |
-| C15 |  | 0.8282 |  |  |  |
-| C16 |  | 0.8382 |  |  |  |
-| C17 |  | 0.8370 |  |  |  |
-| C18 |  | 0.8341 |  |  |  |
-| C19 |  | 0.8371 |  |  |  |
-| C20 |  | **0.8418** |  |  |  |
+| C01 |  | 0.8169 |  |  | 0.7917 |
+| C02 |  | 0.8196 |  |  | 0.7897 |
+| C03 |  | 0.8208 |  |  | 0.7905 |
+| C04 |  | 0.8232 |  |  | 0.7843 |
+| C05 |  | 0.8232 |  |  | 0.8118 |
+| C06 |  | 0.8231 |  |  | 0.8078 |
+| C07 |  | 0.8250 |  |  | 0.8003 |
+| C08 |  | 0.8231 |  |  | 0.8153 |
+| C09 |  | 0.8241 |  |  | 0.8044 |
+| C10 |  | 0.8282 |  |  | 0.8053 |
+| C11 |  | 0.8268 |  |  | 0.7980 |
+| C12 |  | 0.8290 |  |  | 0.7979 |
+| C13 |  | 0.8284 |  |  | 0.8131 |
+| C14 |  | 0.8291 |  |  | 0.8114 |
+| C15 |  | 0.8282 |  |  | 0.8042 |
+| C16 |  | 0.8382 |  |  | 0.8146 |
+| C17 |  | 0.8370 |  |  | 0.8133 |
+| C18 |  | 0.8341 |  |  | 0.8106 |
+| C19 |  | 0.8371 |  |  | **0.8178** |
+| C20 |  | **0.8418** |  |  | 0.8097 |

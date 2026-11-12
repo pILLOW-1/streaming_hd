@@ -31,7 +31,14 @@ def ordered_dual_rows(public):
         ('mlp', 'marginal_bce'): 'C19', ('mlp', 'ce'): 'C20',
     }
     rows = []
-    for arm in config['arms']:
+    arms = list(config['arms'])
+    fact_path = public / 'config.ordered_dual.factuality.json'
+    if fact_path.is_file():
+        fact = json.loads(fact_path.read_text())
+        assert fact['base_configuration_SHA256'] == sha(config_path)
+        assert all(arm.startswith('Factuality.ordered_dual.') for arm in fact['arms'])
+        arms.extend(fact['arms'])
+    for arm in arms:
         domain, readout, head, loss = arm.split('.')
         result_path = public / 'result/ordered_dual' / Path(*arm.split('.')).with_suffix('.json')
         row = dict(ID=cases[head, loss], domain=domain, readout=readout, head=head, loss=loss,
@@ -57,6 +64,13 @@ def main():
     cfg=config();files={};results=[];index=[]
     for arm_index,arm in enumerate(cfg['arms']):
         out,_=arm_paths(arm);p=out/'TEST_RESULT.json'
+        # Preserve a previously published verified RunPod result in the original table.
+        if arm.startswith('Factuality.'):
+            cloud_out = RUN / 'runpod/Factuality' / Path(*arm.split('.'))
+            public_result = REPO / PUBLIC / 'result' / Path(*arm.split('.')).with_suffix('.json')
+            cloud_result = cloud_out / 'TEST_RESULT.json'
+            if cloud_result.is_file() and public_result.is_file() and sha(cloud_result) == sha(public_result):
+                out, p = cloud_out, cloud_result
         domain,readout,head,loss=arm.split('.')
         row=dict(ID='C'+str(arm_index%16+1).zfill(2),domain=domain,readout=readout,head=head,loss=loss,
                  configuration=arm,status='PENDING',step=None,prefix=None)
