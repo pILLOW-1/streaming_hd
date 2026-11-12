@@ -90,6 +90,15 @@
     "SHA256": "55450b2aed29da9f00e5272c94b90eadb95e2c1ad7a1f6549c2f5e99d3f9d69b"
   },
   {
+    "level": "answer",
+    "method": "global_mean",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Logic",
+    "AUROC": 0.8498744404410963,
+    "source": "experiments/global_mean/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Logic/answer.json",
+    "SHA256": "541f08fdc90f8f5dac4ddc986f7d0fe93353265b109f6102868e07c809a6faa2"
+  },
+  {
     "level": "prefix",
     "method": "global_mean",
     "model": "deepseek_r1_distill_llama_8b",
@@ -952,6 +961,15 @@
     "AUROC": 0.7912608225108225,
     "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Factuality/step.json",
     "SHA256": "13e687f3ca174eccaf9276d969aa2b76d331de775b463e23aea1bceecb8a6bce"
+  },
+  {
+    "level": "answer",
+    "method": "saplma",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Logic",
+    "AUROC": 0.8148269461731631,
+    "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Logic/answer.json",
+    "SHA256": "701c3ab7ff65e19788de9a63b0e2af99c3e4277f0c3ec8dde105a08d49e8963a"
   },
   {
     "level": "prefix",

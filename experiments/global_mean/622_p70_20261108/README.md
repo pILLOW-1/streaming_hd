@@ -13,6 +13,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | deepseek_r1_distill_llama_8b | Factuality | answer | 13 | 74.40 | 87.87 | 25.00 | 73.00 | 82.80 |
 | deepseek_r1_distill_llama_8b | Factuality | prefix | 14 | 80.54 | 90.37 | 32.70 | 72.50 | 79.93 |
 | deepseek_r1_distill_llama_8b | Factuality | step | 15 | 74.77 | 41.40 | 8.84 | 69.10 | 43.44 |
+| deepseek_r1_distill_llama_8b | Logic | answer | 7 | 84.99 | 72.26 | 8.45 | 72.50 | 70.59 |
 | deepseek_r1_distill_llama_8b | Logic | prefix | 18 | 87.46 | 74.57 | 13.48 | 80.67 | 69.69 |
 | deepseek_r1_distill_llama_8b | Logic | step | 19 | 77.52 | 12.83 | 5.34 | 88.16 | 19.85 |
 | deepseek_r1_distill_llama_8b | Math | prefix | 21 | 83.01 | 91.58 | 14.48 | 79.82 | 86.84 |
