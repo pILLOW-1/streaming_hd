@@ -21,6 +21,31 @@ def sync_checkout():
     subprocess.run(['/usr/bin/python3.12',str(PROJECT/'workspaces/streaming_hd/common/sync_published_checkout.py')],check=True,timeout=240)
 
 
+def ordered_dual_rows(public):
+    config_path = public / 'config.ordered_dual.json'
+    if not config_path.is_file():
+        return []
+    config = json.loads(config_path.read_text())
+    cases = {
+        ('linear', 'marginal_bce'): 'C17', ('linear', 'ce'): 'C18',
+        ('mlp', 'marginal_bce'): 'C19', ('mlp', 'ce'): 'C20',
+    }
+    rows = []
+    for arm in config['arms']:
+        domain, readout, head, loss = arm.split('.')
+        result_path = public / 'result/ordered_dual' / Path(*arm.split('.')).with_suffix('.json')
+        row = dict(ID=cases[head, loss], domain=domain, readout=readout, head=head, loss=loss,
+                   configuration=arm, status='PENDING', step=None, prefix=None)
+        if result_path.is_file():
+            record = json.loads(result_path.read_text())
+            assert record['arm'] == arm and record['status'] == 'PASS_SELECTED_TEST_ONCE_CPU_VERIFIED'
+            assert record['config_SHA256'] == sha(config_path)
+            row.update(status='CPU_VERIFIED', step=record['step'], prefix=record['prefix'],
+                       selected_layer=record['selected_layer'], selected_epoch=record['selected_epoch'])
+        rows.append(row)
+    return rows
+
+
 def main():
     # Some compute nodes lack Git. CPU verification must finish all arms.
     # The login-node publication pass consumes the saved verified results.
@@ -44,37 +69,40 @@ def main():
             row.update(status='CPU_VERIFIED',step=x['step'],prefix=x['prefix'],selected_layer=x['selected_layer'],selected_epoch=x['selected_epoch'])
             files[str(PUBLIC/'result'/Path(*arm.split('.')).with_suffix('.json'))]=(json.dumps(x,indent=2)+'\n').encode()
         index.append(row)
+    dual = ordered_dual_rows(REPO / PUBLIC)
+    index.extend(dual)
+    completed = sum(item['status'] == 'CPU_VERIFIED' for item in index)
     files[str(PUBLIC/'config.json')]=(WORK/'config.json').read_bytes()
-    files[str(PUBLIC/'result/index.json')]=(json.dumps(dict(completed=len(results),total=80,configurations=index),indent=2)+'\n').encode()
+    files[str(PUBLIC/'result/index.json')]=(json.dumps(dict(completed=completed,total=len(index),configurations=index),indent=2)+'\n').encode()
     domains=['Math','Logic','Science','Multi-hop','Factuality']
-    ids=['C'+str(i).zfill(2) for i in range(1,17)]
+    ids=['C'+str(i).zfill(2) for i in range(1,21 if dual else 17)]
     lookup={(item['ID'],item['domain']):item for item in index}
-    assert len(lookup)==80
+    assert len(lookup)==len(index)
     def matrix_csv(level,metric):
         stream=io.StringIO();writer=csv.writer(stream,lineterminator='\n');writer.writerow(['Configuration']+domains)
         for cid in ids:
-            writer.writerow([cid]+[(lookup[cid,d][level] or {}).get(metric,'') for d in domains])
+            writer.writerow([cid]+[(lookup.get((cid,d),{}).get(level) or {}).get(metric,'') for d in domains])
         return stream.getvalue().encode()
     for level in ('step','prefix'):
         for metric in ('AUROC','AP'):
             files[str(PUBLIC/'result'/(level+'_'+metric.lower()+'.csv'))]=matrix_csv(level,metric)
     summary=io.StringIO();writer=csv.writer(summary,lineterminator='\n');writer.writerow(['Configuration']+domains)
     for cid in ids:
-        writer.writerow([cid]+[(str(lookup[cid,d]['step']['AUROC'])+' / '+str(lookup[cid,d]['prefix']['AUROC'])) if lookup[cid,d]['step'] else '' for d in domains])
+        writer.writerow([cid]+[(str(lookup[cid,d]['step']['AUROC'])+' / '+str(lookup[cid,d]['prefix']['AUROC'])) if lookup.get((cid,d),{}).get('step') else '' for d in domains])
     files[str(PUBLIC/'result/summary.csv')]=summary.getvalue().encode()
-    readme=(WORK/'README.md').read_text().replace('{{COMPLETED}}',str(len(results)))
+    readme=(WORK/'README.md').read_text().replace('{{COMPLETED}}',str(completed)).replace('{{TOTAL}}',str(len(index)))
     table=[]
     for level in ('step','prefix'):
         table+=['\n## '+level.title()+' AUROC\n','| Configuration | '+' | '.join(domains)+' |','|---|'+'---:|'*len(domains)]
         best = {
-            domain: max((lookup[cid, domain][level]['AUROC'] for cid in ids
-                         if lookup[cid, domain][level] is not None), default=None)
+            domain: max((lookup.get((cid, domain), {}).get(level)['AUROC'] for cid in ids
+                         if lookup.get((cid, domain), {}).get(level) is not None), default=None)
             for domain in domains
         }
         for cid in ids:
             values = []
             for domain in domains:
-                result = lookup[cid, domain][level]
+                result = lookup.get((cid, domain), {}).get(level)
                 if result is None:
                     values.append('')
                     continue
