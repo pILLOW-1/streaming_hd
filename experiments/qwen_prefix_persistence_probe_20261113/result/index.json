@@ -1,0 +1,173 @@
+{
+  "split": "val",
+  "results": [
+    {
+      "domain": "Logic",
+      "readout": "last_token",
+      "AUROC": 0.5903152465302521,
+      "AP": 0.5556741516068183,
+      "selected": [
+        {
+          "layer": 63,
+          "update": 14,
+          "AUROC": 0.5903152465302521,
+          "AP": 0.5556741516068183
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.5372803275891486,
+        "positive_negative_pairs": 17583,
+        "macro_AUROC": 0.5664113471053797,
+        "mixed_label_trajectories": 40,
+        "eligible_trajectories": 70
+      }
+    },
+    {
+      "domain": "Logic",
+      "readout": "streaming_step",
+      "AUROC": 0.5853198841720678,
+      "AP": 0.5372785296404665,
+      "selected": [
+        {
+          "layer": 49,
+          "update": 33,
+          "AUROC": 0.5853198841720678,
+          "AP": 0.5372785296404665
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.541943923107547,
+        "positive_negative_pairs": 17583,
+        "macro_AUROC": 0.5300651705311747,
+        "mixed_label_trajectories": 40,
+        "eligible_trajectories": 70
+      }
+    },
+    {
+      "domain": "Logic",
+      "readout": "last_token_saplma",
+      "AUROC": 0.5850441707104641,
+      "AP": 0.5568089070514607,
+      "selected": [
+        {
+          "layer": 64,
+          "epoch": 4,
+          "AUROC": 0.5850441707104641,
+          "AP": 0.5568089070514607
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.5263606893021668,
+        "positive_negative_pairs": 17583,
+        "macro_AUROC": 0.5370341350514963,
+        "mixed_label_trajectories": 40,
+        "eligible_trajectories": 70
+      }
+    },
+    {
+      "domain": "Logic",
+      "readout": "streaming_prefix",
+      "AUROC": 0.6193231305213388,
+      "AP": 0.561638708527338,
+      "selected": [
+        {
+          "layer": 51,
+          "update": 39,
+          "AUROC": 0.6193231305213388,
+          "AP": 0.561638708527338
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.5098106125234602,
+        "positive_negative_pairs": 17583,
+        "macro_AUROC": 0.5187858238784196,
+        "mixed_label_trajectories": 40,
+        "eligible_trajectories": 70
+      }
+    },
+    {
+      "domain": "Factuality",
+      "readout": "last_token",
+      "AUROC": 0.7727082156852678,
+      "AP": 0.9688860453457205,
+      "selected": [
+        {
+          "layer": 17,
+          "update": 19,
+          "AUROC": 0.7727082156852678,
+          "AP": 0.9688860453457205
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.4965224111282844,
+        "positive_negative_pairs": 2588,
+        "macro_AUROC": 0.4975827710632497,
+        "mixed_label_trajectories": 38,
+        "eligible_trajectories": 90
+      }
+    },
+    {
+      "domain": "Factuality",
+      "readout": "streaming_step",
+      "AUROC": 0.7778120026695415,
+      "AP": 0.9711698557904738,
+      "selected": [
+        {
+          "layer": 15,
+          "update": 18,
+          "AUROC": 0.7778120026695415,
+          "AP": 0.9711698557904738
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.5324574961360123,
+        "positive_negative_pairs": 2588,
+        "macro_AUROC": 0.4861322629955412,
+        "mixed_label_trajectories": 38,
+        "eligible_trajectories": 90
+      }
+    },
+    {
+      "domain": "Factuality",
+      "readout": "last_token_saplma",
+      "AUROC": 0.7673734106815887,
+      "AP": 0.9677743126650475,
+      "selected": [
+        {
+          "layer": 17,
+          "epoch": 1,
+          "AUROC": 0.7673734106815887,
+          "AP": 0.9677743126650475
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.517387944358578,
+        "positive_negative_pairs": 2588,
+        "macro_AUROC": 0.5637471646420396,
+        "mixed_label_trajectories": 38,
+        "eligible_trajectories": 90
+      }
+    },
+    {
+      "domain": "Factuality",
+      "readout": "streaming_prefix",
+      "AUROC": 0.8286274107158135,
+      "AP": 0.9791247543518431,
+      "selected": [
+        {
+          "layer": 10,
+          "update": 8,
+          "AUROC": 0.8286274107158135,
+          "AP": 0.9791247543518431
+        }
+      ],
+      "within_trajectory": {
+        "pair_weighted_AUROC": 0.625193199381762,
+        "positive_negative_pairs": 2588,
+        "macro_AUROC": 0.5284648984214071,
+        "mixed_label_trajectories": 38,
+        "eligible_trajectories": 90
+      }
+    }
+  ]
+}
