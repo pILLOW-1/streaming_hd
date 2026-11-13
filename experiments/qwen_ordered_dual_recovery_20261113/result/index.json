@@ -1,0 +1,525 @@
+{
+  "status": "VAL_DIAGNOSTIC_VERIFIED",
+  "configurations": [
+    {
+      "domain": "Logic",
+      "arm": "C17",
+      "layer": 35,
+      "epoch": 6,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9830222761575083,
+            "within_pair": 0.9869206135176134,
+            "within_macro": 0.9589358519815206,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.6976676747172625,
+            "within_pair": 0.5419440745672437,
+            "within_macro": 0.4715025622283817,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9852478466095684,
+            "within_pair": 0.9961907972357997,
+            "within_macro": 0.9872997168077002,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.7010710694500413,
+            "within_pair": 0.5353274671571925,
+            "within_macro": 0.47417037963532155,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 0.0,
+        "prefix_AUROC": 0.0,
+        "step_AP": 5.551115123125783e-17,
+        "prefix_AP": 0.0
+      },
+      "freeze_sha256": "416a28e789638b6daa9f1873136f48858ef5efba8635b0a47a17546644678366",
+      "checkpoint_sha256": "65701419629a94c86e1647417f7f6de4093015b63a7aa039ce527236deb1566e",
+      "prediction_sha256": "640fcb04d3d10c72ba86c452f16375db0b8b95a5c8c9838c6471e615b3bebbb9",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "ebfa74a9f9b66b85ee52a6784320c13e00c7337309bdd9df6ee62e0daf5545cb",
+      "offsets_sha256": "1e0a85340a4100393359da3c7b3892cadfdf30e3fab263cbb22d2129f94ac1a1",
+      "token_receipt_sha256": "50967f75f8b1f87a1d2c93bec2d8916017053594c8b7db99b20cd9fb57e16551"
+    },
+    {
+      "domain": "Logic",
+      "arm": "C18",
+      "layer": 42,
+      "epoch": 12,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9806605110044209,
+            "within_pair": 0.9800101129276926,
+            "within_macro": 0.9442414593440536,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.6908895073607779,
+            "within_pair": 0.5555753840240504,
+            "within_macro": 0.4866585696442553,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9864648786527411,
+            "within_pair": 0.9966964436204281,
+            "within_macro": 0.9836034460626683,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.6955756245080575,
+            "within_pair": 0.5406948810520681,
+            "within_macro": 0.4807273720263122,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": -3.537538947329111e-07,
+        "prefix_AUROC": 0.0,
+        "step_AP": -5.551115123125783e-17,
+        "prefix_AP": -1.1102230246251565e-16
+      },
+      "freeze_sha256": "db4b14bf857a0eebdc80a4f8ae2a48310df447b61a1de95a535d4d64aa016718",
+      "checkpoint_sha256": "e691713b77573754a28f4784e484d2345c7b6912d41ad3c817bfb864eb3ee9cc",
+      "prediction_sha256": "4a02db40c6f62c029a4b18e9eeb4d5d1636169935123d51efa2233a816f54c8d",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "ebfa74a9f9b66b85ee52a6784320c13e00c7337309bdd9df6ee62e0daf5545cb",
+      "offsets_sha256": "1e0a85340a4100393359da3c7b3892cadfdf30e3fab263cbb22d2129f94ac1a1",
+      "token_receipt_sha256": "50967f75f8b1f87a1d2c93bec2d8916017053594c8b7db99b20cd9fb57e16551"
+    },
+    {
+      "domain": "Logic",
+      "arm": "C19",
+      "layer": 42,
+      "epoch": 10,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9846237926593434,
+            "within_pair": 0.9856733524355301,
+            "within_macro": 0.9594723304882116,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.6999981169665084,
+            "within_pair": 0.560160336046783,
+            "within_macro": 0.5032018026660806,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9865671435912307,
+            "within_pair": 0.9921119163997978,
+            "within_macro": 0.9784382359228349,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.7022155772062562,
+            "within_pair": 0.5507021565747389,
+            "within_macro": 0.4895946611329778,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 1.1102230246251565e-16,
+        "prefix_AUROC": 0.0,
+        "step_AP": -5.551115123125783e-17,
+        "prefix_AP": 0.0
+      },
+      "freeze_sha256": "2c4767c734067e4c01ffc84c3eefc8ee54386487a3b875ad8e743a3dc30b4890",
+      "checkpoint_sha256": "f0ccbfdb078afbbee91e2f58629a75b2b8f42650ebabd49f974255a4362aaf54",
+      "prediction_sha256": "198f88f64afe05492bdf7e7c7bb0b93cff932a22604da2727a722b0c9b001d0c",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "ebfa74a9f9b66b85ee52a6784320c13e00c7337309bdd9df6ee62e0daf5545cb",
+      "offsets_sha256": "1e0a85340a4100393359da3c7b3892cadfdf30e3fab263cbb22d2129f94ac1a1",
+      "token_receipt_sha256": "50967f75f8b1f87a1d2c93bec2d8916017053594c8b7db99b20cd9fb57e16551"
+    },
+    {
+      "domain": "Logic",
+      "arm": "C20",
+      "layer": 44,
+      "epoch": 7,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.984194279917687,
+            "within_pair": 0.9830102814764874,
+            "within_macro": 0.9422758625716887,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.7061142097473345,
+            "within_pair": 0.5465564813925076,
+            "within_macro": 0.4830002809133408,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9879449456307265,
+            "within_pair": 0.993965953143435,
+            "within_macro": 0.9815971650181313,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 200,
+            "within_pairs": 29665,
+            "positive": 1111,
+            "negative": 5677
+          },
+          "recovered": {
+            "pooled": 0.7071630594021745,
+            "within_pair": 0.5368374812964157,
+            "within_macro": 0.48442387748712473,
+            "mixed_trajectories": 62,
+            "eligible_trajectories": 70,
+            "within_pairs": 72847,
+            "positive": 1111,
+            "negative": 2390
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 0.0,
+        "prefix_AUROC": 4.899676664393837e-08,
+        "step_AP": 0.0,
+        "prefix_AP": 3.2190529719589023e-07
+      },
+      "freeze_sha256": "0ec17253eeb2882ef29048b196e4a3aef01a709f38b90d6bb0597816637680a5",
+      "checkpoint_sha256": "1d77058a1f039d429ba9d4d38d7a71382a9e1c7e5ef9df45a70ba87066afe0f0",
+      "prediction_sha256": "5192c7f3fde4e0f0bb7eaf0190a40f1f6ba07376173525f5e8ffcaddac960d30",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "ebfa74a9f9b66b85ee52a6784320c13e00c7337309bdd9df6ee62e0daf5545cb",
+      "offsets_sha256": "1e0a85340a4100393359da3c7b3892cadfdf30e3fab263cbb22d2129f94ac1a1",
+      "token_receipt_sha256": "50967f75f8b1f87a1d2c93bec2d8916017053594c8b7db99b20cd9fb57e16551"
+    },
+    {
+      "domain": "Factuality",
+      "arm": "C17",
+      "layer": 50,
+      "epoch": 5,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9751410105757932,
+            "within_pair": 0.9857686453576865,
+            "within_macro": 0.9272714508723994,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8106996867866433,
+            "within_pair": 0.6008378216636745,
+            "within_macro": 0.5383819833845516,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9784319101710406,
+            "within_pair": 0.9984018264840183,
+            "within_macro": 0.9828531763952506,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8085961140308966,
+            "within_pair": 0.6028326351486136,
+            "within_macro": 0.5037314136095861,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 1.1102230246251565e-16,
+        "prefix_AUROC": 0.0,
+        "step_AP": 5.551115123125783e-17,
+        "prefix_AP": 0.0
+      },
+      "freeze_sha256": "72cb512e6c956a715af87bd9d93da65e5255d946f27815864dd9677cd7682d4d",
+      "checkpoint_sha256": "5a08c3e6bf872ed45e6019b8621bcf8ef6f315f1b29ea5dd4554a66c150109e2",
+      "prediction_sha256": "3400e5dc871fe490be9a52417f12da9f65dba36536227ef40ece5d702f994f1f",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+      "offsets_sha256": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+      "token_receipt_sha256": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b"
+    },
+    {
+      "domain": "Factuality",
+      "arm": "C18",
+      "layer": 50,
+      "epoch": 5,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9756678417547983,
+            "within_pair": 0.9855403348554034,
+            "within_macro": 0.926742032126518,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8084341986515899,
+            "within_pair": 0.6016357470576501,
+            "within_macro": 0.5230906795055722,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9788017365191278,
+            "within_pair": 0.9989345509893455,
+            "within_macro": 0.989326394414457,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8057971014492754,
+            "within_pair": 0.6052264113305406,
+            "within_macro": 0.5130154519744502,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 0.0,
+        "prefix_AUROC": 0.0,
+        "step_AP": -5.551115123125783e-17,
+        "prefix_AP": 0.0
+      },
+      "freeze_sha256": "518ad6378b6ddb29e6518bfeb177bee7fc7196879eb4ac44747bb7f4c7dcc816",
+      "checkpoint_sha256": "94785771c0e3007e1b3cf3b55ebd68e1d0897247fd7061c3bdf7c7af4c4a9719",
+      "prediction_sha256": "afe656e2b81bef2e580b9bdd9c222840e8e997bb970426d0939f69592753d2e9",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+      "offsets_sha256": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+      "token_receipt_sha256": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b"
+    },
+    {
+      "domain": "Factuality",
+      "arm": "C19",
+      "layer": 47,
+      "epoch": 3,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9714796318057187,
+            "within_pair": 0.9896499238964992,
+            "within_macro": 0.9476828440781261,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8054122206296119,
+            "within_pair": 0.6742469579094355,
+            "within_macro": 0.533038135808289,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9755167123645384,
+            "within_pair": 0.9990106544901065,
+            "within_macro": 0.9930653243185151,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8032900674205022,
+            "within_pair": 0.6692599241970876,
+            "within_macro": 0.5291431293839077,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 0.0,
+        "prefix_AUROC": 0.0,
+        "step_AP": 5.551115123125783e-17,
+        "prefix_AP": -2.220446049250313e-16
+      },
+      "freeze_sha256": "a9807dd3db436b247a4907ca4c159d973b4cb8a42d3913e9ff73825cf7f47dda",
+      "checkpoint_sha256": "6d93d70e111d29946b87fdbd9eef4653b161096c8912d7b371ba23e734e4dcf8",
+      "prediction_sha256": "07f1b5c886533d18e5805e72d680444590605f0ea66fff35e23fe5c348a1a6a9",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+      "offsets_sha256": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+      "token_receipt_sha256": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b"
+    },
+    {
+      "domain": "Factuality",
+      "arm": "C20",
+      "layer": 50,
+      "epoch": 2,
+      "scores": {
+        "prefix": {
+          "fresh": {
+            "pooled": 0.9758898028463245,
+            "within_pair": 0.9883561643835617,
+            "within_macro": 0.930408017671985,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8263139034878165,
+            "within_pair": 0.6503091960901656,
+            "within_macro": 0.5538377394265356,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        },
+        "kappa": {
+          "fresh": {
+            "pooled": 0.9778972450711582,
+            "within_pair": 0.9974124809741248,
+            "within_macro": 0.9835890463092027,
+            "mixed_trajectories": 73,
+            "eligible_trajectories": 203,
+            "within_pairs": 13140,
+            "positive": 1656,
+            "negative": 1850
+          },
+          "recovered": {
+            "pooled": 0.8237763444285183,
+            "within_pair": 0.6377418711350489,
+            "within_macro": 0.5065063233746113,
+            "mixed_trajectories": 52,
+            "eligible_trajectories": 90,
+            "within_pairs": 5013,
+            "positive": 1656,
+            "negative": 455
+          }
+        }
+      },
+      "replay_val_metric_deltas": {
+        "step_AUROC": 0.0,
+        "prefix_AUROC": -1.0696239638452454e-07,
+        "step_AP": 5.551115123125783e-17,
+        "prefix_AP": 8.290443886949106e-09
+      },
+      "freeze_sha256": "85e3a8ed581f6cb13156869f23c7103979eb06fe4f76ddefb4eeec0687128b22",
+      "checkpoint_sha256": "edd92aa968e71f21a103558fecd213838b536a40fceaa71dbad8b805adf29d21",
+      "prediction_sha256": "545091280a059b047bf2dc54bac7db7fd641b77c7c5e1d2272faa2d7996c8311",
+      "pool_code_sha256": "3b2438f5f36026c2c5f28fa3d11897c521e593335f953b7475cd5b238058fc81",
+      "labels_sha256": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+      "offsets_sha256": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+      "token_receipt_sha256": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b"
+    }
+  ]
+}
