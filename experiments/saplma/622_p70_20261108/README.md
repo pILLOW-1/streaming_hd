@@ -34,6 +34,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Multi-hop | answer | 23 | 90.25 | 72.87 | 23.26 | 87.39 | 67.42 |
 | gemma_4_31b_it | Multi-hop | prefix | 33 | 76.96 | 63.62 | 10.11 | 66.58 | 64.77 |
 | gemma_4_31b_it | Multi-hop | step | 34 | 84.72 | 48.49 | 29.38 | 92.97 | 46.63 |
+| gemma_4_31b_it | Science | answer | 44 | 64.06 | 40.66 | 0.00 | 56.46 | 48.59 |
 | gemma_4_31b_it | Science | prefix | 43 | 81.20 | 64.59 | 8.31 | 69.66 | 63.26 |
 | gemma_4_31b_it | Science | step | 35 | 84.32 | 25.18 | 13.63 | 92.29 | 31.40 |
 | qwen3_8_27b | Factuality | answer | 49 | 91.15 | 91.70 | 45.88 | 68.97 | 71.49 |

@@ -170,7 +170,7 @@ answer,SAPLMA,deepseek_r1_distill_llama_8b,Logic,81.48
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Factuality,74.04
 answer,SAPLMA,gemma_4_31b_it,Math,87.93
-answer,SAPLMA,gemma_4_31b_it,Science,
+answer,SAPLMA,gemma_4_31b_it,Science,64.06
 answer,SAPLMA,gemma_4_31b_it,Logic,88.88
 answer,SAPLMA,gemma_4_31b_it,Multi-hop,90.25
 answer,SAPLMA,gemma_4_31b_it,Factuality,88.05
@@ -245,7 +245,7 @@ answer,Global Mean,deepseek_r1_distill_llama_8b,Logic,84.99
 answer,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,
 answer,Global Mean,deepseek_r1_distill_llama_8b,Factuality,74.40
 answer,Global Mean,gemma_4_31b_it,Math,85.75
-answer,Global Mean,gemma_4_31b_it,Science,
+answer,Global Mean,gemma_4_31b_it,Science,64.35
 answer,Global Mean,gemma_4_31b_it,Logic,93.47
 answer,Global Mean,gemma_4_31b_it,Multi-hop,80.33
 answer,Global Mean,gemma_4_31b_it,Factuality,89.34
