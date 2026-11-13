@@ -20,7 +20,7 @@ step,HaMI,deepseek_r1_distill_llama_8b,Logic,89.77
 step,HaMI,deepseek_r1_distill_llama_8b,Multi-hop,83.14
 step,HaMI,deepseek_r1_distill_llama_8b,Factuality,82.91
 step,HaMI,gemma_4_31b_it,Math,
-step,HaMI,gemma_4_31b_it,Science,
+step,HaMI,gemma_4_31b_it,Science,82.66
 step,HaMI,gemma_4_31b_it,Logic,86.62
 step,HaMI,gemma_4_31b_it,Multi-hop,86.05
 step,HaMI,gemma_4_31b_it,Factuality,79.46
@@ -187,7 +187,7 @@ answer,ARS,deepseek_r1_distill_llama_8b,Factuality,68.35
 answer,ARS,gemma_4_31b_it,Math,
 answer,ARS,gemma_4_31b_it,Science,
 answer,ARS,gemma_4_31b_it,Logic,
-answer,ARS,gemma_4_31b_it,Multi-hop,
+answer,ARS,gemma_4_31b_it,Multi-hop,81.68
 answer,ARS,gemma_4_31b_it,Factuality,82.75
 answer,ARS,qwen3_8_27b,Math,
 answer,ARS,qwen3_8_27b,Science,

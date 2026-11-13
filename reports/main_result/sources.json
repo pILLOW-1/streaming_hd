@@ -47,6 +47,15 @@
   {
     "level": "answer",
     "method": "ars",
+    "model": "gemma_4_31b_it",
+    "domain": "Multi-hop",
+    "AUROC": 0.8168138291257306,
+    "source": "experiments/ars/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/answer.json",
+    "SHA256": "b923747c4f06997961ab6d72ae4f89c3b803e0e0db61d4934f00b5a3339d8e11"
+  },
+  {
+    "level": "answer",
+    "method": "ars",
     "model": "qwen3_8_27b",
     "domain": "Factuality",
     "AUROC": 0.8984047856430708,
@@ -466,6 +475,15 @@
     "AUROC": 0.8605144122160274,
     "source": "experiments/hami/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/step.json",
     "SHA256": "54a76e3acb704d0d23a799b306fefa3b8ef5bee56ff97c682b050bb706469893"
+  },
+  {
+    "level": "step",
+    "method": "hami",
+    "model": "gemma_4_31b_it",
+    "domain": "Science",
+    "AUROC": 0.826579935670518,
+    "source": "experiments/hami/622_p70_20261108/result/gemma_4_31b_it/Science/step.json",
+    "SHA256": "11283ea955298d7aa5791e6b0050aebceb427a7c7d59d597e64ca6a69be50f62"
   },
   {
     "level": "step",
