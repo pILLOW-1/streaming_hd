@@ -62,16 +62,16 @@ Frozen selections use the original C18 joint VAL rule.
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | A1 | 0.9158 | 0.8922 |
-| A2 | 0.9158 | 0.8918 |
+| A2 | **0.9158** | 0.8918 |
 | A3 | 0.9120 | 0.8833 |
-| C17 | 0.9151 | 0.8931 |
+| C17 | 0.9151 | **0.8931** |
 
 ### VAL Prefix AUROC
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | A1 | 0.8946 | 0.9379 |
-| A2 | 0.9062 | 0.9395 |
+| A2 | **0.9062** | **0.9395** |
 | A3 | 0.8825 | 0.9368 |
 | C17 | 0.8952 | 0.9379 |
 
@@ -81,8 +81,8 @@ Frozen selections use the original C18 joint VAL rule.
 |---|---:|---:|
 | A1 | 0.5637 | 0.6017 |
 | A2 | 0.5652 | 0.5958 |
-| A3 | 0.5589 | 0.6069 |
-| C17 | 0.5747 | 0.5922 |
+| A3 | 0.5589 | **0.6069** |
+| C17 | **0.5747** | 0.5922 |
 
 ### VAL Prefix recovery AUROC
 
@@ -91,23 +91,23 @@ Frozen selections use the original C18 joint VAL rule.
 | A1 | 0.5448 | 0.5807 |
 | A2 | 0.5546 | 0.5967 |
 | A3 | 0.5546 | 0.5977 |
-| C17 | 0.5550 | 0.5983 |
+| C17 | **0.5550** | **0.5983** |
 
 ### TEST Step AUROC
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | A1 | 0.8775 | 0.8820 |
-| A2 | 0.8775 | 0.8826 |
+| A2 | 0.8775 | **0.8826** |
 | A3 | 0.8816 | 0.8753 |
-| C17 | 0.8927 | 0.8818 |
+| C17 | **0.8927** | 0.8818 |
 
 ### TEST Prefix AUROC
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | A1 | 0.8341 | 0.8106 |
-| A2 | 0.8377 | 0.8367 |
+| A2 | **0.8377** | **0.8367** |
 | A3 | 0.8129 | 0.8158 |
 | C17 | 0.8370 | 0.8133 |
 
@@ -116,16 +116,16 @@ Frozen selections use the original C18 joint VAL rule.
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | A1 | 0.5470 | 0.5367 |
-| A2 | 0.5583 | 0.5361 |
-| A3 | 0.5363 | 0.5469 |
+| A2 | **0.5583** | 0.5361 |
+| A3 | 0.5363 | **0.5469** |
 | C17 | 0.5417 | 0.5441 |
 
 ### TEST Prefix recovery AUROC
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
-| A1 | 0.5492 | 0.5338 |
-| A2 | 0.5636 | 0.5226 |
+| A1 | 0.5492 | **0.5338** |
+| A2 | **0.5636** | 0.5226 |
 | A3 | 0.5360 | 0.5289 |
 | C17 | 0.5498 | 0.5323 |
 
