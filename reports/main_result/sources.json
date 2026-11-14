@@ -560,6 +560,15 @@
   {
     "level": "prefix",
     "method": "icr_probe",
+    "model": "gemma_4_31b_it",
+    "domain": "Science",
+    "AUROC": 0.7346113814281328,
+    "source": "experiments/icr_probe/622_p70_20261108/result/gemma_4_31b_it/Science/prefix.json",
+    "SHA256": "8a5aea8e30e67e95bcf9a2d094b590641096ec1f124639c41125509f8e3ad7d0"
+  },
+  {
+    "level": "prefix",
+    "method": "icr_probe",
     "model": "qwen3_8_27b",
     "domain": "Factuality",
     "AUROC": 0.7721240956831585,

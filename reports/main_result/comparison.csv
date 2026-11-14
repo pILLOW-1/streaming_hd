@@ -95,7 +95,7 @@ prefix,ICR Probe,deepseek_r1_distill_llama_8b,Logic,84.33
 prefix,ICR Probe,deepseek_r1_distill_llama_8b,Multi-hop,81.28
 prefix,ICR Probe,deepseek_r1_distill_llama_8b,Factuality,63.26
 prefix,ICR Probe,gemma_4_31b_it,Math,
-prefix,ICR Probe,gemma_4_31b_it,Science,
+prefix,ICR Probe,gemma_4_31b_it,Science,73.46
 prefix,ICR Probe,gemma_4_31b_it,Logic,
 prefix,ICR Probe,gemma_4_31b_it,Multi-hop,71.94
 prefix,ICR Probe,gemma_4_31b_it,Factuality,
