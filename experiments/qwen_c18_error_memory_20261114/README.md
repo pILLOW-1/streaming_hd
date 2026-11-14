@@ -21,6 +21,15 @@ Train on TRAIN, select on VAL and evaluate each frozen arm once on TEST. Report 
 
 Status: independently verified on VAL and TEST.
 
+## Recovery AUROC
+
+Both recovery metrics use labeled positions where the current step introduces no new error and at least one earlier labeled position had an erroneous prefix. An inherited error is a positive example. A recovered prefix is a negative example.
+
+- **Conditional recovery AUROC** ranks those positions by the conditional head's estimate that an earlier error remains active, given that the current step introduces no error.
+- **Prefix recovery AUROC** ranks the same positions by the final Prefix error score, which combines the predicted chance of a new step error with the conditional head's score. The Step prediction can change the ranking even on this subset.
+
+For both metrics, compute AUROC separately within each trajectory that contains both classes, then average those AUROCs with equal weight per trajectory. The same rule applies to VAL and TEST.
+
 ## Results
 
 Frozen selections use the original C18 joint VAL rule.
@@ -103,3 +112,21 @@ Frozen selections use the original C18 joint VAL rule.
 | A2 | 0.5636 | 0.5226 |
 | A3 | 0.5360 | 0.5289 |
 | C17 | 0.5498 | 0.5323 |
+
+## A2 comparison with published baselines
+
+All scores are overall TEST AUROC (%) for Qwen3.8-27B. The strongest baseline is the highest independently verified baseline in the [main comparison table](https://github.com/pILLOW-1/streaming_hd/blob/635779c0573feab584a635d199d2ac9328ff1581/reports/main_result/comparison.md) for that domain and detection level. Differences are in percentage points.
+
+### Step
+
+| Domain | A2 | Streaming | A2 − Streaming | Strongest baseline | A2 − strongest |
+|---|---:|---:|---:|---|---:|
+| Logic | 87.75 | 87.16 | +0.59 | HaMI (88.75) | −1.00 |
+| Factuality | 88.26 | 87.20 | +1.06 | HaMI (87.35) | +0.91 |
+
+### Prefix
+
+| Domain | A2 | Streaming | A2 − Streaming | Strongest baseline | A2 − strongest |
+|---|---:|---:|---:|---|---:|
+| Logic | 83.77 | 82.56 | +1.21 | Streaming (82.56) | +1.21 |
+| Factuality | 83.67 | 82.22 | +1.45 | Global Mean (82.26) | +1.41 |
