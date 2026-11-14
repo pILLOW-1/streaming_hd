@@ -2,11 +2,21 @@
 
 Test whether predicted errors in earlier reasoning steps improve the C18 conditional Prefix readout in Logic and Factuality.
 
-| Arm | Conditional Prefix logit |
-|---|---|
-| A1 | Original C18, reused frozen results |
-| A2 | Original logit plus a linear projection of error memory |
-| A3 | Original logit plus a 64-dimensional bilinear interaction between error memory and the current step |
+Let $e_t$ and $c_t$ be the Step and Prefix exponential-pooled features, respectively. All three arms use the same readout structure for the Step score $q_t$ and the same rule for the final Prefix score $p_t^C$.
+
+$$
+q_t=\sigma(w_Y^\top e_t+b_Y),\qquad
+\kappa_t=\sigma(z_t),\qquad
+p_t^C=q_t+(1-q_t)\kappa_t.
+$$
+
+The base Prefix logit is $b+\theta^\top c_t$. For A2 and A3, the history vector is $g_t=\sum_{i<t}\operatorname{stopgrad}(q_i)e_i$, summed over earlier steps in the same trajectory.
+
+| Arm | Conditional Prefix logit $z_t$ | Added term |
+|---|---|---|
+| A1 (original C18) | $b+\theta^\top c_t$ | None |
+| A2 (linear history) | $b+\theta^\top c_t+w^\top g_t$ | Linear projection of history |
+| A3 (history × current step) | $b+\theta^\top c_t+(Wg_t)^\top(Ve_t)$ | Interaction between history and the current step through two 64-dimensional projections |
 
 | Training parameter | Value |
 |---|---|
