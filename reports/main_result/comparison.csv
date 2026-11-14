@@ -167,7 +167,7 @@ prefix,Ours,qwen3_8_27b,Factuality,
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Math,89.83
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Science,69.28
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Logic,81.48
-answer,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,
+answer,SAPLMA,deepseek_r1_distill_llama_8b,Multi-hop,78.94
 answer,SAPLMA,deepseek_r1_distill_llama_8b,Factuality,74.04
 answer,SAPLMA,gemma_4_31b_it,Math,87.93
 answer,SAPLMA,gemma_4_31b_it,Science,64.06
@@ -242,7 +242,7 @@ answer,ReDe,qwen3_8_27b,Factuality,92.85
 answer,Global Mean,deepseek_r1_distill_llama_8b,Math,87.73
 answer,Global Mean,deepseek_r1_distill_llama_8b,Science,73.04
 answer,Global Mean,deepseek_r1_distill_llama_8b,Logic,84.99
-answer,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,
+answer,Global Mean,deepseek_r1_distill_llama_8b,Multi-hop,80.91
 answer,Global Mean,deepseek_r1_distill_llama_8b,Factuality,74.40
 answer,Global Mean,gemma_4_31b_it,Math,85.75
 answer,Global Mean,gemma_4_31b_it,Science,64.35

@@ -162,6 +162,15 @@
     "SHA256": "c699d06116cbf75e32889be97a50ab8e17dde9e67e482e999c77266ff7b387c1"
   },
   {
+    "level": "answer",
+    "method": "global_mean",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Multi-hop",
+    "AUROC": 0.8091090094574415,
+    "source": "experiments/global_mean/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Multi-hop/answer.json",
+    "SHA256": "6b67aa1f086f99a88aeee2752667c3dedec772d23c7eed1a847b2f1d692a62b7"
+  },
+  {
     "level": "prefix",
     "method": "global_mean",
     "model": "deepseek_r1_distill_llama_8b",
@@ -1078,6 +1087,15 @@
     "AUROC": 0.8316884766183699,
     "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Math/step.json",
     "SHA256": "e44e6f8c218e61039f884d8956c850168cac15e6f14f384b7c0deb0c8d08699b"
+  },
+  {
+    "level": "answer",
+    "method": "saplma",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Multi-hop",
+    "AUROC": 0.7893645262983242,
+    "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Multi-hop/answer.json",
+    "SHA256": "d694a8d6f684d389fa7d82228817e58a6be26920bc9686611ed4957326f32c48"
   },
   {
     "level": "prefix",
