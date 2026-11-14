@@ -12,6 +12,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 |---|---|---|---:|---:|---:|---:|---:|---:|
 | deepseek_r1_distill_llama_8b | Factuality | answer | 20 | 68.35 | 83.00 | 7.86 | 70.50 | 82.39 |
 | deepseek_r1_distill_llama_8b | Logic | answer | 11 | 82.44 | 66.80 | 2.82 | 77.00 | 73.26 |
+| deepseek_r1_distill_llama_8b | Math | answer | 15 | 85.64 | 83.54 | 6.54 | 72.68 | 78.46 |
 | deepseek_r1_distill_llama_8b | Multi-hop | answer | 16 | 78.85 | 87.75 | 17.01 | 74.24 | 82.28 |
 | deepseek_r1_distill_llama_8b | Science | answer | 19 | 70.53 | 85.26 | 27.27 | 66.98 | 80.23 |
 | gemma_4_31b_it | Factuality | answer | 48 | 82.75 | 72.36 | 16.95 | 80.00 | 67.21 |

@@ -21,6 +21,15 @@
     "level": "answer",
     "method": "ars",
     "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Math",
+    "AUROC": 0.8563799351516308,
+    "source": "experiments/ars/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Math/answer.json",
+    "SHA256": "c5937f0725b6629f4edde21f2099ef7c26370819ca6657cb19cca5454885aa7f"
+  },
+  {
+    "level": "answer",
+    "method": "ars",
+    "model": "deepseek_r1_distill_llama_8b",
     "domain": "Multi-hop",
     "AUROC": 0.7884519661523146,
     "source": "experiments/ars/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Multi-hop/answer.json",

@@ -179,7 +179,7 @@ answer,SAPLMA,qwen3_8_27b,Science,69.80
 answer,SAPLMA,qwen3_8_27b,Logic,85.53
 answer,SAPLMA,qwen3_8_27b,Multi-hop,
 answer,SAPLMA,qwen3_8_27b,Factuality,91.15
-answer,ARS,deepseek_r1_distill_llama_8b,Math,
+answer,ARS,deepseek_r1_distill_llama_8b,Math,85.64
 answer,ARS,deepseek_r1_distill_llama_8b,Science,70.53
 answer,ARS,deepseek_r1_distill_llama_8b,Logic,82.44
 answer,ARS,deepseek_r1_distill_llama_8b,Multi-hop,78.85
