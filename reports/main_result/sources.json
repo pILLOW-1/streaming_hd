@@ -135,6 +135,15 @@
     "SHA256": "8e931b0b386992587e1f63d0c6c267cbac30ebdc1472bff09b9890fc4f25a418"
   },
   {
+    "level": "answer",
+    "method": "global_mean",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Math",
+    "AUROC": 0.8772649246614533,
+    "source": "experiments/global_mean/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Math/answer.json",
+    "SHA256": "a49b8c734ff611cdfb1af25e17bce8a8eec09109b2782f2d69bbc3dfad4de7b1"
+  },
+  {
     "level": "prefix",
     "method": "global_mean",
     "model": "deepseek_r1_distill_llama_8b",
@@ -169,6 +178,15 @@
     "AUROC": 0.6839041335009077,
     "source": "experiments/global_mean/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Multi-hop/step.json",
     "SHA256": "d9061afbe1482fad74138ac0646bb211ccdd3f2c348125a0537ada581067628d"
+  },
+  {
+    "level": "answer",
+    "method": "global_mean",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Science",
+    "AUROC": 0.7304145130232088,
+    "source": "experiments/global_mean/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Science/answer.json",
+    "SHA256": "57b0e63a25ebe72e5c4455d65fe5b0741b0d2b84ec11f5016dccce46a940902c"
   },
   {
     "level": "prefix",
@@ -1035,6 +1053,15 @@
     "SHA256": "37cf193b28505003a2e3b942e771326fd103c090d4c6d58c7871be5a0dab5413"
   },
   {
+    "level": "answer",
+    "method": "saplma",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Math",
+    "AUROC": 0.8983406446690826,
+    "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Math/answer.json",
+    "SHA256": "e5e58a80be8b7f2ffda58249905e99b521e998e28f789afa06398b625695cfea"
+  },
+  {
     "level": "prefix",
     "method": "saplma",
     "model": "deepseek_r1_distill_llama_8b",
@@ -1069,6 +1096,15 @@
     "AUROC": 0.8272861500753602,
     "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Multi-hop/step.json",
     "SHA256": "754b2cb80239c1f30eda30a48efa8dfcf32394ce8e1cb1847ec32d8af6dc2560"
+  },
+  {
+    "level": "answer",
+    "method": "saplma",
+    "model": "deepseek_r1_distill_llama_8b",
+    "domain": "Science",
+    "AUROC": 0.6928144319448667,
+    "source": "experiments/saplma/622_p70_20261108/result/deepseek_r1_distill_llama_8b/Science/answer.json",
+    "SHA256": "d9e73591c65a45c31b107b7ed1f7a9a23bb3fa9bd7afe0617620ea75be3bd2a6"
   },
   {
     "level": "prefix",
