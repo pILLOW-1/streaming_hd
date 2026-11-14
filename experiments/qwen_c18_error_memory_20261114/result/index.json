@@ -1,0 +1,484 @@
+{
+  "Logic": {
+    "domain": "Logic",
+    "val": {
+      "A2": {
+        "step": 0.9157867628122586,
+        "prefix": 0.9061955921528738,
+        "kappa": {
+          "macro": 0.5651971352874096,
+          "pair": 0.551347130027333,
+          "pooled": 0.7481062769276193
+        },
+        "prefix_recovery": {
+          "macro": 0.5545566224998477,
+          "pair": 0.5589892341161377,
+          "pooled": 0.7437399719505988
+        }
+      },
+      "A1": {
+        "step": 0.9157860553044689,
+        "prefix": 0.8946219678963385,
+        "kappa": {
+          "macro": 0.5636677421593219,
+          "pair": 0.5469264238299771,
+          "pooled": 0.710063985268237
+        },
+        "prefix_recovery": {
+          "macro": 0.5447745220478523,
+          "pair": 0.560188542422045,
+          "pooled": 0.7050011072132026
+        }
+      },
+      "C17": {
+        "step": 0.91513727066135,
+        "prefix": 0.8951884685129629,
+        "kappa": {
+          "macro": 0.5747459274299105,
+          "pair": 0.5424359904055336,
+          "pooled": 0.7159205603664293
+        },
+        "prefix_recovery": {
+          "macro": 0.5550017462435388,
+          "pair": 0.5486556590617504,
+          "pooled": 0.7124885879340955
+        }
+      },
+      "A3": {
+        "step": 0.9120228213712633,
+        "prefix": 0.8824944841889883,
+        "kappa": {
+          "macro": 0.5589488264844762,
+          "pair": 0.5419200089250851,
+          "pooled": 0.7001379160305047
+        },
+        "prefix_recovery": {
+          "macro": 0.5546041988252903,
+          "pair": 0.5464941150220338,
+          "pooled": 0.7028309693360217
+        }
+      }
+    },
+    "test": {
+      "A2": {
+        "step": 0.8775114404480635,
+        "prefix": 0.8377210482584999,
+        "kappa": {
+          "macro": 0.5582931776349982,
+          "pair": 0.5868677100396692,
+          "pooled": 0.7445128671823651
+        },
+        "prefix_recovery": {
+          "macro": 0.5636491204689434,
+          "pair": 0.5926240238936364,
+          "pooled": 0.7404768142520304
+        }
+      },
+      "A1": {
+        "step": 0.8775114404480635,
+        "prefix": 0.8341369056565123,
+        "kappa": {
+          "macro": 0.5470028240457033,
+          "pair": 0.5919661594531831,
+          "pooled": 0.7378108094443602
+        },
+        "prefix_recovery": {
+          "macro": 0.5492246147268198,
+          "pair": 0.600847329399304,
+          "pooled": 0.7271784123657322
+        }
+      },
+      "C17": {
+        "step": 0.8927302086192995,
+        "prefix": 0.8369858875718674,
+        "kappa": {
+          "macro": 0.5416754556628561,
+          "pair": 0.57753919227404,
+          "pooled": 0.7375274970239326
+        },
+        "prefix_recovery": {
+          "macro": 0.5497660789345551,
+          "pair": 0.582367917266968,
+          "pooled": 0.7326046449632071
+        }
+      },
+      "A3": {
+        "step": 0.8816343250189683,
+        "prefix": 0.8128998703759986,
+        "kappa": {
+          "macro": 0.5363112187062186,
+          "pair": 0.5525436328590131,
+          "pooled": 0.6979637264499998
+        },
+        "prefix_recovery": {
+          "macro": 0.5360313196188105,
+          "pair": 0.5554316577526035,
+          "pooled": 0.7040877147020026
+        }
+      }
+    },
+    "selection": {
+      "A2": {
+        "arm": "A2",
+        "domain": "Logic",
+        "layer": 42,
+        "epoch": 12,
+        "metrics": {
+          "mean_AUROC": 0.9109911774825662,
+          "mean_AP": 0.3907078488431358,
+          "mean_BCE": 0.1603945250000081,
+          "step_AUROC": 0.9157867628122586,
+          "prefix_AUROC": 0.9061955921528738
+        },
+        "checkpoint": "best.L42.pt",
+        "checkpoint_sha256": "6e386b81c63b4ca2f1bd8ba53cdae4bfe439007e979ffe669d327a2a9520f7a7",
+        "prediction": "val.L42.npz",
+        "prediction_sha256": "8399e6e4e4b45a7ed5048ed357764c782263beafeb19087e1cfdc0737fc7a9a1",
+        "evaluation": {
+          "step": 0.9157867628122586,
+          "prefix": 0.9061955921528738,
+          "kappa": {
+            "macro": 0.5651971352874096,
+            "pair": 0.551347130027333,
+            "pooled": 0.7481062769276194
+          },
+          "prefix_recovery": {
+            "macro": 0.5545566224998477,
+            "pair": 0.5589892341161377,
+            "pooled": 0.7437399719505988
+          }
+        },
+        "coverage": {
+          "positions": 3467,
+          "positives": 1077,
+          "mixed_trajectories": 50,
+          "pairs": 71708
+        },
+        "inputs": {
+          "train": {
+            "receipt": "33b68847c71f81fb8970a55bebd7f0f34acf4e101263e9a276bf13c1af1b271f",
+            "offsets": "98bc1c81a2b721bd91eb31a7b1a3b49cfe87783219106bee92aa706514d99d90",
+            "labels": "f1b3f8e7c878a319dfc57a36ad32e3f12692a122368a60ac26ff61d2e11cb55f",
+            "positions": "5b58f2a8e7125f44bb4c31b4bc0d24706db68ef7d53f0b0dddc4723e20c6ffb3",
+            "history_index": "d4b928d9e64bd72b6bdc43f729850f80792d0ea18c232bf649b2960f2885a787"
+          },
+          "val": {
+            "receipt": "50967f75f8b1f87a1d2c93bec2d8916017053594c8b7db99b20cd9fb57e16551",
+            "offsets": "1e0a85340a4100393359da3c7b3892cadfdf30e3fab263cbb22d2129f94ac1a1",
+            "labels": "ebfa74a9f9b66b85ee52a6784320c13e00c7337309bdd9df6ee62e0daf5545cb",
+            "positions": "1a31641e235a1c9da0e4cd1265731798e3c0f1d95a8ec7738511da0cacb05c25",
+            "history_index": "70c521f4eb054df1be0b0157a62827cfc2e011f9ab86886acfbf0c0fea34f11a"
+          }
+        }
+      },
+      "A3": {
+        "arm": "A3",
+        "domain": "Logic",
+        "layer": 42,
+        "epoch": 5,
+        "metrics": {
+          "mean_AUROC": 0.8972586527801258,
+          "mean_AP": 0.3576030247133208,
+          "mean_BCE": 0.21515992169204506,
+          "step_AUROC": 0.9120228213712633,
+          "prefix_AUROC": 0.8824944841889883
+        },
+        "checkpoint": "best.L42.pt",
+        "checkpoint_sha256": "3bdb5ee860b4499718902a450fbfdfec19ffde0b91ceb02dd7d9bf14652bb4f0",
+        "prediction": "val.L42.npz",
+        "prediction_sha256": "492339a27ce443201b6f060b1e3490fa091ee622dae323137a121a921696e743",
+        "evaluation": {
+          "step": 0.9120228213712633,
+          "prefix": 0.8824944841889883,
+          "kappa": {
+            "macro": 0.5589488264844762,
+            "pair": 0.5419200089250851,
+            "pooled": 0.7001379160305047
+          },
+          "prefix_recovery": {
+            "macro": 0.5546041988252903,
+            "pair": 0.5464941150220338,
+            "pooled": 0.7028309693360217
+          }
+        },
+        "coverage": {
+          "positions": 3467,
+          "positives": 1077,
+          "mixed_trajectories": 50,
+          "pairs": 71708
+        },
+        "inputs": {
+          "train": {
+            "receipt": "33b68847c71f81fb8970a55bebd7f0f34acf4e101263e9a276bf13c1af1b271f",
+            "offsets": "98bc1c81a2b721bd91eb31a7b1a3b49cfe87783219106bee92aa706514d99d90",
+            "labels": "f1b3f8e7c878a319dfc57a36ad32e3f12692a122368a60ac26ff61d2e11cb55f",
+            "positions": "5b58f2a8e7125f44bb4c31b4bc0d24706db68ef7d53f0b0dddc4723e20c6ffb3",
+            "history_index": "d4b928d9e64bd72b6bdc43f729850f80792d0ea18c232bf649b2960f2885a787"
+          },
+          "val": {
+            "receipt": "50967f75f8b1f87a1d2c93bec2d8916017053594c8b7db99b20cd9fb57e16551",
+            "offsets": "1e0a85340a4100393359da3c7b3892cadfdf30e3fab263cbb22d2129f94ac1a1",
+            "labels": "ebfa74a9f9b66b85ee52a6784320c13e00c7337309bdd9df6ee62e0daf5545cb",
+            "positions": "1a31641e235a1c9da0e4cd1265731798e3c0f1d95a8ec7738511da0cacb05c25",
+            "history_index": "70c521f4eb054df1be0b0157a62827cfc2e011f9ab86886acfbf0c0fea34f11a"
+          }
+        }
+      }
+    },
+    "coverage": {
+      "val": {
+        "positions": 3467,
+        "positives": 1077,
+        "mixed_trajectories": 50,
+        "pairs": 71708
+      },
+      "test": {
+        "positions": 8243,
+        "positives": 1650,
+        "mixed_trajectories": 133,
+        "pairs": 152007
+      }
+    }
+  },
+  "Factuality": {
+    "domain": "Factuality",
+    "val": {
+      "A2": {
+        "step": 0.8917849570951183,
+        "prefix": 0.939517257313019,
+        "kappa": {
+          "macro": 0.5958087159449905,
+          "pair": 0.6682060755336617,
+          "pooled": 0.8225001852837537
+        },
+        "prefix_recovery": {
+          "macro": 0.596650505471204,
+          "pair": 0.6786740558292282,
+          "pooled": 0.82381805809151
+        }
+      },
+      "A1": {
+        "step": 0.8921799371832355,
+        "prefix": 0.9378584844711993,
+        "kappa": {
+          "macro": 0.6016608331495754,
+          "pair": 0.6200738916256158,
+          "pooled": 0.8113703586419712
+        },
+        "prefix_recovery": {
+          "macro": 0.5806907096331074,
+          "pair": 0.611247947454844,
+          "pooled": 0.8136314941955654
+        }
+      },
+      "C17": {
+        "step": 0.8930710176913075,
+        "prefix": 0.9379474771849209,
+        "kappa": {
+          "macro": 0.5921899829112417,
+          "pair": 0.6169950738916257,
+          "pooled": 0.8140963879774425
+        },
+        "prefix_recovery": {
+          "macro": 0.5982630462227914,
+          "pair": 0.6102216748768473,
+          "pooled": 0.8158966723037845
+        }
+      },
+      "A3": {
+        "step": 0.8832691321025157,
+        "prefix": 0.9367742066599066,
+        "kappa": {
+          "macro": 0.6069130046281557,
+          "pair": 0.6432676518883416,
+          "pooled": 0.8273775274388395
+        },
+        "prefix_recovery": {
+          "macro": 0.5976771975849249,
+          "pair": 0.6507594417077176,
+          "pooled": 0.8222030575188147
+        }
+      }
+    },
+    "test": {
+      "A2": {
+        "step": 0.8826121257393743,
+        "prefix": 0.8366930852362396,
+        "kappa": {
+          "macro": 0.5360811228278607,
+          "pair": 0.6226251003478727,
+          "pooled": 0.7536217312431545
+        },
+        "prefix_recovery": {
+          "macro": 0.5225522216573661,
+          "pair": 0.6197484613326197,
+          "pooled": 0.7532856924858525
+        }
+      },
+      "A1": {
+        "step": 0.8820251997072992,
+        "prefix": 0.8105536426809534,
+        "kappa": {
+          "macro": 0.5366884777691493,
+          "pair": 0.6265721166711266,
+          "pooled": 0.6982386221020446
+        },
+        "prefix_recovery": {
+          "macro": 0.5337711689166164,
+          "pair": 0.5997457853893498,
+          "pooled": 0.6949438378514057
+        }
+      },
+      "C17": {
+        "step": 0.881812534300872,
+        "prefix": 0.8132506846994193,
+        "kappa": {
+          "macro": 0.5441090484653426,
+          "pair": 0.6247658549638747,
+          "pooled": 0.7023448909273458
+        },
+        "prefix_recovery": {
+          "macro": 0.5322869028465672,
+          "pair": 0.6024217286593524,
+          "pooled": 0.6994141338079591
+        }
+      },
+      "A3": {
+        "step": 0.8752747880968351,
+        "prefix": 0.8157696981986369,
+        "kappa": {
+          "macro": 0.5468596737535061,
+          "pair": 0.611954776558737,
+          "pooled": 0.7446941530325849
+        },
+        "prefix_recovery": {
+          "macro": 0.5289158186945683,
+          "pair": 0.5650588707519401,
+          "pooled": 0.7250616457306499
+        }
+      }
+    },
+    "selection": {
+      "A2": {
+        "arm": "A2",
+        "domain": "Factuality",
+        "layer": 47,
+        "epoch": 5,
+        "metrics": {
+          "mean_AUROC": 0.9156693977738359,
+          "mean_AP": 0.6879344843387065,
+          "mean_BCE": 0.3008636526564181,
+          "step_AUROC": 0.8917849570951182,
+          "prefix_AUROC": 0.9395538384525537
+        },
+        "checkpoint": "best.L47.pt",
+        "checkpoint_sha256": "2a4315dde079a5c480224162ceccb161957c308491b924b6531ca6a45ba5f63c",
+        "prediction": "val.L47.npz",
+        "prediction_sha256": "2a3f01c2a26c6a29cbf523912c94506be8bccbddf83817332b710f93bc08750c",
+        "evaluation": {
+          "step": 0.8917849570951182,
+          "prefix": 0.9395172573130189,
+          "kappa": {
+            "macro": 0.5958087159449905,
+            "pair": 0.6682060755336617,
+            "pooled": 0.8225001852837537
+          },
+          "prefix_recovery": {
+            "macro": 0.596650505471204,
+            "pair": 0.6786740558292282,
+            "pooled": 0.82381805809151
+          }
+        },
+        "coverage": {
+          "positions": 2086,
+          "positives": 1631,
+          "mixed_trajectories": 44,
+          "pairs": 4872
+        },
+        "inputs": {
+          "train": {
+            "receipt": "306618b0be1de61dbc6634c75086e82058635ee621bf1c3e723588299c11f8f8",
+            "offsets": "f154a52ab3679ad1b217fe56145ba90c61bd8c34dd373efae50727e1913a6e66",
+            "labels": "569168b21ac88c82cc09f300d76399963511869ed31486a08eb4ace3eb4604b3",
+            "positions": "59682f1280693e565624270f26889015bbfe8fdaaafb28ded109bb1cc73da0fd",
+            "history_index": "73a8ad8a938b68ed0d16f3e03c2ad5a772702b46b058f93fba29a3cbbf13c8fc"
+          },
+          "val": {
+            "receipt": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b",
+            "offsets": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+            "labels": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+            "positions": "8a2fe349a5c25dbfd3610fd0baffe4621f19d4273b228c76b31008ed0b1de7a9",
+            "history_index": "ba948be1f5cce318172d0f5201a3a602b118f2849f34e7965d93cf02dcacf2e6"
+          }
+        }
+      },
+      "A3": {
+        "arm": "A3",
+        "domain": "Factuality",
+        "layer": 34,
+        "epoch": 6,
+        "metrics": {
+          "mean_AUROC": 0.909973536302876,
+          "mean_AP": 0.6763287478853672,
+          "mean_BCE": 0.4832887991285938,
+          "step_AUROC": 0.8832691321025156,
+          "prefix_AUROC": 0.9366779405032366
+        },
+        "checkpoint": "best.L34.pt",
+        "checkpoint_sha256": "9fba8a5dde97474dc93692554d4569d3b47163277e283956376bc92d40705846",
+        "prediction": "val.L34.npz",
+        "prediction_sha256": "c45969c2234d56a079067b52eb2bbad124c9721ae1e2a257d7cccf21bd41864a",
+        "evaluation": {
+          "step": 0.8832691321025156,
+          "prefix": 0.9367742066599065,
+          "kappa": {
+            "macro": 0.6069130046281557,
+            "pair": 0.6432676518883416,
+            "pooled": 0.8273775274388395
+          },
+          "prefix_recovery": {
+            "macro": 0.5976771975849249,
+            "pair": 0.6507594417077176,
+            "pooled": 0.8222030575188146
+          }
+        },
+        "coverage": {
+          "positions": 2086,
+          "positives": 1631,
+          "mixed_trajectories": 44,
+          "pairs": 4872
+        },
+        "inputs": {
+          "train": {
+            "receipt": "306618b0be1de61dbc6634c75086e82058635ee621bf1c3e723588299c11f8f8",
+            "offsets": "f154a52ab3679ad1b217fe56145ba90c61bd8c34dd373efae50727e1913a6e66",
+            "labels": "569168b21ac88c82cc09f300d76399963511869ed31486a08eb4ace3eb4604b3",
+            "positions": "59682f1280693e565624270f26889015bbfe8fdaaafb28ded109bb1cc73da0fd",
+            "history_index": "73a8ad8a938b68ed0d16f3e03c2ad5a772702b46b058f93fba29a3cbbf13c8fc"
+          },
+          "val": {
+            "receipt": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b",
+            "offsets": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+            "labels": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+            "positions": "8a2fe349a5c25dbfd3610fd0baffe4621f19d4273b228c76b31008ed0b1de7a9",
+            "history_index": "ba948be1f5cce318172d0f5201a3a602b118f2849f34e7965d93cf02dcacf2e6"
+          }
+        }
+      }
+    },
+    "coverage": {
+      "val": {
+        "positions": 2086,
+        "positives": 1631,
+        "mixed_trajectories": 44,
+        "pairs": 4872
+      },
+      "test": {
+        "positions": 3400,
+        "positives": 1992,
+        "mixed_trajectories": 142,
+        "pairs": 14948
+      }
+    }
+  }
+}
