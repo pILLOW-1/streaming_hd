@@ -588,6 +588,24 @@
     "level": "prefix",
     "method": "icr_probe",
     "model": "gemma_4_31b_it",
+    "domain": "Factuality",
+    "AUROC": 0.5886616968802855,
+    "source": "experiments/icr_probe/622_p70_20261108/result/gemma_4_31b_it/Factuality/prefix.json",
+    "SHA256": "07bf1afb14c1468d07cdff640da1767573d9715739b639e9c5760df35fbae2f9"
+  },
+  {
+    "level": "prefix",
+    "method": "icr_probe",
+    "model": "gemma_4_31b_it",
+    "domain": "Logic",
+    "AUROC": 0.7147082423190139,
+    "source": "experiments/icr_probe/622_p70_20261108/result/gemma_4_31b_it/Logic/prefix.json",
+    "SHA256": "fafa595bbafb0befdc1f972d1e641da9732de3953930870ec8e6252cbed36d0b"
+  },
+  {
+    "level": "prefix",
+    "method": "icr_probe",
+    "model": "gemma_4_31b_it",
     "domain": "Multi-hop",
     "AUROC": 0.7194059429628684,
     "source": "experiments/icr_probe/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/prefix.json",
@@ -997,6 +1015,15 @@
     "AUROC": 0.6462785556374355,
     "source": "experiments/rhd/622_p70_20261108/result/qwen3_8_27b/Logic/answer.json",
     "SHA256": "24c904b39227ace475bab52febabdb0cc59e1e060b265369948eee53911086ed"
+  },
+  {
+    "level": "answer",
+    "method": "rhd",
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "AUROC": 0.6735532834404976,
+    "source": "experiments/rhd/622_p70_20261108/result/qwen3_8_27b/Multi-hop/answer.json",
+    "SHA256": "fbd341bd19456f80515d00ba47ed6037f5fd7a860bd4f9afc58042783bcbeb13"
   },
   {
     "level": "answer",
