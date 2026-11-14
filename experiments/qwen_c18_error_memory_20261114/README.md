@@ -10,7 +10,13 @@ q_t=\sigma(w_Y^\top e_t+b_Y),\qquad
 p_t^C=q_t+(1-q_t)\kappa_t.
 $$
 
-The base Prefix logit is $b+\theta^\top c_t$. For A2 and A3, the history vector is $g_t=\sum_{i<t}\operatorname{stopgrad}(q_i)e_i$, summed over earlier steps in the same trajectory.
+The base Prefix logit is $b+\theta^\top c_t$. For A2 and A3, the history vector sums the earlier steps in the same trajectory.
+
+$$
+g_t=\sum_{i=1}^{t-1}q_i e_i.
+$$
+
+Gradients from the history term do not flow through the weights $q_i$.
 
 | Arm | Conditional Prefix logit $z_t$ | Added term |
 |---|---|---|
