@@ -1,5 +1,7 @@
 # Standalone Qwen Step detectors
 
+**RunPod status (2026-11-16 AEDT):** The researcher cancelled the remaining RunPod work and shut down the instances. The tables retain published, independently verified results.
+
 Measure Step detection when each learnable Step readout is optimized directly for the Step label. Include Streaming fixed exponential aggregation with frozen token values as the reference. Compare the frozen TEST scores with the corresponding learnable A2 runs in the [series comparison](../qwen_c18_a2_series_20261115/README.md).
 
 | Configuration | Token weights | Pooled values |

@@ -1,5 +1,7 @@
 # Qwen C18/A2 readout series
 
+**RunPod status (2026-11-16 AEDT):** The researcher cancelled the remaining RunPod work and shut down the instances. The tables retain published, independently verified results.
+
 This series examines three related changes to Qwen3.8-27B Step and Prefix detection on Logic and Factuality. The fixed-readout follow-up measures the value of linear history and tests A3 normalization. The learnable A2 runs change the Step readout. The matched stop-gradient runs then isolate the training signal through historical Step representations.
 
 | Stage | Comparison | Results |

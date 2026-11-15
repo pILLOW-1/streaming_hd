@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-16",
+  "scope": "RunPod experiments",
+  "stopped_pods": 6,
+  "remaining_non_exited_pods": 0,
+  "compute_usd_per_hour": 0,
+  "feature_volume_retained": true
+}
