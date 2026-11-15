@@ -47,6 +47,56 @@
       "positions": 5489,
       "recovery_positions": 3400,
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_a2_detached_history_20261115",
+      "domain": "Factuality",
+      "arm": "aggr",
+      "layer": 48,
+      "metrics": {
+        "step": 0.880570461613513,
+        "prefix": 0.8299546824368762,
+        "kappa": {
+          "macro": 0.5309555825594001,
+          "pair": 0.6188118811881188,
+          "pooled": 0.7383425748448339
+        },
+        "prefix_recovery": {
+          "macro": 0.5314003311979673,
+          "pair": 0.6227254482204977,
+          "pooled": 0.7377596322791165
+        }
+      },
+      "prediction_sha256": "a690a8db6723c9b24911228744e5d93aff6679a3c0175f75167b9e2863e572c5",
+      "positions": 5489,
+      "recovery_positions": 3400,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ],
+  "Logic": [
+    {
+      "experiment": "qwen_a2_detached_history_20261115",
+      "domain": "Logic",
+      "arm": "aggr_repr",
+      "layer": 36,
+      "metrics": {
+        "step": 0.8623062905711686,
+        "prefix": 0.8395248925954005,
+        "kappa": {
+          "macro": 0.5584589255587519,
+          "pair": 0.5790720164202965,
+          "pooled": 0.7484634299923243
+        },
+        "prefix_recovery": {
+          "macro": 0.5613083120441296,
+          "pair": 0.5817166314709191,
+          "pooled": 0.7455565820498324
+        }
+      },
+      "prediction_sha256": "4d1a5cc8abf18d78feedb206c03996988359770457f6201f3509b9e15d9ef470",
+      "positions": 15233,
+      "recovery_positions": 8243,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ]
 }

@@ -29,9 +29,9 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A2 learnable · Aggregation |  | 0.8702 |
 | A2 learnable · Representation | 0.8681 | 0.8800 |
 | A2 learnable · Aggregation + representation | 0.8684 | 0.8766 |
-| A2 historical e stop-grad · Aggregation |  |  |
+| A2 historical e stop-grad · Aggregation |  | 0.8806 |
 | A2 historical e stop-grad · Representation |  | 0.8807 |
-| A2 historical e stop-grad · Aggregation + representation |  | 0.8737 |
+| A2 historical e stop-grad · Aggregation + representation | 0.8623 | 0.8737 |
 
 ### Prefix AUROC
 
@@ -43,25 +43,25 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A3 normalized | 0.8320 | 0.8145 |
 | A2 learnable · Aggregation |  | 0.8156 |
 | A2 learnable · Representation | 0.8335 | **0.8402** |
-| A2 learnable · Aggregation + representation | **0.8395** | 0.8252 |
-| A2 historical e stop-grad · Aggregation |  |  |
+| A2 learnable · Aggregation + representation | 0.8395 | 0.8252 |
+| A2 historical e stop-grad · Aggregation |  | 0.8300 |
 | A2 historical e stop-grad · Representation |  | 0.8358 |
-| A2 historical e stop-grad · Aggregation + representation |  | 0.8258 |
+| A2 historical e stop-grad · Aggregation + representation | **0.8395** | 0.8258 |
 
 ### Conditional κ recovery AUROC
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | A1 fixed (C18) | 0.5470 | 0.5367 |
-| A2 fixed | **0.5583** | 0.5361 |
+| A2 fixed | 0.5583 | 0.5361 |
 | A3 original | 0.5363 | **0.5469** |
 | A3 normalized | 0.5572 | 0.5202 |
 | A2 learnable · Aggregation |  | 0.5333 |
 | A2 learnable · Representation | 0.5458 | 0.5418 |
 | A2 learnable · Aggregation + representation | 0.5467 | 0.5298 |
-| A2 historical e stop-grad · Aggregation |  |  |
+| A2 historical e stop-grad · Aggregation |  | 0.5310 |
 | A2 historical e stop-grad · Representation |  | 0.5321 |
-| A2 historical e stop-grad · Aggregation + representation |  | 0.5363 |
+| A2 historical e stop-grad · Aggregation + representation | **0.5585** | 0.5363 |
 
 ### Prefix recovery AUROC
 
@@ -74,9 +74,9 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A2 learnable · Aggregation |  | 0.5263 |
 | A2 learnable · Representation | 0.5382 | 0.5288 |
 | A2 learnable · Aggregation + representation | 0.5517 | 0.5307 |
-| A2 historical e stop-grad · Aggregation |  |  |
+| A2 historical e stop-grad · Aggregation |  | 0.5314 |
 | A2 historical e stop-grad · Representation |  | 0.5334 |
-| A2 historical e stop-grad · Aggregation + representation |  | **0.5365** |
+| A2 historical e stop-grad · Aggregation + representation | 0.5613 | **0.5365** |
 
 ## Matched change from stopping the historical representation gradient
 
@@ -84,6 +84,8 @@ Values are percentage-point changes from the corresponding learnable A2 configur
 
 | Matched comparison | Step | Prefix | κ recovery | Prefix recovery |
 |---|---:|---:|---:|---:|
+| Logic · Aggregation + representation | -0.60 | +0.01 | +1.18 | +0.96 |
+| Factuality · Aggregation | +1.04 | +1.44 | -0.24 | +0.51 |
 | Factuality · Representation | +0.07 | -0.44 | -0.96 | +0.46 |
 | Factuality · Aggregation + representation | -0.29 | +0.05 | +0.65 | +0.58 |
 
@@ -91,6 +93,6 @@ Values are percentage-point changes from the corresponding learnable A2 configur
 
 - Normalizing A3 changes TEST Prefix AUROC by +1.91 pp on Logic and -0.13 pp on Factuality compared with original A3. This change combines history-mean normalization and projection LayerNorm.
 
-- On Factuality, learnable representation has the highest verified overall Prefix AUROC. Stopping the historical representation gradient improves trajectory-averaged Prefix recovery for both available matched readouts, with different directions for their overall Prefix AUROC changes.
+- On Factuality, learnable representation has the highest verified overall Prefix AUROC. Stopping the historical representation gradient improves trajectory-averaged Prefix recovery for all three matched readouts, with different directions for their overall Prefix AUROC changes.
 
-- The available stop-gradient pairs are specific to Factuality. The Logic pairs and remaining aggregation results are pending.
+- All three Factuality pairs and the Logic joint-readout pair are verified. The remaining Logic pairs are pending.

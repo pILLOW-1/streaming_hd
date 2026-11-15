@@ -3,9 +3,9 @@ session:
   date: '2026-11-15'
   summary: Backfill verified research milestones from the 8 November cutoff through
     15 November 2026.
-  turn_count: 7
+  turn_count: 8
   started: '2026-11-15T15:48:20+11:00'
-  last_turn: '2026-11-15T22:16:25+11:00'
+  last_turn: '2026-11-15T22:31:06+11:00'
 events_logged:
 - turn: 1
   type: experiment
@@ -205,6 +205,15 @@ events_logged:
     shard with 200 rows. The total number of completed Qwen shards reached 15. Logic
     TEST feature extraction remained queued, and 158 baseline evaluations were independently
     accepted.
+- turn: 8
+  type: experiment
+  id: N12813570
+  routing: direct
+  provenance: ai-executed
+  summary: Independent frozen TEST recomputation verified Logic joint readout and
+    Factuality aggregation in the historical stop-gradient experiment. Prefix AUROC
+    is 0.8395 and 0.8300, respectively. Both Logic joint workers were stopped after
+    their parent and stop-gradient evaluations completed.
 claims_touched: []
 open_threads:
 - A2 learnable Step readout training, cross-shard VAL selection and frozen TEST.
