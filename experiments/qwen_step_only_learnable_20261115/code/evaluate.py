@@ -59,7 +59,7 @@ def main(domain, arm, root, index_path, device_name):
                              step_hallucination=y, prefix_hallucination=c))
         assert seen == set(labels)
         data = HistorySplit(domain, "test", {"full_sha": index["full_sha"]}, index_path, labels=rows)
-        features = Layer(data, selected["layer"])
+        features = Layer(data, selected["layer"], fixed_pool=arm == "streaming_fixed")
         with (root / "TEST_STARTED.json").open("x") as guard:
             json.dump(dict(selection=selected, inputs=data.pins), guard)
         probability = predict(model, features, device)

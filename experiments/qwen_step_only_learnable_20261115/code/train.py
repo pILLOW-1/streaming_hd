@@ -16,7 +16,7 @@ from history import HistorySplit
 from sklearn.metrics import average_precision_score, log_loss, roc_auc_score
 from run import HERE, Recovery, digest, save_json
 
-ARMS = ("aggr", "repr", "aggr_repr")
+ARMS = ("aggr", "repr", "aggr_repr", "streaming_fixed")
 WIDTH = 5120
 TOKEN_BUDGET = 24000
 
@@ -37,19 +37,22 @@ class Detector(nn.Module):
     def __init__(self, arm, width=WIDTH):
         super().__init__()
         self.arm = arm
-        size = width if arm == "aggr" else 256
+        size = width if arm in ("aggr", "streaming_fixed") else 256
         if arm == "aggr":
             self.scorer = nn.Sequential(nn.Linear(width, 256), nn.BatchNorm1d(256),
                                         nn.ReLU(), nn.Dropout(0.3), nn.Linear(256, 1))
-        else:
+        elif arm != "streaming_fixed":
             self.mapper = nn.Sequential(nn.Linear(width, 256), nn.BatchNorm1d(256), nn.ReLU())
             if arm == "aggr_repr":
                 self.scorer = nn.Linear(256, 1)
         self.step = nn.Linear(size, 1)
 
-    def forward(self, raw, lengths, owners, fixed, positions):
-        values = raw if self.arm == "aggr" else self.mapper(raw)
-        if self.arm == "repr":
+    def forward(self, raw, lengths=None, owners=None, fixed=None, positions=None):
+        if lengths is None:
+            assert self.arm == "streaming_fixed"
+            return self.step(raw).flatten()
+        values = raw if self.arm in ("aggr", "streaming_fixed") else self.mapper(raw)
+        if self.arm in ("repr", "streaming_fixed"):
             weights = fixed
         else:
             logits = self.scorer(values).flatten()
@@ -61,7 +64,7 @@ class Detector(nn.Module):
 
 
 class Layer:
-    def __init__(self, split, layer, cache=None):
+    def __init__(self, split, layer, cache=None, *, fixed_pool=False):
         self.split = split
         name = f"layer_{layer:02d}/reasoning_answer.bf16.npy"
         path = split.root / name
@@ -84,6 +87,14 @@ class Layer:
         self.raw = np.load(path, allow_pickle=False, mmap_mode="r")
         assert self.raw.shape == (split.receipt["tokens"], WIDTH) and self.raw.dtype == np.dtype("<u2")
         self.counts = [sum(b-a for a, b in row[2]) for row in split.history]
+        self.pooled = None
+        if fixed_pool:
+            pooled = np.empty((len(split.y), WIDTH), dtype=np.float32)
+            for batch in self.batches(range(len(self.counts))):
+                ids, (raw, lengths, _, fixed, positions) = self.pack(batch, torch.device("cpu"))
+                pooled[ids] = torch.segment_reduce(raw * fixed[:, None], "sum", lengths=lengths)[positions].numpy()
+            assert np.isfinite(pooled).all()
+            self.pooled = pooled
 
     def batches(self, order, token_budget=TOKEN_BUDGET):
         pending, tokens, supervised = [], 0, 0
@@ -101,6 +112,9 @@ class Layer:
             yield pending
 
     def pack(self, batch, device):
+        if self.pooled is not None:
+            ids = np.concatenate([np.arange(self.split.history[i][4].start, self.split.history[i][4].stop) for i in batch])
+            return ids, (torch.from_numpy(self.pooled[ids]).to(device),)
         tokens, lengths, slots, positions = [], [], [], []
         for i in batch:
             offset, origin, spans, _, valid, selected = self.split.history[i]
@@ -143,7 +157,8 @@ def fit(args, layer, train, val, device):
     rng = torch.Generator().manual_seed(42)
     net = Detector(args.arm).to(device)
     optimizer = torch.optim.Adam(net.parameters(), lr=0.001, weight_decay=0.0001)
-    a, b = Layer(train, layer, args.cache), Layer(val, layer, args.cache)
+    fixed_pool = args.arm == "streaming_fixed"
+    a, b = (Layer(split, layer, args.cache, fixed_pool=fixed_pool) for split in (train, val))
     print("BOUND", args.domain, args.arm, layer, len(train.y), len(val.y),
           max(a.counts), max(b.counts), flush=True)
     label_y = torch.as_tensor(train.y, device=device)

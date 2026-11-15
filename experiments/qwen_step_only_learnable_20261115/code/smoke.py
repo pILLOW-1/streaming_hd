@@ -16,6 +16,13 @@ for arm in ARMS:
     net = Detector(arm, width=16).to(device)
     logits = net(raw, lengths, owners, fixed, positions)
     assert logits.shape == labels.shape
+    if arm == "streaming_fixed":
+        assert set(dict(net.named_parameters())) == {"step.weight", "step.bias"}
+        expected = torch.stack([
+            (features * weight[:, None]).sum(dim=0)
+            for features, weight in zip(raw.split(lengths.tolist()), fixed.split(lengths.tolist()), strict=True)
+        ])[positions]
+        torch.testing.assert_close(net(expected), logits, atol=1e-6, rtol=1e-6)
     assert set(name.split('.')[0] for name, _ in net.named_parameters()) <= {'scorer', 'mapper', 'step'}
     F.binary_cross_entropy_with_logits(logits, labels).backward()
     assert all(p.grad is not None and torch.isfinite(p.grad).all() for p in net.parameters())

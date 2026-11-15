@@ -1,9 +1,10 @@
 # Standalone Qwen Step detectors
 
-Measure Step detection when each learnable Step readout is optimized directly for the Step label. Compare the frozen TEST scores with the corresponding learnable A2 runs in the [series comparison](../qwen_c18_a2_series_20261115/README.md).
+Measure Step detection when each learnable Step readout is optimized directly for the Step label. Include Streaming fixed exponential aggregation with frozen token values as the reference. Compare the frozen TEST scores with the corresponding learnable A2 runs in the [series comparison](../qwen_c18_a2_series_20261115/README.md).
 
 | Configuration | Token weights | Pooled values |
 |---|---|---|
+| Streaming fixed aggregation | Fixed exponential weights, normalized within each Step | Frozen token features |
 | Learnable aggregation | Content-only scorer with within-step softmax | Frozen token features |
 | Learnable representation | Fixed exponential weights | Linear-256, BatchNorm and ReLU |
 | Aggregation and representation | Linear score on the shared representation with within-step softmax | Shared learned representation |
@@ -21,8 +22,11 @@ Measure Step detection when each learnable Step readout is optimized directly fo
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
+| Streaming fixed aggregation | | |
 | Learnable aggregation |  | 0.8768 |
 | Learnable representation | 0.8666 | 0.8807 |
 | Aggregation and representation | 0.8752 | 0.8740 |
 
 Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.
+
+Streaming uses within-Step weights proportional to \`exp(3u)\`, where \`u\` runs uniformly from zero to one across the Step tokens. Fixed pooled vectors are reused across detector epochs.
