@@ -21,8 +21,8 @@ Measure Step detection when each learnable Step readout is optimized directly fo
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
-| Learnable aggregation | | |
-| Learnable representation | | |
-| Aggregation and representation | | |
+| Learnable aggregation |  |  |
+| Learnable representation | 0.8666 |  |
+| Aggregation and representation |  | 0.8740 |
 
-The run uses the existing frozen feature volume and index. The learner computes only the Step logit and Step loss. Published results require independent recomputation from saved predictions.
+Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.

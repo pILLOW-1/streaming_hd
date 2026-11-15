@@ -97,6 +97,30 @@
       "positions": 15233,
       "recovery_positions": 8243,
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_a2_detached_history_20261115",
+      "domain": "Logic",
+      "arm": "repr",
+      "layer": 42,
+      "metrics": {
+        "step": 0.8661876125400713,
+        "prefix": 0.8292017306455557,
+        "kappa": {
+          "macro": 0.550560126766554,
+          "pair": 0.5712105363568784,
+          "pooled": 0.7268133787442145
+        },
+        "prefix_recovery": {
+          "macro": 0.5446298969731198,
+          "pair": 0.575295874532094,
+          "pooled": 0.723118367046776
+        }
+      },
+      "prediction_sha256": "7f7252468787fb88014fdb72c2e4e593abbb85a354db105051125457513c6312",
+      "positions": 15233,
+      "recovery_positions": 8243,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ]
 }

@@ -30,7 +30,7 @@ Select jointly on all 64 VAL layers using mean Step and Prefix AUROC, AP, and th
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | Learnable aggregation |  | 0.8806 |
-| Learnable representation |  | 0.8807 |
+| Learnable representation | 0.8662 | 0.8807 |
 | Aggregation and representation | 0.8623 | 0.8737 |
 
 ## Prefix TEST AUROC
@@ -38,7 +38,7 @@ Select jointly on all 64 VAL layers using mean Step and Prefix AUROC, AP, and th
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | Learnable aggregation |  | 0.8300 |
-| Learnable representation |  | 0.8358 |
+| Learnable representation | 0.8292 | 0.8358 |
 | Aggregation and representation | 0.8395 | 0.8258 |
 
 Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.

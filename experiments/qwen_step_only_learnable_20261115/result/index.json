@@ -1,0 +1,30 @@
+{
+  "Logic": [
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Logic",
+      "arm": "repr",
+      "layer": 42,
+      "metrics": {
+        "step_AUROC": 0.866559954000428
+      },
+      "prediction_sha256": "3d05f49d4506e6f0d72400dc77d768dce9a4816eb7b025f9b5f9bbea372a5ea7",
+      "positions": 15233,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ],
+  "Factuality": [
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Factuality",
+      "arm": "aggr_repr",
+      "layer": 47,
+      "metrics": {
+        "step_AUROC": 0.8740224251478749
+      },
+      "prediction_sha256": "453053228e3de61c7c8c1192574a13c1713bd42c15071c3e971e075482f3b5ba",
+      "positions": 5489,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ]
+}

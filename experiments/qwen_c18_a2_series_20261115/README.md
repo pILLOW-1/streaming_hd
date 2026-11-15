@@ -30,7 +30,7 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A2 learnable · Representation | 0.8681 | 0.8800 |
 | A2 learnable · Aggregation + representation | 0.8684 | 0.8766 |
 | A2 historical e stop-grad · Aggregation |  | 0.8806 |
-| A2 historical e stop-grad · Representation |  | 0.8807 |
+| A2 historical e stop-grad · Representation | 0.8662 | 0.8807 |
 | A2 historical e stop-grad · Aggregation + representation | 0.8623 | 0.8737 |
 
 ### Prefix AUROC
@@ -45,7 +45,7 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A2 learnable · Representation | 0.8335 | **0.8402** |
 | A2 learnable · Aggregation + representation | 0.8395 | 0.8252 |
 | A2 historical e stop-grad · Aggregation |  | 0.8300 |
-| A2 historical e stop-grad · Representation |  | 0.8358 |
+| A2 historical e stop-grad · Representation | 0.8292 | 0.8358 |
 | A2 historical e stop-grad · Aggregation + representation | **0.8395** | 0.8258 |
 
 ### Conditional κ recovery AUROC
@@ -60,7 +60,7 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A2 learnable · Representation | 0.5458 | 0.5418 |
 | A2 learnable · Aggregation + representation | 0.5467 | 0.5298 |
 | A2 historical e stop-grad · Aggregation |  | 0.5310 |
-| A2 historical e stop-grad · Representation |  | 0.5321 |
+| A2 historical e stop-grad · Representation | 0.5506 | 0.5321 |
 | A2 historical e stop-grad · Aggregation + representation | **0.5585** | 0.5363 |
 
 ### Prefix recovery AUROC
@@ -75,7 +75,7 @@ Each run uses its VAL-selected detector. Recovery AUROC is averaged across eligi
 | A2 learnable · Representation | 0.5382 | 0.5288 |
 | A2 learnable · Aggregation + representation | 0.5517 | 0.5307 |
 | A2 historical e stop-grad · Aggregation |  | 0.5314 |
-| A2 historical e stop-grad · Representation |  | 0.5334 |
+| A2 historical e stop-grad · Representation | 0.5446 | 0.5334 |
 | A2 historical e stop-grad · Aggregation + representation | 0.5613 | **0.5365** |
 
 ## Matched change from stopping the historical representation gradient
@@ -84,6 +84,7 @@ Values are percentage-point changes from the corresponding learnable A2 configur
 
 | Matched comparison | Step | Prefix | κ recovery | Prefix recovery |
 |---|---:|---:|---:|---:|
+| Logic · Representation | -0.19 | -0.43 | +0.48 | +0.64 |
 | Logic · Aggregation + representation | -0.60 | +0.01 | +1.18 | +0.96 |
 | Factuality · Aggregation | +1.04 | +1.44 | -0.24 | +0.51 |
 | Factuality · Representation | +0.07 | -0.44 | -0.96 | +0.46 |
@@ -95,4 +96,4 @@ Values are percentage-point changes from the corresponding learnable A2 configur
 
 - On Factuality, learnable representation has the highest verified overall Prefix AUROC. Stopping the historical representation gradient improves trajectory-averaged Prefix recovery for all three matched readouts, with different directions for their overall Prefix AUROC changes.
 
-- All three Factuality pairs and the Logic joint-readout pair are verified. The remaining Logic pairs are pending.
+- All three Factuality pairs and the Logic representation and joint-readout pairs are verified. The Logic aggregation pair is pending.
