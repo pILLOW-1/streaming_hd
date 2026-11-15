@@ -3,9 +3,9 @@ session:
   date: '2026-11-15'
   summary: Backfill verified research milestones from the 8 November cutoff through
     15 November 2026.
-  turn_count: 1
+  turn_count: 2
   started: '2026-11-15T15:48:20+11:00'
-  last_turn: '2026-11-15T15:48:20+11:00'
+  last_turn: '2026-11-15T17:29:39+11:00'
 events_logged:
 - turn: 1
   type: experiment
@@ -146,6 +146,17 @@ events_logged:
   summary: The researcher requires timely local ARA updates and repository synchronization
     for material research progress, including remote and autonomous runs. This dated
     backfill restores missing records from verified evidence.
+- turn: 2
+  type: experiment
+  id: N12813564
+  routing: direct
+  provenance: ai-executed
+  summary: The researcher requested stopping gradients through historical e_i as well
+    as the existing stop-gradient on q_i. CPU gradient checks passed for all three
+    learnable readouts. All 12 Logic/Factuality shards were assigned to the existing
+    workers. At the verified launch check, four Factuality shards had bound their
+    first training layer and eight were waiting for their corresponding parent shard
+    to finish. VAL selection and frozen TEST remain pending.
 claims_touched: []
 open_threads:
 - A2 learnable Step readout training, cross-shard VAL selection and frozen TEST.
