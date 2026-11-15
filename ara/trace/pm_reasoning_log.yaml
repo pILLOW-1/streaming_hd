@@ -653,3 +653,4 @@ entries:
   - {"turn": "2026-11-15_001#8", "notes": ["Record two newly accepted stop-gradient readouts and verified stop of both Logic joint workers."]}
   - {"turn": "2026-11-15_001#9", "notes": ["Record only independently recomputed TEST AUROC and the verified stop of five workers."]}
   - {"turn": "2026-11-15_001#10", "notes": ["Record three independent frozen TEST Step AUROC checks and verified stop of five workers."]}
+  - {"turn": "2026-11-15_001#11", "notes": ["The C18 NLL factorizes into Step BCE and masked conditional Prefix BCE. Results remain pending."]}

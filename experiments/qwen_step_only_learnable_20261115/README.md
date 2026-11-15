@@ -29,4 +29,6 @@ Measure Step detection when each learnable Step readout is optimized directly fo
 
 Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.
 
-Streaming uses within-Step weights proportional to \`exp(3u)\`, where \`u\` runs uniformly from zero to one across the Step tokens. Fixed pooled vectors are reused across detector epochs.
+Streaming uses within-Step weights proportional to `exp(3u)`, where `u` runs uniformly from zero to one across the Step tokens. Fixed pooled vectors are reused across detector epochs.
+
+The fixed Streaming arm shares the fixed Step pool and Step loss in [C18 (A1)](../qwen_c18_error_memory_20261114/README.md). The C18 three-class objective factorizes into Step BCE and conditional Prefix BCE masked to Step-negative positions. The Step-only run keeps trajectory batching and VAL Step-only checkpoint and layer selection. C18 uses shuffled Step examples and joint Step/Prefix selection.
