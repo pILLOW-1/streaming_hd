@@ -7,6 +7,10 @@ side=$3
 device=$4
 root=/workspace/qwen_relation/results/qwen_step_only_learnable_20261115/legacy_recipe
 index=/workspace/qwen_relation/indexes/qwen_c18_frozen_history_20261114
+if [[ "$device" == cpu && -f "$root/GPU_OWNS_PENDING" ]]; then
+    printf 'GPU owns pending shard %s %s %s\n' "$domain" "$arm" "$side"
+    exit 0
+fi
 out="$root/$domain/$arm/$side"
 mkdir -p "$out"
 exec 9>"$out/.launcher.lock"
