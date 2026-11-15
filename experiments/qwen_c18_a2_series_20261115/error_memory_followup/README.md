@@ -49,4 +49,4 @@ Both domains are independently verified. A1 is replayed on TRAIN/VAL to recover 
 
 Logic normalized A3 selected layer 40, epoch 12. Factuality normalized A3 selected layer 51, epoch 6.
 
-The independent C18 checkpoint scored 87.75% on Logic Step TEST, compared with HaMI at 88.75%. See [the independent selection results](../qwen_c18_independent_selection_20261114/README.md) and [the baseline comparison](../../reports/main_result/comparison.md).
+The independent C18 checkpoint scored 87.75% on Logic Step TEST, compared with HaMI at 88.75%. See [the independent selection results](../../qwen_c18_independent_selection_20261114/README.md) and [the baseline comparison](../../../reports/main_result/comparison.md).
