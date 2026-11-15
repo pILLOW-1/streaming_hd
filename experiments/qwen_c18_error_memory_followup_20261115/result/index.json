@@ -2,5 +2,9 @@
   "Factuality": {
     "metrics": "Factuality.json",
     "paired_val": "Factuality.paired_val_prefix.csv"
+  },
+  "Logic": {
+    "metrics": "Logic.json",
+    "paired_val": "Logic.paired_val_prefix.csv"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "domain": "Logic",
+  "arm": "A3 normalized",
+  "layer": 40,
+  "epoch": 12,
+  "val": {
+    "step": 0.914459478198855,
+    "prefix": 0.8991465253207941,
+    "kappa": {
+      "macro": 0.5827866542317968,
+      "pair": 0.5711636079656385,
+      "pooled": 0.7374129283652483
+    },
+    "prefix_recovery": {
+      "macro": 0.5744883723786447,
+      "pair": 0.5782897305739946,
+      "pooled": 0.7281138914464866
+    }
+  },
+  "test": {
+    "step": 0.8774958766831022,
+    "prefix": 0.8319604618963699,
+    "kappa": {
+      "macro": 0.5572352111750596,
+      "pair": 0.574940627734249,
+      "pooled": 0.7403528076150555
+    },
+    "prefix_recovery": {
+      "macro": 0.5611072587738591,
+      "pair": 0.5839928424348879,
+      "pooled": 0.7280046330129752
+    }
+  },
+  "coverage": {
+    "val": {
+      "positions": 3467,
+      "positives": 1077,
+      "mixed_trajectories": 50,
+      "pairs": 71708
+    },
+    "test": {
+      "positions": 8243,
+      "positives": 1650,
+      "mixed_trajectories": 133,
+      "pairs": 152007
+    }
+  },
+  "predictions_SHA256": {
+    "val": "c9df8fc7cc1a611c81a49033e664c2dd7113426233d3a68fc33cdd95fa59b26d",
+    "test": "e4a75f144ef1732581a0eb91f5ccc2fbf2b0b94d2bbcf02601cabd5979994194"
+  },
+  "paired_val": {
+    "a2_higher": 56,
+    "tied": 0,
+    "a1_higher": 8,
+    "median_delta": 0.004160143972099295
+  }
+}

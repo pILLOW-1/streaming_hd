@@ -17,36 +17,36 @@ Compare A2 with A1 across native layers, and test probability-weighted mean hist
 | Budget and selection | Up to 100 epochs and patience 10. Joint VAL selection by mean Step/Prefix AUROC, AP, then lower BCE. |
 | History normalization | LayerNorm epsilon 1e-5. An empty history contributes zero interaction. |
 
-Factuality is independently verified. Logic is in progress. A1 is replayed on TRAIN/VAL to recover missing layer scores. A2 uses its original saved scores. A3 is evaluated once on TEST after VAL selection across all layers.
+Both domains are independently verified. A1 is replayed on TRAIN/VAL to recover missing layer scores. A2 uses its original saved scores. A3 is evaluated once on TEST after VAL selection across all layers.
 
 ## A2 versus A1 on VAL Prefix AUROC
 
 | Comparison | Logic | Factuality |
 |---|---:|---:|
-| A2 higher / tied / A1 higher |  | 62 / 0 / 2 |
-| Median A2 minus A1 |  | +0.0054 |
+| A2 higher / tied / A1 higher | 56 / 0 / 8 | 62 / 0 / 2 |
+| Median A2 minus A1 | +0.0042 | +0.0054 |
 
 ## Step AUROC
 
 | Configuration and split | Logic | Factuality |
 |---|---:|---:|
-| A3 normalized, VAL |  | 0.8842 |
-| A3 normalized, TEST |  | 0.8748 |
+| A3 normalized, VAL | 0.9145 | 0.8842 |
+| A3 normalized, TEST | 0.8775 | 0.8748 |
 
 ## Prefix AUROC
 
 | Configuration and split | Logic | Factuality |
 |---|---:|---:|
-| A3 normalized, VAL |  | 0.9445 |
-| A3 normalized, TEST |  | 0.8145 |
+| A3 normalized, VAL | 0.8991 | 0.9445 |
+| A3 normalized, TEST | 0.8320 | 0.8145 |
 
 ## Within-trajectory recovery AUROC
 
 | Configuration and split | Logic conditional / Prefix | Factuality conditional / Prefix |
 |---|---:|---:|
-| A3 normalized, VAL |  | 0.5652 / 0.5792 |
-| A3 normalized, TEST |  | 0.5202 / 0.5266 |
+| A3 normalized, VAL | 0.5828 / 0.5745 | 0.5652 / 0.5792 |
+| A3 normalized, TEST | 0.5572 / 0.5611 | 0.5202 / 0.5266 |
 
-Factuality normalized A3 selected layer 51, epoch 6.
+Logic normalized A3 selected layer 40, epoch 12. Factuality normalized A3 selected layer 51, epoch 6.
 
 The independent C18 checkpoint scored 87.75% on Logic Step TEST, compared with HaMI at 88.75%. See [the independent selection results](../qwen_c18_independent_selection_20261114/README.md) and [the baseline comparison](../../reports/main_result/comparison.md).
