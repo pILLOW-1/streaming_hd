@@ -1,0 +1,6 @@
+{
+  "Factuality": {
+    "metrics": "Factuality.json",
+    "paired_val": "Factuality.paired_val_prefix.csv"
+  }
+}
