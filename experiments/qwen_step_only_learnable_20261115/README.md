@@ -21,8 +21,8 @@ Measure Step detection when each learnable Step readout is optimized directly fo
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
-| Learnable aggregation |  |  |
-| Learnable representation | 0.8666 |  |
-| Aggregation and representation |  | 0.8740 |
+| Learnable aggregation |  | 0.8768 |
+| Learnable representation | 0.8666 | 0.8807 |
+| Aggregation and representation | 0.8752 | 0.8740 |
 
 Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.

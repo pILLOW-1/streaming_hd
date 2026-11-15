@@ -11,6 +11,18 @@
       "prediction_sha256": "3d05f49d4506e6f0d72400dc77d768dce9a4816eb7b025f9b5f9bbea372a5ea7",
       "positions": 15233,
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Logic",
+      "arm": "aggr_repr",
+      "layer": 51,
+      "metrics": {
+        "step_AUROC": 0.8752332943518665
+      },
+      "prediction_sha256": "69380d60bb21679a3a146ec73e83ec92a5716ef8fdda1a11f87c772d7845ddc9",
+      "positions": 15233,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ],
   "Factuality": [
@@ -23,6 +35,30 @@
         "step_AUROC": 0.8740224251478749
       },
       "prediction_sha256": "453053228e3de61c7c8c1192574a13c1713bd42c15071c3e971e075482f3b5ba",
+      "positions": 5489,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Factuality",
+      "arm": "aggr",
+      "layer": 50,
+      "metrics": {
+        "step_AUROC": 0.8768171839746326
+      },
+      "prediction_sha256": "35ee70c95acd5d5d7ba4ed949f9d13a450b32208ad749bcafed98824e547cf5c",
+      "positions": 5489,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Factuality",
+      "arm": "repr",
+      "layer": 50,
+      "metrics": {
+        "step_AUROC": 0.880749588389536
+      },
+      "prediction_sha256": "cc90601fa4f463b07531abedc78bdacdb661b2e30c3ad3ac61720ac40d465e6d",
       "positions": 5489,
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
