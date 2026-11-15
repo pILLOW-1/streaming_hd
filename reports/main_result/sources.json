@@ -57,6 +57,15 @@
     "level": "answer",
     "method": "ars",
     "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "AUROC": 0.8443351815043415,
+    "source": "experiments/ars/622_p70_20261108/result/gemma_4_31b_it/Math/answer.json",
+    "SHA256": "453a62fcb2fa557e90df61b5c7977ae675f0006bde82bf59c78ae6387ebd629b"
+  },
+  {
+    "level": "answer",
+    "method": "ars",
+    "model": "gemma_4_31b_it",
     "domain": "Multi-hop",
     "AUROC": 0.8168138291257306,
     "source": "experiments/ars/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/answer.json",
@@ -79,6 +88,24 @@
     "AUROC": 0.8703021370670597,
     "source": "experiments/ars/622_p70_20261108/result/qwen3_8_27b/Logic/answer.json",
     "SHA256": "2bd43b1d46a539fa9b4b9c1bf7919838a75d48cdadc79677ecf3e911f62a85a9"
+  },
+  {
+    "level": "answer",
+    "method": "ars",
+    "model": "qwen3_8_27b",
+    "domain": "Math",
+    "AUROC": 0.9104391148186768,
+    "source": "experiments/ars/622_p70_20261108/result/qwen3_8_27b/Math/answer.json",
+    "SHA256": "5a7d0060f6820854512fb505e886b207091feb77e57b17acb789e8cc6d89357a"
+  },
+  {
+    "level": "answer",
+    "method": "ars",
+    "model": "qwen3_8_27b",
+    "domain": "Multi-hop",
+    "AUROC": 0.8103720881205861,
+    "source": "experiments/ars/622_p70_20261108/result/qwen3_8_27b/Multi-hop/answer.json",
+    "SHA256": "5a7c3ea83e4633b1f13e1abca2e5570610fcc83e45cf56d6b4b75a2910661bcf"
   },
   {
     "level": "answer",
@@ -606,6 +633,15 @@
     "level": "prefix",
     "method": "icr_probe",
     "model": "gemma_4_31b_it",
+    "domain": "Math",
+    "AUROC": 0.7223287025895828,
+    "source": "experiments/icr_probe/622_p70_20261108/result/gemma_4_31b_it/Math/prefix.json",
+    "SHA256": "68678eddb27a1c230adaecd30693bc82fcc538c35c4a2de9ec0c92bb7d32a823"
+  },
+  {
+    "level": "prefix",
+    "method": "icr_probe",
+    "model": "gemma_4_31b_it",
     "domain": "Multi-hop",
     "AUROC": 0.7194059429628684,
     "source": "experiments/icr_probe/622_p70_20261108/result/gemma_4_31b_it/Multi-hop/prefix.json",
@@ -1015,6 +1051,15 @@
     "AUROC": 0.6462785556374355,
     "source": "experiments/rhd/622_p70_20261108/result/qwen3_8_27b/Logic/answer.json",
     "SHA256": "24c904b39227ace475bab52febabdb0cc59e1e060b265369948eee53911086ed"
+  },
+  {
+    "level": "answer",
+    "method": "rhd",
+    "model": "qwen3_8_27b",
+    "domain": "Math",
+    "AUROC": 0.6871741397288842,
+    "source": "experiments/rhd/622_p70_20261108/result/qwen3_8_27b/Math/answer.json",
+    "SHA256": "70f10e76ee55aeb28ea8172dfdcb0d29998614cb3a4c7654aaebf3ab2246b51e"
   },
   {
     "level": "answer",

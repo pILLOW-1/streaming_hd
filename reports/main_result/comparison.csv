@@ -94,7 +94,7 @@ prefix,ICR Probe,deepseek_r1_distill_llama_8b,Science,
 prefix,ICR Probe,deepseek_r1_distill_llama_8b,Logic,84.33
 prefix,ICR Probe,deepseek_r1_distill_llama_8b,Multi-hop,81.28
 prefix,ICR Probe,deepseek_r1_distill_llama_8b,Factuality,63.26
-prefix,ICR Probe,gemma_4_31b_it,Math,
+prefix,ICR Probe,gemma_4_31b_it,Math,72.23
 prefix,ICR Probe,gemma_4_31b_it,Science,73.46
 prefix,ICR Probe,gemma_4_31b_it,Logic,71.47
 prefix,ICR Probe,gemma_4_31b_it,Multi-hop,71.94
@@ -184,15 +184,15 @@ answer,ARS,deepseek_r1_distill_llama_8b,Science,70.53
 answer,ARS,deepseek_r1_distill_llama_8b,Logic,82.44
 answer,ARS,deepseek_r1_distill_llama_8b,Multi-hop,78.85
 answer,ARS,deepseek_r1_distill_llama_8b,Factuality,68.35
-answer,ARS,gemma_4_31b_it,Math,
+answer,ARS,gemma_4_31b_it,Math,84.43
 answer,ARS,gemma_4_31b_it,Science,
 answer,ARS,gemma_4_31b_it,Logic,
 answer,ARS,gemma_4_31b_it,Multi-hop,81.68
 answer,ARS,gemma_4_31b_it,Factuality,82.75
-answer,ARS,qwen3_8_27b,Math,
+answer,ARS,qwen3_8_27b,Math,91.04
 answer,ARS,qwen3_8_27b,Science,
 answer,ARS,qwen3_8_27b,Logic,87.03
-answer,ARS,qwen3_8_27b,Multi-hop,
+answer,ARS,qwen3_8_27b,Multi-hop,81.04
 answer,ARS,qwen3_8_27b,Factuality,89.84
 answer,RHD,deepseek_r1_distill_llama_8b,Math,54.49
 answer,RHD,deepseek_r1_distill_llama_8b,Science,49.78
@@ -204,7 +204,7 @@ answer,RHD,gemma_4_31b_it,Science,58.73
 answer,RHD,gemma_4_31b_it,Logic,41.88
 answer,RHD,gemma_4_31b_it,Multi-hop,44.24
 answer,RHD,gemma_4_31b_it,Factuality,43.73
-answer,RHD,qwen3_8_27b,Math,
+answer,RHD,qwen3_8_27b,Math,68.72
 answer,RHD,qwen3_8_27b,Science,55.81
 answer,RHD,qwen3_8_27b,Logic,64.63
 answer,RHD,qwen3_8_27b,Multi-hop,67.36
