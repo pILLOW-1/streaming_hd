@@ -657,3 +657,4 @@ entries:
   - {"turn": "2026-11-16_001#1", "notes": ["Record explicit cancellation and account-wide stop verification. Preserve the feature volume and established results."]}
   - {"turn": "2026-11-16_001#2", "notes": ["Record the approved recipe and actual partial launch. Keep all TEST result cells blank pending independent acceptance."]}
   - {"turn": "2026-11-16_001#3", "notes": ["Record the approved recipe and actual partial launch. Keep all TEST result cells blank pending independent acceptance."]}
+  - {"turn": "2026-11-16_001#4", "notes": ["Record the actual GPU handoff and the delegated Science scope. Results remain pending until accepted."]}

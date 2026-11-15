@@ -1,0 +1,16 @@
+{
+  "event": "launch",
+  "observed_at_AEDT": "2026-11-16T10:54:29+11:00",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "configuration_commit": "e012822ada0378dd0e7af4fb75c7ab16fd460c1f",
+  "state": {
+    "RunPod": "all pending layers assigned to RTX 2000 Ada 16 GB",
+    "Science": "all four training jobs R (332160, 332161, 332162, 332179)"
+  },
+  "confirmed_test_results": 0,
+  "resources": {
+    "gpu_pods": 1,
+    "gpu_usd_per_hour": 0.24
+  }
+}

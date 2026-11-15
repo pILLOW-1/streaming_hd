@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 3
+  turn_count: 4
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T10:23:06+11:00"
+  last_turn: "2026-11-16T10:54:29+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -39,5 +39,17 @@ events_logged:
   routing: direct
   provenance: ai-executed
   summary: "Both existing RunPod CPU Pods bound layer 1 for the additional residual arm. Original runs continued on both Pods. The zero-output scorer reproduced fixed pooling, the nonzero case matched one softmax, and the scorer output layer received a nonzero gradient. No completed TEST results."
+- turn: 4
+  type: decision
+  id: N12813579
+  routing: direct
+  provenance: user
+  summary: "Assign all unstarted Logic and Factuality layers to the RunPod GPU, preserving already completed layers and in-flight CPU checkpoints. Authorize the existing Cetus owner to run the same four legacy-recipe Qwen Step-only readouts on Science."
+- turn: 4
+  type: experiment
+  id: N12813580
+  routing: direct
+  provenance: ai-executed
+  summary: "A single RTX 2000 Ada 16 GB Pod on the existing feature volume logged real Factuality representation VAL epochs. A shared fence assigned all unstarted work to the GPU. Factuality released its in-flight CPU layers and its CPU Pod stopped. Logic released aggregation layer 4 and still had its final in-flight residual layer at the time of this record. Science request received by the existing Cetus owner. PBS jobs 332160, 332161, 332162 and 332179 were independently observed in state R for aggregation, representation, aggregation plus representation and residual aggregation, respectively. No accepted TEST results yet."
 claims_touched: []
 open_threads: []
