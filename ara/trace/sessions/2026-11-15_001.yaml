@@ -3,9 +3,9 @@ session:
   date: '2026-11-15'
   summary: Backfill verified research milestones from the 8 November cutoff through
     15 November 2026.
-  turn_count: 2
+  turn_count: 3
   started: '2026-11-15T15:48:20+11:00'
-  last_turn: '2026-11-15T17:29:39+11:00'
+  last_turn: '2026-11-15T18:14:47+11:00'
 events_logged:
 - turn: 1
   type: experiment
@@ -157,6 +157,15 @@ events_logged:
     workers. At the verified launch check, four Factuality shards had bound their
     first training layer and eight were waiting for their corresponding parent shard
     to finish. VAL selection and frozen TEST remain pending.
+- turn: 3
+  type: experiment
+  id: N12813565
+  routing: direct
+  provenance: ai-executed
+  summary: Factuality original A2 completed three frozen TEST evaluations. Independent
+    CPU recomputation from saved predictions and 64-layer VAL selection checks matched
+    all three reports. Representation alone achieved Step AUROC 0.8800 and Prefix
+    AUROC 0.8402. Logic and the detached-history comparison were still running.
 claims_touched: []
 open_threads:
 - A2 learnable Step readout training, cross-shard VAL selection and frozen TEST.

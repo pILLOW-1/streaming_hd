@@ -1,0 +1,70 @@
+{
+  "Factuality": [
+    {
+      "arm": "aggr",
+      "layer": 51,
+      "metrics": {
+        "step": 0.8701894932617843,
+        "prefix": 0.8155675234358637,
+        "kappa": {
+          "macro": 0.5333159931769351,
+          "pair": 0.622023013112122,
+          "pooled": 0.719734406375502
+        },
+        "prefix_recovery": {
+          "macro": 0.5262611608013991,
+          "pair": 0.6187449826063688,
+          "pooled": 0.7161615210843374
+        }
+      },
+      "prediction_sha256": "66d69f552962540841b1aa9d5ed1e4e8e2469e658ca93f78b9c958f3b60d7f85",
+      "positions": 5489,
+      "recovery_positions": 3400,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "arm": "repr",
+      "layer": 47,
+      "metrics": {
+        "step": 0.8800399414598451,
+        "prefix": 0.8401948908683176,
+        "kappa": {
+          "macro": 0.5417873800370194,
+          "pair": 0.6182097939523682,
+          "pooled": 0.7501144492743702
+        },
+        "prefix_recovery": {
+          "macro": 0.528803637555072,
+          "pair": 0.6129917045758629,
+          "pooled": 0.7480910859346477
+        }
+      },
+      "prediction_sha256": "68c0340b280a049821df231b61c7bb222b49e379aa7a0242d65abf9b1b3d543a",
+      "positions": 5489,
+      "recovery_positions": 3400,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "arm": "aggr_repr",
+      "layer": 48,
+      "metrics": {
+        "step": 0.8765736477834014,
+        "prefix": 0.8252410955724327,
+        "kappa": {
+          "macro": 0.5297813298636709,
+          "pair": 0.618009098207118,
+          "pooled": 0.7217189068775101
+        },
+        "prefix_recovery": {
+          "macro": 0.5307130516392121,
+          "pair": 0.611921327267862,
+          "pooled": 0.7168639044815626
+        }
+      },
+      "prediction_sha256": "568b9e2d21b3bae13ef453dd6777089f6a9866e2db8fd60000cdaae4d6441c13",
+      "positions": 5489,
+      "recovery_positions": 3400,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ]
+}
