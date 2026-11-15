@@ -10,7 +10,6 @@ Each subdirectory records one experiment: its method and data configuration, res
 | [prefix_recovery_diagnostic_20261112](prefix_recovery_diagnostic_20261112/README.md) | Motivation analysis: Prefix detectors separate active errors from never-erroneous positions (AUROC ≈ 0.96) far better than from corrected ones (≈ 0.74); VAL scores of five baselines across three generators and five domains. |
 | [Qwen Step–Prefix relation study](step_prefix_relation_22_qwen_wd1e4_20261111/README.md) | Fixed-readout configurations and the [ordered dual-readout results](step_prefix_relation_22_qwen_wd1e4_20261111/README.md#configurations). |
 | [Qwen C18/A2 readout series](qwen_c18_a2_series_20261115/README.md) | Fixed error-history follow-up, three learnable Step readouts, and matched historical stop-gradient runs on Logic and Factuality. |
-
 | [Standalone Qwen Step detectors](qwen_step_only_learnable_20261115/README.md) | Three learnable Step readouts trained directly on Step labels, evaluated on Logic and Factuality. |
 
 Each experiment distinguishes verified results from unfinished configurations. Missing results remain blank; earlier split explorations are not merged into the retained result set.
