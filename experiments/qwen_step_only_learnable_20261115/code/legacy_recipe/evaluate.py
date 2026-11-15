@@ -9,7 +9,7 @@ import torch
 from evaluate_test import baseline_root
 from history import HistorySplit
 from run import digest, save_json
-from train import RECIPE, Detector, Layer, predict, rank, val_stats
+from train import RECIPE, RESIDUAL_ARM, Detector, Layer, predict, rank, val_stats
 
 
 def main(domain, arm, root, index_path, device_name):
@@ -60,7 +60,7 @@ def main(domain, arm, root, index_path, device_name):
                              step_hallucination=y, prefix_hallucination=c))
         assert seen == set(labels)
         data = HistorySplit(domain, "test", {"full_sha": index["full_sha"]}, index_path, labels=rows)
-        features = Layer(data, selected["layer"])
+        features = Layer(data, selected["layer"], positional_logits=arm == RESIDUAL_ARM)
         with (root / "TEST_STARTED.json").open("x") as guard:
             json.dump(dict(selection=selected, inputs=data.pins), guard)
         probability = predict(model, features, device)

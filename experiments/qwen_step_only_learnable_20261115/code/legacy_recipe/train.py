@@ -15,7 +15,8 @@ from history import HistorySplit
 from sklearn.metrics import average_precision_score, log_loss, roc_auc_score
 from run import HERE, digest, save_json
 
-ARMS = ("aggr", "repr", "aggr_repr")
+RESIDUAL_ARM = "aggr_residual"
+ARMS = ("aggr", "repr", "aggr_repr", RESIDUAL_ARM)
 WIDTH = 5120
 TRAIN_BATCH_SIZE = 128
 EVAL_BATCH_SIZE = 256
@@ -41,22 +42,27 @@ class Detector(nn.Module):
     def __init__(self, arm, width=WIDTH):
         super().__init__()
         self.arm = arm
-        size = width if arm == "aggr" else 256
-        if arm == "aggr":
+        size = width if arm in ("aggr", RESIDUAL_ARM) else 256
+        if arm in ("aggr", RESIDUAL_ARM):
             self.scorer = nn.Sequential(nn.Linear(width, 256), nn.BatchNorm1d(256),
                                         nn.ReLU(), nn.Dropout(0.3), nn.Linear(256, 1))
         else:
             self.mapper = nn.Sequential(nn.Linear(width, 256), nn.BatchNorm1d(256), nn.ReLU())
             if arm == "aggr_repr":
                 self.scorer = nn.Linear(256, 1)
+        if arm == RESIDUAL_ARM:
+            nn.init.zeros_(self.scorer[-1].weight)
+            nn.init.zeros_(self.scorer[-1].bias)
         self.step = nn.Linear(size, 1)
 
-    def forward(self, raw, lengths, owners, fixed):
-        values = raw if self.arm == "aggr" else self.mapper(raw)
+    def forward(self, raw, lengths, owners, positional):
+        values = raw if self.arm in ("aggr", RESIDUAL_ARM) else self.mapper(raw)
         if self.arm == "repr":
-            weights = fixed
+            weights = positional
         else:
             logits = self.scorer(values).flatten()
+            if self.arm == RESIDUAL_ARM:
+                logits = positional + logits
             maximum = torch.segment_reduce(logits, "max", lengths=lengths)
             exp = (logits - maximum[owners]).exp()
             weights = exp / torch.segment_reduce(exp, "sum", lengths=lengths)[owners]
@@ -65,8 +71,9 @@ class Detector(nn.Module):
 
 
 class Layer:
-    def __init__(self, split, layer, cache=None):
+    def __init__(self, split, layer, cache=None, *, positional_logits=False):
         self.split = split
+        self.positional_logits = positional_logits
         name = f"layer_{layer:02d}/reasoning_answer.bf16.npy"
         path = split.root / name
         pin = split.receipt["files"][name]
@@ -100,13 +107,17 @@ class Layer:
             tokens.append(self.raw[first:stop])
             lengths.append(stop - first)
         raw = torch.from_numpy(np.concatenate(tokens).view(np.int16)).view(torch.bfloat16).to(device, dtype=torch.float32)
-        fixed = []
+        positional = []
         for n in lengths:
-            weight = torch.exp(3 * torch.linspace(0, 1, n, dtype=torch.float32))
-            fixed.append(weight / weight.sum())
+            scores = 3 * torch.linspace(0, 1, n, dtype=torch.float32)
+            if self.positional_logits:
+                positional.append(scores)
+            else:
+                weight = scores.exp()
+                positional.append(weight / weight.sum())
         return (raw, torch.tensor(lengths, device=device),
                 torch.from_numpy(np.repeat(np.arange(len(lengths)), lengths)).to(device),
-                torch.cat(fixed).to(device))
+                torch.cat(positional).to(device))
 
 
 @torch.inference_mode()
@@ -135,7 +146,8 @@ def fit(args, layer, train, val, device):
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, mode="min", factor=0.1, patience=20, min_lr=1e-6
     )
-    a, b = (Layer(split, layer, args.cache) for split in (train, val))
+    a, b = (Layer(split, layer, args.cache, positional_logits=args.arm == RESIDUAL_ARM)
+            for split in (train, val))
     print("BOUND", args.domain, args.arm, layer, len(train.y), len(val.y), flush=True)
     label_y = torch.as_tensor(train.y, device=device)
     checkpoint = args.output / f"best_{layer:02d}.pt"

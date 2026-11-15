@@ -16,7 +16,8 @@ case "$side" in
     upper) first=33; last=64 ;;
     *) exit 64 ;;
 esac
-export OMP_NUM_THREADS="$(nproc)" OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS="$(nproc)"
+threads="${STEP_THREADS:-$(nproc)}"
+export OMP_NUM_THREADS="$threads" OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS="$threads"
 export CUBLAS_WORKSPACE_CONFIG=:4096:8
 if [[ "$device" == cpu ]]; then
     interpreter=python3.12
@@ -40,5 +41,5 @@ fi
 cd "$root/code"
 "$interpreter" -u smoke.py "$device"
 printf '%s %s layers %s-%s on %s\n' "$domain" "$arm" "$first" "$last" "$device"
-"$interpreter" -u train.py "$domain" "$arm" "$first" "$last" "$out" --cache "/tmp/step_legacy_${domain}_${arm}_${side}" --index "$index" --device "$device"
+"$interpreter" -u train.py "$domain" "$arm" "$first" "$last" "$out" --cache "${STEP_CACHE:-/tmp/step_legacy_${domain}_coordinator}" --index "$index" --device "$device"
 "$interpreter" -u evaluate.py "$domain" "$arm" "$root/$domain/$arm" "$index/$domain.test.json" "$device"

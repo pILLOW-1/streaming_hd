@@ -49,6 +49,8 @@ This rerun uses the same frozen Logic and Factuality splits, three learnable rea
 | Checkpoint | At most 20 epochs, patience 5, full VAL Step AUROC improvement greater than 1e-7 |
 | Layer and TEST | Select from layers 1–64 by VAL Step AUROC, then AP, then lower BCE. Evaluate the frozen winner once on TEST. |
 
+**Streaming + learned score residual.** Pool frozen token features with $w_{t,i}=\mathrm{softmax}_{i}(3u_{t,i}+s_{t,i})$. The fixed positional score and the learnable aggregation scorer output are added before one softmax within each Step. Zero-initialize the scorer output layer to recover fixed Streaming pooling at initialization. Use the same linear Step head, training recipe and layer selection.
+
 ### Legacy recipe Step TEST AUROC
 
 | Configuration | Logic | Factuality |
@@ -56,5 +58,6 @@ This rerun uses the same frozen Logic and Factuality splits, three learnable rea
 | Learnable aggregation | | |
 | Learnable representation | | |
 | Aggregation and representation | | |
+| Streaming + learned score residual | | |
 
 Fill each cell after independent verification from the saved TEST predictions.
