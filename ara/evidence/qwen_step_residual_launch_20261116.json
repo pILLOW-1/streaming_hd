@@ -1,0 +1,16 @@
+{
+  "event": "launch",
+  "observed_at_AEDT": "2026-11-16T10:23:06+11:00",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe/aggr_residual",
+  "configuration_commit": "0d34600205239ba56f0a82435a387edbf92eb7d1",
+  "state": {
+    "Factuality": "residual_layer_1_training",
+    "Logic": "residual_layer_1_training"
+  },
+  "confirmed_test_results": 0,
+  "resources": {
+    "cpu_pods": 2,
+    "combined_usd_per_hour": 0.32
+  }
+}

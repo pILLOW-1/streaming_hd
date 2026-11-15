@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 2
+  turn_count: 3
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T10:06:33+11:00"
+  last_turn: "2026-11-16T10:23:06+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -27,5 +27,17 @@ events_logged:
   routing: direct
   provenance: ai-executed
   summary: "Two CPU workers started on the existing RunPod feature volume, one per domain. Factuality logged its first validation epoch for learnable aggregation, and Logic started layer 1 and was staging its feature inputs. Each worker queues the three configurations across all 64 layers. No TEST results yet."
+- turn: 3
+  type: decision
+  id: N12813577
+  routing: direct
+  provenance: user
+  summary: "Add the learned token score to the fixed Streaming positional score 3u and apply one within-step softmax. Use zero initialization of the scorer output, the original legacy training recipe, and the same Logic and Factuality experiment directory."
+- turn: 3
+  type: experiment
+  id: N12813578
+  routing: direct
+  provenance: ai-executed
+  summary: "Both existing RunPod CPU Pods bound layer 1 for the additional residual arm. Original runs continued on both Pods. The zero-output scorer reproduced fixed pooling, the nonzero case matched one softmax, and the scorer output layer received a nonzero gradient. No completed TEST results."
 claims_touched: []
 open_threads: []
