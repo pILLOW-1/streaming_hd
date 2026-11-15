@@ -646,3 +646,4 @@ entries:
   - {"turn": "2026-11-15_001#1", "notes": ["Record the original event day separately from the time of backfill. Preserve all earlier trace entries.", "Use verified acceptance for completed experiments and observed VAL progress for A2. No interpretive claims were promoted.", "Keep repository and local trace identifiers independent because their pre-existing histories differ."]}
   - {"turn": "2026-11-15_001#2", "notes": ["Record the matched A2 gradient ablation and verified launch only. No outcome or scientific claim is inferred."]}
   - {"turn": "2026-11-15_001#3", "notes": ["Record independently recomputed completed Factuality results. The matched gradient comparison remains unfinished."]}
+  - {"turn": "2026-11-15_001#4", "notes": ["Record only completed and independently checked configurations. The matched gradient comparison remains unfinished."]}

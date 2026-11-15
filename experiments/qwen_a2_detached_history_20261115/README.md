@@ -25,18 +25,20 @@ The forward history is identical to the matched A2 experiment. The current-step 
 
 Select jointly on all 64 VAL layers using mean Step and Prefix AUROC, AP, and then lower BCE. Evaluate the frozen winner once on TEST.
 
-| Step TEST AUROC | Logic | Factuality |
+## Step TEST AUROC
+
+| Configuration | Logic | Factuality |
 |---|---:|---:|
-| Learnable aggregation | | |
-| Learnable representation | | |
-| Learnable aggregation and representation | | |
+| Learnable aggregation |  |  |
+| Learnable representation |  | 0.8807 |
+| Aggregation and representation |  | 0.8737 |
 
-| Prefix TEST AUROC | Logic | Factuality |
+## Prefix TEST AUROC
+
+| Configuration | Logic | Factuality |
 |---|---:|---:|
-| Learnable aggregation | | |
-| Learnable representation | | |
-| Learnable aggregation and representation | | |
+| Learnable aggregation |  |  |
+| Learnable representation |  | 0.8358 |
+| Aggregation and representation |  | 0.8258 |
 
-Status: staged for the existing RunPod workers. Each shard starts after its matching parent shard releases the worker lock. TEST results remain pending.
-
-The launcher reuses the existing frozen history index and the matched A2 support modules on the RunPod volume. The changed detector, evaluator, gradient check and shard entry point are versioned here.
+Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.

@@ -66,5 +66,55 @@
       "recovery_positions": 3400,
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
+  ],
+  "Logic": [
+    {
+      "experiment": "qwen_a2_learnable_steps_20261115",
+      "domain": "Logic",
+      "arm": "repr",
+      "layer": 42,
+      "metrics": {
+        "step": 0.8681219507450072,
+        "prefix": 0.8334540881287349,
+        "kappa": {
+          "macro": 0.5458085175558817,
+          "pair": 0.5646384705967489,
+          "pooled": 0.7377685240084755
+        },
+        "prefix_recovery": {
+          "macro": 0.5382170708525015,
+          "pair": 0.5700198017196576,
+          "pooled": 0.7334924552670647
+        }
+      },
+      "prediction_sha256": "cb7b39b13b58503e4b6138ac46d6650c679441af9ccc5aac41e433100ab37c30",
+      "positions": 15233,
+      "recovery_positions": 8243,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_a2_learnable_steps_20261115",
+      "domain": "Logic",
+      "arm": "aggr_repr",
+      "layer": 36,
+      "metrics": {
+        "step": 0.8683543264024142,
+        "prefix": 0.8394540131672454,
+        "kappa": {
+          "macro": 0.5466954258200993,
+          "pair": 0.5730525567901478,
+          "pooled": 0.7462873846917529
+        },
+        "prefix_recovery": {
+          "macro": 0.5516607356697264,
+          "pair": 0.5730130849237206,
+          "pooled": 0.7424683663573395
+        }
+      },
+      "prediction_sha256": "e84ad5a46859f341a5e3a4b804754bb6046e347c7624e4d7094bf85e1afdbad5",
+      "positions": 15233,
+      "recovery_positions": 8243,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "Factuality": [
+    {
+      "experiment": "qwen_a2_detached_history_20261115",
+      "domain": "Factuality",
+      "arm": "repr",
+      "layer": 50,
+      "metrics": {
+        "step": 0.8807255777791329,
+        "prefix": 0.8357955386813483,
+        "kappa": {
+          "macro": 0.5321393562660579,
+          "pair": 0.6168049237356168,
+          "pooled": 0.7423390294131069
+        },
+        "prefix_recovery": {
+          "macro": 0.5333860252563646,
+          "pair": 0.6150655606101151,
+          "pooled": 0.7406237164567361
+        }
+      },
+      "prediction_sha256": "a55340f04638a9b83e87690c7c3dd2c66fd125385e591ea9dbecef1fc46bb9eb",
+      "positions": 5489,
+      "recovery_positions": 3400,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_a2_detached_history_20261115",
+      "domain": "Factuality",
+      "arm": "aggr_repr",
+      "layer": 47,
+      "metrics": {
+        "step": 0.8736897066894322,
+        "prefix": 0.8257883214892229,
+        "kappa": {
+          "macro": 0.5362570652624676,
+          "pair": 0.6178753010436179,
+          "pooled": 0.723621759766338
+        },
+        "prefix_recovery": {
+          "macro": 0.5364798185287445,
+          "pair": 0.6179421996253679,
+          "pooled": 0.7193037063024826
+        }
+      },
+      "prediction_sha256": "08d8db8a16d00f99047baa91289359d028a1c1b8c11db470ac8371c3f11dacaa",
+      "positions": 5489,
+      "recovery_positions": 3400,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ]
+}
