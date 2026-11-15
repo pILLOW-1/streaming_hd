@@ -1,0 +1,16 @@
+{
+  "event": "launch",
+  "observed_at_AEDT": "2026-11-16T10:06:33+11:00",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "configuration_commit": "a52578b0bd5e8f004965a41b5437a225d4c836cb",
+  "state": {
+    "Factuality": "first_aggregation_validation_epoch",
+    "Logic": "first_aggregation_layer_feature_staging"
+  },
+  "confirmed_test_results": 0,
+  "resources": {
+    "cpu_pods": 2,
+    "combined_usd_per_hour": 0.32
+  }
+}

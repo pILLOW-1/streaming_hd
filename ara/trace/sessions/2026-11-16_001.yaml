@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 1
+  turn_count: 2
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: '2026-11-16T00:01:05+11:00'
+  last_turn: "2026-11-16T10:06:33+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -15,5 +15,17 @@ events_logged:
   summary: The researcher cancelled all RunPod experiments. The remaining six instances
     were stopped, and no instance remained running or pending startup. Previously
     saved results and the shared feature volume were retained.
+- turn: 2
+  type: decision
+  id: N12813575
+  routing: direct
+  provenance: user
+  summary: "Apply the pre-dataset-change optimization and Step batching to all three learnable Step-only readouts on the current Logic and Factuality data. Keep the existing Step-only experiment directory and run on RunPod."
+- turn: 2
+  type: experiment
+  id: N12813576
+  routing: direct
+  provenance: ai-executed
+  summary: "Two CPU workers started on the existing RunPod feature volume, one per domain. Factuality logged its first validation epoch for learnable aggregation, and Logic started layer 1 and was staging its feature inputs. Each worker queues the three configurations across all 64 layers. No TEST results yet."
 claims_touched: []
 open_threads: []
