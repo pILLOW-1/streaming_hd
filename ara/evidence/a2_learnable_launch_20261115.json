@@ -1,0 +1,32 @@
+{
+  "experiment": "qwen_a2_learnable_steps_20261115",
+  "recorded_at": "2026-11-15T15:48:20+11:00",
+  "observation": "SSH worker logs checked for all 12 independently assigned shards.",
+  "domains": [
+    "Logic",
+    "Factuality"
+  ],
+  "configurations": [
+    "learnable aggregation",
+    "learnable representation",
+    "learnable aggregation and representation"
+  ],
+  "layer_ranges_each_configuration_domain": [
+    [
+      1,
+      32
+    ],
+    [
+      33,
+      64
+    ]
+  ],
+  "shards_with_observed_validation_progress": 12,
+  "instance_allocation": {
+    "16_GB_GPU": 3,
+    "CPU": 9
+  },
+  "status_at_check": "running",
+  "selection": "Choose among all 64 layers on VAL for each configuration and domain, then evaluate the frozen winner once on TEST.",
+  "accepted_TEST_results_at_check": 0
+}

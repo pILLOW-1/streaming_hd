@@ -1,0 +1,152 @@
+session:
+  id: 2026-11-15_001
+  date: '2026-11-15'
+  summary: Backfill verified research milestones from the 8 November cutoff through
+    15 November 2026.
+  turn_count: 1
+  started: '2026-11-15T15:48:20+11:00'
+  last_turn: '2026-11-15T15:48:20+11:00'
+events_logged:
+- turn: 1
+  type: experiment
+  id: N12813547
+  routing: direct
+  provenance: ai-executed
+  summary: Dated receipts record 66 of 195 independently CPU-verified new cells late
+    on 8 November UTC and 120 of 195 on 9 November UTC. The 45 reused Streaming cells
+    are a separate scope. A scheduler connection refusal left affected queue states
+    unknown.
+- turn: 1
+  type: decision
+  id: N12813548
+  routing: direct
+  provenance: user
+  summary: The researcher retained the split and labels after reviewing Step and Prefix
+    consistency. Later diagnostic cohorts filter the frozen labels.
+- turn: 1
+  type: decision
+  id: N12813549
+  routing: direct
+  provenance: user
+  summary: The researcher selected 80 configurations across four raw fixed readouts,
+    two head types, two objectives and five domains. CPU preparation recovered from
+    a synthetic dtype issue. The later weight-decay specification superseded the original
+    detector run.
+- turn: 1
+  type: experiment
+  id: N12813550
+  routing: direct
+  provenance: ai-executed
+  summary: The notation distinguishes Step, Prefix and Answer labels and probabilities.
+    A published mismatch analysis covers 15,697 trajectories.
+- turn: 1
+  type: experiment
+  id: N12813551
+  routing: direct
+  provenance: ai-executed
+  summary: The login02 receipt records 124 of 195 verified baseline cells. Safe fast-forward
+    repair synchronized the canonical checkout, and the publication scripts gained
+    a checkout synchronization hook.
+- turn: 1
+  type: decision
+  id: N12813552
+  routing: direct
+  provenance: user
+  summary: The researcher requested a fresh fit of all configured detector variants.
+    The specified Adam learning rate is 0.001 and weight decay is 0.0001. Detector
+    optimizer states are independent. Compatible frozen backbone features may be reused.
+- turn: 1
+  type: experiment
+  id: N12813553
+  routing: direct
+  provenance: ai-executed
+  summary: Sixteen Logic fixed-readout configurations passed acceptance. A separate
+    TRAIN+VAL analysis published the three-outcome Step–Prefix label composition across
+    generators and domains.
+- turn: 1
+  type: experiment
+  id: N12813554
+  routing: direct
+  provenance: ai-executed
+  summary: Logic C17–C20 were independently verified and incorporated in the original
+    tables. Factuality C01–C20 completed frozen TEST and independent acceptance.
+- turn: 1
+  type: experiment
+  id: N12813555
+  routing: direct
+  provenance: ai-executed
+  summary: Five baseline VAL scores were compared on inherited errors against fresh
+    and recovered positions. Mean within-trajectory AUROC was 0.975 against fresh
+    positions and 0.633 against recovered positions. The report retains possible timewise
+    label inconsistency as a limitation.
+- turn: 1
+  type: experiment
+  id: N12813556
+  routing: direct
+  provenance: ai-executed
+  summary: Four conditional persistence probes completed in Logic and Factuality.
+    A separate frozen-VAL analysis compared final Prefix and conditional kappa scores
+    for C17–C20 using pooled, pair-weighted and trajectory-macro AUROC. The stage
+    summary links theory and diagnostics.
+- turn: 1
+  type: decision
+  id: N12813557
+  routing: direct
+  provenance: user
+  summary: The researcher cancelled the remaining dedicated Cetus work. The owner
+    reported eight dedicated jobs exited and dispatch disabled, with accepted results
+    and checkpoints preserved. Baseline and authorized feature extraction continued.
+- turn: 1
+  type: experiment
+  id: N12813558
+  routing: direct
+  provenance: ai-executed
+  summary: The two domains both improved on conditional recovery macro AUROC at VAL
+    selection. Against joint C18, the frozen independent pair scored lower on TEST
+    aggregate Prefix AUROC and TEST conditional recovery macro AUROC in both domains.
+- turn: 1
+  type: experiment
+  id: N12813559
+  routing: direct
+  provenance: ai-executed
+  summary: Logic and Factuality completed the candidate layers, frozen TEST, and independent
+    acceptance. A1 uses original C18, A2 adds a linear history term and A3 adds a
+    history–current-step interaction. The report includes aggregate Step and Prefix
+    AUROC and both within-trajectory recovery metrics.
+- turn: 1
+  type: experiment
+  id: N12813560
+  routing: direct
+  provenance: ai-executed
+  summary: A2 beats A1 on VAL Prefix AUROC in 56 of 64 Logic layers and 62 of 64 Factuality
+    layers. Normalized A3 passed independent verification. Frozen TEST Step/Prefix
+    AUROC was 0.8775/0.8320 on Logic and 0.8748/0.8145 on Factuality.
+- turn: 1
+  type: experiment
+  id: N12813561
+  routing: direct
+  provenance: ai-executed
+  summary: The checked owner receipt records 158 independently verified new baseline
+    cells out of 195, with 45 reuse cells tracked separately. It reports 14 Qwen per-token
+    shards on disk, with additional extraction tasks pending.
+- turn: 1
+  type: experiment
+  id: N12813562
+  routing: direct
+  provenance: ai-executed
+  summary: On Logic and Factuality, learnable aggregation, learnable representation
+    and their combination each run on shards for layers 1–32 and 33–64. All 12 shards
+    wrote VAL progress on three 16 GB GPU and nine CPU instances. Final selection
+    and frozen TEST metrics were pending at the backfill check.
+- turn: 1
+  type: decision
+  id: N12813563
+  routing: direct
+  provenance: user
+  summary: The researcher requires timely local ARA updates and repository synchronization
+    for material research progress, including remote and autonomous runs. This dated
+    backfill restores missing records from verified evidence.
+claims_touched: []
+open_threads:
+- A2 learnable Step readout training, cross-shard VAL selection and frozen TEST.
+- Remaining Cetus baseline acceptance and authorized feature extraction.
