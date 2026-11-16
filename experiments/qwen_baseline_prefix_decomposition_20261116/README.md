@@ -37,5 +37,3 @@ Future Prefix experiments are reported in this table.
 | SAPLMA decomposition, Step-negative BCE | 0.7916 | 0.7737 |
 | SAPLMA decomposition, all-position BCE | 0.8026 | 0.7846 |
 | Streaming decomposition, Step-negative BCE | 0.8240 | 0.8242 |
-
-All eight decomposition results were independently verified from saved TEST predictions.
