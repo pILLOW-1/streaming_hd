@@ -235,6 +235,8 @@ def main():
     parser.add_argument("--saplma-epochs", type=int, default=5, choices=(5,))
     parser.add_argument("--all-positions", action="store_true")
     parser.add_argument("--legacy-streaming", action="store_true")
+    parser.add_argument("--layer-half", choices=("lower", "upper"))
+    parser.add_argument("--finalize", action="store_true")
     parser.add_argument("--reuse-train-scores-from", type=Path)
     args = parser.parse_args()
     if args.all_positions and (args.reuse_train_scores_from is None
@@ -244,6 +246,10 @@ def main():
         parser.error("--legacy-streaming requires all-position Streaming")
     if args.legacy_streaming and not torch.cuda.is_available():
         parser.error("--legacy-streaming requires CUDA")
+    if (args.layer_half or args.finalize) and not args.legacy_streaming:
+        parser.error("sharded training is only supported for --legacy-streaming")
+    if args.layer_half and args.finalize:
+        parser.error("choose either layer training or finalization")
     domain, method = args.domain, args.method
     ownership = args.root / "DOMAIN_OWNERS.json"
     if ownership.exists() and read_json(ownership)[domain] != os.environ.get("RUNPOD_POD_ID"):
@@ -252,8 +258,14 @@ def main():
     out = args.root / domain / method
     out.mkdir(parents=True, exist_ok=True)
     with (out / ".lock").open("a") as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        execute(args, out)
+        if args.layer_half:
+            fcntl.flock(lock, fcntl.LOCK_SH)
+            with (out / f".{args.layer_half}.lock").open("a") as shard_lock:
+                fcntl.flock(shard_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                execute(args, out)
+        else:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            execute(args, out)
 
 
 def execute(args, out):
@@ -280,7 +292,15 @@ def execute(args, out):
             raise FileNotFoundError(train_scores)
     scores_train = make_train_scores(train_scores, paths["frozen_step.pt"], method, train, spec["layer"], device)
     scores_val = saved_step_scores(paths["step_val.npz"], val, method, device)
-    for layer in range(1, 65):
+    if args.finalize:
+        layers = ()
+    elif args.layer_half == "lower":
+        layers = range(1, 33)
+    elif args.layer_half == "upper":
+        layers = range(33, 65)
+    else:
+        layers = range(1, 65)
+    for layer in layers:
         receipt = out / f"layer_{layer:02d}.json"
         if not receipt.exists():
             if args.legacy_streaming:
@@ -297,6 +317,19 @@ def execute(args, out):
                                     inputs=args.input_manifest_sha, all_positions=args.all_positions,
                                     val_sha=digest(val_file.read_bytes()), **legacy_identity))
         print(domain, method, layer, "VAL complete", flush=True)
+    if args.layer_half:
+        for layer in layers:
+            row = read_json(out / f"layer_{layer:02d}.json")
+            assert row["legacy_streaming"] and row["inputs"] == args.input_manifest_sha
+            assert row["winner"]["layer"] == layer
+        save_json(out / f"{args.layer_half}.COMPLETE.json",
+                  dict(layers=list(layers), input_manifest=args.input_manifest_sha,
+                       pod=os.environ.get("RUNPOD_POD_ID")))
+        return
+    if args.finalize:
+        for half, expected in (("lower", range(1, 33)), ("upper", range(33, 65))):
+            row = read_json(out / f"{half}.COMPLETE.json")
+            assert row["layers"] == list(expected) and row["input_manifest"] == args.input_manifest_sha
     candidates = [read_json(out / f"layer_{layer:02d}.json") for layer in range(1, 65)]
     assert all(row["inputs"] == args.input_manifest_sha and row.get("all_positions", False) == args.all_positions
                and row.get("legacy_streaming", False) == args.legacy_streaming for row in candidates)
