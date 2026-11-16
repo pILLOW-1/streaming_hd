@@ -38,7 +38,7 @@ The fixed Streaming arm shares the fixed Step pool and Step loss in [C18 (A1)](.
 
 ## Legacy training recipe on the current data
 
-This rerun uses the same frozen Logic and Factuality splits, three learnable readouts and linear Step head. It measures the effect of restoring the pre-dataset-change training recipe.
+This series uses frozen Qwen features and a linear Step head on Logic, Factuality and Science to compare readouts under the pre-dataset-change training recipe.
 
 | Training parameter | Legacy recipe |
 |---|---|
@@ -51,11 +51,14 @@ This rerun uses the same frozen Logic and Factuality splits, three learnable rea
 
 **Streaming + learned score residual.** Pool frozen token features with $w_{t,i}=\mathrm{softmax}_{i}(3u_{t,i}+s_{t,i})$. The fixed positional score and the learnable aggregation scorer output are added before one softmax within each Step. Zero-initialize the scorer output layer to recover fixed Streaming pooling at initialization. Use the same linear Step head, training recipe and layer selection.
 
+**Streaming fixed aggregation (legacy recipe).** Pool frozen token features within each Step using fixed weights proportional to exp(3u), where u runs uniformly from zero to one across the Step. Train the linear head using the legacy recipe above.
+
 ### Legacy recipe Step TEST AUROC
 
 | Configuration | Logic | Factuality | Science |
 | --- | ---: | ---: | ---: |
 | [Original Streaming](../streaming_622_p70/result/metrics.json) | 0.8716 | 0.8720 |  |
+| Streaming fixed aggregation (legacy recipe) | | | |
 | Learnable aggregation | 0.8871 | 0.8816 |  |
 | Learnable representation | 0.8785 | 0.8767 |  |
 | Aggregation and representation | 0.8550 | 0.8705 |  |

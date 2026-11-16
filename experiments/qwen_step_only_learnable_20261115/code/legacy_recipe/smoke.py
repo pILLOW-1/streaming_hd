@@ -1,7 +1,7 @@
 import sys
 import torch
 from torch.nn import functional as F
-from train import ARMS, RESIDUAL_ARM, Detector
+from train import ARMS, FIXED_ARM, RESIDUAL_ARM, Detector
 
 device = sys.argv[1]
 torch.manual_seed(42)
@@ -20,6 +20,11 @@ for arm in ARMS:
     F.binary_cross_entropy_with_logits(logits, labels).backward()
     assert all(p.grad is not None and torch.isfinite(p.grad).all() for p in net.parameters())
     assert net.step.weight.grad.abs().sum() > 0
+    if arm == FIXED_ARM:
+        assert set(dict(net.named_parameters())) == {"step.weight", "step.bias"}
+        pooled = torch.stack([(x * w[:, None]).sum(0) for x, w in
+                              zip(raw.split(lengths.tolist()), fixed.split(lengths.tolist()))])
+        torch.testing.assert_close(net.step(pooled).flatten(), logits)
     if arm == RESIDUAL_ARM:
         assert net.scorer[-1].weight.grad.abs().sum() > 0
         net.eval()

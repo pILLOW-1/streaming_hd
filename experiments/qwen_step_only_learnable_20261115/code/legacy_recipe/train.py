@@ -16,7 +16,8 @@ from sklearn.metrics import average_precision_score, log_loss, roc_auc_score
 from run import HERE, digest, save_json
 
 RESIDUAL_ARM = "aggr_residual"
-ARMS = ("aggr", "repr", "aggr_repr", RESIDUAL_ARM)
+FIXED_ARM = "streaming_fixed"
+ARMS = ("aggr", "repr", "aggr_repr", RESIDUAL_ARM, FIXED_ARM)
 WIDTH = 5120
 TRAIN_BATCH_SIZE = 128
 EVAL_BATCH_SIZE = 256
@@ -42,11 +43,11 @@ class Detector(nn.Module):
     def __init__(self, arm, width=WIDTH):
         super().__init__()
         self.arm = arm
-        size = width if arm in ("aggr", RESIDUAL_ARM) else 256
+        size = width if arm in ("aggr", RESIDUAL_ARM, FIXED_ARM) else 256
         if arm in ("aggr", RESIDUAL_ARM):
             self.scorer = nn.Sequential(nn.Linear(width, 256), nn.BatchNorm1d(256),
                                         nn.ReLU(), nn.Dropout(0.3), nn.Linear(256, 1))
-        else:
+        elif arm != FIXED_ARM:
             self.mapper = nn.Sequential(nn.Linear(width, 256), nn.BatchNorm1d(256), nn.ReLU())
             if arm == "aggr_repr":
                 self.scorer = nn.Linear(256, 1)
@@ -56,8 +57,8 @@ class Detector(nn.Module):
         self.step = nn.Linear(size, 1)
 
     def forward(self, raw, lengths, owners, positional):
-        values = raw if self.arm in ("aggr", RESIDUAL_ARM) else self.mapper(raw)
-        if self.arm == "repr":
+        values = raw if self.arm in ("aggr", RESIDUAL_ARM, FIXED_ARM) else self.mapper(raw)
+        if self.arm in ("repr", FIXED_ARM):
             weights = positional
         else:
             logits = self.scorer(values).flatten()
