@@ -56,7 +56,7 @@ This rerun uses the same frozen Logic and Factuality splits, three learnable rea
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | [Original Streaming](../streaming_622_p70/result/metrics.json) | 0.8716 | 0.8720 |
-| Learnable aggregation | 0.8871 | |
+| Learnable aggregation | 0.8871 | 0.8816 |
 | Learnable representation | 0.8785 | 0.8767 |
 | Aggregation and representation | 0.8550 | 0.8705 |
 | Streaming + learned score residual | 0.8882 | 0.8742 |
