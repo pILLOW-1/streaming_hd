@@ -6,15 +6,15 @@ The manual constraint Step=1 ⇒ Prefix=1 splits every reasoning position into t
 
 | Outcome | Labels | Meaning |
 |---|---|---|
-| new | $y^{\mathrm{S}}_t=1$ | the Step introduces a new error |
-| inherited | $y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1$ | no new error, but an earlier error is still unresolved |
-| clean | $y^{\mathrm{P}}_t=0$ | no unresolved error |
+| new | $`y^{\mathrm{S}}_t=1`$ | the Step introduces a new error |
+| inherited | $`y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1`$ | no new error, but an earlier error is still unresolved |
+| clean | $`y^{\mathrm{P}}_t=0`$ | no unresolved error |
 
-Prefix error probability is therefore Step error probability plus the inherited term, $\pi^{\mathrm{P}}_t=\pi^{\mathrm{S}}_t+\psi_t$. We measure how large each outcome is. These are label counts; they do not measure how detectable each outcome is from internal signals.
+Prefix error probability is therefore Step error probability plus the inherited term, $`\pi^{\mathrm{P}}_t=\pi^{\mathrm{S}}_t+\psi_t`$. We measure how large each outcome is. These are label counts; they do not measure how detectable each outcome is from internal signals.
 
 ![Three-outcome composition and inherited share per combination](result/figure.png)
 
-*Figure. (a) Share of all 1,445,280 reasoning positions that introduce a new error ($y^{\mathrm{S}}_t=1$), carry an inherited error ($y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1$) or are clean ($y^{\mathrm{P}}_t=0$). The bracket marks Prefix-erroneous positions, of which 84.7% are inherited. (b) Inherited share of Prefix-erroneous positions for each of the 15 generator/domain combinations: one row per generator, one marker per domain. The dashed line is the share over all data.*
+*Figure. (a) Share of all 1,445,280 reasoning positions that introduce a new error ($`y^{\mathrm{S}}_t=1`$), carry an inherited error ($`y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1`$) or are clean ($`y^{\mathrm{P}}_t=0`$). The bracket marks Prefix-erroneous positions, of which 84.7% are inherited. (b) Inherited share of Prefix-erroneous positions for each of the 15 generator/domain combinations: one row per generator, one marker per domain. The dashed line is the share over all data.*
 
 ## Analysis settings
 
@@ -23,9 +23,9 @@ Prefix error probability is therefore Step error probability plus the inherited 
 | Dataset | Retained Streaming HD, 6:2:2, TEST target p >= 70%, with frozen per-combination relaxations |
 | Scope | Three generators, five domains; **TRAIN + VAL + TEST** |
 | Unit | One retained Step position |
-| Labels | Step $y^{\mathrm{S}}_t$ and Prefix $y^{\mathrm{P}}_t$ as annotated; no label is derived or changed |
+| Labels | Step $`y^{\mathrm{S}}_t`$ and Prefix $`y^{\mathrm{P}}_t`$ as annotated; no label is derived or changed |
 | Computation | Exact label counts; no detector training or model inference |
-| Integrity checks | Binary labels, matched Step/Prefix lengths, zero positions with $y^{\mathrm{S}}_t=1$ and $y^{\mathrm{P}}_t=0$, unique sample IDs, source SHA256 against split manifests, all 15,697 trajectories |
+| Integrity checks | Binary labels, matched Step/Prefix lengths, zero positions with $`y^{\mathrm{S}}_t=1`$ and $`y^{\mathrm{P}}_t=0`$, unique sample IDs, source SHA256 against split manifests, all 15,697 trajectories |
 
 The statistics describe the dataset and involve no model, so all splits are counted. An earlier version of this analysis used TRAIN + VAL only; the per-split table below shows that the result is the same in every split.
 
@@ -88,7 +88,7 @@ Percentages of new, inherited and clean use all retained positions in the group;
 
 ## How often the erroneous state closes
 
-A correction is a Prefix 1→0 transition. A recovered clean position has $y^{\mathrm{P}}_t=0$ after an earlier $y^{\mathrm{P}}_t=1$ in its trajectory.
+A correction is a Prefix 1→0 transition. A recovered clean position has $`y^{\mathrm{P}}_t=0`$ after an earlier $`y^{\mathrm{P}}_t=1`$ in its trajectory.
 
 | Split | Trajectories with an error | of which contain a correction | Recovered share of clean positions | Inherited positions preceded by a correction |
 |---|---:|---:|---:|---:|
