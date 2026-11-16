@@ -29,8 +29,8 @@ Test whether a frozen Step detector and a conditional Prefix head improve Prefix
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | Original direct SAPLMA | 0.8078 | 0.7842 |
-| SAPLMA decomposition | | |
+| SAPLMA decomposition | | 0.7737 |
 | Original direct Streaming | 0.8256 | 0.8222 |
 | Streaming decomposition | | |
 
-**Status.** Locating and validating baseline artifacts for RunPod. Results will be entered after independent verification from saved predictions.
+**Status.** Completed cells have been independently verified from saved predictions. Blank cells are pending.
