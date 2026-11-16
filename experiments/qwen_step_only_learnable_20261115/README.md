@@ -56,7 +56,7 @@ This rerun uses the same frozen Logic and Factuality splits, three learnable rea
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | Learnable aggregation | | |
-| Learnable representation | | 0.8767 |
+| Learnable representation | 0.8785 | 0.8767 |
 | Aggregation and representation | | |
 | Streaming + learned score residual | | 0.8742 |
 

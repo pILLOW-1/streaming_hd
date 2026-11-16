@@ -661,3 +661,4 @@ entries:
   - {"turn": "2026-11-16_001#5", "notes": ["Record only the independently accepted TEST result from the saved predictions."]}
   - {"turn": "2026-11-16_001#6", "notes": ["Record the actual two-GPU launch and mutually exclusive shard ownership. No new accepted TEST result was attributed to this change."]}
   - {"turn": "2026-11-16_001#7", "notes": ["Record only the independently accepted TEST result from the saved predictions."]}
+  - {"turn": "2026-11-16_001#8", "notes": ["Record only the independently accepted TEST result from the saved predictions."]}
