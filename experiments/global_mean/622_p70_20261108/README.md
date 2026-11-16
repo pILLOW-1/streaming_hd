@@ -46,6 +46,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | qwen3_8_27b | Logic | answer | 51 | 89.12 | 50.74 | 4.35 | 69.50 | 41.90 |
 | qwen3_8_27b | Logic | prefix | 64 | 81.00 | 37.63 | 6.51 | 75.14 | 42.09 |
 | qwen3_8_27b | Logic | step | 64 | 67.05 | 3.24 | 0.65 | 86.47 | 6.70 |
+| qwen3_8_27b | Math | answer | 59 | 91.54 | 81.22 | 22.22 | 75.50 | 71.35 |
 | qwen3_8_27b | Math | prefix | 51 | 71.39 | 53.99 | 6.30 | 64.71 | 54.78 |
 | qwen3_8_27b | Math | step | 64 | 61.67 | 8.03 | 1.59 | 74.99 | 13.81 |
 | qwen3_8_27b | Multi-hop | prefix | 64 | 83.81 | 82.77 | 8.90 | 75.04 | 78.29 |
