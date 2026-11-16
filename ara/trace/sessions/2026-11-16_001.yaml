@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 19
+  turn_count: 20
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T19:15:54+11:00"
+  last_turn: "2026-11-16T20:46:29+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -101,5 +101,6 @@ events_logged:
 - {"turn": 18, "type": "experiment", "id": "N12813602", "routing": "direct", "provenance": "ai-executed", "summary": "Verified all-position Prefix TEST on 5489 matched positions. AUROC 0.78457809, AP 0.72686231; AUROC change versus Step-negative training +0.01088115, versus direct Prefix +0.00034252."}
 - {"turn": 18, "type": "experiment", "id": "N12813603", "routing": "direct", "provenance": "ai-executed", "summary": "Verified all-position Prefix TEST on 5489 matched positions. AUROC 0.82576904, AP 0.78910329; AUROC change versus Step-negative training +0.00153662, versus direct Prefix +0.00356464."}
 - {"turn": 19, "type": "experiment", "id": "N12813604", "routing": "direct", "provenance": "ai-executed", "summary": "Verified all-position Prefix TEST on 15233 matched positions. AUROC 0.82385885, AP 0.39758913; AUROC change versus Step-negative training -0.00015395, versus direct Prefix -0.00175824."}
+- {"turn": 20, "type": "experiment", "id": "N12813605", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed frozen TEST metrics on 15233 Step positions. Layer 42, epoch 12; AUROC 0.8735770503639111, AP 0.16160278222258712, BCE 0.08760287034250223."}
 claims_touched: []
 open_threads: []

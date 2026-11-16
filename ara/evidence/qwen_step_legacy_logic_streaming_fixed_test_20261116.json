@@ -1,0 +1,28 @@
+{
+  "published_result": "https://github.com/pILLOW-1/streaming_hd/blob/ecf9f200df8bea8dd2a761bf7b61fc52ee7fe55c/experiments/qwen_step_only_learnable_20261115/result/legacy_recipe/Logic/streaming_fixed.json",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "domain": "Logic",
+  "arm": "streaming_fixed",
+  "recipe": "pre_dataset_step_20261011",
+  "layer": 42,
+  "epoch": 12,
+  "candidates": 64,
+  "positions": 15233,
+  "coverage": "complete",
+  "metrics": {
+    "step_AUROC": 0.8735770503639111,
+    "step_AP": 0.16160278222258712,
+    "step_BCE": 0.08760287034250223
+  },
+  "val_metrics": {
+    "step_AUROC": 0.9145514542115109,
+    "step_AP": 0.2323084738276901,
+    "step_BCE": 0.062377702066545526
+  },
+  "prediction_sha256": "72f686cb799bda20f9ddeed0c886a48a29abdd856c4360f620106a57c17b8792",
+  "checkpoint_sha256": "7ffe9c2cbffcd30e05cbf543a7be8ce6359ecaa0f1be3460b00ce47dff3b0809",
+  "selection_sha256": "d415a6b63fb6ef4a435f2228e4d93cd6377844a86c4e726c2f410946c5d97976",
+  "source_manifest_sha256": "6c5144855f030384de57a3a31ebd356f51ce92a394c7da1d03fb95bca76c043d",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
