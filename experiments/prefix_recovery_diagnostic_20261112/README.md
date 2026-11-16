@@ -119,7 +119,7 @@ Means over the same 71 detector–combination pairs on both splits.
 | rec within | 0.628 | 0.595 |
 | rec within, traj. mean | 0.534 | 0.537 |
 
-The pattern is the same and slightly stronger on TEST. TEST contains more corrections than VAL by design of the split (see the [composition analysis](../step_prefix_composition_20261111/README.md)), which may contribute to its lower AUROC_rec. The VAL files in `result/val/` were computed when ICR Probe covered 7 combinations; the VAL column here uses its 11 current combinations.
+The pattern is the same and slightly stronger on TEST. The VAL files in `result/val/` were computed when ICR Probe covered 7 combinations; the VAL column here uses its 11 current combinations.
 
 ## Interpretation
 

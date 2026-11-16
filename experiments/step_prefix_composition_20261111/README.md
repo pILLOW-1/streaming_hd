@@ -95,7 +95,7 @@ A correction is a Prefix 1→0 transition. A recovered clean position has C=0 af
 | TEST | 2,529 | 90.23% | 77.23% | 94.91% |
 | All | 10,345 | 79.74% | 70.61% | 91.25% |
 
-Corrections are common: four in five erroneous trajectories contain one, and most clean positions come after a corrected error. TEST contains more corrections than TRAIN and VAL because the selected split deliberately enriches TEST with correction transitions.
+Corrections are common: four in five erroneous trajectories contain one, and most clean positions come after a corrected error.
 
 ## Interpretation
 
