@@ -2,11 +2,12 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T10:26:42+11:00"
-  turn_count: 1
+  last_turn: "2026-11-17T10:38:02+11:00"
+  turn_count: 2
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
 - {"turn": 1, "type": "decision", "id": "N12813608", "routing": "direct", "provenance": "user", "summary": "Use the original frozen Streaming Step probabilities for Logic and Factuality. Train only a linear conditional Prefix head on unnormalized pooled features with all-position composed BCE and legacy Step optimization. The previous Streaming adaptation used a different pooling normalization and optimization; keep its results as the comparison. Final TEST pending."}
+- {"turn": 2, "type": "experiment", "id": "N12813609", "routing": "direct", "provenance": "ai-executed", "summary": "On 5489 matched frozen Factuality TEST positions, legacy optimization with unnormalized Prefix features gave AUROC 0.8181234233 and AP 0.7843764733. VAL selected layer 49, epoch 1. The earlier all-position Streaming variant had AUROC 0.8257690445; this comparison changes both optimization and normalization."}
 claims_touched: []
 logic_revisions: []
