@@ -8,8 +8,7 @@ Each subdirectory records one experiment: its method and data configuration, res
 | [prefix_answer_endpoint_20261110](prefix_answer_endpoint_20261110/README.md) | Motivation analysis: final reasoning Prefix and Answer correctness are not deterministically tied; exact label contingency counts across three generators and five domains. |
 | [step_prefix_composition_20261111](step_prefix_composition_20261111/README.md) | Motivation analysis: about 85% of Prefix-positive positions are inherited errors rather than new Step errors; three-outcome label composition on all data (TRAIN + VAL + TEST) across three generators and five domains. |
 | [prefix_recovery_diagnostic_20261112](prefix_recovery_diagnostic_20261112/README.md) | Motivation analysis: Prefix detectors separate active errors from never-erroneous positions (AUROC ≈ 0.93) far better than from corrected ones (≈ 0.66); TEST scores of five baselines across three generators and five domains. |
-| [Qwen Step–Prefix relation study](step_prefix_relation_22_qwen_wd1e4_20261111/README.md) | Fixed-readout configurations and the [ordered dual-readout results](step_prefix_relation_22_qwen_wd1e4_20261111/README.md#configurations). |
-| [Qwen C18/A2 readout series](qwen_c18_a2_series_20261115/README.md) | Fixed error-history follow-up, three learnable Step readouts, and matched historical stop-gradient runs on Logic and Factuality. |
+| [Qwen Prefix decomposition](qwen_baseline_prefix_decomposition_20261116/README.md) | SAPLMA and Streaming Prefix results on Logic and Factuality, comparing Step-negative and all-position BCE. |
 | [Standalone Qwen Step detectors](qwen_step_only_learnable_20261115/README.md) | Three learnable Step readouts trained directly on Step labels, evaluated on Logic and Factuality. |
 
 Each experiment distinguishes verified results from unfinished configurations. Missing results remain blank; earlier split explorations are not merged into the retained result set.
