@@ -71,6 +71,8 @@ def make_train_scores(path, frozen_path, method, data, layer, device):
         with np.load(path, allow_pickle=False) as saved:
             assert saved["frozen_sha"].item() == digest(frozen_path.read_bytes())
             assert saved["positions_sha"].item() == data.pins["positions"]
+            assert saved["q"].shape == data.y.shape
+            assert np.isfinite(saved["q"]).all() and ((saved["q"] >= 0) & (saved["q"] <= 1)).all()
             return torch.from_numpy(saved["q"]).to(device)
     checkpoint = torch.load(frozen_path, map_location="cpu", weights_only=True)
     if method == "saplma":
@@ -111,13 +113,14 @@ def predict(model, x, q):
     return prefix_probability(model(x).flatten(), q).detach().cpu().numpy()
 
 
-def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs):
+def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs, all_positions):
     random.seed(42)
     np.random.seed(42)
     torch.manual_seed(42)
     x, xv = (features(data, layer, method, "prefix", device) for data in (train, val))
     step = torch.as_tensor(train.y, device=device)
     prefix = torch.as_tensor(train.c, device=device)
+    eligible = torch.arange(len(step), device=device) if all_positions else torch.where(step == 0)[0]
     if method == "saplma":
         model = SAPLMA(x.shape[1]).to(device)
         optimizer = KerasAdam(model.parameters())
@@ -128,7 +131,7 @@ def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs):
 
         def closure():
             initial.zero_grad()
-            objective = prefix_bce(model(x).flatten(), q_train, step, prefix)
+            objective = prefix_bce(model(x).flatten(), q_train, step, prefix, all_positions=all_positions)
             objective = objective + 1e-4 * sum(p.square().sum() * 0.5 for p in model.parameters())
             objective.backward()
             return objective
@@ -144,7 +147,6 @@ def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs):
     for epoch in range(1, epochs + 1):
         model.train()
         if method == "saplma":
-            eligible = torch.where(step == 0)[0]
             batches = eligible[torch.randperm(len(eligible), device=device)].split(32)
             weight = None
         else:
@@ -152,12 +154,12 @@ def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs):
             batches = [torch.cat(trajectories[start:start + 64]) for start in range(0, len(trajectories), 64)]
             weight = weights
         for ids in batches:
-            if not (step[ids] == 0).any():
+            if not all_positions and not (step[ids] == 0).any():
                 continue
             optimizer.zero_grad(set_to_none=True)
             logit = model(x[ids]).flatten()
             loss = prefix_bce(logit, q_train[ids], step[ids], prefix[ids],
-                              None if weight is None else weight[ids])
+                              None if weight is None else weight[ids], all_positions=all_positions)
             # The original Streaming alarm sync is identically zero because p >= q.
             assert torch.isfinite(loss)
             loss.backward()
@@ -182,7 +184,12 @@ def main():
     parser.add_argument("history_index", type=Path)
     parser.add_argument("input_manifest_sha")
     parser.add_argument("--saplma-epochs", type=int, default=5, choices=(5,))
+    parser.add_argument("--all-positions", action="store_true")
+    parser.add_argument("--reuse-train-scores-from", type=Path)
     args = parser.parse_args()
+    if args.all_positions and (args.reuse_train_scores_from is None
+                               or args.reuse_train_scores_from.resolve() == args.root.resolve()):
+        parser.error("all-position training requires an independent output root and saved TRAIN q")
     domain, method = args.domain, args.method
     ownership = args.root / "DOMAIN_OWNERS.json"
     if ownership.exists() and read_json(ownership)[domain] != os.environ.get("RUNPOD_POD_ID"):
@@ -203,7 +210,7 @@ def execute(args, out):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     if device.type == "cuda":
         torch.backends.cuda.matmul.allow_tf32 = False
-    source = args.root / "input"
+    source = (args.reuse_train_scores_from or args.root) / "input"
     manifest = read_json(checked(source / "manifest.json", args.input_manifest_sha))
     spec = manifest["cells"][domain][method]
     base = f"{domain}/{method}/"
@@ -211,21 +218,29 @@ def execute(args, out):
              for f in ("frozen_step.pt", "step_val.npz", "step_test.npz")}
     pins = read_json(args.split_pins)[domain]
     train, val = (Split(domain, split, pins[split]) for split in ("train", "val"))
-    scores_train = make_train_scores(out / "train_step.npz", paths["frozen_step.pt"], method, train, spec["layer"], device)
+    train_scores = out / "train_step.npz"
+    if args.reuse_train_scores_from is not None:
+        train_scores = args.reuse_train_scores_from / domain / method / "train_step.npz"
+        if not train_scores.is_file():
+            raise FileNotFoundError(train_scores)
+    scores_train = make_train_scores(train_scores, paths["frozen_step.pt"], method, train, spec["layer"], device)
     scores_val = saved_step_scores(paths["step_val.npz"], val, method, device)
     for layer in range(1, 65):
         receipt = out / f"layer_{layer:02d}.json"
         if not receipt.exists():
-            (_, scores, state, val_p), candidates = fit(train, val, scores_train, scores_val, layer, method, device, args.saplma_epochs)
+            (_, scores, state, val_p), candidates = fit(train, val, scores_train, scores_val, layer, method,
+                                                       device, args.saplma_epochs, args.all_positions)
             weights = out / f"layer_{layer:02d}.pt"
             torch.save(state, weights)
             val_file = out / f"val_{layer:02d}.npz"
             np.savez_compressed(val_file, probability=val_p, position_id=val.keys, c=val.c)
             save_json(receipt, dict(winner=scores, candidates=candidates, weights_sha=digest(weights.read_bytes()),
-                                    inputs=args.input_manifest_sha, val_sha=digest(val_file.read_bytes())))
+                                    inputs=args.input_manifest_sha, all_positions=args.all_positions,
+                                    val_sha=digest(val_file.read_bytes())))
         print(domain, method, layer, "VAL complete", flush=True)
     candidates = [read_json(out / f"layer_{layer:02d}.json") for layer in range(1, 65)]
-    assert all(row["inputs"] == args.input_manifest_sha for row in candidates)
+    assert all(row["inputs"] == args.input_manifest_sha and row.get("all_positions", False) == args.all_positions
+               for row in candidates)
     all_metrics = [row for layer in candidates for row in layer["candidates"]]
     rank = max((r["AUROC"], r["AP"]) for r in all_metrics)
     winners = [m for m in all_metrics if (m["AUROC"], m["AP"]) == rank]
@@ -245,13 +260,15 @@ def execute(args, out):
     assert np.isclose(metrics(test.y, q.cpu().numpy())["AUROC"], spec["step"], rtol=0, atol=1e-10)
     with (out / "TEST_STARTED.json").open("x") as guard:
         json.dump(dict(selected=selected, threshold=threshold,
-                       input_manifest=args.input_manifest_sha, test=test.pins), guard)
+                       input_manifest=args.input_manifest_sha, all_positions=args.all_positions, test=test.pins), guard)
     probability = predict(model, features(test, layer, method, "prefix", device), q)
     path = out / "test.npz"
     np.savez_compressed(path, probability=probability, position_id=test.keys, y=test.y, c=test.c)
     result = metrics(test.c, probability)
     save_json(finished, dict(domain=domain, method=method, position_count=len(test.keys),
                              conditional_train_count=int((train.y == 0).sum()), selected=selected,
+                             all_positions=args.all_positions,
+                             train_position_count=len(train.y) if args.all_positions else int((train.y == 0).sum()),
                              threshold=threshold,
                              TEST=result, direct_prefix_AUROC=spec["original"],
                              delta_AUROC=result["AUROC"] - spec["original"],
