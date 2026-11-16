@@ -26,5 +26,6 @@
   },
   "primary_denominator": "All trajectories in corresponding model/domain/split",
   "data_and_labels_changed": false,
-  "model_training_or_inference": false
+  "model_training_or_inference": false,
+  "figure": "result/figure.pdf, result/figure.png"
 }

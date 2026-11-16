@@ -31,8 +31,8 @@ The relation links the three levels in one chain: introduction ($\pi^Y$), carry-
 | Analysis | Term tested | Result | Meaning |
 |---|---|---|---|
 | [prefix_answer_endpoint](../experiments/prefix_answer_endpoint_20261110/README.md) (15,697 trajectories) | $a^1,a^0$ | 35.5% of Answers are correct after an erroneous final Prefix; 18.6% are wrong after a clean one; 25.2% disagree overall | The Answer is a lossy read-out of the final reasoning state, not a copy |
-| [step_prefix_composition](../experiments/step_prefix_composition_20261111/README.md) (TRAIN+VAL, 1.07M positions) | $\pi^Y$ vs $(1-\pi^Y)\kappa$ | 84.7% of Prefix positives are inherited; 72–88% in every combination | The erroneous state persists mostly by carry-over; a Step label sees only the moment of introduction |
-| [prefix_recovery_diagnostic](../experiments/prefix_recovery_diagnostic_20261112/README.md) (five external detectors, VAL) | detectors' estimate of $\kappa$ | Inherited vs never-erroneous ≈ 0.96 AUROC; inherited vs recovered ≈ 0.74; within-trajectory mean 0.50–0.58 | The state also closes; detectors capture whether an error has occurred, not whether it is still active |
+| [step_prefix_composition](../experiments/step_prefix_composition_20261111/README.md) (15,697 trajectories, 1.45M positions) | $\pi^Y$ vs $(1-\pi^Y)\kappa$ | 84.7% of Prefix positives are inherited; 72–88% in every combination | The erroneous state persists mostly by carry-over; a Step label sees only the moment of introduction |
+| [prefix_recovery_diagnostic](../experiments/prefix_recovery_diagnostic_20261112/README.md) (five external detectors, TEST) | detectors' estimate of $\kappa$ | Inherited vs never-erroneous ≈ 0.93 AUROC; inherited vs recovered ≈ 0.66; within-trajectory mean 0.51–0.58 | The state also closes; detectors capture whether an error has occurred, not whether it is still active |
 
 ## 4. What the task is
 

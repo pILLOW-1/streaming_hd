@@ -1,7 +1,7 @@
 {
   "analysis": "Separation of still-active errors from corrected ones by Prefix detectors",
-  "split": "val",
-  "test_included": false,
+  "split": "test",
+  "test_included": true,
   "models": [
     "deepseek_r1_distill_llama_8b",
     "gemma_4_31b_it",
@@ -25,7 +25,7 @@
     "AUROC_fresh": "AUROC(inherited vs fresh clean)",
     "gap": "AUROC_fresh - AUROC_rec"
   },
-  "score": "each detector's frozen selected-layer VAL Prefix score, as saved by its original run; no retraining or inference",
+  "score": "each detector's TEST Prefix score saved by its original run, from the configuration frozen on VAL; no retraining, selection or inference",
   "detectors": [
     "streaming",
     "saplma",
@@ -36,8 +36,7 @@
   "integrity_checks": [
     "saved position ids equal the dataset loader's ids in order",
     "saved labels equal Prefix labels",
-    "recomputed VAL Prefix AUROC equals the AUROC recorded at selection",
-    "published Streaming cells matched to source runs by freeze SHA256"
+    "recomputed TEST Prefix AUROC equals the AUROC recorded by the source run"
   ],
   "confidence_interval": "95% percentile, 1000 trajectory-bootstrap replicates, seed 0",
   "data_and_labels_changed": false,
@@ -45,5 +44,7 @@
     "between": "inherited and clean positions from different trajectories",
     "within": "both positions from the same trajectory",
     "within_trajectory_mean": "per-trajectory AUROC averaged over trajectories containing both classes"
-  }
+  },
+  "earlier_val_version": "result/val/",
+  "figure": "result/figure.pdf, result/figure.png"
 }

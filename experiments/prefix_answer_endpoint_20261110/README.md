@@ -6,6 +6,8 @@ Answer correctness and reasoning correctness are not deterministically tied. An 
 
 Here, reasoning correctness is operationalized by the label of the **final retained Prefix**, not by whether every earlier Step was correct. These counts describe label agreement; they do not establish statistical independence or identify the cause of an individual disagreement.
 
+![Answer label split by the final Prefix label](result/figure.png)
+
 ## Analysis settings
 
 | Setting | Value |
@@ -64,5 +66,6 @@ The final Prefix label and Answer label differ for one quarter of the retained t
 - [Configuration](config.json): counting definitions and scope.
 - [Counts JSON](result/counts.json): unrounded values, the full 2x2 contingency table, each split, and portable source hashes.
 - [Counts CSV](result/counts.csv): all 15 combinations, with TRAIN/VAL/TEST and their union.
+- Figure: [PDF](result/figure.pdf), [PNG](result/figure.png).
 
 Only aggregate statistics and input-file identities are published. Original labels, split assignments, raw trajectories and training runs are unchanged.

@@ -12,9 +12,11 @@ The [composition analysis](../step_prefix_composition_20261111/README.md) shows 
 
 A detector can approximate this with a weaker cue: whether any error has occurred earlier in the trajectory. Both cues agree before the first error. They disagree only after an error has been corrected. We use those positions to test which cue a detector actually uses.
 
+![Separation of still-active errors from clean positions, per detector](result/figure.png)
+
 ## Analysis settings
 
-On VAL positions with Y=0, the positive class is **inherited** (C=1). Negatives are split by history:
+On TEST positions with Y=0, the positive class is **inherited** (C=1). Negatives are split by history:
 
 | Negative | Definition | What separates it from inherited |
 |---|---|---|
@@ -37,16 +39,16 @@ Each AUROC above is the pair-count-weighted mean of its between and within parts
 
 | Setting | Value |
 |---|---|
-| Dataset | Retained Streaming HD, 6:2:2; **VAL only** |
+| Dataset | Retained Streaming HD, 6:2:2; **TEST only** |
 | Scope | Three generators, five domains |
-| Scores | Each detector's frozen, selected-layer VAL Prefix score saved by its original run; no retraining or inference |
+| Scores | Each detector's TEST Prefix score saved by its original run, from the configuration frozen on VAL; no retraining, selection or inference |
 | Detectors | Streaming, SAPLMA, global mean, LLM-Check, ICR Probe |
-| Integrity checks | Saved position ids and labels equal the dataset loader's in order. Recomputed VAL Prefix AUROC equals the value recorded at selection. Published Streaming cells are matched to their source runs by freeze SHA256. |
+| Integrity checks | Saved position ids and labels equal the dataset loader's in order. Recomputed TEST Prefix AUROC equals the value recorded by the source run. |
 | Uncertainty | 95% percentile intervals from 1,000 trajectory-bootstrap replicates |
 
-TEST is excluded because these statistics inform method design.
+Nothing is selected or tuned in this analysis, so it is reported on TEST like the detectors' main results. The earlier VAL version is kept in [`result/val/`](result/val/); its conclusions are the same (see the comparison at the end of the findings).
 
-ICR Probe covers 7 of 15 combinations; its run has not finished in the other 8. Those cells are listed as pending in `result/recovery.json`.
+ICR Probe covers 11 of 15 combinations; its run has not finished for Math and Science of DS-L8 and Qwen3.8-27B. Those cells are listed as pending in `result/recovery.json`.
 
 ## Findings
 
@@ -54,55 +56,70 @@ ICR Probe covers 7 of 15 combinations; its run has not finished in the other 8. 
 
 | Detector | Combinations | AUROC_rec | AUROC_fresh | gap (range) | gap CI above 0 |
 |---|---:|---:|---:|---:|---:|
-| Streaming | 15 | 0.764 | 0.976 | 0.212 (0.026–0.365) | 15 |
-| SAPLMA | 15 | 0.749 | 0.957 | 0.208 (0.020–0.347) | 14 |
-| Global mean | 15 | 0.763 | 0.976 | 0.214 (0.025–0.389) | 15 |
-| LLM-Check | 15 | 0.660 | 0.931 | 0.271 (0.045–0.450) | 15 |
-| ICR Probe | 7 | 0.765 | 0.945 | 0.180 (0.027–0.321) | 6 |
+| Streaming | 15 | 0.698 | 0.954 | 0.256 (0.035–0.427) | 14 |
+| SAPLMA | 15 | 0.688 | 0.930 | 0.242 (0.026–0.370) | 14 |
+| Global mean | 15 | 0.688 | 0.955 | 0.267 (0.055–0.515) | 14 |
+| LLM-Check | 15 | 0.615 | 0.916 | 0.301 (0.146–0.418) | 15 |
+| ICR Probe | 11 | 0.597 | 0.898 | 0.301 (0.045–0.419) | 10 |
 
 Values are means over combinations.
 
-- Over all 67 detector–combination pairs, AUROC_fresh averages 0.959 and AUROC_rec averages 0.737.
-- The gap's 95% interval excludes zero in 65 pairs. The two exceptions are DS-L8 Factuality, which has only 39 recovered positions.
+- Over all 71 detector–combination pairs, AUROC_fresh averages 0.933 and AUROC_rec averages 0.661.
+- The gap's 95% interval excludes zero in 67 pairs. The four exceptions are all DS-L8 Factuality, which has only 24 recovered positions in 15 trajectories.
 - Learned probes, a training-free score and a dedicated streaming detector show the same pattern.
 
 ### 2. The deficit is shared across generators and domains
 
 | Generator | Mean AUROC_rec | Mean gap |
 |---|---:|---:|
-| DS-L8 | 0.829 | 0.128 |
-| Gemma-4-31B-it | 0.642 | 0.308 |
-| Qwen3.8-27B | 0.733 | 0.235 |
+| DS-L8 | 0.725 | 0.191 |
+| Gemma-4-31B-it | 0.576 | 0.351 |
+| Qwen3.8-27B | 0.689 | 0.267 |
 
 | Domain | Mean AUROC_rec | Mean gap |
 |---|---:|---:|
-| Math | 0.712 | 0.264 |
-| Science | 0.727 | 0.245 |
-| Logic | 0.716 | 0.255 |
-| Multi-hop | 0.721 | 0.212 |
-| Factuality | 0.806 | 0.140 |
+| Math | 0.698 | 0.273 |
+| Science | 0.713 | 0.251 |
+| Logic | 0.639 | 0.307 |
+| Multi-hop | 0.635 | 0.291 |
+| Factuality | 0.631 | 0.236 |
 
 ### 3. Within a trajectory, detectors mark the first error but not later corrections
 
-Errors and corrections alternate within trajectories: 90.3% of VAL inherited positions are preceded by at least one correction (Prefix 1→0) in their own trajectory. Whether an error is still active is therefore mainly a within-trajectory question.
+Errors and corrections alternate within trajectories: 94.9% of TEST inherited positions are preceded by at least one correction (Prefix 1→0) in their own trajectory. Whether an error is still active is therefore mainly a within-trajectory question.
 
-Within-trajectory pairs, however, are only 2.0% of inherited–recovered pairs on average (at most 4.7%), so AUROC_rec above mostly measures between-trajectory pairs.
+Within-trajectory pairs, however, are only 2.1% of inherited–recovered pairs on average (at most 11.5%), so AUROC_rec above mostly measures between-trajectory pairs.
 
 | Detector | fresh between | fresh within | fresh within, traj. mean | rec between | rec within | rec within, traj. mean |
 |---|---:|---:|---:|---:|---:|---:|
-| Streaming | 0.976 | 0.989 | 0.965 | 0.767 | 0.641 | 0.550 |
-| SAPLMA | 0.957 | 0.940 | 0.905 | 0.751 | 0.629 | 0.578 |
-| Global mean | 0.976 | 0.994 | 0.978 | 0.766 | 0.634 | 0.526 |
-| LLM-Check | 0.931 | 0.978 | 0.984 | 0.661 | 0.619 | 0.499 |
-| ICR Probe | 0.944 | 0.972 | 0.894 | 0.766 | 0.648 | 0.508 |
+| Streaming | 0.954 | 0.968 | 0.959 | 0.697 | 0.629 | 0.548 |
+| SAPLMA | 0.930 | 0.933 | 0.892 | 0.688 | 0.608 | 0.577 |
+| Global mean | 0.955 | 0.978 | 0.971 | 0.690 | 0.589 | 0.534 |
+| LLM-Check | 0.916 | 0.950 | 0.978 | 0.613 | 0.588 | 0.510 |
+| ICR Probe | 0.899 | 0.894 | 0.912 | 0.595 | 0.549 | 0.511 |
 
-Values are means over combinations (15 per detector, 7 for ICR Probe).
+Values are means over combinations (15 per detector, 11 for ICR Probe).
 
-- Inside a trajectory, positions before the first error are separated from later inherited positions: within-trajectory fresh AUROC averages 0.975.
+- Inside a trajectory, positions before the first error are separated from later inherited positions: within-trajectory fresh AUROC averages 0.947.
 - After the first error, active and corrected positions of the same trajectory are barely separated:
-  - within-trajectory recovered AUROC averages 0.633 (range 0.387–0.789);
-  - its trajectory mean averages 0.535, close to chance.
-- Within-trajectory recovered AUROC is below its between-trajectory value in 60 of 67 detector–combination pairs. The ≈ 0.74 of AUROC_rec therefore comes mainly from differences between trajectories.
+  - within-trajectory recovered AUROC averages 0.595 (range 0.232–0.863);
+  - its trajectory mean averages 0.537, close to chance.
+- Within-trajectory recovered AUROC is below its between-trajectory value in 56 of 71 detector–combination pairs. The ≈ 0.66 of AUROC_rec therefore comes mainly from differences between trajectories.
+
+### 4. TEST and VAL agree
+
+Means over the same 71 detector–combination pairs on both splits.
+
+| Statistic | VAL | TEST |
+|---|---:|---:|
+| AUROC_fresh | 0.958 | 0.933 |
+| AUROC_rec | 0.732 | 0.661 |
+| gap | 0.226 | 0.272 |
+| gap CI above 0 | 69 / 71 | 67 / 71 |
+| rec within | 0.628 | 0.595 |
+| rec within, traj. mean | 0.534 | 0.537 |
+
+The pattern is the same and slightly stronger on TEST. TEST contains more corrections than VAL by design of the split (see the [composition analysis](../step_prefix_composition_20261111/README.md)), which may contribute to its lower AUROC_rec. The VAL files in `result/val/` were computed when ICR Probe covered 7 combinations; the VAL column here uses its 11 current combinations.
 
 ## Interpretation
 
@@ -112,7 +129,7 @@ This suggests focusing on how to model κ better, so that corrected errors can b
 
 ## Limitations
 
-- Recovered clean positions come from a limited number of VAL trajectories per combination: 26–177, and 70 for Qwen Logic. Intervals are wide where this number is small.
+- Recovered clean positions come from a limited number of TEST trajectories per combination: 15–201, and 155 for Qwen Logic. Intervals are wide where this number is small.
 - Fresh clean positions lie mostly early in trajectories, so AUROC_fresh may also reflect position. Within a trajectory, "after the first error" and "later in the trajectory" cannot be separated by this analysis. This does not affect the low AUROC_rec.
 - A near-chance within-trajectory AUROC may partly reflect how consistently Prefix labels are assigned over time within a trajectory. The present data cannot separate this from detector behaviour.
 
@@ -122,5 +139,7 @@ This suggests focusing on how to model κ better, so that corrected errors can b
 - [Recovery JSON](result/recovery.json): unrounded statistics, confidence intervals, position counts, pending cells and source-file hashes.
 - [Recovery CSV](result/recovery.csv): one row per detector, generator and domain.
 - [Within-trajectory JSON](result/within.json) and [CSV](result/within.csv): between, within and trajectory-mean AUROC for both negative types, with within-trajectory confidence intervals and pair counts.
+- [VAL version](result/val/): the same four files from the earlier VAL analysis.
+- Figure: [PDF](result/figure.pdf), [PNG](result/figure.png).
 
 Only aggregate statistics and input-file identities are published. Labels, splits, predictions and detector weights are unchanged and not included.

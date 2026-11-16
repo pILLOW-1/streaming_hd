@@ -14,9 +14,10 @@
   ],
   "splits": [
     "train",
-    "val"
+    "val",
+    "test"
   ],
-  "test_included": false,
+  "test_included": true,
   "unit": "retained Step position",
   "classes": {
     "new": "labels.step[t]=1",
@@ -24,6 +25,11 @@
     "clean": "labels.prefix[t]=0"
   },
   "inherited_share": "inherited / (new + inherited)",
-  "primary_aggregation": "Union of TRAIN and VAL",
-  "data_and_labels_changed": false
+  "primary_aggregation": "Union of TRAIN, VAL and TEST",
+  "data_and_labels_changed": false,
+  "closing_statistics": {
+    "correction": "Prefix 1->0 transition between consecutive retained positions",
+    "recovered_clean": "labels.prefix[t]=0 and labels.prefix[s]=1 for some earlier retained position s<t"
+  },
+  "figure": "result/figure.pdf, result/figure.png"
 }
