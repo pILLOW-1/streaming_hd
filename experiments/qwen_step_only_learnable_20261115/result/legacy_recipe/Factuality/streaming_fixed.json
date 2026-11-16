@@ -1,0 +1,28 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "domain": "Factuality",
+  "arm": "streaming_fixed",
+  "recipe": "pre_dataset_step_20261011",
+  "layer": 47,
+  "epoch": 3,
+  "candidates": 64,
+  "metrics": {
+    "step_AUROC": 0.8808078998719434,
+    "step_AP": 0.44226929307477614,
+    "step_BCE": 0.2282798393062489
+  },
+  "val_metrics": {
+    "step_AUROC": 0.8896770393052693,
+    "step_AP": 0.4414147323833346,
+    "step_BCE": 0.20563268563777873
+  },
+  "positions": 5489,
+  "coverage": "complete",
+  "prediction_sha256": "aa44392ccf0c4a3bb86b0f99122fa1fe5ab56dc6c57456dd6a01dc4b1e697800",
+  "checkpoint_sha256": "d164cb6f7fa7f5b96679f844d99b29403b18904f11312271100fafce87fa4b60",
+  "selection_sha256": "67b374611a158d20109a89aa17f2ebbc871a3f77da79da306702c700691177a3",
+  "input_sha256": "9ea5763ce218871f4bc2d5349895e01d4ccce22fd2db8041475442031a78c4d7",
+  "source_manifest_sha256": "40ae3cc893472c7585359a6a9fc02353c525956bec941c37a6a3f46a13e712b6",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "variant": "legacy_recipe"
+}
