@@ -28,20 +28,20 @@ Test whether composing a frozen Step score with a conditional Prefix head improv
 | SAPLMA decomposition, all-position BCE | 0.8026 | 0.7846 |
 | Original direct Streaming | 0.8256 | 0.8222 |
 | Streaming decomposition, Step-negative BCE | 0.8240 | 0.8242 |
-| Streaming decomposition, all-position BCE |  | 0.8258 |
+| Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
 
 ### AUROC change from Step-negative training (percentage points)
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | SAPLMA all-position BCE | +1.10 | +1.09 |
-| Streaming all-position BCE |  | +0.15 |
+| Streaming all-position BCE | -0.02 | +0.15 |
 
 ### AUROC change from the original direct Prefix baseline (percentage points)
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | SAPLMA all-position BCE | -0.52 | +0.03 |
-| Streaming all-position BCE |  | +0.36 |
+| Streaming all-position BCE | -0.18 | +0.36 |
 
-Completed cells are independently verified from saved TEST predictions. Blank cells are pending.
+All eight decomposition results were independently verified from saved TEST predictions.

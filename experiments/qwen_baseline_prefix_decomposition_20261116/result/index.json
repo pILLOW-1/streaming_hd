@@ -248,6 +248,47 @@
         "AUROC": 0.01100842871440666,
         "AP": 0.03413040336179912
       }
+    },
+    "streaming_all_positions": {
+      "domain": "Logic",
+      "method": "streaming",
+      "position_count": 15233,
+      "train_position_count": 25266,
+      "conditional_train_count": 24889,
+      "all_positions": true,
+      "selected": {
+        "layer": 64,
+        "epoch": 2,
+        "AUROC": 0.892095694605113,
+        "AP": 0.49880120779146286
+      },
+      "threshold": 0.16171002388000488,
+      "test_sha": "25da89223d7fe6c063af895166aef4c016cd95d5d2406ee46b9461cb33df15ad",
+      "TEST": {
+        "AUROC": 0.8238588504841139,
+        "AP": 0.39758913097639337
+      },
+      "direct_prefix": {
+        "AUROC": 0.8256170870633168,
+        "AP": 0.3980587710128847
+      },
+      "delta": {
+        "AUROC": -0.001758236579202932,
+        "AP": -0.0004696400364913589
+      },
+      "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+      "reference_label_sha": "5e252431168261bd2bc6251e1f927d12956fc8c87db7a73d43aaedb725a3a633",
+      "selected_checkpoint_sha": "284331e7653bde4a6c50168f381695f3e3e7625aef78d5aaaed9dfdd25fd074f",
+      "source_result_sha": "f9bc18f67f39bb834c29c738dadf7972b093017e6d9f1ed394f007dc9da47b40",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+      "step_negative_prefix": {
+        "AUROC": 0.824012799859874,
+        "AP": 0.40016869053752846
+      },
+      "delta_vs_step_negative": {
+        "AUROC": -0.00015394937576007628,
+        "AP": -0.002579559561135092
+      }
     }
   }
 }
