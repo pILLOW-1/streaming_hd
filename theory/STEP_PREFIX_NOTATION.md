@@ -2,144 +2,151 @@
 
 ---
 
-## 1. Notation
+## 1. Learning setup
 
-| Symbol | Meaning |
-|---|---|
-| $X_0$ | The problem, including options or supplied materials, with the model's internal signals (hidden states) on it |
-| $S_t$ | Text of reasoning step $t$, $t=1,\dots,T$, segmented by the annotation manual |
-| $X_t$ | Observation of step $t$: the text $S_t$ and the model's internal signals on it |
-| $X_{0:t}$ | Observed history up to step $t$: $X_{0:t}=(X_0,X_1,\dots,X_t)$ |
-| $Y_t\in\lbrace 0,1\rbrace$ | Step label: whether step $t$ introduces a new committed error that cannot be attributed solely to inherited erroneous premises |
-| $C_t\in\lbrace 0,1\rbrace$ | Prefix label: whether, after step $t$, an unresolved error remains, i.e. one that is still endorsed or used and has not been explicitly retracted or replaced |
-| $\pi^Y_t$ | Step error probability: $\pi^Y_t=P(Y_t=1\mid X_{0:t})$ |
-| $\pi^C_t$ | Prefix error probability: $\pi^C_t=P(C_t=1\mid X_{0:t})$ |
-| $X_A$ | Observation of the final answer: its text and the model's internal signals on it |
-| $A\in\lbrace 0,1\rbrace$ | Answer label: whether the final answer is wrong; the Answer Judge sees only the final answer |
-| $\pi^A$ | Answer error probability: $\pi^A=P(A=1\mid X_{0:T}, X_A)$ |
+**LLMs and token sequences.** We model an LLM as a conditional distribution $\mathbb{P}_{\theta}(\cdot)$ over token sequences, where $\theta$ denotes the model parameters. Given an input token sequence $\mathbf{Q}=[x_1,\dots,x_k]$, representing the problem together with any options or supplied materials, the LLM generates autoregressively a reasoning token sequence $\mathbf{R}=[x_{k+1},\dots,x_{k+m}]$ followed by a final-answer token sequence $\mathbf{A}=[x_{k+m+1},\dots,x_{k+m+l}]$. Each token is predicted from the preceding tokens, $\mathbb{P}_{\theta}(x_j\mid x_1,\dots,x_{j-1})$ for $j=k+1,\dots,k+m+l$.
 
-**Convention.** Upper-case letters are random variables and lower-case letters are their values. Every conditional probability names its conditioning variables explicitly. A quantity such as $\pi^Y_t=P(Y_t=1\mid X_{0:t})$ is itself a random variable, a function of the history; its value at an observed history is $\pi^Y_t(x_{0:t})=P(Y_t=1\mid X_{0:t}=x_{0:t})$. A detector is any function of the same variables, for example $q_t=q(X_{0:t})$.
-
-**Meaning of probability.** Probabilities are taken over the data distribution. The randomness has three sources: the sampled problem, the reasoning produced by the generator, and the labels assigned by the Judge. Whatever is not determined by $X_{0:t}$ is the source of uncertainty in $\pi^Y_t$ and $\pi^C_t$.
-
-**Manual constraints.** The label definitions impose two hard constraints:
+**Reasoning steps and prefixes.** The annotation manual segments the reasoning into $T$ consecutive steps. With boundaries $k=i_0<i_1<\dots<i_T=k+m$, step $t$ is the token sequence
 
 ```math
-Y_t=1 \;\Rightarrow\; C_t=1 ,
+\mathbf{S}_t=[x_{i_{t-1}+1},\dots,x_{i_t}],\qquad t=1,\dots,T ,
 ```
+
+so that $\mathbf{R}=[\mathbf{S}_1,\dots,\mathbf{S}_T]$. The prefix up to step $t$ is $\mathbf{S}_{1:t}=[\mathbf{S}_1,\dots,\mathbf{S}_t]$, and $\mathbf{S}_{1:T}=\mathbf{R}$.
+
+**Internal representations.** Let $L$ be the number of layers of $\mathbb{P}_{\theta}$ and $d$ its hidden dimension. For the input $(\mathbf{Q},\mathbf{S}_{1:t})$ with $i_t$ tokens, the hidden representation at layer $\ell\in\lbrace 1,\dots,L\rbrace$ is $\mathbf{H}^{\ell}_{\theta}(\mathbf{Q},\mathbf{S}_{1:t})\in\mathbb{R}^{i_t\times d}$, and $\mathbf{h}^{\ell}_{\theta,j}(\mathbf{Q},\mathbf{S}_{1:t})\in\mathbb{R}^{d}$ is the representation of the $j$-th token. For a fixed model these representations are functions of the token sequences.
+
+**Labels.** Three binary labels are assigned by a Judge following the annotation manual; the value $1$ always denotes an error.
+
+| Label | Level | Meaning |
+|---|---|---|
+| $y^{\mathrm{S}}_t\in\lbrace 0,1\rbrace$ | Step | The step introduces a new committed error that cannot be attributed solely to inherited erroneous premises |
+| $y^{\mathrm{P}}_t\in\lbrace 0,1\rbrace$ | Prefix | After the step an unresolved error remains, i.e. one that is still endorsed or used and has not been explicitly retracted or replaced |
+| $y^{\mathrm{A}}\in\lbrace 0,1\rbrace$ | Answer | The final answer $\mathbf{A}$ is wrong; the Answer Judge sees only the final answer |
+
+All labels are written $y$; the superscript names the level: $\mathrm{S}$ for Step, $\mathrm{P}$ for Prefix and $\mathrm{A}$ for Answer. Every label is a value in $\lbrace 0,1\rbrace$ fixed by the trajectory; it is not a probability.
+
+**Manual constraint.** The label definitions impose one hard constraint: a step that introduces a new error leaves an unresolved error.
 
 ```math
-C_{t-1}=0 \;\Rightarrow\; C_t=Y_t ,\qquad C_0=0 .
+y^{\mathrm{S}}_t=1 \;\Rightarrow\; y^{\mathrm{P}}_t=1 .
 ```
 
-The second holds because, when the prefix before step $t$ has no unresolved error, any unresolved error after step $t$ cannot be inherited, so it is a new error of step $t$. The empty prefix is clean.
+**Domain and dataset.** Let $Q$ be a random variable representing problems and $\mathbb{P}_{Q}$ its distribution. For a sampled problem $\mathbf{Q}\sim\mathbb{P}_{Q}$ the LLM generates $(\mathbf{R},\mathbf{A})\sim\mathbb{P}_{\theta}(\cdot\mid\mathbf{Q})$, and the Judge assigns the labels. This yields the dataset
+
+```math
+\mathcal{D}=\Big\lbrace\big(\mathbf{Q}^{n},\,\mathbf{R}^{n},\,\mathbf{A}^{n},\,y^{\mathrm{S},n}_{1:T_n},\,y^{\mathrm{P},n}_{1:T_n},\,y^{\mathrm{A},n}\big)\Big\rbrace_{n=1}^{N},
+```
+
+where $T_n$ is the number of steps of the $n$-th trajectory.
+
+**Problem 1 (Streaming hallucination detection).** Given the dataset $\mathcal{D}$ constructed from $\mathbb{P}_{Q}$ and the LLM $\mathbb{P}_{\theta}$, the goal is to learn three detectors $D^{\mathrm{S}}$, $D^{\mathrm{P}}$ and $D^{\mathrm{A}}$ whose output probabilities match the labels.
+
+- While the reasoning is generated, at every step $t$ the Step detector $D^{\mathrm{S}}$ and the Prefix detector $D^{\mathrm{P}}$ read $(\mathbf{Q},\mathbf{S}_{1:t})$ and the internal representations of $\mathbb{P}_{\theta}$ on them.
+- After the final answer is generated, the Answer detector $D^{\mathrm{A}}$ reads $(\mathbf{Q},\mathbf{R},\mathbf{A})$ and the internal representations of $\mathbb{P}_{\theta}$ on them.
+
+**Detector probabilities.** The labels are $0$ or $1$, so there is no separate true probability to estimate. All probabilities in this document are outputs of the detectors. Each detector defines a predictive distribution over labels given what it has read: $\mathbb{P}_{D^{\mathrm{S}}}$ over $y^{\mathrm{S}}_t$; $\mathbb{P}_{D^{\mathrm{P}}}$ jointly over $(y^{\mathrm{S}}_t,y^{\mathrm{P}}_t)$, taking the probability of $y^{\mathrm{S}}_t$ from the Step detector and giving zero probability to the pair excluded by the manual constraint; and $\mathbb{P}_{D^{\mathrm{A}}}$ jointly over $(y^{\mathrm{P}}_T,y^{\mathrm{A}})$, taking the probability of $y^{\mathrm{P}}_T$ from the Prefix detector. The three error probabilities are
+
+```math
+\pi^{\mathrm{S}}_t=\mathbb{P}_{D^{\mathrm{S}}}(y^{\mathrm{S}}_t=1\mid \mathbf{Q},\mathbf{S}_{1:t}),\qquad
+\pi^{\mathrm{P}}_t=\mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1\mid \mathbf{Q},\mathbf{S}_{1:t}),\qquad
+\pi^{\mathrm{A}}=\mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{A}}=1\mid \mathbf{Q},\mathbf{R},\mathbf{A}).
+```
 
 ---
 
-## 2. Relation between the two error probabilities
+## 2. Relation between the Step and Prefix error probabilities
 
 ### 2.1 Three mutually exclusive outcomes per step
 
-By the first manual constraint, the pair $(Y_t, C_t)$ takes exactly one of three values:
+By the manual constraint, the pair $(y^{\mathrm{S}}_t, y^{\mathrm{P}}_t)$ takes exactly one of three values:
 
-| Outcome | Labels | Probability |
+| Outcome | Labels | Probability under $D^{\mathrm{P}}$ |
 |---|---|---|
-| Step $t$ introduces a new error | $Y_t=1$ | $\pi^Y_t$ |
-| No new error, but an earlier error is still active | $Y_t=0,\ C_t=1$ | $\psi_t$ |
-| Clean | $C_t=0$ | $1-\pi^Y_t-\psi_t$ |
+| The step introduces a new error | $y^{\mathrm{S}}_t=1$ | $\pi^{\mathrm{S}}_t$ |
+| No new error, but an earlier error is still unresolved | $y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1$ | $\psi_t$ |
+| Clean | $y^{\mathrm{P}}_t=0$ | $1-\pi^{\mathrm{S}}_t-\psi_t$ |
 
 where
 
 ```math
-\psi_t = P(Y_t=0,\,C_t=1\mid X_{0:t}).
+\psi_t = \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{S}}_t=0,\,y^{\mathrm{P}}_t=1\mid \mathbf{Q},\mathbf{S}_{1:t}).
 ```
 
-The three outcomes are exhaustive and mutually exclusive, so $\pi^Y_t+\psi_t+(1-\pi^Y_t-\psi_t)=1$.
-
-Step is the first outcome; Prefix is the first two:
+The three outcomes are exhaustive and mutually exclusive. Step is the first outcome; Prefix is the first two:
 
 ```math
-\boxed{\;\pi^C_t = \pi^Y_t + \psi_t\;}
+\boxed{\;\pi^{\mathrm{P}}_t = \pi^{\mathrm{S}}_t + \psi_t\;}
 ```
 
-All three probabilities are computable: every position's labels $(Y_t, C_t)$ fall into exactly one of the three classes.
+All three probabilities can be supervised directly: every position's labels $(y^{\mathrm{S}}_t, y^{\mathrm{P}}_t)$ fall into exactly one of the three classes.
 
-### 2.2 Derivation over $Y_t$
+### 2.2 Derivation over $y^{\mathrm{S}}_t$
+
+All probabilities in this derivation are conditional on $(\mathbf{Q},\mathbf{S}_{1:t})$, which is omitted for brevity.
 
 ```math
 \begin{aligned}
-\pi^C_t &= P(C_t=1\mid X_{0:t})\\[2pt]
-&= P(C_t=1,\,Y_t=1\mid X_{0:t}) + P(C_t=1,\,Y_t=0\mid X_{0:t}) && \text{total probability over } Y_t\\[2pt]
-&= P(Y_t=1\mid X_{0:t}) + P(C_t=1,\,Y_t=0\mid X_{0:t}) && \{Y_t=1\}\subseteq\{C_t=1\}\text{ (first constraint)}\\[2pt]
-&= \pi^Y_t + \psi_t && \text{definitions}\\[2pt]
-&= \pi^Y_t + P(Y_t=0\mid X_{0:t})\,P(C_t=1\mid Y_t=0,\,X_{0:t}) && \text{chain rule}\\[2pt]
-&= \pi^Y_t + (1-\pi^Y_t)\,\kappa_t && \text{definitions}
+\pi^{\mathrm{P}}_t &= \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1)\\[2pt]
+&= \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1,\,y^{\mathrm{S}}_t=1) + \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1,\,y^{\mathrm{S}}_t=0) && \text{total probability over } y^{\mathrm{S}}_t\\[2pt]
+&= \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{S}}_t=1) + \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1,\,y^{\mathrm{S}}_t=0) && \text{manual constraint}\\[2pt]
+&= \pi^{\mathrm{S}}_t + \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{S}}_t=0)\,\mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1\mid y^{\mathrm{S}}_t=0) && \text{definition of } \pi^{\mathrm{S}}_t \text{ and chain rule}\\[2pt]
+&= \pi^{\mathrm{S}}_t + (1-\pi^{\mathrm{S}}_t)\,\kappa_t && \text{definition of } \kappa_t
 \end{aligned}
 ```
 
 where
 
 ```math
-\kappa_t = P(C_t=1\mid Y_t=0,\,X_{0:t})
+\kappa_t = \mathbb{P}_{D^{\mathrm{P}}}(y^{\mathrm{P}}_t=1\mid y^{\mathrm{S}}_t=0,\,\mathbf{Q},\mathbf{S}_{1:t})
 ```
 
-is the probability that an earlier error is still active, given that step $t$ introduces no new error.
+is the probability that an earlier error is still unresolved, given that step $t$ introduces no new error.
 
 ```math
-\boxed{\;\pi^C_t = \pi^Y_t + (1-\pi^Y_t)\,\kappa_t\;}
+\boxed{\;\pi^{\mathrm{P}}_t = \pi^{\mathrm{S}}_t + (1-\pi^{\mathrm{S}}_t)\,\kappa_t\;}
 ```
 
 ---
 
-## 3. Answer error probability
+## 3. Relation between the Prefix and Answer error probabilities
 
-The Answer error probability conditions on the whole trajectory, the reasoning and the final answer. Write $Z=(X_{0:T},X_A)$ for these conditioning variables:
+The Answer error probability is linked to the Prefix label at the end of reasoning, $y^{\mathrm{P}}_T$.
 
-```math
-\pi^A = P(A=1\mid Z).
-```
+### 3.1 Four outcomes for the answer
 
-It is linked to the Prefix label at the end of reasoning, $C_T$.
+The manual imposes no hard constraint between $y^{\mathrm{P}}_T$ and $y^{\mathrm{A}}$, so all four combinations can occur:
 
-### 3.1 The answer adds no information about the terminal Prefix label
-
-The Prefix label is assigned from the problem and the reasoning steps only; the Prefix Judge does not see the final answer. Given the reasoning, the remaining randomness of $C_T$ is the Judge's own, which is independent of the answer. Hence
-
-```math
-C_T \perp X_A \mid X_{0:T},
-\qquad\text{so}\qquad
-P(C_T=1\mid Z)=P(C_T=1\mid X_{0:T})=\pi^C_T .
-```
-
-### 3.2 Four outcomes for the answer
-
-The manual imposes no hard constraint between $C_T$ and $A$, so all four combinations can occur:
-
-| Outcome | Labels | Probability given $Z$ |
+| Outcome | Labels | Probability under $D^{\mathrm{A}}$ |
 |---|---|---|
-| An unresolved error remains, and the answer is wrong | $C_T=1,\ A=1$ | $\pi^C_T\, a^1$ |
-| An unresolved error remains, but it does not reach the answer | $C_T=1,\ A=0$ | $\pi^C_T(1-a^1)$ |
-| Reasoning is clean, yet the answer is wrong | $C_T=0,\ A=1$ | $(1-\pi^C_T)\,a^0$ |
-| Reasoning is clean, and the answer is correct | $C_T=0,\ A=0$ | $(1-\pi^C_T)(1-a^0)$ |
+| An unresolved error remains, and the answer is wrong | $y^{\mathrm{P}}_T=1,\ y^{\mathrm{A}}=1$ | $\pi^{\mathrm{P}}_T\, \alpha_1$ |
+| An unresolved error remains, but it does not reach the answer | $y^{\mathrm{P}}_T=1,\ y^{\mathrm{A}}=0$ | $\pi^{\mathrm{P}}_T(1-\alpha_1)$ |
+| Reasoning is clean, yet the answer is wrong | $y^{\mathrm{P}}_T=0,\ y^{\mathrm{A}}=1$ | $(1-\pi^{\mathrm{P}}_T)\,\alpha_0$ |
+| Reasoning is clean, and the answer is correct | $y^{\mathrm{P}}_T=0,\ y^{\mathrm{A}}=0$ | $(1-\pi^{\mathrm{P}}_T)(1-\alpha_0)$ |
 
-where
+where, for $c\in\lbrace 0,1\rbrace$,
 
 ```math
-a^1 = P(A=1\mid C_T=1,\,Z),\qquad a^0 = P(A=1\mid C_T=0,\,Z).
+\alpha_c = \mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{A}}=1\mid y^{\mathrm{P}}_T=c,\,\mathbf{Q},\mathbf{R},\mathbf{A})
 ```
 
-### 3.3 Derivation over $C_T$
+is the probability of a wrong answer given the terminal Prefix label.
+
+### 3.2 Derivation over $y^{\mathrm{P}}_T$
+
+All probabilities in this derivation are conditional on $(\mathbf{Q},\mathbf{R},\mathbf{A})$, which is omitted for brevity.
 
 ```math
 \begin{aligned}
-\pi^A &= P(C_T=1,\,A=1\mid Z) + P(C_T=0,\,A=1\mid Z) && \text{total probability over } C_T\\[2pt]
-&= P(C_T=1\mid Z)\,P(A=1\mid C_T=1,\,Z) + P(C_T=0\mid Z)\,P(A=1\mid C_T=0,\,Z) && \text{chain rule}\\[2pt]
-&= \pi^C_T\, a^1 + (1-\pi^C_T)\,a^0 && \text{Section 3.1 and definitions}
+\pi^{\mathrm{A}} &= \mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{A}}=1)\\[2pt]
+&= \mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{P}}_T=1,\,y^{\mathrm{A}}=1) + \mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{P}}_T=0,\,y^{\mathrm{A}}=1) && \text{total probability over } y^{\mathrm{P}}_T\\[2pt]
+&= \mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{P}}_T=1)\,\alpha_1 + \mathbb{P}_{D^{\mathrm{A}}}(y^{\mathrm{P}}_T=0)\,\alpha_0 && \text{chain rule and the definition of } \alpha_c\\[2pt]
+&= \pi^{\mathrm{P}}_T\, \alpha_1 + (1-\pi^{\mathrm{P}}_T)\,\alpha_0 && \text{definition of } \pi^{\mathrm{P}}_T
 \end{aligned}
 ```
 
 ```math
-\boxed{\;\pi^A = \pi^C_T\, a^1 + (1-\pi^C_T)\,a^0\;}
+\boxed{\;\pi^{\mathrm{A}} = \pi^{\mathrm{P}}_T\, \alpha_1 + (1-\pi^{\mathrm{P}}_T)\,\alpha_0\;}
 ```
 
-Prefix has the same form over $Y_t$, $\pi^C_t=\pi^Y_t\cdot 1+(1-\pi^Y_t)\,\kappa_t$, where the first conditional is fixed to $1$ by the manual constraint $Y_t=1\Rightarrow C_t=1$. Answer has no such constraint, so both conditionals $a^1$ and $a^0$ remain free.
+Prefix has the same form over $y^{\mathrm{S}}_t$, $\pi^{\mathrm{P}}_t=\pi^{\mathrm{S}}_t\cdot 1+(1-\pi^{\mathrm{S}}_t)\,\kappa_t$, where the first conditional is fixed to $1$ by the manual constraint. Answer has no such constraint, so both conditionals $\alpha_1$ and $\alpha_0$ remain free.

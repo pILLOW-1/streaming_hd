@@ -1,35 +1,37 @@
-# Prefix detectors track whether an error occurred, not whether it is still active
+# Prefix detectors track whether an error occurred, not whether it is still unresolved
 
 ## Motivation
 
 The [notation document](../../theory/STEP_PREFIX_NOTATION.md) writes Prefix error probability as
 
 ```math
-\pi^C_t=\pi^Y_t+(1-\pi^Y_t)\kappa_t,\qquad \kappa_t=P(C_t=1\mid Y_t=0, X_{0:t}).
+\pi^{\mathrm{P}}_t=\pi^{\mathrm{S}}_t+(1-\pi^{\mathrm{S}}_t)\,\kappa_t ,
 ```
 
-The [composition analysis](../step_prefix_composition_20261111/README.md) shows that about 85% of Prefix positives are inherited (Y=0, C=1). Prefix detection is therefore mostly a matter of κ: when the current Step adds no new error, is an earlier error still active?
+where $\kappa_t$ is the probability that an earlier error is still unresolved given that step $t$ introduces no new error.
 
-A detector can approximate this with a weaker cue: whether any error has occurred earlier in the trajectory. Both cues agree before the first error. They disagree only after an error has been corrected. We use those positions to test which cue a detector actually uses.
+The [composition analysis](../step_prefix_composition_20261111/README.md) shows that about 85% of Prefix positives are inherited ($y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1$). Prefix detection is therefore mostly a matter of $\kappa_t$: when the current Step adds no new error, is an earlier error still unresolved?
 
-![Separation of still-active errors from clean positions, per detector](result/figure.png)
+A detector can approximate this with a weaker cue: whether any error has occurred earlier in the trajectory. Both cues agree before the first error. They disagree only after an error has been resolved. We use those positions to test which cue a detector actually uses.
 
-*Figure. AUROC of each detector's Prefix score on TEST. The positive class is always the same: positions with an inherited error (Y=0, C=1). Circle: against clean positions with no error so far in their trajectory. Square: against clean positions that follow a correction, over all pairs, most of which join different trajectories. Diamond: the same two classes, but pairing only positions of the same trajectory; the AUROC is computed inside each trajectory and averaged over trajectories. Each value is the mean over generator/domain combinations (15 per detector, 11 for ICR Probe). The dashed line marks chance.*
+![Separation of unresolved errors from clean positions, per detector](result/figure.png)
+
+*Figure. AUROC of each detector's Prefix score on TEST. The positive class is always the same: positions with an inherited error ($y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1$). Circle: against fresh clean positions, which have no error so far in their trajectory. Square: against recovered clean positions, over all pairs, most of which join different trajectories. Diamond: the same two classes, but pairing only positions of the same trajectory; the AUROC is computed inside each trajectory and averaged over trajectories. Each value is the mean over generator/domain combinations (15 per detector, 11 for ICR Probe). The dashed line marks chance.*
 
 ## Analysis settings
 
-On TEST positions with Y=0, the positive class is **inherited** (C=1). Negatives are split by history:
+On TEST positions with $y^{\mathrm{S}}_t=0$, the positive class is **inherited** ($y^{\mathrm{P}}_t=1$). Negatives are split by history:
 
 | Negative | Definition | What separates it from inherited |
 |---|---|---|
-| fresh clean | C=0, no earlier C=1 in the trajectory | "an error occurred" suffices |
-| recovered clean | C=0, some earlier C=1 in the trajectory | requires "the error is still active" |
+| fresh clean | $y^{\mathrm{P}}_t=0$, no earlier $y^{\mathrm{P}}_t=1$ in the trajectory | "an error occurred" suffices |
+| recovered clean | $y^{\mathrm{P}}_t=0$, some earlier $y^{\mathrm{P}}_t=1$ in the trajectory | requires "the error is still unresolved" |
 
 - **AUROC_fresh:** inherited vs fresh clean.
 - **AUROC_rec:** inherited vs recovered clean.
 - **gap:** AUROC_fresh − AUROC_rec.
 
-A detector that tracks κ itself has a small gap. A detector that tracks only "an error occurred" has a high AUROC_fresh and a low AUROC_rec.
+A detector that tracks $\kappa_t$ itself has a small gap. A detector that tracks only "an error occurred" has a high AUROC_fresh and a low AUROC_rec.
 
 Each AUROC is further split by where the two positions of a pair come from:
 
@@ -88,7 +90,7 @@ Values are means over combinations.
 
 ### 3. Within a trajectory, detectors mark the first error but not later corrections
 
-Errors and corrections alternate within trajectories: 94.9% of TEST inherited positions are preceded by at least one correction (Prefix 1→0) in their own trajectory. Whether an error is still active is therefore mainly a within-trajectory question.
+Errors and corrections alternate within trajectories: 94.9% of TEST inherited positions are preceded by at least one correction (Prefix 1→0) in their own trajectory. Whether an error is still unresolved is therefore mainly a within-trajectory question.
 
 Within-trajectory pairs, however, are only 2.1% of inherited–recovered pairs on average (at most 11.5%), so AUROC_rec above mostly measures between-trajectory pairs.
 
@@ -103,7 +105,7 @@ Within-trajectory pairs, however, are only 2.1% of inherited–recovered pairs o
 Values are means over combinations (15 per detector, 11 for ICR Probe).
 
 - Inside a trajectory, positions before the first error are separated from later inherited positions: within-trajectory fresh AUROC averages 0.947.
-- After the first error, active and corrected positions of the same trajectory are barely separated:
+- After the first error, inherited and recovered positions of the same trajectory are barely separated:
   - within-trajectory recovered AUROC averages 0.595 (range 0.232–0.863);
   - its trajectory mean averages 0.537, close to chance.
 - Within-trajectory recovered AUROC is below its between-trajectory value in 56 of 71 detector–combination pairs. The ≈ 0.66 of AUROC_rec therefore comes mainly from differences between trajectories.
@@ -125,9 +127,9 @@ The pattern is the same and slightly stronger on TEST. The VAL files in `result/
 
 ## Interpretation
 
-Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of κ, the probability that an earlier error is still active. Within a trajectory, their scores rise at the first error but do not follow later corrections and renewed errors. What remains across trajectories reflects differences in their overall level.
+Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of $\kappa_t$, the probability that an earlier error is still unresolved. Within a trajectory, their scores rise at the first error but do not follow later corrections and renewed errors. What remains across trajectories reflects differences in their overall level.
 
-This suggests focusing on how to model κ better, so that corrected errors can be distinguished from errors that are still active. The within-trajectory recovered AUROC, especially its trajectory mean, measures this distinction more directly than AUROC_rec, which between-trajectory differences inflate.
+This suggests focusing on how to model $\kappa_t$ better, so that recovered positions can be distinguished from positions whose error is still unresolved. The within-trajectory recovered AUROC, especially its trajectory mean, measures this distinction more directly than AUROC_rec, which between-trajectory differences inflate.
 
 ## Limitations
 

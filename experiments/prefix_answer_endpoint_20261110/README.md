@@ -17,21 +17,21 @@ Here, reasoning correctness is operationalized by the label of the **final retai
 | Dataset | Retained Streaming HD, 6:2:2, TEST target p >= 70%, with frozen per-combination relaxations |
 | Scope | Three generators, five domains; TRAIN + VAL + TEST |
 | Unit | One retained model-specific trajectory |
-| Prefix endpoint | Last retained Prefix label, C_T |
-| Answer label | Independently assigned Answer label, A |
+| Prefix endpoint | Last retained Prefix label, $y^{\mathrm{P}}_T$ |
+| Answer label | Independently assigned Answer label, $y^{\mathrm{A}}$ |
 | Denominator | All trajectories in the corresponding model/domain group |
 | Computation | Exact label counts; no detector training or model inference |
 | Integrity checks | Complete binary labels, matched Step/Prefix lengths, unique sample IDs across splits, source SHA256, all 15,697 trajectories |
 
 ## Overall results
 
-| Final Prefix | Answer clean (A=0) | Answer erroneous (A=1) |
+| Final Prefix | Answer clean ($y^{\mathrm{A}}=0$) | Answer erroneous ($y^{\mathrm{A}}=1$) |
 |---|---:|---:|
-| Clean (C_T=0) | 7,792 | **1,779** |
-| Erroneous (C_T=1) | **2,175** | 3,951 |
+| Clean ($y^{\mathrm{P}}_T=0$) | 7,792 | **1,779** |
+| Erroneous ($y^{\mathrm{P}}_T=1$) | **2,175** | 3,951 |
 
-- **C_T=1, A=0:** 2,175 / 15,697 (**13.86%**).
-- **C_T=0, A=1:** 1,779 / 15,697 (**11.33%**).
+- **$y^{\mathrm{P}}_T=1,\ y^{\mathrm{A}}=0$:** 2,175 / 15,697 (**13.86%**).
+- **$y^{\mathrm{P}}_T=0,\ y^{\mathrm{A}}=1$:** 1,779 / 15,697 (**11.33%**).
 - **Either mismatch:** 3,954 / 15,697 (**25.19%**).
 
 Conditional on an erroneous final Prefix, **35.50%** of Answers are clean; conditional on a clean final Prefix, **18.59%** of Answers are erroneous. These conditional percentages have different denominators from the table below.
@@ -40,7 +40,7 @@ Conditional on an erroneous final Prefix, **35.50%** of Answers are clean; condi
 
 Counts and percentages use all trajectories in each generator/domain as the denominator.
 
-| Generator | Domain | Trajectories | C_T=1, A=0 | C_T=0, A=1 |
+| Generator | Domain | Trajectories | $y^{\mathrm{P}}_T=1,\ y^{\mathrm{A}}=0$ | $y^{\mathrm{P}}_T=0,\ y^{\mathrm{A}}=1$ |
 |---|---|---:|---:|---:|
 | DS-L8 | Math | 1,028 | 80 (7.78%) | 39 (3.79%) |
 | DS-L8 | Science | 1,059 | 197 (18.60%) | 87 (8.22%) |
