@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 5
+  turn_count: 6
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T11:09:13+11:00"
+  last_turn: "2026-11-16T11:27:39+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -57,5 +57,17 @@ events_logged:
   routing: direct
   provenance: ai-executed
   summary: "RunPod completed all 64 candidates and one frozen TEST evaluation. Cetus verified all three artifact hashes and independently recomputed the metrics over 5489 Step positions with exactly matched reference labels. Selected layer 42, epoch 1. TEST Step AUROC 0.8767371486066223, AP 0.42808691813851907, BCE 0.2254571658358661."
+- turn: 6
+  type: decision
+  id: N12813583
+  routing: direct
+  provenance: user
+  summary: "Allocate one additional 16 GB RunPod GPU to parallelize remaining Logic and Factuality Step-only training on the existing feature volume."
+- turn: 6
+  type: experiment
+  id: N12813584
+  routing: direct
+  provenance: ai-executed
+  summary: "The new RTX 2000 Ada Pod was allocated at US$0.24/hour. Six disjoint shards were assigned under existing launcher locks. The original GPU continued Logic representation while the second GPU loaded and began Factuality residual aggregation layer 2, skipping the accepted CPU layer 1. Both training processes were observed on their respective cards."
 claims_touched: []
 open_threads: []

@@ -1,0 +1,16 @@
+{
+  "event": "launch",
+  "observed_at_AEDT": "2026-11-16T11:27:39+11:00",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "configuration_commit": "a6aba16fa40332fdf42e6a92b9f4f6b3a1c6d92f",
+  "state": {
+    "primary": "Logic representation on GPU",
+    "secondary": "Factuality residual aggregation layer 2 on GPU"
+  },
+  "new_confirmed_test_results": 0,
+  "resources": {
+    "gpu_pods": 2,
+    "gpu_usd_per_hour": 0.48
+  }
+}

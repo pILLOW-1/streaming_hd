@@ -15,6 +15,16 @@ out="$root/$domain/$arm/$side"
 mkdir -p "$out"
 exec 9>"$out/.launcher.lock"
 flock -n 9
+if [[ "$device" == cuda && -f "$root/GPU2_PENDING.list" ]]; then
+    owner=primary
+    if grep -Fxq -- "$domain $arm $side" "$root/GPU2_PENDING.list"; then
+        owner=secondary
+    fi
+    if [[ "${STEP_GPU_OWNER:-primary}" != "$owner" ]]; then
+        printf 'Assigned to %s GPU %s %s %s\n' "$owner" "$domain" "$arm" "$side"
+        exit 0
+    fi
+fi
 case "$side" in
     lower) first=1; last=32 ;;
     upper) first=33; last=64 ;;
