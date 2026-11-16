@@ -90,8 +90,3 @@ $\kappa$ is trained with the Prefix cross-entropy of the composed score on all p
 - Prefix results are reported overall, by position type (new, inherited, recovered, fresh) and within trajectories.
 
 **Merge point.** When the three lines are finalized, the full chain is composed from our own Step, Prefix and Answer parts and compared with the baselines on all three levels. A jointly fine-tuned version is run once as an ablation.
-
-**Open questions.**
-
-- How to train $\alpha_1$ and $\alpha_0$.
-- How the Prefix state evolves over time. The only label constraint links Step and Prefix at the same position, so a recursion over steps needs an explicit assumption on whether a resolved error can become unresolved again without a new Step error.
