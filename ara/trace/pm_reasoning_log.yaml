@@ -665,3 +665,4 @@ entries:
   - {"turn": "2026-11-16_001#9", "notes": ["Record only the independently accepted TEST result from the saved predictions."]}
   - {"turn": "2026-11-16_001#21", "notes": ["Record the experiment-scope decision and pinned comparison table. No TEST result or scientific claim is implied."]}
   - {"turn": "2026-11-16_001#22", "notes": ["Record the experiment-scope decision and pinned comparison table. No TEST result or scientific claim is implied."]}
+  - {"turn": "2026-11-17_001#1", "notes": ["Record the scientific configuration and frozen-score comparison. Keep both TEST cells empty pending verified results."]}
