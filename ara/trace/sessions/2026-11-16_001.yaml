@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 14
+  turn_count: 15
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T16:08:56+11:00"
+  last_turn: "2026-11-16T16:39:28+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -93,5 +93,7 @@ events_logged:
 - {"turn": 12, "type": "decision", "id": "N12813594", "routing": "direct", "provenance": "user", "summary": "Add fixed Streaming token aggregation for Qwen Logic, Factuality and Science with the existing standalone legacy Step training recipe."}
 - {"turn": 13, "type": "decision", "id": "N12813595", "routing": "direct", "provenance": "user", "summary": "Evaluate the Prefix decomposition on SAPLMA and Streaming in Qwen Logic and Factuality. Apply BCE to the composed Prefix output on Step-negative positions. Use the same frozen Step heads and permit one additional TRAIN scoring pass while reusing saved VAL and TEST scores."}
 - {"turn": 14, "type": "experiment", "id": "N12813596", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed Prefix TEST metrics on 5489 matched positions. With composed Prefix BCE, AUROC 0.77369694 and AP 0.71364047, versus direct SAPLMA 0.78423557 AUROC and 0.73438105 AP."}
+- {"turn": 15, "type": "experiment", "id": "N12813597", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed Prefix TEST on 15233 positions. Composed Prefix AUROC 0.79162098, AP 0.31969805; direct baseline AUROC 0.80781616, AP 0.36378488."}
+- {"turn": 15, "type": "experiment", "id": "N12813598", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed Prefix TEST on 5489 positions. Composed Prefix AUROC 0.82423242, AP 0.78783626; direct baseline AUROC 0.82220441, AP 0.79024364."}
 claims_touched: []
 open_threads: []

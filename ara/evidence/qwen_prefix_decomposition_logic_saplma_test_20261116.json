@@ -1,0 +1,32 @@
+{
+  "published_result": "https://github.com/pILLOW-1/streaming_hd/blob/7babbceb54dcb149814d2649cdf9380dc02200e6/experiments/qwen_baseline_prefix_decomposition_20261116/result/Logic/saplma.json",
+  "domain": "Logic",
+  "method": "saplma",
+  "position_count": 15233,
+  "conditional_train_count": 24889,
+  "selected": {
+    "layer": 2,
+    "epoch": 5,
+    "AUROC": 0.8680982541962056,
+    "AP": 0.4650709335839779
+  },
+  "threshold": 0.1865454912185669,
+  "test_sha": "025d1c8f22593be8e2e5363c2e8325ab9ee555a1ad29dff6457a0d6ce5fe4058",
+  "TEST": {
+    "AUROC": 0.7916209754122604,
+    "AP": 0.31969805229902143
+  },
+  "direct_prefix": {
+    "AUROC": 0.8078161639979262,
+    "AP": 0.36378488419486404
+  },
+  "delta": {
+    "AUROC": -0.01619518858566582,
+    "AP": -0.044086831895842615
+  },
+  "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+  "reference_label_sha": "5e252431168261bd2bc6251e1f927d12956fc8c87db7a73d43aaedb725a3a633",
+  "selected_checkpoint_sha": "1088aa09d99d1b1d8fdb8d87c0f600d4a1fb4afde3721ac3722f245a06793678",
+  "source_result_sha": "abe49e320cf3d28a54538eab040680443a03512876f4b5f042f6559595b63685",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
