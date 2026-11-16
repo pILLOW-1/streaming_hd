@@ -667,3 +667,4 @@ entries:
   - {"turn": "2026-11-16_001#22", "notes": ["Record the experiment-scope decision and pinned comparison table. No TEST result or scientific claim is implied."]}
   - {"turn": "2026-11-17_001#1", "notes": ["Record the scientific configuration and frozen-score comparison. Keep both TEST cells empty pending verified results."]}
   - {"turn": "2026-11-17_001#2", "notes": ["Record the verified Factuality result. The bundled changes do not isolate the optimization or normalization effect."]}
+  - {"turn": "2026-11-17_001#3", "notes": ["Record the controlled replacement of frozen Step scores. Await independent Prefix TEST verification."]}
