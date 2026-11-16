@@ -21,6 +21,8 @@ Test whether composing a frozen Step score with a conditional Prefix head improv
 
 **Legacy Streaming variant.** Keep the published Streaming Step probabilities frozen and use unnormalized exponential Prefix features. Train the linear conditional head with mean composed Prefix BCE on all TRAIN positions, using seed 42, random batches of 128 positions, Adam at 0.001 with weight decay 0.0005, up to 20 epochs, and patience 5. Use the legacy plateau schedule. Rank candidates by VAL Prefix AUROC, AP, then lower BCE. Evaluate the frozen winner once on TEST.
 
+**Fixed-aggregation Step variant.** Keep the legacy Prefix recipe and replace the frozen Step probabilities with the independently VAL-selected legacy fixed-aggregation Step detector for each domain. Its fixed weights are proportional to exp(3u) within each Step. Reuse its saved VAL and TEST predictions and score TRAIN once from the frozen checkpoint.
+
 ## Prefix TEST AUROC
 
 Future Prefix experiments are reported in this table.
@@ -31,6 +33,7 @@ Future Prefix experiments are reported in this table.
 | Best published baseline | 0.8256 ([Streaming](../streaming_622_p70/result/metrics.json)) | 0.8226 ([Global Mean](../global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/prefix.json)) |
 | Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
 | Streaming decomposition, all-position BCE (legacy optimizer, unnormalized features) |  | 0.8181 |
+| Streaming decomposition, all-position BCE (legacy optimizer, fixed-aggregation Step) |  |  |
 
 ### Other Prefix comparisons
 
