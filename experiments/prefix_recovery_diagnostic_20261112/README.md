@@ -14,6 +14,8 @@ A detector can approximate this with a weaker cue: whether any error has occurre
 
 ![Separation of still-active errors from clean positions, per detector](result/figure.png)
 
+*Figure. AUROC of each detector's Prefix score for separating positions with a still-active inherited error from three kinds of clean positions on TEST: positions of trajectories with no error so far (circle), positions after a corrected error (square), and positions after a corrected error in the same trajectory, averaged over trajectories (diamond). Each value is the mean over generator/domain combinations (15 per detector, 11 for ICR Probe). The dashed line marks chance.*
+
 ## Analysis settings
 
 On TEST positions with Y=0, the positive class is **inherited** (C=1). Negatives are split by history:

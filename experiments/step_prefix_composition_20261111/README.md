@@ -14,6 +14,8 @@ Prefix error probability is therefore Step error probability plus the inherited 
 
 ![Three-outcome composition and inherited share per combination](result/figure.png)
 
+*Figure. (a) Share of all 1,445,280 reasoning positions that introduce a new error (Y=1), carry an inherited error (Y=0, C=1) or are clean (C=0). The bracket marks Prefix-erroneous positions, of which 84.7% are inherited. (b) Inherited share of Prefix-erroneous positions for each of the 15 generator/domain combinations: one row per generator, one marker per domain. The dashed line is the share over all data.*
+
 ## Analysis settings
 
 | Setting | Value |

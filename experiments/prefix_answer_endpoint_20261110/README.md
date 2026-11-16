@@ -8,6 +8,8 @@ Here, reasoning correctness is operationalized by the label of the **final retai
 
 ![Answer label split by the final Prefix label](result/figure.png)
 
+*Figure. Share of wrong and correct Answers among trajectories whose final Prefix is erroneous (top) or clean (bottom), over all 15,697 trajectories. n is the number of trajectories in each row.*
+
 ## Analysis settings
 
 | Setting | Value |
