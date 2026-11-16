@@ -1,0 +1,42 @@
+{
+  "published_result": "https://github.com/pILLOW-1/streaming_hd/blob/d16f311f53af162caaf9886a291d40bc5ea6f36b/experiments/qwen_baseline_prefix_decomposition_all_positions_20261116/result/Factuality/streaming.json",
+  "domain": "Factuality",
+  "method": "streaming",
+  "position_count": 5489,
+  "train_position_count": 10374,
+  "conditional_train_count": 9261,
+  "all_positions": true,
+  "selected": {
+    "layer": 49,
+    "epoch": 20,
+    "AUROC": 0.9426330719172367,
+    "AP": 0.9129344673827473
+  },
+  "threshold": 0.5769650936126709,
+  "test_sha": "a40f3e65771622d98a823021b2b54a6e35bdc7657dcdb01c4f395546527c8568",
+  "TEST": {
+    "AUROC": 0.8257690445158011,
+    "AP": 0.7891032866385841
+  },
+  "direct_prefix": {
+    "AUROC": 0.8222044052886944,
+    "AP": 0.7902436414201873
+  },
+  "delta": {
+    "AUROC": 0.003564639227106703,
+    "AP": -0.0011403547816032367
+  },
+  "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+  "reference_label_sha": "887521b44d546523613de696804c69eb783d2777ed1acd1124394f02b20d8c48",
+  "selected_checkpoint_sha": "2a5877404cd98d400a0489971f703ea6e667ada4b29f672eb247eaa859f27b5d",
+  "source_result_sha": "a495e4be6b5f9b807945b018d8944712d09aed87f45204a257257d67f2397094",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "step_negative_prefix": {
+    "AUROC": 0.8242324229354628,
+    "AP": 0.7878362568550565
+  },
+  "delta_vs_step_negative": {
+    "AUROC": 0.0015366215803382932,
+    "AP": 0.0012670297835275512
+  }
+}
