@@ -4,7 +4,7 @@ This note connects the derived relation, the three motivation analyses and the r
 
 ## 1. Task and labels
 
-At reasoning Step $t$ a detector sees only $X_{\le t}$ and outputs three judgements:
+At reasoning Step $t$ a detector sees only $X_{0:t}$ and outputs three judgements:
 
 - **Step** $Y_t$: the Step introduces a new committed error. A valid inference from an inherited false premise, or a restatement of an inherited error, has $Y_t=0$.
 - **Prefix** $C_t$: the reasoning so far contains at least one unresolved active error. An error stays active while the Prefix still endorses it or an active conclusion depends on it. It is resolved only after explicit correction, retraction or replacement, with no remaining dependent state.
@@ -17,11 +17,11 @@ The only cross-label constraint is $Y_t=1\Rightarrow C_t=1$.
 Each position is new ($Y=1$), inherited ($Y=0,C=1$) or clean ($C=0$). Hence
 
 ```math
-\pi^C_t=\pi^Y_t+(1-\pi^Y_t)\,\kappa_t,\qquad \kappa_t=P(C_t=1\mid Y_t=0,X_{\le t}),
+\pi^C_t=\pi^Y_t+(1-\pi^Y_t)\,\kappa_t,\qquad \kappa_t=P(C_t=1\mid Y_t=0,X_{0:t}),
 ```
 
 ```math
-\pi^A=\pi^C_T\,a^1+(1-\pi^C_T)\,a^0,\qquad a^c=P(A=1\mid C_T=c,X).
+\pi^A=\pi^C_T\,a^1+(1-\pi^C_T)\,a^0,\qquad a^c=P(A=1\mid C_T=c,\,X_{0:T},X_A).
 ```
 
 The relation links the three levels in one chain: introduction ($\pi^Y$), carry-over ($\kappa$), read-out ($a^1,a^0$). Equivalently, $1-\pi^C_t=(1-\pi^Y_t)(1-\kappa_t)$: the reasoning is clean only if no error is introduced now and no earlier error is carried over.
