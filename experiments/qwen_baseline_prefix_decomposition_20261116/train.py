@@ -15,7 +15,6 @@ from torch.nn import functional as F
 from evaluate_test import baseline_root
 from objective import prefix_bce, prefix_probability
 from run import Split, digest, save_json
-from saplma_kernel import KerasAdam, SAPLMA
 
 
 def read_json(path):
@@ -59,10 +58,10 @@ def saved_step_scores(path, data, method, device):
     return torch.as_tensor(q, dtype=torch.float32, device=device)
 
 
-def features(data, layer, method, level, device):
+def features(data, layer, method, level, device, *, normalize=True):
     readout = "last_token" if method == "saplma" else f"{level}_exp"
     x = data.features(layer, (readout,))[0].to(device)
-    return F.normalize(x, dim=1) if method == "streaming" else x
+    return F.normalize(x, dim=1) if method == "streaming" and normalize else x
 
 
 @torch.inference_mode()
@@ -76,6 +75,8 @@ def make_train_scores(path, frozen_path, method, data, layer, device):
             return torch.from_numpy(saved["q"]).to(device)
     checkpoint = torch.load(frozen_path, map_location="cpu", weights_only=True)
     if method == "saplma":
+        from saplma_kernel import SAPLMA
+
         model = SAPLMA(5120)
         assert checkpoint["identity"]["layer"] == layer and not checkpoint["options"]["normalize"]
         model.load_state_dict(checkpoint["state_dict"])
@@ -122,6 +123,8 @@ def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs, all_po
     prefix = torch.as_tensor(train.c, device=device)
     eligible = torch.arange(len(step), device=device) if all_positions else torch.where(step == 0)[0]
     if method == "saplma":
+        from saplma_kernel import KerasAdam, SAPLMA
+
         model = SAPLMA(x.shape[1]).to(device)
         optimizer = KerasAdam(model.parameters())
         epochs = saplma_epochs
@@ -175,6 +178,52 @@ def fit(train, val, q_train, q_val, layer, method, device, saplma_epochs, all_po
     return best, candidates
 
 
+def fit_legacy_streaming(train, val, q_train, q_val, layer, device):
+    torch.manual_seed(42)
+    shuffle = torch.Generator().manual_seed(42)
+    x, xv = (features(data, layer, "streaming", "prefix", device, normalize=False)
+             for data in (train, val))
+    step = torch.as_tensor(train.y, device=device)
+    prefix = torch.as_tensor(train.c, device=device)
+    model = torch.nn.Linear(x.shape[1], 1).to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=0.0005)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, mode="min", factor=0.1, patience=20, min_lr=1e-6
+    )
+    best, candidates = None, []
+    for epoch in range(1, 21):
+        if best is not None and epoch - best[1]["epoch"] > 5:
+            break
+        model.train()
+        batch_losses = []
+        for batch in torch.randperm(len(step), generator=shuffle).split(128):
+            ids = batch.to(device)
+            optimizer.zero_grad(set_to_none=True)
+            loss = prefix_bce(model(x[ids]).flatten(), q_train[ids], step[ids],
+                              prefix[ids], all_positions=True)
+            assert torch.isfinite(loss)
+            loss.backward()
+            optimizer.step()
+            batch_losses.append(loss.detach().item())
+        scheduler.step(sum(batch_losses) / len(batch_losses))
+        probability = predict(model, xv, q_val)
+        target = np.asarray(val.c, dtype=np.float64)
+        clipped = np.clip(probability.astype(np.float64), np.finfo(np.float64).eps,
+                          1 - np.finfo(np.float64).eps)
+        bce = float(-(target * np.log(clipped) + (1 - target) * np.log1p(-clipped)).mean())
+        scores = dict(layer=layer, epoch=epoch, **metrics(val.c, probability), BCE=bce)
+        candidates.append(scores)
+        rank = selection_rank(scores)
+        if best is None or rank > best[0]:
+            best = rank, scores, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}, probability
+        print("VAL", layer, epoch, scores["AUROC"], scores["AP"], bce, flush=True)
+    return best, candidates
+
+
+def selection_rank(scores):
+    return (scores["AUROC"], scores["AP"], -scores.get("BCE", 0.0))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("domain", choices=("Logic", "Factuality"))
@@ -185,11 +234,16 @@ def main():
     parser.add_argument("input_manifest_sha")
     parser.add_argument("--saplma-epochs", type=int, default=5, choices=(5,))
     parser.add_argument("--all-positions", action="store_true")
+    parser.add_argument("--legacy-streaming", action="store_true")
     parser.add_argument("--reuse-train-scores-from", type=Path)
     args = parser.parse_args()
     if args.all_positions and (args.reuse_train_scores_from is None
                                or args.reuse_train_scores_from.resolve() == args.root.resolve()):
         parser.error("all-position training requires an independent output root and saved TRAIN q")
+    if args.legacy_streaming and (args.method != "streaming" or not args.all_positions):
+        parser.error("--legacy-streaming requires all-position Streaming")
+    if args.legacy_streaming and not torch.cuda.is_available():
+        parser.error("--legacy-streaming requires CUDA")
     domain, method = args.domain, args.method
     ownership = args.root / "DOMAIN_OWNERS.json"
     if ownership.exists() and read_json(ownership)[domain] != os.environ.get("RUNPOD_POD_ID"):
@@ -210,6 +264,7 @@ def execute(args, out):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     if device.type == "cuda":
         torch.backends.cuda.matmul.allow_tf32 = False
+    legacy_identity = {"legacy_streaming": True} if args.legacy_streaming else {}
     source = (args.reuse_train_scores_from or args.root) / "input"
     manifest = read_json(checked(source / "manifest.json", args.input_manifest_sha))
     spec = manifest["cells"][domain][method]
@@ -228,22 +283,26 @@ def execute(args, out):
     for layer in range(1, 65):
         receipt = out / f"layer_{layer:02d}.json"
         if not receipt.exists():
-            (_, scores, state, val_p), candidates = fit(train, val, scores_train, scores_val, layer, method,
-                                                       device, args.saplma_epochs, args.all_positions)
+            if args.legacy_streaming:
+                selected_fit, candidates = fit_legacy_streaming(train, val, scores_train, scores_val, layer, device)
+            else:
+                selected_fit, candidates = fit(train, val, scores_train, scores_val, layer, method,
+                                               device, args.saplma_epochs, args.all_positions)
+            _, scores, state, val_p = selected_fit
             weights = out / f"layer_{layer:02d}.pt"
             torch.save(state, weights)
             val_file = out / f"val_{layer:02d}.npz"
             np.savez_compressed(val_file, probability=val_p, position_id=val.keys, c=val.c)
             save_json(receipt, dict(winner=scores, candidates=candidates, weights_sha=digest(weights.read_bytes()),
                                     inputs=args.input_manifest_sha, all_positions=args.all_positions,
-                                    val_sha=digest(val_file.read_bytes())))
+                                    val_sha=digest(val_file.read_bytes()), **legacy_identity))
         print(domain, method, layer, "VAL complete", flush=True)
     candidates = [read_json(out / f"layer_{layer:02d}.json") for layer in range(1, 65)]
     assert all(row["inputs"] == args.input_manifest_sha and row.get("all_positions", False) == args.all_positions
-               for row in candidates)
+               and row.get("legacy_streaming", False) == args.legacy_streaming for row in candidates)
     all_metrics = [row for layer in candidates for row in layer["candidates"]]
-    rank = max((r["AUROC"], r["AP"]) for r in all_metrics)
-    winners = [m for m in all_metrics if (m["AUROC"], m["AP"]) == rank]
+    rank = max(map(selection_rank, all_metrics))
+    winners = [m for m in all_metrics if selection_rank(m) == rank]
     assert len(winners) == 1, "Original VAL selection has an unresolved exact tie"
     selected = winners[0]
     layer = selected["layer"]
@@ -251,7 +310,12 @@ def execute(args, out):
     val_path = checked(out / f"val_{layer:02d}.npz", item["val_sha"])
     with np.load(val_path, allow_pickle=False) as saved:
         threshold = threshold_at_val_f1(saved["c"], saved["probability"])
-    model = SAPLMA(5120) if method == "saplma" else torch.nn.Linear(5120, 1)
+    if method == "saplma":
+        from saplma_kernel import SAPLMA
+
+        model = SAPLMA(5120)
+    else:
+        model = torch.nn.Linear(5120, 1)
     model.load_state_dict(torch.load(checked(out / f"layer_{layer:02d}.pt", item["weights_sha"]),
                                      map_location="cpu", weights_only=True))
     model.to(device)
@@ -260,8 +324,9 @@ def execute(args, out):
     assert np.isclose(metrics(test.y, q.cpu().numpy())["AUROC"], spec["step"], rtol=0, atol=1e-10)
     with (out / "TEST_STARTED.json").open("x") as guard:
         json.dump(dict(selected=selected, threshold=threshold,
-                       input_manifest=args.input_manifest_sha, all_positions=args.all_positions, test=test.pins), guard)
-    probability = predict(model, features(test, layer, method, "prefix", device), q)
+                       input_manifest=args.input_manifest_sha, all_positions=args.all_positions, test=test.pins, **legacy_identity), guard)
+    probability = predict(model, features(test, layer, method, "prefix", device,
+                                          normalize=not args.legacy_streaming), q)
     path = out / "test.npz"
     np.savez_compressed(path, probability=probability, position_id=test.keys, y=test.y, c=test.c)
     result = metrics(test.c, probability)
@@ -272,7 +337,7 @@ def execute(args, out):
                              threshold=threshold,
                              TEST=result, direct_prefix_AUROC=spec["original"],
                              delta_AUROC=result["AUROC"] - spec["original"],
-                             test_sha=digest(path.read_bytes())))
+                             test_sha=digest(path.read_bytes()), **legacy_identity))
 
 
 if __name__ == "__main__":

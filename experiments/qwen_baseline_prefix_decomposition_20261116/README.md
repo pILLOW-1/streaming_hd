@@ -19,6 +19,8 @@ Test whether composing a frozen Step score with a conditional Prefix head improv
 | Streaming synchronization | The original missed-alarm penalty is zero because the composed probability satisfies $`\pi^{\mathrm{P}}_t \ge \pi^{\mathrm{S}}_t`$. |
 | Selection and evaluation | Select from 64 layers using composed Prefix scores on full VAL, and set the threshold on VAL. Evaluate the frozen winner once on TEST. Direct Prefix scores are reused from the published baselines. |
 
+**Legacy Streaming variant.** Keep the published Streaming Step probabilities frozen and use unnormalized exponential Prefix features. Train the linear conditional head with mean composed Prefix BCE on all TRAIN positions, using seed 42, random batches of 128 positions, Adam at 0.001 with weight decay 0.0005, up to 20 epochs, and patience 5. Use the legacy plateau schedule. Rank candidates by VAL Prefix AUROC, AP, then lower BCE. Evaluate the frozen winner once on TEST.
+
 ## Prefix TEST AUROC
 
 Future Prefix experiments are reported in this table.
@@ -28,6 +30,7 @@ Future Prefix experiments are reported in this table.
 | Original direct Streaming | 0.8256 | 0.8222 |
 | Best published baseline | 0.8256 ([Streaming](../streaming_622_p70/result/metrics.json)) | 0.8226 ([Global Mean](../global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/prefix.json)) |
 | Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
+| Streaming decomposition, all-position BCE (legacy optimizer, unnormalized features) |  |  |
 
 ### Other Prefix comparisons
 
