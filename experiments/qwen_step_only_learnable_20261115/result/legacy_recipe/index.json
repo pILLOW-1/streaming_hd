@@ -65,6 +65,22 @@
       },
       "prediction_sha256": "b32b3b811ab2b648ded100b1d7d6281ba5c8a7b0e366a59378de3553c41b6c9e",
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "variant": "legacy_recipe",
+      "domain": "Logic",
+      "arm": "aggr_residual",
+      "layer": 34,
+      "epoch": 5,
+      "positions": 15233,
+      "metrics": {
+        "step_AUROC": 0.8882195269047779,
+        "step_AP": 0.21322747058819186,
+        "step_BCE": 0.07661926609666249
+      },
+      "prediction_sha256": "24d614231ba17528e74cbe6b048641ec60aa64813bee696f23e4596dcf0c0dcf",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ]
 }

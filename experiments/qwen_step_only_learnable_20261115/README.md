@@ -58,6 +58,6 @@ This rerun uses the same frozen Logic and Factuality splits, three learnable rea
 | Learnable aggregation | | |
 | Learnable representation | 0.8785 | 0.8767 |
 | Aggregation and representation | | 0.8705 |
-| Streaming + learned score residual | | 0.8742 |
+| Streaming + learned score residual | 0.8882 | 0.8742 |
 
 Fill each cell after independent verification from the saved TEST predictions.
