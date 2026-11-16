@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 8
+  turn_count: 9
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T12:30:55+11:00"
+  last_turn: "2026-11-16T13:00:56+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -81,5 +81,11 @@ events_logged:
   routing: direct
   provenance: ai-executed
   summary: "RunPod completed all 64 candidates and one frozen TEST evaluation. Cetus verified all three artifact hashes and independently recomputed the metrics over 15233 Step positions with exactly matched reference labels. Selected layer 42, epoch 5. TEST Step AUROC 0.8785038466277428, AP 0.187755024538256, BCE 0.07605984527146278."
+- turn: 9
+  type: experiment
+  id: N12813590
+  routing: direct
+  provenance: ai-executed
+  summary: "RunPod completed all 64 candidates and one frozen TEST evaluation. Cetus verified all three artifact hashes and independently recomputed the metrics over 5489 Step positions with exactly matched reference labels. Selected layer 50, epoch 4. TEST Step AUROC 0.8705210683578267, AP 0.44325357599304177, BCE 0.24931263158448397."
 claims_touched: []
 open_threads: []
