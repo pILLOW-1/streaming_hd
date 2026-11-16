@@ -1,0 +1,17 @@
+{
+  "published_result": "https://github.com/pILLOW-1/streaming_hd/blob/d7c264a9d670b315e809ff5adb3e35b12c480c3b/experiments/qwen_step_only_learnable_20261115/result/legacy_recipe/Logic/aggr_repr.json",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "domain": "Logic",
+  "arm": "aggr_repr",
+  "layer": 30,
+  "epoch": 6,
+  "positions": 15233,
+  "metrics": {
+    "step_AUROC": 0.8549600854277766,
+    "step_AP": 0.20963035994053728,
+    "step_BCE": 0.07840306906700452
+  },
+  "prediction_sha256": "43911f9460b4dc14140f06ddad568311ec5e60475ee1c16e4f87c32d0fc53299",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
