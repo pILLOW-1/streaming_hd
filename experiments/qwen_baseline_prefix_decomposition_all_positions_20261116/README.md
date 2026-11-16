@@ -25,7 +25,21 @@ Compare all-position supervision with the [Step-negative-only decomposition](../
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
-| SAPLMA all-position BCE | | |
-| Streaming all-position BCE | | |
+| SAPLMA all-position BCE | 0.8026 | 0.7846 |
+| Streaming all-position BCE | | 0.8258 |
 
 The original Step scores are reused. Prefix cells are filled after independent verification from saved TEST predictions.
+
+### AUROC change from Step-negative training (percentage points)
+
+| Configuration | Logic | Factuality |
+|---|---:|---:|
+| SAPLMA all-position BCE | +1.10 | +1.09 |
+| Streaming all-position BCE |  | +0.15 |
+
+### AUROC change from the original direct Prefix baseline (percentage points)
+
+| Configuration | Logic | Factuality |
+|---|---:|---:|
+| SAPLMA all-position BCE | -0.52 | +0.03 |
+| Streaming all-position BCE |  | +0.36 |

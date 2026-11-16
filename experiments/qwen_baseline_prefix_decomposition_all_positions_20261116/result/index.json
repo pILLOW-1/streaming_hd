@@ -1,0 +1,129 @@
+{
+  "Logic": {
+    "saplma": {
+      "domain": "Logic",
+      "method": "saplma",
+      "position_count": 15233,
+      "train_position_count": 25266,
+      "conditional_train_count": 24889,
+      "all_positions": true,
+      "selected": {
+        "layer": 27,
+        "epoch": 5,
+        "AUROC": 0.869820980513496,
+        "AP": 0.4503751023046285
+      },
+      "threshold": 0.14087426662445068,
+      "test_sha": "85a9f2c7b15c852a41c5eebf1255c7ed0733e74ccbd4ae260acdbd6dccefd205",
+      "TEST": {
+        "AUROC": 0.8026294041266671,
+        "AP": 0.35382845566082055
+      },
+      "direct_prefix": {
+        "AUROC": 0.8078161639979262,
+        "AP": 0.36378488419486404
+      },
+      "delta": {
+        "AUROC": -0.005186759871259161,
+        "AP": -0.009956428534043493
+      },
+      "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+      "reference_label_sha": "5e252431168261bd2bc6251e1f927d12956fc8c87db7a73d43aaedb725a3a633",
+      "selected_checkpoint_sha": "7a6c5198c8749cafc34705e82eaf70db3f5a29f529983579e36d41c2d1c256a5",
+      "source_result_sha": "2d74a54e01be4b456248ab6785a8305f483a3d0b5220d0c30305ad6be153dceb",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+      "step_negative_prefix": {
+        "AUROC": 0.7916209754122604,
+        "AP": 0.31969805229902143
+      },
+      "delta_vs_step_negative": {
+        "AUROC": 0.01100842871440666,
+        "AP": 0.03413040336179912
+      }
+    }
+  },
+  "Factuality": {
+    "saplma": {
+      "domain": "Factuality",
+      "method": "saplma",
+      "position_count": 5489,
+      "train_position_count": 10374,
+      "conditional_train_count": 9261,
+      "all_positions": true,
+      "selected": {
+        "layer": 49,
+        "epoch": 5,
+        "AUROC": 0.9187002357451214,
+        "AP": 0.8918697764266512
+      },
+      "threshold": 0.6411861181259155,
+      "test_sha": "b5665b31e0f048e077a265c70cad5c5832c5cb72e5d4fe2773eaf18b948c6882",
+      "TEST": {
+        "AUROC": 0.7845780877509175,
+        "AP": 0.7268623050672651
+      },
+      "direct_prefix": {
+        "AUROC": 0.7842355712854473,
+        "AP": 0.7343810495820641
+      },
+      "delta": {
+        "AUROC": 0.00034251646547023284,
+        "AP": -0.007518744514798947
+      },
+      "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+      "reference_label_sha": "887521b44d546523613de696804c69eb783d2777ed1acd1124394f02b20d8c48",
+      "selected_checkpoint_sha": "fbdd3b39ec296973b3d127a1ca4f8203f6f5baa2ab46a97f64ec3427e9bd2118",
+      "source_result_sha": "a8d6186236484725dec02f3d22249afe7b23e4f302badc6a72ea5ddfcb5d88ef",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+      "step_negative_prefix": {
+        "AUROC": 0.7736969366287841,
+        "AP": 0.7136404732092536
+      },
+      "delta_vs_step_negative": {
+        "AUROC": 0.010881151122133392,
+        "AP": 0.013221831858011512
+      }
+    },
+    "streaming": {
+      "domain": "Factuality",
+      "method": "streaming",
+      "position_count": 5489,
+      "train_position_count": 10374,
+      "conditional_train_count": 9261,
+      "all_positions": true,
+      "selected": {
+        "layer": 49,
+        "epoch": 20,
+        "AUROC": 0.9426330719172367,
+        "AP": 0.9129344673827473
+      },
+      "threshold": 0.5769650936126709,
+      "test_sha": "a40f3e65771622d98a823021b2b54a6e35bdc7657dcdb01c4f395546527c8568",
+      "TEST": {
+        "AUROC": 0.8257690445158011,
+        "AP": 0.7891032866385841
+      },
+      "direct_prefix": {
+        "AUROC": 0.8222044052886944,
+        "AP": 0.7902436414201873
+      },
+      "delta": {
+        "AUROC": 0.003564639227106703,
+        "AP": -0.0011403547816032367
+      },
+      "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+      "reference_label_sha": "887521b44d546523613de696804c69eb783d2777ed1acd1124394f02b20d8c48",
+      "selected_checkpoint_sha": "2a5877404cd98d400a0489971f703ea6e667ada4b29f672eb247eaa859f27b5d",
+      "source_result_sha": "a495e4be6b5f9b807945b018d8944712d09aed87f45204a257257d67f2397094",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+      "step_negative_prefix": {
+        "AUROC": 0.8242324229354628,
+        "AP": 0.7878362568550565
+      },
+      "delta_vs_step_negative": {
+        "AUROC": 0.0015366215803382932,
+        "AP": 0.0012670297835275512
+      }
+    }
+  }
+}
