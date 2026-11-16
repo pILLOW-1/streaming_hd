@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 16
+  turn_count: 17
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T17:08:51+11:00"
+  last_turn: "2026-11-16T17:41:59+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -96,5 +96,6 @@ events_logged:
 - {"turn": 15, "type": "experiment", "id": "N12813597", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed Prefix TEST on 15233 positions. Composed Prefix AUROC 0.79162098, AP 0.31969805; direct baseline AUROC 0.80781616, AP 0.36378488."}
 - {"turn": 15, "type": "experiment", "id": "N12813598", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed Prefix TEST on 5489 positions. Composed Prefix AUROC 0.82423242, AP 0.78783626; direct baseline AUROC 0.82220441, AP 0.79024364."}
 - {"turn": 16, "type": "decision", "id": "N12813599", "routing": "direct", "provenance": "user", "summary": "Add an all-position composed Prefix BCE control for SAPLMA and Streaming on Logic and Factuality. Keep the same frozen Step scores, baseline head, optimizer and VAL/TEST protocol."}
+- {"turn": 17, "type": "experiment", "id": "N12813600", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed Prefix TEST on 15233 positions. Composed Prefix AUROC 0.82401280, AP 0.40016869; direct baseline AUROC 0.82561709, AP 0.39805877."}
 claims_touched: []
 open_threads: []
