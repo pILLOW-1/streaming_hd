@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 12
+  turn_count: 13
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T14:55:46+11:00"
+  last_turn: "2026-11-16T15:33:49+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -91,5 +91,6 @@ events_logged:
 - {"turn": 10, "type": "experiment", "id": "N12813592", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed frozen TEST metrics on 15233 Step positions. Layer 30, epoch 6; AUROC 0.8549600854277766, AP 0.20963035994053728, BCE 0.07840306906700452."}
 - {"turn": 11, "type": "experiment", "id": "N12813593", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed frozen TEST metrics on 5489 Step positions. Layer 49, epoch 1; AUROC 0.8816078724312458, AP 0.43297145679237203, BCE 0.22774461248210243."}
 - {"turn": 12, "type": "decision", "id": "N12813594", "routing": "direct", "provenance": "user", "summary": "Add fixed Streaming token aggregation for Qwen Logic, Factuality and Science with the existing standalone legacy Step training recipe."}
+- {"turn": 13, "type": "decision", "id": "N12813595", "routing": "direct", "provenance": "user", "summary": "Evaluate the Prefix decomposition on SAPLMA and Streaming in Qwen Logic and Factuality. Apply BCE to the composed Prefix output on Step-negative positions. Use the same frozen Step heads and permit one additional TRAIN scoring pass while reusing saved VAL and TEST scores."}
 claims_touched: []
 open_threads: []
