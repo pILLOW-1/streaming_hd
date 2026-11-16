@@ -3,6 +3,7 @@
 import argparse
 import fcntl
 import json
+import os
 import random
 from pathlib import Path
 
@@ -183,6 +184,10 @@ def main():
     parser.add_argument("--saplma-epochs", type=int, default=5, choices=(5,))
     args = parser.parse_args()
     domain, method = args.domain, args.method
+    ownership = args.root / "DOMAIN_OWNERS.json"
+    if ownership.exists() and read_json(ownership)[domain] != os.environ.get("RUNPOD_POD_ID"):
+        print(domain, method, "assigned to the other domain worker", flush=True)
+        return
     out = args.root / domain / method
     out.mkdir(parents=True, exist_ok=True)
     with (out / ".lock").open("a") as lock:
