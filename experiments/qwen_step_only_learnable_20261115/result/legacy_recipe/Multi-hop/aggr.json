@@ -1,0 +1,28 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "domain": "Multi-hop",
+  "arm": "aggr",
+  "recipe": "pre_dataset_step_20261011",
+  "layer": 40,
+  "epoch": 3,
+  "candidates": 64,
+  "metrics": {
+    "step_AUROC": 0.917660509306798,
+    "step_AP": 0.6213918094376077,
+    "step_BCE": 0.1755168023816442
+  },
+  "val_metrics": {
+    "step_AUROC": 0.9234766356230208,
+    "step_AP": 0.635983027366704,
+    "step_BCE": 0.17779141007793994
+  },
+  "positions": 13460,
+  "coverage": "complete",
+  "prediction_sha256": "f678169252fd912e645e479bbfa1f313aad139841f504372bfb00d82ae97b0d6",
+  "checkpoint_sha256": "1cf87f272423df9ddd3d7ad7b2a4a942175e6fe92a257434ae173bef0ed0a8b5",
+  "selection_sha256": "25123a3e0f9d51663caff5ab7bc24135d71e9ecc39f05b15e4b9050061c65fd0",
+  "input_sha256": "86c23cce94b6bf02d67149c2b6d39393437aa1cb6b9744fba420990030f0ee6b",
+  "source_manifest_sha256": "d2efe3a7788c58cfd8ddb1e7d06ae6add0f4fac1e278a0cf46d84a60eebcddc0",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "variant": "legacy_recipe"
+}

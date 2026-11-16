@@ -1,0 +1,28 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "domain": "Science",
+  "arm": "aggr_repr",
+  "recipe": "pre_dataset_step_20261011",
+  "layer": 47,
+  "epoch": 6,
+  "candidates": 64,
+  "metrics": {
+    "step_AUROC": 0.8315330066860394,
+    "step_AP": 0.24897271983692715,
+    "step_BCE": 0.16435608861100887
+  },
+  "val_metrics": {
+    "step_AUROC": 0.8343097472033432,
+    "step_AP": 0.25250487629912566,
+    "step_BCE": 0.16137842216214388
+  },
+  "positions": 46175,
+  "coverage": "complete",
+  "prediction_sha256": "aa371f8a0c24d71e4083d26f76d7cd5ae2292d50f17d6e2a5662f8aa6a5bf45a",
+  "checkpoint_sha256": "aaba664c26c41387deccb9cc1bb1c85de741c1853f216b8a4c8fa0638501d927",
+  "selection_sha256": "8c451f03b071dc343195d331b93b11c54e7d47dd0c2756959b5d38f6eb445c91",
+  "input_sha256": "8b2a21b197eba9a87dbf49405643d39475036844283ca0a7eace3f772f2bf3a3",
+  "source_manifest_sha256": "3cfe5a7ed2a0573dbc826536eb50a740607afa945f2533fc1b5c411f8a47aec8",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "variant": "legacy_recipe"
+}
