@@ -1,0 +1,17 @@
+{
+  "published_result": "https://github.com/pILLOW-1/streaming_hd/blob/09ff17e720e1058b1c6ac7532638c1fbe86f9770/experiments/qwen_step_only_learnable_20261115/result/legacy_recipe/Factuality/aggr.json",
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "domain": "Factuality",
+  "arm": "aggr",
+  "layer": 49,
+  "epoch": 1,
+  "positions": 5489,
+  "metrics": {
+    "step_AUROC": 0.8816078724312458,
+    "step_AP": 0.43297145679237203,
+    "step_BCE": 0.22774461248210243
+  },
+  "prediction_sha256": "a8489de387d68a220c52b70613c07886a6038ba2fb5a531ffd70767aad60d377",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
