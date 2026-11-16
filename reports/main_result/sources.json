@@ -74,6 +74,15 @@
   {
     "level": "answer",
     "method": "ars",
+    "model": "gemma_4_31b_it",
+    "domain": "Science",
+    "AUROC": 0.6062102260258944,
+    "source": "experiments/ars/622_p70_20261108/result/gemma_4_31b_it/Science/answer.json",
+    "SHA256": "cab75c75da06ffdaec5f610ada839a7f142bc1a7e1b1d4e741171cbc2e01cfee"
+  },
+  {
+    "level": "answer",
+    "method": "ars",
     "model": "qwen3_8_27b",
     "domain": "Factuality",
     "AUROC": 0.8984047856430708,

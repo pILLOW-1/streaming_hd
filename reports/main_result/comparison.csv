@@ -185,7 +185,7 @@ answer,ARS,deepseek_r1_distill_llama_8b,Logic,82.44
 answer,ARS,deepseek_r1_distill_llama_8b,Multi-hop,78.85
 answer,ARS,deepseek_r1_distill_llama_8b,Factuality,68.35
 answer,ARS,gemma_4_31b_it,Math,84.43
-answer,ARS,gemma_4_31b_it,Science,
+answer,ARS,gemma_4_31b_it,Science,60.62
 answer,ARS,gemma_4_31b_it,Logic,
 answer,ARS,gemma_4_31b_it,Multi-hop,81.68
 answer,ARS,gemma_4_31b_it,Factuality,82.75

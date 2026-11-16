@@ -18,6 +18,7 @@ Metrics below are percentages. JSON preserves unrounded values, thresholds and c
 | gemma_4_31b_it | Factuality | answer | 48 | 82.75 | 72.36 | 16.95 | 80.00 | 67.21 |
 | gemma_4_31b_it | Math | answer | 37 | 84.43 | 71.71 | 2.53 | 77.50 | 73.05 |
 | gemma_4_31b_it | Multi-hop | answer | 37 | 81.68 | 44.26 | 0.00 | 77.83 | 49.50 |
+| gemma_4_31b_it | Science | answer | 33 | 60.62 | 38.27 | 0.00 | 49.28 | 45.92 |
 | qwen3_8_27b | Factuality | answer | 32 | 89.84 | 89.68 | 60.00 | 72.91 | 73.43 |
 | qwen3_8_27b | Logic | answer | 37 | 87.03 | 44.29 | 4.35 | 81.00 | 50.00 |
 | qwen3_8_27b | Math | answer | 47 | 91.04 | 83.59 | 41.27 | 77.00 | 71.60 |
