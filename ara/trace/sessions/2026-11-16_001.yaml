@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 4
+  turn_count: 5
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T10:54:29+11:00"
+  last_turn: "2026-11-16T11:09:13+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -51,5 +51,11 @@ events_logged:
   routing: direct
   provenance: ai-executed
   summary: "A single RTX 2000 Ada 16 GB Pod on the existing feature volume logged real Factuality representation VAL epochs. A shared fence assigned all unstarted work to the GPU. Factuality released its in-flight CPU layers and its CPU Pod stopped. Logic released aggregation layer 4 and still had its final in-flight residual layer at the time of this record. Science request received by the existing Cetus owner. PBS jobs 332160, 332161, 332162 and 332179 were independently observed in state R for aggregation, representation, aggregation plus representation and residual aggregation, respectively. No accepted TEST results yet."
+- turn: 5
+  type: experiment
+  id: N12813582
+  routing: direct
+  provenance: ai-executed
+  summary: "RunPod completed all 64 candidates and one frozen TEST evaluation. Cetus verified all three artifact hashes and independently recomputed the metrics over 5489 Step positions with exactly matched reference labels. Selected layer 42, epoch 1. TEST Step AUROC 0.8767371486066223, AP 0.42808691813851907, BCE 0.2254571658358661."
 claims_touched: []
 open_threads: []

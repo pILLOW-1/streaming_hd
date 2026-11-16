@@ -1,0 +1,17 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "domain": "Factuality",
+  "arm": "repr",
+  "layer": 42,
+  "epoch": 1,
+  "positions": 5489,
+  "metrics": {
+    "step_AUROC": 0.8767371486066223,
+    "step_AP": 0.42808691813851907,
+    "step_BCE": 0.2254571658358661
+  },
+  "prediction_sha256": "b2133110f8094e513732f74ad47082437cdaf2e7da28c33acc59b23cb8a48e92",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "observed_at_AEDT": "2026-11-16T11:09:13+11:00"
+}
