@@ -143,6 +143,35 @@
         "AUROC": 0.0015366215803382932,
         "AP": 0.0012670297835275512
       }
+    },
+    "streaming_legacy_all_positions": {
+      "domain": "Factuality",
+      "method": "streaming",
+      "position_count": 5489,
+      "conditional_train_count": 9261,
+      "selected": {
+        "layer": 49,
+        "epoch": 1,
+        "AUROC": 0.9418522464242469,
+        "AP": 0.9077645440349174,
+        "BCE": 0.3238511358935083
+      },
+      "all_positions": true,
+      "train_position_count": 10374,
+      "threshold": 0.6042828559875488,
+      "TEST": {
+        "AUROC": 0.8181234233236704,
+        "AP": 0.784376473252935
+      },
+      "direct_prefix_AUROC": 0.8222044052886944,
+      "delta_AUROC": -0.004080981965024044,
+      "test_sha": "69129e157d114a66f2090d79d8dd02b0c635363d6e308bd9dcdb4d269434105f",
+      "legacy_streaming": true,
+      "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+      "reference_label_sha": "887521b44d546523613de696804c69eb783d2777ed1acd1124394f02b20d8c48",
+      "source_result_sha": "aa36f98463f28e21a07b0fb7877972a97b4a3ffa54ec0ae11de5267e47497903",
+      "selected_checkpoint_sha": "7224879451af8bac08c55c88866652fd18f22415ba8adce315c70bec1526fb5d",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   },
   "Logic": {
