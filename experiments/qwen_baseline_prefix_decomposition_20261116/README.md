@@ -31,6 +31,6 @@ Test whether a frozen Step detector and a conditional Prefix head improve Prefix
 | Original direct SAPLMA | 0.8078 | 0.7842 |
 | SAPLMA decomposition | 0.7916 | 0.7737 |
 | Original direct Streaming | 0.8256 | 0.8222 |
-| Streaming decomposition | | 0.8242 |
+| Streaming decomposition | 0.8240 | 0.8242 |
 
 **Status.** Completed cells have been independently verified from saved predictions. Blank cells are pending.
