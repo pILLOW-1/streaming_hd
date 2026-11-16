@@ -55,14 +55,19 @@ This series uses frozen Qwen features and a linear Step head on Logic, Factualit
 
 ### Legacy recipe Step TEST AUROC
 
-| Configuration | Logic | Factuality | Science |
-| --- | ---: | ---: | ---: |
-| [Original Streaming](../streaming_622_p70/result/metrics.json) | 0.8716 | 0.8720 | 0.8145 |
-| Best published baseline | 0.8875 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Logic/step.json)) | 0.8735 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Factuality/step.json)) | 0.8255 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Science/step.json)) |
-| Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |
-| Learnable aggregation | 0.8871 | 0.8816 |  |
-| Learnable representation | 0.8785 | 0.8767 |  |
-| Aggregation and representation | 0.8550 | 0.8705 |  |
-| Streaming + learned score residual | 0.8882 | 0.8742 | 0.8214 |
+| Configuration | Logic | Factuality | Science | Math | Multi-hop |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| [Original Streaming](../streaming_622_p70/result/metrics.json) | 0.8716 | 0.8720 | 0.8145 | 0.7852 | 0.8953 |
+| Best published baseline | 0.8875 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Logic/step.json)) | 0.8735 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Factuality/step.json)) | 0.8255 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Science/step.json)) | 0.8046 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Math/step.json)) | 0.9080 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Multi-hop/step.json)) |
+| Learnable aggregation | 0.8871 | 0.8816 |  |  |  |
+
+### Other legacy Step readouts
+
+| Configuration | Logic | Factuality | Science | Math | Multi-hop |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |  |  |
+| Learnable representation | 0.8785 | 0.8767 |  |  |  |
+| Aggregation and representation | 0.8550 | 0.8705 |  |  |  |
+| Streaming + learned score residual | 0.8882 | 0.8742 | 0.8214 |  |  |
 
 Fill each cell after independent verification from the saved TEST predictions.
