@@ -3,9 +3,9 @@ session:
   date: '2026-11-16'
   summary: Direct user cancellation of all RunPod experiments and verification of
     the shutdown.
-  turn_count: 11
+  turn_count: 12
   started: '2026-11-16T00:01:05+11:00'
-  last_turn: "2026-11-16T14:33:01+11:00"
+  last_turn: "2026-11-16T14:55:46+11:00"
 events_logged:
 - turn: 1
   type: decision
@@ -90,5 +90,6 @@ events_logged:
 - {"turn": 10, "type": "experiment", "id": "N12813591", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed frozen TEST metrics on 15233 Step positions. Layer 35, epoch 3; AUROC 0.8871391422203873, AP 0.1739968915567954, BCE 0.0797703916394803."}
 - {"turn": 10, "type": "experiment", "id": "N12813592", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed frozen TEST metrics on 15233 Step positions. Layer 30, epoch 6; AUROC 0.8549600854277766, AP 0.20963035994053728, BCE 0.07840306906700452."}
 - {"turn": 11, "type": "experiment", "id": "N12813593", "routing": "direct", "provenance": "ai-executed", "summary": "Cetus independently recomputed frozen TEST metrics on 5489 Step positions. Layer 49, epoch 1; AUROC 0.8816078724312458, AP 0.43297145679237203, BCE 0.22774461248210243."}
+- {"turn": 12, "type": "decision", "id": "N12813594", "routing": "direct", "provenance": "user", "summary": "Add fixed Streaming token aggregation for Qwen Logic, Factuality and Science with the existing standalone legacy Step training recipe."}
 claims_touched: []
 open_threads: []

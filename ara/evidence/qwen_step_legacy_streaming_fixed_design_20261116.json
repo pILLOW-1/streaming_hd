@@ -1,0 +1,13 @@
+{
+  "config": "streaming_fixed",
+  "domains": [
+    "Logic",
+    "Factuality",
+    "Science"
+  ],
+  "pooling": "softmax(3u) within each Step over frozen token features",
+  "training": "existing pre_dataset_step_20261011",
+  "selection": "VAL on layers 1\u201364; one frozen TEST",
+  "config_commit": "cef43d4d35405a9e969638a6d43fee59a1be6fa8",
+  "status": "authorized"
+}
