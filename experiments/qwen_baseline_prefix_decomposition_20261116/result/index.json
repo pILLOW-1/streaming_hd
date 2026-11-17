@@ -201,6 +201,102 @@
       "source_result_sha": "34767f58b81d0489c66d947d7fd1aa5f0033cf106075be79b65ce5392fba033e",
       "selected_checkpoint_sha": "f82187748a983f2e6e0ccf342d30c8771c2626d4bd1ce418da87c59bfc794c2e",
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    "streaming_legacy_kappa_rank": {
+      "domain": "Factuality",
+      "method": "streaming",
+      "position_count": 5489,
+      "conditional_train_count": 9261,
+      "selected": {
+        "layer": 49,
+        "epoch": 1,
+        "AUROC": 0.9426544643964967,
+        "AP": 0.9093491287731219,
+        "BCE": 0.3226839304872822
+      },
+      "all_positions": true,
+      "train_position_count": 10374,
+      "threshold": 0.6151182055473328,
+      "TEST": {
+        "AUROC": 0.8167518900105256,
+        "AP": 0.7809773822713992,
+        "BCE": 0.5855073156658342
+      },
+      "direct_prefix_AUROC": 0.8222044052886944,
+      "delta_AUROC": -0.005452515278168812,
+      "test_sha": "67a74fd3e0c9917ceb044fef7c85e507ed2826f220faee8735101d054ad994ba",
+      "VAL_recovery": {
+        "AUROC": 0.5698153926319969,
+        "trajectories": 44,
+        "pairs": 4872
+      },
+      "VAL_time": {
+        "AUROC": 0.43851007280245297,
+        "trajectories": 44,
+        "pairs": 4872
+      },
+      "TEST_recovery": {
+        "AUROC": 0.5483134936861872,
+        "trajectories": 142,
+        "pairs": 14948
+      },
+      "TEST_time": {
+        "AUROC": 0.4683563349328999,
+        "trajectories": 142,
+        "pairs": 14948
+      },
+      "VAL_comparison": {
+        "control_recovery": {
+          "AUROC": 0.5686580250833919,
+          "trajectories": 44,
+          "pairs": 4872
+        },
+        "rank_recovery_same_pairs": {
+          "AUROC": 0.5698153926319969,
+          "trajectories": 44,
+          "pairs": 4872
+        },
+        "time_recovery_same_pairs": {
+          "AUROC": 0.43851007280245297,
+          "trajectories": 44,
+          "pairs": 4872
+        },
+        "control_prefix": {
+          "AUROC": 0.9418522464242469,
+          "AP": 0.9077645440349174,
+          "BCE": 0.3238511358935083
+        }
+      },
+      "TEST_comparison": {
+        "control_recovery": {
+          "AUROC": 0.5523472163697242,
+          "trajectories": 142,
+          "pairs": 14948
+        },
+        "rank_recovery_same_pairs": {
+          "AUROC": 0.5483134936861872,
+          "trajectories": 142,
+          "pairs": 14948
+        },
+        "time_recovery_same_pairs": {
+          "AUROC": 0.4683563349328999,
+          "trajectories": 142,
+          "pairs": 14948
+        },
+        "control_prefix": {
+          "AUROC": 0.8181234233236704,
+          "AP": 0.784376473252935,
+          "BCE": 0.5871459144494627
+        }
+      },
+      "legacy_streaming": true,
+      "pair_weight": 0.1,
+      "run_contract": "18c8a78b9ebef85c9e4fc03f582dfa5e551c0be86e635e6b728b7b9cae4df21e",
+      "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+      "reference_label_sha": "887521b44d546523613de696804c69eb783d2777ed1acd1124394f02b20d8c48",
+      "source_result_sha": "1e9e2a9586e783f8a2b3ffa8dbc83807cb504966a1bafc4822719749f914373a",
+      "selected_checkpoint_sha": "408b873db9df60dd5a4ba5f478286c77ff8fc72b9d2aae6346519fb8f6d05545",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   },
   "Logic": {

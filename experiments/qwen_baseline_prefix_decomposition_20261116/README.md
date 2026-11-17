@@ -34,7 +34,7 @@ Future Prefix experiments are reported in this table.
 | Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
 | Streaming decomposition, all-position BCE (legacy optimizer, unnormalized features) | 0.8316 | 0.8181 |
 | Streaming decomposition, all-position BCE (legacy optimizer, fixed-aggregation Step) | 0.8356 | 0.8190 |
-| Streaming decomposition, all-position BCE + conditional ranking | 0.835883 | |
+| Streaming decomposition, all-position BCE + conditional ranking | 0.835883 | 0.816752 |
 
 ### Other Prefix comparisons
 
@@ -69,6 +69,6 @@ Use labeled positions with no current Step error and at least one earlier labele
 
 | Configuration | Logic VAL | Factuality VAL | Logic TEST | Factuality TEST |
 | --- | --- | --- | --- | --- |
-| BCE control | 0.563189 | | 0.542960 | |
-| BCE + trajectory ranking | 0.571456 | | 0.555914 | |
-| Time-only comparator | 0.468605 | | 0.479852 | |
+| BCE control | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
+| BCE + trajectory ranking | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
+| Time-only comparator | 0.468605 | 0.438510 | 0.479852 | 0.468356 |
