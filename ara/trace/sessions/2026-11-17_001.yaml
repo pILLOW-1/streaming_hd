@@ -2,8 +2,8 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T11:07:00+11:00"
-  turn_count: 5
+  last_turn: "2026-11-17T11:29:00+11:00"
+  turn_count: 6
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
@@ -12,5 +12,6 @@ events_logged:
 - {"turn": 3, "type": "decision", "id": "N12813610", "routing": "direct", "provenance": "user", "summary": "Compare frozen original Streaming and legacy fixed-aggregation Step probabilities in the same unnormalized Prefix legacy recipe on Logic and Factuality. The selected fixed Step checkpoints are Logic layer 42 epoch 12 and Factuality layer 47 epoch 3. The new Prefix TEST results remain pending."}
 - {"turn": 4, "type": "experiment", "id": "N12813611", "routing": "direct", "provenance": "ai-executed", "summary": "On 5489 matched Factuality TEST positions, exchanging frozen original Streaming Step scores for legacy fixed-aggregation scores gave Prefix AUROC 0.8189588033 and AP 0.7814849970. The original-score variant gave 0.8181234233 AUROC and 0.7843764733 AP. VAL selected Prefix layer 49, epoch 1. Logic remains pending."}
 - {"turn": 5, "type": "experiment", "id": "N12813612", "routing": "direct", "provenance": "ai-executed", "summary": "On 15233 matched frozen Logic TEST positions, the legacy Prefix recipe with original Streaming Step scores yielded AUROC 0.8316322642 and AP 0.3739201090, compared with direct Streaming Prefix AUROC 0.8256170871. VAL selected layer 39, epoch 20."}
+- {"turn": 6, "type": "experiment", "id": "N12813613", "routing": "direct", "provenance": "ai-executed", "summary": "Frozen VAL token-weight diagnostics. Science (38384 Steps) had median effective token fraction 0.8007 for learnable aggregation and 0.5763 for fixed Streaming. Multi-hop (11107 Steps) had 0.5296 and 0.5763, respectively. Logic and Factuality pending."}
 claims_touched: []
 logic_revisions: []
