@@ -1,0 +1,81 @@
+{
+  "experiment": "deepseek_gru_memory_20261117",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "domains": [
+    "Math",
+    "Logic",
+    "Science",
+    "Multi-hop",
+    "Factuality"
+  ],
+  "completed_domains_in_handoff": [
+    "Math",
+    "Logic"
+  ],
+  "backbone": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "model_revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+  "hidden_layer": 16,
+  "hidden_dim": 4096,
+  "model_frozen": true,
+  "compute_dtype": "bfloat16",
+  "raw_storage_dtype": "bfloat16",
+  "pool_dtype": "float32",
+  "detector_input_dtype": "float32",
+  "threshold": {
+    "value": 0.5,
+    "positive_if": "probability > 0.5",
+    "calibration": "none"
+  },
+  "gru_memory": {
+    "recipe": "small_joint_w05",
+    "state_dim": 128,
+    "num_heads": 4,
+    "head_dim": 32,
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "prefix_loss_weight": 0.5,
+    "epochs": 20,
+    "patience": 5,
+    "minimum_improvement": 1e-06,
+    "selection": "mean_VAL_step_prefix_AUROC",
+    "objective": "trajectory_mean_step_BCE_plus_0.5_times_mean_prefix_BCE",
+    "updates": "one_per_trajectory_full_detector_BPTT",
+    "trainable_parameters": 1788804
+  },
+  "streaming": {
+    "teacher": "linear local-step probe",
+    "prefix": "linear prefix probe",
+    "lbfgs_max_iter": 100,
+    "l2": 0.0001,
+    "teacher_line_search": "strong_wolfe",
+    "prefix_init_line_search": null,
+    "optimizer": "AdamW",
+    "epochs": 20,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "lambda_final": 30.0,
+    "lambda_sync": 120.0,
+    "selection": "fixed_final_epoch"
+  },
+  "hf_split_repo": "pillow-streaming/streaming-hd-v1",
+  "hf_split_revision": "b45b2fd88e00869825de163bc6b7a41f31dd962b",
+  "donor_dataset_revision": "278886b69f2f0b6e44fb76f846da98497092d99b",
+  "hf_pair_release_sha256": "e127bd500f02e7431e846163451f8fb317dbd97a7c53b15f5e24b0487d82a9b1",
+  "publication_scope": "GRU+memory method code with historical Streaming comparison results; native cache adapter remains external.",
+  "assignments_sha256": "8e16e7b91f8b430c5ee668b8077a85100d14ea96a303f684907a2b1d63a4d677",
+  "assignments_git_blob": "1d17d5738901b6fcecf62e857bd080667996bd39",
+  "feature_manifest_sha256": "93ba71fcaab0f319626cac0c01226f9b9975fa6abc20ab085451922009dafd4e",
+  "feature_manifest_id": "c4602c6683a33383a3c9ca44e37d55b336d004a2e64c85e3f0f6686b6aa44521",
+  "cache_plan_id": "c3aafd0c81aa6b8786155a98bba5bf2372f384396d5580b20e0f57df835b0d06",
+  "cache_source_manifest_sha256": "eb7313036c5d6f731218007010fe1a86933f647a99cd0d04db0aa0720b1b2f15"
+}

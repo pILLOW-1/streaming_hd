@@ -1,0 +1,951 @@
+{
+  "domain": "Logic",
+  "configuration": "gru_memory",
+  "status": "COMPLETED_HISTORICAL_RESULTS",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "threshold": {
+    "calibration": "none",
+    "positive_if": "probability > 0.5",
+    "value": 0.5
+  },
+  "selection": "mean_validation_step_and_prefix_AUROC",
+  "step": {
+    "AUROC": {
+      "n": 5,
+      "mean": 0.9051925717624957,
+      "sample_sd": 0.00440803321449226,
+      "per_seed": {
+        "42": 0.9101349303853341,
+        "123": 0.9052726511418172,
+        "456": 0.9089859975297493,
+        "789": 0.900643395825815,
+        "2026": 0.9009258839297627
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "AP": {
+      "n": 5,
+      "mean": 0.3998459747098638,
+      "sample_sd": 0.014398241804258019,
+      "per_seed": {
+        "42": 0.40919707633764374,
+        "123": 0.4042119414078034,
+        "456": 0.4115014953328213,
+        "789": 0.3756488721539114,
+        "2026": 0.3986704883171393
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "accuracy": {
+      "n": 5,
+      "mean": 0.9510917030567686,
+      "sample_sd": 0.005115517482391737,
+      "per_seed": {
+        "42": 0.9585564801845596,
+        "123": 0.9510587459833567,
+        "456": 0.9529537777045398,
+        "789": 0.9475158605915794,
+        "2026": 0.9453736508198072
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "precision": {
+      "n": 5,
+      "mean": 0.43455828116138917,
+      "sample_sd": 0.0646242594858309,
+      "per_seed": {
+        "42": 0.5399239543726235,
+        "123": 0.42677824267782427,
+        "456": 0.44168734491315137,
+        "789": 0.38004246284501064,
+        "2026": 0.3843594009983361
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "recall": {
+      "n": 5,
+      "mean": 0.3564885496183206,
+      "sample_sd": 0.06325695395485495,
+      "per_seed": {
+        "42": 0.27099236641221375,
+        "123": 0.3893129770992366,
+        "456": 0.33969465648854963,
+        "789": 0.3416030534351145,
+        "2026": 0.44083969465648853
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "F1": {
+      "n": 5,
+      "mean": 0.3845099702003286,
+      "sample_sd": 0.0243328306700656,
+      "per_seed": {
+        "42": 0.36086404066073696,
+        "123": 0.40718562874251496,
+        "456": 0.38403451995685006,
+        "789": 0.3597989949748744,
+        "2026": 0.4106666666666667
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "specificity": {
+      "n": 5,
+      "mean": 0.9779212951003187,
+      "sample_sd": 0.007915742127326954,
+      "per_seed": {
+        "42": 0.9895806423835357,
+        "123": 0.9764057521742875,
+        "456": 0.9806251614569879,
+        "789": 0.9748557650908465,
+        "2026": 0.9681391543959356
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "Brier": {
+      "n": 5,
+      "mean": 0.03679820035758291,
+      "sample_sd": 0.003341393577323981,
+      "per_seed": {
+        "42": 0.032598889866326065,
+        "123": 0.036567947612927136,
+        "456": 0.03475054284747349,
+        "789": 0.03908751529426499,
+        "2026": 0.04098610616692286
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "TP": {
+      "n": 5,
+      "mean": 186.8,
+      "sample_sd": 33.146643872344,
+      "per_seed": {
+        "42": 142.0,
+        "123": 204.0,
+        "456": 178.0,
+        "789": 179.0,
+        "2026": 231.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "FP": {
+      "n": 5,
+      "mean": 256.4,
+      "sample_sd": 91.9255133246478,
+      "per_seed": {
+        "42": 121.0,
+        "123": 274.0,
+        "456": 225.0,
+        "789": 292.0,
+        "2026": 370.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "FN": {
+      "n": 5,
+      "mean": 337.2,
+      "sample_sd": 33.146643872344,
+      "per_seed": {
+        "42": 382.0,
+        "123": 320.0,
+        "456": 346.0,
+        "789": 345.0,
+        "2026": 293.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "TN": {
+      "n": 5,
+      "mean": 11356.6,
+      "sample_sd": 91.9255133246478,
+      "per_seed": {
+        "42": 11492.0,
+        "123": 11339.0,
+        "456": 11388.0,
+        "789": 11321.0,
+        "2026": 11243.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    }
+  },
+  "prefix": {
+    "AUROC": {
+      "n": 5,
+      "mean": 0.8924464878850129,
+      "sample_sd": 0.0043037321686281126,
+      "per_seed": {
+        "42": 0.8932266000425301,
+        "123": 0.8878425762063037,
+        "456": 0.890096856917236,
+        "789": 0.8992552641786793,
+        "2026": 0.8918111420803154
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "AP": {
+      "n": 5,
+      "mean": 0.7922266673162176,
+      "sample_sd": 0.00873599706512088,
+      "per_seed": {
+        "42": 0.7844103533676241,
+        "123": 0.7859661152759432,
+        "456": 0.7884539773153891,
+        "789": 0.8051165927823608,
+        "2026": 0.797186297839771
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "accuracy": {
+      "n": 5,
+      "mean": 0.8125236878965147,
+      "sample_sd": 0.0076502394197773185,
+      "per_seed": {
+        "42": 0.8142044986405207,
+        "123": 0.8111559693499217,
+        "456": 0.8001153497569415,
+        "789": 0.8175002059817088,
+        "2026": 0.8196424157534811
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "precision": {
+      "n": 5,
+      "mean": 0.7241194716471201,
+      "sample_sd": 0.04883334054482624,
+      "per_seed": {
+        "42": 0.7741184298070526,
+        "123": 0.7767090346959807,
+        "456": 0.6673464763199637,
+        "789": 0.7017208413001912,
+        "2026": 0.7007025761124122
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "recall": {
+      "n": 5,
+      "mean": 0.6897770945426595,
+      "sample_sd": 0.0934854060304163,
+      "per_seed": {
+        "42": 0.5962080450935178,
+        "123": 0.5792979759159621,
+        "456": 0.7545477837560851,
+        "789": 0.7522418652318729,
+        "2026": 0.7665898027158596
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "F1": {
+      "n": 5,
+      "mean": 0.7007583088378628,
+      "sample_sd": 0.03082369730995001,
+      "per_seed": {
+        "42": 0.6736141265016645,
+        "123": 0.6636336953331377,
+        "456": 0.7082732082732083,
+        "789": 0.7261036230988005,
+        "2026": 0.7321668909825033
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "specificity": {
+      "n": 5,
+      "mean": 0.8707068253582706,
+      "sample_sd": 0.0455423528429755,
+      "per_seed": {
+        "42": 0.9175370415350984,
+        "123": 0.9210590235608452,
+        "456": 0.8217148409035706,
+        "789": 0.8484333252368229,
+        "2026": 0.8447898955550158
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "Brier": {
+      "n": 5,
+      "mean": 0.13657271577264435,
+      "sample_sd": 0.008455364763985432,
+      "per_seed": {
+        "42": 0.13048057282217204,
+        "123": 0.13860877004972616,
+        "456": 0.1504177278087493,
+        "789": 0.13007869448946952,
+        "2026": 0.1332778136931047
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "TP": {
+      "n": 5,
+      "mean": 2692.2,
+      "sample_sd": 364.8735397367148,
+      "per_seed": {
+        "42": 2327.0,
+        "123": 2261.0,
+        "456": 2945.0,
+        "789": 2936.0,
+        "2026": 2992.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "FP": {
+      "n": 5,
+      "mean": 1064.6,
+      "sample_sd": 374.9957333090605,
+      "per_seed": {
+        "42": 679.0,
+        "123": 650.0,
+        "456": 1468.0,
+        "789": 1248.0,
+        "2026": 1278.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "FN": {
+      "n": 5,
+      "mean": 1210.8,
+      "sample_sd": 364.8735397367148,
+      "per_seed": {
+        "42": 1576.0,
+        "123": 1642.0,
+        "456": 958.0,
+        "789": 967.0,
+        "2026": 911.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    },
+    "TN": {
+      "n": 5,
+      "mean": 7169.4,
+      "sample_sd": 374.9957333090605,
+      "per_seed": {
+        "42": 7555.0,
+        "123": 7584.0,
+        "456": 6766.0,
+        "789": 6986.0,
+        "2026": 6956.0
+      },
+      "source": "Logic metrics recomputed from hash-verified supplied predictions"
+    }
+  },
+  "recovery": {
+    "false_recovery_fraction": {
+      "defined_n": 5,
+      "mean": 0.43066897368059087,
+      "n": 5,
+      "sample_sd": 0.11394100478260608
+    },
+    "gapped_boundary_recovery_accuracy": {
+      "defined_n": 5,
+      "mean": 1.0,
+      "n": 5,
+      "sample_sd": 0.0
+    },
+    "post_recovery_prefix_false_positive_rate": {
+      "defined_n": 5,
+      "mean": 0.3436410826844642,
+      "n": 5,
+      "sample_sd": 0.11211749560225721
+    },
+    "predicted_recovery_transition_rate": {
+      "defined_n": 5,
+      "mean": 0.057228915662650606,
+      "n": 5,
+      "sample_sd": 0.014870796429315889
+    },
+    "recovery_boundary_accuracy": {
+      "defined_n": 5,
+      "mean": 0.48012048192771084,
+      "n": 5,
+      "sample_sd": 0.1058050259337739
+    },
+    "recovery_boundary_miss_rate": {
+      "defined_n": 5,
+      "mean": 0.5198795180722892,
+      "n": 5,
+      "sample_sd": 0.1058050259337739
+    },
+    "recovery_delay_mean_detected_only": {
+      "defined_n": 5,
+      "mean": 0.26545515911370837,
+      "n": 5,
+      "sample_sd": 0.1775643729496829
+    },
+    "recovery_delay_median_detected_only": {
+      "defined_n": 5,
+      "mean": 0.0,
+      "n": 5,
+      "sample_sd": 0.0
+    },
+    "recovery_detected_in_observed_episode_rate": {
+      "defined_n": 5,
+      "mean": 0.5283132530120482,
+      "n": 5,
+      "sample_sd": 0.11077930803097284
+    },
+    "recovery_detected_rate_given_previous_prediction_1": {
+      "defined_n": 5,
+      "mean": 0.17935953558095621,
+      "n": 5,
+      "sample_sd": 0.06887378068720965
+    },
+    "recovery_detected_within_0_steps_known_outcome_rate": {
+      "defined_n": 5,
+      "mean": 0.48012048192771084,
+      "n": 5,
+      "sample_sd": 0.1058050259337739
+    },
+    "recovery_detected_within_10_steps_known_outcome_rate": {
+      "defined_n": 5,
+      "mean": 0.5516201255569166,
+      "n": 5,
+      "sample_sd": 0.11226399201432283
+    },
+    "recovery_detected_within_1_steps_known_outcome_rate": {
+      "defined_n": 5,
+      "mean": 0.5174523678487343,
+      "n": 5,
+      "sample_sd": 0.11055507485278535
+    },
+    "recovery_detected_within_2_steps_known_outcome_rate": {
+      "defined_n": 5,
+      "mean": 0.5317545677975122,
+      "n": 5,
+      "sample_sd": 0.11480197286855184
+    },
+    "recovery_detected_within_5_steps_known_outcome_rate": {
+      "defined_n": 5,
+      "mean": 0.5474643325651298,
+      "n": 5,
+      "sample_sd": 0.11409196965470156
+    },
+    "recovery_transition_rate_given_previous_prediction_1": {
+      "defined_n": 5,
+      "mean": 0.11498544186113553,
+      "n": 5,
+      "sample_sd": 0.04331128053375737
+    }
+  },
+  "recovery_per_seed": [
+    {
+      "family": "method4_graph_v1",
+      "fixed_window_denominators": {
+        "0": {
+          "detected": 382,
+          "outcome_not_observed": 0,
+          "outcome_observed": 664,
+          "rate": 0.5753012048192772
+        },
+        "1": {
+          "detected": 396,
+          "outcome_not_observed": 16,
+          "outcome_observed": 648,
+          "rate": 0.6111111111111112
+        },
+        "10": {
+          "detected": 411,
+          "outcome_not_observed": 30,
+          "outcome_observed": 634,
+          "rate": 0.6482649842271293
+        },
+        "2": {
+          "detected": 405,
+          "outcome_not_observed": 25,
+          "outcome_observed": 639,
+          "rate": 0.6338028169014085
+        },
+        "5": {
+          "detected": 410,
+          "outcome_not_observed": 29,
+          "outcome_observed": 635,
+          "rate": 0.6456692913385826
+        }
+      },
+      "metrics": {
+        "false_recovery_fraction": 0.5823293172690763,
+        "gapped_boundary_recovery_accuracy": 1.0,
+        "post_recovery_prefix_false_positive_rate": 0.2339636633296255,
+        "predicted_recovery_transition_rate": 0.05120481927710843,
+        "prefix_AUPRC": 0.7844103533676241,
+        "prefix_AUROC": 0.8932266000425301,
+        "prefix_F1": 0.6736141265016645,
+        "prefix_accuracy": 0.8142044986405207,
+        "prefix_precision": 0.7741184298070526,
+        "prefix_recall": 0.5962080450935178,
+        "recovery_boundary_accuracy": 0.5753012048192772,
+        "recovery_boundary_miss_rate": 0.4246987951807229,
+        "recovery_delay_mean_detected_only": 0.13381995133819952,
+        "recovery_delay_median_detected_only": 0,
+        "recovery_detected_in_observed_episode_rate": 0.6189759036144579,
+        "recovery_detected_rate_given_previous_prediction_1": 0.18571428571428572,
+        "recovery_detected_within_0_steps_known_outcome_rate": 0.5753012048192772,
+        "recovery_detected_within_10_steps_known_outcome_rate": 0.6482649842271293,
+        "recovery_detected_within_1_steps_known_outcome_rate": 0.6111111111111112,
+        "recovery_detected_within_2_steps_known_outcome_rate": 0.6338028169014085,
+        "recovery_detected_within_5_steps_known_outcome_rate": 0.6456692913385826,
+        "recovery_transition_rate_given_previous_prediction_1": 0.12142857142857143
+      },
+      "prefix_confusion": {
+        "accuracy": 0.8142044986405207,
+        "fn": 1576,
+        "fp": 679,
+        "hallucination_recall": 0.5962080450935178,
+        "nonhallucinated_specificity": 0.9175370415350984,
+        "tn": 7555,
+        "tp": 2327
+      },
+      "recovery_denominators": {
+        "already_predicted_0_before_and_at_boundary": 348,
+        "detected_within_observed_zero_episode": 411,
+        "events": 664,
+        "post_recovery_false_positive_prefixes": 631,
+        "post_recovery_observed_prefixes": 2697,
+        "predicted_1_to_0_at_boundary": 34,
+        "predicted_recovered_at_boundary": 382,
+        "previously_predicted_hallucinated": 280,
+        "right_censored_at_original_step_gap": 0,
+        "right_censored_at_trajectory_end": 31,
+        "trajectories": 165,
+        "undetected_before_next_gold_error": 222,
+        "undetected_within_observed_zero_episode": 253
+      },
+      "seed": 42,
+      "variant": "gru_memory"
+    },
+    {
+      "family": "method4_graph_v1",
+      "fixed_window_denominators": {
+        "0": {
+          "detected": 402,
+          "outcome_not_observed": 0,
+          "outcome_observed": 664,
+          "rate": 0.6054216867469879
+        },
+        "1": {
+          "detected": 423,
+          "outcome_not_observed": 15,
+          "outcome_observed": 649,
+          "rate": 0.6517719568567026
+        },
+        "10": {
+          "detected": 437,
+          "outcome_not_observed": 23,
+          "outcome_observed": 641,
+          "rate": 0.6817472698907956
+        },
+        "2": {
+          "detected": 430,
+          "outcome_not_observed": 20,
+          "outcome_observed": 644,
+          "rate": 0.6677018633540373
+        },
+        "5": {
+          "detected": 437,
+          "outcome_not_observed": 22,
+          "outcome_observed": 642,
+          "rate": 0.6806853582554517
+        }
+      },
+      "metrics": {
+        "false_recovery_fraction": 0.5160256410256411,
+        "gapped_boundary_recovery_accuracy": 1.0,
+        "post_recovery_prefix_false_positive_rate": 0.21579532814238042,
+        "predicted_recovery_transition_rate": 0.06927710843373494,
+        "prefix_AUPRC": 0.7859661152759432,
+        "prefix_AUROC": 0.8878425762063038,
+        "prefix_F1": 0.6636336953331377,
+        "prefix_accuracy": 0.8111559693499217,
+        "prefix_precision": 0.7767090346959807,
+        "prefix_recall": 0.5792979759159621,
+        "recovery_boundary_accuracy": 0.6054216867469879,
+        "recovery_boundary_miss_rate": 0.39457831325301207,
+        "recovery_delay_mean_detected_only": 0.15296803652968036,
+        "recovery_delay_median_detected_only": 0.0,
+        "recovery_detected_in_observed_episode_rate": 0.6596385542168675,
+        "recovery_detected_rate_given_previous_prediction_1": 0.2679245283018868,
+        "recovery_detected_within_0_steps_known_outcome_rate": 0.6054216867469879,
+        "recovery_detected_within_10_steps_known_outcome_rate": 0.6817472698907956,
+        "recovery_detected_within_1_steps_known_outcome_rate": 0.6517719568567026,
+        "recovery_detected_within_2_steps_known_outcome_rate": 0.6677018633540373,
+        "recovery_detected_within_5_steps_known_outcome_rate": 0.6806853582554517,
+        "recovery_transition_rate_given_previous_prediction_1": 0.17358490566037735
+      },
+      "prefix_confusion": {
+        "accuracy": 0.8111559693499217,
+        "fn": 1642,
+        "fp": 650,
+        "hallucination_recall": 0.5792979759159621,
+        "nonhallucinated_specificity": 0.9210590235608452,
+        "tn": 7584,
+        "tp": 2261
+      },
+      "recovery_denominators": {
+        "already_predicted_0_before_and_at_boundary": 356,
+        "detected_within_observed_zero_episode": 438,
+        "events": 664,
+        "post_recovery_false_positive_prefixes": 582,
+        "post_recovery_observed_prefixes": 2697,
+        "predicted_1_to_0_at_boundary": 46,
+        "predicted_recovered_at_boundary": 402,
+        "previously_predicted_hallucinated": 265,
+        "right_censored_at_original_step_gap": 0,
+        "right_censored_at_trajectory_end": 23,
+        "trajectories": 165,
+        "undetected_before_next_gold_error": 203,
+        "undetected_within_observed_zero_episode": 226
+      },
+      "seed": 123,
+      "variant": "gru_memory"
+    },
+    {
+      "family": "method4_graph_v1",
+      "fixed_window_denominators": {
+        "0": {
+          "detected": 241,
+          "outcome_not_observed": 0,
+          "outcome_observed": 664,
+          "rate": 0.3629518072289157
+        },
+        "1": {
+          "detected": 251,
+          "outcome_not_observed": 18,
+          "outcome_observed": 646,
+          "rate": 0.38854489164086686
+        },
+        "10": {
+          "detected": 258,
+          "outcome_not_observed": 37,
+          "outcome_observed": 627,
+          "rate": 0.41148325358851673
+        },
+        "2": {
+          "detected": 254,
+          "outcome_not_observed": 27,
+          "outcome_observed": 637,
+          "rate": 0.3987441130298273
+        },
+        "5": {
+          "detected": 256,
+          "outcome_not_observed": 35,
+          "outcome_observed": 629,
+          "rate": 0.4069952305246423
+        }
+      },
+      "metrics": {
+        "false_recovery_fraction": 0.32608695652173914,
+        "gapped_boundary_recovery_accuracy": 1.0,
+        "post_recovery_prefix_false_positive_rate": 0.4675565443084909,
+        "predicted_recovery_transition_rate": 0.03463855421686747,
+        "prefix_AUPRC": 0.7884539773153894,
+        "prefix_AUROC": 0.890096856917236,
+        "prefix_F1": 0.7082732082732083,
+        "prefix_accuracy": 0.8001153497569415,
+        "prefix_precision": 0.6673464763199637,
+        "prefix_recall": 0.7545477837560851,
+        "recovery_boundary_accuracy": 0.3629518072289157,
+        "recovery_boundary_miss_rate": 0.6370481927710844,
+        "recovery_delay_mean_detected_only": 0.13565891472868216,
+        "recovery_delay_median_detected_only": 0.0,
+        "recovery_detected_in_observed_episode_rate": 0.3885542168674699,
+        "recovery_detected_rate_given_previous_prediction_1": 0.07547169811320754,
+        "recovery_detected_within_0_steps_known_outcome_rate": 0.3629518072289157,
+        "recovery_detected_within_10_steps_known_outcome_rate": 0.41148325358851673,
+        "recovery_detected_within_1_steps_known_outcome_rate": 0.38854489164086686,
+        "recovery_detected_within_2_steps_known_outcome_rate": 0.3987441130298273,
+        "recovery_detected_within_5_steps_known_outcome_rate": 0.4069952305246423,
+        "recovery_transition_rate_given_previous_prediction_1": 0.054245283018867926
+      },
+      "prefix_confusion": {
+        "accuracy": 0.8001153497569415,
+        "fn": 958,
+        "fp": 1468,
+        "hallucination_recall": 0.7545477837560851,
+        "nonhallucinated_specificity": 0.8217148409035706,
+        "tn": 6766,
+        "tp": 2945
+      },
+      "recovery_denominators": {
+        "already_predicted_0_before_and_at_boundary": 218,
+        "detected_within_observed_zero_episode": 258,
+        "events": 664,
+        "post_recovery_false_positive_prefixes": 1261,
+        "post_recovery_observed_prefixes": 2697,
+        "predicted_1_to_0_at_boundary": 23,
+        "predicted_recovered_at_boundary": 241,
+        "previously_predicted_hallucinated": 424,
+        "right_censored_at_original_step_gap": 0,
+        "right_censored_at_trajectory_end": 41,
+        "trajectories": 165,
+        "undetected_before_next_gold_error": 365,
+        "undetected_within_observed_zero_episode": 406
+      },
+      "seed": 456,
+      "variant": "gru_memory"
+    },
+    {
+      "family": "method4_graph_v1",
+      "fixed_window_denominators": {
+        "0": {
+          "detected": 299,
+          "outcome_not_observed": 0,
+          "outcome_observed": 664,
+          "rate": 0.4503012048192771
+        },
+        "1": {
+          "detected": 313,
+          "outcome_not_observed": 18,
+          "outcome_observed": 646,
+          "rate": 0.4845201238390093
+        },
+        "10": {
+          "detected": 334,
+          "outcome_not_observed": 31,
+          "outcome_observed": 633,
+          "rate": 0.5276461295418642
+        },
+        "2": {
+          "detected": 317,
+          "outcome_not_observed": 26,
+          "outcome_observed": 638,
+          "rate": 0.49686520376175547
+        },
+        "5": {
+          "detected": 331,
+          "outcome_not_observed": 30,
+          "outcome_observed": 634,
+          "rate": 0.5220820189274448
+        }
+      },
+      "metrics": {
+        "false_recovery_fraction": 0.39556962025316456,
+        "gapped_boundary_recovery_accuracy": 1.0,
+        "post_recovery_prefix_false_positive_rate": 0.39340007415647016,
+        "predicted_recovery_transition_rate": 0.07078313253012049,
+        "prefix_AUPRC": 0.8051165927823609,
+        "prefix_AUROC": 0.8992552641786793,
+        "prefix_F1": 0.7261036230988005,
+        "prefix_accuracy": 0.8175002059817088,
+        "prefix_precision": 0.7017208413001912,
+        "prefix_recall": 0.7522418652318729,
+        "recovery_boundary_accuracy": 0.4503012048192771,
+        "recovery_boundary_miss_rate": 0.5496987951807228,
+        "recovery_delay_mean_detected_only": 0.38392857142857145,
+        "recovery_delay_median_detected_only": 0.0,
+        "recovery_detected_in_observed_episode_rate": 0.5060240963855421,
+        "recovery_detected_rate_given_previous_prediction_1": 0.19518716577540107,
+        "recovery_detected_within_0_steps_known_outcome_rate": 0.4503012048192771,
+        "recovery_detected_within_10_steps_known_outcome_rate": 0.5276461295418642,
+        "recovery_detected_within_1_steps_known_outcome_rate": 0.4845201238390093,
+        "recovery_detected_within_2_steps_known_outcome_rate": 0.49686520376175547,
+        "recovery_detected_within_5_steps_known_outcome_rate": 0.5220820189274448,
+        "recovery_transition_rate_given_previous_prediction_1": 0.12566844919786097
+      },
+      "prefix_confusion": {
+        "accuracy": 0.8175002059817088,
+        "fn": 967,
+        "fp": 1248,
+        "hallucination_recall": 0.7522418652318729,
+        "nonhallucinated_specificity": 0.8484333252368229,
+        "tn": 6986,
+        "tp": 2936
+      },
+      "recovery_denominators": {
+        "already_predicted_0_before_and_at_boundary": 252,
+        "detected_within_observed_zero_episode": 336,
+        "events": 664,
+        "post_recovery_false_positive_prefixes": 1061,
+        "post_recovery_observed_prefixes": 2697,
+        "predicted_1_to_0_at_boundary": 47,
+        "predicted_recovered_at_boundary": 299,
+        "previously_predicted_hallucinated": 374,
+        "right_censored_at_original_step_gap": 0,
+        "right_censored_at_trajectory_end": 34,
+        "trajectories": 165,
+        "undetected_before_next_gold_error": 294,
+        "undetected_within_observed_zero_episode": 328
+      },
+      "seed": 789,
+      "variant": "gru_memory"
+    },
+    {
+      "family": "method4_graph_v1",
+      "fixed_window_denominators": {
+        "0": {
+          "detected": 270,
+          "outcome_not_observed": 0,
+          "outcome_observed": 664,
+          "rate": 0.4066265060240964
+        },
+        "1": {
+          "detected": 292,
+          "outcome_not_observed": 17,
+          "outcome_observed": 647,
+          "rate": 0.45131375579598143
+        },
+        "10": {
+          "detected": 310,
+          "outcome_not_observed": 30,
+          "outcome_observed": 634,
+          "rate": 0.4889589905362776
+        },
+        "2": {
+          "detected": 295,
+          "outcome_not_observed": 25,
+          "outcome_observed": 639,
+          "rate": 0.4616588419405321
+        },
+        "5": {
+          "detected": 306,
+          "outcome_not_observed": 29,
+          "outcome_observed": 635,
+          "rate": 0.4818897637795276
+        }
+      },
+      "metrics": {
+        "false_recovery_fraction": 0.3333333333333333,
+        "gapped_boundary_recovery_accuracy": 1.0,
+        "post_recovery_prefix_false_positive_rate": 0.4074898034853541,
+        "predicted_recovery_transition_rate": 0.060240963855421686,
+        "prefix_AUPRC": 0.797186297839771,
+        "prefix_AUROC": 0.8918111420803153,
+        "prefix_F1": 0.7321668909825033,
+        "prefix_accuracy": 0.8196424157534811,
+        "prefix_precision": 0.7007025761124122,
+        "prefix_recall": 0.7665898027158596,
+        "recovery_boundary_accuracy": 0.4066265060240964,
+        "recovery_boundary_miss_rate": 0.5933734939759037,
+        "recovery_delay_mean_detected_only": 0.5209003215434084,
+        "recovery_delay_median_detected_only": 0,
+        "recovery_detected_in_observed_episode_rate": 0.4683734939759036,
+        "recovery_detected_rate_given_previous_prediction_1": 0.1725,
+        "recovery_detected_within_0_steps_known_outcome_rate": 0.4066265060240964,
+        "recovery_detected_within_10_steps_known_outcome_rate": 0.4889589905362776,
+        "recovery_detected_within_1_steps_known_outcome_rate": 0.45131375579598143,
+        "recovery_detected_within_2_steps_known_outcome_rate": 0.4616588419405321,
+        "recovery_detected_within_5_steps_known_outcome_rate": 0.4818897637795276,
+        "recovery_transition_rate_given_previous_prediction_1": 0.1
+      },
+      "prefix_confusion": {
+        "accuracy": 0.8196424157534811,
+        "fn": 911,
+        "fp": 1278,
+        "hallucination_recall": 0.7665898027158596,
+        "nonhallucinated_specificity": 0.8447898955550158,
+        "tn": 6956,
+        "tp": 2992
+      },
+      "recovery_denominators": {
+        "already_predicted_0_before_and_at_boundary": 230,
+        "detected_within_observed_zero_episode": 311,
+        "events": 664,
+        "post_recovery_false_positive_prefixes": 1099,
+        "post_recovery_observed_prefixes": 2697,
+        "predicted_1_to_0_at_boundary": 40,
+        "predicted_recovered_at_boundary": 270,
+        "previously_predicted_hallucinated": 400,
+        "right_censored_at_original_step_gap": 0,
+        "right_censored_at_trajectory_end": 31,
+        "trajectories": 165,
+        "undetected_before_next_gold_error": 322,
+        "undetected_within_observed_zero_episode": 353
+      },
+      "seed": 2026,
+      "variant": "gru_memory"
+    }
+  ],
+  "provenance": {
+    "original_collector_summary_sha256": "d9d4ca1f699c177fe5693c2083b549a7d6b50ac735f6744c2da1cfa09c68a696",
+    "code_release_sha256": "e127bd500f02e7431e846163451f8fb317dbd97a7c53b15f5e24b0487d82a9b1",
+    "source_identity": {
+      "cache_plan_id": "c3aafd0c81aa6b8786155a98bba5bf2372f384396d5580b20e0f57df835b0d06",
+      "dataset_commit": "278886b69f2f0b6e44fb76f846da98497092d99b",
+      "feature_contract": {
+        "attention": "sdpa",
+        "causal_overrides": "explicit_corrected_prefix_forward",
+        "compute_dtype": "bfloat16",
+        "forward": "native_whole_trajectory_use_cache_false",
+        "hidden_dim": 4096,
+        "input_provenance": "published_frozen_native_extraction_inputs",
+        "layer": 16,
+        "pool_dtype": "float32",
+        "raw_storage_dtype": "bfloat16"
+      },
+      "feature_manifest_id": "c4602c6683a33383a3c9ca44e37d55b336d004a2e64c85e3f0f6686b6aa44521",
+      "feature_manifest_sha256": "93ba71fcaab0f319626cac0c01226f9b9975fa6abc20ab085451922009dafd4e",
+      "hf_pair_release_sha256": "e127bd500f02e7431e846163451f8fb317dbd97a7c53b15f5e24b0487d82a9b1",
+      "hf_split": {
+        "archived_assignments_git_blob": "1d17d5738901b6fcecf62e857bd080667996bd39",
+        "archived_assignments_sha256": "8e16e7b91f8b430c5ee668b8077a85100d14ea96a303f684907a2b1d63a4d677",
+        "content_policy": "all original Parquet fields identical except top-level split",
+        "domain": "Logic",
+        "donor_identity": {
+          "cache_plan_id": "c3aafd0c81aa6b8786155a98bba5bf2372f384396d5580b20e0f57df835b0d06",
+          "collector_correction": {
+            "base_collector_sha256": "6736777b0bd9fcc5ef1ef5dc2e0048c38c3476cba0279dec9ba9f252734b147f",
+            "base_package_manifest_sha256": "eb7313036c5d6f731218007010fe1a86933f647a99cd0d04db0aa0720b1b2f15",
+            "cache_plan_changed": false,
+            "completion_receipts_changed": false,
+            "correction": "Include retained_steps in exact published token-count comparison",
+            "correction_package_manifest_sha256": "f1108ee738f51cb156c10d8c9b9287fb573df19cc28e00011ef7df9757ebceac",
+            "correction_runner_sha256": "40dc4e88c7fd3ac6fcf5f1a2623136ac869b4d753f7a054b34e3fb2deb2ca940",
+            "extraction_repeated": false,
+            "format_version": "pillow-expanded-collector-correction-v1",
+            "full_output_byte_verification_required": true,
+            "published_token_counter_sha256": "ab3e152baf922df5c42397db5c2f8d4632949fb14b6ddb186b6d263cbea671bb"
+          },
+          "dataset_commit": "278886b69f2f0b6e44fb76f846da98497092d99b",
+          "detector_input_dtype": "float32",
+          "feature_contract": {
+            "attention": "sdpa",
+            "causal_overrides": "explicit_corrected_prefix_forward",
+            "compute_dtype": "bfloat16",
+            "forward": "native_whole_trajectory_use_cache_false",
+            "hidden_dim": 4096,
+            "input_provenance": "published_frozen_native_extraction_inputs",
+            "layer": 16,
+            "pool_dtype": "float32",
+            "raw_storage_dtype": "bfloat16"
+          },
+          "feature_manifest_id": "c4602c6683a33383a3c9ca44e37d55b336d004a2e64c85e3f0f6686b6aa44521",
+          "feature_manifest_sha256": "93ba71fcaab0f319626cac0c01226f9b9975fa6abc20ab085451922009dafd4e",
+          "kind": "pillow_expanded_native_cache",
+          "model_revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+          "native_adapter_sha256": "d6aec34b107673cdba4f87abdbfe521e2245dc9d78e956b3cd484c3028a077cb",
+          "native_plan_id": "2ef716c638a38b0b3310625e50afed3f8d43e553ffcb021249959b42126881e3",
+          "package_manifest_sha256": "eb7313036c5d6f731218007010fe1a86933f647a99cd0d04db0aa0720b1b2f15",
+          "plan_id": "c3aafd0c81aa6b8786155a98bba5bf2372f384396d5580b20e0f57df835b0d06",
+          "production": true,
+          "question_mean_available": false,
+          "step_causal_overrides": "published_corrected_forward_per_step",
+          "training_package_manifest_sha256": "4b4255309c14e019c83777e1b73280a3d5e4ad282d68b240b49ac21b8a3094c4"
+        },
+        "hf_acquisition_content_sha256": "41e184e6ee1a392b5f6616a174e91bd490e0d2eba7ff72460e2ade89e68064e3",
+        "hf_commit": "b45b2fd88e00869825de163bc6b7a41f31dd962b",
+        "hf_manifest_sha256": "9f1bbaec5d1b22587f713c7115c537ed415689823ab5fab30d66bb429aec3ebb",
+        "hf_parquet_sha256": {
+          "test": "3820f46ec9f1849967c713b5162bce3ccdd65e00b29108b7953078ef790a3727",
+          "train": "abf6f50e53f0170b6b5cdf173f64439e929df7aadd96894b5ecbfa0e5a2f48fd",
+          "val": "00ffe70cf53ecf54367a22853fa7116071fb9789261bc1585efc29b81db49fcc"
+        },
+        "hf_pin_sha256": "7b545c66c53493ab078f65afa65140b9d2015e649570a1af784cf9390a04b731",
+        "hf_repo_id": "pillow-streaming/streaming-hd-v1",
+        "hidden_feature_reuse": "original verified native tensors; no fitted detector state reused",
+        "kind": "hf_verified_split_only_native_view_v1",
+        "model": "deepseek_r1_distill_llama_8b",
+        "ordered_assignments_sha256": "a99befad2e89a14855e8b87e1e4468e2cc638cc0a1e13c9a1bbdea3d541509e7"
+      },
+      "kind": "pillow_expanded_native_cache",
+      "model_revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+      "native_plan_id": "2ef716c638a38b0b3310625e50afed3f8d43e553ffcb021249959b42126881e3",
+      "package_manifest_sha256": "eb7313036c5d6f731218007010fe1a86933f647a99cd0d04db0aa0720b1b2f15",
+      "plan_id": "c3aafd0c81aa6b8786155a98bba5bf2372f384396d5580b20e0f57df835b0d06",
+      "production": true,
+      "training_package_manifest_sha256": "4b4255309c14e019c83777e1b73280a3d5e4ad282d68b240b49ac21b8a3094c4"
+    },
+    "evidence": "All ten supplied prediction/result hashes checked; Step/Prefix metrics recomputed, 130 saved values matched within 1e-12.",
+    "recovery_evidence": "Retained from the collected original summaries with per-seed denominators; not freshly recomputed on real data here."
+  }
+}

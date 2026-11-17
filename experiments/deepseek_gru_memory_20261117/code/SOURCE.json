@@ -1,0 +1,83 @@
+{
+  "format": "compact-gru-memory-source-v1",
+  "original_hf_release_sha256": "e127bd500f02e7431e846163451f8fb317dbd97a7c53b15f5e24b0487d82a9b1",
+  "scope": "Original GRU+memory numerical functions, compact public API and completed historical result records.",
+  "files": {
+    "code/gru_memory/model.py": {
+      "original_source": "method4_graph_v1/reference/method4.py",
+      "original_file_sha256": "f8670e5a7070d5e8ee251931ce513ab19281cb9e89ffd89c78559fce57a2de5e",
+      "published_file_sha256": "18a43f8003bffb0e742d72ceb03acc3565ce6b005c9a8cf728296607df8870e8",
+      "change": "Original architecture text unchanged; appended original normalization and GRU-only factory. Unselected graph architectures omitted."
+    },
+    "code/gru_memory/config.py": {
+      "original_source": "method4_graph_v1/config.py",
+      "original_file_sha256": "70cae93e9bcacbedb84965a35f833dd61dab3adaa230ad7aee0e74e57773fd3e",
+      "published_file_sha256": "70cae93e9bcacbedb84965a35f833dd61dab3adaa230ad7aee0e74e57773fd3e",
+      "change": "byte-identical original module"
+    },
+    "code/gru_memory/train.py": {
+      "original_source": "method4_graph_v1/train.py",
+      "original_file_sha256": "77d881de6b15cf60d6e90afe84b6dd95dcb1ebceda2119683472a3ff495b61e7",
+      "published_file_sha256": "77d881de6b15cf60d6e90afe84b6dd95dcb1ebceda2119683472a3ff495b61e7",
+      "change": "byte-identical original module"
+    },
+    "code/gru_memory/common.py": {
+      "original_source": "method4_graph_v1/common.py",
+      "original_file_sha256": "62439d9125e9553e88cd5760901c6219a57155f58e43ac4528c122cb7572fb29",
+      "published_file_sha256": "68684b2a18a9817cd2db5eb7ddc15d5f787e1ebd6cd715b462c41f9956bf537f",
+      "change": "Only required runtime/integrity functions retained; scheduler-specific lock metadata omitted. No numerical changes."
+    },
+    "code/gru_memory/metrics.py": {
+      "original_source": "method4_graph_v1/metrics.py",
+      "original_file_sha256": "679a0ab4c10709dc95dbf74e7c4aaf937cd5b3447da9e516d3a44369f222239b",
+      "published_file_sha256": "53b6b75d04dd4ed8fbfb7bb80739792516130902bf04e2c7808d9c342dc98fe9",
+      "change": "Unchanged scoring and evaluation functions retained; unused bootstrap and cross-method utilities omitted."
+    },
+    "code/gru_memory/evaluate.py": {
+      "original_source": "method4_graph_v1/evaluate.py",
+      "original_file_sha256": "c6d9cd19f07d161eeebf6576dde5c20d2958b10c17ad4c3770794e67f42cf9ea",
+      "published_file_sha256": "9b245983560ec8579c759a55bd50d874e4c65fd1fcbdbf2b2a35470f9decc44f",
+      "change": "Unchanged test-gating and evaluation functions retained; original multi-dataset CLI omitted."
+    },
+    "code/gru_memory/recovery.py": {
+      "original_source": "recovery.py",
+      "original_file_sha256": "9f1395da6b4c17bad742a553cf0a2ebc2dc6a10367f767153e5da871cf2b731b",
+      "published_file_sha256": "a1a89cd7e8a1efbe3f9541e249d1dcad42fc32d5ae5cc67f1486c793978f71c4",
+      "change": "Original numerical recovery functions retained; cache reading, scheduler paths and report-packaging CLI omitted."
+    }
+  },
+  "new_files": [
+    "code/gru_memory/api.py",
+    "code/gru_memory/__init__.py",
+    "train.py"
+  ],
+  "raw_result_origin": "Original full HF pair package, not a new run of this compact publication.",
+  "attribution": "Researcher-supplied GRU+memory source; retained original provenance. No new blanket license or duplicated third-party Streaming source is introduced.",
+  "validation": {
+    "status": "COMPACT_CPU_VALIDATION_PASS",
+    "checks": [
+      "Exact seeded architecture, forward, loss and parameter-gradient parity with original GRU factory",
+      "Two-epoch end-to-end training/checkpoint/history parity; no TEST access during fitting",
+      "Saved pause/resume matches uninterrupted training weights and history exactly",
+      "API completes five-seed synthetic training/evaluation; refuses premature TEST; all fixture outputs marked ineligible as benchmarks",
+      "Original and compact recovery functions return identical summaries",
+      "All 96 published metric summaries match five-seed values; recovery per-seed records retained"
+    ],
+    "runtime": {
+      "python": "3.12.14",
+      "torch": "2.7.1+cpu",
+      "numpy": "2.3.5",
+      "sklearn": "1.8.0",
+      "device_type": "cpu",
+      "threads": 1,
+      "cuda_version": null
+    },
+    "benchmark_gpu_rerun": false,
+    "real_data_loader_validation": false,
+    "published_aggregate_records_checked": 96
+  },
+  "format_reference": {
+    "url": "https://github.com/pILLOW-1/streaming_hd/tree/main/experiments/qwen_baseline_prefix_decomposition_20261116",
+    "readme_blob_sha": "ae07c49d527d422b59067e53d8a07b2588cca3ee"
+  }
+}

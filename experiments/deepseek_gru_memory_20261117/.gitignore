@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.local.json
+runs/
+logs/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+*.parquet
