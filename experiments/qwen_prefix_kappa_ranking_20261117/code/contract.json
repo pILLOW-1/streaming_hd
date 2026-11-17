@@ -1,0 +1,20 @@
+{
+  "experiment": "qwen_prefix_kappa_ranking_20261117",
+  "weight": 0.1,
+  "domains": [
+    "Logic",
+    "Factuality"
+  ],
+  "logic_workers": {
+    "lower": "1-32",
+    "upper": "33-64"
+  },
+  "factuality_worker": "lower after Logic 1-32",
+  "train_position_batch": 128,
+  "max_trajectories": 32,
+  "pair_seed": 20261117,
+  "bce_seed": 42,
+  "source_manifest": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+  "matched_epochs": true,
+  "holdout_policy": "one frozen rank inference; read already saved predictions for BCE"
+}
