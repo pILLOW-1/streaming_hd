@@ -672,3 +672,4 @@ entries:
   - {"turn": "2026-11-17_001#5", "notes": ["Record the matched Logic TEST comparison. The fixed-aggregation Step variant is still training."]}
   - {"turn": "2026-11-17_001#6", "notes": ["Record the observed concentration summaries. Other domains are pending."]}
   - {"turn": "2026-11-17_001#7", "notes": ["Record the two completed investigations with separate evidence. No general claim promoted."]}
+  - {"turn": "2026-11-17_001#8", "notes": ["Record the frozen loss ablation and the accepted test protocol. Results pending."]}

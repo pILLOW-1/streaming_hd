@@ -2,8 +2,8 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T11:38:53+11:00"
-  turn_count: 7
+  last_turn: "2026-11-17T12:25:26+11:00"
+  turn_count: 8
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
@@ -15,5 +15,6 @@ events_logged:
 - {"turn": 6, "type": "experiment", "id": "N12813613", "routing": "direct", "provenance": "ai-executed", "summary": "Frozen VAL token-weight diagnostics. Science (38384 Steps) had median effective token fraction 0.8007 for learnable aggregation and 0.5763 for fixed Streaming. Multi-hop (11107 Steps) had 0.5296 and 0.5763, respectively. Logic and Factuality pending."}
 - {"turn": 7, "type": "experiment", "id": "N12813614", "routing": "direct", "provenance": "ai-executed", "summary": "On 15233 frozen Logic TEST positions, Prefix AUROC was 0.8355950180 and AP was 0.3885226790 with fixed-aggregation Step probabilities. The matched original-score variant gave 0.8316322642 AUROC and 0.3739201090 AP. VAL selected Prefix layer 47, epoch 17."}
 - {"turn": 7, "type": "experiment", "id": "N12813615", "routing": "direct", "provenance": "ai-executed", "summary": "Median effective token fractions, learnable vs fixed Streaming, were Logic 0.5268 vs 0.5700 (9332 Steps), Factuality 0.5278 vs 0.5724 (4333), Science 0.8007 vs 0.5763 (38384), and Multi-hop 0.5296 vs 0.5763 (11107). The new Logic and Factuality summaries bind the frozen layer and compare identical VAL spans."}
+- {"turn": 8, "type": "decision", "id": "N12813616", "routing": "direct", "provenance": "user", "summary": "Add 0.1 times a trajectory-macro pairwise loss on the conditional Prefix logit, using all eligible pairs within uniformly sampled trajectories and allowing multiple previous errors. Keep frozen original Streaming Step probabilities, unnormalized Prefix features, and the original BCE shuffle and per-layer update counts. Run Qwen Logic and Factuality and compare to saved BCE-control predictions and a time-only score."}
 claims_touched: []
 logic_revisions: []
