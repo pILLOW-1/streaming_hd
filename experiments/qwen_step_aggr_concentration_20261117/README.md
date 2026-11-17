@@ -20,7 +20,7 @@ Single-token Steps contribute to concentration summaries. Relative argmax positi
 
 | Configuration | Logic | Factuality | Science | Multi-hop |
 | --- | --- | --- | --- | --- |
-| Legacy learnable aggregation | | | | |
-| Streaming fixed aggregation | | | | |
+| Legacy learnable aggregation | | | 0.8007 | 0.5296 |
+| Streaming fixed aggregation | | | 0.5763 | 0.5763 |
 
-Results pending.
+Science and Multi-hop complete. Logic and Factuality pending.
