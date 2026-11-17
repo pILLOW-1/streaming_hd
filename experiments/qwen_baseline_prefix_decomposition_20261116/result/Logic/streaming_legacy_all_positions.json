@@ -1,0 +1,29 @@
+{
+  "domain": "Logic",
+  "method": "streaming",
+  "position_count": 15233,
+  "conditional_train_count": 24889,
+  "selected": {
+    "layer": 39,
+    "epoch": 20,
+    "AUROC": 0.8983372947219214,
+    "AP": 0.5179266769771778,
+    "BCE": 0.2556474965002333
+  },
+  "all_positions": true,
+  "train_position_count": 25266,
+  "threshold": 0.18165595829486847,
+  "TEST": {
+    "AUROC": 0.8316322641672577,
+    "AP": 0.37392010896503913
+  },
+  "direct_prefix_AUROC": 0.8256170870633168,
+  "delta_AUROC": 0.006015177103940728,
+  "test_sha": "368fe891c0a3c8d2e4b9789166302e9795bf842bbde681b348bf0c06c31224ac",
+  "legacy_streaming": true,
+  "input_manifest_sha": "f97949f45e257e5d21200c689ce7ba791a94502cd912bd6ef8f2e2750bd47ac6",
+  "reference_label_sha": "5e252431168261bd2bc6251e1f927d12956fc8c87db7a73d43aaedb725a3a633",
+  "source_result_sha": "a432554734ecd8c4f1fbea3b5a939325aeb8d4b4f2900297877295e21a3ba28b",
+  "selected_checkpoint_sha": "01437aa47c83ede6b1bd2e29043e1f165726f126ead4407a0258325db81ebb20",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
