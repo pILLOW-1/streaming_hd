@@ -376,6 +376,35 @@
       "source_result_sha": "a432554734ecd8c4f1fbea3b5a939325aeb8d4b4f2900297877295e21a3ba28b",
       "selected_checkpoint_sha": "01437aa47c83ede6b1bd2e29043e1f165726f126ead4407a0258325db81ebb20",
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    "streaming_legacy_fixed_step": {
+      "domain": "Logic",
+      "method": "streaming",
+      "position_count": 15233,
+      "conditional_train_count": 24889,
+      "selected": {
+        "layer": 47,
+        "epoch": 17,
+        "AUROC": 0.899277346687892,
+        "AP": 0.5128504422553,
+        "BCE": 0.2748333353282455
+      },
+      "all_positions": true,
+      "train_position_count": 25266,
+      "threshold": 0.10463908314704895,
+      "TEST": {
+        "AUROC": 0.8355950179555033,
+        "AP": 0.3885226789667589
+      },
+      "direct_prefix_AUROC": 0.8256170870633168,
+      "delta_AUROC": 0.00997793089218657,
+      "test_sha": "367f7aed294ff3fe755e8911909b86b522f45a617654145f215cd28d1033b3d5",
+      "legacy_streaming": true,
+      "input_manifest_sha": "572cb6aae1bf90da303f45459eca6a097e3ec9e9040a46f5edd193817d2ff160",
+      "reference_label_sha": "5e252431168261bd2bc6251e1f927d12956fc8c87db7a73d43aaedb725a3a633",
+      "source_result_sha": "2cbf793252897de68d750dc202fcdbc162e4b63cc8c230ebe13868b709e33e95",
+      "selected_checkpoint_sha": "e45a3e113672dee2195eb9cd5e6055d1c6e834837a0147f1351cbb16137843f6",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   }
 }
