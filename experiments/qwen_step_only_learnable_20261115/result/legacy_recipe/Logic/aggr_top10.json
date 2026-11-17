@@ -1,0 +1,27 @@
+{
+  "domain": "Logic",
+  "arm": "aggr_top10",
+  "layer": 45,
+  "epoch": 11,
+  "positions": 15233,
+  "metrics": {
+    "step_AUROC": 0.8561268273913617,
+    "step_AP": 0.1550534777382147,
+    "step_BCE": 0.10033940153070942
+  },
+  "baseline": {
+    "step_AUROC": 0.8871391422203871,
+    "step_AP": 0.1739968915567954,
+    "step_BCE": 0.0797703916394803
+  },
+  "prediction_sha256": "7117f2d88f9a7bbe3024b2afeac00fa9849bbe7787681ef67fa5b81199ff89c7",
+  "checkpoint_sha256": "bf01d48e1ef38cdf90c59414a4ea7097c4e4e7bf24922a3ff9ec85c86e0bfe46",
+  "input_pins": {
+    "receipt": "ca81b93c9e9ceef2890daf48292ef21a394da78abac130376d1f47d1aa38f935",
+    "offsets": "ae7abe209ec218c4cae7d35b25fa18b54fd015000067dbc354d9af5cf662cbf3",
+    "labels": "204b99eeecc77502536be605bd6d8b7ebdb5ad45c84956d7e128ca4036bc5e72",
+    "positions": "e5fb47b6876ef1e1e716e90cd79a66a07d0100d42e91391f9a631699773e67ed",
+    "history_index": "aebfbc4299a5c6c607f80a2364673218da673fe57fdb9db4ad231a3ae09a4e7f"
+  },
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
