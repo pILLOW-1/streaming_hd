@@ -7,8 +7,8 @@ legacy=$base/qwen_step_only_learnable_20261115/legacy_recipe/code
 index=/workspace/qwen_relation/indexes/qwen_c18_frozen_history_20261114
 arm=aggr_fourhead_gated
 case "$1:$RUNPOD_POD_ID" in
- lower:uonjsseqqtxjci) side=lower; a=1; b=32 ;;
- upper:s52mlsshua04ty) side=upper; a=33; b=64 ;;
+ lower:nwpqw43905m8nf) side=lower; a=1; b=32 ;;
+ upper:1vbjo4pptxjeu4) side=upper; a=33; b=64 ;;
  *) exit 64 ;;
 esac
 cd "$root"
