@@ -2,8 +2,8 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T14:29:21+11:00"
-  turn_count: 14
+  last_turn: "2026-11-17T14:46:54+11:00"
+  turn_count: 15
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
@@ -22,5 +22,6 @@ events_logged:
 - {"turn": 12, "type": "experiment", "id": "N12813620", "routing": "direct", "provenance": "ai-executed", "summary": "On 5489 Factuality TEST positions, the hard Top-10% mask before one within-Step softmax gave Step AUROC 0.859060, AP 0.382187, and BCE 0.256812. The dense matched legacy readout gave AUROC 0.881608, AP 0.432971, and BCE 0.227745. VAL selected layer 49, epoch 5."}
 - {"turn": 13, "type": "experiment", "id": "N12813621", "routing": "direct", "provenance": "ai-executed", "summary": "On 15233 Logic TEST positions, hard Top-10% achieved Step AUROC 0.856127 (dense 0.887139), AP 0.155053 (dense 0.173997), and BCE 0.100339 (dense 0.079770). VAL selected layer 45, epoch 11. The same hard mask also gave lower Step AUROC than dense aggregation on the matched Factuality split."}
 - {"turn": 14, "type": "experiment", "id": "N12813622", "routing": "direct", "provenance": "ai-executed", "summary": "On ground-truth error-only VAL Steps, the final 20% held mean mass of 0.4946 learned vs 0.4908 fixed (Logic, n=154), 0.2420 vs 0.4869 (Factuality, n=372), 0.3445 vs 0.4882 (Science, n=1962), and 0.3806 vs 0.4909 (Multi-hop, n=1020). Logic's final decile was 0.3712 vs 0.2812."}
+- {"turn": 15, "type": "experiment", "id": "N12813623", "routing": "direct", "provenance": "ai-executed", "summary": "The highest scoring or highest weight token fell in the final decile in HaMI versus learnable aggregation for 45.5% versus 72.1% of Logic errors (154), 25.4% versus 19.1% of Factuality errors (372), and 29.2% versus 56.5% of Multi-hop errors (1020). Fixed Streaming always peaked in the final decile in these cohorts. HaMI uses its original top-score averaging for Step predictions. Science is pending a frozen HaMI layer."}
 claims_touched: []
 logic_revisions: []
