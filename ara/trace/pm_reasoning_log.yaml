@@ -669,3 +669,4 @@ entries:
   - {"turn": "2026-11-17_001#2", "notes": ["Record the verified Factuality result. The bundled changes do not isolate the optimization or normalization effect."]}
   - {"turn": "2026-11-17_001#3", "notes": ["Record the controlled replacement of frozen Step scores. Await independent Prefix TEST verification."]}
   - {"turn": "2026-11-17_001#4", "notes": ["Record the matched Factuality TEST comparison. AUROC and AP move in different directions; no general claim promoted."]}
+  - {"turn": "2026-11-17_001#5", "notes": ["Record the matched Logic TEST comparison. The fixed-aggregation Step variant is still training."]}
