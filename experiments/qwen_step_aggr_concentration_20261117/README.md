@@ -17,3 +17,15 @@ Each row shows where the highest scoring HaMI token or highest weight pooling to
 HaMI uses its own frozen VAL-selected layer and its original token scorer. Its Step prediction averages the top floor(0.1 × token count) + 1 token scores. The heatmap tracks the location of the highest scoring token. Reconstructed HaMI Step scores agree with the saved VAL scores on this cohort to within 2 × 10⁻⁷. The three-way comparison covers Logic, Factuality and Multi-hop. Qwen Science HaMI is awaiting layer selection.
 
 [Per-domain highest-token distributions and provenance](result/highest_token.json)
+
+## Concentration on error Steps in TRAIN and VAL
+
+The two figures use the same frozen, VAL-selected learnable-aggregation checkpoint per domain. Both methods use the same ground-truth error Steps within each split. Markers show the median and bars show the first to third quartile across Steps. TRAIN describes the fitted model on its training data.
+
+The effective token fraction is 1 divided by the product of the token count and the sum of squared pooling weights. Top-1 and Top-3 sum the largest one and up to three weights. The final-20% measure sums the weights of the last ceiling(token count / 5) tokens.
+
+![Four concentration metrics on TRAIN error Steps](error_concentration_train.png)
+
+![Four concentration metrics on VAL error Steps](error_concentration_val.png)
+
+[Per-domain TRAIN and VAL statistics](result/error_concentration_train_val.json)
