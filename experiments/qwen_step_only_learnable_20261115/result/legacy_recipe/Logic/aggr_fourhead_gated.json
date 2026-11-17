@@ -1,0 +1,27 @@
+{
+  "domain": "Logic",
+  "arm": "aggr_fourhead_gated",
+  "layer": 51,
+  "epoch": 3,
+  "positions": 15233,
+  "metrics": {
+    "step_AUROC": 0.8775374881380333,
+    "step_AP": 0.19480901538802928,
+    "step_BCE": 0.08947216443412036
+  },
+  "baseline": {
+    "step_AUROC": 0.8871391422203871,
+    "step_AP": 0.1739968915567954,
+    "step_BCE": 0.0797703916394803
+  },
+  "prediction_sha256": "c5c71e9d53cb0a4d7e1e9301b6f9d9c66edb9f486bc590d29e4da59996253a33",
+  "checkpoint_sha256": "cb893a4e377b2be2b241268023a032f3f9b5ed5174054a380422a827d8e9f80f",
+  "input_pins": {
+    "receipt": "ca81b93c9e9ceef2890daf48292ef21a394da78abac130376d1f47d1aa38f935",
+    "offsets": "ae7abe209ec218c4cae7d35b25fa18b54fd015000067dbc354d9af5cf662cbf3",
+    "labels": "204b99eeecc77502536be605bd6d8b7ebdb5ad45c84956d7e128ca4036bc5e72",
+    "positions": "e5fb47b6876ef1e1e716e90cd79a66a07d0100d42e91391f9a631699773e67ed",
+    "history_index": "aebfbc4299a5c6c607f80a2364673218da673fe57fdb9db4ad231a3ae09a4e7f"
+  },
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}
