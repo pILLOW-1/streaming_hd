@@ -53,6 +53,8 @@ This series uses frozen Qwen features and a linear Step head on Logic, Factualit
 
 **Streaming fixed aggregation (legacy recipe).** Pool frozen token features within each Step using fixed weights proportional to exp(3u), where u runs uniformly from zero to one across the Step. Train the linear head using the legacy recipe above.
 
+**Learnable aggregation, hard Top-10%.** Keep the highest `ceil(0.10 × Step length)` learned scores within each Step, with ties resolved in token order. Set all other scores to negative infinity and apply one within-Step softmax in TRAIN, VAL, and TEST. Pool the original frozen token vectors and train the linear Step head with the legacy recipe above. The current ablation covers Logic and Factuality. When one token is retained, its weight is one and the softmax gives zero gradient to the scorer.
+
 ### Legacy recipe Step TEST AUROC
 
 | Configuration | Logic | Factuality | Science | Math | Multi-hop |
@@ -61,6 +63,7 @@ This series uses frozen Qwen features and a linear Step head on Logic, Factualit
 | Best published baseline | 0.8875 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Logic/step.json)) | 0.8735 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Factuality/step.json)) | 0.8255 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Science/step.json)) | 0.8046 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Math/step.json)) | 0.9080 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Multi-hop/step.json)) |
 | Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |  |  |
 | Learnable aggregation | 0.8871 | 0.8816 | 0.8219 |  | 0.9177 |
+| Learnable aggregation, hard Top-10% | | |  |  |  |
 
 ### Other legacy Step readouts
 
