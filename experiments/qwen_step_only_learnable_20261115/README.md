@@ -9,6 +9,7 @@
 | [Streaming fixed aggregation](config/streaming_fixed/README.md) | Pool frozen token features with fixed exponential weights. |
 | [Learnable aggregation](config/learnable_aggregation/README.md) | Learn weights from token content and pool frozen token features. |
 | [Learnable aggregation, hard Top-10%](config/hard_top10/README.md) | Mask the remaining logits to −∞ before one within-Step softmax. |
+| [Four-head attention + gated residual](config/fourhead_gated/README.md) | Pool each Step using four token-attention heads and a gated mean residual. |
 
 ### Legacy recipe Step TEST AUROC
 
@@ -21,3 +22,4 @@ Rows marked “trajectory recipe” use trajectory batching. Empty cells have no
 | Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |  |  |
 | Learnable aggregation | 0.8871 | 0.8816 | 0.8219 |  | 0.9177 |
 | Learnable aggregation, hard Top-10% | 0.856127 | 0.859060 |  |  |  |
+| Four-head attention + gated residual |  |  |  |  |  |
