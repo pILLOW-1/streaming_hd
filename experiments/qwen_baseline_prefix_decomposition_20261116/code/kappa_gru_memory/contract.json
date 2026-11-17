@@ -1,0 +1,19 @@
+{
+  "arm": "streaming_legacy_kappa_gru_memory",
+  "domains": [
+    "Logic",
+    "Factuality"
+  ],
+  "backbone": "qwen3_8_27b",
+  "frozen_step": "original Streaming TRAIN/VAL/TEST scores, pinned by v1",
+  "step_pooling": "Streaming fixed exponential pooling over whole native step including visible unlabelled history",
+  "state": "128-d GRUCell with LayerNorm on each recurrent state",
+  "memory": "4x32 causal query/key/value attention including current Step and learned-key zero-value slot, gated residual",
+  "loss": "all-position composed Prefix BCE, no auxiliary loss",
+  "selection": "exact per-layer epoch budget from v1; VAL Prefix AUROC, AP, lower BCE; one selected TEST",
+  "batch": "seed-42 shuffled complete trajectories, greedy budget 128 labeled positions / at most 16 trajectories, over-budget trajectories alone",
+  "shards": {
+    "lower": "nwpqw43905m8nf",
+    "upper": "1vbjo4pptxjeu4"
+  }
+}

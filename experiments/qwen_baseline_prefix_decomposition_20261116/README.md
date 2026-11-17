@@ -10,6 +10,7 @@
 | [v1](config/v1/README.md) | All-position BCE with legacy Adam and unnormalized Prefix features. |
 | [v1 + fixed-aggregation Step](config/v1_fixed_step/README.md) | Use the frozen Step detector trained with fixed aggregation. |
 | [v1 + conditional ranking](config/v1_conditional_ranking/README.md) | Add a same-trajectory ranking loss to the conditional logit. |
+| [v1 + GRU + memory κ](config/v1_kappa_gru_memory/README.md) | Predict κ with causal GRU memory and compose with frozen Streaming Step scores. |
 
 ## Results
 
@@ -23,3 +24,4 @@ Prefix columns report TEST AUROC. Recovery columns report within-trajectory macr
 | v1 | 0.8316 | 0.8181 | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
 | v1 + fixed-aggregation Step | 0.8356 | 0.8190 |  |  |  |  |
 | v1 + conditional ranking | 0.835883 | 0.816752 | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
+| v1 + GRU + memory κ |  |  |  |  |  |  |
