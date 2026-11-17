@@ -34,7 +34,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td><strong>90.24</strong></td>
 <td>82.73</td>
 <td>79.13</td>
-<td><strong>81.76</strong></td>
+<td>81.76</td>
 <td><strong>84.32</strong></td>
 <td>84.36</td>
 <td>84.72</td>
@@ -51,7 +51,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>89.77</td>
 <td>83.14</td>
 <td><strong>82.91</strong></td>
-<td></td>
+<td><strong>82.42</strong></td>
 <td>82.66</td>
 <td><strong>86.62</strong></td>
 <td><strong>86.05</strong></td>
