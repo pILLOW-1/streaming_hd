@@ -20,7 +20,13 @@ Single-token Steps contribute to concentration summaries. Relative argmax positi
 
 | Configuration | Logic | Factuality | Science | Multi-hop |
 | --- | --- | --- | --- | --- |
-| Legacy learnable aggregation | | | 0.8007 | 0.5296 |
-| Streaming fixed aggregation | | | 0.5763 | 0.5763 |
+| Legacy learnable aggregation | 0.5268 | 0.5278 | 0.8007 | 0.5296 |
+| Streaming fixed aggregation | 0.5700 | 0.5724 | 0.5763 | 0.5763 |
 
-Science and Multi-hop complete. Logic and Factuality pending.
+All four domains are complete. Markers show medians and bars span the interquartile range.
+
+![Effective token fraction by Step length](effective_by_length.png)
+
+The maximum-weight position is normalized from the first token (0) to the last token (1).
+
+![Distribution of maximum-weight position](argmax_position.png)
