@@ -52,8 +52,9 @@ def smoke(device):
     a = KappaMemory(12).to(device).eval()
     x = torch.randn(2, 7, 12, device=device)
     y = a(x)
-    x[:, 4:] += 100
-    torch.testing.assert_close(y[:, :4], a(x)[:, :4], atol=2e-6, rtol=2e-6)
+    future = x.clone()
+    future[:, 4:] += 100
+    torch.testing.assert_close(y[:, :4], a(future)[:, :4], atol=2e-6, rtol=2e-6)
     torch.testing.assert_close(y[:1, :4], a(x[:1, :4])[:, :4], atol=2e-6, rtol=2e-6)
     y.square().mean().backward()
     assert all(p.grad is not None and p.grad.isfinite().all() for p in a.parameters())
