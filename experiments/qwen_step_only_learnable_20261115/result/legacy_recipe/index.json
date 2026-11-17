@@ -378,6 +378,34 @@
       "source_manifest_sha256": "3cfe5a7ed2a0573dbc826536eb50a740607afa945f2533fc1b5c411f8a47aec8",
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
       "variant": "legacy_recipe"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Science",
+      "arm": "streaming_fixed",
+      "recipe": "pre_dataset_step_20261011",
+      "layer": 46,
+      "epoch": 2,
+      "candidates": 64,
+      "metrics": {
+        "step_AUROC": 0.820318552650924,
+        "step_AP": 0.21424701932118262,
+        "step_BCE": 0.17353640244896956
+      },
+      "val_metrics": {
+        "step_AUROC": 0.8270337079934716,
+        "step_AP": 0.22884739524738462,
+        "step_BCE": 0.16930486902690847
+      },
+      "positions": 46175,
+      "coverage": "complete",
+      "prediction_sha256": "baa8c4a86c31ca52f2bfecd375e9c95e79875dbcb6b86af305ff885228ee1f9b",
+      "checkpoint_sha256": "fd75f8b1ab1a9fd8d90cae7a2dda7b04b9c3c99730639e8b2ae3634db24dc18a",
+      "selection_sha256": "5a8f6e3ea42e314e436eddf54843fed35b1f8d0a8120d6d63d0dc10d78d2ce14",
+      "input_sha256": "cec521b20f74cefc987e3f6568a982ced332c0c5cf8133ab584c2506ad007bda",
+      "source_manifest_sha256": "3cfe5a7ed2a0573dbc826536eb50a740607afa945f2533fc1b5c411f8a47aec8",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+      "variant": "legacy_recipe"
     }
   ],
   "Multi-hop": [
