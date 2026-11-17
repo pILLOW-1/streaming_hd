@@ -19,22 +19,22 @@ Test whether composing a frozen Step score with a conditional Prefix head improv
 | Streaming synchronization | The original missed-alarm penalty is zero because the composed probability satisfies $`\pi^{\mathrm{P}}_t \ge \pi^{\mathrm{S}}_t`$. |
 | Selection and evaluation | Select from 64 layers using composed Prefix scores on full VAL, and set the threshold on VAL. Evaluate the frozen winner once on TEST. Direct Prefix scores are reused from the published baselines. |
 
-**Legacy Streaming variant.** Keep the published Streaming Step probabilities frozen and use unnormalized exponential Prefix features. Train the linear conditional head with mean composed Prefix BCE on all TRAIN positions, using seed 42, random batches of 128 positions, Adam at 0.001 with weight decay 0.0005, up to 20 epochs, and patience 5. Use the legacy plateau schedule. Rank candidates by VAL Prefix AUROC, AP, then lower BCE. Evaluate the frozen winner once on TEST.
+**v1.** Streaming decomposition trained with all-position BCE, the legacy optimizer, and unnormalized Prefix features. Keep the published Streaming Step probabilities frozen and use unnormalized exponential Prefix features. Train the linear conditional head with mean composed Prefix BCE on all TRAIN positions, using seed 42, random batches of 128 positions, Adam at 0.001 with weight decay 0.0005, up to 20 epochs, and patience 5. Use the legacy plateau schedule. Rank candidates by VAL Prefix AUROC, AP, then lower BCE. Evaluate the frozen winner once on TEST.
 
-**Fixed-aggregation Step variant.** Keep the legacy Prefix recipe and replace the frozen Step probabilities with the independently VAL-selected legacy fixed-aggregation Step detector for each domain. Its fixed weights are proportional to exp(3u) within each Step. Reuse its saved VAL and TEST predictions and score TRAIN once from the frozen checkpoint.
+**v1 + fixed-aggregation Step.** Keep the v1 Prefix recipe and replace the frozen Step probabilities with the independently VAL-selected legacy fixed-aggregation Step detector for each domain. Its fixed weights are proportional to exp(3u) within each Step. Reuse its saved VAL and TEST predictions and score TRAIN once from the frozen checkpoint.
 
 ## Prefix TEST AUROC
 
-Future Prefix experiments are reported in this table.
+Use v1 as the base for subsequent Prefix variants. A label of the form `v1 + change` identifies the addition or replacement applied to v1.
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | Original direct Streaming | 0.8256 | 0.8222 |
 | Best published baseline | 0.8256 ([Streaming](../streaming_622_p70/result/metrics.json)) | 0.8226 ([Global Mean](../global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/prefix.json)) |
 | Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
-| Streaming decomposition, all-position BCE (legacy optimizer, unnormalized features) | 0.8316 | 0.8181 |
-| Streaming decomposition, all-position BCE (legacy optimizer, fixed-aggregation Step) | 0.8356 | 0.8190 |
-| Streaming decomposition, all-position BCE + conditional ranking | 0.835883 | 0.816752 |
+| v1 | 0.8316 | 0.8181 |
+| v1 + fixed-aggregation Step | 0.8356 | 0.8190 |
+| v1 + conditional ranking | 0.835883 | 0.816752 |
 
 ### Other Prefix comparisons
 
@@ -51,8 +51,8 @@ Test whether direct within-trajectory ordinal supervision improves error-recover
 
 | Configuration | Conditional Prefix head | Training objective |
 | --- | --- | --- |
-| BCE control | Linear on original, unnormalized Streaming Prefix features | All-position composed Prefix BCE |
-| BCE + trajectory ranking | Same linear head and features | BCE plus 0.1 times the trajectory-macro logistic pair loss |
+| v1 | Linear on original, unnormalized Streaming Prefix features | All-position composed Prefix BCE |
+| v1 + conditional ranking | Same linear head and features | BCE plus 0.1 times the trajectory-macro logistic pair loss |
 
 | Parameter | Value |
 | --- | --- |
@@ -69,6 +69,6 @@ Use labeled positions with no current Step error and at least one earlier labele
 
 | Configuration | Logic VAL | Factuality VAL | Logic TEST | Factuality TEST |
 | --- | --- | --- | --- | --- |
-| BCE control | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
-| BCE + trajectory ranking | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
+| v1 | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
+| v1 + conditional ranking | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
 | Time-only comparator | 0.468605 | 0.438510 | 0.479852 | 0.468356 |
