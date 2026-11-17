@@ -23,5 +23,5 @@ Rows marked “trajectory recipe” use trajectory batching. Empty cells have no
 | Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |  |  |
 | Learnable aggregation | 0.8871 | 0.8816 | 0.8219 | 0.7932 | 0.9177 |
 | Learnable aggregation, hard Top-10% | 0.856127 | 0.859060 |  |  |  |
-| Four-head attention + gated residual | 0.877537 |  |  |  |  |
+| Four-head attention + gated residual | 0.877537 | 0.876701 |  |  |  |
 | Learnable aggregation, full 20 epochs |  |  |  |  |  |

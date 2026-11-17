@@ -118,6 +118,33 @@
         "history_index": "e893582c064a2f484ae914e78f2b653e671d2cd2189ad40e152fc5ca22a02ec7"
       },
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "domain": "Factuality",
+      "arm": "aggr_fourhead_gated",
+      "layer": 50,
+      "epoch": 5,
+      "positions": 5489,
+      "metrics": {
+        "step_AUROC": 0.8767005610098176,
+        "step_AP": 0.4170862378347227,
+        "step_BCE": 0.24806825919000197
+      },
+      "baseline": {
+        "step_AUROC": 0.8816078724312458,
+        "step_AP": 0.432971456792372,
+        "step_BCE": 0.22774461248210243
+      },
+      "prediction_sha256": "100065ca9b8f18fcff565e59c5a59e16d355ade45159d674d6901f8a83d3d0e6",
+      "checkpoint_sha256": "9a88373b5b3022c0446492bfb8d6f3aa7e15480140a3355af9baa8b6672a6132",
+      "input_pins": {
+        "receipt": "401d069315e06f89f6d5f2945a0172cf74504f2ec5cc370907fcc5319110dcc0",
+        "offsets": "b7530c3a828bfb86ea470ce64f4f90cd3c3d66e8b439fc33eaf3c704886c1d56",
+        "labels": "354a463ce5c74c575023c59c853bb207b28f3df1d39c93adba4455e9b3b6af7c",
+        "positions": "28944b14cfdfaf0e90d9c6fe38ad6c43cd486b8e84687c98ed79f1b37db07b7f",
+        "history_index": "e893582c064a2f484ae914e78f2b653e671d2cd2189ad40e152fc5ca22a02ec7"
+      },
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ],
   "Logic": [
