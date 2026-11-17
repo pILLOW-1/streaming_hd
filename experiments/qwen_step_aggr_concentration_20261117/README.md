@@ -25,6 +25,12 @@ Single-token Steps contribute to concentration summaries. Relative argmax positi
 
 All four domains are complete. Markers show medians and bars span the interquartile range.
 
+![Four-domain comparison of effective token fraction, Top-1 and Top-3 mass, and tail mass](weight_overview.png)
+
+Each cell below reports the median of the within-Step differences (learnable minus fixed Streaming), in percentage points.
+
+![Paired differences by Step length](paired_by_length.png)
+
 ![Effective token fraction by Step length](effective_by_length.png)
 
 The maximum-weight position is normalized from the first token (0) to the last token (1).
