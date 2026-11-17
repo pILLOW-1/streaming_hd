@@ -418,4 +418,4 @@ sessions:
   - {"id": "2026-11-07_001", "date": "2026-11-07", "summary": "Latest continuation scope: Ours deferred; full ARA publication; cleanup proposed only", "turn_count": 10, "events_count": 10, "claims_touched": [], "open_threads": 1}
   - {"id": "2026-11-15_001", "date": "2026-11-15", "summary": "Backfill verified research milestones from the 8 November cutoff through 15 November 2026.", "turn_count": 11, "events_count": 27, "claims_touched": [], "open_threads": 2}
   - {"id": "2026-11-16_001", "date": "2026-11-16", "summary": "Direct user cancellation of all RunPod experiments and verification of the shutdown.", "turn_count": 22, "events_count": 30, "claims_touched": [], "open_threads": 0}
-  - {"id": "2026-11-17_001", "date": "2026-11-17", "summary": "Compare legacy optimization for frozen-Step Qwen Prefix decomposition", "turn_count": 9, "events_count": 10, "claims_touched": [], "open_threads": 0}
+  - {"id": "2026-11-17_001", "date": "2026-11-17", "summary": "Compare legacy optimization for frozen-Step Qwen Prefix decomposition", "turn_count": 10, "events_count": 11, "claims_touched": [], "open_threads": 0}
