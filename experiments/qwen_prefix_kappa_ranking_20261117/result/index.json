@@ -1,1 +1,39 @@
-{}
+{
+  "Logic": {
+    "file": "Logic.json",
+    "selected": {
+      "layer": 47,
+      "epoch": 7,
+      "AUROC": 0.9002578699831599,
+      "AP": 0.5169511712760421,
+      "BCE": 0.2589492854548229
+    },
+    "TEST": {
+      "AUROC": 0.8358831372645068,
+      "AP": 0.39328012150520086,
+      "BCE": 0.30768769908694554
+    },
+    "TEST_comparison": {
+      "control_recovery": {
+        "AUROC": 0.5429603120607599,
+        "trajectories": 133,
+        "pairs": 152007
+      },
+      "rank_recovery_same_pairs": {
+        "AUROC": 0.5559136215376427,
+        "trajectories": 133,
+        "pairs": 152007
+      },
+      "time_recovery_same_pairs": {
+        "AUROC": 0.4798518642729766,
+        "trajectories": 133,
+        "pairs": 152007
+      },
+      "control_prefix": {
+        "AUROC": 0.8316322641672576,
+        "AP": 0.37392010896503913,
+        "BCE": 0.3193895576446106
+      }
+    }
+  }
+}

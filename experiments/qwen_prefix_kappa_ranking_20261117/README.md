@@ -32,14 +32,14 @@ Step scores are frozen. Step metrics are therefore omitted.
 | Configuration | Logic | Factuality |
 | --- | --- | --- |
 | BCE control | 0.831632 | 0.818123 |
-| BCE + trajectory ranking | | |
+| BCE + trajectory ranking | 0.835883 | |
 
 ## Conditional recovery AUROC (trajectory macro)
 
 | Configuration | Logic VAL | Factuality VAL | Logic TEST | Factuality TEST |
 | --- | --- | --- | --- | --- |
-| BCE control | | | | |
-| BCE + trajectory ranking | | | | |
-| Time-only comparator | | | | |
+| BCE control | 0.563189 | | 0.542960 | |
+| BCE + trajectory ranking | 0.571456 | | 0.555914 | |
+| Time-only comparator | 0.468605 | | 0.479852 | |
 
-The BCE-control Prefix scores are from the previously verified legacy recipe. Ranking-arm results are pending.
+The BCE-control Prefix scores reuse the verified legacy results. Completed ranking arms are listed in the result index.
