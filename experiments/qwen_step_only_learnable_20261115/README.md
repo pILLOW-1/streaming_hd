@@ -9,9 +9,6 @@
 | [Streaming fixed aggregation](config/streaming_fixed/README.md) | Pool frozen token features with fixed exponential weights. |
 | [Learnable aggregation](config/learnable_aggregation/README.md) | Learn weights from token content and pool frozen token features. |
 | [Learnable aggregation, hard Top-10%](config/hard_top10/README.md) | Mask the remaining logits to −∞ before one within-Step softmax. |
-| [Learnable representation](config/learnable_representation/README.md) | Keep fixed weights and pool a learned token representation. |
-| [Aggregation and representation](config/aggregation_representation/README.md) | Learn the token weights and pooled representation together. |
-| [Streaming + learned score residual](config/score_residual/README.md) | Add learned residual scores to fixed positional scores before softmax. |
 
 ### Legacy recipe Step TEST AUROC
 
@@ -24,10 +21,3 @@ Rows marked “trajectory recipe” use trajectory batching. Empty cells have no
 | Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |  |  |
 | Learnable aggregation | 0.8871 | 0.8816 | 0.8219 |  | 0.9177 |
 | Learnable aggregation, hard Top-10% |  | 0.859060 |  |  |  |
-| Learnable representation | 0.8785 | 0.8767 | 0.8199 |  |  |
-| Aggregation and representation | 0.8550 | 0.8705 | 0.8315 |  |  |
-| Streaming + learned score residual | 0.8882 | 0.8742 | 0.8214 |  |  |
-| Streaming fixed aggregation (trajectory recipe) |  |  |  |  |  |
-| Learnable aggregation (trajectory recipe) |  | 0.8768 |  |  |  |
-| Learnable representation (trajectory recipe) | 0.8666 | 0.8807 |  |  |  |
-| Aggregation and representation (trajectory recipe) | 0.8752 | 0.8740 |  |  |  |

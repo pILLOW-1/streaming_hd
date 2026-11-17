@@ -10,11 +10,6 @@
 | [v1](config/v1/README.md) | All-position BCE with legacy Adam and unnormalized Prefix features. |
 | [v1 + fixed-aggregation Step](config/v1_fixed_step/README.md) | Use the frozen Step detector trained with fixed aggregation. |
 | [v1 + conditional ranking](config/v1_conditional_ranking/README.md) | Add a same-trajectory ranking loss to the conditional logit. |
-| [Original direct SAPLMA](config/direct_saplma/README.md) | Published direct Prefix detector using an endpoint MLP. |
-| [SAPLMA decomposition, Step-negative BCE](config/saplma_step_negative/README.md) | Endpoint MLP with BCE restricted to Step-negative positions. |
-| [SAPLMA decomposition, all-position BCE](config/saplma_all_positions/README.md) | Endpoint MLP with BCE on every TRAIN position. |
-| [Streaming decomposition, Step-negative BCE](config/streaming_step_negative/README.md) | Normalized Prefix pooling and BCE on Step-negative positions. |
-| [Time-only comparator](config/time_only/README.md) | Rank positions closer to the first observed error higher. |
 
 ## Results
 
@@ -28,8 +23,3 @@ Prefix columns report TEST AUROC. Recovery columns report within-trajectory macr
 | v1 | 0.8316 | 0.8181 | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
 | v1 + fixed-aggregation Step | 0.8356 | 0.8190 |  |  |  |  |
 | v1 + conditional ranking | 0.835883 | 0.816752 | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
-| Original direct SAPLMA | 0.8078 | 0.7842 |  |  |  |  |
-| SAPLMA decomposition, Step-negative BCE | 0.7916 | 0.7737 |  |  |  |  |
-| SAPLMA decomposition, all-position BCE | 0.8026 | 0.7846 |  |  |  |  |
-| Streaming decomposition, Step-negative BCE | 0.8240 | 0.8242 |  |  |  |  |
-| Time-only comparator |  |  | 0.468605 | 0.438510 | 0.479852 | 0.468356 |
