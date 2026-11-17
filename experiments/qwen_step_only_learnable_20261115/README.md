@@ -1,76 +1,33 @@
 # Standalone Qwen Step detectors
 
-**RunPod status (2026-11-16 AEDT):** The researcher cancelled the remaining RunPod work and shut down the instances. The tables retain published, independently verified results.
+## Configurations
 
-Measure Step detection when each learnable Step readout is optimized directly for the Step label. Include Streaming fixed exponential aggregation with frozen token values as the reference. Compare the frozen TEST scores with the corresponding learnable A2 runs in the [series comparison](../qwen_c18_a2_series_20261115/README.md).
-
-| Configuration | Token weights | Pooled values |
-|---|---|---|
-| Streaming fixed aggregation | Fixed exponential weights, normalized within each Step | Frozen token features |
-| Learnable aggregation | Content-only scorer with within-step softmax | Frozen token features |
-| Learnable representation | Fixed exponential weights | Linear-256, BatchNorm and ReLU |
-| Aggregation and representation | Linear score on the shared representation with within-step softmax | Shared learned representation |
-
-| Training parameter | Setting |
-|---|---|
-| Backbone and data | Frozen Qwen3.8-27B BF16 token features, original Logic/Factuality splits and position index |
-| Head and loss | Linear Step head with binary cross-entropy on the Step labels |
-| Optimizer | Adam, seed 42, learning rate 0.001, weight decay 0.0001 |
-| Batching | Same trajectory grouping and 256-supervised-position / 24,000-token batch targets as the learnable A2 experiments |
-| Candidate layers | Native layers 1–64, split into ranges 1–32 and 33–64 per domain and configuration |
-| Selection | Up to 100 epochs, patience 10. Maximize VAL Step AUROC, then AP, then minimize BCE. Evaluate the frozen winner once on TEST. |
-
-## Step TEST AUROC
-
-| Configuration | Logic | Factuality |
-|---|---:|---:|
-| Streaming fixed aggregation | | |
-| Learnable aggregation |  | 0.8768 |
-| Learnable representation | 0.8666 | 0.8807 |
-| Aggregation and representation | 0.8752 | 0.8740 |
-
-Each populated cell was independently recomputed from frozen TEST predictions on CPU. Selection was checked against all 64 candidate VAL reports. Pending configurations have empty cells.
-
-Streaming uses within-Step weights proportional to `exp(3u)`, where `u` runs uniformly from zero to one across the Step tokens. Fixed pooled vectors are reused across detector epochs.
-
-The fixed Streaming arm shares the fixed Step pool and Step loss in [C18 (A1)](../qwen_c18_error_memory_20261114/README.md). The C18 three-class objective factorizes into Step BCE and conditional Prefix BCE masked to Step-negative positions. The Step-only run keeps trajectory batching and VAL Step-only checkpoint and layer selection. C18 uses shuffled Step examples and joint Step/Prefix selection.
-
-
-## Legacy training recipe on the current data
-
-This series uses frozen Qwen features and a linear Step head on Logic, Factuality and Science to compare readouts under the pre-dataset-change training recipe.
-
-| Training parameter | Legacy recipe |
-|---|---|
-| Optimizer and initialization | Adam, learning rate 0.001, weight decay 0.0005, seed 42 |
-| Batching | Shuffle individual labeled Steps each epoch. Train batch 128, evaluation batch 256. Pool only the tokens of each labeled Step. |
-| Objective | Unweighted Step BCE with logits |
-| Learning-rate schedule | ReduceLROnPlateau on mean training loss, factor 0.1, patience 20, minimum learning rate 1e-6 |
-| Checkpoint | At most 20 epochs, patience 5, full VAL Step AUROC improvement greater than 1e-7 |
-| Layer and TEST | Select from layers 1–64 by VAL Step AUROC, then AP, then lower BCE. Evaluate the frozen winner once on TEST. |
-
-**Streaming + learned score residual.** Pool frozen token features with $w_{t,i}=\mathrm{softmax}_{i}(3u_{t,i}+s_{t,i})$. The fixed positional score and the learnable aggregation scorer output are added before one softmax within each Step. Zero-initialize the scorer output layer to recover fixed Streaming pooling at initialization. Use the same linear Step head, training recipe and layer selection.
-
-**Streaming fixed aggregation (legacy recipe).** Pool frozen token features within each Step using fixed weights proportional to exp(3u), where u runs uniformly from zero to one across the Step. Train the linear head using the legacy recipe above.
-
-**Learnable aggregation, hard Top-10%.** Keep the highest `ceil(0.10 × Step length)` learned scores within each Step, with ties resolved in token order. Set all other scores to negative infinity and apply one within-Step softmax in TRAIN, VAL, and TEST. Pool the original frozen token vectors and train the linear Step head with the legacy recipe above. The current ablation covers Logic and Factuality. When one token is retained, its weight is one and the softmax gives zero gradient to the scorer.
+| Configuration | Design |
+| --- | --- |
+| [Original Streaming](config/original_streaming/README.md) | Published direct Step detector using fixed positional weights. |
+| [Best published baseline](config/best_published/README.md) | Highest published Step AUROC per domain. |
+| [Streaming fixed aggregation](config/streaming_fixed/README.md) | Pool frozen token features with fixed exponential weights. |
+| [Learnable aggregation](config/learnable_aggregation/README.md) | Learn weights from token content and pool frozen token features. |
+| [Learnable aggregation, hard Top-10%](config/hard_top10/README.md) | Mask the remaining logits to −∞ before one within-Step softmax. |
+| [Learnable representation](config/learnable_representation/README.md) | Keep fixed weights and pool a learned token representation. |
+| [Aggregation and representation](config/aggregation_representation/README.md) | Learn the token weights and pooled representation together. |
+| [Streaming + learned score residual](config/score_residual/README.md) | Add learned residual scores to fixed positional scores before softmax. |
 
 ### Legacy recipe Step TEST AUROC
 
+Rows marked “trajectory recipe” use trajectory batching. Empty cells have no verified result.
+
 | Configuration | Logic | Factuality | Science | Math | Multi-hop |
-| --- | ---: | ---: | ---: | ---: | ---: |
+| --- | --- | ---: | ---: | ---: | ---: |
 | [Original Streaming](../streaming_622_p70/result/metrics.json) | 0.8716 | 0.8720 | 0.8145 | 0.7852 | 0.8953 |
 | Best published baseline | 0.8875 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Logic/step.json)) | 0.8735 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Factuality/step.json)) | 0.8255 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Science/step.json)) | 0.8046 ([SAPLMA](../saplma/622_p70_20261108/result/qwen3_8_27b/Math/step.json)) | 0.9080 ([HaMI](../hami/622_p70_20261108/result/qwen3_8_27b/Multi-hop/step.json)) |
 | Streaming fixed aggregation (legacy recipe) | 0.8736 | 0.8808 |  |  |  |
 | Learnable aggregation | 0.8871 | 0.8816 | 0.8219 |  | 0.9177 |
-| Learnable aggregation, hard Top-10% | | |  |  |  |
-
-### Other legacy Step readouts
-
-| Configuration | Logic | Factuality | Science | Math | Multi-hop |
-| --- | ---: | ---: | ---: | ---: | ---: |
+| Learnable aggregation, hard Top-10% |  |  |  |  |  |
 | Learnable representation | 0.8785 | 0.8767 | 0.8199 |  |  |
 | Aggregation and representation | 0.8550 | 0.8705 | 0.8315 |  |  |
 | Streaming + learned score residual | 0.8882 | 0.8742 | 0.8214 |  |  |
-
-Fill each cell after independent verification from the saved TEST predictions.
+| Streaming fixed aggregation (trajectory recipe) |  |  |  |  |  |
+| Learnable aggregation (trajectory recipe) |  | 0.8768 |  |  |  |
+| Learnable representation (trajectory recipe) | 0.8666 | 0.8807 |  |  |  |
+| Aggregation and representation (trajectory recipe) | 0.8752 | 0.8740 |  |  |  |

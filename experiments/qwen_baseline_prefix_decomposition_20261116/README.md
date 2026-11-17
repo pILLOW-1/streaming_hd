@@ -1,74 +1,35 @@
-# Qwen baseline Prefix decomposition
+# Qwen Prefix decomposition
 
-Test whether composing a frozen Step score with a conditional Prefix head improves Prefix detection over each baseline's published direct Prefix detector on Logic and Factuality. Compare two choices of TRAIN positions for the composed Prefix BCE.
+## Configurations
 
-| Configuration | Conditional Prefix readout | TRAIN positions |
-|---|---|---|
-| SAPLMA decomposition, Step-negative BCE | Endpoint last-token MLP (256–128–64) | $`y^{\mathrm{S}}_t=0`$ |
-| SAPLMA decomposition, all-position BCE | Endpoint last-token MLP (256–128–64) | All positions |
-| Streaming decomposition, Step-negative BCE | L2-normalized global exponential Prefix pooling and linear probe | $`y^{\mathrm{S}}_t=0`$ |
-| Streaming decomposition, all-position BCE | L2-normalized global exponential Prefix pooling and linear probe | All positions |
-
-| Training parameter | Setting |
-|---|---|
-| Backbone and splits | Frozen Qwen3.8-27B and published 6:2:2 p70 splits |
-| Frozen Step probability $`\pi^{\mathrm{S}}_t`$ | Use each baseline's published Step checkpoint. Reuse saved VAL and TEST scores and score TRAIN once. |
-| Objective | Use $`y^{\mathrm{P}}_t`$ as the BCE target for $`\pi^{\mathrm{P}}_t=\pi^{\mathrm{S}}_t+(1-\pi^{\mathrm{S}}_t)\,\kappa_t`$ on the configuration's TRAIN positions. Only the conditional Prefix head receives gradients. |
-| SAPLMA optimization | Original Glorot initialization and Keras Adam, learning rate 0.001, batch 32, five epochs, no early stopping |
-| Streaming optimization | Original LBFGS initialization with L2, then AdamW at 0.001 with weight decay 0.01 for 20 epochs, 64 trajectories per batch and final-position BCE weight 30 |
-| Streaming synchronization | The original missed-alarm penalty is zero because the composed probability satisfies $`\pi^{\mathrm{P}}_t \ge \pi^{\mathrm{S}}_t`$. |
-| Selection and evaluation | Select from 64 layers using composed Prefix scores on full VAL, and set the threshold on VAL. Evaluate the frozen winner once on TEST. Direct Prefix scores are reused from the published baselines. |
-
-**v1.** Streaming decomposition trained with all-position BCE, the legacy optimizer, and unnormalized Prefix features. Keep the published Streaming Step probabilities frozen and use unnormalized exponential Prefix features. Train the linear conditional head with mean composed Prefix BCE on all TRAIN positions, using seed 42, random batches of 128 positions, Adam at 0.001 with weight decay 0.0005, up to 20 epochs, and patience 5. Use the legacy plateau schedule. Rank candidates by VAL Prefix AUROC, AP, then lower BCE. Evaluate the frozen winner once on TEST.
-
-**v1 + fixed-aggregation Step.** Keep the v1 Prefix recipe and replace the frozen Step probabilities with the independently VAL-selected legacy fixed-aggregation Step detector for each domain. Its fixed weights are proportional to exp(3u) within each Step. Reuse its saved VAL and TEST predictions and score TRAIN once from the frozen checkpoint.
-
-## Prefix TEST AUROC
-
-Use v1 as the base for subsequent Prefix variants. A label of the form `v1 + change` identifies the addition or replacement applied to v1.
-
-| Configuration | Logic | Factuality |
-|---|---:|---:|
-| Original direct Streaming | 0.8256 | 0.8222 |
-| Best published baseline | 0.8256 ([Streaming](../streaming_622_p70/result/metrics.json)) | 0.8226 ([Global Mean](../global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/prefix.json)) |
-| Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
-| v1 | 0.8316 | 0.8181 |
-| v1 + fixed-aggregation Step | 0.8356 | 0.8190 |
-| v1 + conditional ranking | 0.835883 | 0.816752 |
-
-### Other Prefix comparisons
-
-| Configuration | Logic | Factuality |
-|---|---:|---:|
-| Original direct SAPLMA | 0.8078 | 0.7842 |
-| SAPLMA decomposition, Step-negative BCE | 0.7916 | 0.7737 |
-| SAPLMA decomposition, all-position BCE | 0.8026 | 0.7846 |
-| Streaming decomposition, Step-negative BCE | 0.8240 | 0.8242 |
-
-## Same-trajectory conditional ranking
-
-Test whether direct within-trajectory ordinal supervision improves error-recovery discrimination while preserving Prefix detection across all positions.
-
-| Configuration | Conditional Prefix head | Training objective |
-| --- | --- | --- |
-| v1 | Linear on original, unnormalized Streaming Prefix features | All-position composed Prefix BCE |
-| v1 + conditional ranking | Same linear head and features | BCE plus 0.1 times the trajectory-macro logistic pair loss |
-
-| Parameter | Value |
+| Configuration | Design |
 | --- | --- |
-| Step probability | Original published Streaming scores, frozen |
-| Optimization | Legacy Adam 0.001, weight decay 0.0005, seed 42, identical 128-position BCE batches |
-| Ranking batches | At most 32 uniformly sampled trajectories per update, all eligible positive–negative pairs per sampled trajectory |
-| Training length | Match the existing BCE control's number of optimizer updates at each layer |
-| Selection | VAL Prefix AUROC, then AP, then lower BCE across the 64 layers and candidate epochs |
-| Evaluation | One frozen TEST pass for the ranking arm. Reuse the control's saved predictions. |
+| [Original direct Streaming](config/direct_streaming/README.md) | Published direct Prefix detector with fixed exponential pooling. |
+| [Best published baseline](config/best_published/README.md) | Highest published Prefix AUROC for each domain. |
+| [Streaming decomposition, all-position BCE](config/streaming_all_positions/README.md) | Normalized Prefix pooling and BCE on every TRAIN position. |
+| [v1](config/v1/README.md) | All-position BCE with legacy Adam and unnormalized Prefix features. |
+| [v1 + fixed-aggregation Step](config/v1_fixed_step/README.md) | Use the frozen Step detector trained with fixed aggregation. |
+| [v1 + conditional ranking](config/v1_conditional_ranking/README.md) | Add a same-trajectory ranking loss to the conditional logit. |
+| [Original direct SAPLMA](config/direct_saplma/README.md) | Published direct Prefix detector using an endpoint MLP. |
+| [SAPLMA decomposition, Step-negative BCE](config/saplma_step_negative/README.md) | Endpoint MLP with BCE restricted to Step-negative positions. |
+| [SAPLMA decomposition, all-position BCE](config/saplma_all_positions/README.md) | Endpoint MLP with BCE on every TRAIN position. |
+| [Streaming decomposition, Step-negative BCE](config/streaming_step_negative/README.md) | Normalized Prefix pooling and BCE on Step-negative positions. |
+| [Time-only comparator](config/time_only/README.md) | Rank positions closer to the first observed error higher. |
 
-Use labeled positions with no current Step error and at least one earlier labeled position establishing an error. Pair every inherited positive with every recovered clean negative on the same trajectory, allowing multiple earlier errors. Apply the ranking loss to conditional logits and average within trajectory before averaging across trajectories. For recovery comparisons, reconstruct the control's conditional probability from its saved composed score and the frozen Step probability. Compare both arms on the same recoverable pairs and report coverage. The time-only comparator assigns higher risk to positions closer to the first observed error.
+## Results
 
-### Conditional recovery AUROC (trajectory macro)
+Prefix columns report TEST AUROC. Recovery columns report within-trajectory macro AUROC on matched pairs.
 
-| Configuration | Logic VAL | Factuality VAL | Logic TEST | Factuality TEST |
-| --- | --- | --- | --- | --- |
-| v1 | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
-| v1 + conditional ranking | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
-| Time-only comparator | 0.468605 | 0.438510 | 0.479852 | 0.468356 |
+| Configuration | Prefix Logic | Prefix Factuality | Recovery VAL Logic | Recovery VAL Factuality | Recovery TEST Logic | Recovery TEST Factuality |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Original direct Streaming | 0.8256 | 0.8222 |  |  |  |  |
+| Best published baseline | 0.8256 ([Streaming](../streaming_622_p70/result/metrics.json)) | 0.8226 ([Global Mean](../global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/prefix.json)) |  |  |  |  |
+| Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |  |  |  |  |
+| v1 | 0.8316 | 0.8181 | 0.563189 | 0.568658 | 0.542960 | 0.552347 |
+| v1 + fixed-aggregation Step | 0.8356 | 0.8190 |  |  |  |  |
+| v1 + conditional ranking | 0.835883 | 0.816752 | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
+| Original direct SAPLMA | 0.8078 | 0.7842 |  |  |  |  |
+| SAPLMA decomposition, Step-negative BCE | 0.7916 | 0.7737 |  |  |  |  |
+| SAPLMA decomposition, all-position BCE | 0.8026 | 0.7846 |  |  |  |  |
+| Streaming decomposition, Step-negative BCE | 0.8240 | 0.8242 |  |  |  |  |
+| Time-only comparator |  |  | 0.468605 | 0.438510 | 0.479852 | 0.468356 |
