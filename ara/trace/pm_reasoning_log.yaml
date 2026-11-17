@@ -681,3 +681,4 @@ entries:
   - {"turn": "2026-11-17_001#14", "notes": ["Record the ground-truth error-only position profile and matched frozen inputs."]}
   - {"turn": "2026-11-17_001#15", "notes": ["Record the matched HaMI peak-location comparison on VAL error Steps."]}
   - {"turn": "2026-11-17_001#16", "notes": ["Record the verified error-only comparison across TRAIN and VAL."]}
+  - {"turn": "2026-11-17_001#17", "notes": ["Record the two verified four-head Step outcomes as one matched comparison."]}

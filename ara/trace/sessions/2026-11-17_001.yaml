@@ -2,8 +2,8 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T15:07:24+11:00"
-  turn_count: 16
+  last_turn: "2026-11-17T17:15:57+11:00"
+  turn_count: 17
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
@@ -24,5 +24,6 @@ events_logged:
 - {"turn": 14, "type": "experiment", "id": "N12813622", "routing": "direct", "provenance": "ai-executed", "summary": "On ground-truth error-only VAL Steps, the final 20% held mean mass of 0.4946 learned vs 0.4908 fixed (Logic, n=154), 0.2420 vs 0.4869 (Factuality, n=372), 0.3445 vs 0.4882 (Science, n=1962), and 0.3806 vs 0.4909 (Multi-hop, n=1020). Logic's final decile was 0.3712 vs 0.2812."}
 - {"turn": 15, "type": "experiment", "id": "N12813623", "routing": "direct", "provenance": "ai-executed", "summary": "The highest scoring or highest weight token fell in the final decile in HaMI versus learnable aggregation for 45.5% versus 72.1% of Logic errors (154), 25.4% versus 19.1% of Factuality errors (372), and 29.2% versus 56.5% of Multi-hop errors (1020). Fixed Streaming always peaked in the final decile in these cohorts. HaMI uses its original top-score averaging for Step predictions. Science is pending a frozen HaMI layer."}
 - {"turn": 16, "type": "experiment", "id": "N12813624", "routing": "direct", "provenance": "ai-executed", "summary": "For both splits, the median effective token fraction was lower under learnable aggregation than fixed Streaming in Logic, Factuality and Multi-hop. Science showed the reverse. TRAIN/VAL error Step counts were 377/154 (Logic), 1113/372 (Factuality), 5231/1962 (Science), and 2412/1020 (Multi-hop). Both splits reused the same frozen VAL-selected checkpoints."}
+- {"turn": 17, "type": "experiment", "id": "N12813625", "routing": "direct", "provenance": "ai-executed", "summary": "With the legacy Step-only recipe, four-head gated attention achieved TEST AUROC 0.87754 vs 0.88714 dense in Logic (AP 0.19481 vs 0.17400) and 0.87670 vs 0.88161 in Factuality (AP 0.41709 vs 0.43297). The error-Step diagnostics report separate head curves and gate quantiles on TRAIN and VAL."}
 claims_touched: []
 logic_revisions: []
