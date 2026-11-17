@@ -33,7 +33,7 @@ Future Prefix experiments are reported in this table.
 | Best published baseline | 0.8256 ([Streaming](../streaming_622_p70/result/metrics.json)) | 0.8226 ([Global Mean](../global_mean/622_p70_20261108/result/qwen3_8_27b/Factuality/prefix.json)) |
 | Streaming decomposition, all-position BCE | 0.8239 | 0.8258 |
 | Streaming decomposition, all-position BCE (legacy optimizer, unnormalized features) |  | 0.8181 |
-| Streaming decomposition, all-position BCE (legacy optimizer, fixed-aggregation Step) |  |  |
+| Streaming decomposition, all-position BCE (legacy optimizer, fixed-aggregation Step) |  | 0.8190 |
 
 ### Other Prefix comparisons
 
