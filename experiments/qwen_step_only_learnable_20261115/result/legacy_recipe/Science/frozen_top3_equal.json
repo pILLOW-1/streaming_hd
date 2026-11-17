@@ -1,0 +1,27 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "domain": "Science",
+  "arm": "frozen_top3_equal",
+  "layers": [
+    46,
+    34,
+    47
+  ],
+  "layer_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "fusion_bias": 0.0,
+  "threshold": 0.12831875681877136,
+  "positions": 46175,
+  "metrics": {
+    "step_AUROC": 0.8309456317800525,
+    "step_AP": 0.24336099002181683,
+    "F1": 0.30586052265347147
+  },
+  "prediction_sha256": "73eb0a5cc0a78dff3e836bbb468d5fd8d03ae91e0a642e5882e0811fe2f75580",
+  "acceptance_sha256": "f00949065b74d94c3ac54546f7ea6ed070954b7f2f247ccb397bac7057735527",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}

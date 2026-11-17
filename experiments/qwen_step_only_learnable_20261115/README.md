@@ -10,6 +10,7 @@
 | [Learnable aggregation](config/learnable_aggregation/README.md) | Learn weights from token content and pool frozen token features. |
 | [Learnable aggregation, hard Top-10%](config/hard_top10/README.md) | Mask the remaining logits to −∞ before one within-Step softmax. |
 | [Four-head attention + gated residual](config/fourhead_gated/README.md) | Pool each Step using four token-attention heads and a gated mean residual. |
+| [Top-3 equal-weight logit fusion](config/frozen_top3_equal/README.md) | Average logits from three frozen Learnable aggregation detectors selected by Step VAL AUROC. |
 
 ### Legacy recipe Step TEST AUROC
 
@@ -23,3 +24,4 @@ Rows marked “trajectory recipe” use trajectory batching. Empty cells have no
 | Learnable aggregation | 0.8871 | 0.8816 | 0.8219 | 0.7932 | 0.9177 |
 | Learnable aggregation, hard Top-10% | 0.856127 | 0.859060 |  |  |  |
 | Four-head attention + gated residual | 0.877537 | 0.876701 |  |  |  |
+| Top-3 equal-weight logit fusion | 0.8941 | 0.8829 | 0.8309 |  | 0.9230 |

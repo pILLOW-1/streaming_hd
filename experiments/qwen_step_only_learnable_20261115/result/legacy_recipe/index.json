@@ -145,6 +145,33 @@
         "history_index": "e893582c064a2f484ae914e78f2b653e671d2cd2189ad40e152fc5ca22a02ec7"
       },
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "variant": "legacy_recipe",
+      "domain": "Factuality",
+      "arm": "frozen_top3_equal",
+      "layers": [
+        49,
+        50,
+        48
+      ],
+      "layer_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "fusion_bias": 0.0,
+      "threshold": 0.2326497733592987,
+      "positions": 5489,
+      "metrics": {
+        "step_AUROC": 0.8828777669370084,
+        "step_AP": 0.4453773591358396,
+        "F1": 0.4513217279174726
+      },
+      "prediction_sha256": "baa1ed3d6d41efc052e1b84f30a0dd099a6e8d8500f32e0831f42153c9c9cb36",
+      "acceptance_sha256": "5373aca85aa016d5a86da29cd3f59bca6dc81e2bde659bf986a00a06f000b4cc",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ],
   "Logic": [
@@ -292,6 +319,33 @@
         "history_index": "aebfbc4299a5c6c607f80a2364673218da673fe57fdb9db4ad231a3ae09a4e7f"
       },
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "variant": "legacy_recipe",
+      "domain": "Logic",
+      "arm": "frozen_top3_equal",
+      "layers": [
+        35,
+        34,
+        42
+      ],
+      "layer_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "fusion_bias": 0.0,
+      "threshold": 0.05868495628237724,
+      "positions": 15233,
+      "metrics": {
+        "step_AUROC": 0.894105332102643,
+        "step_AP": 0.19671261663135078,
+        "F1": 0.27697536108751064
+      },
+      "prediction_sha256": "4b6a7a843554ed2a67cdf4b0387b6aae942abd796f785fd463a3631b9ad3ed42",
+      "acceptance_sha256": "36df2eb9bc211b607080fe87ca92ee5d7133455712e244d77a9f0719a7b1f7e4",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ],
   "Science": [
@@ -406,6 +460,33 @@
       "source_manifest_sha256": "3cfe5a7ed2a0573dbc826536eb50a740607afa945f2533fc1b5c411f8a47aec8",
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
       "variant": "legacy_recipe"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "variant": "legacy_recipe",
+      "domain": "Science",
+      "arm": "frozen_top3_equal",
+      "layers": [
+        46,
+        34,
+        47
+      ],
+      "layer_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "fusion_bias": 0.0,
+      "threshold": 0.12831875681877136,
+      "positions": 46175,
+      "metrics": {
+        "step_AUROC": 0.8309456317800525,
+        "step_AP": 0.24336099002181683,
+        "F1": 0.30586052265347147
+      },
+      "prediction_sha256": "73eb0a5cc0a78dff3e836bbb468d5fd8d03ae91e0a642e5882e0811fe2f75580",
+      "acceptance_sha256": "f00949065b74d94c3ac54546f7ea6ed070954b7f2f247ccb397bac7057735527",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ],
   "Multi-hop": [
@@ -464,6 +545,33 @@
       "source_manifest_sha256": "d2efe3a7788c58cfd8ddb1e7d06ae6add0f4fac1e278a0cf46d84a60eebcddc0",
       "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
       "variant": "legacy_recipe"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "variant": "legacy_recipe",
+      "domain": "Multi-hop",
+      "arm": "frozen_top3_equal",
+      "layers": [
+        40,
+        49,
+        34
+      ],
+      "layer_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "fusion_bias": 0.0,
+      "threshold": 0.23158463835716248,
+      "positions": 13460,
+      "metrics": {
+        "step_AUROC": 0.9229882162469052,
+        "step_AP": 0.6449819124379743,
+        "F1": 0.5931091058244463
+      },
+      "prediction_sha256": "7c64749d4fcee5c922d2cc319032d3c031d0ae81f94775f10eab303723f1e87e",
+      "acceptance_sha256": "a8b7e8c6a5d1d2dfdaf99e8d3d04e29ec50f0c0a479417597345218b7d88b800",
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
     }
   ],
   "Math": [

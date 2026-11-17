@@ -1,0 +1,41 @@
+{
+  "domain": "Factuality",
+  "method": "gru_memory_kappa_frozen_aggr_repr",
+  "position_count": 5489,
+  "selected": {
+    "layer": 49,
+    "epoch": 5,
+    "AUROC": 0.9364998481133973,
+    "AP": 0.9118160110971317
+  },
+  "threshold": 0.4140634834766388,
+  "TEST": {
+    "AUROC": 0.7889657003277752,
+    "AP": 0.7322386279559682,
+    "F1": 0.7278246205733558
+  },
+  "frozen_step_probability": {
+    "layer": 49,
+    "epoch": 1,
+    "checkpoint_sha256": "274bbe3460efc713e57b54db8265c7b2854e139aa17608e0edf98e9d4b9faa51"
+  },
+  "frozen_step_representation": {
+    "layer": 49,
+    "epoch": 1,
+    "checkpoint_sha256": "274bbe3460efc713e57b54db8265c7b2854e139aa17608e0edf98e9d4b9faa51"
+  },
+  "recovery_TEST": {
+    "prefix": {
+      "macro": 0.5672831971304836,
+      "mixed_trajectories": 142
+    },
+    "kappa": {
+      "macro": 0.5716648080901017,
+      "mixed_trajectories": 142
+    }
+  },
+  "test_sha": "4c316970b17f225dfa5fd245297d7c0322d2703908605025a6d070323751d9e4",
+  "selected_checkpoint_sha": "778a1879a1d2f2263dae8b8f194dcbde925f67448cf46735b44c4db52854ea7b",
+  "source_result_sha": "ab5f3a8c346a8894ea82cb8352eff48fef3603280e7c36f0c68f948db87d307e",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}

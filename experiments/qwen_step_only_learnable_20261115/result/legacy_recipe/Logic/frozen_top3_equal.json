@@ -1,0 +1,27 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "variant": "legacy_recipe",
+  "domain": "Logic",
+  "arm": "frozen_top3_equal",
+  "layers": [
+    35,
+    34,
+    42
+  ],
+  "layer_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "fusion_bias": 0.0,
+  "threshold": 0.05868495628237724,
+  "positions": 15233,
+  "metrics": {
+    "step_AUROC": 0.894105332102643,
+    "step_AP": 0.19671261663135078,
+    "F1": 0.27697536108751064
+  },
+  "prediction_sha256": "4b6a7a843554ed2a67cdf4b0387b6aae942abd796f785fd463a3631b9ad3ed42",
+  "acceptance_sha256": "36df2eb9bc211b607080fe87ca92ee5d7133455712e244d77a9f0719a7b1f7e4",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}

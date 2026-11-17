@@ -1,0 +1,41 @@
+{
+  "domain": "Logic",
+  "method": "gru_memory_kappa_frozen_aggr_repr",
+  "position_count": 15233,
+  "selected": {
+    "layer": 39,
+    "epoch": 6,
+    "AUROC": 0.9024781094695561,
+    "AP": 0.5223866275782805
+  },
+  "threshold": 0.2007724493741989,
+  "TEST": {
+    "AUROC": 0.8499918173225611,
+    "AP": 0.43278496712895376,
+    "F1": 0.4942012719790498
+  },
+  "frozen_step_probability": {
+    "layer": 35,
+    "epoch": 3,
+    "checkpoint_sha256": "067a812cf7d3ecb6af09954c4d142bc83fbd35a670836468fcf7c95ef6a74ddd"
+  },
+  "frozen_step_representation": {
+    "layer": 39,
+    "epoch": 4,
+    "checkpoint_sha256": "34b367fbbf113ba94b9a1e224af1c5b35884314cfc9166e46eaee1d41bb28d14"
+  },
+  "recovery_TEST": {
+    "prefix": {
+      "macro": 0.5552597038699681,
+      "mixed_trajectories": 133
+    },
+    "kappa": {
+      "macro": 0.5651593449194721,
+      "mixed_trajectories": 133
+    }
+  },
+  "test_sha": "e0d6e9899f319aad0081a26cad485daa30f8012f644363de00337b890b4963a6",
+  "selected_checkpoint_sha": "419398cfdf27ee940c3ba35d0b68789d233291aeac3e0c3f0d2c443205b3e23f",
+  "source_result_sha": "c1ed5493f52723772c26996476ddc2c4655c91f76f6905628cd7a0e94fa79841",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+}

@@ -11,6 +11,7 @@
 | [v1 + fixed-aggregation Step](config/v1_fixed_step/README.md) | Use the frozen Step detector trained with fixed aggregation. |
 | [v1 + conditional ranking](config/v1_conditional_ranking/README.md) | Add a same-trajectory ranking loss to the conditional logit. |
 | [v1 + GRU + memory κ](config/v1_kappa_gru_memory/README.md) | Predict κ with causal GRU memory and compose with frozen Streaming Step scores. |
+| [GRU + memory κ with frozen Learnable aggregation](config/gru_memory_kappa_frozen_aggr_repr/README.md) | Feed frozen Learnable aggregation Step representations into GRU memory and compose κ with frozen Step probabilities. |
 
 ## Results
 
@@ -25,3 +26,4 @@ Prefix columns report TEST AUROC. Recovery columns report within-trajectory macr
 | v1 + fixed-aggregation Step | 0.8356 | 0.8190 |  |  |  |  |
 | v1 + conditional ranking | 0.835883 | 0.816752 | 0.571456 | 0.569815 | 0.555914 | 0.548313 |
 | v1 + GRU + memory κ |  |  |  |  |  |  |
+| GRU + memory κ with frozen Learnable aggregation | 0.8500 | 0.7890 |  |  | 0.555260 | 0.567283 |
