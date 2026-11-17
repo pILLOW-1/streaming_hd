@@ -2,13 +2,14 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T10:49:41+11:00"
-  turn_count: 3
+  last_turn: "2026-11-17T11:04:00+11:00"
+  turn_count: 4
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
 - {"turn": 1, "type": "decision", "id": "N12813608", "routing": "direct", "provenance": "user", "summary": "Use the original frozen Streaming Step probabilities for Logic and Factuality. Train only a linear conditional Prefix head on unnormalized pooled features with all-position composed BCE and legacy Step optimization. The previous Streaming adaptation used a different pooling normalization and optimization; keep its results as the comparison. Final TEST pending."}
 - {"turn": 2, "type": "experiment", "id": "N12813609", "routing": "direct", "provenance": "ai-executed", "summary": "On 5489 matched frozen Factuality TEST positions, legacy optimization with unnormalized Prefix features gave AUROC 0.8181234233 and AP 0.7843764733. VAL selected layer 49, epoch 1. The earlier all-position Streaming variant had AUROC 0.8257690445; this comparison changes both optimization and normalization."}
 - {"turn": 3, "type": "decision", "id": "N12813610", "routing": "direct", "provenance": "user", "summary": "Compare frozen original Streaming and legacy fixed-aggregation Step probabilities in the same unnormalized Prefix legacy recipe on Logic and Factuality. The selected fixed Step checkpoints are Logic layer 42 epoch 12 and Factuality layer 47 epoch 3. The new Prefix TEST results remain pending."}
+- {"turn": 4, "type": "experiment", "id": "N12813611", "routing": "direct", "provenance": "ai-executed", "summary": "On 5489 matched Factuality TEST positions, exchanging frozen original Streaming Step scores for legacy fixed-aggregation scores gave Prefix AUROC 0.8189588033 and AP 0.7814849970. The original-score variant gave 0.8181234233 AUROC and 0.7843764733 AP. VAL selected Prefix layer 49, epoch 1. Logic remains pending."}
 claims_touched: []
 logic_revisions: []
