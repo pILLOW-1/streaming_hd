@@ -2,8 +2,8 @@ session:
   id: "2026-11-17_001"
   date: "2026-11-17"
   started: "2026-11-17T10:26:42+11:00"
-  last_turn: "2026-11-17T13:04:13+11:00"
-  turn_count: 10
+  last_turn: "2026-11-17T13:31:14+11:00"
+  turn_count: 11
   summary: "Compare legacy optimization for frozen-Step Qwen Prefix decomposition"
 
 events_logged:
@@ -18,5 +18,6 @@ events_logged:
 - {"turn": 8, "type": "decision", "id": "N12813616", "routing": "direct", "provenance": "user", "summary": "Add 0.1 times a trajectory-macro pairwise loss on the conditional Prefix logit, using all eligible pairs within uniformly sampled trajectories and allowing multiple previous errors. Keep frozen original Streaming Step probabilities, unnormalized Prefix features, and the original BCE shuffle and per-layer update counts. Run Qwen Logic and Factuality and compare to saved BCE-control predictions and a time-only score."}
 - {"turn": 9, "type": "decision", "id": "N12813617", "routing": "direct", "provenance": "user", "summary": "Test a single new Qwen Step-only arm on Logic and Factuality: keep ceil(0.10 times the Step token count) learned scores, use negative infinity for all others, and apply one within-Step softmax in TRAIN, VAL and TEST. Use the original optimizer and frozen data; compare to the previously verified dense learnable aggregation. For one retained token, pooling weights supply zero gradient to the scorer."}
 - {"turn": 10, "type": "experiment", "id": "N12813618", "routing": "direct", "provenance": "ai-executed", "summary": "On 15233 Logic TEST positions, adding the 0.1 same-trajectory ranking loss to the frozen-Step BCE recipe changed Prefix AUROC from 0.831632 to 0.835883 and AP from 0.373920 to 0.393280. On 133 trajectories and 152007 common recovery pairs, macro AUROC was 0.555914, versus 0.542960 for BCE and 0.479852 for time alone. VAL selected layer 47 epoch 7."}
+- {"turn": 11, "type": "experiment", "id": "N12813619", "routing": "direct", "provenance": "ai-executed", "summary": "On 5489 Factuality TEST positions, the same-trajectory conditional ranking loss gave Prefix AUROC 0.816752 versus 0.818123 for the matched BCE control. On 142 trajectories and 14948 common recovery pairs, macro AUROC was 0.548313 versus 0.552347 for BCE and 0.468356 for the time-only score. VAL selected layer 49, epoch 1."}
 claims_touched: []
 logic_revisions: []

@@ -675,3 +675,4 @@ entries:
   - {"turn": "2026-11-17_001#8", "notes": ["Record the frozen loss ablation and the accepted test protocol. Results pending."]}
   - {"turn": "2026-11-17_001#9", "notes": ["Record the single hard mask and one-softmax design. TEST results are pending."]}
   - {"turn": "2026-11-17_001#10", "notes": ["Record independently recomputed Logic metrics. The cross-domain comparison remains pending."]}
+  - {"turn": "2026-11-17_001#11", "notes": ["Record the verified Factuality comparison and point to the consolidated decomposition report."]}
