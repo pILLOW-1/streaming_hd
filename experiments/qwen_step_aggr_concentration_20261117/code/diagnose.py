@@ -1,4 +1,4 @@
-"""Measure paired VAL Step concentration under learned and positional pooling."""
+"""Profile pooling weight by normalized token position on labeled VAL error Steps."""
 import argparse
 import hashlib
 import json
@@ -10,90 +10,76 @@ import torch
 
 def digest(path):
     h = hashlib.sha256()
-    with path.open('rb') as stream:
-        for block in iter(lambda: stream.read(8 * 1024 * 1024), b''):
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(8 * 1024 * 1024), b""):
             h.update(block)
     return h.hexdigest()
 
 
-def measures(weights):
-    length = len(weights)
-    return (1 / (length * np.dot(weights, weights)),
-            float(weights.max()), float(np.sort(weights)[-3:].sum()),
-            float(weights[-((length + 4) // 5):].sum()),
-            float(weights.argmax() / (length - 1)) if length > 1 else np.nan)
-
-
-def quartiles(values):
-    values = values[np.isfinite(values)]
-    return np.quantile(values, [.25, .5, .75]).tolist() if values.size else None
+def binned_mass(weights, edges):
+    # Each token represents an equal-width interval in the normalized Step.
+    # Interpolate the cumulative mass at the bin boundaries to preserve mass.
+    cumulative = np.concatenate(([0.0], np.cumsum(weights, dtype=np.float64)))
+    token_boundaries = np.linspace(0, 1, len(weights) + 1)
+    return np.diff(np.interp(edges, token_boundaries, cumulative))
 
 
 @torch.inference_mode()
-def diagnose(raw, spans, scorer):
-    result = np.empty((len(spans), 2, 5), dtype=np.float64)
+def profile(raw, spans, scorer, edges):
+    totals = np.zeros((2, len(edges) - 1), dtype=np.float64)
     for start in range(0, len(spans), 64):
         batch = spans[start:start + 64]
         lengths = np.diff(batch, axis=1).ravel()
         tokens = np.concatenate([raw[lo:hi] for lo, hi in batch])
-        assert len(tokens) == lengths.sum()
-        inputs = torch.from_numpy(tokens.view(np.int16)).view(torch.bfloat16).float()
-        logits = scorer(inputs).reshape(-1)
+        x = torch.from_numpy(tokens.view(np.int16)).view(torch.bfloat16).float()
+        logits = scorer(x).reshape(-1)
         assert torch.isfinite(logits).all()
-        for row, step_logits in enumerate(logits.split(lengths.tolist()), start):
-            fixed = torch.linspace(0, 3, step_logits.numel(), dtype=torch.float32)
-            for arm, scores in enumerate((step_logits, fixed)):
-                weights = scores.softmax(dim=0).double().numpy()
-                assert abs(weights.sum() - 1) < 1e-6
-                result[row, arm] = measures(weights)
-    return result
+        for scores in logits.split(lengths.tolist()):
+            fixed = 3 * torch.linspace(0, 1, scores.numel(), dtype=torch.float32)
+            for arm, vector in enumerate((scores, fixed)):
+                mass = binned_mass(vector.softmax(dim=0).double().numpy(), edges)
+                assert (mass >= 0).all() and abs(mass.sum() - 1) < 1e-6
+                totals[arm] += mass
+    return totals / len(spans)
 
 
 def main():
-    p = argparse.ArgumentParser()
-    p.add_argument('input', type=Path)
-    p.add_argument('out', type=Path)
-    args = p.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", type=Path)
+    parser.add_argument("out", type=Path)
+    args = parser.parse_args()
     spec = json.loads(args.input.read_text())
-    assert spec['split'] == 'val'
-    feature = Path(spec['feature'])
-    checkpoint = Path(spec['checkpoint'])
-    for path, key in ((feature, 'feature_sha256'), (checkpoint, 'checkpoint_sha256')):
-        assert digest(path) == spec[key], f'SHA mismatch: {path}'
-    saved = torch.load(checkpoint, map_location='cpu', weights_only=True)
-    assert saved['selection']['layer'] == spec['layer']
-    assert saved['selection']['epoch'] == spec['epoch']
-    detector = saved['model']
-    scorer = torch.nn.Sequential(torch.nn.Linear(5120,256), torch.nn.BatchNorm1d(256),
-                                 torch.nn.ReLU(), torch.nn.Dropout(.3), torch.nn.Linear(256,1))
-    scorer.load_state_dict({k[7:]: v for k,v in detector.items() if k.startswith('scorer.')})
+    assert spec["split"] == "val" and spec["target_step_error"] == 1
+    assert 0 < spec["positions"] <= spec["all_val_positions"]
+    feature, checkpoint = Path(spec["feature"]), Path(spec["checkpoint"])
+    assert digest(feature) == spec["feature_sha256"]
+    assert digest(checkpoint) == spec["checkpoint_sha256"]
+    saved = torch.load(checkpoint, map_location="cpu", weights_only=True)
+    assert (saved["selection"]["layer"], saved["selection"]["epoch"]) == (spec["layer"], spec["epoch"])
+    scorer = torch.nn.Sequential(torch.nn.Linear(5120, 256), torch.nn.BatchNorm1d(256),
+                                 torch.nn.ReLU(), torch.nn.Dropout(.3), torch.nn.Linear(256, 1))
+    scorer.load_state_dict({k[7:]: v for k, v in saved["model"].items() if k.startswith("scorer.")})
     scorer.eval()
-    raw = np.load(feature, mmap_mode='r', allow_pickle=False)
-    spans = np.asarray(spec['spans'], dtype=np.int64)
-    lengths = (spans[:,1] - spans[:,0])
-    assert raw.ndim == 2 and raw.shape[1] == 5120 and raw.dtype == np.dtype('<u2')
-    assert lengths.size == spec['positions'] and lengths.min() > 0
+    raw = np.load(feature, mmap_mode="r", allow_pickle=False)
+    spans = np.asarray(spec["spans"], dtype=np.int64)
+    lengths = np.diff(spans, axis=1).ravel()
+    assert raw.ndim == 2 and raw.shape[1] == 5120 and raw.dtype == np.dtype("<u2")
+    assert len(lengths) == spec["positions"] and lengths.min() > 0
     assert spans.min() >= 0 and spans.max() <= len(raw)
-    scores = diagnose(raw, spans, scorer)
-    names = ('effective_ratio', 'top1_mass', 'top3_mass', 'last20_mass', 'argmax_relative')
-    bins = [(1, 1), (2, 4), (5, 16), (17, 64), (65, 256), (257, int(max(257, lengths.max())))]
-    summary = {}
-    for label, subset in [('all', lengths > 0)] + [(f'{lo}-{hi}', (lengths >= lo) & (lengths <= hi)) for lo,hi in bins]:
-        pair = scores[subset]
-        summary[label] = dict(positions=len(pair), metrics={
-            name: dict(learned=quartiles(pair[:,0,k]), fixed=quartiles(pair[:,1,k]),
-                       paired_delta=quartiles(pair[:,0,k]-pair[:,1,k]))
-            for k,name in enumerate(names)
-        }, argmax_deciles={
-            arm: np.histogram(pair[np.isfinite(pair[:,j,4]),j,4], bins=np.linspace(0,1,11))[0].tolist()
-            for j,arm in enumerate(('learned','fixed'))
-        })
-    receipt = {k: spec[k] for k in ('domain','split','layer','epoch','positions','feature_sha256','checkpoint_sha256')}
+    edges = np.linspace(0, 1, 11)
+    means = profile(raw, spans, scorer, edges)
+    assert np.allclose(means.sum(axis=1), 1, atol=1e-6, rtol=0)
+    receipt = {name: spec[name] for name in (
+        "domain", "split", "layer", "epoch", "positions", "all_val_positions",
+        "target_step_error", "error_positions_sha256", "feature_sha256", "checkpoint_sha256")}
+    receipt.update(bin_edges=edges.tolist(), single_token_steps=int((lengths == 1).sum()),
+                   mean_weight_mass=dict(zip(("learned", "fixed"), means.tolist())))
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    tmp = args.out.with_suffix('.tmp')
-    tmp.write_text(json.dumps(dict(receipt, summary=summary), indent=2, allow_nan=False)+'\n')
+    tmp = args.out.with_suffix(".tmp")
+    tmp.write_text(json.dumps(receipt, indent=2, allow_nan=False) + "\n")
     tmp.replace(args.out)
+    print("VERIFIED", spec["domain"], spec["positions"], flush=True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

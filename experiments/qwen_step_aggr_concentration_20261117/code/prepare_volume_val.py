@@ -40,7 +40,7 @@ assert receipt['split'] == label_file['split'] == 'val'
 assert len(offsets) == len(label_file['rows']) == receipt['rows']
 offset = {row['sample_id']: row for row in offsets}
 assert len(offset) == len(offsets) and set(offset) == {x['sample_id'] for x in label_file['rows']}
-keys, spans = [], []
+keys, spans, labels = [], [], []
 for row in label_file['rows']:
     sample = row['sample_id']
     entry = offset[sample]
@@ -49,10 +49,13 @@ for row in label_file['rows']:
         assert entry['token_SHA256'] == row['token_sha'] and origin == row['origin']
     steps = row['retained_original_step_ids']
     step_spans = row['step_token_spans']
-    assert len(step_spans) == len(steps)
-    for step, (lo, hi) in zip(steps, step_spans):
+    target = row["step_hallucination"]
+    assert len(step_spans) == len(steps) == len(target)
+    assert all(x in (0, 1) for x in target)
+    for step, (lo, hi), y in zip(steps, step_spans, target):
         assert origin <= lo < hi <= stop
         keys.append(f'{sample}:{step}')
+        labels.append(y)
         spans.append([entry['offset'] + lo - origin, entry['offset'] + hi - origin])
 assert len(set(keys)) == len(keys) and sha(json.dumps(keys).encode()) == frozen['positions']
 
@@ -80,7 +83,12 @@ assert count == pin['bytes']
 after = c.head_object(Bucket=bucket, Key=key)
 assert (after['ETag'], after['ContentLength'], after['LastModified']) == (
     head['ETag'], head['ContentLength'], head['LastModified'])
+all_count = len(spans)
+positive_keys = [key for key, y in zip(keys, labels) if y == 1]
+spans = [span for span, y in zip(spans, labels) if y == 1]
 spec = dict(domain=domain, split='val', layer=layer, epoch=selection['epoch'],
+            target_step_error=1, all_val_positions=all_count,
+            error_positions_sha256=sha(json.dumps(positive_keys).encode()),
             positions=len(spans), spans=spans, feature=str(feature), feature_sha256=h.hexdigest(),
             source_key=key, source_etag=head['ETag'], source_bytes=count,
             feature_receipt_sha256=frozen['receipt'], positions_sha256=frozen['positions'],

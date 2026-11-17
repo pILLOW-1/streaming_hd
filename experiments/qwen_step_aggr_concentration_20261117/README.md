@@ -1,38 +1,9 @@
-# Qwen Step-only aggregation concentration
+# Qwen pooling weights within erroneous Steps
 
-Measure how the frozen legacy learnable aggregation distributes mass within a Step relative to Streaming positional pooling on identical token spans.
+This VAL diagnostic includes only Steps with the ground-truth Step error label equal to 1. It compares the frozen legacy learnable aggregation checkpoint in each domain with fixed Streaming on the same Steps. The learned scorer reads the existing selected-layer token features.
 
-| Configuration | Logic | Factuality | Science | Multi-hop |
-| --- | --- | --- | --- | --- |
-| Legacy learnable aggregation | Layer 35, epoch 3 | Layer 49, epoch 1 | Layer 46, epoch 2 | Layer 40, epoch 3 |
-| Streaming fixed aggregation | Same Step spans | Same Step spans | Same Step spans | Same Step spans |
+![Where fixed and learned pooling put weight inside each erroneous Step](error_step_weight_profile.png)
 
-| Setting | Value |
-| --- | --- |
-| Fit and selection | Published VAL-selected checkpoints, frozen |
-| Evaluation | One CPU scorer pass on VAL; fixed comparator uses softmax of 3u |
-| Metrics | Effective token fraction, Top-1 and Top-3 mass, final 20% mass, relative argmax position |
-| Aggregation | Per-domain quartiles and paired differences, overall and stratified by Step length |
+From Step start (0%) to Step end (100%), each plotted bin shows the mean share of the Step's pooling weight in that positional decile. Each token spans an equal part of its Step. Its weight is split proportionally when it overlaps more than one bin. The ten bin shares sum to 100%, and each Step contributes equally. The shaded region marks the final 20%.
 
-Single-token Steps contribute to concentration summaries. Relative argmax position is defined for Steps with at least two tokens.
-
-## Median VAL effective token fraction
-
-| Configuration | Logic | Factuality | Science | Multi-hop |
-| --- | --- | --- | --- | --- |
-| Legacy learnable aggregation | 0.5268 | 0.5278 | 0.8007 | 0.5296 |
-| Streaming fixed aggregation | 0.5700 | 0.5724 | 0.5763 | 0.5763 |
-
-All four domains are complete. Markers show medians and bars span the interquartile range.
-
-![Four-domain comparison of effective token fraction, Top-1 and Top-3 mass, and tail mass](weight_overview.png)
-
-Each cell below reports the median of the within-Step differences (learnable minus fixed Streaming), in percentage points.
-
-![Paired differences by Step length](paired_by_length.png)
-
-![Effective token fraction by Step length](effective_by_length.png)
-
-The maximum-weight position is normalized from the first token (0) to the last token (1).
-
-![Distribution of maximum-weight position](argmax_position.png)
+[Per-domain values and coverage](result/index.json)

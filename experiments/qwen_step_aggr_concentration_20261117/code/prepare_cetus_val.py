@@ -30,11 +30,19 @@ def lengths(split):
             yield hi-lo
 
 origin = sum(lengths('train'))
-val = []
-for n in lengths('val'):
-    val.append([origin, origin+n])
-    origin += n
-assert len(val) == hami['identity']['ranges']['val'][1] - hami['identity']['ranges']['val'][0]
+val, positive_keys = [], []
+all_count = 0
+for row in index['splits']['val']['rows']:
+    assert len(row['spans']) == len(row['labels']) == len(row['positions'])
+    for (lo, hi), label, key in zip(row['spans'], row['labels'], row['positions']):
+        assert label in (0, 1) and hi > lo
+        n = hi - lo
+        if label == 1:
+            val.append([origin, origin+n])
+            positive_keys.append(key)
+        origin += n
+        all_count += 1
+assert all_count == hami['identity']['ranges']['val'][1] - hami['identity']['ranges']['val'][0]
 layer = selected['layer']
 relative = f'layer_{layer}/hami_tokens.npy'
 feature = Path(hami['feature_root'])/relative
@@ -42,6 +50,8 @@ pin = hami['files'][relative]
 assert feature.stat().st_size == pin['bytes']
 checkpoint = run/'arms/aggr'/f'best_{layer:02d}.pt'
 spec = dict(domain=domain, split='val', layer=layer, epoch=selected['epoch'],
+            target_step_error=1, all_val_positions=all_count,
+            error_positions_sha256=hashlib.sha256(json.dumps(positive_keys).encode()).hexdigest(),
             positions=len(val), spans=val, feature=str(feature), feature_sha256=pin['SHA256'],
             checkpoint=str(checkpoint), checkpoint_sha256=selected['checkpoint_sha256'],
             input_sha256=selected['input_sha256'])
