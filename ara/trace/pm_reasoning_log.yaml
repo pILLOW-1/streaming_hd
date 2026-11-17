@@ -677,3 +677,4 @@ entries:
   - {"turn": "2026-11-17_001#10", "notes": ["Record independently recomputed Logic metrics. The cross-domain comparison remains pending."]}
   - {"turn": "2026-11-17_001#11", "notes": ["Record the verified Factuality comparison and point to the consolidated decomposition report."]}
   - {"turn": "2026-11-17_001#12", "notes": ["Record the verified Factuality hard mask test with its matched dense reference."]}
+  - {"turn": "2026-11-17_001#13", "notes": ["Record the matched Logic TEST result and the completed two-domain comparison."]}
