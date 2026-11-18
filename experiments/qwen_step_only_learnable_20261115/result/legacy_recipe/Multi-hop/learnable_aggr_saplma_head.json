@@ -1,0 +1,28 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "source_experiment": "qwen_step_learnable_aggr_saplma_head_20261118",
+  "domain": "Multi-hop",
+  "arm": "learnable_aggr_saplma_head",
+  "recipe": "pre_dataset_step_20261011_learnable_aggr_saplma",
+  "layer": 49,
+  "epoch": 3,
+  "candidates": 64,
+  "threshold": 0.4879603385925293,
+  "metrics": {
+    "step_AUROC": 0.9202744179372943,
+    "step_AP": 0.6331533192620556,
+    "step_BCE": 0.17677423675264783,
+    "F1": 0.5957642725598526
+  },
+  "val_metrics": {
+    "step_AUROC": 0.9264724349142848,
+    "step_AP": 0.6395715426685887,
+    "step_BCE": 0.18038976719391692
+  },
+  "positions": 13460,
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "checkpoint_sha256": "5abe3b15cd314649e09a87b63ba768db6905682038fe955bc02d3377bee9a8cc",
+  "prediction_sha256": "73ebf94994ce1410ed36c2cbf32c71d8fb204b08fa41d03f7da383320b1c7744",
+  "acceptance_sha256": "27f364dc53d98be647bb902cf8400697a4cb3208d71a6ad4e188ae4c1a1a33e4",
+  "selection_sha256": "2b1f9d888532561582c32137535ef738282079cd57c998d2b5fce6e33d77662b"
+}
