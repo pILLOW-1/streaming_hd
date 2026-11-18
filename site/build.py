@@ -94,6 +94,7 @@ def repo_link(path: str) -> str:
 
 def page(title: str, body: str, depth: int, description: str = "") -> str:
     up = "../" * depth
+    home = up or "./"  # directory URLs, never .../index.html
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -110,8 +111,8 @@ def page(title: str, body: str, depth: int, description: str = "") -> str:
 </head>
 <body>
 <header class="site-header"><div class="site-header-inner">
-  <a class="brand" href="{up}index.html"><img src="{up}static/mark.svg" alt="" width="22" height="22"><span>{SITE_NAME}</span></a>
-  <nav><a href="{up}index.html">Weekly</a><a href="{REPO}">Repository</a></nav>
+  <a class="brand" href="{home}"><img src="{up}static/mark.svg" alt="" width="22" height="22"><span>{SITE_NAME}</span></a>
+  <nav><a href="{home}">Weekly</a><a href="{REPO}">Repository</a></nav>
 </div></header>
 {body}
 <footer class="site-footer"><div class="site-footer-inner">
@@ -148,7 +149,7 @@ def render_post(meta: dict, content: str, sections: list, src: Path) -> str:
     return f"""<div class="ready-bar"><div class="ready-inner">Report · {date:%B %-d, %Y}</div></div>
 <div class="post-layout">
   <aside class="post-aside">
-    <p class="crumb"><a href="../../index.html">Weekly</a> / Report</p>
+    <p class="crumb"><a href="../../">Weekly</a> / Report</p>
     <p class="aside-label">Contents</p>
     <ol class="toc">{toc}</ol>
   </aside>
@@ -160,7 +161,7 @@ def render_post(meta: dict, content: str, sections: list, src: Path) -> str:
     <div class="pills">{buttons}</div>
     {hero}
     <div class="prose">{content}</div>
-    <div class="post-end"><span>End of report</span><a href="../../index.html">Browse all reports →</a></div>
+    <div class="post-end"><span>End of report</span><a href="../../">Browse all reports →</a></div>
   </article>
 </div>"""
 
@@ -204,7 +205,7 @@ def main() -> None:
         target.parent.mkdir(parents=True)
         target.write_text(page(f"{meta['title']} · {SITE_NAME}", render_post(meta, content, sections, src), 2,
                                meta.get("summary", "")), encoding="utf-8")
-        posts.append(dict(meta, href=f"weekly/{slug}/index.html",
+        posts.append(dict(meta, href=f"weekly/{slug}/",
                           cover=f"weekly/{meta['cover']}" if meta.get("cover") else None))
         print("built", target.relative_to(out))
     posts.sort(key=lambda p: p["date"], reverse=True)
