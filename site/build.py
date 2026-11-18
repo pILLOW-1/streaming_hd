@@ -23,6 +23,7 @@ WEEKLY = ROOT / "weekly"
 STATIC = Path(__file__).resolve().parent / "static"
 REPO = "https://github.com/pILLOW-1/streaming_hd"
 SITE_NAME = "Streaming HD"
+GITHUB_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>')
 KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist"
 FONTS = ("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1"
          "&family=JetBrains+Mono:wght@400;500;600&display=swap")
@@ -110,14 +111,19 @@ def page(title: str, body: str, depth: int, description: str = "") -> str:
 <link rel="icon" href="{up}static/mark.svg" type="image/svg+xml">
 </head>
 <body>
-<header class="site-header"><div class="site-header-inner">
-  <a class="brand" href="{home}"><img src="{up}static/mark.svg" alt="" width="22" height="22"><span>{SITE_NAME}</span></a>
-  <nav><a href="{home}">Weekly</a><a href="{REPO}">Repository</a></nav>
-</div></header>
+<header class="site-header">
+  <a class="brand" href="{home}"><span class="brand-mark"><img src="{up}static/mark.svg" alt=""></span><span>{SITE_NAME}</span></a>
+  <nav class="site-nav"><a href="{home}">Weekly</a><a href="{REPO}">Repository</a></nav>
+</header>
+<main class="site-main">
 {body}
-<footer class="site-footer"><div class="site-footer-inner">
-  <p>{SITE_NAME} — weekly notes on streaming hallucination detection.</p>
-  <a href="{REPO}" aria-label="GitHub repository">GitHub</a>
+</main>
+<footer class="site-footer"><div class="site-footer__row">
+  <div class="site-footer__left">
+    <span>{SITE_NAME} — weekly notes on streaming hallucination detection.</span>
+    <a class="site-footer__credit" href="https://www.agenticresearch.sh/">Site style adapted from agenticresearch.sh</a>
+  </div>
+  <div class="site-footer__social"><a href="{REPO}" aria-label="GitHub repository">{GITHUB_ICON}</a></div>
 </div></footer>
 <script defer src="{KATEX}/katex.min.js"></script>
 <script defer src="{KATEX}/contrib/auto-render.min.js"
@@ -167,35 +173,53 @@ def render_post(meta: dict, content: str, sections: list, src: Path) -> str:
 
 
 def render_index(posts: list) -> str:
-    def card(p: dict, featured: bool) -> str:
+    """Each report has a compact row and an expanded card; the open item shows its card (first by default)."""
+    def item(p: dict, is_open: bool) -> str:
         date = dt.date.fromisoformat(p["date"])
-        img = f'<img src="{html.escape(p["cover"])}" alt="" loading="lazy">' if p.get("cover") else ""
-        if featured:
-            return f"""<a class="feature" href="{p['href']}">
-  <div class="feature-img">{img}</div>
-  <div class="feature-text"><p class="date-caps">{date:%b %-d, %Y}</p>
-  <h2>{html.escape(p['title'])}</h2><p>{html.escape(p.get('summary', ''))}</p></div></a>"""
-        return f"""<a class="row" href="{p['href']}"><div class="row-img">{img}</div>
-  <div class="row-text"><h3>{html.escape(p['title'])}</h3><p>{html.escape(p.get('summary', ''))}</p></div>
-  <p class="row-date">{date:%b %-d, %Y}</p></a>"""
+        title, note, href = html.escape(p["title"]), html.escape(p.get("summary", "")), p["href"]
+        img = f'<img src="{html.escape(p["cover"])}" alt="" loading="lazy" decoding="async">' if p.get("cover") else ""
+        art = "idx-art" if img else "idx-art idx-art--none"
+        return f"""<li class="idx-item{' is-open' if is_open else ''}">
+  <div class="idx-item__shape idx-item__shape--row"><div class="idx-item__clip"><div class="idx-row">
+    <a class="idx-row__artlink" aria-hidden="true" tabindex="-1" href="{href}"><span class="{art} idx-row__art">{img}</span></a>
+    <div class="idx-row__main"><h2 class="idx-row__title"><a href="{href}">{title}</a></h2><p class="idx-row__note">{note}</p></div>
+    <div class="idx-row__right"><span class="idx-row__meta">{date:%b %-d, %Y}</span></div>
+  </div></div></div>
+  <div class="idx-item__shape idx-item__shape--card"><div class="idx-item__clip"><div class="idx-card">
+    <a class="idx-card__artlink" aria-hidden="true" tabindex="-1" href="{href}"><span class="{art} idx-card__art">{img}</span></a>
+    <div class="idx-card__body"><p class="idx-card__meta"><span>{date:%b %-d, %Y}</span></p>
+      <h2 class="idx-card__title"><a href="{href}">{title}</a></h2><p class="idx-card__note">{note}</p></div>
+  </div></div></div>
+</li>"""
 
-    items = [card(p, i == 0) for i, p in enumerate(posts)]
-    return f'<main class="index"><h1 class="index-title">Weekly</h1>\n{items[0] if items else ""}\n' \
-           f'<div class="rows">{"".join(items[1:])}</div></main>'
+    items = "\n".join(item(p, i == 0) for i, p in enumerate(posts))
+    # Hover or keyboard focus opens one item at a time; the hidden shape is made inert.
+    script = """<script>
+(function(){var items=[].slice.call(document.querySelectorAll('.idx-item'));
+function sync(){items.forEach(function(it){var o=it.classList.contains('is-open');
+it.querySelector('.idx-item__shape--row .idx-row').inert=o;it.querySelector('.idx-item__shape--card .idx-card').inert=!o;});}
+function open(it){items.forEach(function(x){x.classList.toggle('is-open',x===it);});sync();}
+items.forEach(function(it){it.addEventListener('mouseenter',function(){open(it);});it.addEventListener('focusin',function(){open(it);});});
+sync();})();
+</script>"""
+    return f'<section class="blog-index"><header class="blog-index__head"><h1>Weekly</h1></header>\n' \
+           f'<ul class="idx-list">{items}</ul></section>{script}'
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=ROOT / "_site")
-    out = ap.parse_args().out.resolve()
+    ap.add_argument("--weekly", type=Path, default=WEEKLY, help="report folder (default: weekly/)")
+    args = ap.parse_args()
+    out, weekly = args.out.resolve(), args.weekly.resolve()
     if out.exists():
         shutil.rmtree(out)
     (out / "weekly").mkdir(parents=True)
     shutil.copytree(STATIC, out / "static")
-    if (WEEKLY / "assets").exists():
-        shutil.copytree(WEEKLY / "assets", out / "weekly" / "assets")
+    if (weekly / "assets").exists():
+        shutil.copytree(weekly / "assets", out / "weekly" / "assets")
     posts = []
-    for src in sorted(WEEKLY.glob("*.md")):
+    for src in sorted(weekly.glob("*.md")):
         if src.name.lower() == "readme.md":
             continue
         meta, body = front_matter(src.read_text(encoding="utf-8"))
