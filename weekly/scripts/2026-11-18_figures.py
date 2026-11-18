@@ -211,22 +211,26 @@ def step_readouts(still=None):
 
 # ---------------------------------------------------------------- 3b. prefix challenge
 def prefix_challenge():
-    fig, (a, b) = plt.subplots(1, 2, figsize=(8.2, 2.7), dpi=200, gridspec_kw={"width_ratios": [0.8, 1.4], "wspace": 0.25})
-    a.pie([84.7, 15.3], colors=[INHERITED, NEW], startangle=90, counterclock=False,
+    fig = plt.figure(figsize=(8.6, 2.75), dpi=200)
+    a = fig.add_axes([0.0, 0.0, 0.36, 0.84]); b = fig.add_axes([0.55, 0.22, 0.43, 0.6])
+    # (a) composition of Prefix-erroneous positions; the small "new" wedge faces right
+    a.pie([15.3, 84.7], colors=[NEW, INHERITED], startangle=-27.5, counterclock=True, radius=1.0,
           wedgeprops=dict(edgecolor=SURFACE, linewidth=2))
-    a.text(-0.08, -0.12, "inherited\n85%", ha="center", va="center", fontsize=14, color=INK, fontweight="bold", linespacing=1.1)
-    a.text(-0.3, 0.58, "new\n15%", ha="center", va="center", fontsize=12, color="white", fontweight="bold", linespacing=1.05)
-    a.set_aspect("equal")
+    a.set_xlim(-1.1, 2.2); a.set_ylim(-1.08, 1.08); a.set_aspect("equal"); a.axis("off")
+    a.text(-0.5, 0.0, "inherited\n85%", ha="center", va="center", fontsize=15, color=INK, fontweight="bold", linespacing=1.15)
+    a.annotate("new  15%", xy=(0.98, 0.0), xytext=(1.25, 0.0), fontsize=15, color=INK, va="center", fontweight="bold",
+               arrowprops=dict(arrowstyle="-", color=INK2, lw=0.9))
+    fig.text(0.0, 0.985, "(a) Where Prefix errors come from", fontsize=14, color=INK, va="top")
+    # (b) separating inherited errors from two kinds of clean positions
     vals, cols = [0.933, 0.661], ["#8a94a8", NEW]
     for i, (v, c) in enumerate(zip(vals, cols)):
-        b.barh(i, v - 0.5, left=0.5, color=c, height=0.55, zorder=3)
+        b.barh(i, v - 0.5, left=0.5, color=c, height=0.56, zorder=3)
         b.text(v + 0.008, i, f"{v:.2f}", va="center", fontsize=14, color=INK, fontweight="bold")
-    b.set_yticks([0, 1], ["fresh", "recovered"], fontsize=13.5, color=INK); b.invert_yaxis()
+    b.set_yticks([0, 1], ["vs. fresh clean", "vs. recovered clean"], fontsize=13.5, color=INK); b.invert_yaxis()
     b.set_xlim(0.5, 1.0); b.set_xticks([0.5, 0.6, 0.7, 0.8, 0.9, 1.0]); b.tick_params(axis="x", labelsize=11.5)
-    b.set_xlabel("AUROC (inherited vs. clean)", fontsize=13, color=INK2)
+    b.set_xlabel("AUROC of existing detectors (0.5 = chance)", fontsize=12.5, color=INK2)
     b.grid(axis="x", color="#e6dfd0", lw=0.8, zorder=0); style_axis(b)
-    fig.text(0.0, 0.97, "(a)", fontsize=13, color=INK, va="top")
-    fig.text(0.33, 0.97, "(b)", fontsize=13, color=INK, va="top")
+    fig.text(0.37, 0.985, "(b) Telling inherited errors from clean positions", fontsize=14, color=INK, va="top")
     save(fig, "prefix_challenge.png")
 
 
