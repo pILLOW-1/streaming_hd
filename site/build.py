@@ -24,9 +24,8 @@ STATIC = Path(__file__).resolve().parent / "static"
 REPO = "https://github.com/pILLOW-1/streaming_hd"
 SITE_NAME = "Streaming HD"
 KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist"
-FONTS = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1"
-         "&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;"
-         "1,8..60,400&display=swap")
+FONTS = ("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1"
+         "&family=JetBrains+Mono:wght@400;500;600&display=swap")
 
 
 def front_matter(text: str) -> tuple[dict, str]:
