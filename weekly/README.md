@@ -1,6 +1,6 @@
 # Weekly reports
 
-One Markdown file per report, named by date. The site at <https://pillow-1.github.io/streaming_hd/> is built from these files by [`site/build.py`](../site/build.py) on every push to `main`.
+One Markdown file per report, named by date. The site at <https://pillow-1.github.io/streaming_hd/> is built from these files by [`site/build.py`](../site/build.py) and published to the `gh-pages` branch by [`site/publish.sh`](../site/publish.sh) after the report is committed to `main`.
 
 | Date | Report |
 |---|---|
