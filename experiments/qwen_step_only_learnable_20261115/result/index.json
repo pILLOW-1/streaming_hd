@@ -1,1 +1,155 @@
-{"Logic":[{"experiment":"qwen_step_only_learnable_20261115","domain":"Logic","arm":"repr","layer":42,"metrics":{"step_AUROC":0.866559954000428},"prediction_sha256":"3d05f49d4506e6f0d72400dc77d768dce9a4816eb7b025f9b5f9bbea372a5ea7","positions":15233,"status":"CPU_RECOMPUTED_FROM_SAVED_TEST"},{"experiment":"qwen_step_only_learnable_20261115","domain":"Logic","arm":"aggr_repr","layer":51,"metrics":{"step_AUROC":0.8752332943518665},"prediction_sha256":"69380d60bb21679a3a146ec73e83ec92a5716ef8fdda1a11f87c772d7845ddc9","positions":15233,"status":"CPU_RECOMPUTED_FROM_SAVED_TEST"}],"Factuality":[{"experiment":"qwen_step_only_learnable_20261115","domain":"Factuality","arm":"aggr_repr","layer":47,"metrics":{"step_AUROC":0.8740224251478749},"prediction_sha256":"453053228e3de61c7c8c1192574a13c1713bd42c15071c3e971e075482f3b5ba","positions":5489,"status":"CPU_RECOMPUTED_FROM_SAVED_TEST"},{"experiment":"qwen_step_only_learnable_20261115","domain":"Factuality","arm":"aggr","layer":50,"metrics":{"step_AUROC":0.8768171839746326},"prediction_sha256":"35ee70c95acd5d5d7ba4ed949f9d13a450b32208ad749bcafed98824e547cf5c","positions":5489,"status":"CPU_RECOMPUTED_FROM_SAVED_TEST"},{"experiment":"qwen_step_only_learnable_20261115","domain":"Factuality","arm":"repr","layer":50,"metrics":{"step_AUROC":0.880749588389536},"prediction_sha256":"cc90601fa4f463b07531abedc78bdacdb661b2e30c3ad3ac61720ac40d465e6d","positions":5489,"status":"CPU_RECOMPUTED_FROM_SAVED_TEST"}],"legacy_recipe":{"Science":[{"experiment":"qwen_step_only_learnable_20261115","domain":"Science","arm":"aggr_residual","recipe":"pre_dataset_step_20261011","layer":46,"epoch":2,"candidates":64,"metrics":{"step_AUROC":0.8213695899395189,"step_AP":0.2160416502864408,"step_BCE":0.17310202747691464},"val_metrics":{"step_AUROC":0.8275361081905948,"step_AP":0.2307220756434735,"step_BCE":0.16905094794535766},"positions":46175,"coverage":"complete","prediction_sha256":"af526fc07c1d214e8d3a1f5ab4bcb6fbae6acecbb0a7ab498029e28acf745b16","checkpoint_sha256":"aaeba9b15f64879bcf86bcff60e3f1803bbebb0cf50f132b9e507baf981eb198","selection_sha256":"421790bcf217468fc827163d64bb47868535bb8a832971434d3bf74cc43df721","input_sha256":"8b2a21b197eba9a87dbf49405643d39475036844283ca0a7eace3f772f2bf3a3","source_manifest_sha256":"3cfe5a7ed2a0573dbc826536eb50a740607afa945f2533fc1b5c411f8a47aec8","status":"CPU_RECOMPUTED_FROM_SAVED_TEST"}]}}
+{
+  "Logic": [
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Logic",
+      "arm": "repr",
+      "layer": 42,
+      "metrics": {
+        "step_AUROC": 0.866559954000428
+      },
+      "prediction_sha256": "3d05f49d4506e6f0d72400dc77d768dce9a4816eb7b025f9b5f9bbea372a5ea7",
+      "positions": 15233,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Logic",
+      "arm": "aggr_repr",
+      "layer": 51,
+      "metrics": {
+        "step_AUROC": 0.8752332943518665
+      },
+      "prediction_sha256": "69380d60bb21679a3a146ec73e83ec92a5716ef8fdda1a11f87c772d7845ddc9",
+      "positions": 15233,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ],
+  "Factuality": [
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Factuality",
+      "arm": "aggr_repr",
+      "layer": 47,
+      "metrics": {
+        "step_AUROC": 0.8740224251478749
+      },
+      "prediction_sha256": "453053228e3de61c7c8c1192574a13c1713bd42c15071c3e971e075482f3b5ba",
+      "positions": 5489,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Factuality",
+      "arm": "aggr",
+      "layer": 50,
+      "metrics": {
+        "step_AUROC": 0.8768171839746326
+      },
+      "prediction_sha256": "35ee70c95acd5d5d7ba4ed949f9d13a450b32208ad749bcafed98824e547cf5c",
+      "positions": 5489,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    },
+    {
+      "experiment": "qwen_step_only_learnable_20261115",
+      "domain": "Factuality",
+      "arm": "repr",
+      "layer": 50,
+      "metrics": {
+        "step_AUROC": 0.880749588389536
+      },
+      "prediction_sha256": "cc90601fa4f463b07531abedc78bdacdb661b2e30c3ad3ac61720ac40d465e6d",
+      "positions": 5489,
+      "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+    }
+  ],
+  "legacy_recipe": {
+    "Science": [
+      {
+        "experiment": "qwen_step_only_learnable_20261115",
+        "domain": "Science",
+        "arm": "aggr_residual",
+        "recipe": "pre_dataset_step_20261011",
+        "layer": 46,
+        "epoch": 2,
+        "candidates": 64,
+        "metrics": {
+          "step_AUROC": 0.8213695899395189,
+          "step_AP": 0.2160416502864408,
+          "step_BCE": 0.17310202747691464
+        },
+        "val_metrics": {
+          "step_AUROC": 0.8275361081905948,
+          "step_AP": 0.2307220756434735,
+          "step_BCE": 0.16905094794535766
+        },
+        "positions": 46175,
+        "coverage": "complete",
+        "prediction_sha256": "af526fc07c1d214e8d3a1f5ab4bcb6fbae6acecbb0a7ab498029e28acf745b16",
+        "checkpoint_sha256": "aaeba9b15f64879bcf86bcff60e3f1803bbebb0cf50f132b9e507baf981eb198",
+        "selection_sha256": "421790bcf217468fc827163d64bb47868535bb8a832971434d3bf74cc43df721",
+        "input_sha256": "8b2a21b197eba9a87dbf49405643d39475036844283ca0a7eace3f772f2bf3a3",
+        "source_manifest_sha256": "3cfe5a7ed2a0573dbc826536eb50a740607afa945f2533fc1b5c411f8a47aec8",
+        "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
+      }
+    ],
+    "Logic": [
+      {
+        "experiment": "qwen_step_only_learnable_20261115",
+        "source_experiment": "qwen_step_learnable_aggr_saplma_head_20261118",
+        "domain": "Logic",
+        "arm": "learnable_aggr_saplma_head",
+        "recipe": "learnable_aggr_saplma_head:f0ed9cd461b9bd707a8b07cb683ce839345ee59c34abd0768c638d5c6f91f5c4",
+        "layer": 39,
+        "epoch": 6,
+        "candidates": 64,
+        "threshold": 0.15122847259044647,
+        "metrics": {
+          "step_AUROC": 0.8918703106051926,
+          "step_AP": 0.22484874950828013,
+          "step_BCE": 0.07329133499614562,
+          "F1": 0.29596412556053814
+        },
+        "val_metrics": {
+          "step_AUROC": 0.9223156446952481,
+          "step_AP": 0.28881795963225804,
+          "step_BCE": 0.05724837734237431
+        },
+        "positions": 15233,
+        "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+        "checkpoint_sha256": "cd1ad9424b57264c0ddcc3d0b7683f3ef3cccb9cb7db772b36bb771fa765511e",
+        "prediction_sha256": "7ce17b4575f270ebb87a88f39dcd79b69d40f93a2167dad7a5d19fdafdf14c42",
+        "acceptance_sha256": "b357753938f8374b56a0352397e5b0e463702ecd093e50123aca766c5958f4f8"
+      }
+    ],
+    "Factuality": [
+      {
+        "experiment": "qwen_step_only_learnable_20261115",
+        "source_experiment": "qwen_step_learnable_aggr_saplma_head_20261118",
+        "domain": "Factuality",
+        "arm": "learnable_aggr_saplma_head",
+        "recipe": "learnable_aggr_saplma_head:f0ed9cd461b9bd707a8b07cb683ce839345ee59c34abd0768c638d5c6f91f5c4",
+        "layer": 40,
+        "epoch": 1,
+        "candidates": 64,
+        "threshold": 0.18430140614509583,
+        "metrics": {
+          "step_AUROC": 0.8802949112750778,
+          "step_AP": 0.422309835559032,
+          "step_BCE": 0.224354608637723,
+          "F1": 0.4510218463706836
+        },
+        "val_metrics": {
+          "step_AUROC": 0.8949454764600012,
+          "step_AP": 0.4491379296746713,
+          "step_BCE": 0.19971286462094776
+        },
+        "positions": 5489,
+        "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+        "checkpoint_sha256": "d286a41cde672bfa5b9bc8a6c10cfe3d4fc91a58eee44feea83979bc7ecd75bc",
+        "prediction_sha256": "eb57925232cced34497a5ec144bc5482480085fbc1d21c9488be55d0af7bfc0d",
+        "acceptance_sha256": "a0b605be09308c06901d1825d771aeacb46e2d777ca19efb2a95fd4ce96f1b15"
+      }
+    ]
+  }
+}

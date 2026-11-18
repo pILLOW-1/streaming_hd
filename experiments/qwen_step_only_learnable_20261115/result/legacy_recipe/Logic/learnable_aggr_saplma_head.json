@@ -1,0 +1,27 @@
+{
+  "experiment": "qwen_step_only_learnable_20261115",
+  "source_experiment": "qwen_step_learnable_aggr_saplma_head_20261118",
+  "domain": "Logic",
+  "arm": "learnable_aggr_saplma_head",
+  "recipe": "learnable_aggr_saplma_head:f0ed9cd461b9bd707a8b07cb683ce839345ee59c34abd0768c638d5c6f91f5c4",
+  "layer": 39,
+  "epoch": 6,
+  "candidates": 64,
+  "threshold": 0.15122847259044647,
+  "metrics": {
+    "step_AUROC": 0.8918703106051926,
+    "step_AP": 0.22484874950828013,
+    "step_BCE": 0.07329133499614562,
+    "F1": 0.29596412556053814
+  },
+  "val_metrics": {
+    "step_AUROC": 0.9223156446952481,
+    "step_AP": 0.28881795963225804,
+    "step_BCE": 0.05724837734237431
+  },
+  "positions": 15233,
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "checkpoint_sha256": "cd1ad9424b57264c0ddcc3d0b7683f3ef3cccb9cb7db772b36bb771fa765511e",
+  "prediction_sha256": "7ce17b4575f270ebb87a88f39dcd79b69d40f93a2167dad7a5d19fdafdf14c42",
+  "acceptance_sha256": "b357753938f8374b56a0352397e5b0e463702ecd093e50123aca766c5958f4f8"
+}
