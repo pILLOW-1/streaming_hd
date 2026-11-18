@@ -8,7 +8,7 @@ One Markdown file per report, named by date. The site at <https://pillow-1.githu
 
 ## Writing a report
 
-- Start the file with a front-matter block: `title`, `deck`, `date`, `kicker`, `summary`, `cover` and `links` (`Label|path; Label|path`).
+- Start the file with a front-matter block: `title`, `deck`, `date`, `kicker`, `summary`, `cover`, `links` (`Label|path; Label|path`) and optionally `hero: none` when the cover image already appears in the text.
 - Put figures in `assets/<date>/` and the scripts that draw them in `scripts/`.
 - Write math as on GitHub: display math in a `math` code fence, inline math as `` $`...`$ ``.
 - An HTML comment `<!-- kicker: The **word** -->` before a section heading adds the small label shown above it on the site.

@@ -151,7 +151,8 @@ def render_post(meta: dict, content: str, sections: list, src: Path) -> str:
     buttons = "".join(f'<a class="pill" href="{html.escape(repo_link(url.strip()))}">{html.escape(label.strip())} →</a>'
                       for label, url in links)
     cover = meta.get("cover")
-    hero = f'<figure class="hero"><img src="../{html.escape(cover)}" alt=""></figure>' if cover else ""
+    show_hero = cover and meta.get("hero", "cover") != "none"  # "hero: none" when the cover already opens §1
+    hero = f'<figure class="hero"><img src="../{html.escape(cover)}" alt=""></figure>' if show_hero else ""
     return f"""<div class="ready-bar"><div class="ready-inner">Report · {date:%B %-d, %Y}</div></div>
 <div class="post-layout">
   <aside class="post-aside">
