@@ -25,7 +25,7 @@ SERIES = [  # name, values, color (validated palette on the page surface), hatch
 BEST = ["HaMI", "HaMI", "SAPLMA", "SAPLMA", "HaMI"]
 SURFACE, INK, INK2, GRID = "#fbf8f1", "#1d1832", "#5d5872", "#e6dfd0"
 
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "hatch.linewidth": 0.8,
+plt.rcParams.update({"font.family": "STIXGeneral", "mathtext.fontset": "stix", "font.size": 12, "hatch.linewidth": 0.8,
                      "hatch.color": SURFACE})
 fig, ax = plt.subplots(figsize=(8.4, 4.0), dpi=200)
 fig.patch.set_facecolor(SURFACE)
