@@ -26,4 +26,4 @@ Rows marked “trajectory recipe” use trajectory batching. Empty cells have no
 | Learnable aggregation + SAPLMA MLP | [0.8919](result/legacy_recipe/Logic/learnable_aggr_saplma_head.json) | [0.8803](result/legacy_recipe/Factuality/learnable_aggr_saplma_head.json) |  |  | [0.9203](result/legacy_recipe/Multi-hop/learnable_aggr_saplma_head.json) |
 | Learnable aggregation, hard Top-10% | 0.856127 | 0.859060 |  |  |  |
 | Four-head attention + gated residual | 0.877537 | 0.876701 |  |  |  |
-| Top-3 equal-weight logit fusion | **0.8941** | **0.8829** | **0.8309** |  | **0.9230** |
+| Top-3 equal-weight logit fusion | **0.8941** | **0.8829** | **0.8309** | [0.7943](result/legacy_recipe/Math/frozen_top3_equal.json) | **0.9230** |
