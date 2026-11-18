@@ -16,7 +16,7 @@ A detector can approximate this with a weaker cue: whether any error has occurre
 
 ![Separation of unresolved errors from clean positions, per detector](result/figure.png)
 
-*Figure. AUROC of each detector's Prefix score on TEST. The positive class is always the same: positions with an inherited error ($`y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1`$). Circle: against fresh clean positions, which have no error so far in their trajectory. Square: against recovered clean positions, over all pairs, most of which join different trajectories. Diamond: the same two classes, but pairing only positions of the same trajectory; the AUROC is computed inside each trajectory and averaged over trajectories. Each value is the mean over generator/domain combinations (15 per detector, 11 for ICR Probe). The dashed line marks chance.*
+*Figure. AUROC of each detector's Prefix score on TEST. The positive class is always the same: positions with an inherited error ($`y^{\mathrm{S}}_t=0,\ y^{\mathrm{P}}_t=1`$). Circle: against fresh clean positions, which have no error so far in their trajectory. Square: against recovered clean positions, whose earlier error has been resolved. Each value is the mean over generator/domain combinations (15 per detector, 11 for ICR Probe). The dashed line marks chance.*
 
 ## Analysis settings
 
@@ -32,14 +32,6 @@ On TEST positions with $`y^{\mathrm{S}}_t=0`$, the positive class is **inherited
 - **gap:** AUROC_fresh − AUROC_rec.
 
 A detector that tracks $`\kappa_t`$ itself has a small gap. A detector that tracks only "an error occurred" has a high AUROC_fresh and a low AUROC_rec.
-
-Each AUROC is further split by where the two positions of a pair come from:
-
-- **between:** the inherited and the clean position belong to different trajectories.
-- **within:** both belong to the same trajectory. Within-trajectory fresh clean positions necessarily precede that trajectory's first error.
-- **within, trajectory mean:** the AUROC is computed inside each trajectory that contains both classes, then averaged with equal weight per trajectory.
-
-Each AUROC above is the pair-count-weighted mean of its between and within parts.
 
 | Setting | Value |
 |---|---|
@@ -88,29 +80,7 @@ Values are means over combinations.
 | Multi-hop | 0.635 | 0.291 |
 | Factuality | 0.631 | 0.236 |
 
-### 3. Within a trajectory, detectors mark the first error but not later corrections
-
-Errors and corrections alternate within trajectories: 94.9% of TEST inherited positions are preceded by at least one correction (Prefix 1→0) in their own trajectory. Whether an error is still unresolved is therefore mainly a within-trajectory question.
-
-Within-trajectory pairs, however, are only 2.1% of inherited–recovered pairs on average (at most 11.5%), so AUROC_rec above mostly measures between-trajectory pairs.
-
-| Detector | fresh between | fresh within | fresh within, traj. mean | rec between | rec within | rec within, traj. mean |
-|---|---:|---:|---:|---:|---:|---:|
-| Streaming | 0.954 | 0.968 | 0.959 | 0.697 | 0.629 | 0.548 |
-| SAPLMA | 0.930 | 0.933 | 0.892 | 0.688 | 0.608 | 0.577 |
-| Global mean | 0.955 | 0.978 | 0.971 | 0.690 | 0.589 | 0.534 |
-| LLM-Check | 0.916 | 0.950 | 0.978 | 0.613 | 0.588 | 0.510 |
-| ICR Probe | 0.899 | 0.894 | 0.912 | 0.595 | 0.549 | 0.511 |
-
-Values are means over combinations (15 per detector, 11 for ICR Probe).
-
-- Inside a trajectory, positions before the first error are separated from later inherited positions: within-trajectory fresh AUROC averages 0.947.
-- After the first error, inherited and recovered positions of the same trajectory are barely separated:
-  - within-trajectory recovered AUROC averages 0.595 (range 0.232–0.863);
-  - its trajectory mean averages 0.537, close to chance.
-- Within-trajectory recovered AUROC is below its between-trajectory value in 56 of 71 detector–combination pairs. The ≈ 0.66 of AUROC_rec therefore comes mainly from differences between trajectories.
-
-### 4. TEST and VAL agree
+### 3. TEST and VAL agree
 
 Means over the same 71 detector–combination pairs on both splits.
 
@@ -120,30 +90,26 @@ Means over the same 71 detector–combination pairs on both splits.
 | AUROC_rec | 0.732 | 0.661 |
 | gap | 0.226 | 0.272 |
 | gap CI above 0 | 69 / 71 | 67 / 71 |
-| rec within | 0.628 | 0.595 |
-| rec within, traj. mean | 0.534 | 0.537 |
 
 The pattern is the same and slightly stronger on TEST. The VAL files in `result/val/` were computed when ICR Probe covered 7 combinations; the VAL column here uses its 11 current combinations.
 
 ## Interpretation
 
-Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of $`\kappa_t`$, the probability that an earlier error is still unresolved. Within a trajectory, their scores rise at the first error but do not follow later corrections and renewed errors. What remains across trajectories reflects differences in their overall level.
+Existing Prefix detectors behave like detectors of "an error has occurred in the trajectory". They do not behave like estimators of $`\kappa_t`$, the probability that an earlier error is still unresolved.
 
-This suggests focusing on how to model $`\kappa_t`$ better, so that recovered positions can be distinguished from positions whose error is still unresolved. The within-trajectory recovered AUROC, especially its trajectory mean, measures this distinction more directly than AUROC_rec, which between-trajectory differences inflate.
+This suggests modelling $`\kappa_t`$ explicitly, so that recovered positions can be distinguished from positions whose error is still unresolved. AUROC_rec measures this distinction.
 
 ## Limitations
 
 - Recovered clean positions come from a limited number of TEST trajectories per combination: 15–201, and 155 for Qwen Logic. Intervals are wide where this number is small.
-- Fresh clean positions lie mostly early in trajectories, so AUROC_fresh may also reflect position. Within a trajectory, "after the first error" and "later in the trajectory" cannot be separated by this analysis. This does not affect the low AUROC_rec.
-- A near-chance within-trajectory AUROC may partly reflect how consistently Prefix labels are assigned over time within a trajectory. The present data cannot separate this from detector behaviour.
+- Fresh clean positions lie mostly early in trajectories, so AUROC_fresh may also reflect position. This does not affect the low AUROC_rec.
 
 ## Artifacts
 
 - [Configuration](config.json): definitions, scope and integrity checks.
 - [Recovery JSON](result/recovery.json): unrounded statistics, confidence intervals, position counts, pending cells and source-file hashes.
 - [Recovery CSV](result/recovery.csv): one row per detector, generator and domain.
-- [Within-trajectory JSON](result/within.json) and [CSV](result/within.csv): between, within and trajectory-mean AUROC for both negative types, with within-trajectory confidence intervals and pair counts.
-- [VAL version](result/val/): the same four files from the earlier VAL analysis.
+- [VAL version](result/val/): the recovery JSON and CSV from the earlier VAL analysis.
 - Figure: [PDF](result/figure.pdf), [PNG](result/figure.png).
 
 Only aggregate statistics and input-file identities are published. Labels, splits, predictions and detector weights are unchanged and not included.

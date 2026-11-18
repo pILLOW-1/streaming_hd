@@ -31,7 +31,7 @@ The relation links the three levels in one chain: introduction ($`\pi^{\mathrm{S
 |---|---|---|---|
 | [prefix_answer_endpoint](../experiments/prefix_answer_endpoint_20261110/README.md) (15,697 trajectories) | $`\alpha_1,\alpha_0`$ | 35.5% of Answers are correct after an erroneous final Prefix; 18.6% are wrong after a clean one; 25.2% disagree overall | The Answer is a lossy read-out of the final reasoning state, not a copy |
 | [step_prefix_composition](../experiments/step_prefix_composition_20261111/README.md) (15,697 trajectories, 1.45M positions) | $`\pi^{\mathrm{S}}`$ vs $`(1-\pi^{\mathrm{S}})\kappa`$ | 84.7% of Prefix positives are inherited; 72–88% in every combination | Most Prefix errors are earlier errors that remain unresolved; a Step label sees only the moment of introduction |
-| [prefix_recovery_diagnostic](../experiments/prefix_recovery_diagnostic_20261112/README.md) (five external detectors, TEST) | detectors' estimate of $`\kappa`$ | Inherited vs fresh ≈ 0.93 AUROC; inherited vs recovered ≈ 0.66; within-trajectory mean 0.51–0.58 | Errors also get resolved; detectors capture whether an error has occurred, not whether it is still unresolved |
+| [prefix_recovery_diagnostic](../experiments/prefix_recovery_diagnostic_20261112/README.md) (five external detectors, TEST) | detectors' estimate of $`\kappa`$ | Inherited vs fresh ≈ 0.93 AUROC; inherited vs recovered ≈ 0.66 | Errors also get resolved; detectors capture whether an error has occurred, not whether it is still unresolved |
 
 ## 4. What the task is
 
@@ -55,7 +55,7 @@ An error is introduced, stays unresolved or is resolved, and is finally read out
 
 ## 5. What earlier methods miss
 
-- **White-box hallucination detectors** (Streaming, SAPLMA, Global Mean, LLM-Check, ICR Probe) score the Prefix from a summary of the visible history. This summary retains evidence that an error has occurred but does not represent whether it was later resolved. Within a trajectory they separate the first error from earlier positions, but not unresolved errors from recovered positions.
+- **White-box hallucination detectors** (Streaming, SAPLMA, Global Mean, LLM-Check, ICR Probe) score the Prefix from a summary of the visible history. This summary retains evidence that an error has occurred but does not represent whether it was later resolved: they separate unresolved errors from positions before any error, but much less from recovered positions.
 - **Reasoning-error detectors** such as process reward models aggregate Step scores by minimum or product, or locate only the first error. Both are monotone in the history.
 - **Shared limitation.** The Prefix is effectively scored as whether an error has occurred. Since a re-endorsed error has $`y^{\mathrm{S}}_t=0`$, Step evidence alone can tell neither that an error has been resolved nor that it has become unresolved again.
 
@@ -75,7 +75,7 @@ The Step read-out and the Prefix term $`\kappa`$ are explored separately, each w
 
 **Prefix.** $`\kappa_t`$ answers one question: given no new error at step $`t`$, is an earlier error still unresolved? It has two targets, checked in this order.
 
-1. *Inherited versus recovered.* Within a trajectory, positions whose error is still unresolved must score above recovered positions, whose earlier error has been resolved. This is the within-trajectory recovery AUROC of the [recovery diagnostic](../experiments/prefix_recovery_diagnostic_20261112/README.md), on which every external detector is near chance.
+1. *Inherited versus recovered.* Positions whose error is still unresolved must score above recovered positions, whose earlier error has been resolved. This is AUROC_rec of the [recovery diagnostic](../experiments/prefix_recovery_diagnostic_20261112/README.md), about 0.66 for the external detectors.
 2. *Overall Prefix detection.* After composing $`\kappa_t`$ with the frozen Step read-out, the Prefix score must exceed every Prefix baseline.
 
 $`\kappa`$ is trained with the Prefix cross-entropy of the composed score on all positions, with no gradient into the Step read-out. This matches inference, where $`\kappa_t`$ is also used at positions whose new error the Step read-out is unsure about.
@@ -87,6 +87,6 @@ $`\kappa`$ is trained with the Prefix cross-entropy of the composed score on all
 - One data pipeline and one set of splits; each line saves its scores for every position so that the lines can be composed without retraining.
 - Design choices use VAL only. A finalized design is evaluated once on TEST.
 - Several seeds per configuration; differences are judged against seed variation and trajectory-bootstrap intervals.
-- Prefix results are reported overall, by position type (new, inherited, recovered, fresh) and within trajectories.
+- Prefix results are reported overall and by position type (new, inherited, recovered, fresh).
 
 **Merge point.** When the three lines are finalized, the full chain is composed from our own Step, Prefix and Answer parts and compared with the baselines on all three levels. A jointly fine-tuned version is run once as an ablation.
