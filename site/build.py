@@ -101,6 +101,7 @@ def page(title: str, body: str, depth: int, description: str = "") -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
+<script>if(location.pathname.endsWith("/index.html"))history.replaceState(null,"",location.pathname.slice(0,-10)+location.search+location.hash)</script>
 <meta name="description" content="{html.escape(description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
