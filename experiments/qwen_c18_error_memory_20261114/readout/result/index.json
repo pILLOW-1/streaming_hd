@@ -21,6 +21,13 @@
       "domain": "Logic",
       "configuration": "R2",
       "path": "Logic/R2.json"
+    },
+    {
+      "domain": "Science",
+      "configuration": "R0",
+      "path": "Science/R0.json",
+      "config": "../config/original_a2_science_20261119.json",
+      "source_experiment": "qwen_c18_error_memory_original_remaining_20261119"
     }
   ],
   "recovery_baseline_references": "recovery_baseline_references.json"

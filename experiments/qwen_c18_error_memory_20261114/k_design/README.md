@@ -12,7 +12,7 @@ The parent report retains the original records and links. New conditional-head c
 
 ## Original A2 domain extension
 
-The same fixed Step/Prefix readouts and C18 objective are reused. Multi-hop selects layer 49, epoch 3 on joint VAL metrics and covers 13,460 TEST positions. [Configuration](config/original_a2_multihop_20261119.json), [acceptance and hashes](result/Multi-hop/A2.json). Science selects layer 46, epoch 1 and covers 46,175 TEST positions. [Science configuration](config/original_a2_science_20261119.json), [acceptance and hashes](result/Science/A2.json). Math remains unfinished.
+The same fixed Step/Prefix readouts and C18 objective are reused. Multi-hop selects layer 49, epoch 3 on joint VAL metrics and covers 13,460 TEST positions. [Configuration](config/original_a2_multihop_20261119.json), [acceptance and hashes](result/Multi-hop/A2.json). Science selects layer 46, epoch 1 and covers 46,175 TEST positions. [Science configuration](../readout/config/original_a2_science_20261119.json), [acceptance and hashes](../readout/result/Science/R0.json). Math remains unfinished.
 
 ### Step TEST AUROC
 

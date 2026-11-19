@@ -8,8 +8,8 @@
     {
       "domain": "Science",
       "configuration": "A2",
-      "path": "Science/A2.json",
-      "config": "../config/original_a2_science_20261119.json"
+      "path": "../../readout/result/Science/R0.json",
+      "config": "../../readout/config/original_a2_science_20261119.json"
     }
   ],
   "historical_Logic_Factuality": "../../result/index.json",
