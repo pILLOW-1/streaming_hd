@@ -1,0 +1,12 @@
+{
+  "split": "TEST",
+  "model": "qwen3_8_27b",
+  "metric": "Prefix recovery AUROC, pooled inherited vs recovered",
+  "positive": "all TEST positions with Step=0 and Prefix=1",
+  "negative": "TEST positions with Step=0 and Prefix=0 after an earlier retained Prefix=1 in their trajectory",
+  "aggregation": "pool across trajectories; no same-trajectory pair restriction or per-trajectory averaging",
+  "score": "frozen selected detector final Prefix probability",
+  "selection": "reuse original VAL-frozen configurations; no new selection, training, model inference, bootstrap or threshold tuning",
+  "best_baseline_rule": "highest published overall Prefix TEST AUROC per domain, not recovery AUROC",
+  "analysis_source_SHA256": "f67b065008d399ec1eed8d4eb630e2d783a42eb60d169d81d2f040d6adb31f73"
+}

@@ -37,7 +37,7 @@ Train on TRAIN, select on VAL and evaluate each frozen arm once on TEST. Report 
 
 Status: independently verified on VAL and TEST.
 
-## Recovery AUROC
+## Within-trajectory recovery AUROC (historical)
 
 Both recovery metrics use labeled positions where the current step introduces no new error and at least one earlier labeled position had an erroneous prefix. An inherited error is a positive example. A recovered prefix is a negative example.
 
@@ -45,6 +45,23 @@ Both recovery metrics use labeled positions where the current step introduces no
 - **Prefix recovery AUROC** ranks the same positions by the final Prefix error score, which combines the predicted chance of a new step error with the conditional head's score. The Step prediction can change the ranking even on this subset.
 
 For both metrics, compute AUROC separately within each trajectory that contains both classes, then average those AUROCs with equal weight per trajectory. The same rule applies to VAL and TEST.
+
+## Pooled TEST Prefix recovery AUROC
+
+Positive examples are all inherited TEST positions: the current Step has no new error and the Prefix is erroneous. Negative examples are recovered TEST positions: the current Step has no new error, the Prefix is clean, and an earlier retained Prefix was erroneous. Pool these positions across trajectories and rank them by the final Prefix score; pairs need not belong to the same trajectory.
+
+| Configuration | Logic | Factuality |
+|---|---:|---:|
+| Streaming | 0.7020 | 0.7205 |
+| Best published baseline | 0.7020 (Streaming) | 0.7233 (Global Mean) |
+| A1 | 0.7073 | 0.6895 |
+| A2 | **0.7204** | **0.7476** |
+
+The best published baseline is defined by overall Prefix TEST AUROC in the existing baseline comparison, not by recovery performance. Logic selects Streaming; Factuality selects Global Mean. The same frozen selected predictions are reused, with no retraining, inference, or new selection.
+
+The matched cohorts contain 1,733 inherited and 6,593 recovered positions in Logic, and 2,025 inherited and 1,408 recovered positions in Factuality. All inherited positives are retained, including 83 Logic and 33 Factuality positions without an earlier observed positive among retained labels. This differs from the historical within-trajectory tables below, which keep their original restricted cohort and averaging rule.
+
+Saved-prediction alignment, labels, source hashes and overall Prefix AUROC were checked. Recovery AUROC agrees between pair-count and ROC-integration calculations. See the [full results and provenance](result/pooled_prefix_recovery_20261119.json), [CSV](result/pooled_prefix_recovery_20261119.csv), and [analysis configuration](config/pooled_prefix_recovery_20261119.json).
 
 ## Results
 

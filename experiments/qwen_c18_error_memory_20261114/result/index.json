@@ -238,6 +238,28 @@
         "mixed_trajectories": 133,
         "pairs": 152007
       }
+    },
+    "pooled_prefix_recovery_20261119": {
+      "result": "pooled_prefix_recovery_20261119.json",
+      "csv": "pooled_prefix_recovery_20261119.csv",
+      "result_SHA256": "7d7340d27a19c29c54a1bdd5a14964387a5487dc06f468c2a60f8d18b8f00814",
+      "csv_SHA256": "efefb30fee2d37a9c68f4ea75c2c9ef815919d59ed211b0ba536fcafd99899a6",
+      "aggregation": "pool across trajectories; no same-trajectory pair restriction or per-trajectory averaging",
+      "cohort": {
+        "inherited": 1733,
+        "recovered_clean": 6593,
+        "fresh_clean": 6597,
+        "inherited_without_earlier_observed_positive": 83,
+        "total_TEST_positions": 15233,
+        "cohort_positions": 8326
+      },
+      "AUROC": {
+        "Streaming": 0.7020231375510703,
+        "Best published baseline": 0.7020231375510703,
+        "A1": 0.7072935510384556,
+        "A2": 0.7204365888772027
+      },
+      "best_baseline_method": "Streaming"
     }
   },
   "Factuality": {
@@ -479,6 +501,28 @@
         "mixed_trajectories": 142,
         "pairs": 14948
       }
+    },
+    "pooled_prefix_recovery_20261119": {
+      "result": "pooled_prefix_recovery_20261119.json",
+      "csv": "pooled_prefix_recovery_20261119.csv",
+      "result_SHA256": "7d7340d27a19c29c54a1bdd5a14964387a5487dc06f468c2a60f8d18b8f00814",
+      "csv_SHA256": "efefb30fee2d37a9c68f4ea75c2c9ef815919d59ed211b0ba536fcafd99899a6",
+      "aggregation": "pool across trajectories; no same-trajectory pair restriction or per-trajectory averaging",
+      "cohort": {
+        "inherited": 2025,
+        "recovered_clean": 1408,
+        "fresh_clean": 1527,
+        "inherited_without_earlier_observed_positive": 33,
+        "total_TEST_positions": 5489,
+        "cohort_positions": 3433
+      },
+      "AUROC": {
+        "Streaming": 0.7205450336700336,
+        "Best published baseline": 0.7232740600448934,
+        "A1": 0.6894858305274972,
+        "A2": 0.7475843504489338
+      },
+      "best_baseline_method": "Global Mean"
     }
   }
 }
