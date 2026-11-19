@@ -84,55 +84,55 @@ def dataset(root):
     save(fig, "dataset.png")
 
 
-def node(ax, x, y, w, h, title, sub, ec, fc=RAISE, tc=INK):
-    ax.add_patch(FancyBboxPatch((x - w / 2, y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=0.18", fc=fc, ec=ec, lw=1.6))
-    ax.text(x, y + 0.17, title, ha="center", va="center", fontsize=16, color=tc)
-    ax.text(x, y - 0.2, sub, ha="center", va="center", fontsize=11.5, color=INK2, style="italic")
+def node(ax, x, y, w, h, title, sub, ec):
+    ax.add_patch(FancyBboxPatch((x - w / 2, y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=0.16", fc=RAISE, ec=ec, lw=1.6))
+    ax.text(x, y + 0.15, title, ha="center", va="center", fontsize=16, color=INK)
+    ax.text(x, y - 0.19, sub, ha="center", va="center", fontsize=11.5, color=INK2, style="italic")
 
 
-def arrow(ax, a, b, color=INK2, lw=1.4, rad=0.0):
-    ax.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=14, color=color, lw=lw,
-                                 connectionstyle=f"arc3,rad={rad}", shrinkA=2, shrinkB=2))
+def arrow(ax, a, b, color=INK2, lw=1.5):
+    ax.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=14, color=color, lw=lw, shrinkA=0, shrinkB=1))
 
 
 def a2():
-    fig, ax = plt.subplots(figsize=(9.0, 4.6), dpi=200)
+    S = "\\pi^{\\mathrm{S}}"
+    DEEP = "#7d2c20"  # darker step of the same terracotta ramp, for the current-step branch
+    fig, ax = plt.subplots(figsize=(8.6, 3.75), dpi=200)
     fig.subplots_adjust(0, 0, 1, 1)
-    ax.set_xlim(0, 10); ax.set_ylim(0, 5.1); ax.axis("off")
-    # reasoning so far: earlier steps shaded by their predicted error probability q_i, current step outlined
+    ax.set_xlim(0.2, 9.8); ax.set_ylim(0.0, 4.2); ax.axis("off")
     tint = LinearSegmentedColormap.from_list("q", ["#f4efe5", ACCENT])
-    blocks = [(0.45, "$S_1$", 0.05), (1.35, "$S_2$", 0.12), (2.25, "$S_3$", 0.85), (3.15, "$S_4$", 0.3),
-              (4.55, "$S_{t-1}$", 0.1)]
+    blocks = [(0.4, "$S_1$", 0.05), (1.25, "$S_2$", 0.12), (2.1, "$S_3$", 0.85), (2.95, "$S_4$", 0.3), (4.25, "$S_{t-1}$", 0.1)]
     for x, lab, v in blocks:
-        ax.add_patch(FancyBboxPatch((x, 0.45), 0.75, 0.55, boxstyle="round,pad=0,rounding_size=0.08", fc=tint(v), ec="none"))
-        ax.text(x + 0.375, 0.725, lab, ha="center", va="center", fontsize=12, color=SURFACE if v > 0.5 else INK2)
-    ax.text(4.22, 0.725, "$\\cdots$", ha="center", va="center", fontsize=14, color=INK2)
-    xt = 7.22
-    ax.add_patch(FancyBboxPatch((xt, 0.45), 0.75, 0.55, boxstyle="round,pad=0,rounding_size=0.08", fc=RAISE, ec=INK, lw=1.6))
-    ax.text(xt + 0.375, 0.725, "$S_t$", ha="center", va="center", fontsize=13, color=INK)
-    ax.text(2.86, 0.18, "earlier steps, shaded by their predicted error $q_i$", fontsize=11, color=INK2, ha="center", va="center")
-    ax.text(xt + 0.375, 0.18, "current step", fontsize=11, color=INK2, ha="center", va="center")
-    # error memory gathers earlier steps in proportion to q_i
-    mem = (2.86, 2.2)
+        ax.add_patch(FancyBboxPatch((x, 0.42), 0.7, 0.5, boxstyle="round,pad=0,rounding_size=0.08", fc=tint(v), ec="none"))
+        ax.text(x + 0.35, 0.67, lab, ha="center", va="center", fontsize=12, color=SURFACE if v > 0.5 else INK2)
+    ax.text(3.95, 0.67, "$\\cdots$", ha="center", va="center", fontsize=14, color=INK2)
+    xt = 7.95
+    ax.add_patch(FancyBboxPatch((xt - 0.35, 0.42), 0.7, 0.5, boxstyle="round,pad=0,rounding_size=0.08", fc=RAISE, ec=DEEP, lw=1.6))
+    ax.text(xt, 0.67, "$S_t$", ha="center", va="center", fontsize=13, color=INK)
+    ax.text(2.65, 0.16, f"earlier steps, shaded by ${S}_i$", fontsize=11, color=INK2, ha="center", va="center")
+    ax.text(xt, 0.16, "current step", fontsize=11, color=INK2, ha="center", va="center")
+    mem = (2.65, 1.75)
     for x, _, v in blocks:
-        ax.add_patch(FancyArrowPatch((x + 0.375, 1.02), (mem[0], mem[1] - 0.33), arrowstyle="-", color=ACCENT,
+        ax.add_patch(FancyArrowPatch((x + 0.35, 0.94), (mem[0], mem[1] - 0.3), arrowstyle="-", color=ACCENT,
                                      lw=0.6 + 3.2 * v, alpha=0.25 + 0.7 * v))
-    ax.add_patch(FancyBboxPatch((mem[0] - 1.45, mem[1] - 0.33), 2.9, 0.66, boxstyle="round,pad=0,rounding_size=0.33",
+    ax.add_patch(FancyBboxPatch((mem[0] - 1.5, mem[1] - 0.3), 3.0, 0.6, boxstyle="round,pad=0,rounding_size=0.3",
                                 fc=ACCENT_SOFT, ec=ACCENT, lw=1.4))
-    ax.text(mem[0], mem[1], "error memory  $g_t=\\Sigma_{i<t}\\, q_i\\, e_i$", ha="center", va="center", fontsize=13, color=INK)
-    # the two questions, one column each
-    kap, stp = (2.86, 3.45), (xt + 0.375, 2.7)
-    node(ax, *kap, 3.7, 0.92, "$\\kappa_t$", "is an earlier error still unresolved?", ec=ACCENT)
-    node(ax, *stp, 3.2, 0.92, "$q_t$", "does this step add a new error?", ec=BLUE)
-    arrow(ax, (mem[0], mem[1] + 0.34), (kap[0], kap[1] - 0.47), color=ACCENT)
-    ax.text(mem[0] + 0.12, 2.76, "+ prefix context", fontsize=10.5, color=INK2, va="center")
-    arrow(ax, (stp[0], 1.02), (stp[0], stp[1] - 0.47), color=BLUE)
-    # composition
-    out = (5.3, 4.62)
-    ax.add_patch(FancyBboxPatch((out[0] - 2.0, out[1] - 0.3), 4.0, 0.6, boxstyle="round,pad=0,rounding_size=0.3", fc=INK, ec=INK))
-    ax.text(*out, "Prefix  $\\pi^{\\mathrm{P}}_t = q_t + (1-q_t)\\,\\kappa_t$", ha="center", va="center", fontsize=14.5, color=SURFACE)
-    arrow(ax, (kap[0], kap[1] + 0.47), (out[0] - 1.6, out[1] - 0.31), color=ACCENT, rad=-0.25)
-    arrow(ax, (stp[0], stp[1] + 0.47), (out[0] + 1.6, out[1] - 0.31), color=BLUE, rad=0.25)
+    ax.text(*mem, f"error memory  $g_t=\\Sigma_{{i<t}}\\, {S}_i\\, e_i$", ha="center", va="center", fontsize=13, color=INK)
+    kap, stp = (2.65, 2.85), (xt, 2.85)
+    node(ax, *kap, 3.5, 0.82, "$\\kappa_t$", "is an earlier error still unresolved?", ec=ACCENT)
+    node(ax, *stp, 3.3, 0.82, f"${S}_t$", "does this step add a new error?", ec=DEEP)
+    arrow(ax, (mem[0], mem[1] + 0.31), (kap[0], kap[1] - 0.42), color=ACCENT)
+    ax.text(mem[0] + 0.1, 2.235, "+ prefix context", fontsize=10.5, color=INK2, va="center")
+    arrow(ax, (xt, 0.94), (stp[0], stp[1] - 0.42), color=DEEP)
+    # composition: arrows enter the two sides of the output box
+    out_l, out_r, out_y = 3.95, 6.65, 3.85
+    ax.add_patch(FancyBboxPatch((out_l, out_y - 0.27), out_r - out_l, 0.54, boxstyle="round,pad=0,rounding_size=0.27", fc=INK, ec=INK))
+    ax.text((out_l + out_r) / 2, out_y, f"Prefix  $\\pi^{{\\mathrm{{P}}}}_t = {S}_t + (1-{S}_t)\\,\\kappa_t$", ha="center",
+            va="center", fontsize=13.5, color=SURFACE)
+    for (sx, color, ang) in ((kap[0], ACCENT, 0), (stp[0], DEEP, 180)):
+        ax.add_patch(FancyArrowPatch((sx, 3.27), (out_l if ang == 0 else out_r, out_y), arrowstyle="-|>", mutation_scale=14,
+                                     color=color, lw=1.5, shrinkA=0, shrinkB=1,
+                                     connectionstyle=f"angle,angleA=90,angleB={ang},rad=12"))
     save(fig, "a2_framework.png")
 
 

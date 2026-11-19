@@ -82,6 +82,8 @@ def rewrite(out: str) -> str:
     """Figures with captions, repo links to GitHub, assets relative to the post page, scrollable tables."""
     out = re.sub(r'<p><img alt="([^"]*)" src="([^"]+)" ?/?></p>',
                  r'<figure><img alt="\1" src="\2" loading="lazy"><figcaption>\1</figcaption></figure>', out)
+    # a paragraph starting with "↳ " right after a figure continues its caption (links allowed)
+    out = re.sub(r'</figcaption></figure>\s*<p>↳ (.*?)</p>', r' \1</figcaption></figure>', out, flags=re.S)
     out = re.sub(r'(src|href)="assets/', r'\1="../assets/', out)
     out = re.sub(r'href="\.\./([^"]+)"', lambda m: f'href="{REPO}/blob/main/{m.group(1)}"', out)
     out = out.replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
