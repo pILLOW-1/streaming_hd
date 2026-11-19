@@ -43,8 +43,8 @@ def save(fig, name):
     print("wrote", OUT / name)
 
 
-SERIES = [("Streaming", STREAMING, ""), ("Ours (w/o error memory)", ABLATION, ""),
-          ("Best baseline", BASELINE, "///"), ("Ours", OURS, "")]
+SERIES = [("Streaming", STREAMING, ""), ("Best baseline", BASELINE, "///"),
+          ("Ours (w/o error memory)", ABLATION, ""), ("Ours", OURS, "")]
 
 
 def bars(ax, x, values, lo, hi, best_name, domains):
@@ -67,9 +67,9 @@ def bars(ax, x, values, lo, hi, best_name, domains):
 
 def results():
     domains = ["Logic", "Factuality"]; x = np.arange(2)
-    panels = [  # Streaming, A1, best baseline, A2
-        ("Step", [[0.8716, 0.8720], [0.8775, 0.8820], [0.8875, 0.8735], [0.8775, 0.8826]], ["HaMI", "HaMI"], (0.85, 0.895)),
-        ("Prefix", [[0.8256, 0.8222], [0.8341, 0.8106], [0.8256, 0.8226], [0.8377, 0.8367]], ["Streaming", "Global Mean"], (0.80, 0.845)),
+    panels = [  # Streaming, best baseline, A1, A2
+        ("Step", [[0.8716, 0.8720], [0.8875, 0.8735], [0.8775, 0.8820], [0.8775, 0.8826]], ["HaMI", "HaMI"], (0.85, 0.895)),
+        ("Prefix", [[0.8256, 0.8222], [0.8256, 0.8226], [0.8341, 0.8106], [0.8377, 0.8367]], ["Streaming", "Global Mean"], (0.80, 0.845)),
     ]
     fig, axes = plt.subplots(1, 2, figsize=(10.0, 3.8), dpi=200)
     for ax, (title, values, best_name, (lo, hi)) in zip(axes, panels):
@@ -83,7 +83,7 @@ def results():
 
 def recovery():
     domains = ["Logic", "Factuality"]; x = np.arange(2)
-    values = [[0.7020, 0.7205], [0.7073, 0.6895], [0.7020, 0.7233], [0.7204, 0.7476]]
+    values = [[0.7020, 0.7205], [0.7020, 0.7233], [0.7073, 0.6895], [0.7204, 0.7476]]
     fig, ax = plt.subplots(figsize=(10.0, 3.6), dpi=200)
     bars(ax, x, values, 0.65, 0.76, ["Streaming", "Global Mean"], domains)
     ax.set_title("Prefix Recovery TEST AUROC", fontsize=13, color=INK, pad=8)
