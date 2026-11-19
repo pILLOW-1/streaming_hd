@@ -54,7 +54,7 @@ def bars(ax, x, values, lo, hi, best_name, domains):
         ax.bar(pos, np.array(vals) - lo, w - 0.02, bottom=lo, color=color, hatch=hatch, edgecolor=SURFACE,
                linewidth=1.2, label=name, zorder=3)
         for p, v in zip(pos, vals):
-            ax.text(p, v + (hi - lo) * 0.012, f"{v:.3f}", ha="center", va="bottom", fontsize=8,
+            ax.text(p, v + (hi - lo) * 0.012, f"{v:.3f}", ha="center", va="bottom", fontsize=10.5,
                     color=INK if name == "Ours" else INK2)
     ax.set_xticks(x, [f"{d}\n(best: {b})" for d, b in zip(domains, best_name)], color=INK)
     ax.set_ylim(lo, hi)
