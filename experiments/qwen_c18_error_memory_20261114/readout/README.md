@@ -1,6 +1,6 @@
 # A2 readout exploration
 
-Change the Step representation and memory content while retaining the original A2 Prefix readout, objective and joint VAL selection. Factuality results are independently verified; unfinished Logic cells remain empty.
+Change the Step representation and memory content while retaining the original A2 Prefix readout, objective and joint VAL selection. Logic and Factuality results are independently verified from saved TEST predictions on Cetus.
 
 | Configuration | Design |
 |---|---|
@@ -13,16 +13,16 @@ Change the Step representation and memory content while retaining the original A
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | R0: original A2 | 0.8775 | **0.8826** |
-| R1: last token | | 0.8689 |
-| R2: exponential pool + last token | | 0.8779 |
+| R1: last token | **0.8822** | 0.8689 |
+| R2: exponential pool + last token | 0.8766 | 0.8779 |
 
 ## Prefix TEST AUROC
 
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | R0: original A2 | 0.8377 | 0.8367 |
-| R1: last token | | **0.8376** |
-| R2: exponential pool + last token | | **0.8376** |
+| R1: last token | 0.8439 | **0.8376** |
+| R2: exponential pool + last token | **0.8445** | **0.8376** |
 
 ## Inherited vs. recovered TEST AUROC
 
@@ -31,7 +31,7 @@ Pool all inherited TEST positives across trajectories: Step clean, Prefix errone
 | Configuration | Logic | Factuality |
 |---|---:|---:|
 | R0: original A2 | 0.7204 | 0.7476 |
-| R1: last token | | 0.7525 |
-| R2: exponential pool + last token | | **0.7545** |
+| R1: last token | 0.7286 | 0.7525 |
+| R2: exponential pool + last token | **0.7344** | **0.7545** |
 
 Bold marks the best displayed four-decimal value in each column. Exact values, selected layer/epoch, source bindings and prediction hashes are in the [result index](result/index.json). Original A2 references come from the parent report and its pooled recovery analysis. No original A2 fit or TEST inference was repeated.

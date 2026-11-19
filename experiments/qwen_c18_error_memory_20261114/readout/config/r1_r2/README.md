@@ -11,4 +11,4 @@ R0 reuses the original A2 Step exponential pool. R1 replaces both the Step input
 | Evaluation | One frozen selected TEST; independent CPU metrics from saved predictions |
 | Normalization | None |
 
-Factuality R1 and R2 both select layer 47, epoch 9. See [frozen configuration](config.json) and [executed worker snapshot](source/worker.py). The snapshots retain their original private-runtime helper imports; they document the executed source rather than bundling data or runtime environments.
+Logic R1 and R2 both select layer 35, epoch 5. Factuality R1 and R2 both select layer 47, epoch 9. See [frozen configuration](config.json) and [executed worker snapshot](source/worker.py). The snapshots retain their original private-runtime helper imports; they document the executed source rather than bundling data or runtime environments.

@@ -11,6 +11,16 @@
       "domain": "Factuality",
       "configuration": "R2",
       "path": "Factuality/R2.json"
+    },
+    {
+      "domain": "Logic",
+      "configuration": "R1",
+      "path": "Logic/R1.json"
+    },
+    {
+      "domain": "Logic",
+      "configuration": "R2",
+      "path": "Logic/R2.json"
     }
   ]
 }

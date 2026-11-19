@@ -88,10 +88,10 @@
   "history": "all earlier steps in same trajectory, q_i detached, strictly i<t",
   "normalization": "none; original raw A2 preprocessing",
   "test": "frozen selected TEST once; independent CPU verification from saved predictions",
-  "publication": "Factuality R1/R2 explicitly approved; Logic not published",
+  "publication": "Logic and Factuality R1/R2 explicitly approved",
   "status": {
-    "Factuality": "R1/R2 independently CPU verified",
-    "Logic": "not included in this publication"
+    "Logic": "R1/R2 independently CPU verified",
+    "Factuality": "R1/R2 independently CPU verified"
   },
   "source_files": {
     "worker.py": "13dab3fea1313a20809213dbca98b83c2bb81484e0c12b74f7fd1995cc6c1f0c",
