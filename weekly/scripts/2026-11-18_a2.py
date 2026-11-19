@@ -75,7 +75,6 @@ def results():
     for ax, (title, values, best_name, (lo, hi)) in zip(axes, panels):
         bars(ax, x, values, lo, hi, best_name, domains)
         ax.set_title(f"{title} TEST AUROC", fontsize=13, color=INK, pad=8)
-    axes[0].set_ylabel("axis does not start at 0", color=INK2, fontsize=10.5)
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, ncol=4, frameon=False, loc="upper center", bbox_to_anchor=(0.5, 1.07), labelcolor=INK)
     fig.tight_layout()
@@ -87,7 +86,7 @@ def recovery():
     values = [[0.7020, 0.7205], [0.7020, 0.7233], [0.7073, 0.6895], [0.7204, 0.7476]]
     fig, ax = plt.subplots(figsize=(10.0, 3.6), dpi=200)
     bars(ax, x, values, 0.65, 0.76, ["Streaming", "Global Mean"], domains)
-    ax.set_ylabel("pooled TEST AUROC (axis starts at 0.65)", color=INK2, fontsize=10.5)
+    ax.set_title("Prefix Recovery TEST AUROC", fontsize=13, color=INK, pad=8)
     fig.tight_layout(rect=(0, 0, 1, 0.88))
     handles, labels = ax.get_legend_handles_labels()
     fig.legend(handles, labels, ncol=4, frameon=False, loc="upper center", bbox_to_anchor=(0.53, 1.0), labelcolor=INK)
