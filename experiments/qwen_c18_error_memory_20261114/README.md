@@ -170,3 +170,7 @@ All scores are overall TEST AUROC (%) for Qwen3.8-27B. The strongest baseline is
 |---|---:|---:|---:|---|---:|
 | Logic | 83.77 | 82.56 | +1.21 | Streaming (82.56) | +1.21 |
 | Factuality | 83.67 | 82.22 | +1.45 | Global Mean (82.26) | +1.41 |
+
+## Original A2: additional domains
+
+Multi-hop is independently CPU verified: Step TEST AUROC **0.9128**, Prefix TEST AUROC **0.8494**, and pooled inherited-vs.-recovered Prefix AUROC **0.7660**. Joint VAL selects L49, epoch 3. See the [five-domain results and provenance](k_design/README.md#original-a2-domain-extension). Unfinished domains remain empty.

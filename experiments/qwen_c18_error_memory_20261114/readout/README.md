@@ -1,6 +1,6 @@
 # A2 readout exploration
 
-Change the Step representation and memory content while retaining the original A2 Prefix readout, objective and joint VAL selection. Logic and Factuality results are independently verified from saved TEST predictions on Cetus.
+Change the Step representation and memory content while retaining the original A2 Prefix readout, objective and joint VAL selection. Accepted results are maintained across five domains; unfinished cells remain empty. Original A2 also includes the verified Multi-hop extension.
 
 | Configuration | Design |
 |---|---|
@@ -10,28 +10,32 @@ Change the Step representation and memory content while retaining the original A
 
 ## Step TEST AUROC
 
-| Configuration | Logic | Factuality |
-|---|---:|---:|
-| R0: original A2 | 0.8775 | **0.8826** |
-| R1: last token | **0.8822** | 0.8689 |
-| R2: exponential pool + last token | 0.8766 | 0.8779 |
+| Configuration | Logic | Factuality | Science | Math | Multi-hop |
+|---|---:|---:|---:|---:|---:|
+| Streaming | 0.8716 | 0.8720 | 0.8145 | 0.7852 | 0.8953 |
+| Best published baseline | **0.8875** (HaMI) | 0.8735 (HaMI) | **0.8255** (SAPLMA) | **0.8046** (SAPLMA) | 0.9080 (HaMI) |
+| R0: original A2 | 0.8775 | **0.8826** |  |  | **0.9128** |
+| R1: last token | 0.8822 | 0.8689 |  |  |  |
+| R2: exponential pool + last token | 0.8766 | 0.8779 |  |  |  |
 
 ## Prefix TEST AUROC
 
-| Configuration | Logic | Factuality |
-|---|---:|---:|
-| R0: original A2 | 0.8377 | 0.8367 |
-| R1: last token | 0.8439 | **0.8376** |
-| R2: exponential pool + last token | **0.8445** | **0.8376** |
+| Configuration | Logic | Factuality | Science | Math | Multi-hop |
+|---|---:|---:|---:|---:|---:|
+| Streaming | 0.8256 | 0.8222 | 0.7616 | 0.7357 | 0.8344 |
+| Best published baseline | 0.8256 (Streaming) | 0.8226 (Global Mean) | **0.7644** (Global Mean) | **0.7398** (SAPLMA) | 0.8381 (Global Mean) |
+| R0: original A2 | 0.8377 | 0.8367 |  |  | **0.8494** |
+| R1: last token | 0.8439 | **0.8376** |  |  |  |
+| R2: exponential pool + last token | **0.8445** | **0.8376** |  |  |  |
 
 ## Inherited vs. recovered TEST AUROC
 
 Pool all inherited TEST positives across trajectories: Step clean, Prefix erroneous. Negatives are recovered positions: Step and Prefix clean, with an earlier retained erroneous Prefix. Rank by the final Prefix score. This is not a within-trajectory average.
 
-| Configuration | Logic | Factuality |
-|---|---:|---:|
-| R0: original A2 | 0.7204 | 0.7476 |
-| R1: last token | 0.7286 | 0.7525 |
-| R2: exponential pool + last token | **0.7344** | **0.7545** |
+| Configuration | Logic | Factuality | Science | Math | Multi-hop |
+|---|---:|---:|---:|---:|---:|
+| R0: original A2 | 0.7204 | 0.7476 |  |  | **0.7660** |
+| R1: last token | 0.7286 | 0.7525 |  |  |  |
+| R2: exponential pool + last token | **0.7344** | **0.7545** |  |  |  |
 
-Bold marks the best displayed four-decimal value in each column. Exact values, selected layer/epoch, source bindings and prediction hashes are in the [result index](result/index.json). Original A2 references come from the parent report and its pooled recovery analysis. No original A2 fit or TEST inference was repeated.
+Bold marks the best displayed four-decimal value per column. [Baseline references](result/baseline_references.json) reuse the published main comparison; the best baseline is selected separately per domain and detection level, with method names shown. [Readout results](result/index.json) retain exact metrics and provenance. The [original Multi-hop A2 result](../k_design/result/Multi-hop/A2.json) uses joint VAL selection (L49, epoch 3), one frozen TEST and independent saved-prediction CPU acceptance. No model inference was repeated.

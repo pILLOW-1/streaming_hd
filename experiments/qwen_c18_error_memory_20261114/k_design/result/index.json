@@ -1,0 +1,11 @@
+{
+  "results": [
+    {
+      "domain": "Multi-hop",
+      "configuration": "A2",
+      "path": "Multi-hop/A2.json"
+    }
+  ],
+  "historical_Logic_Factuality": "../../result/index.json",
+  "configuration": "../config/original_a2_multihop_20261119.json"
+}

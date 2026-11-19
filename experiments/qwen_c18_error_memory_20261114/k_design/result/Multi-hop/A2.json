@@ -1,0 +1,26 @@
+{
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "domain": "Multi-hop",
+  "arm": "A2",
+  "layer": 49,
+  "epoch": 3,
+  "metrics": {
+    "step_AUROC": 0.9128451669259726,
+    "step_AP": 0.6134015348017936,
+    "prefix_AUROC": 0.8494224233096852,
+    "prefix_AP": 0.8514070002591052,
+    "prefix_inherited_vs_recovered_pooled": 0.7659862347752064,
+    "kappa_inherited_vs_recovered_pooled": 0.7680130599469216
+  },
+  "positions": 13460,
+  "inherited": 5820,
+  "recovered": 4049,
+  "input_sha": "9a18a686fba38a523f06402580f0b21289fdd3523bbc9a7ca60cada559c007ee",
+  "selection_sha": "2c442221e55070d1b1a36d8b233a99a9bc857361c78da3b56eca250a2844e3e7",
+  "checkpoint_sha": "c81db742abf83de0e4dd528e43b42f5b75bfc83568f5ac44c69f9c1ddbf12b78",
+  "prediction_sha": "9f32f9033ce550f9f9baa6d9d2fbc8e62795652465862dc323bc409a5b9b700d",
+  "history": "all original historical Steps",
+  "source_receipt": "/shared/homes/u26487468/agent_uncertainty_quantification/experiments/streaming_hd/runs/qwen_c18_error_memory_original_remaining_20261119/Multi-hop/reports/ACCEPTANCE.json",
+  "source_receipt_SHA256": "335d02b1b953c9265e454aeb36d5474f66bf955a8fe0bcf8f7a50d1785e82578",
+  "publication": "explicitly approved original A2 Multi-hop"
+}

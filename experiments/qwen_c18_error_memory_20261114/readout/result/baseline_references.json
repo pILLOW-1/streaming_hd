@@ -1,0 +1,113 @@
+{
+  "source": "../../../../reports/main_result/comparison.csv",
+  "source_commit": "a2f8d51a6ddfbf299115b44208286d22a6a7508e",
+  "source_SHA256": "72b1e5d956d3e187a4cc6514044303dcaa8cad58333cf14ac32415193ad1337c",
+  "precision": "published comparison CSV, AUROC percent divided by 100",
+  "selection": "highest published baseline AUROC for the same model, domain and detection level; ties retained",
+  "results": {
+    "step": {
+      "Logic": {
+        "Streaming": {
+          "AUROC": 0.8715999999999999,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8875,
+          "method": "HaMI"
+        }
+      },
+      "Factuality": {
+        "Streaming": {
+          "AUROC": 0.872,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8734999999999999,
+          "method": "HaMI"
+        }
+      },
+      "Science": {
+        "Streaming": {
+          "AUROC": 0.8145,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8255,
+          "method": "SAPLMA"
+        }
+      },
+      "Math": {
+        "Streaming": {
+          "AUROC": 0.7852,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8046,
+          "method": "SAPLMA"
+        }
+      },
+      "Multi-hop": {
+        "Streaming": {
+          "AUROC": 0.8953,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.9079999999999999,
+          "method": "HaMI"
+        }
+      }
+    },
+    "prefix": {
+      "Logic": {
+        "Streaming": {
+          "AUROC": 0.8256,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8256,
+          "method": "Streaming"
+        }
+      },
+      "Factuality": {
+        "Streaming": {
+          "AUROC": 0.8222,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8226,
+          "method": "Global Mean"
+        }
+      },
+      "Science": {
+        "Streaming": {
+          "AUROC": 0.7615999999999999,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.7644,
+          "method": "Global Mean"
+        }
+      },
+      "Math": {
+        "Streaming": {
+          "AUROC": 0.7356999999999999,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.7398,
+          "method": "SAPLMA"
+        }
+      },
+      "Multi-hop": {
+        "Streaming": {
+          "AUROC": 0.8344,
+          "method": "Streaming"
+        },
+        "Best published baseline": {
+          "AUROC": 0.8381000000000001,
+          "method": "Global Mean"
+        }
+      }
+    }
+  }
+}

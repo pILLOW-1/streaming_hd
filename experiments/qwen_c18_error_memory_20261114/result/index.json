@@ -524,5 +524,25 @@
       },
       "best_baseline_method": "Global Mean"
     }
+  },
+  "Multi-hop": {
+    "domain": "Multi-hop",
+    "test": {
+      "A2": {
+        "step": 0.9128451669259726,
+        "prefix": 0.8494224233096852
+      }
+    },
+    "selection": {
+      "A2": {
+        "layer": 49,
+        "epoch": 3
+      }
+    },
+    "pooled_prefix_recovery": {
+      "A2": 0.7659862347752064
+    },
+    "result": "../k_design/result/Multi-hop/A2.json",
+    "status": "CPU_RECOMPUTED_FROM_SAVED_TEST"
   }
 }
