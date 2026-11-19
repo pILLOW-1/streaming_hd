@@ -1,0 +1,166 @@
+{
+  "status": "REUSED_VERIFIED_SAVED_PREDICTION_DIAGNOSTIC",
+  "metric": "pooled inherited vs recovered Prefix TEST AUROC",
+  "positive": "all Step=0, Prefix=1 TEST positions",
+  "negative": "Step=0, Prefix=0 TEST positions after an earlier retained Prefix=1",
+  "aggregation": "pool across trajectories, no within-trajectory restriction or averaging",
+  "score": "final Prefix probability",
+  "best_baseline_rule": "highest published overall Prefix TEST AUROC per domain, not highest recovery AUROC",
+  "source_commit": "3b72062bed5dce54f7b26197456b60f0170e9ed0",
+  "diagnostic_source": "experiments/prefix_recovery_diagnostic_20261112/result/recovery.json",
+  "diagnostic_SHA256": "594afcf98159ea35b4f7b077e3d2576ddf005c454c262762c57271c7aa8b1a68",
+  "comparison_source": "reports/main_result/comparison.csv",
+  "comparison_SHA256": "72b1e5d956d3e187a4cc6514044303dcaa8cad58333cf14ac32415193ad1337c",
+  "domains": {
+    "Logic": {
+      "Streaming": {
+        "method": "Streaming",
+        "AUROC": 0.7020231375510703,
+        "overall_Prefix_TEST_AUROC": 0.8256170870633168,
+        "inherited": 1733,
+        "recovered_clean": 6593,
+        "predictions": {
+          "method": "streaming",
+          "model": "qwen3_8_27b",
+          "domain": "Logic",
+          "file": "streaming_k2_622_20261106_qwen/622/prefix/reports/qwen3_8_27b/Logic/test_predictions.npz",
+          "SHA256": "12d186f363c256796db0471e04b4999d94351c5ddbcaf90f9d1c0448d796cc86"
+        }
+      },
+      "Best published baseline": {
+        "method": "Streaming",
+        "AUROC": 0.7020231375510703,
+        "overall_Prefix_TEST_AUROC": 0.8256170870633168,
+        "inherited": 1733,
+        "recovered_clean": 6593,
+        "predictions": {
+          "method": "streaming",
+          "model": "qwen3_8_27b",
+          "domain": "Logic",
+          "file": "streaming_k2_622_20261106_qwen/622/prefix/reports/qwen3_8_27b/Logic/test_predictions.npz",
+          "SHA256": "12d186f363c256796db0471e04b4999d94351c5ddbcaf90f9d1c0448d796cc86"
+        }
+      }
+    },
+    "Factuality": {
+      "Streaming": {
+        "method": "Streaming",
+        "AUROC": 0.7205450336700336,
+        "overall_Prefix_TEST_AUROC": 0.8222044052886943,
+        "inherited": 2025,
+        "recovered_clean": 1408,
+        "predictions": {
+          "method": "streaming",
+          "model": "qwen3_8_27b",
+          "domain": "Factuality",
+          "file": "streaming_k2_622_20261106_qwen/622/prefix/reports/qwen3_8_27b/Factuality/test_predictions.npz",
+          "SHA256": "3032f96685e9b4332add26321e32a11396a46469b5631cffdec9202833decb4d"
+        }
+      },
+      "Best published baseline": {
+        "method": "Global Mean",
+        "AUROC": 0.7232740600448934,
+        "overall_Prefix_TEST_AUROC": 0.822566065322926,
+        "inherited": 2025,
+        "recovered_clean": 1408,
+        "predictions": {
+          "method": "global_mean",
+          "model": "qwen3_8_27b",
+          "domain": "Factuality",
+          "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Factuality/global_mean/prefix/reports/test_predictions.npz",
+          "SHA256": "3501f0a23de1be7051d00a04b6f5c55228fb5e7377b7202a44fb14390f09e1b4"
+        }
+      }
+    },
+    "Science": {
+      "Streaming": {
+        "method": "Streaming",
+        "AUROC": 0.7332591540617676,
+        "overall_Prefix_TEST_AUROC": 0.7616045423915464,
+        "inherited": 17618,
+        "recovered_clean": 22258,
+        "predictions": {
+          "method": "streaming",
+          "model": "qwen3_8_27b",
+          "domain": "Science",
+          "file": "streaming_k2_622_20261106_qwen/622/prefix/reports/qwen3_8_27b/Science/test_predictions.npz",
+          "SHA256": "1c6bb22702fca5c1efcb70a1a1604c2541d7fda50b0ba4cbb3eead3dca6c6a68"
+        }
+      },
+      "Best published baseline": {
+        "method": "Global Mean",
+        "AUROC": 0.7380591810132673,
+        "overall_Prefix_TEST_AUROC": 0.7644256971043067,
+        "inherited": 17618,
+        "recovered_clean": 22258,
+        "predictions": {
+          "method": "global_mean",
+          "model": "qwen3_8_27b",
+          "domain": "Science",
+          "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Science/global_mean/prefix/reports/test_predictions.npz",
+          "SHA256": "b4201c6a4a175016578cc632dabb72376900609bee617d44ca014ded6e22e9f6"
+        }
+      }
+    },
+    "Math": {
+      "Streaming": {
+        "method": "Streaming",
+        "AUROC": 0.7334001290314908,
+        "overall_Prefix_TEST_AUROC": 0.7357306039800031,
+        "inherited": 36323,
+        "recovered_clean": 86192,
+        "predictions": {
+          "method": "streaming",
+          "model": "qwen3_8_27b",
+          "domain": "Math",
+          "file": "streaming_k2_622_20261106_qwen/622/prefix/reports/qwen3_8_27b/Math/test_predictions.npz",
+          "SHA256": "47b5753230f818fc6a37dd72a76eef2e59ce41186f12c5c9c6f92e101b3c35cd"
+        }
+      },
+      "Best published baseline": {
+        "method": "SAPLMA",
+        "AUROC": 0.7257795910974508,
+        "overall_Prefix_TEST_AUROC": 0.7397826818070448,
+        "inherited": 36323,
+        "recovered_clean": 86192,
+        "predictions": {
+          "method": "saplma",
+          "model": "qwen3_8_27b",
+          "domain": "Math",
+          "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Math/saplma/prefix/reports/test_predictions.npz",
+          "SHA256": "cc37806cec59b18d661d867d9eef096a28ccc0ae79bb4f271b91acef77ae21e1"
+        }
+      }
+    },
+    "Multi-hop": {
+      "Streaming": {
+        "method": "Streaming",
+        "AUROC": 0.7563668726485433,
+        "overall_Prefix_TEST_AUROC": 0.8343950405598801,
+        "inherited": 5820,
+        "recovered_clean": 4049,
+        "predictions": {
+          "method": "streaming",
+          "model": "qwen3_8_27b",
+          "domain": "Multi-hop",
+          "file": "streaming_k2_622_20261106_qwen/622/prefix/reports/qwen3_8_27b/Multi-hop/test_predictions.npz",
+          "SHA256": "32703a256cebcebb811cc0f09d1b6f819d5bea46a8b4730fa5d7b5f34d92b0de"
+        }
+      },
+      "Best published baseline": {
+        "method": "Global Mean",
+        "AUROC": 0.7638575432056959,
+        "overall_Prefix_TEST_AUROC": 0.8381388560282331,
+        "inherited": 5820,
+        "recovered_clean": 4049,
+        "predictions": {
+          "method": "global_mean",
+          "model": "qwen3_8_27b",
+          "domain": "Multi-hop",
+          "file": "baselines_622_p70_20261108/fits/qwen3_8_27b/Multi-hop/global_mean/prefix/reports/test_predictions.npz",
+          "SHA256": "c7506a6bd1cc6819b1d9e38e6333d3d46d20a43e50ede64f4a740de28706b035"
+        }
+      }
+    }
+  }
+}

@@ -22,5 +22,6 @@
       "configuration": "R2",
       "path": "Logic/R2.json"
     }
-  ]
+  ],
+  "recovery_baseline_references": "recovery_baseline_references.json"
 }

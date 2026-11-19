@@ -34,8 +34,12 @@ Pool all inherited TEST positives across trajectories: Step clean, Prefix errone
 
 | Configuration | Logic | Factuality | Science | Math | Multi-hop |
 |---|---:|---:|---:|---:|---:|
+| Streaming | 0.7020 | 0.7205 | 0.7333 | **0.7334** | 0.7564 |
+| Best published baseline | 0.7020 (Streaming) | 0.7233 (Global Mean) | **0.7381** (Global Mean) | 0.7258 (SAPLMA) | 0.7639 (Global Mean) |
 | R0: original A2 | 0.7204 | 0.7476 |  |  | **0.7660** |
 | R1: last token | 0.7286 | 0.7525 |  |  |  |
 | R2: exponential pool + last token | **0.7344** | **0.7545** |  |  |  |
 
 Bold marks the best displayed four-decimal value per column. [Baseline references](result/baseline_references.json) reuse the published main comparison; the best baseline is selected separately per domain and detection level, with method names shown. [Readout results](result/index.json) retain exact metrics and provenance. The [original Multi-hop A2 result](../k_design/result/Multi-hop/A2.json) uses joint VAL selection (L49, epoch 3), one frozen TEST and independent saved-prediction CPU acceptance. No model inference was repeated.
+
+Streaming and best-baseline recovery scores reuse the [verified five-domain diagnostic](../../prefix_recovery_diagnostic_20261112/README.md). Best baseline is defined by overall Prefix TEST AUROC for that domain; the method is named in each cell. See [exact recovery references and prediction hashes](result/recovery_baseline_references.json). No inference or new model selection was performed.
