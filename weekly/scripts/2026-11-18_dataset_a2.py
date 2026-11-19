@@ -126,7 +126,7 @@ def a2():
     arrow(ax, (xt, 0.94), (stp[0], stp[1] - 0.42), color=DEEP)
     # composition: arrows enter the two sides of the output box
     out_l, out_r, out_y = 3.95, 6.65, 3.85
-    ax.add_patch(FancyBboxPatch((out_l, out_y - 0.27), out_r - out_l, 0.54, boxstyle="round,pad=0,rounding_size=0.27", fc=INK, ec=INK))
+    ax.add_patch(FancyBboxPatch((out_l, out_y - 0.27), out_r - out_l, 0.54, boxstyle="round,pad=0,rounding_size=0.27", fc=ACCENT, ec=ACCENT))
     ax.text((out_l + out_r) / 2, out_y, f"Prefix  $\\pi^{{\\mathrm{{P}}}}_t = {S}_t + (1-{S}_t)\\,\\kappa_t$", ha="center",
             va="center", fontsize=13.5, color=SURFACE)
     for (sx, color, ang) in ((kap[0], ACCENT, 0), (stp[0], DEEP, 180)):
