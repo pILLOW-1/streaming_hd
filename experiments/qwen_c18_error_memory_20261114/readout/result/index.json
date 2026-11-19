@@ -1,0 +1,16 @@
+{
+  "experiment": "qwen_a2_step_readout_r1_r2_20261119",
+  "reference": "original A2 in parent report",
+  "results": [
+    {
+      "domain": "Factuality",
+      "configuration": "R1",
+      "path": "Factuality/R1.json"
+    },
+    {
+      "domain": "Factuality",
+      "configuration": "R2",
+      "path": "Factuality/R2.json"
+    }
+  ]
+}

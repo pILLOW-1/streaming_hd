@@ -1,0 +1,57 @@
+{
+  "run": "qwen_a2_step_readout_r1_r2_20261119",
+  "domain": "Factuality",
+  "arm": "R1",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "metrics": {
+    "AUROC": 0.837604038959497,
+    "AP": 0.8181807559832893,
+    "BCE": 1.1532534707278943,
+    "F1": 0.7379977060462067
+  },
+  "step_metrics": {
+    "AUROC": 0.8688807244344168,
+    "AP": 0.4448003868695661,
+    "BCE": 0.24128047945668474
+  },
+  "inherited_vs_recovered_AUROC": 0.7525171857463524,
+  "layer": 47,
+  "epoch": 9,
+  "prediction_sha256": "ffcd6a212485910e96c0bf56ae242b4f2aabf8603acda42c201d60f97cfb1368",
+  "checkpoint_sha256": "625d42a51c82344c07bd3ce82d26396c016a01e003ffee862caee9323f7a5f39",
+  "source_receipt": "/shared/homes/u26487468/agent_uncertainty_quantification/experiments/streaming_hd/runs/qwen_a2_step_readout_r1_r2_20261119/Factuality/R1/runpod_verified/ACCEPTANCE.json",
+  "selection": "joint mean Step/Prefix VAL AUROC, AP, lower BCE",
+  "publication": "explicitly approved Factuality result",
+  "input_hashes": {
+    "receipt": "401d069315e06f89f6d5f2945a0172cf74504f2ec5cc370907fcc5319110dcc0",
+    "offsets": "b7530c3a828bfb86ea470ce64f4f90cd3c3d66e8b439fc33eaf3c704886c1d56",
+    "labels": "354a463ce5c74c575023c59c853bb207b28f3df1d39c93adba4455e9b3b6af7c",
+    "positions": "28944b14cfdfaf0e90d9c6fe38ad6c43cd486b8e84687c98ed79f1b37db07b7f",
+    "history_index": "e893582c064a2f484ae914e78f2b653e671d2cd2189ad40e152fc5ca22a02ec7"
+  },
+  "selection_binding": {
+    "experiment": "qwen_a2_step_readout_r1_r2_20261119",
+    "arm": "R1",
+    "worker_sha256": "40b4806a8d57ff6ce1d73bc3476fcfd5d73692141cd22d269b086056744eefd5",
+    "train": {
+      "receipt": "306618b0be1de61dbc6634c75086e82058635ee621bf1c3e723588299c11f8f8",
+      "offsets": "f154a52ab3679ad1b217fe56145ba90c61bd8c34dd373efae50727e1913a6e66",
+      "labels": "569168b21ac88c82cc09f300d76399963511869ed31486a08eb4ace3eb4604b3",
+      "positions": "59682f1280693e565624270f26889015bbfe8fdaaafb28ded109bb1cc73da0fd",
+      "history_index": "73a8ad8a938b68ed0d16f3e03c2ad5a772702b46b058f93fba29a3cbbf13c8fc"
+    },
+    "val": {
+      "receipt": "bbf6ba579d912f887b5fa89efae57ac5d7657de90a025cbc06e6ad7902ea0d0b",
+      "offsets": "18e83cbc28909f76e0193bfd1d047425874477683e0f730f12cf909301985539",
+      "labels": "5cff4832e62f239f8d0f63328b694af633ebf3fc83aedb0af2e109f5e9b08266",
+      "positions": "8a2fe349a5c25dbfd3610fd0baffe4621f19d4273b228c76b31008ed0b1de7a9",
+      "history_index": "ba948be1f5cce318172d0f5201a3a602b118f2849f34e7965d93cf02dcacf2e6"
+    },
+    "Step": {
+      "step_input": "last_token",
+      "normalization": "none",
+      "width": 5120
+    },
+    "selection_protocol": "joint mean Step/Prefix VAL AUROC, AP, lower BCE"
+  }
+}

@@ -1,5 +1,12 @@
 # Qwen C18 error-memory readouts
 
+## Exploration tracks
+
+| Track | Scope |
+|---|---|
+| [Readout exploration](readout/README.md) | Step and memory representations, including Factuality R1/R2. |
+| [Conditional head design](k_design/README.md) | Conditional Prefix head and error-memory designs. |
+
 Test whether predicted errors in earlier reasoning steps improve the C18 conditional Prefix readout in Logic and Factuality.
 
 Let $e_t$ and $c_t$ be the Step and Prefix exponential-pooled features, respectively. All three arms use the same readout structure for the Step score $q_t$ and the same rule for the final Prefix score $p_t^C$.
