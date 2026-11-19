@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Figure for the 2026-11-18 weekly report: Qwen Step TEST AUROC by domain.
+"""Figure for the 2026-11-20 weekly report: Qwen Step TEST AUROC by domain.
 
 Values are copied from experiments/qwen_step_only_learnable_20261115/README.md
 (legacy-recipe table): Original Streaming, best published baseline per domain,
 and single-layer Learnable aggregation. Run from the repository root:
 
-    python weekly/scripts/2026-11-18_step_auroc.py
+    python weekly/scripts/2026-11-20_step_auroc.py
 """
 from pathlib import Path
 
@@ -15,7 +15,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-OUT = Path("weekly/assets/2026-11-18/step_auroc.png")
+OUT = Path("weekly/assets/2026-11-20/step_auroc.png")
 DOMAINS = ["Logic", "Factuality", "Science", "Math", "Multi-hop"]
 SERIES = [  # name, values, color (validated palette on the page surface), hatch
     ("Streaming", [0.8716, 0.8720, 0.8145, 0.7852, 0.8953], "#3f74b8", ""),

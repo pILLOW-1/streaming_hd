@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Dataset overview and high-level A2 schematic for the 2026-11-18 weekly report.
+"""Dataset overview and high-level A2 schematic for the 2026-11-20 weekly report.
 
 Dataset counts are computed from the frozen 6:2:2 release (labels.jsonl of every model/domain/split; 15,697
 trajectories, 1,445,280 labelled steps). Run from the repository root with the dataset root as argument:
 
-    python weekly/scripts/2026-11-18_dataset_a2.py <streaming_hd_new root>
+    python weekly/scripts/2026-11-20_dataset_a2.py <streaming_hd_new root>
 """
 import json
 import sys
@@ -18,7 +18,7 @@ import numpy as np
 from matplotlib.colors import LinearSegmentedColormap, LogNorm
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
-OUT = Path("weekly/assets/2026-11-18")
+OUT = Path("weekly/assets/2026-11-20")
 SURFACE, RAISE, INK, INK2, LINE = "#fbf8f1", "#fffdf8", "#1a1530", "#5d5872", "#d9cfbd"
 ACCENT, ACCENT_SOFT, BLUE = "#a8402f", "#f2ddd5", "#3f74b8"
 plt.rcParams.update({"font.family": "STIXGeneral", "mathtext.fontset": "stix", "font.size": 12,

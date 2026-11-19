@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Figures for the 2026-11-18 weekly report (schematics and summary charts), in a paper-style serif.
+"""Figures for the 2026-11-20 weekly report (schematics and summary charts), in a paper-style serif.
 
 Numbers in the charts are copied from published results in this repository:
 - Step TEST AUROC on Qwen3.8-27B: experiments/{saplma,hami}/622_p70_20261108/result/qwen3_8_27b/<domain>/step.json
   and experiments/streaming_622_p70/result/metrics.json (HaMI has no Qwen Math/Science result yet).
 - Prefix composition: experiments/step_prefix_composition_20261111 (84.74% of Prefix positives inherited).
 - Recovery: experiments/prefix_recovery_diagnostic_20261112 (TEST means over 71 detector-combination pairs).
-Run from the repository root:  python weekly/scripts/2026-11-18_figures.py [optional still-frame path]
+Run from the repository root:  python weekly/scripts/2026-11-20_figures.py [optional still-frame path]
 """
 import sys
 from pathlib import Path
@@ -19,7 +19,7 @@ import numpy as np
 from matplotlib.animation import FuncAnimation, PillowWriter
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
 
-OUT = Path("weekly/assets/2026-11-18")
+OUT = Path("weekly/assets/2026-11-20")
 SURFACE, RAISE, INK, INK2, LINE = "#fbf8f1", "#fffdf8", "#1a1530", "#5d5872", "#d9cfbd"
 NEW, INHERITED, CLEAN_FILL, INH_TEXT = "#a8402f", "#e3b7a6", "#efe8da", "#b0664f"
 STREAMING, SAPLMA, HAMI = "#3f74b8", "#d95926", "#199e70"  # validated on SURFACE

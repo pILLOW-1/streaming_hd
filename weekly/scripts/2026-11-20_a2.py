@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""A2 comparison figures for the 2026-11-18 weekly report (the schematic is in 2026-11-18_dataset_a2.py).
+"""A2 comparison figures for the 2026-11-20 weekly report (the schematic is in 2026-11-20_dataset_a2.py).
 
 Numbers are copied from published TEST results in this repository (Qwen3.8-27B, single seed 42, VAL-selected layer):
 - A1 and A2 (fixed readouts): experiments/qwen_c18_a2_series_20261115/README.md (Frozen TEST comparison) and
   experiments/qwen_c18_error_memory_20261114/README.md (pooled TEST Prefix recovery AUROC).
 - Streaming and best baseline: experiments/qwen_step_only_learnable_20261115/README.md (Step) and
   experiments/qwen_baseline_prefix_decomposition_20261116/README.md (Prefix).
-Run from the repository root:  python weekly/scripts/2026-11-18_a2.py
+Run from the repository root:  python weekly/scripts/2026-11-20_a2.py
 """
 from pathlib import Path
 
@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
-OUT = Path("weekly/assets/2026-11-18")
+OUT = Path("weekly/assets/2026-11-20")
 SURFACE, RAISE, INK, INK2, LINE = "#fbf8f1", "#fffdf8", "#1a1530", "#5d5872", "#d9cfbd"
 NEW, INHERITED, CLEAN_FILL = "#a8402f", "#e3b7a6", "#efe8da"
 STREAMING, BASELINE, ABLATION, OURS = "#3f74b8", "#b08637", "#2a9d8f", "#a8402f"  # validated on SURFACE in plotted order
