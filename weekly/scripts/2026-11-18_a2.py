@@ -43,8 +43,8 @@ def save(fig, name):
     print("wrote", OUT / name)
 
 
-SERIES = [("Streaming", STREAMING, ""), ("Best baseline", BASELINE, "///"),
-          ("Ours (w/o error memory)", ABLATION, ""), ("Ours", OURS, "")]
+SERIES = [("Streaming", STREAMING, ""), ("Ours (w/o error memory)", ABLATION, ""),
+          ("Best baseline", BASELINE, "///"), ("Ours", OURS, "")]
 
 
 def bars(ax, x, values, lo, hi, best_name, domains):
@@ -67,15 +67,17 @@ def bars(ax, x, values, lo, hi, best_name, domains):
 
 def results():
     domains = ["Logic", "Factuality"]; x = np.arange(2)
-    panels = [  # Streaming, best baseline, A1, A2
-        ("Step", [[0.8716, 0.8720], [0.8875, 0.8735], [0.8775, 0.8820], [0.8775, 0.8826]], ["HaMI", "HaMI"], (0.85, 0.895)),
-        ("Prefix", [[0.8256, 0.8222], [0.8256, 0.8226], [0.8341, 0.8106], [0.8377, 0.8367]], ["Streaming", "Global Mean"], (0.80, 0.845)),
+    panels = [  # Streaming, A1, best baseline, A2
+        ("Step", [[0.8716, 0.8720], [0.8775, 0.8820], [0.8875, 0.8735], [0.8775, 0.8826]], ["HaMI", "HaMI"], (0.85, 0.895)),
+        ("Prefix", [[0.8256, 0.8222], [0.8341, 0.8106], [0.8256, 0.8226], [0.8377, 0.8367]], ["Streaming", "Global Mean"], (0.80, 0.845)),
     ]
     fig, axes = plt.subplots(1, 2, figsize=(10.0, 3.8), dpi=200)
     for ax, (title, values, best_name, (lo, hi)) in zip(axes, panels):
         bars(ax, x, values, lo, hi, best_name, domains)
         ax.set_title(f"{title} TEST AUROC", fontsize=13, color=INK, pad=8)
     handles, labels = axes[0].get_legend_handles_labels()
+    order = [0, 2, 1, 3]  # legend: Streaming, Best baseline, Ours (w/o error memory), Ours
+    handles, labels = [handles[i] for i in order], [labels[i] for i in order]
     fig.legend(handles, labels, ncol=4, frameon=False, loc="upper center", bbox_to_anchor=(0.5, 1.07), labelcolor=INK)
     fig.tight_layout()
     save(fig, "a2_results.png")
@@ -83,12 +85,14 @@ def results():
 
 def recovery():
     domains = ["Logic", "Factuality"]; x = np.arange(2)
-    values = [[0.7020, 0.7205], [0.7020, 0.7233], [0.7073, 0.6895], [0.7204, 0.7476]]
+    values = [[0.7020, 0.7205], [0.7073, 0.6895], [0.7020, 0.7233], [0.7204, 0.7476]]
     fig, ax = plt.subplots(figsize=(10.0, 3.6), dpi=200)
     bars(ax, x, values, 0.65, 0.76, ["Streaming", "Global Mean"], domains)
     ax.set_title("Prefix Recovery TEST AUROC", fontsize=13, color=INK, pad=8)
     fig.tight_layout(rect=(0, 0, 1, 0.88))
     handles, labels = ax.get_legend_handles_labels()
+    order = [0, 2, 1, 3]  # legend: Streaming, Best baseline, Ours (w/o error memory), Ours
+    handles, labels = [handles[i] for i in order], [labels[i] for i in order]
     fig.legend(handles, labels, ncol=4, frameon=False, loc="upper center", bbox_to_anchor=(0.53, 1.0), labelcolor=INK)
     save(fig, "a2_recovery.png")
 
