@@ -1,5 +1,5 @@
 {
-  "experiment": "qwen_a2_step_readout_r1_r2_20261119",
+  "experiment": "qwen_c18_error_memory_20261114/readout",
   "reference": "original A2 in parent report",
   "results": [
     {
@@ -28,7 +28,40 @@
       "path": "Science/R0.json",
       "config": "../config/original_a2_science_20261119.json",
       "source_experiment": "qwen_c18_error_memory_original_remaining_20261119"
+    },
+    {
+      "domain": "Logic",
+      "configuration": "H1",
+      "path": "Logic/H1.json",
+      "config": "../config/hami_topk_memory/config.json",
+      "source_experiment": "qwen_a2_hami_topk_memory_20261119"
+    },
+    {
+      "domain": "Logic",
+      "configuration": "H2",
+      "path": "Logic/H2.json",
+      "config": "../config/hami_topk_memory/config.json",
+      "source_experiment": "qwen_a2_hami_topk_memory_20261119"
+    },
+    {
+      "domain": "Factuality",
+      "configuration": "H1",
+      "path": "Factuality/H1.json",
+      "config": "../config/hami_topk_memory/config.json",
+      "source_experiment": "qwen_a2_hami_topk_memory_20261119"
+    },
+    {
+      "domain": "Factuality",
+      "configuration": "H2",
+      "path": "Factuality/H2.json",
+      "config": "../config/hami_topk_memory/config.json",
+      "source_experiment": "qwen_a2_hami_topk_memory_20261119"
     }
   ],
-  "recovery_baseline_references": "recovery_baseline_references.json"
+  "recovery_baseline_references": "recovery_baseline_references.json",
+  "source_experiments": [
+    "qwen_a2_step_readout_r1_r2_20261119",
+    "qwen_a2_hami_topk_memory_20261119",
+    "qwen_c18_error_memory_original_remaining_20261119"
+  ]
 }

@@ -54,8 +54,8 @@
   ],
   "equivalence": "CPU and real-width5120 CUDA: forward/loss/gradient/BN/Dropout/ties/causality PASS",
   "status": {
-    "Factuality": "Both H1/H2 independently CPU accepted and publication approved",
-    "Logic": "Unfinished; no result published"
+    "Logic": "H1/H2 independently CPU accepted and publication approved",
+    "Factuality": "H1/H2 independently CPU accepted and published"
   },
   "original_private_config_SHA256": "98e1646ad913b5c3a41f428e1c7b902325865f446d5d5abe0912c896e3888d06"
 }

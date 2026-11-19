@@ -1,0 +1,94 @@
+{
+  "experiment": "qwen_a2_hami_topk_memory_20261119",
+  "configuration": "H1",
+  "domain": "Logic",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "selection": {
+    "layer": 43,
+    "epoch": 3,
+    "metrics": {
+      "AUROC": 0.8933098344840223,
+      "AP": 0.4833695220587487,
+      "BCE": 0.269154745159966,
+      "step_AUROC": 0.9203395754387256,
+      "step_AP": 0.2392400284426611,
+      "step_BCE": 0.058012867901360544,
+      "mean_AUROC": 0.906824704961374,
+      "mean_AP": 0.3613047752507049,
+      "mean_BCE": 0.1635838065306633
+    },
+    "threshold": 0.15168654918670654,
+    "step_threshold": 0.13240966200828552,
+    "checkpoint_sha256": "232f10233994312a833fe6c513ee17edaa1fecf5356172eb21cd34fcc95180a3",
+    "prediction_sha256": "ebb799e8f8acb3a92b7653be8c242e6c8c6d96e33832f138ee07e7643d1e132f"
+  },
+  "test_metrics": {
+    "AUROC": 0.8356190650075686,
+    "AP": 0.36555450428085834,
+    "BCE": 0.31739320246656305,
+    "step_AUROC": 0.8837659123284473,
+    "step_AP": 0.19357894187915536,
+    "step_BCE": 0.07450229781181104,
+    "mean_AUROC": 0.859692488668008,
+    "mean_AP": 0.27956672308000685,
+    "mean_BCE": 0.19594775013918705
+  },
+  "inherited_vs_recovered_AUROC": 0.7115761011455871,
+  "input_hashes": {
+    "cetus_input_sha256": "607237edc0f959e949a81bf95eeb56ac5f74d083f9332dd0102ec3c0b7b543a8",
+    "split": "test",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "history": "all original steps through last retained position; strict exclusive history",
+    "transport": "existing RunPod BF16 staged directly on Cetus; frozen full-input SHA and original Step spans match",
+    "cloud_metadata": {
+      "TOKEN_WRITE_RECEIPT.json": "ca81b93c9e9ceef2890daf48292ef21a394da78abac130376d1f47d1aa38f935",
+      "TOKEN_OFFSETS.json": "ae7abe209ec218c4cae7d35b25fa18b54fd015000067dbc354d9af5cf662cbf3",
+      "HISTORY_INDEX.json": "aebfbc4299a5c6c607f80a2364673218da673fe57fdb9db4ad231a3ae09a4e7f"
+    }
+  },
+  "test_prediction_SHA256": "64f4a92a3648c54e06b4f8a52827b25ae2f9e54b31647224b2c8da93d6115397",
+  "source_acceptance": "/shared/homes/u26487468/agent_uncertainty_quantification/experiments/streaming_hd/runs/qwen_a2_hami_topk_memory_20261119/Logic/H1/PARENT_CPU_ACCEPTANCE_20261120.json",
+  "source_acceptance_SHA256": "54aeff0c694b92abe12383c84d93884a90f7f70579a1caddb1bbc713b00bf500",
+  "execution": {
+    "adapter_sha256": "6751687329bda03448c98e291393cc3fce8eec145093d39b20c495a541cceacf",
+    "scientific_contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+    "implementation_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+    "gate": {
+      "status": "PASS",
+      "checks": {
+        "H1_seed42": "PASS",
+        "H2_seed42": "PASS",
+        "H1_seed7": "PASS",
+        "H2_seed7": "PASS"
+      },
+      "width": 5120,
+      "forward_loss_gradient_BN_Dropout_and_causal_prefix": "PASS",
+      "deterministic_topk_ties": "PASS",
+      "fast_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+      "contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+      "scope": "synthetic cuda gates, not a scientific result or independent VAL/TEST inference"
+    },
+    "allocation": {
+      "job": "341569.hpc-head01",
+      "host": "hpc-exec07.hpc.uts.edu.au",
+      "GPU_UUID": "GPU-9102ce78-bdc5-1fa2-e506-7b2a27d8c0b6",
+      "memory_mib": 97887.0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "initial_used_mib": 0.0,
+      "PBS_nodes": [
+        "hpc-exec07.hpc.uts.edu.au",
+        "hpc-exec08.hpc.uts.edu.au"
+      ],
+      "exec_vnode_qstat": "Job Id: 341569.hpc-head01\n    Job_Name = A2HaMILogic\n    Job_Owner = u26487468@hpc-login02.hpc.uts.edu.au\n    resources_used.cpupercent = 463\n    resources_used.cput = 10:31:28\n    resources_used.mem = 30960268kb\n    resources_used.ncpus = 8\n    resources_used.ngpus = 2\n    resources_used.vmem = 66771756kb\n    resources_used.walltime = 03:52:23\n    job_state = R\n    queue = large_gpuq\n    server = hpc-head01\n    Checkpoint = u\n    ctime = Fri Nov 20 04:53:28 2026\n    Error_Path = hpc-login02.hpc.uts.edu.au:/shared/homes/u26487468/A2HaMILogic\n\t.e341569\n    exec_host = hpc-exec07/1*4+hpc-exec08/1*4\n    exec_vnode = (hpc-exec07:ncpus=4:mem=48gb:ngpus=1)+(hpc-exec08:ncpus=4:mem=\n\t48gb:ngpus=1)\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Fri Nov 20 08:48:30 2026\n    Output_Path = hpc-login02.hpc.uts.edu.au:/shared/homes/u26487468/agent_unce\n\trtainty_quantification/experiments/streaming_hd/runs/qwen_a2_hami_topk_\n\tmemory_20261119/Logic/logs/pbs.resume.341171.hpc-head01.log\n    Priority = 0\n    qtime = Fri Nov 20 04:53:28 2026\n    Rerunable = True\n    Resource_List.gpu_wt = 3\n    Resource_List.mem = 96gb\n    Resource_List.mpiprocs = 2\n    Resource_List.ncpus = 8\n    Resource_List.ngpus = 2\n    Resource_List.nodect = 2\n    Resource_List.place = scatter\n    Resource_List.select = 2:ncpus=4:mem=48gb:ngpus=1:mpiprocs=1:Qlist=large_gp\n\tuq\n    Resource_List.walltime = 06:00:00\n    stime = Fri Nov 20 04:56:05 2026\n    session_id = 2784670\n    jobdir = /shared/homes/u26487468\n    substate = 42\n    Variable_List = PBS_O_HOME=/shared/homes/u26487468,PBS_O_LANG=en_AU.UTF-8,\n\tPBS_O_LOGNAME=u26487468,\n\tPBS_O_PATH=/shared/homes/u26487468/.local/bin:/shared/homes/u26487468/\n\tbin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr\n\t/sbin:/opt/pbs/bin,PBS_O_SHELL=/bin/bash,\n\tPBS_O_INTERACTIVE_AUTH_METHOD=resvport,\n\tPBS_O_HOST=hpc-login02.hpc.uts.edu.au,\n\tPBS_O_WORKDIR=/shared/homes/u26487468,PBS_O_SYSTEM=Linux,\n\tPBS_O_QUEUE=large_gpuq\n    comment = Job run at Fri Nov 20 at 04:56 on (hpc-exec07:ncpus=4:mem=48gb:ng\n\tpus=1)+(hpc-exec08:ncpus=4:mem=48gb:ngpus=1)\n    etime = Fri Nov 20 04:53:28 2026\n    run_count = 1\n    Submit_arguments = -h -q large_gpuq -N A2HaMILogic -l select=2:ncpus=4:mem=\n\t48gb:ngpus=1:mpiprocs=1:Qlist=large_gpuq -l walltime=06:00:00 -l place=\n\tscatter -j oe -o /shared/homes/u26487468/agent_uncertainty_quantificati\n\ton/experiments/streaming_hd/runs/qwen_a2_hami_topk_memory_20261119/Logi\n\tc/logs/pbs.resume.341171.hpc-head01.log /shared/homes/u26487468/agent_u\n\tncertainty_quantification/workspaces/streaming_hd/ours/qwen_a2_hami_top\n\tk_memory_20261119/fit.pbs\n    project = _pbs_project_default\n    Submit_Host = hpc-login02.hpc.uts.edu.au\n\n",
+      "source_admission_sha256": "220b83b11bcebe17cc0be60b9c3487aae6ee26802e8df8976c78d3434bbc4532"
+    },
+    "input_sha256": "607237edc0f959e949a81bf95eeb56ac5f74d083f9332dd0102ec3c0b7b543a8",
+    "initialization": "seed42; cloud partial states retained separately; distinct native bank binding"
+  },
+  "validation": "All64 VAL candidates verified; frozen selected TEST once; independent saved-prediction CPU recomputation. Independent model replay waived by direct human instruction, not PASS.",
+  "recovery_definition": {
+    "positive": "All TEST positions with Step=0 and Prefix=1",
+    "negative": "Step=0 and Prefix=0, with an earlier retained Prefix=1 in the trajectory",
+    "score": "final Prefix probability; pool across trajectories"
+  }
+}
