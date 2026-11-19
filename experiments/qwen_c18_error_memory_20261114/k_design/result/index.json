@@ -10,6 +10,18 @@
       "configuration": "A2",
       "path": "../../readout/result/Science/R0.json",
       "config": "../../readout/config/original_a2_science_20261119.json"
+    },
+    {
+      "domain": "Factuality",
+      "configuration": "H1",
+      "path": "Factuality/H1.json",
+      "config": "../config/hami_topk_memory/config.json"
+    },
+    {
+      "domain": "Factuality",
+      "configuration": "H2",
+      "path": "Factuality/H2.json",
+      "config": "../config/hami_topk_memory/config.json"
     }
   ],
   "historical_Logic_Factuality": "../../result/index.json",

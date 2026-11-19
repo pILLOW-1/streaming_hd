@@ -1,0 +1,61 @@
+{
+  "experiment_id": "qwen_a2_hami_topk_memory_20261119",
+  "domains": [
+    "Logic",
+    "Factuality"
+  ],
+  "arms": [
+    "H1",
+    "H2"
+  ],
+  "H1": "HaMI top-k mean Step probability; fixed exponential Step features as memory content",
+  "H2": "Same HaMI Step probability; mean original hidden features of the same top-k tokens as memory content",
+  "token_scorer": "Linear(5120,256), BatchNorm1d(256), ReLU, Dropout(0.3), Linear(256,1); sigmoid token probabilities",
+  "hami_upstream_commit": "3d277605534999d2756a6eeef759d0a91199ad58",
+  "topk": "floor(0.1 * step_token_count) + 1; no softmax; deterministic tie handling",
+  "history": "all earlier original steps including unsupervised steps; strictly i<t; q detached; hard top-k mean has no scorer gradient",
+  "history_mode": "eval and no_grad for q and top-k indices; refresh every optimizer step; current supervised q uses train mode",
+  "prefix_input": "candidate-layer original raw Streaming Prefix exponential pool",
+  "objective": "C18 three-class CE; stable logmean(sigmoid token logits) and logmean(sigmoid negative token logits); not original HaMI MIL loss",
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "batch_size": 256,
+  "batch_sampling": "random supervised positions; batch-local trajectory deduplication",
+  "max_epochs": 100,
+  "patience": 10,
+  "scheduler": null,
+  "candidate_layers": "1-64; independent arm/layer optimizer, BatchNorm and RNG state",
+  "selection": "joint mean Step/Prefix VAL AUROC; mean AP; lower mean BCE, for checkpoint, stopping and layer",
+  "test": "only the frozen VAL winner once per domain/arm; save predictions and independently verify on Cetus CPU",
+  "source_files": {
+    "evaluate_test.py": "b97a7bedc842acc934d060d77e92d41b940f0f26613baa4993881d6c5bdc86dd",
+    "feature_cache.py": "e1df0853e0ca96ce9fadf71722a87dd52431112ce2fb3b07bdae05e06f0b36f4",
+    "history.py": "08ab6224a9ebd9f9bf67865f3296a275c411ccdfb0de227153ccd98775701f44",
+    "model.py": "7d02094b6e614019972f82eaf0b592b3260055964999cbbab7df534d7457ead4",
+    "pooling.py": "e83ec3f8c59524d2ade670170b2cfb9a2b534afa86a8d651bfd294ec437dc1b4",
+    "return_verify.py": "cfb7f2f31eba13aa7153209df40b39bac71e95383aa1f8ce2c5add567fc2487b",
+    "run.py": "74047011615ce15799fa2efe662bc4438690962018f0c6e229e9340fe8acbd80",
+    "scheduler.py": "2775354458cd9a806cf95cfd7f31ea6a80462c647753736cb0dfed6206b0dc6a",
+    "test_fast_equivalence.py": "e11b98a7a8879d3a9b6d284cf3b1461504a0b1cfc3699b4db40d5efab3f2c638",
+    "test_model.py": "cfdcace61e6b101f60b5b174261c08aa49eda6878fffb45a2e608c70d9c24892",
+    "worker.py": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+    "worker_base.py": "e223c4522920f7f1c33d4870a2f471801ee3de6e3d0ceace317aa5bfb9fbf2a8",
+    "worker_fast.py": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b"
+  },
+  "execution_optimization": [
+    "H1 fixed Step pools cached once",
+    "coalesced BF16 token gathers and chunked historical scoring",
+    "length-bucketed stable Top-k and segmented feature means",
+    "history scores only required causal prefixes",
+    "no cross-update historical score cache",
+    "single full supervised scorer call preserves BN/Dropout"
+  ],
+  "equivalence": "CPU and real-width5120 CUDA: forward/loss/gradient/BN/Dropout/ties/causality PASS",
+  "status": {
+    "Factuality": "Both H1/H2 independently CPU accepted and publication approved",
+    "Logic": "Unfinished; no result published"
+  },
+  "original_private_config_SHA256": "98e1646ad913b5c3a41f428e1c7b902325865f446d5d5abe0912c896e3888d06"
+}

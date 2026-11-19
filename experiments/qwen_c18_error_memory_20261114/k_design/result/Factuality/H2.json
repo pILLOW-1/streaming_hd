@@ -1,0 +1,86 @@
+{
+  "experiment": "qwen_a2_hami_topk_memory_20261119",
+  "configuration": "H2",
+  "domain": "Factuality",
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "selection": {
+    "layer": 50,
+    "epoch": 1,
+    "metrics": {
+      "AUROC": 0.940162668412293,
+      "AP": 0.9242041129487523,
+      "BCE": 0.544943542225379,
+      "step_AUROC": 0.8903563779104332,
+      "step_AP": 0.4306477006599061,
+      "step_BCE": 0.2091981551264907,
+      "mean_AUROC": 0.9152595231613632,
+      "mean_AP": 0.6774259068043291,
+      "mean_BCE": 0.3770708486759349
+    },
+    "threshold": 0.3662322461605072,
+    "step_threshold": 0.27511799335479736,
+    "checkpoint_sha256": "a28a538798c35d20dfc5ebeab6d09203caf8499a3d6f904476b96b1c7960d730",
+    "prediction_sha256": "7cbf32779d45e4463ee8f8618c79c69596b5b2348bb729fd26640f0f2ae01ce0"
+  },
+  "test_metrics": {
+    "AUROC": 0.8295029742569028,
+    "AP": 0.8066682147270222,
+    "BCE": 0.8339135195306151,
+    "step_AUROC": 0.8723012836148546,
+    "step_AP": 0.43026938944336557,
+    "step_BCE": 0.23276748242888728,
+    "mean_AUROC": 0.8509021289358787,
+    "mean_AP": 0.6184688020851938,
+    "mean_BCE": 0.5333405009797512
+  },
+  "inherited_vs_recovered_AUROC": 0.730824214365881,
+  "input_hashes": {
+    "receipt": "401d069315e06f89f6d5f2945a0172cf74504f2ec5cc370907fcc5319110dcc0",
+    "offsets": "b7530c3a828bfb86ea470ce64f4f90cd3c3d66e8b439fc33eaf3c704886c1d56",
+    "labels": "354a463ce5c74c575023c59c853bb207b28f3df1d39c93adba4455e9b3b6af7c",
+    "positions": "28944b14cfdfaf0e90d9c6fe38ad6c43cd486b8e84687c98ed79f1b37db07b7f",
+    "history_index": "e893582c064a2f484ae914e78f2b653e671d2cd2189ad40e152fc5ca22a02ec7"
+  },
+  "test_prediction_SHA256": "743ef354c79f6de229ba59312bdaff44fb7a7dd4425c182a622b519215cbd133",
+  "source_acceptance": "/shared/homes/u26487468/agent_uncertainty_quantification/experiments/streaming_hd/runs/qwen_a2_hami_topk_memory_20261119/Factuality/H2/runpod_verified/ACCEPTANCE.json",
+  "source_acceptance_SHA256": "98260bea632a88876d879edbfdf52c9859e82e3d4631950976b86ee9b98bef91",
+  "execution": {
+    "scientific_contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+    "implementation_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+    "gate": {
+      "status": "PASS",
+      "checks": {
+        "H1_seed42": "PASS",
+        "H2_seed42": "PASS",
+        "H1_seed7": "PASS",
+        "H2_seed7": "PASS"
+      },
+      "forward_loss_gradient_BN_Dropout_and_causal_prefix": "PASS",
+      "deterministic_topk_ties": "PASS",
+      "fast_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+      "contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+      "scope": "synthetic CPU gates, not a scientific result or independent VAL/TEST inference",
+      "cuda_equivalence": {
+        "status": "PASS",
+        "checks": {
+          "H1_seed42": "PASS",
+          "H2_seed42": "PASS",
+          "H1_seed7": "PASS",
+          "H2_seed7": "PASS"
+        },
+        "forward_loss_gradient_BN_Dropout_and_causal_prefix": "PASS",
+        "deterministic_topk_ties": "PASS",
+        "fast_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+        "contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+        "scope": "synthetic cuda gates, not a scientific result or independent VAL/TEST inference"
+      }
+    },
+    "inherited_original_optimizer_and_checkpoint_protocol": true
+  },
+  "validation": "All64 VAL candidates verified; frozen selected TEST once; independent CPU recomputation from saved predictions. Independent model replay waived by direct human instruction, not PASS.",
+  "recovery_definition": {
+    "positive": "All TEST positions with Step=0 and Prefix=1",
+    "negative": "Step=0 and Prefix=0, with an earlier retained Prefix=1 in the trajectory",
+    "score": "final Prefix probability; pool across trajectories"
+  }
+}

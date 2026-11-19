@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": {
+    "H1_seed42": "PASS",
+    "H2_seed42": "PASS",
+    "H1_seed7": "PASS",
+    "H2_seed7": "PASS"
+  },
+  "forward_loss_gradient_BN_Dropout_and_causal_prefix": "PASS",
+  "deterministic_topk_ties": "PASS",
+  "fast_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+  "contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+  "scope": "synthetic CPU gates, not a scientific result or independent VAL/TEST inference",
+  "cuda_equivalence": {
+    "status": "PASS",
+    "checks": {
+      "H1_seed42": "PASS",
+      "H2_seed42": "PASS",
+      "H1_seed7": "PASS",
+      "H2_seed7": "PASS"
+    },
+    "width": 5120,
+    "forward_loss_gradient_BN_Dropout_and_causal_prefix": "PASS",
+    "deterministic_topk_ties": "PASS",
+    "fast_sha256": "e9735b8fd767d185d17f76a318c88401e46e7edab8328c162454e5e50acc664b",
+    "contract_sha256": "bcf0e1d9d97d8469ad804f9df416cb2d585e70be263125698d3c5eae45a9a059",
+    "scope": "synthetic cuda gates, not a scientific result or independent VAL/TEST inference"
+  }
+}
