@@ -59,6 +59,7 @@ def dataset(root):
     for j, d in enumerate(DOMAINS):
         ax.text(j + 0.5, 3.4, d, ha="center", va="center", fontsize=13, color=INK)
     ax.text(5.65, 3.4, "Total", ha="center", va="center", fontsize=13, color=INK2)
+    ax.text(-2.85, 3.4, "Dataset", ha="left", va="center", fontsize=14, color=INK, weight="bold")
     for i, (_, name) in enumerate(MODELS):
         y = 2 - i
         ax.text(-0.15, y + 0.5, name, ha="right", va="center", fontsize=12.5, color=INK)
