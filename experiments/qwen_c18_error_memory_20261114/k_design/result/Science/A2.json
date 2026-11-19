@@ -1,0 +1,26 @@
+{
+  "status": "CPU_RECOMPUTED_FROM_SAVED_TEST",
+  "domain": "Science",
+  "arm": "A2",
+  "layer": 46,
+  "epoch": 1,
+  "metrics": {
+    "step_AUROC": 0.821845840764388,
+    "step_AP": 0.22303993078966838,
+    "prefix_AUROC": 0.7649880477895294,
+    "prefix_AP": 0.6661176748423014,
+    "prefix_inherited_vs_recovered_pooled": 0.7363144725401685,
+    "kappa_inherited_vs_recovered_pooled": 0.7357306385601008
+  },
+  "positions": 46175,
+  "inherited": 17618,
+  "recovered": 22258,
+  "input_sha": "4a298a730ba6dca5ddb28bae8b9721dc4e6a302e3d00268b5d82aa9db1185b17",
+  "selection_sha": "aa0f1bcff136df7274064b93b18a8515dcb43fcef8cf24a8bb6ba49147e4e3a4",
+  "checkpoint_sha": "5d5129e054d7eb86d34acf002778357145e6887f1cdb8e5e8d553eb469ff8154",
+  "prediction_sha": "8b89bb7473712ba0d12564ded32a2cf539f0486054bfd2945b370068f6dd3346",
+  "history": "all original historical Steps",
+  "source_receipt": "/shared/homes/u26487468/agent_uncertainty_quantification/experiments/streaming_hd/runs/qwen_c18_error_memory_original_remaining_20261119/Science/reports/ACCEPTANCE.json",
+  "source_receipt_SHA256": "a3938db5d2d4aef8d7d8d45ce019d1c391e31b37569463650d772d1bf779c35c",
+  "publication": "explicitly approved original A2 Science"
+}

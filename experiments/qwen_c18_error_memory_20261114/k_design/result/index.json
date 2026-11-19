@@ -4,6 +4,12 @@
       "domain": "Multi-hop",
       "configuration": "A2",
       "path": "Multi-hop/A2.json"
+    },
+    {
+      "domain": "Science",
+      "configuration": "A2",
+      "path": "Science/A2.json",
+      "config": "../config/original_a2_science_20261119.json"
     }
   ],
   "historical_Logic_Factuality": "../../result/index.json",

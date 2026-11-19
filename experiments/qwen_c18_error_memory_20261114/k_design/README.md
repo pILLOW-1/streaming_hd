@@ -12,24 +12,24 @@ The parent report retains the original records and links. New conditional-head c
 
 ## Original A2 domain extension
 
-The same fixed Step/Prefix readouts and C18 objective are reused. Multi-hop selects layer 49, epoch 3 on joint VAL metrics and covers 13,460 TEST positions. [Configuration](config/original_a2_multihop_20261119.json), [acceptance and hashes](result/Multi-hop/A2.json). Science and Math remain unfinished.
+The same fixed Step/Prefix readouts and C18 objective are reused. Multi-hop selects layer 49, epoch 3 on joint VAL metrics and covers 13,460 TEST positions. [Configuration](config/original_a2_multihop_20261119.json), [acceptance and hashes](result/Multi-hop/A2.json). Science selects layer 46, epoch 1 and covers 46,175 TEST positions. [Science configuration](config/original_a2_science_20261119.json), [acceptance and hashes](result/Science/A2.json). Math remains unfinished.
 
 ### Step TEST AUROC
 
 | Configuration | Logic | Factuality | Science | Math | Multi-hop |
 |---|---:|---:|---:|---:|---:|
-| A2 | **0.8775** | **0.8826** |  |  | **0.9128** |
+| A2 | **0.8775** | **0.8826** | **0.8218** |  | **0.9128** |
 
 ### Prefix TEST AUROC
 
 | Configuration | Logic | Factuality | Science | Math | Multi-hop |
 |---|---:|---:|---:|---:|---:|
-| A2 | **0.8377** | **0.8367** |  |  | **0.8494** |
+| A2 | **0.8377** | **0.8367** | **0.7650** |  | **0.8494** |
 
 ### Inherited vs. recovered TEST AUROC
 
 | Configuration | Logic | Factuality | Science | Math | Multi-hop |
 |---|---:|---:|---:|---:|---:|
-| A2 | **0.7204** | **0.7476** |  |  | **0.7660** |
+| A2 | **0.7204** | **0.7476** | **0.7363** |  | **0.7660** |
 
 Recovery uses all inherited TEST positives and recovered negatives pooled across trajectories, scored by the final Prefix probability. The historical within-trajectory results in the parent report keep their original definition.

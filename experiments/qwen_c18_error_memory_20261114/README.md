@@ -173,4 +173,4 @@ All scores are overall TEST AUROC (%) for Qwen3.8-27B. The strongest baseline is
 
 ## Original A2: additional domains
 
-Multi-hop is independently CPU verified: Step TEST AUROC **0.9128**, Prefix TEST AUROC **0.8494**, and pooled inherited-vs.-recovered Prefix AUROC **0.7660**. Joint VAL selects L49, epoch 3. See the [five-domain results and provenance](k_design/README.md#original-a2-domain-extension). Unfinished domains remain empty.
+Multi-hop is independently CPU verified: Step TEST AUROC **0.9128**, Prefix TEST AUROC **0.8494**, and pooled inherited-vs.-recovered Prefix AUROC **0.7660**. Joint VAL selects L49, epoch 3. See the [five-domain results and provenance](k_design/README.md#original-a2-domain-extension). Science is also CPU verified: Step TEST AUROC **0.8218**, Prefix TEST AUROC **0.7650**, and pooled inherited-vs.-recovered Prefix AUROC **0.7363** (L46, epoch 1). Math remains empty.
