@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A2 figures for the 2026-11-18 weekly report: the framework schematic and the Step/Prefix comparison.
+"""A2 Step/Prefix comparison figure for the 2026-11-18 weekly report (the schematic is in 2026-11-18_dataset_a2.py).
 
 Numbers are copied from published TEST results in this repository (Qwen3.8-27B, single seed 42, VAL-selected layer):
 - A2 fixed: experiments/qwen_c18_a2_series_20261115/README.md (Frozen TEST comparison).
@@ -42,44 +42,6 @@ def save(fig, name):
     print("wrote", OUT / name)
 
 
-def framework():
-    fig, ax = plt.subplots(figsize=(10.4, 4.6), dpi=200)
-    fig.subplots_adjust(0, 0, 1, 1)
-    ax.set_xlim(0, 13); ax.set_ylim(0, 5.75); ax.axis("off")
-    # input: the reasoning so far, earlier steps and the current step
-    ax.text(0.1, 5.45, "Reasoning visible at step $t$", fontsize=12.5, color=INK2, va="center")
-    xs = [0.1, 1.0, 1.9]
-    for x, lab in zip(xs, ["$S_1$", "$\\cdots$", "$S_{t-1}$"]):
-        box(ax, x, 4.55, 0.8, 0.6, lab, fc=CLEAN_FILL, ec=LINE)
-    box(ax, 2.95, 4.55, 1.05, 0.6, "$S_t$", fc=RAISE, ec=NEW, lw=1.6, color=NEW)
-    # Step branch (current step)
-    box(ax, 4.75, 4.45, 2.2, 0.8, "Step exp. pooling\n$e_t$")
-    box(ax, 7.7, 4.45, 2.1, 0.8, "Step head\n$q_t=\\sigma(w_S^\\top e_t)$", ec=NEW, color=NEW, lw=1.5)
-    arrow(ax, (4.0, 4.85), (4.75, 4.85)); arrow(ax, (6.95, 4.85), (7.7, 4.85))
-    # Prefix branch (all visible reasoning tokens)
-    ax.plot([0.1, 4.0], [4.42, 4.42], color=INK2, lw=1.0)
-    ax.plot([2.05, 2.05], [4.42, 3.1], color=INK2, lw=1.0)
-    box(ax, 4.75, 2.65, 2.2, 0.8, "Prefix exp. pooling\n$c_t$")
-    arrow(ax, (2.05, 3.05), (4.75, 3.05))
-    # error memory over earlier steps
-    ax.plot([1.4, 1.4], [4.55, 1.3], color=INHERITED, lw=1.4)
-    box(ax, 4.75, 0.6, 2.2, 1.25, "Error memory\n$g_t=\\sum_{i<t} q_i\\, e_i$", fc="#f6e3dc", ec=INHERITED, lw=1.5)
-    arrow(ax, (1.4, 1.25), (4.75, 1.25), color=INHERITED, lw=1.4)
-    ax.text(3.08, 1.42, "earlier $e_i$, weighted by\ntheir predicted $q_i$", fontsize=10.5, color=INK2, ha="center", va="bottom")
-    # conditional head
-    box(ax, 7.7, 1.55, 2.1, 1.25, "Conditional head\n$\\kappa_t=\\sigma(\\theta^\\top c_t+w^\\top g_t)$", ec=INH_TEXT, color=INK)
-    arrow(ax, (6.95, 3.05), (7.7, 2.55)); arrow(ax, (6.95, 1.25), (7.7, 1.8), color=INHERITED, lw=1.4)
-    # composition
-    box(ax, 10.55, 2.75, 2.35, 1.1, "Prefix\n$\\pi^{\\mathrm{P}}_t=q_t+(1-q_t)\\,\\kappa_t$", ec=INK, lw=1.5)
-    arrow(ax, (9.8, 4.85), (11.7, 3.85)); arrow(ax, (9.8, 2.2), (10.55, 3.05))
-    box(ax, 10.55, 4.45, 2.35, 0.8, "Step\n$\\pi^{\\mathrm{S}}_t=q_t$", ec=NEW, color=NEW, lw=1.5)
-    arrow(ax, (9.8, 4.95), (10.55, 4.95))
-    # training note
-    ax.text(10.55, 1.95, "Trained jointly with one\nthree-class loss:\nnew / inherited / clean", fontsize=10.5,
-            color=INK2, va="top")
-    save(fig, "a2_framework.png")
-
-
 def results():
     domains = ["Logic", "Factuality"]
     panels = [
@@ -115,5 +77,4 @@ def results():
 INH_TEXT = "#b0664f"
 
 if __name__ == "__main__":
-    framework()
     results()
