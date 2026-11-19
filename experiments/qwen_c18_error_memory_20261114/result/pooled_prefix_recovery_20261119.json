@@ -107,5 +107,12 @@
       "sha256": "3fb300f09c1d9d0d58fe262db472d7a8f17e91717838c77787fa455f0825dbbf"
     }
   ],
-  "analysis_source_SHA256": "f67b065008d399ec1eed8d4eb630e2d783a42eb60d169d81d2f040d6adb31f73"
+  "analysis_source_SHA256": "f67b065008d399ec1eed8d4eb630e2d783a42eb60d169d81d2f040d6adb31f73",
+  "executed_analysis_source_SHA256": "f67b065008d399ec1eed8d4eb630e2d783a42eb60d169d81d2f040d6adb31f73",
+  "portable_analysis_source_SHA256": "6414bd36d2c89eb97841f459ac69349c114a7cb8d2f9a494550c630dfe413252",
+  "source_provenance": "analysis_source_SHA256 identifies the original executed script; portable_analysis_source_SHA256 identifies the published script with only project/repository paths parameterized. Computation and recorded results are unchanged.",
+  "required_environment": [
+    "STREAMING_HD_PRIVATE_PROJECT",
+    "STREAMING_HD_REPOSITORY"
+  ]
 }
