@@ -18,8 +18,8 @@ Evaluate the original Global Mean linear readout on independent Answer annotatio
 
 | Configuration | Math | Science | Logic | Multi-hop | Fact |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DS Global Mean |  |  | 82.71 |  |  |
-| Gemma Global Mean | **92.18** |  |  |  | **94.29** |
-| Qwen Global Mean |  |  | **94.56** | **88.99** | 92.37 |
+| DS Global Mean | 91.98 |  | 82.71 | 83.97 | 81.39 |
+| Gemma Global Mean | 92.18 | 62.90 | **95.47** | 84.29 | **94.29** |
+| Qwen Global Mean | **92.93** | **73.57** | 94.56 | **88.99** | 92.37 |
 
 Full-precision primary and secondary metrics, selected layers, frozen thresholds and verification hashes are in [the result index](result/index.json). Unfinished cells remain empty. Compatible label-independent features were reused by exact identity; missing features were extracted only as needed. No datasets, native feature banks, detector weights or prediction arrays are included.
