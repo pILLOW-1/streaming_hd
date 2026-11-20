@@ -279,9 +279,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 </tbody></table>
 
-Positive recovery positions are inherited errors (Step clean, Prefix erroneous). Negative positions are recovered (Step clean, Prefix clean, with an earlier retained erroneous Prefix). Rank by the final Prefix score and pool positions across all TEST trajectories.
-
-<h2>Recovery Prefix-level (pooled AUROC)</h2>
+<h2>Answer-level (AUROC)</h2>
 <table>
 <thead><tr><th rowspan="2">Method</th>
 <th colspan="5">DS-L8</th>
@@ -322,7 +320,7 @@ Positive recovery positions are inherited errors (Step clean, Prefix erroneous).
 <td></td>
 <td></td>
 </tr>
-<tr><td>ICR Probe</td>
+<tr><td>ARS</td>
 <td></td>
 <td></td>
 <td></td>
@@ -339,7 +337,41 @@ Positive recovery positions are inherited errors (Step clean, Prefix erroneous).
 <td></td>
 <td></td>
 </tr>
-<tr><td>LLM-Check</td>
+<tr><td>RHD</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>RACE</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>ReDe</td>
 <td></td>
 <td></td>
 <td></td>
@@ -385,27 +417,10 @@ Positive recovery positions are inherited errors (Step clean, Prefix erroneous).
 <td></td>
 <td></td>
 <td></td>
-<td><strong>72.49</strong></td>
-<td>70.02</td>
-<td><strong>79.55</strong></td>
-<td>75.77</td>
-</tr>
-<tr><td>A2</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><strong>73.39</strong></td>
-<td></td>
-<td><strong>79.07</strong></td>
 </tr>
 <tr><td>Ours</td>
 <td></td>
