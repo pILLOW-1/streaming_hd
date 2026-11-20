@@ -18,7 +18,16 @@
       "verified_levels": [
         "step"
       ]
+    },
+    {
+      "generator": "qwen3_8_27b",
+      "domain": "Math",
+      "file": "qwen_math_prefix.json",
+      "SHA256": "1ae5f4b0e55e06f7e95c14fffd7765800bc1f89312a03546386ec11a7219c653",
+      "verified_levels": [
+        "prefix"
+      ]
     }
   ],
-  "Math": "Step independently accepted; Prefix has no complete TEST and remains unavailable."
+  "Math": "Step and Prefix independently accepted; each selected TEST evaluated once."
 }

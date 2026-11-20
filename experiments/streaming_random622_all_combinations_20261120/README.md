@@ -27,9 +27,11 @@ Assess the original Streaming detector on an unconstrained question-family rando
 
 | Configuration | Math | Science | Logic | Multi-hop | Fact |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Original Streaming — AUROC (%) | | **77.14** | | | |
-| Original Streaming — AP (%) | | **73.76** | | | |
+| Original Streaming — AUROC (%) | **78.20** | **77.14** | | | |
+| Original Streaming — AP (%) | **60.82** | **73.76** | | | |
 
-Published completed results are Qwen Science Step/Prefix and Qwen Math Step. Math Prefix has no complete TEST and remains blank. Previously published Logic, Fact and Multi-hop comparisons remain in the [random-split comparison](../../reports/main_result/comparison_random_split_candidate.md). Full-precision metrics, selected layers/updates, frozen VAL thresholds and verification hashes are in [the result index](result/index.json). No samples, hidden states, trained weights or saved predictions are included.
+Published completed results are Qwen Science and Math, each at Step and Prefix levels. Previously published Logic, Fact and Multi-hop comparisons remain in the [random-split comparison](../../reports/main_result/comparison_random_split_candidate.md). Full-precision metrics, selected layers/updates, frozen VAL thresholds and verification hashes are in [the result index](result/index.json). No samples, hidden states, trained weights or saved predictions are included.
 
 The Math Step configuration is recorded separately in [config_math_step.json](config_math_step.json); its detector uses the same original model-specific recipe.
+
+The Math Prefix configuration is recorded in [config_math_prefix.json](config_math_prefix.json). Its Step teacher is the independently selected Math Step checkpoint; no Step fitting or TEST was repeated for this continuation.
