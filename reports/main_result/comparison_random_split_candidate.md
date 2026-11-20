@@ -39,17 +39,6 @@ Positive positions are inherited errors: Step clean, Prefix erroneous. Negative 
 | Qwen / Streaming | 0.7002 | 0.7577 |  |  | 0.7955 |
 | Qwen / A2 | **0.7339** | **0.7907** |  |  |  |
 
-## Recovery Prefix TEST AUROC: within trajectory
-
-Use the same positive/negative definitions, compute AUROC separately in each trajectory containing both classes, then average trajectories equally. No cross-trajectory pairs. Eligible trajectories: Qwen Logic 74, Factuality 67, Multi-hop 107.
-
-| Model / method | Logic | Factuality | Science | Math | Multi-hop |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek / Streaming |  |  |  |  |  |
-| Gemma / Streaming |  |  |  |  |  |
-| Qwen / Streaming | 0.5028 | 0.4832 |  |  | 0.5661 |
-| Qwen / A2 | **0.5576** | **0.5164** |  |  |  |
-
 ## Verification and status
 
 - Qwen Logic/Factuality: Streaming and A2 independently accepted on Cetus; RunPod instances stopped.
