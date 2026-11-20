@@ -306,7 +306,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>SAPLMA</td>
 <td></td>
 <td></td>
-<td></td>
+<td><strong>83.10</strong></td>
 <td></td>
 <td></td>
 <td></td>
@@ -374,7 +374,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Global Mean</td>
 <td></td>
 <td></td>
-<td><strong>82.71</strong></td>
+<td>82.71</td>
 <td></td>
 <td></td>
 <td></td>
