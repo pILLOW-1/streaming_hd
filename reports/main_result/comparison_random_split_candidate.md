@@ -1,47 +1,427 @@
-# Random 6:2:2 split: candidate comparison
+# Main comparison: random 6:2:2 split
 
-This report tracks the current random-split experiments. Only completed results independently verified from saved TEST predictions are shown; empty cells are unfinished. Bold identifies the best verified method within the same generator and domain, using full precision.
+Unconstrained random 6:2:2 split of whole question families, seed 42; no label or recovery stratification. This is an exploratory re-split of previously inspected data, not a new blind external evaluation.
 
-## Protocol
+AUROC (%), higher is better. Bold marks the highest available AUROC in each column within each level, compared before rounding; exact ties are all bold. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers, weights and decision thresholds are selected on VAL.
 
-- Split whole question families independently within each generator/domain: sort family IDs, shuffle once with Python `Random(42)`, then cut at `floor(0.6 G)` and `floor(0.8 G)`. No label/recovery stratification or seed search; all trajectories are retained.
-- Train fresh detectors. Reuse only source-bound native backbone features. Preserve the original recovery-enriched p70 split.
-- Streaming uses its original training recipe and independent Step/Prefix VAL selection. A2 uses its original three-class CE and joint mean Step/Prefix VAL selection. Thresholds come from VAL; each frozen selected TEST model is evaluated once. Saved-prediction CPU acceptance does not replay the models.
-- This is an exploratory re-split of previously inspected data, not a newly collected blind test. Direct comparisons below use the same random split, not the historical p70 TEST set.
-- [Exact split IDs and portable reader](https://huggingface.co/datasets/pillow-streaming/streaming-hd-v1/tree/1b86c98bca0e59d67b5c2d208d1d56b3db0e129e/random_622_seed42) (private dataset access required).
+[Exact split IDs and portable reader](https://huggingface.co/datasets/pillow-streaming/streaming-hd-v1/tree/1b86c98bca0e59d67b5c2d208d1d56b3db0e129e/random_622_seed42) (private dataset access required). Historical p70 results belong to the separate [main comparison](comparison.md). [Science configuration and verified results](../../experiments/streaming_random622_all_combinations_20261120/README.md).
 
-## Step TEST AUROC
+<h2>Step-level (AUROC)</h2>
+<table>
+<thead><tr><th rowspan="2">Method</th>
+<th colspan="5">DS-L8</th>
+<th colspan="5">Gemma-4-31B-it</th>
+<th colspan="5">Qwen3.8-27B</th>
+</tr><tr>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+</tr></thead>
+<tbody>
+<tr><td>SAPLMA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>HaMI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>Global Mean</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>Streaming</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>82.09</strong></td>
+<td>87.73</td>
+<td><strong>93.34</strong></td>
+<td>89.63</td>
+</tr>
+<tr><td>A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>88.90</strong></td>
+<td></td>
+<td><strong>90.24</strong></td>
+</tr>
+<tr><td>Ours</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 
-| Model / method | Logic | Factuality | Science | Math | Multi-hop |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek / Streaming |  |  |  |  |  |
-| Gemma / Streaming |  |  |  |  |  |
-| Qwen / Streaming | 0.8773 | 0.8963 |  |  | 0.9334 |
-| Qwen / A2 | **0.8890** | **0.9024** |  |  |  |
+<h2>Prefix-level (AUROC)</h2>
+<table>
+<thead><tr><th rowspan="2">Method</th>
+<th colspan="5">DS-L8</th>
+<th colspan="5">Gemma-4-31B-it</th>
+<th colspan="5">Qwen3.8-27B</th>
+</tr><tr>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+</tr></thead>
+<tbody>
+<tr><td>SAPLMA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>ICR Probe</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>LLM-Check</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>Global Mean</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>Streaming</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>77.14</strong></td>
+<td>87.07</td>
+<td><strong>90.24</strong></td>
+<td>89.66</td>
+</tr>
+<tr><td>A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>88.69</strong></td>
+<td></td>
+<td><strong>91.48</strong></td>
+</tr>
+<tr><td>Ours</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 
-## Prefix TEST AUROC
+Positive recovery positions are inherited errors (Step clean, Prefix erroneous). Negative positions are recovered (Step clean, Prefix clean, with an earlier retained erroneous Prefix). Rank by the final Prefix score and pool positions across all TEST trajectories.
 
-| Model / method | Logic | Factuality | Science | Math | Multi-hop |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek / Streaming |  |  |  |  |  |
-| Gemma / Streaming |  |  |  |  |  |
-| Qwen / Streaming | 0.8707 | 0.8966 |  |  | 0.9024 |
-| Qwen / A2 | **0.8869** | **0.9148** |  |  |  |
-
-## Recovery Prefix TEST AUROC: pooled
-
-Positive positions are inherited errors: Step clean, Prefix erroneous. Negative positions are recovered: Step clean, Prefix clean, with at least one earlier retained erroneous Prefix. Rank by the final Prefix score, with higher scores indicating error. Pool these positions across all TEST trajectories; no within-trajectory restriction.
-
-| Model / method | Logic | Factuality | Science | Math | Multi-hop |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek / Streaming |  |  |  |  |  |
-| Gemma / Streaming |  |  |  |  |  |
-| Qwen / Streaming | 0.7002 | 0.7577 |  |  | 0.7955 |
-| Qwen / A2 | **0.7339** | **0.7907** |  |  |  |
-
-## Verification and status
-
-- Qwen Logic/Factuality: Streaming and A2 independently accepted on Cetus; RunPod instances stopped.
-- Qwen Multi-hop: Streaming Step and Prefix independently accepted; PBS job `342179.hpc-head01` finished with exit 0. Selected Step L51/update 28; Prefix L64/epoch 1.
-- Qwen Science/Math: still running. DeepSeek/Gemma results remain empty until source recovery and independent acceptance are complete.
-- Private evidence identities: `qwen_random622_streaming_a2_20261120` and `streaming_random622_all_combinations_20261120`. Acceptance receipts, prediction/checkpoint hashes and frozen split provenance stay with their corresponding Cetus runs. No samples, feature banks, predictions or trained weights are included in this report.
+<h2>Recovery Prefix-level (pooled AUROC)</h2>
+<table>
+<thead><tr><th rowspan="2">Method</th>
+<th colspan="5">DS-L8</th>
+<th colspan="5">Gemma-4-31B-it</th>
+<th colspan="5">Qwen3.8-27B</th>
+</tr><tr>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+<th>Math</th>
+<th>Science</th>
+<th>Logic</th>
+<th>Multi-hop</th>
+<th>Fact</th>
+</tr></thead>
+<tbody>
+<tr><td>SAPLMA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>ICR Probe</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>LLM-Check</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>Global Mean</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>Streaming</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>72.49</strong></td>
+<td>70.02</td>
+<td><strong>79.55</strong></td>
+<td>75.77</td>
+</tr>
+<tr><td>A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>73.39</strong></td>
+<td></td>
+<td><strong>79.07</strong></td>
+</tr>
+<tr><td>Ours</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>

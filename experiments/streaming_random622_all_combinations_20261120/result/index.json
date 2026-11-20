@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "generator": "qwen3_8_27b",
+      "domain": "Science",
+      "file": "qwen_science.json",
+      "SHA256": "21ca44c9a32a47fe6335aa8134df6042e8532c0ff1026a7d671a8c459db5925d",
+      "verified_levels": [
+        "step",
+        "prefix"
+      ]
+    }
+  ],
+  "Math": "No complete saved TEST; results remain unavailable."
+}

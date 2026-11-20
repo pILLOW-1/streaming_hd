@@ -1,0 +1,92 @@
+{
+  "configuration": "Original Streaming",
+  "split": "unconstrained_random_622_seed42",
+  "generator": "qwen3_8_27b",
+  "domain": "Science",
+  "levels": {
+    "step": {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "arm": "step",
+      "metrics": {
+        "AUROC": 0.8209322441381826,
+        "AP": 0.2490920074719399,
+        "ACC": 0.8739587020648968,
+        "F1": 0.3075327369376378,
+        "precision": 0.21926418931410613,
+        "recall": 0.5147569444444444,
+        "FPR": 0.10538793641286716,
+        "TP": 1186,
+        "FP": 4223,
+        "TN": 35848,
+        "FN": 1118,
+        "steps": 42375,
+        "positive": 2304,
+        "negative": 40071,
+        "missing": 0,
+        "threshold": 0.09534111618995667,
+        "TPR_at_1pct_FPR": 0.12630208333333334
+      },
+      "threshold": 0.09534111618995667,
+      "plan_SHA256": "09125c6b32772e031facf942142f53ea90fd638113a496731bdd7d07fe256b10",
+      "prediction_SHA256": "362c95381a4740e4c9c477195ac64986626ed0f202eca4d92010f3f44a20a64b",
+      "model_replay": "WAIVED_BY_DIRECT_HUMAN_NOT_PASS",
+      "validated_candidate_layers": 64,
+      "val_threshold_and_strict_global_selection_checked": true,
+      "selection": {
+        "layer": 51,
+        "weight": 25,
+        "AUROC": 0.8136567688144654,
+        "AP": 0.20313631688950112,
+        "checkpoint_SHA256": "6efcfa007b287c018eb66a7fb2681e155e979b60380f0600743caf188eff2a12"
+      },
+      "acceptance_SHA256": "6c3cc4b651ccbcff83e00d9581c136284ebb9592588335b9fb4302581bd6562d"
+    },
+    "prefix": {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "arm": "prefix",
+      "metrics": {
+        "AUROC": 0.7713633593656037,
+        "AP": 0.7375664272984414,
+        "ACC": 0.6750442477876106,
+        "F1": 0.7138403990024937,
+        "precision": 0.6176946592339507,
+        "recall": 0.8454344080728525,
+        "FPR": 0.4818676337262013,
+        "TP": 17175,
+        "FP": 10630,
+        "TN": 11430,
+        "FN": 3140,
+        "steps": 42375,
+        "positive": 20315,
+        "negative": 22060,
+        "missing": 0,
+        "threshold": 0.3037060797214508,
+        "TPR_at_1pct_FPR": 0.07831651489047502
+      },
+      "threshold": 0.3037060797214508,
+      "plan_SHA256": "09125c6b32772e031facf942142f53ea90fd638113a496731bdd7d07fe256b10",
+      "prediction_SHA256": "efb1b9309c0100ae14d38024f2f0784827f09fa2eed9b0769b4d4e06a413821f",
+      "model_replay": "WAIVED_BY_DIRECT_HUMAN_NOT_PASS",
+      "validated_candidate_layers": 64,
+      "val_threshold_and_strict_global_selection_checked": true,
+      "selection": {
+        "layer": 51,
+        "weight": 1,
+        "AUROC": 0.7761995746621435,
+        "AP": 0.6351363682404034,
+        "checkpoint_SHA256": "a34859c6fb3c602fd2b35dd42dc9b6db9339c4e9b8081f04f128212bbd91f390"
+      },
+      "acceptance_SHA256": "1e9b34149bed29cca26e6ecf71e6236293e5d47ff3bec0ff63634b13e2fe52af",
+      "recovery": {
+        "definition": "Inherited Y0 C1 positive; recovered Y0 C0 with earlier retained Prefix C1 negative; final Prefix score. Pooled uses all TEST trajectories; within is unweighted trajectory macro with both classes.",
+        "pooled_AUROC": 0.7248714488138932,
+        "inherited_positions": 18011,
+        "recovered_positions": 17471
+      }
+    }
+  }
+}
