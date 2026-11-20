@@ -86,6 +86,49 @@
       "evaluated_producer_SHA256": "6bea5905b4e241a2513157332137bbeb2cf924cd140fa48383e4c2f7ea6fdb52",
       "native_adapter_SHA256": "175b3f6cd86fbd13448a3f3a4776548beb46cfc65174976cb2820ec48d605cd0",
       "source_contract_SHA256": "114224a0b5a4447e8ee494565e515832cbbc779f4538cd4d5f0d50d18bdf61be"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "method": "llm_check",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.6831789474565031,
+        "AP": 0.7530138358605145,
+        "ACC": 0.6222335283642839,
+        "F1": 0.6787800129785854,
+        "precision": 0.6378048780487805,
+        "recall": 0.7253814147018031,
+        "FPR": 0.5039592760180995,
+        "TP": 1569,
+        "FP": 891,
+        "TN": 877,
+        "FN": 594,
+        "steps": 3931,
+        "positive": 2163,
+        "negative": 1768,
+        "missing": 0,
+        "threshold": 170.97919864723997,
+        "TPR_at_1pct_FPR": 0.1650485436893204
+      },
+      "selection": {
+        "layer": 28,
+        "AUROC": 0.654500502779555,
+        "AP": 0.5835478922349158
+      },
+      "threshold": 170.97919864723997,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "c81669257987ea0acfe53a2d97b572d97d37c9a3ee1b05e1616348cafd85da43",
+      "all_VAL_candidate_scores_SHA256": "4e414bf55a0f6784a548282bb86595f2ee01ed5de010b5882ffa5da698821dc7",
+      "validated_candidate_layers": 32,
+      "native_decoder_layer_count": 32,
+      "score_sign": -1,
+      "no_model_replay": true,
+      "acceptance_SHA256": "251bad04cf6a223289882f92dea6d2101ee073c3a4dcaef872de79f9d2bf93df",
+      "evaluated_producer_SHA256": "6bea5905b4e241a2513157332137bbeb2cf924cd140fa48383e4c2f7ea6fdb52",
+      "native_adapter_SHA256": "175b3f6cd86fbd13448a3f3a4776548beb46cfc65174976cb2820ec48d605cd0",
+      "source_contract_SHA256": "baaf7a0aea66692f422ab1470a34bf9e37fc3916fe3f330f8924652d62f38295"
     }
   ]
 }

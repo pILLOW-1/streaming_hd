@@ -8,7 +8,7 @@ Evaluate the original Global Mean linear readout on independent Answer annotatio
 
 | Training parameter | Setting |
 | --- | --- |
-| Seed / layers | 42 / all 32 DeepSeek or 64 Qwen layers |
+| Seed / layers | 42 / all 32 DeepSeek, 60 Gemma or 64 Qwen layers |
 | Optimizer | Original observed L-BFGS, lr 1, max_iter 100, strong Wolfe |
 | Layer and weight selection | Complete own VAL AUROC, then AP, then lower BCE |
 | Decision threshold | Own Answer VAL F1max; strict score > threshold |
@@ -18,7 +18,8 @@ Evaluate the original Global Mean linear readout on independent Answer annotatio
 
 | Configuration | Math | Science | Logic | Multi-hop | Fact |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DS Global Mean | | | **82.71** | | |
-| Qwen Global Mean | | | **94.56** | **88.99** | **92.37** |
+| DS Global Mean |  |  | 82.71 |  |  |
+| Gemma Global Mean | **92.18** |  |  |  | **94.29** |
+| Qwen Global Mean |  |  | **94.56** | **88.99** | 92.37 |
 
 Full-precision primary and secondary metrics, selected layers, frozen thresholds and verification hashes are in [the result index](result/index.json). Unfinished cells remain empty. Compatible label-independent features were reused by exact identity; missing features were extracted only as needed. No datasets, native feature banks, detector weights or prediction arrays are included.
