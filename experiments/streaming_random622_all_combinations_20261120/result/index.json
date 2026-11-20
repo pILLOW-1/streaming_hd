@@ -9,7 +9,16 @@
         "step",
         "prefix"
       ]
+    },
+    {
+      "generator": "qwen3_8_27b",
+      "domain": "Math",
+      "file": "qwen_math_step.json",
+      "SHA256": "1ecba8b5a65170ef2fd4dcae1d2b1dbe6d1795edbb21ba99bbc5a541cf0d7813",
+      "verified_levels": [
+        "step"
+      ]
     }
   ],
-  "Math": "No complete saved TEST; results remain unavailable."
+  "Math": "Step independently accepted; Prefix has no complete TEST and remains unavailable."
 }

@@ -1,0 +1,47 @@
+{
+  "configuration": "Original Streaming",
+  "split": "unconstrained_random_622_seed42",
+  "generator": "qwen3_8_27b",
+  "domain": "Math",
+  "levels": {
+    "step": {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "arm": "step",
+      "metrics": {
+        "AUROC": 0.7892795086638186,
+        "AP": 0.21788775835242552,
+        "ACC": 0.8891715694069009,
+        "F1": 0.29001138474444244,
+        "precision": 0.2343144848954299,
+        "recall": 0.3804433265209873,
+        "FPR": 0.07864587477126263,
+        "TP": 2420,
+        "FP": 7908,
+        "TN": 92644,
+        "FN": 3941,
+        "steps": 106913,
+        "positive": 6361,
+        "negative": 100552,
+        "missing": 0,
+        "threshold": 0.12106812745332718,
+        "TPR_at_1pct_FPR": 0.09684011947806949
+      },
+      "threshold": 0.12106812745332718,
+      "plan_SHA256": "09125c6b32772e031facf942142f53ea90fd638113a496731bdd7d07fe256b10",
+      "prediction_SHA256": "8b61a92633947b171753966b3f622a4ca8da7e9439541f91aa1a8ea8d401ae87",
+      "model_replay": "WAIVED_BY_DIRECT_HUMAN_NOT_PASS",
+      "validated_candidate_layers": 64,
+      "val_threshold_and_strict_global_selection_checked": true,
+      "selection": {
+        "layer": 51,
+        "weight": 27,
+        "AUROC": 0.7791395682085455,
+        "AP": 0.21610103866166236,
+        "checkpoint_SHA256": "d3843d46956aa04ff529fedb1fcc540befc18de1c563dbb53f6024de390b88e1"
+      },
+      "acceptance_SHA256": "50ed2ef4b3a34bb5968a6efb1c0225927675dbd3ad01596e895964c331c07393"
+    }
+  }
+}
