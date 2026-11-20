@@ -4,7 +4,7 @@ Unconstrained random 6:2:2 split of whole question families, seed 42; no label o
 
 AUROC (%), higher is better. Bold marks the highest available AUROC in each column within each level, compared before rounding; exact ties are all bold. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers, weights and decision thresholds are selected on VAL.
 
-[Exact split IDs and portable reader](https://huggingface.co/datasets/pillow-streaming/streaming-hd-v1/tree/1b86c98bca0e59d67b5c2d208d1d56b3db0e129e/random_622_seed42) (private dataset access required). Historical p70 results belong to the separate [main comparison](comparison.md). [Science configuration and verified results](../../experiments/streaming_random622_all_combinations_20261120/README.md).
+[Exact split IDs and portable reader](https://huggingface.co/datasets/pillow-streaming/streaming-hd-v1/tree/1b86c98bca0e59d67b5c2d208d1d56b3db0e129e/random_622_seed42) (private dataset access required). Historical p70 results belong to the separate [main comparison](comparison.md). [Streaming configuration and verified results](../../experiments/streaming_random622_all_combinations_20261120/README.md).
 
 <h2>Step-level (AUROC)</h2>
 <table>
@@ -88,10 +88,10 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>77.80</strong></td>
+<td><strong>86.24</strong></td>
+<td><strong>86.35</strong></td>
+<td><strong>85.45</strong></td>
 <td><strong>78.93</strong></td>
 <td><strong>82.09</strong></td>
 <td>87.73</td>
@@ -233,10 +233,10 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>80.67</strong></td>
+<td><strong>86.01</strong></td>
+<td><strong>88.59</strong></td>
+<td><strong>89.96</strong></td>
 <td><strong>78.20</strong></td>
 <td><strong>77.14</strong></td>
 <td>87.07</td>
@@ -384,9 +384,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>94.56</strong></td>
+<td><strong>88.99</strong></td>
+<td><strong>92.37</strong></td>
 </tr>
 <tr><td>Streaming</td>
 <td></td>
@@ -395,15 +395,15 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>57.81</strong></td>
+<td><strong>93.39</strong></td>
+<td><strong>70.59</strong></td>
+<td><strong>88.76</strong></td>
+<td><strong>85.14</strong></td>
+<td><strong>67.16</strong></td>
+<td>90.32</td>
+<td>80.50</td>
+<td>83.05</td>
 </tr>
 <tr><td>Ours</td>
 <td></td>
@@ -423,3 +423,5 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 </tr>
 </tbody></table>
+
+Streaming Answer uses the last retained Prefix score. Qwen Logic and Fact Answer primary metrics are independently verified; their VAL-derived thresholds and ACC/F1 are unavailable. [Streaming results](../../experiments/streaming_random622_all_combinations_20261120/result/accepted_cells.json). [Global Mean Answer protocol and results](../../experiments/global_mean/random622_20261120/README.md).

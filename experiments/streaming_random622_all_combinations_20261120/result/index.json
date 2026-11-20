@@ -27,6 +27,12 @@
       "verified_levels": [
         "prefix"
       ]
+    },
+    {
+      "file": "accepted_cells.json",
+      "SHA256": "db9b9d678a0d7f121bd4e66b5f6103e83ad52726ee43109f3b514024e5e08582",
+      "verified_level_cells": 27,
+      "primary_only_answer_cells": 2
     }
   ],
   "Math": "Step and Prefix independently accepted; each selected TEST evaluated once."
