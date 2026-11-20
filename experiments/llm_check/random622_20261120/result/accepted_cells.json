@@ -1,0 +1,45 @@
+{
+  "split": "unconstrained_random_622_seed42",
+  "results": [
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "method": "llm_check",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.792810723258725,
+        "AP": 0.677776472789334,
+        "ACC": 0.7465261695229273,
+        "F1": 0.6122232063773251,
+        "precision": 0.5671151952740401,
+        "recall": 0.6651270207852193,
+        "FPR": 0.21844981782047035,
+        "TP": 1728,
+        "FP": 1319,
+        "TN": 4719,
+        "FN": 870,
+        "steps": 8636,
+        "positive": 2598,
+        "negative": 6038,
+        "missing": 0,
+        "threshold": 108.7817122402677,
+        "TPR_at_1pct_FPR": 0.21670515781370284
+      },
+      "selection": {
+        "layer": 32,
+        "AUROC": 0.8422761333112697,
+        "AP": 0.796005262723734
+      },
+      "threshold": 108.7817122402677,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "6e1fad3bc435dcbc025ca5d6bc686836ee12c90105d1a960a6d7cd7572e12894",
+      "all_VAL_candidate_scores_SHA256": "a085e6ead83832100f5661e4f8c169f3c74fa78d4db34e92fe6ebbf079fd46fa",
+      "validated_candidate_layers": 32,
+      "native_decoder_layer_count": 32,
+      "score_sign": -1,
+      "no_model_replay": true,
+      "acceptance_SHA256": "722c19a32d277bedaa098a7255dbfd88f75d37aed0cadc22206f97dcf69041d5"
+    }
+  ]
+}

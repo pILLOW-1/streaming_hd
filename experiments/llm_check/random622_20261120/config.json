@@ -1,0 +1,24 @@
+{
+  "method": "llm_check",
+  "level": "prefix",
+  "score_sign": -1,
+  "training": "No detector training",
+  "selection": "Own complete VAL AUROC then AP over all original eligible full-attention layers",
+  "threshold": "Own VAL F1max, strict score > threshold; precision then largest threshold ties",
+  "TEST": "Selected layer once; independent CPU full-VAL candidate, ID, label, source-hash, threshold and TEST metric verification",
+  "input_rebinding": "Exact existing question-family random622 assignment; original canonical native inputs and independent annotations unchanged",
+  "implementation": "Pinned original attention statistic and native diagonal adapter; read-only split reader and raw scalar cache projection added; arithmetic unchanged",
+  "hybrid_attention": "Only genuine full-attention layers; no reconstructed linear-attention scores",
+  "implementation_SHA256": {
+    "run_llm_check.py": "30e945c1b02c282e02eb9ba9c9c28358c5cc5321fd3c5119afa5e570ef6e5b2d",
+    "run_llm_check_random.py": "6bea5905b4e241a2513157332137bbeb2cf924cd140fa48383e4c2f7ea6fdb52",
+    "random_split_view.py": "ac25530174111d746795494436121d51c1629b6f1f26990ca7538fa6b4ea312d",
+    "native_diagonal.py": "175b3f6cd86fbd13448a3f3a4776548beb46cfc65174976cb2820ec48d605cd0",
+    "kernel.py": "b9a44e7ab05166d18f0ed75df552bb66a91939deb9e526b9f540222426a1f030",
+    "llm_check.prefix.json": "fc38a89f996671900f84bd79d563d0070a5b9a31015e6072493f5b762b06ace8",
+    "llmc_cache_reuse.py": "ccf8dd2883f778f9dcb694b2c1c3bf84299ad4c8c815b4b6825689e4e49d3e5e",
+    "export_llmc_cache.py": "654dd88be9a4d33e4a2cb291c67a603dc9f2802e96c9b8163518e20a92d4fff2",
+    "llm_check_launch.py": "a0f061c11ed89dfc2cecc0d6942912c0c5675b6371a332130e22f2f8ca4a59bc",
+    "accept_llmc_random.py": "d9e0ee1d21be88e49293b6e5a80a698c6ca08f04ad84a5e98728cde22a7a9014"
+  }
+}
