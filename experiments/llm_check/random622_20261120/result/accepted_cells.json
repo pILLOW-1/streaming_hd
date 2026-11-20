@@ -4,6 +4,49 @@
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "method": "llm_check",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.6044735266444273,
+        "AP": 0.5204922775799302,
+        "ACC": 0.5035561877667141,
+        "F1": 0.5496774193548387,
+        "precision": 0.42178217821782177,
+        "recall": 0.7888888888888889,
+        "FPR": 0.674364896073903,
+        "TP": 213,
+        "FP": 292,
+        "TN": 141,
+        "FN": 57,
+        "steps": 703,
+        "positive": 270,
+        "negative": 433,
+        "missing": 0,
+        "threshold": 193.79412960869735,
+        "TPR_at_1pct_FPR": 0.05555555555555555
+      },
+      "selection": {
+        "layer": 3,
+        "AUROC": 0.8428433237465186,
+        "AP": 0.939457882423915
+      },
+      "threshold": 193.79412960869735,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "6f26b88840a29730edb230d219a4fbda2fa91183e40a898d096c794067aed75d",
+      "all_VAL_candidate_scores_SHA256": "dcee7bf9ec8a0cad9b73c08177c81fd6530148a9afe5c975e356f389c688cfc0",
+      "validated_candidate_layers": 32,
+      "native_decoder_layer_count": 32,
+      "score_sign": -1,
+      "no_model_replay": true,
+      "acceptance_SHA256": "82e4b4dc5025e435ab0b2779315c789a0920c64ce5e397321ee36f77d856e3d0",
+      "evaluated_producer_SHA256": "6bea5905b4e241a2513157332137bbeb2cf924cd140fa48383e4c2f7ea6fdb52",
+      "native_adapter_SHA256": "175b3f6cd86fbd13448a3f3a4776548beb46cfc65174976cb2820ec48d605cd0",
+      "source_contract_SHA256": "154fdf598e0777209cbe0acd9e17d4c30acbcb198a2891ddd5e45b3c7123453c"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
       "domain": "Logic",
       "method": "llm_check",
       "level": "prefix",
@@ -39,7 +82,10 @@
       "native_decoder_layer_count": 32,
       "score_sign": -1,
       "no_model_replay": true,
-      "acceptance_SHA256": "722c19a32d277bedaa098a7255dbfd88f75d37aed0cadc22206f97dcf69041d5"
+      "acceptance_SHA256": "722c19a32d277bedaa098a7255dbfd88f75d37aed0cadc22206f97dcf69041d5",
+      "evaluated_producer_SHA256": "6bea5905b4e241a2513157332137bbeb2cf924cd140fa48383e4c2f7ea6fdb52",
+      "native_adapter_SHA256": "175b3f6cd86fbd13448a3f3a4776548beb46cfc65174976cb2820ec48d605cd0",
+      "source_contract_SHA256": "114224a0b5a4447e8ee494565e515832cbbc779f4538cd4d5f0d50d18bdf61be"
     }
   ]
 }
