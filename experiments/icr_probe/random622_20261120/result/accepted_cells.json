@@ -1,0 +1,197 @@
+{
+  "split": "unconstrained_random_622_seed42",
+  "results": [
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.6641348045505089,
+        "AP": 0.5727885341275946,
+        "ACC": 0.6116642958748222,
+        "F1": 0.542713567839196,
+        "precision": 0.4954128440366973,
+        "recall": 0.6,
+        "FPR": 0.3810623556581986,
+        "TP": 162,
+        "FP": 165,
+        "TN": 268,
+        "FN": 108,
+        "steps": 703,
+        "positive": 270,
+        "negative": 433,
+        "missing": 0,
+        "threshold": 0.4347825348377228,
+        "TPR_at_1pct_FPR": 0.05555555555555555
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 32,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.4347825348377228,
+      "prediction_SHA256": "f00df49497a5e61f042eb4d4e202bfff1a60b3eb0c671c2541307d32d2366b84",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "e1b9db7b757fc0440a7e377be33210c4bce943f24d08e466f4a6e22537305599",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "53529f5d63361556cd497aefbbf339fd0d82a4de1b1798a722df62f897830901"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8725365474652323,
+        "AP": 0.7483128034843319,
+        "ACC": 0.796780917091246,
+        "F1": 0.6974659541458369,
+        "precision": 0.6315953793318764,
+        "recall": 0.7786759045419553,
+        "FPR": 0.19542894998343824,
+        "TP": 2023,
+        "FP": 1180,
+        "TN": 4858,
+        "FN": 575,
+        "steps": 8636,
+        "positive": 2598,
+        "negative": 6038,
+        "missing": 0,
+        "threshold": 0.41088002920150757,
+        "TPR_at_1pct_FPR": 0.22555812163202463
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 32,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.41088002920150757,
+      "prediction_SHA256": "04cf7527cbf242fb716d45f420955bd03471c18e83aea19adbcf265122a47f0e",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "5c3ed8063b7e23a3a438a1fa3c8519c9b4e6e3fc08beb24b5c32e8343d8ae5ca",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "6dc8fe6401760a88fe6ab3873a28ea6b1d3b5f219dd2f9253d25004ed7c69146"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8203938408821333,
+        "AP": 0.8454793877043709,
+        "ACC": 0.7466293563978631,
+        "F1": 0.7786666666666666,
+        "precision": 0.7496790757381258,
+        "recall": 0.8099861303744799,
+        "FPR": 0.33088235294117646,
+        "TP": 1752,
+        "FP": 585,
+        "TN": 1183,
+        "FN": 411,
+        "steps": 3931,
+        "positive": 2163,
+        "negative": 1768,
+        "missing": 0,
+        "threshold": 0.428756982088089,
+        "TPR_at_1pct_FPR": 0.17753120665742025
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 32,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.428756982088089,
+      "prediction_SHA256": "4c98ddb59bcf7a27ec0078f9a8585925efd4abfe022aa4fd09aa5fab9cf6fde8",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "a610375458f59c57936aeff201a332b6057d887c79061801157730e651a6f0be",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "dbaa5d6cdea70ac4561311c88ec13c74326b37bd3bdf7542eb7f0585023c4c04"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.7533738378488108,
+        "AP": 0.5399931692465475,
+        "ACC": 0.6887851306455958,
+        "F1": 0.5950934579439252,
+        "precision": 0.5150657229524772,
+        "recall": 0.7045643153526971,
+        "FPR": 0.3187981919702207,
+        "TP": 2547,
+        "FP": 2398,
+        "TN": 5124,
+        "FN": 1068,
+        "steps": 11137,
+        "positive": 3615,
+        "negative": 7522,
+        "missing": 0,
+        "threshold": 0.4698808491230011,
+        "TPR_at_1pct_FPR": 0.04923928077455048
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 60,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.4698808491230011,
+      "prediction_SHA256": "acc724f8a906084569a6b4f23c1f2a05cc1ac507bb698b145149f5a9e2ebd303",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "2f71f4f054a3e085364c2bf6c10663a6920cd2f2ff312af48af3b127162b0f58",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "fabb0600e87e02ecf84e4c642e5c54d4030bbfcd6e0d922906345249478e7026"
+    }
+  ]
+}

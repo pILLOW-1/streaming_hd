@@ -178,11 +178,11 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>ICR Probe</td>
 <td></td>
 <td></td>
+<td><strong>87.25</strong></td>
+<td><strong>82.04</strong></td>
+<td><strong>66.41</strong></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>75.34</td>
 <td></td>
 <td></td>
 <td></td>
@@ -194,10 +194,10 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 <tr><td>LLM-Check</td>
 <td></td>
-<td></td>
-<td><strong>79.28</strong></td>
-<td><strong>68.32</strong></td>
-<td><strong>60.45</strong></td>
+<td><strong>80.52</strong></td>
+<td>79.28</td>
+<td>68.32</td>
+<td>60.45</td>
 <td><strong>78.69</strong></td>
 <td>72.40</td>
 <td>79.88</td>

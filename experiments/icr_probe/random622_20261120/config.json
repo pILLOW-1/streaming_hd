@@ -1,0 +1,22 @@
+{
+  "method": "icr_probe",
+  "level": "prefix",
+  "seed": 42,
+  "representation": "All true full-attention ICR components; original native statistic and probe unchanged",
+  "selection": "Complete own VAL AUROC, AP, lower BCE",
+  "threshold": "Complete selected VAL F1max; strict score > threshold, precision and largest threshold ties",
+  "TEST": "Frozen selected detector once; independent saved-prediction CPU verification",
+  "source_producer_SHA256": "0c6df014c77b602253d111f326e8420c6255009114244b2ad3cb20b9c32207d5",
+  "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+  "recipe": {
+    "method_key": "icr_probe",
+    "level": "prefix",
+    "layers": [
+      0
+    ],
+    "seed": 42,
+    "select_weights_by_val_auroc": true,
+    "score_sign": 1,
+    "selection_tie_breaker": "VAL_BCE"
+  }
+}
