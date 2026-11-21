@@ -1,0 +1,193 @@
+{
+  "split": "unconstrained_random_622_seed42",
+  "results": [
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.518909213331837,
+        "AP": 0.6751386138879043,
+        "ACC": 0.665,
+        "F1": 0.7938461538461539,
+        "precision": 0.671875,
+        "recall": 0.9699248120300752,
+        "FPR": 0.9402985074626866,
+        "TP": 129,
+        "FP": 63,
+        "TN": 4,
+        "FN": 4,
+        "steps": 200,
+        "positive": 133,
+        "negative": 67,
+        "missing": 0,
+        "threshold": 0.021752888957659422,
+        "TPR_at_1pct_FPR": 0.015037593984962405
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "AUROC": 0.6260395010395011,
+        "AP": 0.800621776949723,
+        "VAL_BCE": 1.0480979283044933,
+        "VAL_min": -0.013053054610888154,
+        "VAL_max": 0.6845252017180126
+      },
+      "threshold": 0.021752888957659422,
+      "prediction_SHA256": "31c427a7c7bfaf7d0be4f7c098783c49c91c9a7dd00c2a6ffd129ce077c998f2",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "ffb350562678474ca6ab5d33aeeb36c32a467c39406b2f8091e59ff89ebe6719",
+      "no_model_replay": true,
+      "acceptance_SHA256": "0b8d06791eba05c089f7b27ec4de229472a0c07a958b1e62769a0d6207594530"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Logic",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.4808362369337979,
+        "AP": 0.37948347784631603,
+        "ACC": 0.39,
+        "F1": 0.5481481481481482,
+        "precision": 0.38341968911917096,
+        "recall": 0.961038961038961,
+        "FPR": 0.967479674796748,
+        "TP": 74,
+        "FP": 119,
+        "TN": 4,
+        "FN": 3,
+        "steps": 200,
+        "positive": 77,
+        "negative": 123,
+        "missing": 0,
+        "threshold": 0.024139490984763104,
+        "TPR_at_1pct_FPR": 0.0
+      },
+      "selection": {
+        "family": 1,
+        "weights": [
+          0.38095238095238093,
+          0.42857142857142855,
+          0.0,
+          0.19047619047619047
+        ],
+        "AUROC": 0.5823076923076923,
+        "AP": 0.46745977363517344,
+        "VAL_BCE": 0.648077562771962,
+        "VAL_min": -0.024689088121437094,
+        "VAL_max": 0.35300818733956935
+      },
+      "threshold": 0.024139490984763104,
+      "prediction_SHA256": "f64dee8196799a1e2fedd34c03b724ae12b5ed8496c592b502afa9e5c2e72e3b",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "d85676ca916e78460e5278959fddcf189ca80fbb341b769804f1969f2f64e9b3",
+      "no_model_replay": true,
+      "acceptance_SHA256": "83ea8f301eff7a7f0c014013c9c2bcd74c1d821a0fce53c2f13b85d9f81825a6"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Multi-hop",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.5208470665787739,
+        "AP": 0.668449563299632,
+        "ACC": 0.6434782608695652,
+        "F1": 0.783068783068783,
+        "precision": 0.6434782608695652,
+        "recall": 1.0,
+        "FPR": 1.0,
+        "TP": 148,
+        "FP": 82,
+        "TN": 0,
+        "FN": 0,
+        "steps": 230,
+        "positive": 148,
+        "negative": 82,
+        "missing": 0,
+        "threshold": -5e-324,
+        "TPR_at_1pct_FPR": 0.0
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "AUROC": 0.5772841051314143,
+        "AP": 0.6353842543188972,
+        "VAL_BCE": 5.912971794137451,
+        "VAL_min": 0.0,
+        "VAL_max": 1.0
+      },
+      "threshold": -5e-324,
+      "prediction_SHA256": "7a3a12ff07683e3800f6a0c142aa7f2ce20af24145df7981a05eac4565a994f3",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "e95d23e712e7495ed0512c02991eaff68d90672cf254e56a1ad65997adf7529c",
+      "no_model_replay": true,
+      "acceptance_SHA256": "6d560a8040afb5136c6d219eb683516f7c4fca8d4a3965f743bf19bc1765ebb1"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.6769561284486658,
+        "AP": 0.5730926689075362,
+        "ACC": 0.51,
+        "F1": 0.5,
+        "precision": 0.3769230769230769,
+        "recall": 0.7424242424242424,
+        "FPR": 0.6044776119402985,
+        "TP": 49,
+        "FP": 81,
+        "TN": 53,
+        "FN": 17,
+        "steps": 200,
+        "positive": 66,
+        "negative": 134,
+        "missing": 0,
+        "threshold": 0.6488344050524306,
+        "TPR_at_1pct_FPR": 0.16666666666666666
+      },
+      "selection": {
+        "family": 1,
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "AUROC": 0.6116827082641885,
+        "AP": 0.4815336813954941,
+        "VAL_BCE": 0.6408704687270225,
+        "VAL_min": 0.49312599500020354,
+        "VAL_max": 1.2460318009058633
+      },
+      "threshold": 0.6488344050524306,
+      "prediction_SHA256": "f35ef3a9acb30417a9a0120f69a35125be696ecbddb702b15652b6a9f392120c",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "a94993330216e97821b39c76c1e4c38bc654c0bb4acd0cb290be465e6e64e51c",
+      "no_model_replay": true,
+      "acceptance_SHA256": "67ab7b0422b44924e75d263cba3e33d28e3fb8b06d6799f68efc563fb7fd73f6"
+    }
+  ]
+}
