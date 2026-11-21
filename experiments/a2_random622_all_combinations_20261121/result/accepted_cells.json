@@ -1,0 +1,183 @@
+{
+  "experiment_id": "a2_random622_all_combinations_20261121",
+  "scope_metric_cells": 30,
+  "baseline_scope_separate": 225,
+  "results": [
+    {
+      "status": "REUSED_PREVIOUSLY_ACCEPTED_AND_CPU_SCORES_VERIFIED",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "a2",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8889655625657203,
+        "AP": 0.2458746854792206,
+        "ACC": 0.9762543877761718,
+        "F1": 0.2721518987341772,
+        "precision": 0.30714285714285716,
+        "recall": 0.24431818181818182,
+        "FPR": 0.010199789695057833,
+        "TP": 43,
+        "FP": 97,
+        "TN": 9413,
+        "FN": 133,
+        "steps": 9686,
+        "positive": 176,
+        "negative": 9510,
+        "missing": 0,
+        "threshold": 0.2220020890235901,
+        "TPR_at_1pct_FPR": 0.24431818181818182
+      },
+      "selection": {
+        "layer": 44,
+        "epoch": 12,
+        "joint_VAL": {
+          "mean_AUROC": 0.892005260722259,
+          "mean_AP": 0.2885413326949592,
+          "mean_BCE": 0.12860744075367841,
+          "step_AUROC": 0.9312656762492766,
+          "prefix_AUROC": 0.8527448451952416
+        },
+        "checkpoint_SHA256": "c20ea20a08357311706cf1fc99d9e93504ddcac11e343dfc291f02f788630c94"
+      },
+      "prediction_SHA256": "1a9e1b94a61f9131204964659d6379c17dfe4b028c27d4936e1bdcd24f506591",
+      "historical_acceptance_SHA256": "d2bcecdfbc1edbe54188bb854b199ca6861242999e98a39eb08b4b74ef7a7a2f",
+      "source_split_SHA256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "no_fit_or_model_replay": true,
+      "threshold_source": "Immutable original TEST_COMPLETE receipt; full selected VAL arrays were not imported to Cetus and were not replayed. Original all64candidate jointVAL selection and source worker retained."
+    },
+    {
+      "status": "REUSED_PREVIOUSLY_ACCEPTED_AND_CPU_SCORES_VERIFIED",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "a2",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.886857420991096,
+        "AP": 0.5123024301425051,
+        "ACC": 0.8405946727235185,
+        "F1": 0.5396541443053071,
+        "precision": 0.42250233426704015,
+        "recall": 0.7466996699669967,
+        "FPR": 0.1459759263629927,
+        "TP": 905,
+        "FP": 1237,
+        "TN": 7237,
+        "FN": 307,
+        "steps": 9686,
+        "positive": 1212,
+        "negative": 8474,
+        "missing": 0,
+        "threshold": 0.15602023899555206,
+        "TPR_at_1pct_FPR": 0.11551155115511551
+      },
+      "selection": {
+        "layer": 44,
+        "epoch": 12,
+        "joint_VAL": {
+          "mean_AUROC": 0.892005260722259,
+          "mean_AP": 0.2885413326949592,
+          "mean_BCE": 0.12860744075367841,
+          "step_AUROC": 0.9312656762492766,
+          "prefix_AUROC": 0.8527448451952416
+        },
+        "checkpoint_SHA256": "c20ea20a08357311706cf1fc99d9e93504ddcac11e343dfc291f02f788630c94"
+      },
+      "prediction_SHA256": "1a9e1b94a61f9131204964659d6379c17dfe4b028c27d4936e1bdcd24f506591",
+      "historical_acceptance_SHA256": "d2bcecdfbc1edbe54188bb854b199ca6861242999e98a39eb08b4b74ef7a7a2f",
+      "source_split_SHA256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "no_fit_or_model_replay": true,
+      "threshold_source": "Immutable original TEST_COMPLETE receipt; full selected VAL arrays were not imported to Cetus and were not replayed. Original all64candidate jointVAL selection and source worker retained."
+    },
+    {
+      "status": "REUSED_PREVIOUSLY_ACCEPTED_AND_CPU_SCORES_VERIFIED",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "a2",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.9023747384991404,
+        "AP": 0.5004291282873256,
+        "ACC": 0.8896416083916084,
+        "F1": 0.5034414945919371,
+        "precision": 0.4273789649415693,
+        "recall": 0.6124401913875598,
+        "FPR": 0.08249158249158249,
+        "TP": 256,
+        "FP": 343,
+        "TN": 3815,
+        "FN": 162,
+        "steps": 4576,
+        "positive": 418,
+        "negative": 4158,
+        "missing": 0,
+        "threshold": 0.22488877177238464,
+        "TPR_at_1pct_FPR": 0.23205741626794257
+      },
+      "selection": {
+        "layer": 49,
+        "epoch": 4,
+        "joint_VAL": {
+          "mean_AUROC": 0.891999503183377,
+          "mean_AP": 0.668379870095968,
+          "mean_BCE": 0.3514268589786899,
+          "step_AUROC": 0.901436869940807,
+          "prefix_AUROC": 0.8825621364259468
+        },
+        "checkpoint_SHA256": "e468080c6be915d75f9070620b2e091435b5495f492591b606e29e874a9b2b35"
+      },
+      "prediction_SHA256": "9a1a600b614ec513a9ef4c6abcc84eaead647e3e3ecb6955ba4e4dfed1502c04",
+      "historical_acceptance_SHA256": "5276e56ca6c9ea404b99e27be007c673c98579c63cb03f23cb3a0e4ee0eb9fe0",
+      "source_split_SHA256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "no_fit_or_model_replay": true,
+      "threshold_source": "Immutable original TEST_COMPLETE receipt; full selected VAL arrays were not imported to Cetus and were not replayed. Original all64candidate jointVAL selection and source worker retained."
+    },
+    {
+      "status": "REUSED_PREVIOUSLY_ACCEPTED_AND_CPU_SCORES_VERIFIED",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "a2",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.9147651283721074,
+        "AP": 0.9092885734297178,
+        "ACC": 0.8374125874125874,
+        "F1": 0.8369851007887817,
+        "precision": 0.8243418213206732,
+        "recall": 0.8500222518914108,
+        "FPR": 0.17475311292400172,
+        "TP": 1910,
+        "FP": 407,
+        "TN": 1922,
+        "FN": 337,
+        "steps": 4576,
+        "positive": 2247,
+        "negative": 2329,
+        "missing": 0,
+        "threshold": 0.4027669429779053,
+        "TPR_at_1pct_FPR": 0.30129060970182464
+      },
+      "selection": {
+        "layer": 49,
+        "epoch": 4,
+        "joint_VAL": {
+          "mean_AUROC": 0.891999503183377,
+          "mean_AP": 0.668379870095968,
+          "mean_BCE": 0.3514268589786899,
+          "step_AUROC": 0.901436869940807,
+          "prefix_AUROC": 0.8825621364259468
+        },
+        "checkpoint_SHA256": "e468080c6be915d75f9070620b2e091435b5495f492591b606e29e874a9b2b35"
+      },
+      "prediction_SHA256": "9a1a600b614ec513a9ef4c6abcc84eaead647e3e3ecb6955ba4e4dfed1502c04",
+      "historical_acceptance_SHA256": "5276e56ca6c9ea404b99e27be007c673c98579c63cb03f23cb3a0e4ee0eb9fe0",
+      "source_split_SHA256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "no_fit_or_model_replay": true,
+      "threshold_source": "Immutable original TEST_COMPLETE receipt; full selected VAL arrays were not imported to Cetus and were not replayed. Original all64candidate jointVAL selection and source worker retained."
+    }
+  ]
+}

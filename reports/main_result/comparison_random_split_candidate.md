@@ -427,3 +427,5 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 Streaming Answer uses the last retained Prefix score. Qwen Logic and Fact Answer thresholds and secondary metrics use separately versioned completed VAL predictions, explicitly approved after a small historical numerical mismatch; original frozen checkpoints and saved TEST scores remain unchanged. [Streaming results](../../experiments/streaming_random622_all_combinations_20261120/result/accepted_cells.json). [Global Mean Answer protocol and results](../../experiments/global_mean/random622_20261120/README.md).
 
 RHD uses the corrected official offset-based attention-layer version; unfinished corrected cells are blank. Prior mapping results are preserved in the RHD history.
+
+A2 is an additional method campaign (30 Step/Prefix cells), separate from the 225 baseline cells. Its two accepted Qwen Logic/Factuality fits are reused; pending new cells are blank.
