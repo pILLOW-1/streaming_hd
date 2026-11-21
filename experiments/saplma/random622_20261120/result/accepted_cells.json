@@ -1720,6 +1720,86 @@
       "validated_candidate_layers": 64,
       "no_model_replay": true,
       "acceptance_SHA256": "db7ec078f70e35bf948bf2a67e789d2eeb1accb4a9fc0e5d40e690ac62954cd7"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "method": "saplma",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.7626405609831911,
+        "AP": 0.720607901095154,
+        "ACC": 0.671622418879056,
+        "F1": 0.7085192400343535,
+        "precision": 0.6166861143523921,
+        "recall": 0.8324883091311839,
+        "FPR": 0.47651858567543065,
+        "TP": 16912,
+        "FP": 10512,
+        "TN": 11548,
+        "FN": 3403,
+        "steps": 42375,
+        "positive": 20315,
+        "negative": 22060,
+        "missing": 0,
+        "threshold": 0.23607143759727478,
+        "TPR_at_1pct_FPR": 0.05970957420625154
+      },
+      "selection": {
+        "layer": 51,
+        "AUROC": 0.7743079855947277,
+        "AP": 0.6467272973009129,
+        "BCE": 0.5708855728254798,
+        "checkpoint_SHA256": "b85d6840cc2d190b7f39c8c444cc5aa107ef32e9c8e597ed60427df379cd5f5c",
+        "VAL_SHA256": "c06cf28f22eceaebf5ab567f789b9eafbfcf7c61d0fcf1d2d6a663499843ea55"
+      },
+      "threshold": 0.23607143759727478,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "5b7347ad3543a0d5497a2263d0655274376b1e292701aaead73e2799bb761480",
+      "validated_candidate_layers": 64,
+      "no_model_replay": true,
+      "acceptance_SHA256": "444188aa81a25299f163e5dba0c9a75368fb7d6896aee09372d594804db659c2"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Science",
+      "method": "saplma",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8305452104199075,
+        "AP": 0.273004453570775,
+        "ACC": 0.896259587020649,
+        "F1": 0.3241082410824108,
+        "precision": 0.2509523809523809,
+        "recall": 0.4574652777777778,
+        "FPR": 0.07851064360759652,
+        "TP": 1054,
+        "FP": 3146,
+        "TN": 36925,
+        "FN": 1250,
+        "steps": 42375,
+        "positive": 2304,
+        "negative": 40071,
+        "missing": 0,
+        "threshold": 0.14881689846515656,
+        "TPR_at_1pct_FPR": 0.14366319444444445
+      },
+      "selection": {
+        "layer": 47,
+        "AUROC": 0.829934444990007,
+        "AP": 0.23655474610014263,
+        "BCE": 0.15938919287361067,
+        "checkpoint_SHA256": "240ce26030b3114bfe61dfb922ddbf2628d7251e6ec24452d707cd3755c50b1d",
+        "VAL_SHA256": "da51fad675575bfcab1c7a85cb3fe67761bf24a6586b9ebee0b40a795c81a08d"
+      },
+      "threshold": 0.14881689846515656,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "3680f1bf8c529d6707e0fd557fee2c0e5d15d21d1fe5548df86b3c9439dfebdb",
+      "validated_candidate_layers": 64,
+      "no_model_replay": true,
+      "acceptance_SHA256": "594f81496ad13e73ed9629ab85ae9a03723dab37e1c5f56bf9e5df4ae8fd39ea"
     }
   ]
 }
