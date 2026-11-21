@@ -117,6 +117,45 @@
       "validated_candidate_layers": 32,
       "no_model_replay": true,
       "acceptance_SHA256": "7d9b24abf9339b26854662fea261815f507e3637cd93cacd5a344fe81511613c"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "method": "hami",
+      "branch": "ori",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8561841100076394,
+        "AP": 0.31326579891699463,
+        "ACC": 0.923771676300578,
+        "F1": 0.4250681198910082,
+        "precision": 0.35944700460829493,
+        "recall": 0.52,
+        "FPR": 0.05309396485867074,
+        "TP": 78,
+        "FP": 139,
+        "TN": 2479,
+        "FN": 72,
+        "steps": 2768,
+        "positive": 150,
+        "negative": 2618,
+        "missing": 0,
+        "threshold": 0.8274357318878174,
+        "TPR_at_1pct_FPR": 0.14
+      },
+      "selection": {
+        "layer": 32,
+        "AUROC": 0.8967138921684376,
+        "AP": 0.28086497375558245,
+        "VAL_BCE": 0.4100889986709587
+      },
+      "threshold": 0.8274357318878174,
+      "prediction_SHA256": "b8920e470557eec90ff574af5d8fee1001027f5b59d11672b63a63f3732c55c0",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 60,
+      "no_model_replay": true,
+      "acceptance_SHA256": "3c6b539c344326edbf8c72408d8d5061198ba2fe759e5654280c5983cf801853"
     }
   ]
 }
