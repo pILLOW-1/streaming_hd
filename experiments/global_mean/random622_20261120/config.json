@@ -1,8 +1,6 @@
 {
   "method": "global_mean",
-  "level": "answer",
   "seed": 42,
-  "pool": "FP64 mean over the visible generated reasoning and Answer tokens; excludes prompt; FP32 output",
   "normalization": "L2",
   "detector": "Linear probe",
   "optimizer": "Original observed L-BFGS, lr=1, max_iter=100, strong_wolfe",
@@ -182,5 +180,19 @@
       59,
       60
     ]
+  },
+  "levels": [
+    "step",
+    "prefix",
+    "answer"
+  ],
+  "representation_by_level": {
+    "step": "Original FP64 mean over all generated reasoning tokens visible through this retained Step; prompt excluded; FP32 output",
+    "prefix": "Same original causal visible-context mean at each retained Step",
+    "answer": "Original FP64 mean over visible generated reasoning and Answer tokens; prompt excluded; FP32 output"
+  },
+  "implementation_SHA256_by_level": {
+    "step_prefix_worker": "1f5abde40e07ce54f49a132e63addd31757374922368d28469bcf4c9f5b40970",
+    "answer_worker": "3cf04798e7c6aa2c349770de8f08754d3d914bf96c5c43296cb2894683b0168d"
   }
 }

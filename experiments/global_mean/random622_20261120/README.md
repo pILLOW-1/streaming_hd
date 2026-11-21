@@ -1,25 +1,16 @@
 # Global Mean on the random 6:2:2 split
 
-Evaluate the original Global Mean linear readout on independent Answer annotations using the frozen, unconstrained question-family random split. This is an exploratory re-split of historically inspected data.
+Evaluate independent Step, Prefix and Answer annotations under the frozen unconstrained question-family assignment. Each generator/domain/level has its own TRAIN fit and complete own VAL selection. This is an exploratory re-split of historically inspected data.
 
-| Configuration | Features | Detector |
-| --- | --- | --- |
-| Global Mean | Mean of all visible generated reasoning and Answer token features; prompt excluded; L2 normalization | Linear BCE detector |
-
-| Training parameter | Setting |
+| Setting | Protocol |
 | --- | --- |
-| Seed / layers | 42 / all 32 DeepSeek, 60 Gemma or 64 Qwen layers |
-| Optimizer | Original observed L-BFGS, lr 1, max_iter 100, strong Wolfe |
-| Layer and weight selection | Complete own VAL AUROC, then AP, then lower BCE |
-| Decision threshold | Own Answer VAL F1max; strict score > threshold |
-| TEST | Frozen selected checkpoint once; independent CPU metrics, IDs, labels and coverage checks |
+| Representation | Original visible generated-context mean (prompt excluded), L2 normalized |
+| Training | Original observed L-BFGS, lr1, max_iter100, strong Wolfe; normalized linear BCE probe |
+| Candidate layers | All32 DeepSeek,60 Gemma or64 Qwen native layers |
+| Weight/layer selection | Own complete VAL AUROC, then AP, then lower BCE |
+| Threshold | Selected own VAL F1max; strict score > threshold; precision then largest-threshold ties |
+| TEST | Frozen selected checkpoint once; independent saved-prediction CPU verification |
 
-## Answer TEST AUROC (%)
+Step and Prefix representations stop at the current retained Step; Answer includes the generated Answer. [Configuration](config.json) specifies each representation. Frozen causal boundary corrections are retained. Existing label-independent features are reused by exact input, span, row and byte identity; only missing components are generated. No historical different-split detector fit is reused.
 
-| Configuration | Math | Science | Logic | Multi-hop | Fact |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DS Global Mean | 91.98 |  | 82.71 | 83.97 | 81.39 |
-| Gemma Global Mean | 92.18 | 62.90 | **95.47** | 84.29 | **94.29** |
-| Qwen Global Mean | **92.93** | **73.57** | 94.56 | **88.99** | 92.37 |
-
-Full-precision primary and secondary metrics, selected layers, frozen thresholds and verification hashes are in [the result index](result/index.json). Unfinished cells remain empty. Compatible label-independent features were reused by exact identity; missing features were extracted only as needed. No datasets, native feature banks, detector weights or prediction arrays are included.
+[Accepted results](result/accepted_cells.json) contain full-precision metrics, selected layers, thresholds and verification hashes. Unfinished cells are empty in [the comparison](../../../reports/main_result/comparison_random_split_candidate.md). No data, feature banks, weights or prediction arrays are published.

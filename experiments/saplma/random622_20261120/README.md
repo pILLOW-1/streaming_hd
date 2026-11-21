@@ -1,18 +1,16 @@
 # SAPLMA on the random 6:2:2 split
 
-Evaluate the original SAPLMA readout on independent Answer labels under the frozen question-family random assignment. This is an exploratory re-split of historically inspected data.
+Evaluate independent Step, Prefix and Answer annotations under the frozen unconstrained question-family assignment. Each generator/domain/level has its own TRAIN fit and complete own VAL selection. This is an exploratory re-split of historically inspected data.
 
-| Configuration | Features | Detector |
-| --- | --- | --- |
-| SAPLMA | Final generated Answer token contextual representation, unnormalized | 256/128/64 ReLU MLP |
-
-| Training parameter | Setting |
+| Setting | Protocol |
 | --- | --- |
-| Seed | 42 |
-| Optimizer | Original Keras-equation Adam, lr .001, beta1 .9, beta2 .999, epsilon_hat 1e-7 |
-| Epochs / batch | 5 / 32 |
-| Layer and weight selection | Complete own VAL AUROC, then AP, then lower BCE |
-| Threshold | Own Answer VAL F1max, strict score > threshold |
-| TEST | Frozen selected checkpoint once; independent CPU verification |
+| Representation | Original unnormalized native contextual endpoint |
+| Training | Original256/128/64 ReLU MLP, five epochs, batch32; Keras-equation Adam lr.001, beta1.9, beta2.999, epsilon_hat1e-7 |
+| Candidate layers | All32 DeepSeek,60 Gemma or64 Qwen native layers |
+| Weight/layer selection | Own complete VAL AUROC, then AP, then lower BCE |
+| Threshold | Selected own VAL F1max; strict score > threshold; precision then largest-threshold ties |
+| TEST | Frozen selected checkpoint once; independent saved-prediction CPU verification |
 
-[Accepted results](result/accepted_cells.json) retain full-precision metrics, selected layers, frozen thresholds and provenance hashes. Candidate layer counts are model-specific: DeepSeek32, Gemma60 and Qwen64. Valid compact features are reused by exact identity. Method-specific optimizer/RNG/checkpoint directories are independent. A first DS Logic attempt stopped before any SAPLMA update because it addressed a different method checkpoint; its identity gate was retained and the namespace corrected before the accepted fit. No Global Mean fit was repeated. No data, feature banks, weights or saved predictions are included.
+Step and Prefix representations stop at the current retained Step; Answer includes the generated Answer. [Configuration](config.json) specifies each representation. Frozen causal boundary corrections are retained. Existing label-independent features are reused by exact input, span, row and byte identity; only missing components are generated. No historical different-split detector fit is reused.
+
+[Accepted results](result/accepted_cells.json) contain full-precision metrics, selected layers, thresholds and verification hashes. Unfinished cells are empty in [the comparison](../../../reports/main_result/comparison_random_split_candidate.md). No data, feature banks, weights or prediction arrays are published.

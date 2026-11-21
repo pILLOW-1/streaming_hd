@@ -1,9 +1,7 @@
 {
   "method": "saplma",
-  "level": "answer",
   "seed": 42,
   "architecture": "Input -> 256 ReLU -> 128 ReLU -> 64 ReLU -> 1 logit",
-  "features": "Native contextual representation of the final generated Answer token, original unnormalized readout",
   "optimizer": "Original Keras-equation Adam, lr .001, beta1 .9, beta2 .999, epsilon_hat 1e-7",
   "epochs": 5,
   "batch_size": 32,
@@ -178,5 +176,19 @@
   "implementation_SHA256": {
     "SAPLMA_kernel": "5ce48a47e0b2268dabd0353b82e236b2886ecc2447281bbb5a71b29abf4d0580",
     "training": "41cd65d2d0391d361505dbfa3478bc55e236ccb2a2b467c3a999d50d293a0633"
+  },
+  "levels": [
+    "step",
+    "prefix",
+    "answer"
+  ],
+  "representation_by_level": {
+    "step": "Original unnormalized native endpoint of this retained Step",
+    "prefix": "Original unnormalized native endpoint at each retained Step",
+    "answer": "Original unnormalized final generated Answer token endpoint"
+  },
+  "implementation_SHA256_by_level": {
+    "step_prefix_worker": "1f5abde40e07ce54f49a132e63addd31757374922368d28469bcf4c9f5b40970",
+    "answer_worker": "710e68b8190f8a8c4630ceb158e99cea75c1d4fdbd02c3c27d0351bdf2dfe720"
   }
 }

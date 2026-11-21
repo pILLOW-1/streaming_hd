@@ -33,9 +33,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>SAPLMA</td>
 <td></td>
 <td></td>
+<td><strong>91.62</strong></td>
 <td></td>
-<td></td>
-<td></td>
+<td><strong>85.85</strong></td>
 <td></td>
 <td></td>
 <td></td>
@@ -67,9 +67,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Global Mean</td>
 <td></td>
 <td></td>
+<td>83.15</td>
 <td></td>
-<td></td>
-<td></td>
+<td>83.41</td>
 <td></td>
 <td></td>
 <td></td>
@@ -161,9 +161,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>SAPLMA</td>
 <td></td>
 <td></td>
+<td>90.71</td>
 <td></td>
-<td></td>
-<td></td>
+<td>80.04</td>
 <td></td>
 <td></td>
 <td></td>
@@ -178,9 +178,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>ICR Probe</td>
 <td></td>
 <td></td>
-<td><strong>87.25</strong></td>
+<td>87.25</td>
 <td><strong>82.04</strong></td>
-<td><strong>66.41</strong></td>
+<td>66.41</td>
 <td></td>
 <td>75.34</td>
 <td></td>
@@ -193,7 +193,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 </tr>
 <tr><td>LLM-Check</td>
-<td></td>
+<td><strong>78.90</strong></td>
 <td><strong>80.52</strong></td>
 <td>79.28</td>
 <td>68.32</td>
@@ -212,9 +212,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Global Mean</td>
 <td></td>
 <td></td>
+<td><strong>90.85</strong></td>
 <td></td>
-<td></td>
-<td></td>
+<td><strong>82.57</strong></td>
 <td></td>
 <td></td>
 <td></td>
