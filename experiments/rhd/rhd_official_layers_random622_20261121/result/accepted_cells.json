@@ -1,0 +1,123 @@
+{
+  "version": "rhd_official_layers_random622_20261121",
+  "split": "unconstrained_random_622_seed42",
+  "results": [
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.5144203793064751,
+        "AP": 0.6715235852980874,
+        "ACC": 0.67,
+        "F1": 0.7924528301886793,
+        "precision": 0.6810810810810811,
+        "recall": 0.9473684210526315,
+        "FPR": 0.8805970149253731,
+        "TP": 126,
+        "FP": 59,
+        "TN": 8,
+        "FN": 7,
+        "steps": 200,
+        "positive": 133,
+        "negative": 67,
+        "missing": 0,
+        "threshold": 0.056454098058075386,
+        "TPR_at_1pct_FPR": 0.015037593984962405
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "AUROC": 0.6142151767151767,
+        "AP": 0.7888212275019552,
+        "VAL_BCE": 1.0434802507406082,
+        "VAL_min": -0.013405114412307684,
+        "VAL_max": 0.6873805039473024
+      },
+      "threshold": 0.056454098058075386,
+      "prediction_SHA256": "5faade9c1932d4748b6078b6f8eef7cf55d5d79d03a8be973eaff1578114032d",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "29843c03be65b9a7c66c494a320b34511f5901e55729ae4364e8b486c77fe2ce",
+      "native_gate_SHA256": "cea1c89289ec77d90bede23573fbe16470912c6e6565b2c1a653ae611cc38a5c",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26
+          ],
+          "mature": 28,
+          "requested_attention_layers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "attention_layers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            21,
+            24,
+            27,
+            28,
+            29,
+            31
+          ],
+          "mature": 32,
+          "requested_attention_layers": [
+            1,
+            4,
+            7,
+            8,
+            9,
+            11,
+            12
+          ],
+          "attention_layers": [
+            1,
+            4,
+            7,
+            8,
+            9,
+            11,
+            12
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "fa00146797afe56fa9f29c679394bd3b7301c812b7db92352db58116e1ee39f0",
+      "no_model_replay": true,
+      "acceptance_SHA256": "8601c08273975e0688dc68c43cda5292c84df12f0f2de18db21fb05e8f4f2c28"
+    }
+  ]
+}
