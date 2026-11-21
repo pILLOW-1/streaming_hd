@@ -1,0 +1,44 @@
+{
+  "split": "unconstrained_random_622_seed42",
+  "results": [
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "method": "hami",
+      "branch": "ori",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8314894696777467,
+        "AP": 0.5176204868470614,
+        "ACC": 0.7766714082503556,
+        "F1": 0.547550432276657,
+        "precision": 0.45893719806763283,
+        "recall": 0.6785714285714286,
+        "FPR": 0.1989342806394316,
+        "TP": 95,
+        "FP": 112,
+        "TN": 451,
+        "FN": 45,
+        "steps": 703,
+        "positive": 140,
+        "negative": 563,
+        "missing": 0,
+        "threshold": 0.9777663946151733,
+        "TPR_at_1pct_FPR": 0.05714285714285714
+      },
+      "selection": {
+        "layer": 13,
+        "AUROC": 0.9164302820339929,
+        "AP": 0.5798561878464992,
+        "VAL_BCE": 1.6318728688834454
+      },
+      "threshold": 0.9777663946151733,
+      "prediction_SHA256": "b56ca1df71f1886b38ef34a60ee60626ca027ed3505fbe6115324cd6df7ff4b3",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 32,
+      "no_model_replay": true,
+      "acceptance_SHA256": "1abf6ab163da09faa335bb5d908e3477c50fb41be5610fd0e231a74d4c923283"
+    }
+  ]
+}
