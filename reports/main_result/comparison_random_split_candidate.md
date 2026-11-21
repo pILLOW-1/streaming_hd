@@ -424,4 +424,4 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 </tbody></table>
 
-Streaming Answer uses the last retained Prefix score. Qwen Logic and Fact Answer primary metrics are independently verified; their VAL-derived thresholds and ACC/F1 are unavailable. [Streaming results](../../experiments/streaming_random622_all_combinations_20261120/result/accepted_cells.json). [Global Mean Answer protocol and results](../../experiments/global_mean/random622_20261120/README.md).
+Streaming Answer uses the last retained Prefix score. Qwen Logic and Fact Answer thresholds and secondary metrics use separately versioned completed VAL predictions, explicitly approved after a small historical numerical mismatch; original frozen checkpoints and saved TEST scores remain unchanged. [Streaming results](../../experiments/streaming_random622_all_combinations_20261120/result/accepted_cells.json). [Global Mean Answer protocol and results](../../experiments/global_mean/random622_20261120/README.md).

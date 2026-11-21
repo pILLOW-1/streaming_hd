@@ -30,9 +30,9 @@
     },
     {
       "file": "accepted_cells.json",
-      "SHA256": "e4ee590fc840ea25c414c4c5dff3643c40bc62d4fff8d2ecf40197c93a1d9cc0",
+      "SHA256": "c44ceb0a43d26e0b7928ae727bbedf86dec37d03f510bd339422bd1b8579d010",
       "verified_level_cells": 45,
-      "primary_only_answer_cells": 2
+      "primary_only_answer_cells": 0
     }
   ],
   "Math": "Step and Prefix independently accepted; each selected TEST evaluated once."
