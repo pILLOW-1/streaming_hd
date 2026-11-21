@@ -4,6 +4,7 @@ One Markdown file per report, named by date. The site at <https://pillow-1.githu
 
 | Date | Report |
 |---|---|
+| 2026-11-21 | [Detectors Track Error History, Not Error Status](2026-11-21.md) |
 | 2026-11-20 | [Errors Are Introduced, Then Carried](2026-11-20.md) |
 
 ## Writing a report
