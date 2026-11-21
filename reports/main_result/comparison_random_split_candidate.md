@@ -50,7 +50,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>HaMI</td>
 <td></td>
 <td></td>
-<td></td>
+<td><strong>92.17</strong></td>
 <td><strong>85.92</strong></td>
 <td>83.15</td>
 <td></td>
@@ -84,7 +84,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Streaming</td>
 <td><strong>85.79</strong></td>
 <td><strong>85.45</strong></td>
-<td><strong>91.86</strong></td>
+<td>91.86</td>
 <td>85.63</td>
 <td><strong>86.28</strong></td>
 <td>83.04</td>
@@ -183,7 +183,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>66.41</td>
 <td></td>
 <td>75.34</td>
-<td></td>
+<td>83.82</td>
 <td></td>
 <td>83.95</td>
 <td></td>
