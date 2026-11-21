@@ -1,0 +1,45 @@
+{
+  "split": "unconstrained_random_622_seed42",
+  "results": [
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Factuality",
+      "method": "rede",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.7372909886656941,
+        "AP": 0.8464916782520265,
+        "ACC": 0.715,
+        "F1": 0.822429906542056,
+        "precision": 0.7021276595744681,
+        "recall": 0.9924812030075187,
+        "FPR": 0.835820895522388,
+        "TP": 132,
+        "FP": 56,
+        "TN": 11,
+        "FN": 1,
+        "steps": 200,
+        "positive": 133,
+        "negative": 67,
+        "missing": 0,
+        "threshold": 0.34953123331069946,
+        "TPR_at_1pct_FPR": 0.09774436090225563
+      },
+      "selection": {
+        "layer": 30,
+        "AUROC": 0.7982068607068606,
+        "AP": 0.9161794946323477,
+        "VAL_BCE": 0.4801248610019684
+      },
+      "threshold": 0.34953123331069946,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "8ed882e301f7b1397a2019a789a00168ccc6e3b60140dc6dc6e141caf96d8625",
+      "validated_candidate_layers": 32,
+      "projection_SHA256": "5c685dfb94b3b8811a10de88a522c43772f2039a673089776d8da981a146c1eb",
+      "source_contract_SHA256": "769357eb668c0e6b196993967f302ef8d92bff50cace8d547b26149b8f46784e",
+      "no_model_replay": true,
+      "acceptance_SHA256": "c2bafd041c8855f9dc4d4c4b8f56f12c392c0425ceb4fe8c2d00d1dcbc747148"
+    }
+  ]
+}
