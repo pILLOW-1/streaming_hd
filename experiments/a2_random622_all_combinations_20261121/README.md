@@ -39,7 +39,7 @@ AUROC (%). Each model/domain has an independent detector.
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  | 88.90 | 93.94 | 90.24 |
+| Original A2 |  | 82.28 | 88.90 | 93.94 | 90.24 |
 
 ### Prefix
 
@@ -59,6 +59,6 @@ AUROC (%). Each model/domain has an independent detector.
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  | 88.69 | 91.83 | 91.48 |
+| Original A2 |  | 76.42 | 88.69 | 91.83 | 91.48 |
 
 The two historical Qwen fits retain their original thresholds. Full selected VAL prediction arrays were not included in the Cetus import; saved TEST scores and complete candidate selection records are verified without rerunning either model. New fits retain complete VAL/TEST arrays privately.
