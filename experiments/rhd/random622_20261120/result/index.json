@@ -3,8 +3,8 @@
   "results": [
     {
       "file": "accepted_cells.json",
-      "SHA256": "0036fadc186d4bf591952999e1c7b6b62eded8108e39f4ae09f260f0fa2748a5",
-      "verified_cells": 2
+      "SHA256": "3b7d54001331525d89cd8b697f32c306a7535d6703149dc58cdb76bf53f6ab63",
+      "verified_cells": 4
     }
   ],
   "historical": [
