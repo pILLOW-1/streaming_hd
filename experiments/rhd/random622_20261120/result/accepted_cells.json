@@ -473,6 +473,115 @@
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.46125714285714287,
+        "AP": 0.1129929772700631,
+        "ACC": 0.135,
+        "F1": 0.2242152466367713,
+        "precision": 0.12626262626262627,
+        "recall": 1.0,
+        "FPR": 0.9885714285714285,
+        "TP": 25,
+        "FP": 173,
+        "TN": 2,
+        "FN": 0,
+        "steps": 200,
+        "positive": 25,
+        "negative": 175,
+        "missing": 0,
+        "threshold": -0.021205481997202444,
+        "TPR_at_1pct_FPR": 0.0
+      },
+      "selection": {
+        "family": 1,
+        "weights": [
+          0.888888888888889,
+          0.0,
+          0.0,
+          0.11111111111111112
+        ],
+        "AUROC": 0.38284703801945186,
+        "AP": 0.10831392159263631,
+        "VAL_BCE": 1.0685171932192967,
+        "VAL_min": -0.08559158301517449,
+        "VAL_max": 0.6491175820717514
+      },
+      "threshold": -0.021205481997202444,
+      "prediction_SHA256": "3d33c825125a4fb1c57760a571f2f6df135da269aca9d7140f907b5707c3838b",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "d7782d253496ca4835eaa0c35c9c884efa3b93632b840b812473326e4cd09aa8",
+      "native_gate_SHA256": "e3a69b9d9eeb54617b0d683d45afd0f824fbf77e29e5cde7fcc0043ca10ce1f6",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            26,
+            30,
+            34,
+            38,
+            41,
+            45,
+            49
+          ],
+          "mature": 53,
+          "requested_attention_layers": [
+            1,
+            5,
+            9,
+            13,
+            16,
+            20,
+            24,
+            28
+          ],
+          "attention_layers": [
+            6,
+            12,
+            18,
+            24
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            40,
+            45,
+            50,
+            53,
+            55,
+            58
+          ],
+          "mature": 60,
+          "requested_attention_layers": [
+            1,
+            6,
+            11,
+            14,
+            16,
+            19,
+            21
+          ],
+          "attention_layers": [
+            6,
+            12,
+            18
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "25e507c4b3b962db8e41bdf3e613d1e4ad12c3018291dee3c2aa76919682660d",
+      "no_model_replay": true,
+      "acceptance_SHA256": "a33a3781c04140c2d419a12832e1f28edef3037093b6795658a5ee7ad9dfaaa0"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
       "domain": "Math",
       "method": "rhd",
       "level": "answer",
@@ -578,6 +687,115 @@
       "source_contract_SHA256": "4338e187199ff285b65513ea43ef5bc731fd9a6bef03e28f77e67d60c94df92e",
       "no_model_replay": true,
       "acceptance_SHA256": "2f170ec46d47a8039954bd8d2a36e6e111365606b4a91b57f8ee6d886d83d6e9"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.4370860927152318,
+        "AP": 0.26344403593947807,
+        "ACC": 0.41904761904761906,
+        "F1": 0.33695652173913043,
+        "precision": 0.248,
+        "recall": 0.5254237288135594,
+        "FPR": 0.6225165562913907,
+        "TP": 31,
+        "FP": 94,
+        "TN": 57,
+        "FN": 28,
+        "steps": 210,
+        "positive": 59,
+        "negative": 151,
+        "missing": 0,
+        "threshold": 0.15612988756880297,
+        "TPR_at_1pct_FPR": 0.01694915254237288
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.22222222222222227,
+          0.7777777777777778,
+          0.0,
+          0.0
+        ],
+        "AUROC": 0.5943603247750713,
+        "AP": 0.34827141567269876,
+        "VAL_BCE": 0.842288986711447,
+        "VAL_min": 0.059918492459848594,
+        "VAL_max": 0.3110683807630997
+      },
+      "threshold": 0.15612988756880297,
+      "prediction_SHA256": "06870c0f0b8ba998d72041506027063acb01611c1c8b53607de55b770d9ec971",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "8f05d7fed626b91918b2c9ef0193132412a68a93e556e36873b8fe76c6c937d6",
+      "native_gate_SHA256": "e3a69b9d9eeb54617b0d683d45afd0f824fbf77e29e5cde7fcc0043ca10ce1f6",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            26,
+            30,
+            34,
+            38,
+            41,
+            45,
+            49
+          ],
+          "mature": 53,
+          "requested_attention_layers": [
+            1,
+            5,
+            9,
+            13,
+            16,
+            20,
+            24,
+            28
+          ],
+          "attention_layers": [
+            6,
+            12,
+            18,
+            24
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            40,
+            45,
+            50,
+            53,
+            55,
+            58
+          ],
+          "mature": 60,
+          "requested_attention_layers": [
+            1,
+            6,
+            11,
+            14,
+            16,
+            19,
+            21
+          ],
+          "attention_layers": [
+            6,
+            12,
+            18
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "e680593ad44c603b6bf62e16bbace841f4f25b6eafc39011189ff6a5f837bcd5",
+      "no_model_replay": true,
+      "acceptance_SHA256": "b17981eb6703911a10421f25fc5f5bb1cb7f5854485fb86d52dd3c50db954b4a"
     }
   ]
 }
