@@ -200,6 +200,46 @@
       "source_contract_SHA256": "e801f6e65f27e28b8df5c164b91e48cb78d6e4beb257ff2ade6e35d94cd6d35b",
       "no_model_replay": true,
       "acceptance_SHA256": "0131d7d0272e7e90f0a01193dc1b47c8f98d098810408e3173692d55a0a5ff04"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "method": "rede",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.9673142857142857,
+        "AP": 0.8784217215623695,
+        "ACC": 0.975,
+        "F1": 0.9019607843137255,
+        "precision": 0.8846153846153846,
+        "recall": 0.92,
+        "FPR": 0.017142857142857144,
+        "TP": 23,
+        "FP": 3,
+        "TN": 172,
+        "FN": 2,
+        "steps": 200,
+        "positive": 25,
+        "negative": 175,
+        "missing": 0,
+        "threshold": 0.6097267866134644,
+        "TPR_at_1pct_FPR": 0.52
+      },
+      "selection": {
+        "layer": 32,
+        "AUROC": 0.9622015915119363,
+        "AP": 0.8383519460738997,
+        "VAL_BCE": 0.19161280989646912
+      },
+      "threshold": 0.6097267866134644,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "6f2d3bc0a617b87614739a976f4e5bb6689d01a5b014ba31bdfcab13fbd33184",
+      "validated_candidate_layers": 60,
+      "projection_SHA256": "37458ec5804c3af565d2b1b6b668b3a27006c56424cd20efaba5283057480d17",
+      "source_contract_SHA256": "8eec760ac720a55989cf387f8fac572cc5317073083d2dc737f3f002fca7f453",
+      "no_model_replay": true,
+      "acceptance_SHA256": "c8229ba7d18728fcc9d4de8d2e90a28612f15fcd2ee768d83c7eb111f33c3962"
     }
   ]
 }
