@@ -44,7 +44,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td><strong>81.03</strong></td>
 <td></td>
 <td><strong>89.18</strong></td>
-<td></td>
+<td>93.09</td>
 <td>88.22</td>
 </tr>
 <tr><td>HaMI</td>
@@ -78,7 +78,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>61.24</td>
 <td></td>
 <td>71.64</td>
-<td></td>
+<td>73.38</td>
 <td>72.46</td>
 </tr>
 <tr><td>Streaming</td>
@@ -172,7 +172,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td><strong>78.70</strong></td>
 <td></td>
 <td>86.20</td>
-<td></td>
+<td>88.27</td>
 <td>87.07</td>
 </tr>
 <tr><td>ICR Probe</td>
@@ -223,7 +223,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>75.86</td>
 <td></td>
 <td>86.80</td>
-<td></td>
+<td>89.25</td>
 <td>89.59</td>
 </tr>
 <tr><td>Streaming</td>
