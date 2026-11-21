@@ -177,7 +177,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 <tr><td>ICR Probe</td>
 <td></td>
-<td></td>
+<td>79.60</td>
 <td>87.25</td>
 <td>82.04</td>
 <td>66.41</td>
@@ -306,7 +306,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>SAPLMA</td>
 <td><strong>95.15</strong></td>
 <td>66.21</td>
-<td><strong>83.10</strong></td>
+<td>83.10</td>
 <td>81.62</td>
 <td>71.84</td>
 <td><strong>92.63</strong></td>
@@ -355,10 +355,10 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 </tr>
 <tr><td>ReDe</td>
+<td>94.74</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>85.29</strong></td>
+<td><strong>84.13</strong></td>
 <td>73.73</td>
 <td></td>
 <td></td>
@@ -375,7 +375,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>91.98</td>
 <td><strong>74.30</strong></td>
 <td>82.71</td>
-<td><strong>83.97</strong></td>
+<td>83.97</td>
 <td><strong>81.39</strong></td>
 <td>92.18</td>
 <td><strong>62.90</strong></td>
