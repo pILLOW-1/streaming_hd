@@ -30,8 +30,8 @@
     },
     {
       "file": "accepted_cells.json",
-      "SHA256": "db9b9d678a0d7f121bd4e66b5f6103e83ad52726ee43109f3b514024e5e08582",
-      "verified_level_cells": 27,
+      "SHA256": "f3f7f26b100ae35b4889cb87b7c21b88c1a5452a9351a645f0c5cb59bc6ba0f4",
+      "verified_level_cells": 30,
       "primary_only_answer_cells": 2
     }
   ],
