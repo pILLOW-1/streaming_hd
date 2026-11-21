@@ -4,8 +4,6 @@ Compare prediction-weighted error history with the random-split baselines. A2 jo
 
 The 30 A2 level cells are separate from the 225 baseline cells. Two previously accepted Qwen model/domain fits are reused by exact split, label, selected-checkpoint and saved-prediction identities; at most 13 new model/domain fits are required. Pending cells are blank.
 
-At this revision, 7 of 15 model/domain fits are accepted (14 Step/Prefix results). The latest newly accepted fits are DeepSeek Logic and Gemma Logic; Qwen Science is still pending.
-
 ## Configuration
 
 | Setting | Value |
@@ -35,7 +33,7 @@ AUROC (%). Each model/domain has an independent detector.
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  | 89.06 |  |  |
+| Original A2 |  | 80.83 | 89.06 | 89.22 | 80.09 |
 
 **qwen3_8_27b**
 
@@ -55,7 +53,7 @@ AUROC (%). Each model/domain has an independent detector.
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  | 87.42 |  |  |
+| Original A2 |  | 78.96 | 87.42 | 93.20 | 82.75 |
 
 **qwen3_8_27b**
 
