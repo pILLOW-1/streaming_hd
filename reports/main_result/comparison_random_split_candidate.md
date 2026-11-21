@@ -33,7 +33,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>SAPLMA</td>
 <td></td>
 <td></td>
-<td><strong>91.62</strong></td>
+<td>91.62</td>
 <td></td>
 <td>85.85</td>
 <td></td>
@@ -84,8 +84,8 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Streaming</td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
+<td><strong>91.86</strong></td>
+<td><strong>85.63</strong></td>
 <td><strong>86.28</strong></td>
 <td></td>
 <td><strong>77.80</strong></td>
@@ -179,7 +179,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td>87.25</td>
-<td><strong>82.04</strong></td>
+<td>82.04</td>
 <td>66.41</td>
 <td></td>
 <td>75.34</td>
@@ -212,7 +212,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Global Mean</td>
 <td></td>
 <td></td>
-<td><strong>90.85</strong></td>
+<td>90.85</td>
 <td></td>
 <td><strong>82.57</strong></td>
 <td></td>
@@ -229,8 +229,8 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Streaming</td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
+<td><strong>91.00</strong></td>
+<td><strong>89.21</strong></td>
 <td>82.06</td>
 <td></td>
 <td><strong>80.67</strong></td>
@@ -391,8 +391,8 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <tr><td>Streaming</td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
+<td>71.62</td>
+<td>73.25</td>
 <td>77.07</td>
 <td></td>
 <td>57.81</td>
