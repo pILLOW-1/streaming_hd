@@ -27,13 +27,13 @@ AUROC (%). Each model/domain has an independent detector.
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  |  | 86.11 | 86.41 |
+| Original A2 |  |  | 90.94 | 86.11 | 86.41 |
 
 **gemma_4_31b_it**
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  |  |  |  |
+| Original A2 |  |  | 89.06 |  |  |
 
 **qwen3_8_27b**
 
@@ -47,13 +47,13 @@ AUROC (%). Each model/domain has an independent detector.
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  |  | 90.74 | 85.65 |
+| Original A2 |  |  | 90.83 | 90.74 | 85.65 |
 
 **gemma_4_31b_it**
 
 | Configuration | Math | Science | Logic | Multi-hop | Factuality |
 |---|---:|---:|---:|---:|---:|
-| Original A2 |  |  |  |  |  |
+| Original A2 |  |  | 87.42 |  |  |
 
 **qwen3_8_27b**
 
