@@ -196,6 +196,54 @@
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "gemma_4_31b_it",
+      "domain": "Factuality",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8395218879993914,
+        "AP": 0.6464926865463605,
+        "ACC": 0.724349710982659,
+        "F1": 0.6140617096611026,
+        "precision": 0.49835796387520526,
+        "recall": 0.7997364953886693,
+        "FPR": 0.3041314086610254,
+        "TP": 607,
+        "FP": 611,
+        "TN": 1398,
+        "FN": 152,
+        "steps": 2768,
+        "positive": 759,
+        "negative": 2009,
+        "missing": 0,
+        "threshold": 0.2039613276720047,
+        "TPR_at_1pct_FPR": 0.05928853754940711
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 60,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.2039613276720047,
+      "prediction_SHA256": "1aedd337b96aba8635fca0cbf54bb0da60270791232c0601bc977add6091e4db",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "eaf62eb31ead95565f84ca6021aef422f09b656e239fe82e0aa8f5962426e3d3",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "be4889ec6691a04e7a3abf6f10d8f7af0f18432248a3bb345db8788b7beb2fca"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
       "domain": "Science",
       "method": "icr_probe",
       "level": "prefix",
