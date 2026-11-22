@@ -61,31 +61,36 @@ fig.savefig(OUT / "history_split.png", dpi=180)
 plt.close(fig)
 
 
-# ---------------------------------------------------------------- Figure 2: score dynamics
-dyn = json.loads((REPORTS / "score_dynamics.json").read_text())
+# ---------------------------------------------------------------- Figure 2: label vs detector around events
+dyn = json.loads((REPORTS / "score_dynamics2.json").read_text())
 K = np.array(dyn["offsets"])
-fig, axes = plt.subplots(2, 2, figsize=(9.2, 5.4), sharex=True, sharey=True)
+LABEL, DET = "#2b2b2b", "#a8402f"
+fig, axes = plt.subplots(2, 2, figsize=(9.2, 5.6), sharex=True, sharey=True)
 for r_i, level in enumerate(("Step", "Prefix")):
     for c_i, event in enumerate(("error", "recovery")):
-        ax = axes[r_i, c_i]; d = dyn[level]
-        ax.axhline(d["fresh"], color=MUTED, lw=1.1, ls=(0, (4, 3)), zorder=1)
-        ax.axvline(0, color=SOFT, lw=1, zorder=0)
-        for v, color, name in ((1, POS, "label = 1"), (0, NEG, "label = 0")):
-            m = np.array([np.nan if v_ is None else v_ for v_ in d[f"{event}_{v}"]["mean"]], float)
-            m[np.array(d[f"{event}_{v}"]["cells"]) < 3] = np.nan
-            ax.plot(K, m, color=color, lw=2.2, marker="o", ms=3.2, label=name, zorder=3)
-        ax.set_ylim(0, 1); ax.set_xticks(range(-5, 16, 5)); ax.grid(axis="y", color=GRID, lw=0.8)
+        ax = axes[r_i, c_i]; d = dyn[level][event]
+        for y0 in (0, 1):
+            ax.axhline(y0, color=SOFT, lw=1, zorder=0)
+        ax.axvline(0, color=SOFT, lw=1, ls=(0, (3, 3)), zorder=0)
+        def series(q):
+            m = np.array([np.nan if v is None else v for v in d[q]["mean"]], float)
+            m[np.array(d[q]["cells"]) < 3] = np.nan
+            return m
+        ax.step(K, series("label"), where="mid", color=LABEL, lw=1.8, label="Ground truth: share labelled erroneous", zorder=3)
+        ax.plot(K, series("score"), color=DET, lw=2.4, marker="o", ms=3.5, label="Detector: how error-like the position looks", zorder=4)
+        ax.set_ylim(-0.12, 1.12); ax.set_xticks(range(-5, 16, 5)); ax.set_yticks([0, 0.5, 1])
         ax.spines[["top", "right"]].set_visible(False)
         if r_i == 0:
-            ax.set_title("Aligned at the first error" if event == "error" else "Aligned at the first recovery",
-                         color=INK, fontsize=11.5)
+            ax.set_title("Around the first error" if event == "error" else "Around the first recovery", color=INK, fontsize=11.5)
         if c_i == 0:
-            ax.set_ylabel(f"{level} score percentile")
+            ax.set_ylabel(level, fontsize=11.5)
         if r_i == 1:
             ax.set_xlabel("Steps relative to the event")
-axes[0, 1].text(15, dyn["Step"]["fresh"] - 0.04, "negatives before any error", ha="right", va="top", fontsize=9, color=MUTED)
+axes[0, 0].set_yticklabels(["0", "0.5", "1"])
+axes[1, 1].annotate("label drops to 0,\ndetector does not", xy=(0, 0.37), xytext=(3.2, 0.9), fontsize=9.5, color=INK,
+                    arrowprops=dict(arrowstyle="->", color=INK, lw=0.9))
 h, l = axes[0, 0].get_legend_handles_labels()
-fig.legend(h, ["Positions with label 1", "Positions with label 0"], loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.0))
-fig.tight_layout(rect=(0, 0, 1, 0.95))
+fig.legend(h, l, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.0))
+fig.tight_layout(rect=(0, 0, 1, 0.93))
 fig.savefig(OUT / "score_dynamics.png", dpi=180)
 plt.close(fig)
