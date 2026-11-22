@@ -194,5 +194,16 @@
   "implementation_SHA256_by_level": {
     "step_prefix_worker": "1f5abde40e07ce54f49a132e63addd31757374922368d28469bcf4c9f5b40970",
     "answer_worker": "3cf04798e7c6aa2c349770de8f08754d3d914bf96c5c43296cb2894683b0168d"
+  },
+  "Qwen_Science_Step_Prefix_operational_relay": {
+    "allowed_change": "SHA-identical per-layer source transport; completed candidates reused; unchanged pooling, detector, VAL selection and TEST-once protocol",
+    "implementation_SHA256": {
+      "worker.py": "50de055bfeacb990aaec4572a5d1e98b303e83b97f92bfb097e8298ff99ed226",
+      "emit_layer.py": "53d3d4775a347ef3d56ba422e242b4624e42b7213d18291efaa27e1868a61471",
+      "receive_layer.py": "4d0032901258c27c361b83f4f1a680ab7fe28ad429ec0b33b4f87e1142118d45"
+    },
+    "frozen_placement_SHA256": "f950d514ebccdf77644800d1f6cf1fd7723ed0459f44f5a129d5f5fe5f1f7221",
+    "original_TRAINVAL_source_index_SHA256": "c08954a13f58c2e01c97b29ec4436b31039f0ae48464c8312d0456a985f86ad5",
+    "TRAINVAL_backbone_replayed": false
   }
 }

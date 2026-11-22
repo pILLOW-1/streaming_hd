@@ -1,0 +1,37 @@
+{
+  "split": "unconstrained_question_family_random_622_seed42",
+  "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+  "method": "Original ARS auxiliary projection and supervised detector",
+  "native_features": "Original FP16 native backbone and unnormalized FP32 final-Answer endpoint storage; complete causal inputs unchanged",
+  "projection": {
+    "dimension": 128,
+    "epochs": 50,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine"
+  },
+  "detector": {
+    "epochs": 100,
+    "optimizer": "SGD",
+    "lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.01,
+    "scheduler": "ReduceLROnPlateau"
+  },
+  "candidate_layers": {
+    "DeepSeek": 32,
+    "Gemma": 60,
+    "Qwen": 64
+  },
+  "selection": "Complete own VAL AUROC, then AP, then lower BCE",
+  "threshold": "Complete own VAL F1max, strict score > threshold; precision then largest-threshold ties",
+  "TEST": "Selected frozen checkpoint once; independent CPU verification from saved predictions",
+  "invalid_auxiliary_policy": "Previously authorized isolation of invalid auxiliary variants; original trajectories and labels retained",
+  "Gemma_Factuality_valid_auxiliary_variants": {
+    "retained_variants": 2400,
+    "isolated_invalid_format": 0,
+    "originals_retained": 600
+  },
+  "source_reuse": "Exact SHA-verified native features and completed candidates; remaining layers fit in independent bounded workers; unchanged scientific code and optimizer budgets"
+}

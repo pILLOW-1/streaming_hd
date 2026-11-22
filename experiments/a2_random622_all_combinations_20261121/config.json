@@ -1,0 +1,39 @@
+{
+  "TASK_SHA256": "e0122c17246f83ae80de36d190b39c6d5020650e49a5068fa598fbefda793698",
+  "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+  "original_worker_SHA256": "e0b2da4341f0ae3975525b79e6ca153807bc297d23221c9cf22712742d844b13",
+  "original_sources_SHA256": {
+    "model.py": "7d02094b6e614019972f82eaf0b592b3260055964999cbbab7df534d7457ead4",
+    "memory_model.py": "407dd3e92fd7c1f99669eed2b5abb09f8181064569f3dc79b2f88fabdf96e5a5",
+    "pooling.py": "e83ec3f8c59524d2ade670170b2cfb9a2b534afa86a8d651bfd294ec437dc1b4",
+    "train_memory.py": "b5d798414a45598f375889c36b95a9c4b937c206b0c69d3160c3d668ed39c999",
+    "history.py": "08ab6224a9ebd9f9bf67865f3296a275c411ccdfb0de227153ccd98775701f44",
+    "run.py": "74047011615ce15799fa2efe662bc4438690962018f0c6e229e9340fe8acbd80"
+  },
+  "layers_width": {
+    "deepseek_r1_distill_llama_8b": [
+      32,
+      4096
+    ],
+    "gemma_4_31b_it": [
+      60,
+      5376
+    ],
+    "qwen3_8_27b": [
+      64,
+      5120
+    ]
+  },
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "batch": 256,
+  "max_epochs": 100,
+  "patience": 10,
+  "loss": "original C18 three-class CE",
+  "features": "raw FP32 original fixed exponential Step/Prefix pools; all preceding original Steps; stopgrad predicted q; exclusive history; no L2",
+  "selection": "joint mean VAL AUROC, mean AP, lower mean marginal BCE; original deterministic exact tie",
+  "threshold": "Separate ownVAL F1max after joint model/layer selection; strict score>threshold",
+  "TEST": "selected model once; independent saved-prediction CPU verification; no replay"
+}
