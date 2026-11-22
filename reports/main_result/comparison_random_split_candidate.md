@@ -83,7 +83,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 <tr><td>Streaming</td>
 <td>85.79</td>
-<td><strong>85.45</strong></td>
+<td>85.45</td>
 <td>91.86</td>
 <td>85.63</td>
 <td>86.28</td>
@@ -100,7 +100,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 <tr><td>A2</td>
 <td><strong>86.05</strong></td>
-<td></td>
+<td><strong>85.65</strong></td>
 <td>90.94</td>
 <td><strong>86.11</strong></td>
 <td><strong>86.41</strong></td>
@@ -245,7 +245,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 <tr><td>A2</td>
 <td><strong>87.23</strong></td>
-<td></td>
+<td>84.09</td>
 <td>90.83</td>
 <td><strong>90.74</strong></td>
 <td><strong>85.65</strong></td>
