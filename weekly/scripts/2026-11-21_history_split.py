@@ -61,36 +61,26 @@ fig.savefig(OUT / "history_split.png", dpi=180)
 plt.close(fig)
 
 
-# ---------------------------------------------------------------- Figure 2: label vs detector around events
-dyn = json.loads((REPORTS / "score_dynamics2.json").read_text())
-K = np.array(dyn["offsets"])
-LABEL, DET = "#2b2b2b", "#a8402f"
-fig, axes = plt.subplots(2, 2, figsize=(9.2, 5.6), sharex=True, sharey=True)
-for r_i, level in enumerate(("Step", "Prefix")):
-    for c_i, event in enumerate(("error", "recovery")):
-        ax = axes[r_i, c_i]; d = dyn[level][event]
-        for y0 in (0, 1):
-            ax.axhline(y0, color=SOFT, lw=1, zorder=0)
-        ax.axvline(0, color=SOFT, lw=1, ls=(0, (3, 3)), zorder=0)
-        def series(q):
-            m = np.array([np.nan if v is None else v for v in d[q]["mean"]], float)
-            m[np.array(d[q]["cells"]) < 3] = np.nan
-            return m
-        ax.step(K, series("label"), where="mid", color=LABEL, lw=1.8, label="Ground truth: share labelled erroneous", zorder=3)
-        ax.plot(K, series("score"), color=DET, lw=2.4, marker="o", ms=3.5, label="Detector: how error-like the position looks", zorder=4)
-        ax.set_ylim(-0.12, 1.12); ax.set_xticks(range(-5, 16, 5)); ax.set_yticks([0, 0.5, 1])
-        ax.spines[["top", "right"]].set_visible(False)
-        if r_i == 0:
-            ax.set_title("Around the first error" if event == "error" else "Around the first recovery", color=INK, fontsize=11.5)
-        if c_i == 0:
-            ax.set_ylabel(level, fontsize=11.5)
-        if r_i == 1:
-            ax.set_xlabel("Steps relative to the event")
-axes[0, 0].set_yticklabels(["0", "0.5", "1"])
-axes[1, 1].annotate("label drops to 0,\ndetector does not", xy=(0, 0.37), xytext=(3.2, 0.9), fontsize=9.5, color=INK,
-                    arrowprops=dict(arrowstyle="->", color=INK, lw=0.9))
-h, l = axes[0, 0].get_legend_handles_labels()
-fig.legend(h, l, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.0))
-fig.tight_layout(rect=(0, 0, 1, 0.93))
-fig.savefig(OUT / "score_dynamics.png", dpi=180)
-plt.close(fig)
+# ---------------------------------------------------------------- Figure 2: Prefix alarm when an error is corrected
+dyn = json.loads((REPORTS / "score_dynamics2.json").read_text())["Prefix"]["recovery"]
+K = np.array(json.loads((REPORTS / "score_dynamics2.json").read_text())["offsets"])
+def series(q):
+    m = np.array([np.nan if v is None else v for v in dyn[q]["mean"]], float); m[np.array(dyn[q]["cells"]) < 3] = np.nan; return m
+before, after = series("score1"), series("score0")      # erroneous positions before the fix, correct positions after it
+keep = (K >= -5) & (K <= 10)
+xb, yb = K[keep & (K < 0)], before[keep & (K < 0)]
+xa, ya = K[keep & (K >= 0)], after[keep & (K >= 0)]
+fig, ax = plt.subplots(figsize=(7.2, 3.6))
+ax.axvspan(-5.5, -0.5, color="#f6e3de", zorder=0); ax.axvspan(-0.5, 10.5, color="#e4eef7", zorder=0)
+ax.text(-3.0, 1.06, "error present", ha="center", fontsize=11, color=POS, fontweight="bold")
+ax.text(5.0, 1.06, "error corrected", ha="center", fontsize=11, color=NEG, fontweight="bold")
+ax.axhline(1, color=MUTED, lw=1, ls=(0, (4, 3))); ax.axhline(0, color=MUTED, lw=1, ls=(0, (4, 3)))
+ax.text(10.4, 0.97, "typical error", ha="right", va="top", fontsize=9.5, color=MUTED)
+ax.text(10.4, 0.03, "correct step before any error", ha="right", va="bottom", fontsize=9.5, color=MUTED)
+ax.plot(np.r_[xb, xa], np.r_[yb, ya], color=INK, lw=2.6, marker="o", ms=5, zorder=3)
+ax.annotate("should drop here", xy=(0, ya[0]), xytext=(1.6, 0.12), fontsize=10, color=INK,
+            arrowprops=dict(arrowstyle="->", color=INK, lw=1))
+ax.set_xlim(-5.5, 10.5); ax.set_ylim(-0.08, 1.15); ax.set_yticks([0, 0.5, 1])
+ax.set_xlabel("Steps relative to the correction"); ax.set_ylabel("Prefix alarm")
+ax.spines[["top", "right"]].set_visible(False)
+fig.tight_layout(); fig.savefig(OUT / "score_dynamics.png", dpi=180); plt.close(fig)
