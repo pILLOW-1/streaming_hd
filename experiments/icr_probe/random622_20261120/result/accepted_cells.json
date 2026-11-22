@@ -340,6 +340,54 @@
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "gemma_4_31b_it",
+      "domain": "Math",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.7928470245384881,
+        "AP": 0.6825105386256681,
+        "ACC": 0.7300034626038782,
+        "F1": 0.7450339246300989,
+        "precision": 0.6400280898876405,
+        "recall": 0.8912575787209075,
+        "FPR": 0.39804317440596365,
+        "TP": 4557,
+        "FP": 2563,
+        "TN": 3876,
+        "FN": 556,
+        "steps": 11552,
+        "positive": 5113,
+        "negative": 6439,
+        "missing": 0,
+        "threshold": 0.360625684261322,
+        "TPR_at_1pct_FPR": 0.04928613338548797
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 60,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.360625684261322,
+      "prediction_SHA256": "cb6c35b1b50592954c5739178c464c2eb50212c085417551f7fc11a661ff2b6d",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "674fbd5e208da88fe252bc09688a85e7df52ee4cee76ef525f5403ba31523261",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "cf4c99d4127e6d30ded7581c3de46d8f063c7f6fca4172b86e2bf193d39bc225"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
       "domain": "Science",
       "method": "icr_probe",
       "level": "prefix",
