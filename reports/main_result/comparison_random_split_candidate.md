@@ -176,7 +176,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td>87.07</td>
 </tr>
 <tr><td>ICR Probe</td>
-<td></td>
+<td>82.98</td>
 <td>79.60</td>
 <td>87.25</td>
 <td>82.04</td>
