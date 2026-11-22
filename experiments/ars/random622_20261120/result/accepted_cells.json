@@ -41,6 +41,47 @@
       "checkpoint_SHA256": "534f8e22996c05e956bd15c3bbe292104962e522a2a925df1e9a84dfd6dbcab6",
       "VAL_predictions_SHA256": "ba3bdc16d4c240b21718e167608f259208376f5f8eab01e4a95f765dfe2461aa",
       "source_manifest_SHA256": "8e5cbb4ac5047304574694e6aa1079fba3bf241d402ba8529875ac409383df24"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "method": "ars",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.8995869394177812,
+        "AP": 0.9163088745245305,
+        "ACC": 0.8689320388349514,
+        "F1": 0.8860759493670886,
+        "precision": 0.9292035398230089,
+        "recall": 0.8467741935483871,
+        "FPR": 0.0975609756097561,
+        "TP": 105,
+        "FP": 8,
+        "TN": 74,
+        "FN": 19,
+        "steps": 206,
+        "positive": 124,
+        "negative": 82,
+        "missing": 0,
+        "threshold": 0.3998720645904541,
+        "TPR_at_1pct_FPR": 0.008064516129032258
+      },
+      "selection": {
+        "layer": 32,
+        "AUROC": 0.93865562403698,
+        "AP": 0.9405101591261871,
+        "VAL_BCE": 0.31670839507450466
+      },
+      "threshold": 0.3998720645904541,
+      "prediction_SHA256": "6360f78f0b927b9e0b3f6eed527646a0e0e320b6e8624bd2b2e605faeb6f91b9",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 32,
+      "no_model_replay": true,
+      "acceptance_SHA256": "4046515ca04101888b0e882b42202e124e8af7004f9b1b3784596458d3d84390",
+      "checkpoint_SHA256": "b4a72bc13952c87d1086dcf5bdd10bdb6517533d8ed56a8aaecafe3a83cd6d7f",
+      "VAL_predictions_SHA256": "88f2811827bbf53cdd970f5064677fa3d229d44c5ea971275ad5d3cdeb058d11",
+      "source_manifest_SHA256": "56f115b5f892ebe42f450069420f6fe510af954c4642df2b459e7b637ed51b6f"
     }
   ]
 }
