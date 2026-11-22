@@ -1131,6 +1131,120 @@
       "source_contract_SHA256": "e680593ad44c603b6bf62e16bbace841f4f25b6eafc39011189ff6a5f837bcd5",
       "no_model_replay": true,
       "acceptance_SHA256": "b17981eb6703911a10421f25fc5f5bb1cb7f5854485fb86d52dd3c50db954b4a"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Math",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.6708679833679834,
+        "AP": 0.36328218678212465,
+        "ACC": 0.355,
+        "F1": 0.44155844155844154,
+        "precision": 0.2849162011173184,
+        "recall": 0.9807692307692307,
+        "FPR": 0.8648648648648649,
+        "TP": 51,
+        "FP": 128,
+        "TN": 20,
+        "FN": 1,
+        "steps": 200,
+        "positive": 52,
+        "negative": 148,
+        "missing": 0,
+        "threshold": 0.17799412413350924,
+        "TPR_at_1pct_FPR": 0.0
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.22222222222222227,
+          0.7777777777777778,
+          0.0,
+          0.0
+        ],
+        "AUROC": 0.627407680039259,
+        "AP": 0.40529877557473815,
+        "VAL_BCE": 0.8075692137814423,
+        "VAL_min": 0.0484541955924939,
+        "VAL_max": 0.4636644385959331
+      },
+      "threshold": 0.17799412413350924,
+      "prediction_SHA256": "3325d63afec0e84a20b21f4c4bfe878b8038573617a2cfd8e7a2fb2a50a094e4",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "5d9448bea521ca98c7e4db5b23e26afe19ee1931b71623ed080c5f9746e3b593",
+      "native_gate_SHA256": "9d14457b9cad0d79fe36eeaafeeed6de8f2805649682038caba0666ce3911f3b",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52
+          ],
+          "mature": 56,
+          "requested_attention_layers": [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            43,
+            48,
+            53,
+            56,
+            59,
+            61
+          ],
+          "mature": 64,
+          "requested_attention_layers": [
+            1,
+            6,
+            11,
+            14,
+            17,
+            19,
+            22
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "0551fc681cdbb15e2b3d931897ebb19c8019454b2a4c61bf7c6ab9b1c31982e7",
+      "no_model_replay": true,
+      "acceptance_SHA256": "3fd003822c6ade21ab260ebf81e1d9738dc6a183fb4ddb6ed1a7232bc572b1d5"
     }
   ]
 }
