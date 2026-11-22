@@ -61,26 +61,37 @@ fig.savefig(OUT / "history_split.png", dpi=180)
 plt.close(fig)
 
 
-# ---------------------------------------------------------------- Figure 2: Prefix alarm when an error is corrected
-dyn = json.loads((REPORTS / "score_dynamics2.json").read_text())["Prefix"]["recovery"]
-K = np.array(json.loads((REPORTS / "score_dynamics2.json").read_text())["offsets"])
-def series(q):
-    m = np.array([np.nan if v is None else v for v in dyn[q]["mean"]], float); m[np.array(dyn[q]["cells"]) < 3] = np.nan; return m
-before, after = series("score1"), series("score0")      # erroneous positions before the fix, correct positions after it
-keep = (K >= -5) & (K <= 10)
-xb, yb = K[keep & (K < 0)], before[keep & (K < 0)]
-xa, ya = K[keep & (K >= 0)], after[keep & (K >= 0)]
-fig, ax = plt.subplots(figsize=(7.2, 3.6))
-ax.axvspan(-5.5, -0.5, color="#f6e3de", zorder=0); ax.axvspan(-0.5, 10.5, color="#e4eef7", zorder=0)
-ax.text(-3.0, 1.06, "error present", ha="center", fontsize=11, color=POS, fontweight="bold")
-ax.text(5.0, 1.06, "error corrected", ha="center", fontsize=11, color=NEG, fontweight="bold")
-ax.axhline(1, color=MUTED, lw=1, ls=(0, (4, 3))); ax.axhline(0, color=MUTED, lw=1, ls=(0, (4, 3)))
-ax.text(10.4, 0.97, "typical error", ha="right", va="top", fontsize=9.5, color=MUTED)
-ax.text(10.4, 0.03, "correct step before any error", ha="right", va="bottom", fontsize=9.5, color=MUTED)
-ax.plot(np.r_[xb, xa], np.r_[yb, ya], color=INK, lw=2.6, marker="o", ms=5, zorder=3)
-ax.annotate("should drop here", xy=(0, ya[0]), xytext=(1.6, 0.12), fontsize=10, color=INK,
-            arrowprops=dict(arrowstyle="->", color=INK, lw=1))
-ax.set_xlim(-5.5, 10.5); ax.set_ylim(-0.08, 1.15); ax.set_yticks([0, 0.5, 1])
-ax.set_xlabel("Steps relative to the correction"); ax.set_ylabel("Prefix alarm")
-ax.spines[["top", "right"]].set_visible(False)
-fig.tight_layout(); fig.savefig(OUT / "score_dynamics.png", dpi=180); plt.close(fig)
+# ---------------------------------------------------------------- Figure 2: retraining on post-error positions
+# Qwen Multi-hop, random 6:2:2 TEST, AUROC on post-error positions. Streaming: accepted standard predictions vs. the
+# same recipe trained on post-error positions only (Step L51, Prefix L64). Probes: logistic / MLP on the same pooled
+# features and layers, trained on all vs. post-error TRAIN positions.
+CHECK = Path("/shared/homes/u26487468/agent_uncertainty_quantification/experiments/streaming_hd/runs/"
+             "qwen_a2_memory_forgetting_check_20261119/reports")
+probe = json.loads((CHECK / "entanglement_random/result.json").read_text())
+stream = json.loads((CHECK / "entanglement_baselines/result.json").read_text())
+ALLC, POSTC = "#c9c9c4", "#2a9d8f"
+fig, axes = plt.subplots(1, 2, figsize=(9.2, 3.6), sharey=True)
+for ax, level in zip(axes, ("Step", "Prefix")):
+    st = stream[f"Streaming/{level}@L{51 if level == 'Step' else 64}"]
+    groups = [("Streaming", st["standard"]["within_post"], st["post_only_within_post"], st["standard"]["A_pre"])]
+    for kind, name in (("logistic", "Linear probe"), ("mlp", "MLP probe")):
+        t = probe[level][kind]["TEST"]
+        groups.append((name, t["all"]["within_post"], t["post_within_post"], t["all"]["A_pre"]))
+    xs = np.arange(len(groups)); w = 0.34
+    for x0, (name, a_all, a_post, _) in zip(xs, groups):
+        for dx, v, color in ((-w / 2, a_all, ALLC), (w / 2, a_post, POSTC)):
+            ax.bar(x0 + dx, v - 0.5, w * 0.92, bottom=0.5, color=color, zorder=2)
+            ax.text(x0 + dx, v + 0.01, f"{v:.2f}", ha="center", va="bottom", fontsize=9.5, color=INK)
+    ref = np.mean([g[3] for g in groups])
+    ax.axhline(ref, color=MUTED, lw=1.1, ls=(0, (4, 3)), zorder=1)
+    ax.text(len(groups) - 0.55, ref + 0.012, "before any error", ha="right", va="bottom", fontsize=9, color=MUTED)
+    ax.set_xticks(xs, [g[0] for g in groups]); ax.tick_params(axis="x", length=0, labelcolor=INK, labelsize=10.5)
+    ax.set_ylim(0.5, 1.04); ax.set_title(level, color=INK, fontsize=12, loc="left")
+    ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True); ax.spines[["top", "right"]].set_visible(False)
+axes[0].set_ylabel("AUROC after an error")
+from matplotlib.patches import Patch
+fig.legend(handles=[Patch(color=ALLC, label="Trained on all positions"), Patch(color=POSTC, label="Trained on post-error positions only")],
+           loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.0))
+fig.tight_layout(rect=(0, 0, 1, 0.9), w_pad=2.5)
+fig.savefig(OUT / "retrain_post_error.png", dpi=180)
+plt.close(fig)
