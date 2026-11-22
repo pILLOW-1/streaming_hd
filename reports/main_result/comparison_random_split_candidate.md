@@ -339,7 +339,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 <tr><td>RHD</td>
 <td>58.72</td>
-<td></td>
+<td>54.49</td>
 <td>46.15</td>
 <td>50.85</td>
 <td>51.44</td>

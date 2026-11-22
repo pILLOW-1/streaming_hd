@@ -472,6 +472,123 @@
     },
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.5449025247682966,
+        "AP": 0.727233785421592,
+        "ACC": 0.7028301886792453,
+        "F1": 0.8245125348189415,
+        "precision": 0.7047619047619048,
+        "recall": 0.9932885906040269,
+        "FPR": 0.9841269841269841,
+        "TP": 148,
+        "FP": 62,
+        "TN": 1,
+        "FN": 1,
+        "steps": 212,
+        "positive": 149,
+        "negative": 63,
+        "missing": 0,
+        "threshold": 0.09274306457058147,
+        "TPR_at_1pct_FPR": 0.013422818791946308
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.22222222222222227,
+          0.7777777777777778,
+          0.0,
+          0.0
+        ],
+        "AUROC": 0.526255707762557,
+        "AP": 0.7010275050308745,
+        "VAL_BCE": 0.9137751392571368,
+        "VAL_min": 0.07846797835352588,
+        "VAL_max": 0.26769005688739944
+      },
+      "threshold": 0.09274306457058147,
+      "prediction_SHA256": "e15788a18c6b5a4ea15b8bb64e925450036084a28fd02379e42859e59bb8ae06",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "a7e9bfeb7ec8d4a1ba6a9c6ba455af3266f93d0d8ce1c470cd8e407b6169e463",
+      "native_gate_SHA256": "cea1c89289ec77d90bede23573fbe16470912c6e6565b2c1a653ae611cc38a5c",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26
+          ],
+          "mature": 28,
+          "requested_attention_layers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "attention_layers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            21,
+            24,
+            27,
+            28,
+            29,
+            31
+          ],
+          "mature": 32,
+          "requested_attention_layers": [
+            1,
+            4,
+            7,
+            8,
+            9,
+            11,
+            12
+          ],
+          "attention_layers": [
+            1,
+            4,
+            7,
+            8,
+            9,
+            11,
+            12
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "16a7bab789edc8853a8915f57fa9ef0bb93751f5333229ece4571e1d52d56d6d",
+      "no_model_replay": true,
+      "acceptance_SHA256": "46af9820ca08eb106f2a6e831aa626d315e6b8e0051ca51677aa39c548a9d608"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "gemma_4_31b_it",
       "domain": "Factuality",
       "method": "rhd",
