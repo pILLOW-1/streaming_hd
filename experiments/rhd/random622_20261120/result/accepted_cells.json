@@ -1135,6 +1135,234 @@
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.7016497714172133,
+        "AP": 0.6306925549069666,
+        "ACC": 0.6600985221674877,
+        "F1": 0.5964912280701754,
+        "precision": 0.6,
+        "recall": 0.5930232558139535,
+        "FPR": 0.2905982905982906,
+        "TP": 51,
+        "FP": 34,
+        "TN": 83,
+        "FN": 35,
+        "steps": 203,
+        "positive": 86,
+        "negative": 117,
+        "missing": 0,
+        "threshold": 0.2232248691959459,
+        "TPR_at_1pct_FPR": 0.08139534883720931
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.22222222222222227,
+          0.7777777777777778,
+          0.0,
+          0.0
+        ],
+        "AUROC": 0.7996289424860853,
+        "AP": 0.6960196257580015,
+        "VAL_BCE": 0.5460775722210484,
+        "VAL_min": 0.03145963760439586,
+        "VAL_max": 0.49586521701880637
+      },
+      "threshold": 0.2232248691959459,
+      "prediction_SHA256": "8139eab2bff12922e60de52b10f5f09bac51a93b6ea58901da673341b4fb57f6",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "1f5291a030b2a142e5346507dcdce2153cb97bc64a1c87a465c918384d066a82",
+      "native_gate_SHA256": "9d14457b9cad0d79fe36eeaafeeed6de8f2805649682038caba0666ce3911f3b",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52
+          ],
+          "mature": 56,
+          "requested_attention_layers": [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            43,
+            48,
+            53,
+            56,
+            59,
+            61
+          ],
+          "mature": 64,
+          "requested_attention_layers": [
+            1,
+            6,
+            11,
+            14,
+            17,
+            19,
+            22
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "8cc084a1ffee3a4986e50fcf454ae41dfb3370aad0f83b23f0ac053d0a661831",
+      "no_model_replay": true,
+      "acceptance_SHA256": "5b8c56ebceeaf4b380b10551de16c2e48ba9fad1a78b74e78933c354442d25aa"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.6141320151206746,
+        "AP": 0.11567652429891953,
+        "ACC": 0.655,
+        "F1": 0.1686746987951807,
+        "precision": 0.109375,
+        "recall": 0.3684210526315789,
+        "FPR": 0.3149171270718232,
+        "TP": 7,
+        "FP": 57,
+        "TN": 124,
+        "FN": 12,
+        "steps": 200,
+        "positive": 19,
+        "negative": 181,
+        "missing": 0,
+        "threshold": 0.19162171871032388,
+        "TPR_at_1pct_FPR": 0.0
+      },
+      "selection": {
+        "family": 1,
+        "weights": [
+          0.22222222222222227,
+          0.7777777777777778,
+          0.0,
+          0.0
+        ],
+        "AUROC": 0.6644444444444444,
+        "AP": 0.14540798242400638,
+        "VAL_BCE": 0.9255034725407021,
+        "VAL_min": 0.050991931392618976,
+        "VAL_max": 0.2833238637312617
+      },
+      "threshold": 0.19162171871032388,
+      "prediction_SHA256": "b5443db0e4ba4b3476221ed89cb1d59b4ac7877a1641e61706cba6278b41daf8",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "f505b788f4d527011ee18e4f0d9d43f1804d7578746df245154f5a3a7dc8e088",
+      "native_gate_SHA256": "9d14457b9cad0d79fe36eeaafeeed6de8f2805649682038caba0666ce3911f3b",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52
+          ],
+          "mature": 56,
+          "requested_attention_layers": [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            43,
+            48,
+            53,
+            56,
+            59,
+            61
+          ],
+          "mature": 64,
+          "requested_attention_layers": [
+            1,
+            6,
+            11,
+            14,
+            17,
+            19,
+            22
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "a048d13669c9fb1d6fd0f94adc9a9642f7a02e0c978d0d5f30ca41aa41a65e8f",
+      "no_model_replay": true,
+      "acceptance_SHA256": "235e0db0be844de1ce96450cdea759bf8a887704038ee026840fd1fc9d345da1"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
       "domain": "Math",
       "method": "rhd",
       "level": "answer",
@@ -1245,6 +1473,120 @@
       "source_contract_SHA256": "0551fc681cdbb15e2b3d931897ebb19c8019454b2a4c61bf7c6ab9b1c31982e7",
       "no_model_replay": true,
       "acceptance_SHA256": "3fd003822c6ade21ab260ebf81e1d9738dc6a183fb4ddb6ed1a7232bc572b1d5"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Multi-hop",
+      "method": "rhd",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.6069972826086957,
+        "AP": 0.2440989890959926,
+        "ACC": 0.6163793103448276,
+        "F1": 0.2644628099173554,
+        "precision": 0.2191780821917808,
+        "recall": 0.3333333333333333,
+        "FPR": 0.30978260869565216,
+        "TP": 16,
+        "FP": 57,
+        "TN": 127,
+        "FN": 32,
+        "steps": 232,
+        "positive": 48,
+        "negative": 184,
+        "missing": 0,
+        "threshold": 0.08020946807812324,
+        "TPR_at_1pct_FPR": 0.0
+      },
+      "selection": {
+        "family": 0,
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "AUROC": 0.6774806892453951,
+        "AP": 0.30022874326883203,
+        "VAL_BCE": 0.7128215299795273,
+        "VAL_min": -0.013604459911557898,
+        "VAL_max": 0.19035909389361977
+      },
+      "threshold": 0.08020946807812324,
+      "prediction_SHA256": "b51121fa3ab5e605da9205cea9a69273384db78a7970354fc1d42a07096af22e",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_version": "rhd_official_layers_random622_20261121",
+      "TASK_SHA256": "1db11520e9c554d18bbe8da15c35a912de78f52de30125e738ccf70d71db6bc0",
+      "frozen_config_SHA256": "07ae50f170f4976eed3dc8c6e5afb2b781668396288e3e098415336ecf1b48c3",
+      "native_gate_SHA256": "9d14457b9cad0d79fe36eeaafeeed6de8f2805649682038caba0666ce3911f3b",
+      "corrected_attention_layers": [
+        {
+          "name": "official7B_relative_native_depth",
+          "anchors": [
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52
+          ],
+          "mature": 56,
+          "requested_attention_layers": [
+            1,
+            5,
+            9,
+            13,
+            17,
+            21,
+            25,
+            29
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        {
+          "name": "official14B_relative_native_depth",
+          "anchors": [
+            43,
+            48,
+            53,
+            56,
+            59,
+            61
+          ],
+          "mature": 64,
+          "requested_attention_layers": [
+            1,
+            6,
+            11,
+            14,
+            17,
+            19,
+            22
+          ],
+          "attention_layers": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      ],
+      "independent_raw_component_witnesses": true,
+      "validated_VAL_candidates": 14,
+      "source_contract_SHA256": "dd32c85dcb74592633d78b190de889a0bf22918923ee073ae055c3707eeae57e",
+      "no_model_replay": true,
+      "acceptance_SHA256": "644b5d0da9aae5b44e8ec6b5adeb712d7a301d8b7916343cb513cf2e9d8dd318"
     },
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
