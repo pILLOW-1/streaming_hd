@@ -54,7 +54,7 @@ for ax, (level, key) in zip(axes, (("Step", "step"), ("Prefix", "prefix"))):
     ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True); ax.spines[["top", "right"]].set_visible(False)
 axes[0].set_ylabel("TEST AUROC")
 from matplotlib.patches import Patch
-fig.legend(handles=[Patch(color=PRE, label="vs. negatives before any error"), Patch(color=POST, label="vs. negatives after an error")],
+fig.legend(handles=[Patch(color=PRE, label="Errors vs. correct positions before any error"), Patch(color=POST, label="Errors vs. correct positions after an earlier error")],
            loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.0))
 fig.tight_layout(rect=(0, 0, 1, 0.9), w_pad=2.5)
 fig.savefig(OUT / "history_split.png", dpi=180)
