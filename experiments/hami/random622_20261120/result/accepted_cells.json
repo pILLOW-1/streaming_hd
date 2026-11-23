@@ -156,6 +156,48 @@
       "validated_candidate_layers": 60,
       "no_model_replay": true,
       "acceptance_SHA256": "3c6b539c344326edbf8c72408d8d5061198ba2fe759e5654280c5983cf801853"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "hami",
+      "branch": "ori",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8726033003536947,
+        "AP": 0.18551921534880422,
+        "ACC": 0.9656204831715879,
+        "F1": 0.2681318681318681,
+        "precision": 0.21863799283154123,
+        "recall": 0.3465909090909091,
+        "FPR": 0.02292323869610936,
+        "TP": 61,
+        "FP": 218,
+        "TN": 9292,
+        "FN": 115,
+        "steps": 9686,
+        "positive": 176,
+        "negative": 9510,
+        "missing": 0,
+        "threshold": 0.9988822937011719,
+        "TPR_at_1pct_FPR": 0.19318181818181818
+      },
+      "selection": {
+        "layer": 57,
+        "AUROC": 0.916134046149726,
+        "AP": 0.21481959238639758,
+        "VAL_BCE": 0.5013909059433785
+      },
+      "threshold": 0.9988822937011719,
+      "prediction_SHA256": "adb9a293d8e46d77812dac80190e8b8e2d8d92ab561da4431f8d7ac1e5db984f",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 64,
+      "no_model_replay": true,
+      "acceptance_SHA256": "6d103d070453724482335b14e17113864f9e5fa51e94b2658df077b63b09842b",
+      "feature_source_version": "qwen_missing_hami_source_v2_20261123",
+      "source_index_SHA256": "7ed1b77b6dad09698de1f572656ec3a67595583999fc3d62332b363e230a2583",
+      "feature_source_note": "Missing native BF16 token bags rebuilt with original inputs/revision/recipe; historical missing-bank evidence retained."
     }
   ]
 }
