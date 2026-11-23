@@ -278,6 +278,44 @@
       "validated_candidate_layers": 64,
       "no_model_replay": true,
       "acceptance_SHA256": "211407d4c59c6f7ced981616eb51b64e0d00752bcb7cf0de3c4686147f6d2dee"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Science",
+      "method": "ars",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.5236277921203277,
+        "AP": 0.2900809999817295,
+        "ACC": 0.5238095238095238,
+        "F1": 0.34210526315789475,
+        "precision": 0.27956989247311825,
+        "recall": 0.4406779661016949,
+        "FPR": 0.44370860927152317,
+        "TP": 26,
+        "FP": 67,
+        "TN": 84,
+        "FN": 33,
+        "steps": 210,
+        "positive": 59,
+        "negative": 151,
+        "missing": 0,
+        "threshold": 0.2527097165584564,
+        "TPR_at_1pct_FPR": 0.01694915254237288
+      },
+      "selection": {
+        "layer": 19,
+        "AUROC": 0.7045205178845733,
+        "AP": 0.5583218733093411,
+        "VAL_BCE": 0.5581633771360387
+      },
+      "threshold": 0.2527097165584564,
+      "prediction_SHA256": "8747e12ca97d17bd8148b5ff9e773af00b2befbe928992efa9e85cbcefe36476",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 60,
+      "no_model_replay": true,
+      "acceptance_SHA256": "5564ca53eebc91249071915a92ca41be379eb03a2aa0ae6199d0067d23cf753b"
     }
   ]
 }

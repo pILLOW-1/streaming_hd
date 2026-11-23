@@ -198,6 +198,45 @@
       "feature_source_version": "qwen_missing_hami_source_v2_20261123",
       "source_index_SHA256": "7ed1b77b6dad09698de1f572656ec3a67595583999fc3d62332b363e230a2583",
       "feature_source_note": "Missing native BF16 token bags rebuilt with original inputs/revision/recipe; historical missing-bank evidence retained."
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Math",
+      "method": "hami",
+      "branch": "ori",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.849927429105181,
+        "AP": 0.36649933343965885,
+        "ACC": 0.844096436156557,
+        "F1": 0.4226447709593777,
+        "precision": 0.3227722772277228,
+        "recall": 0.6120150187734669,
+        "FPR": 0.13203953464429116,
+        "TP": 2445,
+        "FP": 5130,
+        "TN": 33722,
+        "FN": 1550,
+        "steps": 42847,
+        "positive": 3995,
+        "negative": 38852,
+        "missing": 0,
+        "threshold": 0.9767972826957703,
+        "TPR_at_1pct_FPR": 0.11163954943679599
+      },
+      "selection": {
+        "layer": 17,
+        "AUROC": 0.8405181262629681,
+        "AP": 0.35852685012974933,
+        "VAL_BCE": 1.2121061384721503
+      },
+      "threshold": 0.9767972826957703,
+      "prediction_SHA256": "21dee23261c21ab6bba18c27e70ea4f2524f2d99bbb9eede8ee9dcbb3cb3826d",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 32,
+      "no_model_replay": true,
+      "acceptance_SHA256": "e8adb17e9209c3d2f00950e26e8180cef4157def99e6b72bb8abc68a4465ebbd"
     }
   ]
 }
