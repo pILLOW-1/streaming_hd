@@ -388,6 +388,54 @@
     {
       "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
       "model": "gemma_4_31b_it",
+      "domain": "Multi-hop",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8410706920474661,
+        "AP": 0.7452683936724113,
+        "ACC": 0.7514763779527559,
+        "F1": 0.7167694896242288,
+        "precision": 0.6314229249011858,
+        "recall": 0.8287937743190662,
+        "FPR": 0.295796986518636,
+        "TP": 639,
+        "FP": 373,
+        "TN": 888,
+        "FN": 132,
+        "steps": 2032,
+        "positive": 771,
+        "negative": 1261,
+        "missing": 0,
+        "threshold": 0.17269808053970337,
+        "TPR_at_1pct_FPR": 0.10765239948119326
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 60,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.17269808053970337,
+      "prediction_SHA256": "cef9c42f33465a17149b91bc5467958715df791acedf435b585f974170ec342e",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "1bf64c85da7d2efca50023ad7702316b5485566e7b6958727ce97a3df0fa8804",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "b0e702068afc94960d2c354940bf099cf390853e9ff31ff1f4d7936d58b5c6fd"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
       "domain": "Science",
       "method": "icr_probe",
       "level": "prefix",
@@ -432,6 +480,54 @@
       "no_model_replay": true,
       "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
       "acceptance_SHA256": "fabb0600e87e02ecf84e4c642e5c54d4030bbfcd6e0d922906345249478e7026"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "icr_probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.831615571393985,
+        "AP": 0.8336930914234855,
+        "ACC": 0.7253059440559441,
+        "F1": 0.7597017778627414,
+        "precision": 0.6658847184986595,
+        "recall": 0.8842901646639965,
+        "FPR": 0.42808072133963077,
+        "TP": 1987,
+        "FP": 997,
+        "TN": 1332,
+        "FN": 260,
+        "steps": 4576,
+        "positive": 2247,
+        "negative": 2329,
+        "missing": 0,
+        "threshold": 0.3025527894496918,
+        "TPR_at_1pct_FPR": 0.2901646639964397
+      },
+      "selection": {
+        "layer": 0,
+        "feature_width": 16,
+        "recipe": {
+          "method_key": "icr_probe",
+          "level": "prefix",
+          "layers": [
+            0
+          ],
+          "seed": 42,
+          "select_weights_by_val_auroc": true,
+          "score_sign": 1,
+          "selection_tie_breaker": "VAL_BCE"
+        }
+      },
+      "threshold": 0.3025527894496918,
+      "prediction_SHA256": "5a4d2f87fdfe44d77ebbe2491857b2222a8a598c2fd07d8cafe26f093f00efa2",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "source_contract_SHA256": "c20c07896ce57cc7f8cf20d23399561b2361f6a044fdd022a3662941f7ed8d18",
+      "no_model_replay": true,
+      "layer_semantics": "One original probe across all true native full-attention components, not an independent scalar-layer shortcut",
+      "acceptance_SHA256": "9839ff802efbffbc86653d476e99d0bb1f5aeb67ce85c8d268dcd5db8e87f9f2"
     }
   ]
 }
