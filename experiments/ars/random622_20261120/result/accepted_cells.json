@@ -202,6 +202,44 @@
       "validated_candidate_layers": 64,
       "no_model_replay": true,
       "acceptance_SHA256": "318c5ffeca2bc11a3af3f8cd94a45b51aa9f91c09bd3a0ff8bed4a129429897e"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "gemma_4_31b_it",
+      "domain": "Logic",
+      "method": "ars",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.9641142857142857,
+        "AP": 0.8248643534614115,
+        "ACC": 0.935,
+        "F1": 0.7796610169491526,
+        "precision": 0.6764705882352942,
+        "recall": 0.92,
+        "FPR": 0.06285714285714286,
+        "TP": 23,
+        "FP": 11,
+        "TN": 164,
+        "FN": 2,
+        "steps": 200,
+        "positive": 25,
+        "negative": 175,
+        "missing": 0,
+        "threshold": 0.19650720059871674,
+        "TPR_at_1pct_FPR": 0.44
+      },
+      "selection": {
+        "layer": 25,
+        "AUROC": 0.9312555260831124,
+        "AP": 0.7288062485309855,
+        "VAL_BCE": 0.24592252500592393
+      },
+      "threshold": 0.19650720059871674,
+      "prediction_SHA256": "61c47b2eaffa16512a5145c6c313c75978a7be0971308f63545a3459025130fb",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 60,
+      "no_model_replay": true,
+      "acceptance_SHA256": "220c0b34b043b884ad9ff21c373c8b8af9273918f3d4fa1ef03c9761688be646"
     }
   ]
 }
