@@ -240,6 +240,44 @@
       "validated_candidate_layers": 60,
       "no_model_replay": true,
       "acceptance_SHA256": "220c0b34b043b884ad9ff21c373c8b8af9273918f3d4fa1ef03c9761688be646"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "ars",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.8973538819424252,
+        "AP": 0.44613772594780743,
+        "ACC": 0.86,
+        "F1": 0.46153846153846156,
+        "precision": 0.36363636363636365,
+        "recall": 0.631578947368421,
+        "FPR": 0.11602209944751381,
+        "TP": 12,
+        "FP": 21,
+        "TN": 160,
+        "FN": 7,
+        "steps": 200,
+        "positive": 19,
+        "negative": 181,
+        "missing": 0,
+        "threshold": 0.4634156823158264,
+        "TPR_at_1pct_FPR": 0.10526315789473684
+      },
+      "selection": {
+        "layer": 4,
+        "AUROC": 0.9272222222222222,
+        "AP": 0.49469188123937463,
+        "VAL_BCE": 0.3228091358076581
+      },
+      "threshold": 0.4634156823158264,
+      "prediction_SHA256": "65a1a7a2e3e1e81dcc8f3bb5a3a129b98855c8caf0f4ffdf55ba1896171cd664",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 64,
+      "no_model_replay": true,
+      "acceptance_SHA256": "211407d4c59c6f7ced981616eb51b64e0d00752bcb7cf0de3c4686147f6d2dee"
     }
   ]
 }
