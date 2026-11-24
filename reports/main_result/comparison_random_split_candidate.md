@@ -62,7 +62,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td>87.26</td>
 <td></td>
-<td></td>
+<td>90.00</td>
 </tr>
 <tr><td>Global Mean</td>
 <td>67.44</td>
