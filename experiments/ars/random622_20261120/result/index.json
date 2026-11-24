@@ -2,8 +2,8 @@
   "results": [
     {
       "file": "accepted_cells.json",
-      "SHA256": "32d28bcda0434dfb1a4bd91117e2a57689ff3dd2e2eb4c36a82045c500315f1b",
-      "verified_level_cells": 8
+      "SHA256": "b203bb2b5026eac949884b9578008b8fa49bdb9d7a3fb84d46a25644e1e3e908",
+      "verified_level_cells": 9
     }
   ]
 }
