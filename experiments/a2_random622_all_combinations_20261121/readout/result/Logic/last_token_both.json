@@ -1,0 +1,25 @@
+{
+  "configuration": "last_token_both",
+  "model": "qwen3_8_27b",
+  "domain": "Logic",
+  "split": "random whole-question-family 6:2:2 seed42",
+  "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+  "metrics": {
+    "step": {
+      "AUROC": 0.8915919845139088,
+      "AP": 0.28682995519332305
+    },
+    "prefix": {
+      "AUROC": 0.8835082617301144,
+      "AP": 0.49998518320964647
+    }
+  },
+  "layer": 34,
+  "epoch": 5,
+  "prediction_sha256": "0be1495ceb545e64b52f5af450297d23c929b8a3dfc43aabc31c9a6e23a0cb41",
+  "test_passes": 1,
+  "model_replay": false,
+  "checkpoint_sha256": "4cccc5237c01415d98e84639d3b6ab6cdb65a7792ca8ad8b740bf464eef1c3eb",
+  "VAL_prediction_sha256": "4a11482df421511bc0face9aec576d8f87f5bdfc1b2b31ababcfc0ee1c875975",
+  "Cetus_acceptance_receipt_sha256": "8ca524e6f8cc3c0d7c27693cf9842a4ed83eab37a650405395c11ea7761e824a"
+}

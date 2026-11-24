@@ -62,3 +62,5 @@ AUROC (%). Each model/domain has an independent detector.
 | Original A2 | 74.12 | 76.42 | 88.69 | 91.83 | 91.48 |
 
 The two historical Qwen fits retain their original thresholds. Full selected VAL prediction arrays were not included in the Cetus import; saved TEST scores and complete candidate selection records are verified without rerunning either model. New fits retain complete VAL/TEST arrays privately.
+
+[Readout variants](readout/README.md) compare last-token and hierarchical learnable readouts while retaining the A2 objective and error history.

@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "configuration": "last_token_both",
+      "domain": "Logic",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Logic/last_token_both.json"
+    },
+    {
+      "configuration": "last_token_both",
+      "domain": "Factuality",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Factuality/last_token_both.json"
+    }
+  ],
+  "unfinished_configuration": "hierarchical_learnable",
+  "missing_metrics_left_blank": true
+}
