@@ -318,6 +318,45 @@
       "validated_candidate_layers": 64,
       "no_model_replay": true,
       "acceptance_SHA256": "9f5a3d7b83208689048019031a81aec30e55459eb73ea1289201cef2894e5568"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "method": "hami",
+      "branch": "ori",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8472098355932262,
+        "AP": 0.3549384856773302,
+        "ACC": 0.8601326506065501,
+        "F1": 0.41906936911218956,
+        "precision": 0.3328798185941043,
+        "recall": 0.5654853620955316,
+        "FPR": 0.11100630117345206,
+        "TP": 1468,
+        "FP": 2942,
+        "TN": 23561,
+        "FN": 1128,
+        "steps": 29099,
+        "positive": 2596,
+        "negative": 26503,
+        "missing": 0,
+        "threshold": 0.9865617156028748,
+        "TPR_at_1pct_FPR": 0.10323574730354391
+      },
+      "selection": {
+        "layer": 15,
+        "AUROC": 0.8292674975733605,
+        "AP": 0.3542022066577756,
+        "VAL_BCE": 1.2792968242655562
+      },
+      "threshold": 0.9865617156028748,
+      "prediction_SHA256": "ec0afed887cedea4378cefec9a9c5ff84f1e44d4a6d5f43c159eeca1859a4029",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 32,
+      "no_model_replay": true,
+      "acceptance_SHA256": "b592b617b0d59eb68306d3969b63441b64a825c232832f1d671e700fb8f98bdd"
     }
   ]
 }
