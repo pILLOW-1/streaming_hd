@@ -11,8 +11,19 @@
       "domain": "Factuality",
       "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
       "path": "result/Factuality/last_token_both.json"
+    },
+    {
+      "configuration": "hierarchical_learnable",
+      "domain": "Factuality",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Factuality/hierarchical_learnable.json"
+    },
+    {
+      "configuration": "step_learnable_fixed_prefix",
+      "domain": "Factuality",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Factuality/step_learnable_fixed_prefix.json"
     }
   ],
-  "unfinished_configuration": "hierarchical_learnable",
   "missing_metrics_left_blank": true
 }

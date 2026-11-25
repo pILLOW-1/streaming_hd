@@ -1,0 +1,38 @@
+{
+  "configuration": "hierarchical_learnable",
+  "experiment_id": "qwen_a2_hierarchical_learnable_20261124",
+  "model": "qwen3_8_27b",
+  "domain": "Factuality",
+  "split": "random whole-question-family 6:2:2 seed42",
+  "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+  "metrics": {
+    "step": {
+      "AUROC": 0.8685194390936017,
+      "AP": 0.37817442815582797
+    },
+    "prefix": {
+      "AUROC": 0.8964945006585757,
+      "AP": 0.8944400693981621
+    }
+  },
+  "layer": 50,
+  "epoch": 6,
+  "joint_VAL": {
+    "mean_AUROC": 0.879231691882762,
+    "mean_AP": 0.6191392653495382,
+    "mean_BCE": 0.44316619110696137,
+    "step_AUROC": 0.8789598474637845,
+    "prefix_AUROC": 0.8795035363017394
+  },
+  "prediction_sha256": "0375b162fca907d0023ff4c6b7fa1001923eac5edde40f16438a4dc0efdb1d8e",
+  "checkpoint_sha256": "a5c8bce454794f742861267bd28919bb5e242df1d1927c5c4d9b5d7de65ac64d",
+  "VAL_prediction_sha256": "90967272d0354d170876811233add74e93f8883eed117fedef5e6cf66bfaa80c",
+  "config_sha256": "08c834869a74c629ff63685873a6edcfcbdc7ea6ac315b6171f18aaf6a0e317f",
+  "split_sha256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb",
+  "test_passes": 1,
+  "model_replay": false,
+  "Cetus_acceptance_receipt_sha256": "629c3d1001ca71dce70ded1e0ecab558aa3d53e6df9403343dd9fe93c3d085d7",
+  "validated_candidates": 64,
+  "thresholds_CPU_verified": true,
+  "BCE_reduction_note": "Recorded candidate BCE exactly reconstructed from saved FP32 predictions using either FP32 or FP64 log-loss reduction; the winning AUROC/AP pair is unique, so selection does not depend on BCE reduction precision."
+}
