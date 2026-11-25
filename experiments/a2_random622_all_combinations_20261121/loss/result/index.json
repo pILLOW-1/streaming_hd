@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "configuration": "post_error_ranking",
+      "domain": "Logic",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Logic/post_error_ranking.json"
+    },
+    {
+      "configuration": "post_error_ranking",
+      "domain": "Factuality",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Factuality/post_error_ranking.json"
+    },
+    {
+      "configuration": "post_error_ranking",
+      "domain": "Multi-hop",
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "path": "result/Multi-hop/post_error_ranking.json"
+    }
+  ],
+  "missing_metrics_left_blank": true
+}

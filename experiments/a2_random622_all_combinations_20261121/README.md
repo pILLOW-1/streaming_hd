@@ -64,3 +64,5 @@ AUROC (%). Each model/domain has an independent detector.
 The two historical Qwen fits retain their original thresholds. Full selected VAL prediction arrays were not included in the Cetus import; saved TEST scores and complete candidate selection records are verified without rerunning either model. New fits retain complete VAL/TEST arrays privately.
 
 [Readout variants](readout/README.md) compare last-token and hierarchical learnable readouts while retaining the A2 objective and error history.
+
+[Loss exploration](loss/README.md) maintains the post-error ranking design and independently verified results.

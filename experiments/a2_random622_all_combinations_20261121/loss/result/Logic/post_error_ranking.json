@@ -1,0 +1,121 @@
+{
+  "configuration": "post_error_ranking",
+  "model": "qwen3_8_27b",
+  "domain": "Logic",
+  "split": "Current unconstrained whole-question-family random6:2:2 seed42",
+  "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+  "metrics": {
+    "step": {
+      "AUROC": 0.8847797772679477,
+      "AP": 0.2401906704526189,
+      "ACC": 0.9707825727854635,
+      "F1": 0.2942643391521197,
+      "precision": 0.26222222222222225,
+      "recall": 0.3352272727272727,
+      "FPR": 0.017455310199789693,
+      "TP": 59,
+      "FP": 166,
+      "TN": 9344,
+      "FN": 117,
+      "steps": 9686,
+      "positive": 176,
+      "negative": 9510,
+      "missing": 0,
+      "threshold": 0.167985200881958,
+      "TPR_at_1pct_FPR": 0.26704545454545453
+    },
+    "prefix": {
+      "AUROC": 0.8726831675379009,
+      "AP": 0.4650157595073422,
+      "ACC": 0.8442081354532315,
+      "F1": 0.49447236180904525,
+      "precision": 0.41624365482233505,
+      "recall": 0.6089108910891089,
+      "FPR": 0.12213830540476753,
+      "TP": 738,
+      "FP": 1035,
+      "TN": 7439,
+      "FN": 474,
+      "steps": 9686,
+      "positive": 1212,
+      "negative": 8474,
+      "missing": 0,
+      "threshold": 0.1863592267036438,
+      "TPR_at_1pct_FPR": 0.10478547854785479
+    }
+  },
+  "selection": {
+    "coefficient": 0.1,
+    "layer": 50,
+    "epoch": 3,
+    "VAL": {
+      "mean_AUROC": 0.8894529412652614,
+      "mean_AP": 0.28755753386397037,
+      "mean_BCE": 0.12879669811204048,
+      "step_AUROC": 0.9242392609593361,
+      "prefix_AUROC": 0.8546666215711867
+    }
+  },
+  "post_error_pairs": {
+    "Step:N>U": {
+      "AUROC": 0.8247147457409824,
+      "positive": 133,
+      "negative": 997,
+      "pairs": 132601
+    },
+    "Step:N>R": {
+      "AUROC": 0.8658860040055573,
+      "positive": 133,
+      "negative": 2917,
+      "pairs": 387961
+    },
+    "Prefix:N>R": {
+      "AUROC": 0.7993123020097381,
+      "positive": 133,
+      "negative": 2917,
+      "pairs": 387961
+    },
+    "Prefix:U>R": {
+      "AUROC": 0.7030484666202929,
+      "positive": 997,
+      "negative": 2917,
+      "pairs": 2908249
+    }
+  },
+  "original_A2_post_error_pairs": {
+    "Step:N>U": {
+      "AUROC": 0.8249334469574136,
+      "positive": 133,
+      "negative": 997,
+      "pairs": 132601
+    },
+    "Step:N>R": {
+      "AUROC": 0.8637646567567359,
+      "positive": 133,
+      "negative": 2917,
+      "pairs": 387961
+    },
+    "Prefix:N>R": {
+      "AUROC": 0.778629810728398,
+      "positive": 133,
+      "negative": 2917,
+      "pairs": 387961
+    },
+    "Prefix:U>R": {
+      "AUROC": 0.7494270607503003,
+      "positive": 997,
+      "negative": 2917,
+      "pairs": 2908249
+    }
+  },
+  "prediction_SHA256": "c6de554aaf04a1ad3b92818adab5c2fc6cbe4a0e3e8e621248228f11bbba141d",
+  "original_A2_prediction_SHA256": "1a9e1b94a61f9131204964659d6379c17dfe4b028c27d4936e1bdcd24f506591",
+  "acceptance_SHA256": "052ea53a801952f7c73a0a3076653c736bfdc2c5d815d8cb5ff1d5dff8ff8b7b",
+  "validated_candidates": 192,
+  "selected_TEST_passes": 1,
+  "model_replay": "WAIVED_BY_DIRECT_HUMAN_NOT_PASS",
+  "checkpoint_SHA256": "a3b5c655664164059f9438da8ab8fab0f72d1a5e69f97fdfe0832598f6be7c33",
+  "VAL_prediction_SHA256": "c0c2d2e11487ce290c16c6dfb3acafa747d188db4127fac0fadce3fc21548b65",
+  "config_SHA256": "e3797602b3d1b3bb4b65ac32bb9862b27b3ee16a25ab34ef9d64d76168f0b606",
+  "split_SHA256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb"
+}

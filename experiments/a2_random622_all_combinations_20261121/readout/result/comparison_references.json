@@ -10,7 +10,7 @@
     },
     "hami": {
       "repo_path": "experiments/hami/random622_20261120/result/accepted_cells.json",
-      "SHA256": "953d51be650e171d5ba8c56ac9c737ec3205f35b9eda64b6c86b13f6b3afcc62"
+      "SHA256": "c6023a47cc0c12e5da5571752e2dd371e89de26a8497ba67efd73ad5e9aeecd3"
     },
     "icr_probe": {
       "repo_path": "experiments/icr_probe/random622_20261120/result/accepted_cells.json",

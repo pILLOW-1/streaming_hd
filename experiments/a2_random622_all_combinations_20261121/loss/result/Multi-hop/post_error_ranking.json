@@ -1,0 +1,117 @@
+{
+  "configuration": "post_error_ranking",
+  "model": "qwen3_8_27b",
+  "domain": "Multi-hop",
+  "split": "Current unconstrained whole-question-family random6:2:2 seed42",
+  "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+  "metrics": {
+    "step": {
+      "AUROC": 0.940491511655503,
+      "AP": 0.7097403147219414,
+      "ACC": 0.9202715023807112,
+      "F1": 0.6462921348314606,
+      "precision": 0.569279493269992,
+      "recall": 0.7474012474012474,
+      "FPR": 0.061061847569873165,
+      "TP": 719,
+      "FP": 544,
+      "TN": 8365,
+      "FN": 243,
+      "steps": 9871,
+      "positive": 962,
+      "negative": 8909,
+      "missing": 0,
+      "threshold": 0.23912163078784943,
+      "TPR_at_1pct_FPR": 0.4230769230769231
+    },
+    "prefix": {
+      "AUROC": 0.92483775980205,
+      "AP": 0.9302899634511518,
+      "ACC": 0.8494580083071624,
+      "F1": 0.867722983799181,
+      "precision": 0.8331623931623932,
+      "recall": 0.9052748885586924,
+      "FPR": 0.2175172721194562,
+      "TP": 4874,
+      "FP": 976,
+      "TN": 3511,
+      "FN": 510,
+      "steps": 9871,
+      "positive": 5384,
+      "negative": 4487,
+      "missing": 0,
+      "threshold": 0.3739822506904602,
+      "TPR_at_1pct_FPR": 0.3111069836552749
+    }
+  },
+  "selection": {
+    "coefficient": 0.3,
+    "layer": 47,
+    "epoch": 6,
+    "VAL": {
+      "mean_AUROC": 0.9201057376380151,
+      "mean_AP": 0.7604136458987192,
+      "mean_BCE": 0.27911415696144104,
+      "step_AUROC": 0.9285677099215067,
+      "prefix_AUROC": 0.9116437653545233
+    }
+  },
+  "post_error_pairs": {
+    "Step:N>U": {
+      "AUROC": 0.922383156174044,
+      "positive": 856,
+      "negative": 4368,
+      "pairs": 3739008
+    },
+    "Step:N>R": {
+      "AUROC": 0.9447095003464097,
+      "positive": 856,
+      "negative": 1929,
+      "pairs": 1651224
+    },
+    "Prefix:N>R": {
+      "AUROC": 0.9114444799736439,
+      "positive": 856,
+      "negative": 1929,
+      "pairs": 1651224
+    },
+    "Prefix:U>R": {
+      "AUROC": 0.838876557820959,
+      "positive": 4368,
+      "negative": 1929,
+      "pairs": 8425872
+    }
+  },
+  "original_A2_post_error_pairs": {
+    "Step:N>U": {
+      "AUROC": 0.9214604515422272,
+      "positive": 856,
+      "negative": 4368,
+      "pairs": 3739008
+    },
+    "Step:N>R": {
+      "AUROC": 0.9428599632757274,
+      "positive": 856,
+      "negative": 1929,
+      "pairs": 1651224
+    },
+    "Prefix:N>R": {
+      "AUROC": 0.884524449741525,
+      "positive": 856,
+      "negative": 1929,
+      "pairs": 1651224
+    },
+    "Prefix:U>R": {
+      "AUROC": 0.8252596882554114,
+      "positive": 4368,
+      "negative": 1929,
+      "pairs": 8425872
+    }
+  },
+  "prediction_SHA256": "313df64849911d5dd175ddc3c7658248f741e4751943eac5806ff9cb7de10e10",
+  "original_A2_prediction_SHA256": "3fe889ec4eb4e0b61b9575bac4606c96dc850016cd5d61419b3d22e7bc3766f2",
+  "acceptance_SHA256": "9ccd3f0d2c37bee3b68a2152fb0f926455c1d82033ed80d63eea15d864ef87a3",
+  "validated_candidates": 192,
+  "selected_TEST_passes": 1,
+  "model_replay": "WAIVED_BY_DIRECT_HUMAN_NOT_PASS"
+}
