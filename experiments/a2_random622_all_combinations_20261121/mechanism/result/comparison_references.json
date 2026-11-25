@@ -1,0 +1,142 @@
+{
+  "model": "qwen3_8_27b",
+  "split": "whole-question-family random 6:2:2 seed42",
+  "metric": "TEST AUROC",
+  "best_baseline_rule": "Available completed SAPLMA, HaMI (Step), ICR Probe and LLM-Check (Prefix), Global Mean; Streaming is listed separately, matching readout.",
+  "source_files": {
+    "saplma": {
+      "repo_path": "experiments/saplma/random622_20261120/result/accepted_cells.json",
+      "SHA256": "148cd72ced5e49266dcc927f794b1ca44094f60cd481e5afdc16100e4b66b355"
+    },
+    "hami": {
+      "repo_path": "experiments/hami/random622_20261120/result/accepted_cells.json",
+      "SHA256": "454d05af789707cd279f69597347339c10d7f1d7b3d45ef168019609a8d08853"
+    },
+    "icr_probe": {
+      "repo_path": "experiments/icr_probe/random622_20261120/result/accepted_cells.json",
+      "SHA256": "f61d58df8a130de60cae2aa48d5a91dc72c93c8f9e87df5fc597540206a4892b"
+    },
+    "llm_check": {
+      "repo_path": "experiments/llm_check/random622_20261120/result/accepted_cells.json",
+      "SHA256": "c7cc39925a96c2da769a5d8b351d8e214015187b93c62b30b40ed8790160b86f"
+    },
+    "global_mean": {
+      "repo_path": "experiments/global_mean/random622_20261120/result/accepted_cells.json",
+      "SHA256": "df5d5532a88ad253139ee85a1dc34c6c192aeb28218beaa285e2fcfdf7406473"
+    },
+    "streaming": {
+      "repo_path": "experiments/streaming_random622_all_combinations_20261120/result/accepted_cells.json",
+      "SHA256": "c44ceb0a43d26e0b7928ae727bbedf86dec37d03f510bd339422bd1b8579d010"
+    },
+    "a2": {
+      "repo_path": "experiments/a2_random622_all_combinations_20261121/result/accepted_cells.json",
+      "SHA256": "5df68d4e165a06c01526cfb58885424afe817085b128ca33c3efdda35cc300ae"
+    }
+  },
+  "levels": {
+    "step": {
+      "Math": {
+        "best_baseline": {
+          "AUROC": 0.8102613965502472,
+          "methods": [
+            "saplma"
+          ]
+        },
+        "streaming_AUROC": 0.7892795086638186,
+        "original_A2_AUROC": 0.7864100345310988
+      },
+      "Science": {
+        "best_baseline": {
+          "AUROC": 0.8305452104199075,
+          "methods": [
+            "saplma"
+          ]
+        },
+        "streaming_AUROC": 0.8209322441381826,
+        "original_A2_AUROC": 0.8228331722910583
+      },
+      "Logic": {
+        "best_baseline": {
+          "AUROC": 0.8917771962527483,
+          "methods": [
+            "saplma"
+          ]
+        },
+        "streaming_AUROC": 0.8773205238504923,
+        "original_A2_AUROC": 0.8889655625657203
+      },
+      "Multi-hop": {
+        "best_baseline": {
+          "AUROC": 0.9360186468447778,
+          "methods": [
+            "hami"
+          ]
+        },
+        "streaming_AUROC": 0.9334048425416704,
+        "original_A2_AUROC": 0.9393577332739977
+      },
+      "Factuality": {
+        "best_baseline": {
+          "AUROC": 0.9000456835385066,
+          "methods": [
+            "hami"
+          ]
+        },
+        "streaming_AUROC": 0.8963369166718449,
+        "original_A2_AUROC": 0.9023747384991404
+      }
+    },
+    "prefix": {
+      "Math": {
+        "best_baseline": {
+          "AUROC": 0.7870319032556511,
+          "methods": [
+            "saplma"
+          ]
+        },
+        "streaming_AUROC": 0.7819596099442259,
+        "original_A2_AUROC": 0.7412058827519109
+      },
+      "Science": {
+        "best_baseline": {
+          "AUROC": 0.7694159820541788,
+          "methods": [
+            "global_mean"
+          ]
+        },
+        "streaming_AUROC": 0.7713633593656037,
+        "original_A2_AUROC": 0.764214118343256
+      },
+      "Logic": {
+        "best_baseline": {
+          "AUROC": 0.8679937116912069,
+          "methods": [
+            "global_mean"
+          ]
+        },
+        "streaming_AUROC": 0.8706700207429287,
+        "original_A2_AUROC": 0.886857420991096
+      },
+      "Multi-hop": {
+        "best_baseline": {
+          "AUROC": 0.8924924811681493,
+          "methods": [
+            "global_mean"
+          ]
+        },
+        "streaming_AUROC": 0.9024012451688898,
+        "original_A2_AUROC": 0.9182758570160255
+      },
+      "Factuality": {
+        "best_baseline": {
+          "AUROC": 0.8958565621487015,
+          "methods": [
+            "global_mean"
+          ]
+        },
+        "streaming_AUROC": 0.8966139290152243,
+        "original_A2_AUROC": 0.9147651283721074
+      }
+    }
+  }
+}

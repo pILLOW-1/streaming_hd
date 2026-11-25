@@ -1,0 +1,28 @@
+{
+  "configuration": "trajectory_equal_val",
+  "model": "qwen3_8_27b",
+  "domain": "Logic",
+  "split": "random whole-question-family 6:2:2 seed42",
+  "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+  "metrics": {
+    "step": {
+      "AUROC": 0.8982649842271293,
+      "AP": 0.24414212119402737
+    },
+    "prefix": {
+      "AUROC": 0.8833053502423645,
+      "AP": 0.4991031760473603
+    }
+  },
+  "layer": 35,
+  "epoch": 9,
+  "VAL_selection": "trajectory_equal_VAL_joint_mean_AUROC_then_AP_then_lower_BCE",
+  "training_weighting": "original_positions",
+  "prediction_sha256": "5c636145a1cf54530d4daecac8cea2825653e46acdc0506bc2858b78acaab9c8",
+  "checkpoint_sha256": "6249fb11180e73bdd71366ec5e335b130a3e4be55a6984a07af8f480da05a8df",
+  "VAL_prediction_sha256": "caa4aaab8bcbbacf30a810c5ef942862ac2f32641a35dd4137de1836d5017d2d",
+  "Cetus_acceptance_receipt_sha256": "937bb61c64777d1b8db6eb739fe7f84075f5fe694b76d056be660e28ae88c54f",
+  "split_sha256": "0c8d4f1f316d147906986fa8179418841f9977c63bb9bc4bf7023b1f6a5998eb",
+  "test_passes": 1,
+  "model_replay": false
+}

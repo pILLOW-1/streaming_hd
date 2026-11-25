@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "configuration": "trajectory_equal_val",
+      "domain": "Logic",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Logic/trajectory_equal_val.json"
+    },
+    {
+      "configuration": "trajectory_equal_val",
+      "domain": "Factuality",
+      "status": "INDEPENDENT_CETUS_SAVED_PREDICTION_CPU_ACCEPTED",
+      "path": "result/Factuality/trajectory_equal_val.json"
+    }
+  ],
+  "missing_metrics_left_blank": true
+}

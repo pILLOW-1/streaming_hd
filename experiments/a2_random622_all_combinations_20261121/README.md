@@ -66,3 +66,5 @@ The two historical Qwen fits retain their original thresholds. Full selected VAL
 [Readout variants](readout/README.md) compare last-token and hierarchical learnable readouts while retaining the A2 objective and error history.
 
 [Loss exploration](loss/README.md) maintains the post-error ranking design and independently verified results.
+
+[Mechanism exploration](mechanism/README.md) records trajectory-equal VAL selection and future mechanism-oriented comparisons.
