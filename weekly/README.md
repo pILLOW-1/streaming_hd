@@ -4,6 +4,7 @@ One Markdown file per report, named by date. The site at <https://pillow-1.githu
 
 | Date | Report |
 |---|---|
+| 2026-11-27 | [Where the Labels Go Wrong](2026-11-27.md) |
 | 2026-11-21 | [The Challenge of Streaming HD](2026-11-21.md) |
 | 2026-11-20 | [Errors Are Introduced, Then Carried](2026-11-20.md) |
 
