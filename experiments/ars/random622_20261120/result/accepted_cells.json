@@ -506,6 +506,44 @@
       "validated_candidate_layers": 64,
       "no_model_replay": true,
       "acceptance_SHA256": "4fcdc24eb87a3cfe057aa7f68e6bcbaa6081fe4f592dadcc4bb2e83c336d1ce7"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "method": "ars",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.7039522744220731,
+        "AP": 0.8453754929941037,
+        "ACC": 0.7075471698113207,
+        "F1": 0.8268156424581006,
+        "precision": 0.7081339712918661,
+        "recall": 0.9932885906040269,
+        "FPR": 0.9682539682539683,
+        "TP": 148,
+        "FP": 61,
+        "TN": 2,
+        "FN": 1,
+        "steps": 212,
+        "positive": 149,
+        "negative": 63,
+        "missing": 0,
+        "threshold": 0.18782015144824982,
+        "TPR_at_1pct_FPR": 0.08053691275167785
+      },
+      "selection": {
+        "layer": 27,
+        "AUROC": 0.6861768368617683,
+        "AP": 0.8258949315487614,
+        "VAL_BCE": 0.5838344024787459
+      },
+      "threshold": 0.18782015144824982,
+      "prediction_SHA256": "919c7bb24545d9e3696c64083ff03036d674fb722a5b570ce81bbf57acce3fdc",
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "validated_candidate_layers": 32,
+      "no_model_replay": true,
+      "acceptance_SHA256": "17bfeb59edec4cb68a639d2c506db2764fb5f69dac59b09e701d40490ba3dd9b"
     }
   ]
 }
