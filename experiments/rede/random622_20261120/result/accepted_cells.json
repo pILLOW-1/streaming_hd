@@ -560,6 +560,52 @@
       "source_contract_SHA256": "fc240b275eee3c6e3636c1c0e9101e177d629e73b65b7b73c16745ae4cf24448",
       "no_model_replay": true,
       "acceptance_SHA256": "e297af38b5b3d0b0aea54fbdd59ddf3858d31b62544326b11b155573ee284f06"
+    },
+    {
+      "status": "INDEPENDENT_CETUS_CPU_ACCEPTED",
+      "model": "deepseek_r1_distill_llama_8b",
+      "domain": "Science",
+      "method": "rede",
+      "level": "answer",
+      "metrics": {
+        "AUROC": 0.7474166400340897,
+        "AP": 0.867399809046231,
+        "ACC": 0.7358490566037735,
+        "F1": 0.8362573099415205,
+        "precision": 0.7409326424870466,
+        "recall": 0.959731543624161,
+        "FPR": 0.7936507936507936,
+        "TP": 143,
+        "FP": 50,
+        "TN": 13,
+        "FN": 6,
+        "steps": 212,
+        "positive": 149,
+        "negative": 63,
+        "missing": 0,
+        "threshold": 0.3185613453388214,
+        "TPR_at_1pct_FPR": 0.1342281879194631
+      },
+      "selection": {
+        "layer": 17,
+        "AUROC": 0.7054794520547946,
+        "AP": 0.8449131214129506,
+        "VAL_BCE": 0.5835805535316467
+      },
+      "threshold": 0.3185613453388214,
+      "assignment_SHA256": "82eb620f0d680ee42081393e7d6dce7bbf5b292d4b5eb19098f664996f3100ec",
+      "prediction_SHA256": "e17d5921e8cae81f68349cd270d8894d2990ec937af265d3e576074ecc8bfdfe",
+      "validated_candidate_layers": 32,
+      "projection_SHA256": "21e5af13d56470915ec5f3cec5301f057ed5d0ab3dbf2b2b6c68b3bdb9715538",
+      "source_contract_SHA256": "38ce6f488ffd86d358e801642f839a5904286397c738b09060790e8c9af743bf",
+      "no_model_replay": true,
+      "source_backend_version": "rede_ds_science_rectangular_v1_20261122",
+      "source_amendment_SHA256": "097334a9d0b663f6d91bb8067ce03a24a04cc09575a6b4ed8748f606092ba507",
+      "native_source_gate_SHA256": {
+        "RECTANGULAR_NATIVE_GATE.348904.hpc-head01.json": "c54be45db8943d397209569707789f24c26237bdae13cb5437b1b86028ddfe68"
+      },
+      "same_original_recipe_and_CPU_metric_implementation": true,
+      "acceptance_SHA256": "f370cbeecf6bf8d8a64657c4dea3e295038654f209df1435c664422c66103cf7"
     }
   ]
 }
