@@ -1,8 +1,8 @@
-# Main comparison: updated random split
+# Main comparison: updated labels, random seed43 split
 
-Random 6:2:2 split, updated annotations; original seed42 assignment (seed43 withdrawn).
+Updated annotations; question-family random 6:2:2 split, seed43; training seed42. The previous seed42 results are withdrawn from this table. Labels are unchanged by the re-split. This is an exploratory split of previously inspected data.
 
-AUROC (%), higher is better. Bold marks the highest available AUROC in each column within each level, compared before rounding; exact ties are all bold. Only completed, independently verified TEST results are shown. Blank cells indicate unavailable results; Ours is not finalized. Layers and weights are selected on VAL.
+AUROC (%), higher is better. Bold marks the highest available value in each column before rounding. Only completed independently verified seed43 TEST results are shown. Missing cells remain blank. A2 is listed separately. DeepSeek/Gemma seed43 labels await completed TRAIN review.
 
 <h2>Step-level (AUROC)</h2>
 <table>
@@ -41,9 +41,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>84.99</td>
+<td>88.73</td>
 <td></td>
-<td>88.62</td>
+<td>87.91</td>
 </tr>
 <tr><td>HaMI</td>
 <td></td>
@@ -60,7 +60,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>89.42</td>
+<td></td>
 </tr>
 <tr><td>Global Mean</td>
 <td></td>
@@ -77,7 +77,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>72.38</td>
+<td></td>
 </tr>
 <tr><td>Streaming</td>
 <td></td>
@@ -92,9 +92,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>86.06</td>
+<td><strong>89.22</strong></td>
 <td></td>
-<td>89.37</td>
+<td>88.55</td>
 </tr>
 <tr><td>A2</td>
 <td></td>
@@ -109,9 +109,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td><strong>86.25</strong></td>
+<td>87.48</td>
 <td></td>
-<td><strong>90.43</strong></td>
+<td><strong>90.19</strong></td>
 </tr>
 <tr><td>Ours</td>
 <td></td>
@@ -169,9 +169,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>84.15</td>
+<td>83.18</td>
 <td></td>
-<td>88.34</td>
+<td>86.53</td>
 </tr>
 <tr><td>ICR Probe</td>
 <td></td>
@@ -188,7 +188,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>84.32</td>
+<td></td>
 </tr>
 <tr><td>LLM-Check</td>
 <td></td>
@@ -203,9 +203,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>82.39</td>
 <td></td>
-<td>82.11</td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>Global Mean</td>
 <td></td>
@@ -222,7 +222,7 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>90.78</td>
+<td></td>
 </tr>
 <tr><td>Streaming</td>
 <td></td>
@@ -237,9 +237,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>84.38</td>
+<td><strong>83.96</strong></td>
 <td></td>
-<td>90.84</td>
+<td>88.89</td>
 </tr>
 <tr><td>A2</td>
 <td></td>
@@ -254,9 +254,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td><strong>85.51</strong></td>
+<td>83.87</td>
 <td></td>
-<td><strong>93.59</strong></td>
+<td><strong>90.04</strong></td>
 </tr>
 <tr><td>Ours</td>
 <td></td>
@@ -302,89 +302,89 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr></thead>
 <tbody>
 <tr><td>SAPLMA</td>
-<td><strong>95.15</strong></td>
-<td>66.21</td>
-<td>83.10</td>
-<td>81.62</td>
-<td>71.84</td>
-<td><strong>92.63</strong></td>
-<td>62.18</td>
-<td><strong>97.28</strong></td>
-<td>89.70</td>
-<td>90.89</td>
-<td>90.28</td>
-<td>71.70</td>
-<td>94.33</td>
-<td>81.39</td>
-<td>85.81</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>ARS</td>
-<td>89.96</td>
-<td>70.40</td>
-<td>84.20</td>
-<td>79.13</td>
-<td>70.83</td>
-<td>92.16</td>
-<td>52.36</td>
-<td>96.41</td>
-<td>78.72</td>
-<td>90.45</td>
-<td>91.62</td>
-<td>73.09</td>
-<td>89.74</td>
-<td>84.98</td>
-<td>87.97</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>RHD</td>
-<td>58.72</td>
-<td>54.49</td>
-<td>46.15</td>
-<td>50.85</td>
-<td>51.44</td>
-<td>40.82</td>
-<td>43.71</td>
-<td>46.13</td>
-<td>48.77</td>
-<td>68.20</td>
-<td>67.09</td>
-<td>57.26</td>
-<td>61.41</td>
-<td>60.70</td>
-<td>70.16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>ReDe</td>
-<td>94.74</td>
-<td><strong>74.74</strong></td>
-<td><strong>85.29</strong></td>
-<td><strong>84.13</strong></td>
-<td>73.73</td>
-<td>91.22</td>
-<td><strong>65.29</strong></td>
-<td>96.73</td>
-<td><strong>90.97</strong></td>
-<td>92.13</td>
-<td>86.42</td>
-<td>67.23</td>
-<td><strong>95.96</strong></td>
-<td>86.71</td>
-<td>89.34</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>Global Mean</td>
-<td>91.98</td>
-<td>74.30</td>
-<td>82.71</td>
-<td>83.97</td>
-<td><strong>81.39</strong></td>
-<td>92.18</td>
-<td>62.90</td>
-<td>95.47</td>
-<td>84.29</td>
-<td><strong>94.29</strong></td>
-<td><strong>92.93</strong></td>
-<td><strong>73.57</strong></td>
-<td>94.56</td>
-<td><strong>88.99</strong></td>
-<td><strong>92.37</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>Streaming</td>
 <td></td>
@@ -399,9 +399,9 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 <td></td>
 <td></td>
 <td></td>
-<td>94.24</td>
 <td></td>
-<td>84.85</td>
+<td></td>
+<td></td>
 </tr>
 <tr><td>Ours</td>
 <td></td>
@@ -422,4 +422,4 @@ AUROC (%), higher is better. Bold marks the highest available AUROC in each colu
 </tr>
 </tbody></table>
 
-Answer-level SAPLMA, ARS, RHD, ReDe and Global Mean reuse the independently accepted previous random622 results: Answer labels and split are unchanged (confirmed by the researcher). Streaming is remeasured only for Qwen Logic and Fact using the last retained Prefix score from the updated-label detector; other Streaming Answer cells remain blank. No Answer layer selection or new model inference. [Result provenance](result/comparison_random_split_update.json).
+[Result provenance](result/comparison_random_split_update.json).
