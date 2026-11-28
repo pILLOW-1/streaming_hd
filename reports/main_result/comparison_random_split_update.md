@@ -188,7 +188,7 @@ AUROC (%), higher is better. Bold marks the highest available value in each colu
 <td></td>
 <td></td>
 <td></td>
-<td></td>
+<td>80.44</td>
 </tr>
 <tr><td>LLM-Check</td>
 <td></td>

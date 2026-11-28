@@ -368,6 +368,26 @@
         "val_prediction_sha256": "7bf435e0d4a25869fc3aecb0d2e41d92b854ea992b30107519660bb66b1060f2",
         "path": "layer_47/best.pt"
       }
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "ICR Probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8043729938212868,
+        "AP": 0.741118178281093
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "af5a4c8458cc58fcf5994252faa2b558247870e99cbee0bff8b2a0f29f8e31f1",
+      "source_completion_SHA256": "dac9e010112e941cb5dd28373ad93be01a909f7ab1e6a3645f044516cec95281",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": true,
+      "replay_requirement": "EXPLICIT_SINGLE_FAILED_OUTPUT_RECOVERY_AUTHORIZED_BY_DIRECT_HUMAN"
     }
   ],
   "previous_seed42_results_withdrawn": true,
