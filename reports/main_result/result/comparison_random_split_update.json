@@ -468,6 +468,66 @@
       "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
       "TEST_recovery_authorized": false,
       "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "Global Mean",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8280695654922288,
+        "AP": 0.35420548238295063
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "faf5c215c3f1b8c7a90c3c3081605a5b935fbdbbfcbd8943cfe4e3966527de52",
+      "source_completion_SHA256": "d69c05acc4eb8a8687b597f7cdaf80c83f79d9e69735002882d92038c1075e1e",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "HaMI",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.9027745260134442,
+        "AP": 0.16030570205106967
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "ac0c4ce26b1bc8ff5ebe65f2aa13df1faed11d024c44decc6fd90941e826bca3",
+      "source_completion_SHA256": "02edde76f95977d0185b80cd224b4d21fae2fe8cd7a65fdc0d8f20ea8a49cd3c",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "Global Mean",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.7487567532775773,
+        "AP": 0.03114362830575866
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "56aee1f2fd429f6311dcf20c21520ee02aa10f0bf86047e1c12e7149c2d832a7",
+      "source_completion_SHA256": "4a253cdeadc3d59181d28c5719ddae41c8ed3842e1b47e25c13629d02ac42aea",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
     }
   ],
   "previous_seed42_results_withdrawn": true,
