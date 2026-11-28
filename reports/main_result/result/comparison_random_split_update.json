@@ -528,6 +528,46 @@
       "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
       "TEST_recovery_authorized": false,
       "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "LLM-Check",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8117474847435263,
+        "AP": 0.7743081154996229
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "3cf70eca8166d3c508afe8636adcfd070685410c56f4b38642ad7c286109ffc9",
+      "source_completion_SHA256": "43366e1318220ad80926c4443c7d034a5d7d1ba29704414e210b1e1ab1d882dc",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "LLM-Check",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8251779206623352,
+        "AP": 0.3825552864751947
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "916406e772098c22e84a518b72c449c97819f02ed728bc16e63fc3b4f1dd649c",
+      "source_completion_SHA256": "ab2c149dd9d108a38bf78285cf19bfe7fc51b01f7a15ad3f727f526cde283c90",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
     }
   ],
   "previous_seed42_results_withdrawn": true,
