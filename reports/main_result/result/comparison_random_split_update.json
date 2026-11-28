@@ -388,6 +388,86 @@
       "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
       "TEST_recovery_authorized": true,
       "replay_requirement": "EXPLICIT_SINGLE_FAILED_OUTPUT_RECOVERY_AUTHORIZED_BY_DIRECT_HUMAN"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "Global Mean",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8905435237696494,
+        "AP": 0.8509800226645707
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "f7ae959a981d6d548866794999b290010369acc492b2933c1608fb7f9503c326",
+      "source_completion_SHA256": "d34404b5e154161076e55c878bf70b68dbcbdbd5055f6196b444d40200b791a5",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "HaMI",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.8791277746440548,
+        "AP": 0.4368649537110553
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "3b7a93eecc5548d7280cd7b0b3eebe3f979455c835d623a59a257329c5d6adcb",
+      "source_completion_SHA256": "8d3ea540b3ad085cb0b3771529a464d88cdc8c3fce01fa54666184e9a687e278",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Factuality",
+      "method": "Global Mean",
+      "level": "step",
+      "metrics": {
+        "AUROC": 0.7620899507643292,
+        "AP": 0.2566804020814711
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "3c49625c3dc9e451f31532ae05c3099a203003ca64abf2e3897c42284a667da9",
+      "source_completion_SHA256": "3dcf15393110f5a34bb11355fdb84f407bcfa1447951cbfbd050ce235267e520",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
+    },
+    {
+      "model": "qwen3_8_27b",
+      "domain": "Logic",
+      "method": "ICR Probe",
+      "level": "prefix",
+      "metrics": {
+        "AUROC": 0.8083374123496673,
+        "AP": 0.33376074950430223
+      },
+      "status": "PASS_INDEPENDENT_CETUS_CPU_SAVED_PREDICTIONS",
+      "split_seed": 43,
+      "training_seed": 42,
+      "source_experiment": "qwen_baselines_labels_seed43_20261128",
+      "acceptance_SHA256": "049ed9db8c1493b7115801c262b27ac94bcb295e82b64dc8e0eb7c1d483902cd",
+      "source_completion_SHA256": "dda9991aeb28eab29d15e5c3718bd150108809f90f1dff6b9b5024c63a5b7c9d",
+      "source_two_domain_split_SHA256": "61a2bb4ed3a95435f96b555c2fa894b6c245cbcfb978f0b32db248610f8736ac",
+      "canonical_five_domain_split_SHA256": "eafb51a6f37777c6df71f02e4fa9b5693e7a7c87c99517eedd92952c1e2a4ea2",
+      "TEST_recovery_authorized": false,
+      "replay_requirement": "WAIVED_BY_DIRECT_HUMAN_INSTRUCTION"
     }
   ],
   "previous_seed42_results_withdrawn": true,
